@@ -1,0 +1,137 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 41 tests from 10 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from Objdetect_QRCode_points_position
+[ RUN      ] Objdetect_QRCode_points_position.rotate45
+[     SKIP ] OpenCV tests: Can't find data file: dnn/wechat_2021-01/detect.prototxt
+[       OK ] Objdetect_QRCode_points_position.rotate45 (3 ms)
+[----------] 1 test from Objdetect_QRCode_points_position (3 ms total)
+
+[----------] 1 test from Objdetect_QRCode_Big
+[ RUN      ] Objdetect_QRCode_Big.regression
+[     SKIP ] OpenCV tests: Can't find data file: dnn/wechat_2021-01/detect.prototxt
+[       OK ] Objdetect_QRCode_Big.regression (0 ms)
+[----------] 1 test from Objdetect_QRCode_Big (0 ms total)
+
+[----------] 1 test from Objdetect_QRCode_Tiny
+[ RUN      ] Objdetect_QRCode_Tiny.regression
+[     SKIP ] OpenCV tests: Can't find data file: dnn/wechat_2021-01/detect.prototxt
+[       OK ] Objdetect_QRCode_Tiny.regression (1 ms)
+[----------] 1 test from Objdetect_QRCode_Tiny (1 ms total)
+
+[----------] 1 test from Objdetect_QRCode_bug
+[ RUN      ] Objdetect_QRCode_bug.issue_3478
+[       OK ] Objdetect_QRCode_bug.issue_3478 (16 ms)
+[----------] 1 test from Objdetect_QRCode_bug (16 ms total)
+
+[----------] 21 tests from Objdetect_QRCode
+[ RUN      ] Objdetect_QRCode.regression/0, where GetParam() = "version_1_down.jpg"
+[       OK ] Objdetect_QRCode.regression/0 (22 ms)
+[ RUN      ] Objdetect_QRCode.regression/1, where GetParam() = "version_1_top.jpg"
+[       OK ] Objdetect_QRCode.regression/1 (7 ms)
+[ RUN      ] Objdetect_QRCode.regression/2, where GetParam() = "version_2_left.jpg"
+[       OK ] Objdetect_QRCode.regression/2 (10 ms)
+[ RUN      ] Objdetect_QRCode.regression/3, where GetParam() = "version_2_up.jpg"
+[       OK ] Objdetect_QRCode.regression/3 (7 ms)
+[ RUN      ] Objdetect_QRCode.regression/4, where GetParam() = "version_2_top.jpg"
+[       OK ] Objdetect_QRCode.regression/4 (6 ms)
+[ RUN      ] Objdetect_QRCode.regression/5, where GetParam() = "version_3_down.jpg"
+[       OK ] Objdetect_QRCode.regression/5 (6 ms)
+[ RUN      ] Objdetect_QRCode.regression/6, where GetParam() = "version_3_left.jpg"
+[       OK ] Objdetect_QRCode.regression/6 (45 ms)
+[ RUN      ] Objdetect_QRCode.regression/7, where GetParam() = "version_3_up.jpg"
+[       OK ] Objdetect_QRCode.regression/7 (6 ms)
+[ RUN      ] Objdetect_QRCode.regression/8, where GetParam() = "version_3_top.jpg"
+[       OK ] Objdetect_QRCode.regression/8 (6 ms)
+[ RUN      ] Objdetect_QRCode.regression/9, where GetParam() = "version_4_down.jpg"
+[       OK ] Objdetect_QRCode.regression/9 (6 ms)
+[ RUN      ] Objdetect_QRCode.regression/10, where GetParam() = "version_4_left.jpg"
+[       OK ] Objdetect_QRCode.regression/10 (5 ms)
+[ RUN      ] Objdetect_QRCode.regression/11, where GetParam() = "version_4_up.jpg"
+[       OK ] Objdetect_QRCode.regression/11 (21 ms)
+[ RUN      ] Objdetect_QRCode.regression/12, where GetParam() = "version_4_top.jpg"
+[       OK ] Objdetect_QRCode.regression/12 (6 ms)
+[ RUN      ] Objdetect_QRCode.regression/13, where GetParam() = "version_5_down.jpg"
+[       OK ] Objdetect_QRCode.regression/13 (6 ms)
+[ RUN      ] Objdetect_QRCode.regression/14, where GetParam() = "version_5_left.jpg"
+[       OK ] Objdetect_QRCode.regression/14 (6 ms)
+[ RUN      ] Objdetect_QRCode.regression/15, where GetParam() = "version_5_up.jpg"
+[       OK ] Objdetect_QRCode.regression/15 (23 ms)
+[ RUN      ] Objdetect_QRCode.regression/16, where GetParam() = "version_5_top.jpg"
+[       OK ] Objdetect_QRCode.regression/16 (9 ms)
+[ RUN      ] Objdetect_QRCode.regression/17, where GetParam() = "russian.jpg"
+[       OK ] Objdetect_QRCode.regression/17 (9 ms)
+[ RUN      ] Objdetect_QRCode.regression/18, where GetParam() = "kanji.jpg"
+[       OK ] Objdetect_QRCode.regression/18 (7 ms)
+[ RUN      ] Objdetect_QRCode.regression/19, where GetParam() = "link_ocv.jpg"
+[       OK ] Objdetect_QRCode.regression/19 (6 ms)
+[ RUN      ] Objdetect_QRCode.regression/20, where GetParam() = "link_wiki_cv.jpg"
+[       OK ] Objdetect_QRCode.regression/20 (42 ms)
+[----------] 21 tests from Objdetect_QRCode (262 ms total)
+
+[----------] 4 tests from Objdetect_QRCode_Close
+[ RUN      ] Objdetect_QRCode_Close.regression/0, where GetParam() = "close_2.png"
+[       OK ] Objdetect_QRCode_Close.regression/0 (8 ms)
+[ RUN      ] Objdetect_QRCode_Close.regression/1, where GetParam() = "close_3.png"
+[       OK ] Objdetect_QRCode_Close.regression/1 (7 ms)
+[ RUN      ] Objdetect_QRCode_Close.regression/2, where GetParam() = "close_4.png"
+[       OK ] Objdetect_QRCode_Close.regression/2 (15 ms)
+[ RUN      ] Objdetect_QRCode_Close.regression/3, where GetParam() = "close_5.png"
+[       OK ] Objdetect_QRCode_Close.regression/3 (7 ms)
+[----------] 4 tests from Objdetect_QRCode_Close (37 ms total)
+
+[----------] 5 tests from Objdetect_QRCode_Monitor
+[ RUN      ] Objdetect_QRCode_Monitor.regression/0, where GetParam() = "monitor_1.png"
+[       OK ] Objdetect_QRCode_Monitor.regression/0 (10 ms)
+[ RUN      ] Objdetect_QRCode_Monitor.regression/1, where GetParam() = "monitor_2.png"
+[       OK ] Objdetect_QRCode_Monitor.regression/1 (7 ms)
+[ RUN      ] Objdetect_QRCode_Monitor.regression/2, where GetParam() = "monitor_3.png"
+[       OK ] Objdetect_QRCode_Monitor.regression/2 (6 ms)
+[ RUN      ] Objdetect_QRCode_Monitor.regression/3, where GetParam() = "monitor_4.png"
+[       OK ] Objdetect_QRCode_Monitor.regression/3 (7 ms)
+[ RUN      ] Objdetect_QRCode_Monitor.regression/4, where GetParam() = "monitor_5.png"
+[       OK ] Objdetect_QRCode_Monitor.regression/4 (6 ms)
+[----------] 5 tests from Objdetect_QRCode_Monitor (36 ms total)
+
+[----------] 3 tests from Objdetect_QRCode_Curved
+[ RUN      ] Objdetect_QRCode_Curved.regression/0, where GetParam() = "curved_1.jpg"
+[       OK ] Objdetect_QRCode_Curved.regression/0 (13 ms)
+[ RUN      ] Objdetect_QRCode_Curved.regression/1, where GetParam() = "curved_5.jpg"
+[       OK ] Objdetect_QRCode_Curved.regression/1 (8 ms)
+[ RUN      ] Objdetect_QRCode_Curved.regression/2, where GetParam() = "curved_6.jpg"
+[       OK ] Objdetect_QRCode_Curved.regression/2 (18 ms)
+[----------] 3 tests from Objdetect_QRCode_Curved (39 ms total)
+
+[----------] 2 tests from Objdetect_QRCode_Multi
+[ RUN      ] Objdetect_QRCode_Multi.regression/0, where GetParam() = "3_close_qrcodes.png"
+[     SKIP ] OpenCV tests: Can't find data file: dnn/wechat_2021-01/detect.prototxt
+[       OK ] Objdetect_QRCode_Multi.regression/0 (0 ms)
+[ RUN      ] Objdetect_QRCode_Multi.regression/1, where GetParam() = "7_qrcodes.png"
+[     SKIP ] OpenCV tests: Can't find data file: dnn/wechat_2021-01/detect.prototxt
+[       OK ] Objdetect_QRCode_Multi.regression/1 (1 ms)
+[----------] 2 tests from Objdetect_QRCode_Multi (1 ms total)
+
+[----------] 2 tests from Objdetect_QRCode_Easy_Multi
+[ RUN      ] Objdetect_QRCode_Easy_Multi.regression/0, where GetParam() = ""
+[       OK ] Objdetect_QRCode_Easy_Multi.regression/0 (34 ms)
+[ RUN      ] Objdetect_QRCode_Easy_Multi.regression/1, where GetParam() = "dnn/wechat_2021-01"
+[     SKIP ] OpenCV tests: Can't find data file: dnn/wechat_2021-01/detect.prototxt
+[       OK ] Objdetect_QRCode_Easy_Multi.regression/1 (0 ms)
+[----------] 2 tests from Objdetect_QRCode_Easy_Multi (34 ms total)
+
+[----------] Global test environment tear-down
+[ SKIPSTAT ] 6 tests skipped
+[ SKIPSTAT ] TAG='skip_other' skip 6 tests
+[==========] 41 tests from 10 test cases ran. (429 ms total)
+[  PASSED  ] 41 tests.

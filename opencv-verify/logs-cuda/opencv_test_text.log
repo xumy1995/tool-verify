@@ -1,0 +1,69 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 16 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from TextDetectionSWT
+[ RUN      ] TextDetectionSWT.accuracy_light_on_dark
+[       OK ] TextDetectionSWT.accuracy_light_on_dark (50 ms)
+[ RUN      ] TextDetectionSWT.accuracy_dark_on_light
+[       OK ] TextDetectionSWT.accuracy_dark_on_light (5 ms)
+[ RUN      ] TextDetectionSWT.accuracy_handwriting
+[       OK ] TextDetectionSWT.accuracy_handwriting (8 ms)
+[ RUN      ] TextDetectionSWT.accuracy_chaining
+[       OK ] TextDetectionSWT.accuracy_chaining (15 ms)
+[----------] 4 tests from TextDetectionSWT (78 ms total)
+
+[----------] 12 tests from Text/Detection
+[ RUN      ] Text/Detection.sample/0, where GetParam() = ("text/scenetext01.jpg", false)
+[     SKIP ] OpenCV tests: Can't find data file: trained_classifierNM1.xml
+[       OK ] Text/Detection.sample/0 (1 ms)
+[ RUN      ] Text/Detection.sample/1, where GetParam() = ("text/scenetext01.jpg", true)
+[     SKIP ] OpenCV tests: Can't find data file: trained_classifierNM1.xml
+[       OK ] Text/Detection.sample/1 (1 ms)
+[ RUN      ] Text/Detection.sample/2, where GetParam() = ("text/scenetext02.jpg", false)
+[     SKIP ] OpenCV tests: Can't find data file: trained_classifierNM1.xml
+[       OK ] Text/Detection.sample/2 (1 ms)
+[ RUN      ] Text/Detection.sample/3, where GetParam() = ("text/scenetext02.jpg", true)
+[     SKIP ] OpenCV tests: Can't find data file: trained_classifierNM1.xml
+[       OK ] Text/Detection.sample/3 (0 ms)
+[ RUN      ] Text/Detection.sample/4, where GetParam() = ("text/scenetext03.jpg", false)
+[     SKIP ] OpenCV tests: Can't find data file: trained_classifierNM1.xml
+[       OK ] Text/Detection.sample/4 (1 ms)
+[ RUN      ] Text/Detection.sample/5, where GetParam() = ("text/scenetext03.jpg", true)
+[     SKIP ] OpenCV tests: Can't find data file: trained_classifierNM1.xml
+[       OK ] Text/Detection.sample/5 (1 ms)
+[ RUN      ] Text/Detection.sample/6, where GetParam() = ("text/scenetext04.jpg", false)
+[     SKIP ] OpenCV tests: Can't find data file: trained_classifierNM1.xml
+[       OK ] Text/Detection.sample/6 (1 ms)
+[ RUN      ] Text/Detection.sample/7, where GetParam() = ("text/scenetext04.jpg", true)
+[     SKIP ] OpenCV tests: Can't find data file: trained_classifierNM1.xml
+[       OK ] Text/Detection.sample/7 (1 ms)
+[ RUN      ] Text/Detection.sample/8, where GetParam() = ("text/scenetext05.jpg", false)
+[     SKIP ] OpenCV tests: Can't find data file: trained_classifierNM1.xml
+[       OK ] Text/Detection.sample/8 (1 ms)
+[ RUN      ] Text/Detection.sample/9, where GetParam() = ("text/scenetext05.jpg", true)
+[     SKIP ] OpenCV tests: Can't find data file: trained_classifierNM1.xml
+[       OK ] Text/Detection.sample/9 (1 ms)
+[ RUN      ] Text/Detection.sample/10, where GetParam() = ("text/scenetext06.jpg", false)
+[     SKIP ] OpenCV tests: Can't find data file: trained_classifierNM1.xml
+[       OK ] Text/Detection.sample/10 (1 ms)
+[ RUN      ] Text/Detection.sample/11, where GetParam() = ("text/scenetext06.jpg", true)
+[     SKIP ] OpenCV tests: Can't find data file: trained_classifierNM1.xml
+[       OK ] Text/Detection.sample/11 (1 ms)
+[----------] 12 tests from Text/Detection (11 ms total)
+
+[----------] Global test environment tear-down
+[ SKIPSTAT ] 12 tests skipped
+[ SKIPSTAT ] TAG='skip_other' skip 12 tests
+[==========] 16 tests from 2 test cases ran. (89 ms total)
+[  PASSED  ] 16 tests.

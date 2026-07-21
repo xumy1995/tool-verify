@@ -1,0 +1,93 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: NO
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+OpenCL is disabled
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 22 tests from 11 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from OCL_SphericalWarperTest
+[ RUN      ] OCL_SphericalWarperTest.Mat
+[       OK ] OCL_SphericalWarperTest.Mat (8 ms)
+[----------] 1 test from OCL_SphericalWarperTest (8 ms total)
+
+[----------] 1 test from OCL_CylindricalWarperTest
+[ RUN      ] OCL_CylindricalWarperTest.Mat
+[       OK ] OCL_CylindricalWarperTest.Mat (0 ms)
+[----------] 1 test from OCL_CylindricalWarperTest (0 ms total)
+
+[----------] 1 test from OCL_PlaneWarperTest
+[ RUN      ] OCL_PlaneWarperTest.Mat
+[       OK ] OCL_PlaneWarperTest.Mat (1 ms)
+[----------] 1 test from OCL_PlaneWarperTest (1 ms total)
+
+[----------] 1 test from OCL_AffineWarperTest
+[ RUN      ] OCL_AffineWarperTest.Mat
+[       OK ] OCL_AffineWarperTest.Mat (0 ms)
+[----------] 1 test from OCL_AffineWarperTest (0 ms total)
+
+[----------] 1 test from MultiBandBlender
+[ RUN      ] MultiBandBlender.CanBlendTwoImages
+[       OK ] MultiBandBlender.CanBlendTwoImages (57 ms)
+[----------] 1 test from MultiBandBlender (57 ms total)
+
+[----------] 1 test from ExposureCompensate
+[ RUN      ] ExposureCompensate.SimilarityThreshold
+[       OK ] ExposureCompensate.SimilarityThreshold (2039 ms)
+[----------] 1 test from ExposureCompensate (2040 ms total)
+
+[----------] 1 test from ParallelFeaturesFinder
+[ RUN      ] ParallelFeaturesFinder.IsSameWithSerial
+[       OK ] ParallelFeaturesFinder.IsSameWithSerial (578 ms)
+[----------] 1 test from ParallelFeaturesFinder (578 ms total)
+
+[----------] 1 test from RangeMatcher
+[ RUN      ] RangeMatcher.MatchesRangeOnly
+[       OK ] RangeMatcher.MatchesRangeOnly (77 ms)
+[----------] 1 test from RangeMatcher (77 ms total)
+
+[----------] 12 tests from ReprojectionTest
+[ RUN      ] ReprojectionTest.PlaneWarper
+[       OK ] ReprojectionTest.PlaneWarper (0 ms)
+[ RUN      ] ReprojectionTest.AffineWarper
+[       OK ] ReprojectionTest.AffineWarper (0 ms)
+[ RUN      ] ReprojectionTest.CylindricalWarper
+[       OK ] ReprojectionTest.CylindricalWarper (0 ms)
+[ RUN      ] ReprojectionTest.SphericalWarper
+[       OK ] ReprojectionTest.SphericalWarper (0 ms)
+[ RUN      ] ReprojectionTest.FisheyeWarper
+[       OK ] ReprojectionTest.FisheyeWarper (0 ms)
+[ RUN      ] ReprojectionTest.StereographicWarper
+[       OK ] ReprojectionTest.StereographicWarper (1 ms)
+[ RUN      ] ReprojectionTest.CompressedRectilinearWarper
+[       OK ] ReprojectionTest.CompressedRectilinearWarper (0 ms)
+[ RUN      ] ReprojectionTest.CompressedRectilinearPortraitWarper
+[       OK ] ReprojectionTest.CompressedRectilinearPortraitWarper (0 ms)
+[ RUN      ] ReprojectionTest.PaniniWarper
+[       OK ] ReprojectionTest.PaniniWarper (0 ms)
+[ RUN      ] ReprojectionTest.PaniniPortraitWarper
+[       OK ] ReprojectionTest.PaniniPortraitWarper (0 ms)
+[ RUN      ] ReprojectionTest.MercatorWarper
+[       OK ] ReprojectionTest.MercatorWarper (0 ms)
+[ RUN      ] ReprojectionTest.TransverseMercatorWarper
+[       OK ] ReprojectionTest.TransverseMercatorWarper (0 ms)
+[----------] 12 tests from ReprojectionTest (1 ms total)
+
+[----------] 1 test from ImageStitcher
+[ RUN      ] ImageStitcher.setTransform
+[       OK ] ImageStitcher.setTransform (902 ms)
+[----------] 1 test from ImageStitcher (902 ms total)
+
+[----------] 1 test from WaveCorrection
+[ RUN      ] WaveCorrection.AutoWaveCorrection
+[       OK ] WaveCorrection.AutoWaveCorrection (1155 ms)
+[----------] 1 test from WaveCorrection (1155 ms total)
+
+[----------] Global test environment tear-down
+[==========] 22 tests from 11 test cases ran. (4820 ms total)
+[  PASSED  ] 22 tests.

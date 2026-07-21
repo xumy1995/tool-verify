@@ -1,0 +1,15 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 0 tests from 0 test cases.
+[==========] 0 tests from 0 test cases ran. (0 ms total)
+[  PASSED  ] 0 tests.

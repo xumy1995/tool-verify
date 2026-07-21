@@ -1,0 +1,48 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 8 tests from 5 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from intensity_transform_logTransform
+[ RUN      ] intensity_transform_logTransform.accuracy
+[       OK ] intensity_transform_logTransform.accuracy (10 ms)
+[----------] 1 test from intensity_transform_logTransform (10 ms total)
+
+[----------] 2 tests from intensity_transform_gammaCorrection
+[ RUN      ] intensity_transform_gammaCorrection.accuracy1
+[       OK ] intensity_transform_gammaCorrection.accuracy1 (0 ms)
+[ RUN      ] intensity_transform_gammaCorrection.accuracy2
+[       OK ] intensity_transform_gammaCorrection.accuracy2 (0 ms)
+[----------] 2 tests from intensity_transform_gammaCorrection (0 ms total)
+
+[----------] 1 test from intensity_transform_autoscaling
+[ RUN      ] intensity_transform_autoscaling.accuracy
+[       OK ] intensity_transform_autoscaling.accuracy (0 ms)
+[----------] 1 test from intensity_transform_autoscaling (0 ms total)
+
+[----------] 1 test from intensity_transform_contrastStretching
+[ RUN      ] intensity_transform_contrastStretching.accuracy
+[       OK ] intensity_transform_contrastStretching.accuracy (0 ms)
+[----------] 1 test from intensity_transform_contrastStretching (0 ms total)
+
+[----------] 3 tests from intensity_transform_BIMEF
+[ RUN      ] intensity_transform_BIMEF.accuracy/0, where GetParam() = "P1000205_resize"
+[       OK ] intensity_transform_BIMEF.accuracy/0 (0 ms)
+[ RUN      ] intensity_transform_BIMEF.accuracy/1, where GetParam() = "P1010676_resize"
+[       OK ] intensity_transform_BIMEF.accuracy/1 (0 ms)
+[ RUN      ] intensity_transform_BIMEF.accuracy/2, where GetParam() = "P1010815_resize"
+[       OK ] intensity_transform_BIMEF.accuracy/2 (0 ms)
+[----------] 3 tests from intensity_transform_BIMEF (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 5 test cases ran. (10 ms total)
+[  PASSED  ] 8 tests.

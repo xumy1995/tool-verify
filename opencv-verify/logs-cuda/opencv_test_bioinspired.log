@@ -1,0 +1,36 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from OCL_Contrib/Retina_OCL
+[ RUN      ] OCL_Contrib/Retina_OCL.Accuracy/0, where GetParam() = (false, 2, false, 1, 10)
+[       OK ] OCL_Contrib/Retina_OCL.Accuracy/0 (445 ms)
+[ RUN      ] OCL_Contrib/Retina_OCL.Accuracy/1, where GetParam() = (false, 2, false, 1, 5)
+[       OK ] OCL_Contrib/Retina_OCL.Accuracy/1 (539 ms)
+[ RUN      ] OCL_Contrib/Retina_OCL.Accuracy/2, where GetParam() = (false, 2, false, 0.5, 10)
+[       OK ] OCL_Contrib/Retina_OCL.Accuracy/2 (556 ms)
+[ RUN      ] OCL_Contrib/Retina_OCL.Accuracy/3, where GetParam() = (false, 2, false, 0.5, 5)
+[       OK ] OCL_Contrib/Retina_OCL.Accuracy/3 (520 ms)
+[ RUN      ] OCL_Contrib/Retina_OCL.Accuracy/4, where GetParam() = (true, 2, false, 1, 10)
+[       OK ] OCL_Contrib/Retina_OCL.Accuracy/4 (1138 ms)
+[ RUN      ] OCL_Contrib/Retina_OCL.Accuracy/5, where GetParam() = (true, 2, false, 1, 5)
+[       OK ] OCL_Contrib/Retina_OCL.Accuracy/5 (1339 ms)
+[ RUN      ] OCL_Contrib/Retina_OCL.Accuracy/6, where GetParam() = (true, 2, false, 0.5, 10)
+[       OK ] OCL_Contrib/Retina_OCL.Accuracy/6 (1238 ms)
+[ RUN      ] OCL_Contrib/Retina_OCL.Accuracy/7, where GetParam() = (true, 2, false, 0.5, 5)
+[       OK ] OCL_Contrib/Retina_OCL.Accuracy/7 (1106 ms)
+[----------] 8 tests from OCL_Contrib/Retina_OCL (6882 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (6882 ms total)
+[  PASSED  ] 8 tests.

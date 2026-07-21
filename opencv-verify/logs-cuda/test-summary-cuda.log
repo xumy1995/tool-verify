@@ -1,0 +1,112 @@
+===== opencv_test_bgsegm =====
+opencv_test_bgsegm exit=0
+===== opencv_test_bioinspired =====
+opencv_test_bioinspired exit=0
+===== opencv_test_calib3d =====
+opencv_test_calib3d exit=0
+===== opencv_test_core =====
+opencv_test_core exit=0
+===== opencv_test_cudaarithm =====
+opencv_test_cudaarithm exit=0
+===== opencv_test_cudabgsegm =====
+opencv_test_cudabgsegm exit=0
+===== opencv_test_cudacodec =====
+opencv_test_cudacodec exit=0
+===== opencv_test_cudafeatures2d =====
+opencv_test_cudafeatures2d exit=0
+===== opencv_test_cudafilters =====
+opencv_test_cudafilters exit=0
+===== opencv_test_cudaimgproc =====
+opencv_test_cudaimgproc exit=0
+===== opencv_test_cudalegacy =====
+opencv_test_cudalegacy exit=0
+===== opencv_test_cudaobjdetect =====
+opencv_test_cudaobjdetect exit=0
+===== opencv_test_cudaoptflow =====
+opencv_test_cudaoptflow exit=1
+===== opencv_test_cudastereo =====
+opencv_test_cudastereo exit=0
+===== opencv_test_cudawarping =====
+opencv_test_cudawarping exit=0
+===== opencv_test_cudev =====
+opencv_test_cudev exit=0
+===== opencv_test_dnn =====
+opencv_test_dnn exit=1
+===== opencv_test_dnn_superres =====
+opencv_test_dnn_superres exit=0
+===== opencv_test_face =====
+opencv_test_face exit=1
+===== opencv_test_features2d =====
+opencv_test_features2d exit=0
+===== opencv_test_flann =====
+opencv_test_flann exit=0
+===== opencv_test_fuzzy =====
+opencv_test_fuzzy exit=0
+===== opencv_test_gapi =====
+opencv_test_gapi exit=1
+===== opencv_test_hdf =====
+opencv_test_hdf exit=0
+===== opencv_test_highgui =====
+opencv_test_highgui exit=1
+===== opencv_test_img_hash =====
+opencv_test_img_hash exit=0
+===== opencv_test_imgcodecs =====
+opencv_test_imgcodecs exit=0
+===== opencv_test_imgproc =====
+opencv_test_imgproc exit=0
+===== opencv_test_intensity_transform =====
+opencv_test_intensity_transform exit=0
+===== opencv_test_line_descriptor =====
+opencv_test_line_descriptor exit=0
+===== opencv_test_mcc =====
+opencv_test_mcc exit=0
+===== opencv_test_ml =====
+opencv_test_ml exit=0
+===== opencv_test_objdetect =====
+opencv_test_objdetect exit=0
+===== opencv_test_optflow =====
+opencv_test_optflow exit=0
+===== opencv_test_phase_unwrapping =====
+opencv_test_phase_unwrapping exit=0
+===== opencv_test_photo =====
+opencv_test_photo exit=0
+===== opencv_test_quality =====
+opencv_test_quality exit=0
+===== opencv_test_rapid =====
+opencv_test_rapid exit=0
+===== opencv_test_reg =====
+opencv_test_reg exit=0
+===== opencv_test_rgbd =====
+opencv_test_rgbd exit=0
+===== opencv_test_saliency =====
+opencv_test_saliency exit=0
+===== opencv_test_shape =====
+opencv_test_shape exit=0
+===== opencv_test_signal =====
+opencv_test_signal exit=0
+===== opencv_test_stereo =====
+opencv_test_stereo exit=0
+===== opencv_test_stitching =====
+opencv_test_stitching exit=0
+===== opencv_test_structured_light =====
+opencv_test_structured_light exit=0
+===== opencv_test_superres =====
+opencv_test_superres exit=0
+===== opencv_test_text =====
+opencv_test_text exit=0
+===== opencv_test_tracking =====
+opencv_test_tracking exit=0
+===== opencv_test_video =====
+opencv_test_video exit=0
+===== opencv_test_videoio =====
+opencv_test_videoio exit=0
+===== opencv_test_videostab =====
+opencv_test_videostab exit=0
+===== opencv_test_wechat_qrcode =====
+opencv_test_wechat_qrcode exit=0
+===== opencv_test_xfeatures2d =====
+opencv_test_xfeatures2d exit=0
+===== opencv_test_ximgproc =====
+opencv_test_ximgproc exit=0
+===== opencv_test_xphoto =====
+opencv_test_xphoto exit=0

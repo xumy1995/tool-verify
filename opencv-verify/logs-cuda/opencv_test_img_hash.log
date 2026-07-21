@@ -1,0 +1,42 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 5 tests from 5 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from average_hash_test
+[ RUN      ] average_hash_test.accuracy
+[       OK ] average_hash_test.accuracy (9 ms)
+[----------] 1 test from average_hash_test (9 ms total)
+
+[----------] 1 test from block_mean_hash_test
+[ RUN      ] block_mean_hash_test.accuracy
+[       OK ] block_mean_hash_test.accuracy (2 ms)
+[----------] 1 test from block_mean_hash_test (2 ms total)
+
+[----------] 1 test from marr_hildreth_test
+[ RUN      ] marr_hildreth_test.accuracy
+[       OK ] marr_hildreth_test.accuracy (26 ms)
+[----------] 1 test from marr_hildreth_test (26 ms total)
+
+[----------] 1 test from average_phash_test
+[ RUN      ] average_phash_test.accuracy
+[       OK ] average_phash_test.accuracy (0 ms)
+[----------] 1 test from average_phash_test (0 ms total)
+
+[----------] 1 test from radial_variance_hash_test
+[ RUN      ] radial_variance_hash_test.accuracy
+[       OK ] radial_variance_hash_test.accuracy (1 ms)
+[----------] 1 test from radial_variance_hash_test (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 5 test cases ran. (38 ms total)
+[  PASSED  ] 5 tests.

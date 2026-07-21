@@ -1,0 +1,53 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 9 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 6 tests from Regression
+[ RUN      ] Regression.MM_TRANSLATION
+[       OK ] Regression.MM_TRANSLATION (45 ms)
+[ RUN      ] Regression.MM_TRANSLATION_AND_SCALE
+[       OK ] Regression.MM_TRANSLATION_AND_SCALE (190 ms)
+[ RUN      ] Regression.MM_ROTATION
+[       OK ] Regression.MM_ROTATION (38 ms)
+[ RUN      ] Regression.MM_RIGID
+[       OK ] Regression.MM_RIGID (138 ms)
+[ RUN      ] Regression.MM_SIMILARITY
+[       OK ] Regression.MM_SIMILARITY (304 ms)
+[ RUN      ] Regression.MM_AFFINE
+[       OK ] Regression.MM_AFFINE (1139 ms)
+[----------] 6 tests from Regression (1854 ms total)
+
+[----------] 2 tests from OnePassStabilizer
+[ RUN      ] OnePassStabilizer.oneFrame
+processing frames..
+processing time: 0.000 sec
+[       OK ] OnePassStabilizer.oneFrame (10 ms)
+[ RUN      ] OnePassStabilizer.oneFrame_deblur
+processing frames..
+processing time: 0.000 sec
+[       OK ] OnePassStabilizer.oneFrame_deblur (8 ms)
+[----------] 2 tests from OnePassStabilizer (18 ms total)
+
+[----------] 1 test from TwoPassStabilizer
+[ RUN      ] TwoPassStabilizer.oneFrame
+first pass: estimating motions
+motion estimation time: 0.000 sec
+motion stabilization time: 0.000 sec
+processing frames..
+processing time: 0.000 sec
+[       OK ] TwoPassStabilizer.oneFrame (0 ms)
+[----------] 1 test from TwoPassStabilizer (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 3 test cases ran. (1872 ms total)
+[  PASSED  ] 9 tests.

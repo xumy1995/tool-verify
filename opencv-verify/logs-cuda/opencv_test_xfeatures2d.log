@@ -1,0 +1,480 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 40 tests from 40 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from Features2d_Detectors
+[ RUN      ] Features2d_Detectors.regression
+[       OK ] Features2d_Detectors.regression (93 ms)
+[----------] 1 test from Features2d_Detectors (93 ms total)
+
+[----------] 1 test from Features2d_Detector_STAR
+[ RUN      ] Features2d_Detector_STAR.regression
+[       OK ] Features2d_Detector_STAR.regression (13 ms)
+[----------] 1 test from Features2d_Detector_STAR (13 ms total)
+
+[----------] 1 test from Features2d_Detector_Harris_Laplace
+[ RUN      ] Features2d_Detector_Harris_Laplace.regression
+[ERROR:0@0.235] global persistence.cpp:589 open Can't open archive: '/data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/features2d/feature_detectors/detector-harris-laplace.xml.gz' mode=rb3
+[       OK ] Features2d_Detector_Harris_Laplace.regression (107 ms)
+[----------] 1 test from Features2d_Detector_Harris_Laplace (107 ms total)
+
+[----------] 1 test from Features2d_Detector_Harris_Laplace_Affine_Keypoint_Invariance
+[ RUN      ] Features2d_Detector_Harris_Laplace_Affine_Keypoint_Invariance.regression
+[       OK ] Features2d_Detector_Harris_Laplace_Affine_Keypoint_Invariance.regression (82 ms)
+[----------] 1 test from Features2d_Detector_Harris_Laplace_Affine_Keypoint_Invariance (82 ms total)
+
+[----------] 1 test from Features2d_Detector_Harris_Laplace_Affine
+[ RUN      ] Features2d_Detector_Harris_Laplace_Affine.regression
+[ERROR:0@0.424] global persistence.cpp:589 open Can't open archive: '/data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/features2d/feature_detectors/detector-harris-laplace-affine.xml.gz' mode=rb3
+[       OK ] Features2d_Detector_Harris_Laplace_Affine.regression (83 ms)
+[----------] 1 test from Features2d_Detector_Harris_Laplace_Affine (83 ms total)
+
+[----------] 1 test from Features2d_Detector_TBMR_Affine
+[ RUN      ] Features2d_Detector_TBMR_Affine.regression
+[       OK ] Features2d_Detector_TBMR_Affine.regression (24 ms)
+[----------] 1 test from Features2d_Detector_TBMR_Affine (24 ms total)
+
+[----------] 1 test from Features2d_DescriptorExtractor_DAISY
+[ RUN      ] Features2d_DescriptorExtractor_DAISY.regression
+Exact count (dist == 0): 0 (0%)
+Failed count (dist > 0.05): 0 (0%)
+Max distance between valid and computed descriptors ([200 x 676]): 0.000303181
+[       OK ] Features2d_DescriptorExtractor_DAISY.regression (33 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_DAISY (33 ms total)
+
+[----------] 1 test from Features2d_DescriptorExtractor_FREAK
+[ RUN      ] Features2d_DescriptorExtractor_FREAK.regression
+Exact count (dist == 0): 7 (2%)
+Failed count (dist > 12): 3 (1%)
+Max distance between valid and computed descriptors ([64 x 286]): 81
+[       OK ] Features2d_DescriptorExtractor_FREAK.regression (33 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_FREAK (33 ms total)
+
+[----------] 1 test from Features2d_DescriptorExtractor_BRIEF
+[ RUN      ] Features2d_DescriptorExtractor_BRIEF.regression
+Exact count (dist == 0): 625 (99%)
+Failed count (dist > 1): 0 (0%)
+Max distance between valid and computed descriptors ([32 x 631]): 1
+[       OK ] Features2d_DescriptorExtractor_BRIEF.regression (11 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_BRIEF (11 ms total)
+
+[----------] 1 test from Features2d_DescriptorExtractor_LUCID
+[ RUN      ] Features2d_DescriptorExtractor_LUCID.regression
+Exact count (dist == 0): 676 (100%)
+Failed count (dist > 2): 0 (0%)
+Max distance between valid and computed descriptors ([27 x 676]): 0
+[       OK ] Features2d_DescriptorExtractor_LUCID.regression (11 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_LUCID (11 ms total)
+
+[----------] 1 test from Features2d_DescriptorExtractor_LATCH
+[ RUN      ] Features2d_DescriptorExtractor_LATCH.regression
+Exact count (dist == 0): 624 (97%)
+Failed count (dist > 1): 0 (0%)
+Max distance between valid and computed descriptors ([32 x 638]): 1
+[       OK ] Features2d_DescriptorExtractor_LATCH.regression (26 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_LATCH (26 ms total)
+
+[----------] 1 test from Features2d_DescriptorExtractor_BEBLID
+[ RUN      ] Features2d_DescriptorExtractor_BEBLID.regression
+Exact count (dist == 0): 676 (100%)
+Failed count (dist > 1): 0 (0%)
+Max distance between valid and computed descriptors ([64 x 676]): 0
+[       OK ] Features2d_DescriptorExtractor_BEBLID.regression (11 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_BEBLID (11 ms total)
+
+[----------] 1 test from Features2d_DescriptorExtractor_TEBLID
+[ RUN      ] Features2d_DescriptorExtractor_TEBLID.regression
+Exact count (dist == 0): 676 (100%)
+Failed count (dist > 1): 0 (0%)
+Max distance between valid and computed descriptors ([32 x 676]): 0
+[       OK ] Features2d_DescriptorExtractor_TEBLID.regression (10 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_TEBLID (10 ms total)
+
+[----------] 1 test from Features2d_DescriptorExtractor_VGG
+[ RUN      ] Features2d_DescriptorExtractor_VGG.regression
+Exact count (dist == 0): 0 (0%)
+Failed count (dist > 0.03): 0 (0%)
+Max distance between valid and computed descriptors ([120 x 676]): 0.0100736
+[       OK ] Features2d_DescriptorExtractor_VGG.regression (57 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_VGG (57 ms total)
+
+[----------] 1 test from Features2d_DescriptorExtractor_BGM
+[ RUN      ] Features2d_DescriptorExtractor_BGM.regression
+Exact count (dist == 0): 645 (95%)
+Failed count (dist > 12): 0 (0%)
+Max distance between valid and computed descriptors ([32 x 676]): 3
+[       OK ] Features2d_DescriptorExtractor_BGM.regression (17 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_BGM (17 ms total)
+
+[----------] 1 test from Features2d_DescriptorExtractor_BGM_HARD
+[ RUN      ] Features2d_DescriptorExtractor_BGM_HARD.regression
+Exact count (dist == 0): 651 (96%)
+Failed count (dist > 12): 0 (0%)
+Max distance between valid and computed descriptors ([16 x 676]): 3
+[       OK ] Features2d_DescriptorExtractor_BGM_HARD.regression (11 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_BGM_HARD (11 ms total)
+
+[----------] 1 test from Features2d_DescriptorExtractor_BGM_BILINEAR
+[ RUN      ] Features2d_DescriptorExtractor_BGM_BILINEAR.regression
+Exact count (dist == 0): 634 (93%)
+Failed count (dist > 15): 0 (0%)
+Max distance between valid and computed descriptors ([32 x 676]): 4
+[       OK ] Features2d_DescriptorExtractor_BGM_BILINEAR.regression (12 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_BGM_BILINEAR (12 ms total)
+
+[----------] 1 test from Features2d_DescriptorExtractor_LBGM
+[ RUN      ] Features2d_DescriptorExtractor_LBGM.regression
+Exact count (dist == 0): 632 (93%)
+Failed count (dist > 1): 0 (0%)
+Max distance between valid and computed descriptors ([64 x 676]): 0.341902
+[       OK ] Features2d_DescriptorExtractor_LBGM.regression (20 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_LBGM (20 ms total)
+
+[----------] 1 test from Features2d_DescriptorExtractor_BINBOOST_64
+[ RUN      ] Features2d_DescriptorExtractor_BINBOOST_64.regression
+Exact count (dist == 0): 669 (98%)
+Failed count (dist > 12): 0 (0%)
+Max distance between valid and computed descriptors ([8 x 676]): 1
+[       OK ] Features2d_DescriptorExtractor_BINBOOST_64.regression (14 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_BINBOOST_64 (14 ms total)
+
+[----------] 1 test from Features2d_DescriptorExtractor_BINBOOST_128
+[ RUN      ] Features2d_DescriptorExtractor_BINBOOST_128.regression
+Exact count (dist == 0): 663 (98%)
+Failed count (dist > 12): 0 (0%)
+Max distance between valid and computed descriptors ([16 x 676]): 1
+[       OK ] Features2d_DescriptorExtractor_BINBOOST_128.regression (17 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_BINBOOST_128 (17 ms total)
+
+[----------] 1 test from Features2d_DescriptorExtractor_BINBOOST_256
+[ RUN      ] Features2d_DescriptorExtractor_BINBOOST_256.regression
+Exact count (dist == 0): 651 (96%)
+Failed count (dist > 12): 0 (0%)
+Max distance between valid and computed descriptors ([32 x 676]): 2
+[       OK ] Features2d_DescriptorExtractor_BINBOOST_256.regression (18 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_BINBOOST_256 (18 ms total)
+
+[----------] 1 test from Features2d_SIFTHomographyTest
+[ RUN      ] Features2d_SIFTHomographyTest.regression
+[       OK ] Features2d_SIFTHomographyTest.regression (60 ms)
+[----------] 1 test from Features2d_SIFTHomographyTest (60 ms total)
+
+[----------] 1 test from Features2d_SIFT_using_mask
+[ RUN      ] Features2d_SIFT_using_mask.regression
+[       OK ] Features2d_SIFT_using_mask.regression (70 ms)
+[----------] 1 test from Features2d_SIFT_using_mask (70 ms total)
+
+[----------] 1 test from XFeatures2d_GMSMatcher
+[ RUN      ] XFeatures2d_GMSMatcher.gms_matcher_regression
+[       OK ] XFeatures2d_GMSMatcher.gms_matcher_regression (532 ms)
+[----------] 1 test from XFeatures2d_GMSMatcher (532 ms total)
+
+[----------] 1 test from Features2d_Detector_Keypoints_Star
+[ RUN      ] Features2d_Detector_Keypoints_Star.validation
+[       OK ] Features2d_Detector_Keypoints_Star.validation (9 ms)
+[----------] 1 test from Features2d_Detector_Keypoints_Star (9 ms total)
+
+[----------] 1 test from Features2d_Detector_Keypoints_MSDDetector
+[ RUN      ] Features2d_Detector_Keypoints_MSDDetector.validation
+[       OK ] Features2d_Detector_Keypoints_MSDDetector.validation (41 ms)
+[----------] 1 test from Features2d_Detector_Keypoints_MSDDetector (41 ms total)
+
+[----------] 1 test from Features2d_Detector_Keypoints_TBMRDetector
+[ RUN      ] Features2d_Detector_Keypoints_TBMRDetector.validation
+[       OK ] Features2d_Detector_Keypoints_TBMRDetector.validation (22 ms)
+[----------] 1 test from Features2d_Detector_Keypoints_TBMRDetector (22 ms total)
+
+[----------] 1 test from XFeatures2d_LogosMatcher
+[ RUN      ] XFeatures2d_LogosMatcher.logos_matcher_regression
+[       OK ] XFeatures2d_LogosMatcher.logos_matcher_regression (69 ms)
+[----------] 1 test from XFeatures2d_LogosMatcher (69 ms total)
+
+[----------] 1 test from LATCH/DescriptorRotationInvariance
+[ RUN      ] LATCH/DescriptorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.98)
+Keypoints: 622
+angle = 0, inliers = 581, descInliersRatio = 1
+angle = 15, inliers = 581, descInliersRatio = 1
+angle = 30, inliers = 580, descInliersRatio = 0.998279
+angle = 45, inliers = 581, descInliersRatio = 1
+angle = 60, inliers = 581, descInliersRatio = 1
+angle = 75, inliers = 581, descInliersRatio = 1
+angle = 90, inliers = 581, descInliersRatio = 1
+angle = 105, inliers = 581, descInliersRatio = 1
+angle = 120, inliers = 580, descInliersRatio = 0.998279
+angle = 135, inliers = 581, descInliersRatio = 1
+angle = 150, inliers = 581, descInliersRatio = 1
+angle = 165, inliers = 581, descInliersRatio = 1
+angle = 180, inliers = 581, descInliersRatio = 1
+angle = 195, inliers = 581, descInliersRatio = 1
+angle = 210, inliers = 580, descInliersRatio = 0.998279
+angle = 225, inliers = 581, descInliersRatio = 1
+angle = 240, inliers = 581, descInliersRatio = 1
+angle = 255, inliers = 581, descInliersRatio = 1
+angle = 270, inliers = 581, descInliersRatio = 1
+angle = 285, inliers = 581, descInliersRatio = 1
+angle = 300, inliers = 580, descInliersRatio = 0.998279
+angle = 315, inliers = 581, descInliersRatio = 1
+angle = 330, inliers = 581, descInliersRatio = 1
+angle = 345, inliers = 581, descInliersRatio = 1
+[       OK ] LATCH/DescriptorRotationInvariance.rotation/0 (446 ms)
+[----------] 1 test from LATCH/DescriptorRotationInvariance (446 ms total)
+
+[----------] 1 test from BEBLID/DescriptorRotationInvariance
+[ RUN      ] BEBLID/DescriptorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.98)
+Keypoints: 622
+angle = 0, inliers = 622, descInliersRatio = 1
+angle = 15, inliers = 622, descInliersRatio = 1
+angle = 30, inliers = 622, descInliersRatio = 1
+angle = 45, inliers = 622, descInliersRatio = 1
+angle = 60, inliers = 622, descInliersRatio = 1
+angle = 75, inliers = 622, descInliersRatio = 1
+angle = 90, inliers = 622, descInliersRatio = 1
+angle = 105, inliers = 622, descInliersRatio = 1
+angle = 120, inliers = 622, descInliersRatio = 1
+angle = 135, inliers = 622, descInliersRatio = 1
+angle = 150, inliers = 622, descInliersRatio = 1
+angle = 165, inliers = 622, descInliersRatio = 1
+angle = 180, inliers = 622, descInliersRatio = 1
+angle = 195, inliers = 622, descInliersRatio = 1
+angle = 210, inliers = 622, descInliersRatio = 1
+angle = 225, inliers = 622, descInliersRatio = 1
+angle = 240, inliers = 622, descInliersRatio = 1
+angle = 255, inliers = 622, descInliersRatio = 1
+angle = 270, inliers = 622, descInliersRatio = 1
+angle = 285, inliers = 622, descInliersRatio = 1
+angle = 300, inliers = 622, descInliersRatio = 1
+angle = 315, inliers = 622, descInliersRatio = 1
+angle = 330, inliers = 622, descInliersRatio = 1
+angle = 345, inliers = 622, descInliersRatio = 1
+[       OK ] BEBLID/DescriptorRotationInvariance.rotation/0 (79 ms)
+[----------] 1 test from BEBLID/DescriptorRotationInvariance (79 ms total)
+
+[----------] 1 test from TEBLID/DescriptorRotationInvariance
+[ RUN      ] TEBLID/DescriptorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.98)
+Keypoints: 622
+angle = 0, inliers = 622, descInliersRatio = 1
+angle = 15, inliers = 622, descInliersRatio = 1
+angle = 30, inliers = 622, descInliersRatio = 1
+angle = 45, inliers = 621, descInliersRatio = 0.998392
+angle = 60, inliers = 622, descInliersRatio = 1
+angle = 75, inliers = 622, descInliersRatio = 1
+angle = 90, inliers = 622, descInliersRatio = 1
+angle = 105, inliers = 622, descInliersRatio = 1
+angle = 120, inliers = 622, descInliersRatio = 1
+angle = 135, inliers = 621, descInliersRatio = 0.998392
+angle = 150, inliers = 622, descInliersRatio = 1
+angle = 165, inliers = 622, descInliersRatio = 1
+angle = 180, inliers = 622, descInliersRatio = 1
+angle = 195, inliers = 622, descInliersRatio = 1
+angle = 210, inliers = 622, descInliersRatio = 1
+angle = 225, inliers = 621, descInliersRatio = 0.998392
+angle = 240, inliers = 622, descInliersRatio = 1
+angle = 255, inliers = 622, descInliersRatio = 1
+angle = 270, inliers = 622, descInliersRatio = 1
+angle = 285, inliers = 622, descInliersRatio = 1
+angle = 300, inliers = 622, descInliersRatio = 1
+angle = 315, inliers = 621, descInliersRatio = 0.998392
+angle = 330, inliers = 622, descInliersRatio = 1
+angle = 345, inliers = 622, descInliersRatio = 1
+[       OK ] TEBLID/DescriptorRotationInvariance.rotation/0 (74 ms)
+[----------] 1 test from TEBLID/DescriptorRotationInvariance (74 ms total)
+
+[----------] 1 test from DAISY/DescriptorRotationInvariance
+[ RUN      ] DAISY/DescriptorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.79)
+Keypoints: 1050
+angle = 0, inliers = 1050, descInliersRatio = 1
+angle = 15, inliers = 1049, descInliersRatio = 0.999048
+angle = 30, inliers = 1049, descInliersRatio = 0.999048
+angle = 45, inliers = 1050, descInliersRatio = 1
+angle = 60, inliers = 1049, descInliersRatio = 0.999048
+angle = 75, inliers = 1050, descInliersRatio = 1
+angle = 90, inliers = 1050, descInliersRatio = 1
+angle = 105, inliers = 1049, descInliersRatio = 0.999048
+angle = 120, inliers = 1049, descInliersRatio = 0.999048
+angle = 135, inliers = 1050, descInliersRatio = 1
+angle = 150, inliers = 1049, descInliersRatio = 0.999048
+angle = 165, inliers = 1050, descInliersRatio = 1
+angle = 180, inliers = 1050, descInliersRatio = 1
+angle = 195, inliers = 1049, descInliersRatio = 0.999048
+angle = 210, inliers = 1049, descInliersRatio = 0.999048
+angle = 225, inliers = 1050, descInliersRatio = 1
+angle = 240, inliers = 1049, descInliersRatio = 0.999048
+angle = 255, inliers = 1050, descInliersRatio = 1
+angle = 270, inliers = 1050, descInliersRatio = 1
+angle = 285, inliers = 1049, descInliersRatio = 0.999048
+angle = 300, inliers = 1049, descInliersRatio = 0.999048
+angle = 315, inliers = 1050, descInliersRatio = 1
+angle = 330, inliers = 1049, descInliersRatio = 0.999048
+angle = 345, inliers = 1050, descInliersRatio = 1
+[       OK ] DAISY/DescriptorRotationInvariance.rotation/0 (1024 ms)
+[----------] 1 test from DAISY/DescriptorRotationInvariance (1024 ms total)
+
+[----------] 1 test from VGG120/DescriptorRotationInvariance
+[ RUN      ] VGG120/DescriptorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.97)
+Keypoints: 551
+angle = 0, inliers = 551, descInliersRatio = 1
+angle = 15, inliers = 551, descInliersRatio = 1
+angle = 30, inliers = 551, descInliersRatio = 1
+angle = 45, inliers = 551, descInliersRatio = 1
+angle = 60, inliers = 551, descInliersRatio = 1
+angle = 75, inliers = 551, descInliersRatio = 1
+angle = 90, inliers = 551, descInliersRatio = 1
+angle = 105, inliers = 551, descInliersRatio = 1
+angle = 120, inliers = 551, descInliersRatio = 1
+angle = 135, inliers = 551, descInliersRatio = 1
+angle = 150, inliers = 551, descInliersRatio = 1
+angle = 165, inliers = 551, descInliersRatio = 1
+angle = 180, inliers = 551, descInliersRatio = 1
+angle = 195, inliers = 551, descInliersRatio = 1
+angle = 210, inliers = 551, descInliersRatio = 1
+angle = 225, inliers = 551, descInliersRatio = 1
+angle = 240, inliers = 551, descInliersRatio = 1
+angle = 255, inliers = 551, descInliersRatio = 1
+angle = 270, inliers = 551, descInliersRatio = 1
+angle = 285, inliers = 551, descInliersRatio = 1
+angle = 300, inliers = 551, descInliersRatio = 1
+angle = 315, inliers = 551, descInliersRatio = 1
+angle = 330, inliers = 551, descInliersRatio = 1
+angle = 345, inliers = 551, descInliersRatio = 1
+[       OK ] VGG120/DescriptorRotationInvariance.rotation/0 (831 ms)
+[----------] 1 test from VGG120/DescriptorRotationInvariance (831 ms total)
+
+[----------] 1 test from VGG80/DescriptorRotationInvariance
+[ RUN      ] VGG80/DescriptorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.97)
+Keypoints: 551
+angle = 0, inliers = 551, descInliersRatio = 1
+angle = 15, inliers = 551, descInliersRatio = 1
+angle = 30, inliers = 551, descInliersRatio = 1
+angle = 45, inliers = 551, descInliersRatio = 1
+angle = 60, inliers = 551, descInliersRatio = 1
+angle = 75, inliers = 551, descInliersRatio = 1
+angle = 90, inliers = 551, descInliersRatio = 1
+angle = 105, inliers = 551, descInliersRatio = 1
+angle = 120, inliers = 551, descInliersRatio = 1
+angle = 135, inliers = 551, descInliersRatio = 1
+angle = 150, inliers = 551, descInliersRatio = 1
+angle = 165, inliers = 551, descInliersRatio = 1
+angle = 180, inliers = 551, descInliersRatio = 1
+angle = 195, inliers = 551, descInliersRatio = 1
+angle = 210, inliers = 551, descInliersRatio = 1
+angle = 225, inliers = 551, descInliersRatio = 1
+angle = 240, inliers = 551, descInliersRatio = 1
+angle = 255, inliers = 551, descInliersRatio = 1
+angle = 270, inliers = 551, descInliersRatio = 1
+angle = 285, inliers = 551, descInliersRatio = 1
+angle = 300, inliers = 551, descInliersRatio = 1
+angle = 315, inliers = 551, descInliersRatio = 1
+angle = 330, inliers = 551, descInliersRatio = 1
+angle = 345, inliers = 551, descInliersRatio = 1
+[       OK ] VGG80/DescriptorRotationInvariance.rotation/0 (802 ms)
+[----------] 1 test from VGG80/DescriptorRotationInvariance (802 ms total)
+
+[----------] 1 test from VGG64/DescriptorRotationInvariance
+[ RUN      ] VGG64/DescriptorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.97)
+Keypoints: 551
+angle = 0, inliers = 551, descInliersRatio = 1
+angle = 15, inliers = 551, descInliersRatio = 1
+angle = 30, inliers = 551, descInliersRatio = 1
+angle = 45, inliers = 551, descInliersRatio = 1
+angle = 60, inliers = 551, descInliersRatio = 1
+angle = 75, inliers = 551, descInliersRatio = 1
+angle = 90, inliers = 551, descInliersRatio = 1
+angle = 105, inliers = 551, descInliersRatio = 1
+angle = 120, inliers = 551, descInliersRatio = 1
+angle = 135, inliers = 551, descInliersRatio = 1
+angle = 150, inliers = 551, descInliersRatio = 1
+angle = 165, inliers = 551, descInliersRatio = 1
+angle = 180, inliers = 551, descInliersRatio = 1
+angle = 195, inliers = 551, descInliersRatio = 1
+angle = 210, inliers = 551, descInliersRatio = 1
+angle = 225, inliers = 551, descInliersRatio = 1
+angle = 240, inliers = 551, descInliersRatio = 1
+angle = 255, inliers = 551, descInliersRatio = 1
+angle = 270, inliers = 551, descInliersRatio = 1
+angle = 285, inliers = 551, descInliersRatio = 1
+angle = 300, inliers = 551, descInliersRatio = 1
+angle = 315, inliers = 551, descInliersRatio = 1
+angle = 330, inliers = 551, descInliersRatio = 1
+angle = 345, inliers = 551, descInliersRatio = 1
+[       OK ] VGG64/DescriptorRotationInvariance.rotation/0 (809 ms)
+[----------] 1 test from VGG64/DescriptorRotationInvariance (809 ms total)
+
+[----------] 1 test from VGG48/DescriptorRotationInvariance
+[ RUN      ] VGG48/DescriptorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.97)
+Keypoints: 551
+angle = 0, inliers = 551, descInliersRatio = 1
+angle = 15, inliers = 551, descInliersRatio = 1
+angle = 30, inliers = 551, descInliersRatio = 1
+angle = 45, inliers = 551, descInliersRatio = 1
+angle = 60, inliers = 551, descInliersRatio = 1
+angle = 75, inliers = 551, descInliersRatio = 1
+angle = 90, inliers = 551, descInliersRatio = 1
+angle = 105, inliers = 551, descInliersRatio = 1
+angle = 120, inliers = 551, descInliersRatio = 1
+angle = 135, inliers = 551, descInliersRatio = 1
+angle = 150, inliers = 551, descInliersRatio = 1
+angle = 165, inliers = 551, descInliersRatio = 1
+angle = 180, inliers = 551, descInliersRatio = 1
+angle = 195, inliers = 551, descInliersRatio = 1
+angle = 210, inliers = 551, descInliersRatio = 1
+angle = 225, inliers = 551, descInliersRatio = 1
+angle = 240, inliers = 551, descInliersRatio = 1
+angle = 255, inliers = 551, descInliersRatio = 1
+angle = 270, inliers = 551, descInliersRatio = 1
+angle = 285, inliers = 551, descInliersRatio = 1
+angle = 300, inliers = 551, descInliersRatio = 1
+angle = 315, inliers = 551, descInliersRatio = 1
+angle = 330, inliers = 551, descInliersRatio = 1
+angle = 345, inliers = 551, descInliersRatio = 1
+[       OK ] VGG48/DescriptorRotationInvariance.rotation/0 (752 ms)
+[----------] 1 test from VGG48/DescriptorRotationInvariance (752 ms total)
+
+[----------] 1 test from VGG120/DescriptorScaleInvariance
+[ RUN      ] VGG120/DescriptorScaleInvariance.scale/0, where GetParam() = ("detectors_descriptors_evaluation/images_datasets/bikes/img1.png", 0.98)
+Keypoints: 1808
+scale = 1.5, inliers = 1808, descInliersRatio = 1
+scale = 2, inliers = 1805, descInliersRatio = 0.998341
+scale = 2.5, inliers = 1796, descInliersRatio = 0.993363
+[       OK ] VGG120/DescriptorScaleInvariance.scale/0 (781 ms)
+[----------] 1 test from VGG120/DescriptorScaleInvariance (781 ms total)
+
+[----------] 1 test from VGG80/DescriptorScaleInvariance
+[ RUN      ] VGG80/DescriptorScaleInvariance.scale/0, where GetParam() = ("detectors_descriptors_evaluation/images_datasets/bikes/img1.png", 0.98)
+Keypoints: 1808
+scale = 1.5, inliers = 1804, descInliersRatio = 0.997788
+scale = 2, inliers = 1803, descInliersRatio = 0.997235
+scale = 2.5, inliers = 1787, descInliersRatio = 0.988385
+[       OK ] VGG80/DescriptorScaleInvariance.scale/0 (784 ms)
+[----------] 1 test from VGG80/DescriptorScaleInvariance (784 ms total)
+
+[----------] 1 test from VGG64/DescriptorScaleInvariance
+[ RUN      ] VGG64/DescriptorScaleInvariance.scale/0, where GetParam() = ("detectors_descriptors_evaluation/images_datasets/bikes/img1.png", 0.97)
+Keypoints: 1808
+scale = 1.5, inliers = 1802, descInliersRatio = 0.996681
+scale = 2, inliers = 1801, descInliersRatio = 0.996128
+scale = 2.5, inliers = 1779, descInliersRatio = 0.98396
+[       OK ] VGG64/DescriptorScaleInvariance.scale/0 (787 ms)
+[----------] 1 test from VGG64/DescriptorScaleInvariance (787 ms total)
+
+[----------] 1 test from VGG48/DescriptorScaleInvariance
+[ RUN      ] VGG48/DescriptorScaleInvariance.scale/0, where GetParam() = ("detectors_descriptors_evaluation/images_datasets/bikes/img1.png", 0.93)
+Keypoints: 1808
+scale = 1.5, inliers = 1799, descInliersRatio = 0.995022
+scale = 2, inliers = 1787, descInliersRatio = 0.988385
+scale = 2.5, inliers = 1728, descInliersRatio = 0.955752
+[       OK ] VGG48/DescriptorScaleInvariance.scale/0 (757 ms)
+[----------] 1 test from VGG48/DescriptorScaleInvariance (757 ms total)
+
+[----------] Global test environment tear-down
+[==========] 40 tests from 40 test cases ran. (9432 ms total)
+[  PASSED  ] 40 tests.

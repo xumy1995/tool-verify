@@ -1,0 +1,73 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 17 tests from 5 test cases.
+[----------] Global test environment set-up.
+[----------] 5 tests from CV_Quality_BRISQUE
+[ RUN      ] CV_Quality_BRISQUE.static_
+[     SKIP ] OpenCV tests: Can't find data file: brisque_range_live.yml
+[       OK ] CV_Quality_BRISQUE.static_ (3 ms)
+[ RUN      ] CV_Quality_BRISQUE.single_channel
+[     SKIP ] OpenCV tests: Can't find data file: brisque_model_live.yml
+[       OK ] CV_Quality_BRISQUE.single_channel (10 ms)
+[ RUN      ] CV_Quality_BRISQUE.multi_channel
+[     SKIP ] OpenCV tests: Can't find data file: brisque_model_live.yml
+[       OK ] CV_Quality_BRISQUE.multi_channel (10 ms)
+[ RUN      ] CV_Quality_BRISQUE.model_persistence
+[     SKIP ] OpenCV tests: Can't find data file: brisque_model_live.yml
+[       OK ] CV_Quality_BRISQUE.model_persistence (1 ms)
+[ RUN      ] CV_Quality_BRISQUE.compute_features
+[     SKIP ] OpenCV tests: Can't find data file: brisque_model_live.yml
+[       OK ] CV_Quality_BRISQUE.compute_features (1 ms)
+[----------] 5 tests from CV_Quality_BRISQUE (25 ms total)
+
+[----------] 3 tests from CV_Quality_GMSD
+[ RUN      ] CV_Quality_GMSD.static_
+[       OK ] CV_Quality_GMSD.static_ (25 ms)
+[ RUN      ] CV_Quality_GMSD.single_channel
+[       OK ] CV_Quality_GMSD.single_channel (8 ms)
+[ RUN      ] CV_Quality_GMSD.multi_channel
+[       OK ] CV_Quality_GMSD.multi_channel (22 ms)
+[----------] 3 tests from CV_Quality_GMSD (55 ms total)
+
+[----------] 3 tests from CV_Quality_MSE
+[ RUN      ] CV_Quality_MSE.static_
+[       OK ] CV_Quality_MSE.static_ (4 ms)
+[ RUN      ] CV_Quality_MSE.single_channel
+[       OK ] CV_Quality_MSE.single_channel (8 ms)
+[ RUN      ] CV_Quality_MSE.multi_channel
+[       OK ] CV_Quality_MSE.multi_channel (17 ms)
+[----------] 3 tests from CV_Quality_MSE (29 ms total)
+
+[----------] 3 tests from CV_Quality_PSNR
+[ RUN      ] CV_Quality_PSNR.static_
+[       OK ] CV_Quality_PSNR.static_ (4 ms)
+[ RUN      ] CV_Quality_PSNR.single_channel
+[       OK ] CV_Quality_PSNR.single_channel (7 ms)
+[ RUN      ] CV_Quality_PSNR.multi_channel
+[       OK ] CV_Quality_PSNR.multi_channel (19 ms)
+[----------] 3 tests from CV_Quality_PSNR (30 ms total)
+
+[----------] 3 tests from CV_Quality_SSIM
+[ RUN      ] CV_Quality_SSIM.static_
+[       OK ] CV_Quality_SSIM.static_ (7 ms)
+[ RUN      ] CV_Quality_SSIM.single_channel
+[       OK ] CV_Quality_SSIM.single_channel (9 ms)
+[ RUN      ] CV_Quality_SSIM.multi_channel
+[       OK ] CV_Quality_SSIM.multi_channel (39 ms)
+[----------] 3 tests from CV_Quality_SSIM (55 ms total)
+
+[----------] Global test environment tear-down
+[ SKIPSTAT ] 5 tests skipped
+[ SKIPSTAT ] TAG='skip_other' skip 5 tests
+[==========] 17 tests from 5 test cases ran. (194 ms total)
+[  PASSED  ] 17 tests.

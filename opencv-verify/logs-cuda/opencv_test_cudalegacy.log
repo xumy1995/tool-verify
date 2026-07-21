@@ -1,0 +1,88 @@
+*** CUDA Device Query (Runtime API) version (CUDART static linking) *** 
+
+Device count: 1
+
+Device 0: "NVIDIA A100-SXM4-40GB"
+  CUDA Driver Version / Runtime Version          12.40 / 12.40
+  CUDA Capability Major/Minor version number:    8.0
+  Total amount of global memory:                 40507 MBytes (42474471424 bytes)
+  GPU Clock Speed:                               1.41 GHz
+  Max Texture Dimension Size (x,y,z)             1D=(131072), 2D=(131072,65536), 3D=(16384,16384,16384)
+  Max Layered Texture Size (dim) x layers        1D=(32768) x 2048, 2D=(32768,32768) x 2048
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 65536
+  Warp size:                                     32
+  Maximum number of threads per block:           1024
+  Maximum sizes of each dimension of a block:    1024 x 1024 x 64
+  Maximum sizes of each dimension of a grid:     2147483647 x 65535 x 65535
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and execution:                 Yes with 3 copy engine(s)
+  Run time limit on kernels:                     No
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Concurrent kernel execution:                   Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support enabled:                Yes
+  Device is using TCC driver mode:               No
+  Device supports Unified Addressing (UVA):      Yes
+  Device PCI Bus ID / PCI location ID:           163 / 0
+  Compute Mode:
+      Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) 
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version  = 12.40, CUDA Runtime Version = 12.40, NumDevs = 1
+
+Run tests on all supported devices 
+
+[==========] Running 14 tests from 5 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from CUDA_Calib3D/TransformPoints
+[ RUN      ] CUDA_Calib3D/TransformPoints.Accuracy/0, where GetParam() = NVIDIA A100-SXM4-40GB
+[       OK ] CUDA_Calib3D/TransformPoints.Accuracy/0 (101 ms)
+[----------] 1 test from CUDA_Calib3D/TransformPoints (101 ms total)
+
+[----------] 1 test from CUDA_Calib3D/ProjectPoints
+[ RUN      ] CUDA_Calib3D/ProjectPoints.Accuracy/0, where GetParam() = NVIDIA A100-SXM4-40GB
+[       OK ] CUDA_Calib3D/ProjectPoints.Accuracy/0 (1 ms)
+[----------] 1 test from CUDA_Calib3D/ProjectPoints (1 ms total)
+
+[----------] 1 test from CUDA_Calib3D/SolvePnPRansac
+[ RUN      ] CUDA_Calib3D/SolvePnPRansac.Accuracy/0, where GetParam() = NVIDIA A100-SXM4-40GB
+[       OK ] CUDA_Calib3D/SolvePnPRansac.Accuracy/0 (136 ms)
+[----------] 1 test from CUDA_Calib3D/SolvePnPRansac (136 ms total)
+
+[----------] 6 tests from CUDA_Legacy/NPPST
+[ RUN      ] CUDA_Legacy/NPPST.Integral/0, where GetParam() = NVIDIA A100-SXM4-40GB
+[       OK ] CUDA_Legacy/NPPST.Integral/0 (511 ms)
+[ RUN      ] CUDA_Legacy/NPPST.SquaredIntegral/0, where GetParam() = NVIDIA A100-SXM4-40GB
+[       OK ] CUDA_Legacy/NPPST.SquaredIntegral/0 (251 ms)
+[ RUN      ] CUDA_Legacy/NPPST.RectStdDev/0, where GetParam() = NVIDIA A100-SXM4-40GB
+[       OK ] CUDA_Legacy/NPPST.RectStdDev/0 (798 ms)
+[ RUN      ] CUDA_Legacy/NPPST.Resize/0, where GetParam() = NVIDIA A100-SXM4-40GB
+[       OK ] CUDA_Legacy/NPPST.Resize/0 (606 ms)
+[ RUN      ] CUDA_Legacy/NPPST.VectorOperations/0, where GetParam() = NVIDIA A100-SXM4-40GB
+[       OK ] CUDA_Legacy/NPPST.VectorOperations/0 (2587 ms)
+[ RUN      ] CUDA_Legacy/NPPST.Transpose/0, where GetParam() = NVIDIA A100-SXM4-40GB
+[       OK ] CUDA_Legacy/NPPST.Transpose/0 (1914 ms)
+[----------] 6 tests from CUDA_Legacy/NPPST (6668 ms total)
+
+[----------] 5 tests from CUDA_Legacy/NCV
+[ RUN      ] CUDA_Legacy/NCV.VectorOperations/0, where GetParam() = NVIDIA A100-SXM4-40GB
+[       OK ] CUDA_Legacy/NCV.VectorOperations/0 (575 ms)
+[ RUN      ] CUDA_Legacy/NCV.HaarCascadeLoader/0, where GetParam() = NVIDIA A100-SXM4-40GB
+[       OK ] CUDA_Legacy/NCV.HaarCascadeLoader/0 (460 ms)
+[ RUN      ] CUDA_Legacy/NCV.HaarCascadeApplication/0, where GetParam() = NVIDIA A100-SXM4-40GB
+[       OK ] CUDA_Legacy/NCV.HaarCascadeApplication/0 (2809 ms)
+[ RUN      ] CUDA_Legacy/NCV.HypothesesFiltration/0, where GetParam() = NVIDIA A100-SXM4-40GB
+[       OK ] CUDA_Legacy/NCV.HypothesesFiltration/0 (655 ms)
+[ RUN      ] CUDA_Legacy/NCV.Visualization/0, where GetParam() = NVIDIA A100-SXM4-40GB
+[       OK ] CUDA_Legacy/NCV.Visualization/0 (605 ms)
+[----------] 5 tests from CUDA_Legacy/NCV (5104 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 5 test cases ran. (12010 ms total)
+[  PASSED  ] 14 tests.
+
+  YOU HAVE 1 DISABLED TEST
+

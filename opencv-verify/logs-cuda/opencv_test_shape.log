@@ -1,0 +1,40 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 4 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from Shape_SCD
+[ RUN      ] Shape_SCD.regression
+Test result: 100%
+[       OK ] Shape_SCD.regression (18208 ms)
+[----------] 1 test from Shape_SCD (18208 ms total)
+
+[----------] 1 test from ShapeEMD_SCD
+[ RUN      ] ShapeEMD_SCD.regression
+Test result: 98.4%
+[       OK ] ShapeEMD_SCD.regression (241277 ms)
+[----------] 1 test from ShapeEMD_SCD (241277 ms total)
+
+[----------] 1 test from Hauss
+[ RUN      ] Hauss.regression
+Test result: 97.6%
+[       OK ] Hauss.regression (25745 ms)
+[----------] 1 test from Hauss (25745 ms total)
+
+[----------] 1 test from computeDistance
+[ RUN      ] computeDistance.regression_4976
+[       OK ] computeDistance.regression_4976 (37 ms)
+[----------] 1 test from computeDistance (37 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 4 test cases ran. (285267 ms total)
+[  PASSED  ] 4 tests.

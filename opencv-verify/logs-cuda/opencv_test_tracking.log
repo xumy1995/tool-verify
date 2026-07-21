@@ -1,0 +1,418 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 81 tests from 6 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from AUKF
+[ RUN      ] AUKF.br_landing_point
+[       OK ] AUKF.br_landing_point (1244 ms)
+[----------] 1 test from AUKF (1244 ms total)
+
+[----------] 2 tests from MEDIAN_FLOW_Parameters
+[ RUN      ] MEDIAN_FLOW_Parameters.IO
+[       OK ] MEDIAN_FLOW_Parameters.IO (1 ms)
+[ RUN      ] MEDIAN_FLOW_Parameters.Default_Value_If_Absent
+[       OK ] MEDIAN_FLOW_Parameters.Default_Value_If_Absent (0 ms)
+[----------] 2 tests from MEDIAN_FLOW_Parameters (1 ms total)
+
+[----------] 2 tests from KCF_Parameters
+[ RUN      ] KCF_Parameters.IO
+[       OK ] KCF_Parameters.IO (0 ms)
+[ RUN      ] KCF_Parameters.Default_Value_If_Absent
+[       OK ] KCF_Parameters.Default_Value_If_Absent (0 ms)
+[----------] 2 tests from KCF_Parameters (0 ms total)
+
+[----------] 3 tests from TwistTest
+[ RUN      ] TwistTest.TestInteractionMatrix
+[       OK ] TwistTest.TestInteractionMatrix (0 ms)
+[ RUN      ] TwistTest.TestComputeWithZeroPixelVelocities
+[       OK ] TwistTest.TestComputeWithZeroPixelVelocities (1 ms)
+[ RUN      ] TwistTest.TestComputeWithNonZeroPixelVelocities
+[       OK ] TwistTest.TestComputeWithNonZeroPixelVelocities (0 ms)
+[----------] 3 tests from TwistTest (1 ms total)
+
+[----------] 1 test from UKF
+[ RUN      ] UKF.br_landing_point
+[       OK ] UKF.br_landing_point (592 ms)
+[----------] 1 test from UKF (592 ms total)
+
+[----------] 72 tests from Tracking/DistanceAndOverlap
+[ RUN      ] Tracking/DistanceAndOverlap.MedianFlow/0, where GetParam() = ("david")
+Number of frames in test data: 171
+Number of frames to test: 171
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.MedianFlow/0 (121 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.MedianFlow/1, where GetParam() = ("dudek")
+Number of frames in test data: 1144
+Number of frames to test: 1144
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.MedianFlow/1 (10 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.MedianFlow/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 811
+Number of frames to test: 811
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.MedianFlow/2 (9 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Boosting/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Boosting/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Boosting/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Boosting/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Boosting/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Boosting/2 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.KCF/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.KCF/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.KCF/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.KCF/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.KCF/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.KCF/2 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.KCF_legacy/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.KCF_legacy/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.KCF_legacy/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.KCF_legacy/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.KCF_legacy/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.KCF_legacy/2 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.TLD/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.TLD/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.TLD/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.TLD/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.TLD/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.TLD/2 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.MOSSE/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.MOSSE/0 (3 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.MOSSE/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.MOSSE/1 (6 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.MOSSE/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.MOSSE/2 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.CSRT/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.CSRT/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.CSRT/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.CSRT/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.CSRT/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.CSRT/2 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.CSRT_legacy/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.CSRT_legacy/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.CSRT_legacy/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.CSRT_legacy/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.CSRT_legacy/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.CSRT_legacy/2 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_MedianFlow/0, where GetParam() = ("david")
+Number of frames in test data: 171
+Number of frames to test: 171
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_MedianFlow/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_MedianFlow/1, where GetParam() = ("dudek")
+Number of frames in test data: 1144
+Number of frames to test: 1144
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_MedianFlow/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_MedianFlow/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 811
+Number of frames to test: 811
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_MedianFlow/2 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_Boosting/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_Boosting/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_Boosting/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_Boosting/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_Boosting/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_Boosting/2 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_KCF/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_KCF/0 (3 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_KCF/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_KCF/1 (6 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_KCF/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_KCF/2 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_KCF_legacy/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_KCF_legacy/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_KCF_legacy/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_KCF_legacy/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_KCF_legacy/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_KCF_legacy/2 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_TLD/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_TLD/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_TLD/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_TLD/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_TLD/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_TLD/2 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_MOSSE/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_MOSSE/0 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_MOSSE/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_MOSSE/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_MOSSE/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_MOSSE/2 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_CSRT/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_CSRT/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_CSRT/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_CSRT/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_CSRT/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_CSRT/2 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_CSRT_legacy/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_CSRT_legacy/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_CSRT_legacy/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_CSRT_legacy/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_CSRT_legacy/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_CSRT_legacy/2 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_MedianFlow/0, where GetParam() = ("david")
+Number of frames in test data: 171
+Number of frames to test: 171
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_MedianFlow/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_MedianFlow/1, where GetParam() = ("dudek")
+Number of frames in test data: 1144
+Number of frames to test: 1144
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_MedianFlow/1 (6 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_MedianFlow/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 811
+Number of frames to test: 811
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_MedianFlow/2 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_Boosting/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_Boosting/0 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_Boosting/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_Boosting/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_Boosting/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_Boosting/2 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_KCF/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_KCF/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_KCF/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_KCF/1 (6 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_KCF/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_KCF/2 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_KCF_legacy/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_KCF_legacy/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_KCF_legacy/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_KCF_legacy/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_KCF_legacy/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_KCF_legacy/2 (6 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_TLD/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_TLD/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_TLD/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_TLD/1 (6 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_TLD/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_TLD/2 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_MOSSE/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_MOSSE/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_MOSSE/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_MOSSE/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_MOSSE/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_MOSSE/2 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_CSRT/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_CSRT/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_CSRT/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_CSRT/1 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_CSRT/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_CSRT/2 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_CSRT_legacy/0, where GetParam() = ("david")
+Number of frames in test data: 17
+Number of frames to test: 17
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_CSRT_legacy/0 (4 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_CSRT_legacy/1, where GetParam() = ("dudek")
+Number of frames in test data: 106
+Number of frames to test: 106
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_CSRT_legacy/1 (6 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_CSRT_legacy/2, where GetParam() = ("faceocc2")
+Number of frames in test data: 51
+Number of frames to test: 51
+[     SKIP ] Can't open video file
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_CSRT_legacy/2 (4 ms)
+[----------] 72 tests from Tracking/DistanceAndOverlap (454 ms total)
+
+[----------] Global test environment tear-down
+[ SKIPSTAT ] 72 tests skipped
+[ SKIPSTAT ] TAG='skip_other' skip 72 tests
+[==========] 81 tests from 6 test cases ran. (2292 ms total)
+[  PASSED  ] 81 tests.
+
+  YOU HAVE 4 DISABLED TESTS
+

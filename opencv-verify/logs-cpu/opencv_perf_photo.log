@@ -1,0 +1,73 @@
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: NO
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+OpenCL is disabled
+[==========] Running 13 tests from 5 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from OCL_Photo_DenoisingGrayscale
+[ RUN      ] OCL_Photo_DenoisingGrayscale.DenoisingGrayscale
+[ PERFSTAT ]    (samples=10   mean=106.60   median=105.55   min=104.90   stddev=2.77 (2.6%))
+[       OK ] OCL_Photo_DenoisingGrayscale.DenoisingGrayscale (1085 ms)
+[----------] 1 test from OCL_Photo_DenoisingGrayscale (1085 ms total)
+
+[----------] 1 test from OCL_Photo_DenoisingColored
+[ RUN      ] OCL_Photo_DenoisingColored.DenoisingColored
+[ PERFSTAT ]    (samples=10   mean=271.97   median=269.18   min=268.93   stddev=8.40 (3.1%))
+[       OK ] OCL_Photo_DenoisingColored.DenoisingColored (2733 ms)
+[----------] 1 test from OCL_Photo_DenoisingColored (2733 ms total)
+
+[----------] 3 tests from HDR
+[ RUN      ] HDR.Mertens
+[ PERFSTAT ]    (samples=100   mean=46.06   median=46.59   min=36.70   stddev=3.82 (8.3%))
+[       OK ] HDR.Mertens (4880 ms)
+[ RUN      ] HDR.Debevec
+[ PERFSTAT ]    (samples=13   mean=90.27   median=90.80   min=86.12   stddev=2.48 (2.7%))
+[       OK ] HDR.Debevec (1346 ms)
+[ RUN      ] HDR.Robertson
+[ PERFSTAT ]    (samples=15   mean=66.69   median=66.63   min=63.26   stddev=1.98 (3.0%))
+[       OK ] HDR.Robertson (1168 ms)
+[----------] 3 tests from HDR (7394 ms total)
+
+[----------] 6 tests from InpaintArea_InpaintingMethod_inpaint
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/0, where GetParam() = (24x24, INPAINT_NS)
+[ PERFSTAT ]    (samples=13   mean=7.07   median=7.04   min=6.92   stddev=0.17 (2.4%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/0 (113 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/1, where GetParam() = (24x24, INPAINT_TELEA)
+[ PERFSTAT ]    (samples=10   mean=6.97   median=6.97   min=6.75   stddev=0.18 (2.5%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/1 (82 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/2, where GetParam() = (32x32, INPAINT_NS)
+[ PERFSTAT ]    (samples=10   mean=10.97   median=10.98   min=10.79   stddev=0.13 (1.2%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/2 (121 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/3, where GetParam() = (32x32, INPAINT_TELEA)
+[ PERFSTAT ]    (samples=10   mean=9.98   median=9.96   min=9.81   stddev=0.12 (1.2%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/3 (112 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/4, where GetParam() = (64x64, INPAINT_NS)
+[ PERFSTAT ]    (samples=10   mean=35.93   median=35.59   min=35.55   stddev=0.55 (1.5%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/4 (371 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/5, where GetParam() = (64x64, INPAINT_TELEA)
+[ PERFSTAT ]    (samples=10   mean=28.96   median=28.91   min=28.87   stddev=0.12 (0.4%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/5 (302 ms)
+[----------] 6 tests from InpaintArea_InpaintingMethod_inpaint (1101 ms total)
+
+[----------] 2 tests from Perf_InpaintingMethod_inpaintDots
+[ RUN      ] Perf_InpaintingMethod_inpaintDots.inpaintDots/0, where GetParam() = INPAINT_NS
+[ PERFSTAT ]    (samples=13   mean=26.24   median=26.21   min=26.11   stddev=0.15 (0.6%))
+[       OK ] Perf_InpaintingMethod_inpaintDots.inpaintDots/0 (359 ms)
+[ RUN      ] Perf_InpaintingMethod_inpaintDots.inpaintDots/1, where GetParam() = INPAINT_TELEA
+[ PERFSTAT ]    (samples=10   mean=86.85   median=86.36   min=85.39   stddev=1.14 (1.3%))
+[       OK ] Perf_InpaintingMethod_inpaintDots.inpaintDots/1 (881 ms)
+[----------] 2 tests from Perf_InpaintingMethod_inpaintDots (1240 ms total)
+
+[----------] Global test environment tear-down
+[==========] 13 tests from 5 test cases ran. (13553 ms total)
+[  PASSED  ] 13 tests.
+
+  YOU HAVE 2 DISABLED TESTS
+

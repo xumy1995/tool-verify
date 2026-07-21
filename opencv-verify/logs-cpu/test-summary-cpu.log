@@ -1,0 +1,28 @@
+===== opencv_test_calib3d =====
+opencv_test_calib3d exit=0
+===== opencv_test_core =====
+opencv_test_core exit=0
+===== opencv_test_dnn =====
+opencv_test_dnn exit=0
+===== opencv_test_features2d =====
+opencv_test_features2d exit=0
+===== opencv_test_flann =====
+opencv_test_flann exit=0
+===== opencv_test_highgui =====
+opencv_test_highgui exit=1
+===== opencv_test_imgcodecs =====
+opencv_test_imgcodecs exit=0
+===== opencv_test_imgproc =====
+opencv_test_imgproc exit=0
+===== opencv_test_ml =====
+opencv_test_ml exit=0
+===== opencv_test_objdetect =====
+opencv_test_objdetect exit=0
+===== opencv_test_photo =====
+opencv_test_photo exit=0
+===== opencv_test_stitching =====
+opencv_test_stitching exit=0
+===== opencv_test_video =====
+opencv_test_video exit=0
+===== opencv_test_videoio =====
+opencv_test_videoio exit=0

@@ -1,0 +1,29 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 3 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from SinusoidalPattern
+[ RUN      ] SinusoidalPattern.unwrapPhaseMap
+[       OK ] SinusoidalPattern.unwrapPhaseMap (1745 ms)
+[----------] 1 test from SinusoidalPattern (1745 ms total)
+
+[----------] 2 tests from GrayCodePattern
+[ RUN      ] GrayCodePattern.getProjPixel
+[       OK ] GrayCodePattern.getProjPixel (693 ms)
+[ RUN      ] GrayCodePattern.plane_reconstruction
+[       OK ] GrayCodePattern.plane_reconstruction (2116 ms)
+[----------] 2 tests from GrayCodePattern (2809 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 2 test cases ran. (4554 ms total)
+[  PASSED  ] 3 tests.

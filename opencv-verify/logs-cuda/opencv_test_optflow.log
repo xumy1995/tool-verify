@@ -1,0 +1,77 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 12 tests from 12 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from DenseOpticalFlow_SimpleFlow
+[ RUN      ] DenseOpticalFlow_SimpleFlow.ReferenceAccuracy
+[       OK ] DenseOpticalFlow_SimpleFlow.ReferenceAccuracy (390 ms)
+[----------] 1 test from DenseOpticalFlow_SimpleFlow (390 ms total)
+
+[----------] 1 test from DenseOpticalFlow_DeepFlow
+[ RUN      ] DenseOpticalFlow_DeepFlow.ReferenceAccuracy
+[       OK ] DenseOpticalFlow_DeepFlow.ReferenceAccuracy (571 ms)
+[----------] 1 test from DenseOpticalFlow_DeepFlow (572 ms total)
+
+[----------] 1 test from SparseOpticalFlow
+[ RUN      ] SparseOpticalFlow.ReferenceAccuracy
+[       OK ] SparseOpticalFlow.ReferenceAccuracy (198 ms)
+[----------] 1 test from SparseOpticalFlow (198 ms total)
+
+[----------] 1 test from DenseOpticalFlow_RLOF
+[ RUN      ] DenseOpticalFlow_RLOF.ReferenceAccuracy
+[       OK ] DenseOpticalFlow_RLOF.ReferenceAccuracy (427 ms)
+[----------] 1 test from DenseOpticalFlow_RLOF (427 ms total)
+
+[----------] 1 test from DenseOpticalFlow_SparseToDenseFlow
+[ RUN      ] DenseOpticalFlow_SparseToDenseFlow.ReferenceAccuracy
+[       OK ] DenseOpticalFlow_SparseToDenseFlow.ReferenceAccuracy (69 ms)
+[----------] 1 test from DenseOpticalFlow_SparseToDenseFlow (69 ms total)
+
+[----------] 1 test from DenseOpticalFlow_PCAFlow
+[ RUN      ] DenseOpticalFlow_PCAFlow.ReferenceAccuracy
+[       OK ] DenseOpticalFlow_PCAFlow.ReferenceAccuracy (134 ms)
+[----------] 1 test from DenseOpticalFlow_PCAFlow (134 ms total)
+
+[----------] 1 test from DenseOpticalFlow_GlobalPatchColliderDCT
+[ RUN      ] DenseOpticalFlow_GlobalPatchColliderDCT.ReferenceAccuracy
+[       OK ] DenseOpticalFlow_GlobalPatchColliderDCT.ReferenceAccuracy (9447 ms)
+[----------] 1 test from DenseOpticalFlow_GlobalPatchColliderDCT (9447 ms total)
+
+[----------] 1 test from DenseOpticalFlow_GlobalPatchColliderWHT
+[ RUN      ] DenseOpticalFlow_GlobalPatchColliderWHT.ReferenceAccuracy
+[       OK ] DenseOpticalFlow_GlobalPatchColliderWHT.ReferenceAccuracy (8504 ms)
+[----------] 1 test from DenseOpticalFlow_GlobalPatchColliderWHT (8504 ms total)
+
+[----------] 1 test from Video_MHIUpdate
+[ RUN      ] Video_MHIUpdate.accuracy
+[       OK ] Video_MHIUpdate.accuracy (111 ms)
+[----------] 1 test from Video_MHIUpdate (111 ms total)
+
+[----------] 1 test from Video_MHIGradient
+[ RUN      ] Video_MHIGradient.accuracy
+[       OK ] Video_MHIGradient.accuracy (365 ms)
+[----------] 1 test from Video_MHIGradient (365 ms total)
+
+[----------] 1 test from Video_MHIGlobalOrient
+[ RUN      ] Video_MHIGlobalOrient.accuracy
+[       OK ] Video_MHIGlobalOrient.accuracy (192 ms)
+[----------] 1 test from Video_MHIGlobalOrient (192 ms total)
+
+[----------] 1 test from Contrib_calcOpticalFlowDual_TVL1
+[ RUN      ] Contrib_calcOpticalFlowDual_TVL1.Regression
+[       OK ] Contrib_calcOpticalFlowDual_TVL1.Regression (1578 ms)
+[----------] 1 test from Contrib_calcOpticalFlowDual_TVL1 (1578 ms total)
+
+[----------] Global test environment tear-down
+[==========] 12 tests from 12 test cases ran. (21987 ms total)
+[  PASSED  ] 12 tests.

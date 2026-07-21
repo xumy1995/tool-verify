@@ -1,0 +1,95 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 19 tests from 7 test cases.
+[----------] Global test environment set-up.
+[----------] 5 tests from CV_Face_BIF
+[ RUN      ] CV_Face_BIF.can_create_default
+[       OK ] CV_Face_BIF.can_create_default (8 ms)
+[ RUN      ] CV_Face_BIF.fails_when_zero_bands
+[       OK ] CV_Face_BIF.fails_when_zero_bands (3 ms)
+[ RUN      ] CV_Face_BIF.fails_when_too_many_bands
+[       OK ] CV_Face_BIF.fails_when_too_many_bands (0 ms)
+[ RUN      ] CV_Face_BIF.fails_when_zero_rotations
+[       OK ] CV_Face_BIF.fails_when_zero_rotations (0 ms)
+[ RUN      ] CV_Face_BIF.can_compute
+[       OK ] CV_Face_BIF.can_compute (43 ms)
+[----------] 5 tests from CV_Face_BIF (54 ms total)
+
+[----------] 3 tests from CV_Face_FacemarkKazemi
+[ RUN      ] CV_Face_FacemarkKazemi.can_create_default
+[       OK ] CV_Face_FacemarkKazemi.can_create_default (5 ms)
+[ RUN      ] CV_Face_FacemarkKazemi.can_loadTrainingData
+Reading Training Parameters 
+Parameters loaded
+Training regressor 0...
+Training regressor 1...
+Training regressor 2...
+Training regressor 3...
+Training regressor 4...
+Training regressor 5...
+Training regressor 6...
+Training regressor 7...
+Training regressor 8...
+Training regressor 9...
+[       OK ] CV_Face_FacemarkKazemi.can_loadTrainingData (12928 ms)
+[ RUN      ] CV_Face_FacemarkKazemi.can_detect_landmarks
+unknown file: Failure
+C++ exception with description "OpenCV(4.14.0-pre) /data/xumengying/opencv-verify/src/opencv/modules/ts/src/ts.cpp:1060: error: (-2:Unspecified error) OpenCV tests: Can't find required data file: face/face_landmark_model.dat in function 'findData'
+" thrown in the test body.
+[  FAILED  ] CV_Face_FacemarkKazemi.can_detect_landmarks (7 ms)
+[----------] 3 tests from CV_Face_FacemarkKazemi (12940 ms total)
+
+[----------] 1 test from CV_Face_Facemark
+[ RUN      ] CV_Face_Facemark.test_utilities
+[       OK ] CV_Face_Facemark.test_utilities (13 ms)
+[----------] 1 test from CV_Face_Facemark (13 ms total)
+
+[----------] 3 tests from CV_Face_FacemarkAAM
+[ RUN      ] CV_Face_FacemarkAAM.can_create_default
+[       OK ] CV_Face_FacemarkAAM.can_create_default (0 ms)
+[ RUN      ] CV_Face_FacemarkAAM.can_set_custom_detector
+[       OK ] CV_Face_FacemarkAAM.can_set_custom_detector (3 ms)
+[ RUN      ] CV_Face_FacemarkAAM.test_workflow
+[       OK ] CV_Face_FacemarkAAM.test_workflow (151 ms)
+[----------] 3 tests from CV_Face_FacemarkAAM (154 ms total)
+
+[----------] 3 tests from CV_Face_FacemarkLBF
+[ RUN      ] CV_Face_FacemarkLBF.can_create_default
+[       OK ] CV_Face_FacemarkLBF.can_create_default (0 ms)
+[ RUN      ] CV_Face_FacemarkLBF.can_set_custom_detector
+[       OK ] CV_Face_FacemarkLBF.can_set_custom_detector (2 ms)
+[ RUN      ] CV_Face_FacemarkLBF.test_workflow
+[       OK ] CV_Face_FacemarkLBF.test_workflow (37951 ms)
+[----------] 3 tests from CV_Face_FacemarkLBF (37953 ms total)
+
+[----------] 2 tests from CV_Face_SAVELOAD
+[ RUN      ] CV_Face_SAVELOAD.use_save
+[       OK ] CV_Face_SAVELOAD.use_save (56 ms)
+[ RUN      ] CV_Face_SAVELOAD.use_write
+[       OK ] CV_Face_SAVELOAD.use_write (53 ms)
+[----------] 2 tests from CV_Face_SAVELOAD (109 ms total)
+
+[----------] 2 tests from MACE_
+[ RUN      ] MACE_.unsalted
+[       OK ] MACE_.unsalted (16 ms)
+[ RUN      ] MACE_.salted
+[       OK ] MACE_.salted (12 ms)
+[----------] 2 tests from MACE_ (28 ms total)
+
+[----------] Global test environment tear-down
+[==========] 19 tests from 7 test cases ran. (51251 ms total)
+[  PASSED  ] 18 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] CV_Face_FacemarkKazemi.can_detect_landmarks
+
+ 1 FAILED TEST

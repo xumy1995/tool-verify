@@ -1,0 +1,1154 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 402 tests from 111 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from SqrtTest/0, where TypeParam = float
+[ RUN      ] SqrtTest/0.GpuMat, where TypeParam = float
+[       OK ] SqrtTest/0.GpuMat (140 ms)
+[ RUN      ] SqrtTest/0.Expr, where TypeParam = float
+[       OK ] SqrtTest/0.Expr (1 ms)
+[----------] 2 tests from SqrtTest/0 (141 ms total)
+
+[----------] 1 test from MagnitudeTest/0, where TypeParam = float
+[ RUN      ] MagnitudeTest/0.Accuracy, where TypeParam = float
+[       OK ] MagnitudeTest/0.Accuracy (3 ms)
+[----------] 1 test from MagnitudeTest/0 (3 ms total)
+
+[----------] 1 test from PowTest/0, where TypeParam = float
+[ RUN      ] PowTest/0.Accuracy, where TypeParam = float
+[       OK ] PowTest/0.Accuracy (1 ms)
+[----------] 1 test from PowTest/0 (1 ms total)
+
+[----------] 4 tests from UnaryMinusTest/0, where TypeParam = short
+[ RUN      ] UnaryMinusTest/0.GpuMat, where TypeParam = short
+[       OK ] UnaryMinusTest/0.GpuMat (2 ms)
+[ RUN      ] UnaryMinusTest/0.GlobPtrSz, where TypeParam = short
+[       OK ] UnaryMinusTest/0.GlobPtrSz (0 ms)
+[ RUN      ] UnaryMinusTest/0.TexturePtr, where TypeParam = short
+[       OK ] UnaryMinusTest/0.TexturePtr (1 ms)
+[ RUN      ] UnaryMinusTest/0.Expr, where TypeParam = short
+[       OK ] UnaryMinusTest/0.Expr (2 ms)
+[----------] 4 tests from UnaryMinusTest/0 (6 ms total)
+
+[----------] 4 tests from UnaryMinusTest/1, where TypeParam = int
+[ RUN      ] UnaryMinusTest/1.GpuMat, where TypeParam = int
+[       OK ] UnaryMinusTest/1.GpuMat (1 ms)
+[ RUN      ] UnaryMinusTest/1.GlobPtrSz, where TypeParam = int
+[       OK ] UnaryMinusTest/1.GlobPtrSz (0 ms)
+[ RUN      ] UnaryMinusTest/1.TexturePtr, where TypeParam = int
+[       OK ] UnaryMinusTest/1.TexturePtr (1 ms)
+[ RUN      ] UnaryMinusTest/1.Expr, where TypeParam = int
+[       OK ] UnaryMinusTest/1.Expr (2 ms)
+[----------] 4 tests from UnaryMinusTest/1 (4 ms total)
+
+[----------] 4 tests from UnaryMinusTest/2, where TypeParam = float
+[ RUN      ] UnaryMinusTest/2.GpuMat, where TypeParam = float
+[       OK ] UnaryMinusTest/2.GpuMat (0 ms)
+[ RUN      ] UnaryMinusTest/2.GlobPtrSz, where TypeParam = float
+[       OK ] UnaryMinusTest/2.GlobPtrSz (1 ms)
+[ RUN      ] UnaryMinusTest/2.TexturePtr, where TypeParam = float
+[       OK ] UnaryMinusTest/2.TexturePtr (1 ms)
+[ RUN      ] UnaryMinusTest/2.Expr, where TypeParam = float
+[       OK ] UnaryMinusTest/2.Expr (1 ms)
+[----------] 4 tests from UnaryMinusTest/2 (3 ms total)
+
+[----------] 4 tests from PlusTest/0, where TypeParam = unsigned char
+[ RUN      ] PlusTest/0.GpuMat_GpuMat, where TypeParam = unsigned char
+[       OK ] PlusTest/0.GpuMat_GpuMat (3 ms)
+[ RUN      ] PlusTest/0.TexturePtr_Scalar, where TypeParam = unsigned char
+[       OK ] PlusTest/0.TexturePtr_Scalar (0 ms)
+[ RUN      ] PlusTest/0.Expr_GpuMat, where TypeParam = unsigned char
+[       OK ] PlusTest/0.Expr_GpuMat (1 ms)
+[ RUN      ] PlusTest/0.Scalar_Expr, where TypeParam = unsigned char
+[       OK ] PlusTest/0.Scalar_Expr (1 ms)
+[----------] 4 tests from PlusTest/0 (5 ms total)
+
+[----------] 4 tests from PlusTest/1, where TypeParam = unsigned short
+[ RUN      ] PlusTest/1.GpuMat_GpuMat, where TypeParam = unsigned short
+[       OK ] PlusTest/1.GpuMat_GpuMat (2 ms)
+[ RUN      ] PlusTest/1.TexturePtr_Scalar, where TypeParam = unsigned short
+[       OK ] PlusTest/1.TexturePtr_Scalar (1 ms)
+[ RUN      ] PlusTest/1.Expr_GpuMat, where TypeParam = unsigned short
+[       OK ] PlusTest/1.Expr_GpuMat (1 ms)
+[ RUN      ] PlusTest/1.Scalar_Expr, where TypeParam = unsigned short
+[       OK ] PlusTest/1.Scalar_Expr (1 ms)
+[----------] 4 tests from PlusTest/1 (5 ms total)
+
+[----------] 4 tests from PlusTest/2, where TypeParam = short
+[ RUN      ] PlusTest/2.GpuMat_GpuMat, where TypeParam = short
+[       OK ] PlusTest/2.GpuMat_GpuMat (1 ms)
+[ RUN      ] PlusTest/2.TexturePtr_Scalar, where TypeParam = short
+[       OK ] PlusTest/2.TexturePtr_Scalar (0 ms)
+[ RUN      ] PlusTest/2.Expr_GpuMat, where TypeParam = short
+[       OK ] PlusTest/2.Expr_GpuMat (1 ms)
+[ RUN      ] PlusTest/2.Scalar_Expr, where TypeParam = short
+[       OK ] PlusTest/2.Scalar_Expr (1 ms)
+[----------] 4 tests from PlusTest/2 (3 ms total)
+
+[----------] 4 tests from PlusTest/3, where TypeParam = int
+[ RUN      ] PlusTest/3.GpuMat_GpuMat, where TypeParam = int
+[       OK ] PlusTest/3.GpuMat_GpuMat (1 ms)
+[ RUN      ] PlusTest/3.TexturePtr_Scalar, where TypeParam = int
+[       OK ] PlusTest/3.TexturePtr_Scalar (1 ms)
+[ RUN      ] PlusTest/3.Expr_GpuMat, where TypeParam = int
+[       OK ] PlusTest/3.Expr_GpuMat (1 ms)
+[ RUN      ] PlusTest/3.Scalar_Expr, where TypeParam = int
+[       OK ] PlusTest/3.Scalar_Expr (1 ms)
+[----------] 4 tests from PlusTest/3 (4 ms total)
+
+[----------] 4 tests from PlusTest/4, where TypeParam = float
+[ RUN      ] PlusTest/4.GpuMat_GpuMat, where TypeParam = float
+[       OK ] PlusTest/4.GpuMat_GpuMat (0 ms)
+[ RUN      ] PlusTest/4.TexturePtr_Scalar, where TypeParam = float
+[       OK ] PlusTest/4.TexturePtr_Scalar (1 ms)
+[ RUN      ] PlusTest/4.Expr_GpuMat, where TypeParam = float
+[       OK ] PlusTest/4.Expr_GpuMat (1 ms)
+[ RUN      ] PlusTest/4.Scalar_Expr, where TypeParam = float
+[       OK ] PlusTest/4.Scalar_Expr (1 ms)
+[----------] 4 tests from PlusTest/4 (3 ms total)
+
+[----------] 4 tests from MinusTest/0, where TypeParam = short
+[ RUN      ] MinusTest/0.GpuMat_GpuMat, where TypeParam = short
+[       OK ] MinusTest/0.GpuMat_GpuMat (2 ms)
+[ RUN      ] MinusTest/0.TexturePtr_Scalar, where TypeParam = short
+[       OK ] MinusTest/0.TexturePtr_Scalar (0 ms)
+[ RUN      ] MinusTest/0.Expr_GpuMat, where TypeParam = short
+[       OK ] MinusTest/0.Expr_GpuMat (2 ms)
+[ RUN      ] MinusTest/0.Scalar_Expr, where TypeParam = short
+[       OK ] MinusTest/0.Scalar_Expr (0 ms)
+[----------] 4 tests from MinusTest/0 (4 ms total)
+
+[----------] 4 tests from MinusTest/1, where TypeParam = int
+[ RUN      ] MinusTest/1.GpuMat_GpuMat, where TypeParam = int
+[       OK ] MinusTest/1.GpuMat_GpuMat (1 ms)
+[ RUN      ] MinusTest/1.TexturePtr_Scalar, where TypeParam = int
+[       OK ] MinusTest/1.TexturePtr_Scalar (1 ms)
+[ RUN      ] MinusTest/1.Expr_GpuMat, where TypeParam = int
+[       OK ] MinusTest/1.Expr_GpuMat (1 ms)
+[ RUN      ] MinusTest/1.Scalar_Expr, where TypeParam = int
+[       OK ] MinusTest/1.Scalar_Expr (1 ms)
+[----------] 4 tests from MinusTest/1 (4 ms total)
+
+[----------] 4 tests from MinusTest/2, where TypeParam = float
+[ RUN      ] MinusTest/2.GpuMat_GpuMat, where TypeParam = float
+[       OK ] MinusTest/2.GpuMat_GpuMat (1 ms)
+[ RUN      ] MinusTest/2.TexturePtr_Scalar, where TypeParam = float
+[       OK ] MinusTest/2.TexturePtr_Scalar (1 ms)
+[ RUN      ] MinusTest/2.Expr_GpuMat, where TypeParam = float
+[       OK ] MinusTest/2.Expr_GpuMat (0 ms)
+[ RUN      ] MinusTest/2.Scalar_Expr, where TypeParam = float
+[       OK ] MinusTest/2.Scalar_Expr (1 ms)
+[----------] 4 tests from MinusTest/2 (3 ms total)
+
+[----------] 1 test from AbsDiffTest/0, where TypeParam = short
+[ RUN      ] AbsDiffTest/0.Accuracy, where TypeParam = short
+[       OK ] AbsDiffTest/0.Accuracy (1 ms)
+[----------] 1 test from AbsDiffTest/0 (1 ms total)
+
+[----------] 1 test from AbsDiffTest/1, where TypeParam = int
+[ RUN      ] AbsDiffTest/1.Accuracy, where TypeParam = int
+[       OK ] AbsDiffTest/1.Accuracy (1 ms)
+[----------] 1 test from AbsDiffTest/1 (1 ms total)
+
+[----------] 1 test from AbsDiffTest/2, where TypeParam = float
+[ RUN      ] AbsDiffTest/2.Accuracy, where TypeParam = float
+[       OK ] AbsDiffTest/2.Accuracy (1 ms)
+[----------] 1 test from AbsDiffTest/2 (1 ms total)
+
+[----------] 1 test from BitNotTest/0, where TypeParam = unsigned char
+[ RUN      ] BitNotTest/0.GpuMat, where TypeParam = unsigned char
+[       OK ] BitNotTest/0.GpuMat (1 ms)
+[----------] 1 test from BitNotTest/0 (1 ms total)
+
+[----------] 1 test from BitNotTest/1, where TypeParam = unsigned short
+[ RUN      ] BitNotTest/1.GpuMat, where TypeParam = unsigned short
+[       OK ] BitNotTest/1.GpuMat (1 ms)
+[----------] 1 test from BitNotTest/1 (1 ms total)
+
+[----------] 1 test from BitNotTest/2, where TypeParam = short
+[ RUN      ] BitNotTest/2.GpuMat, where TypeParam = short
+[       OK ] BitNotTest/2.GpuMat (0 ms)
+[----------] 1 test from BitNotTest/2 (0 ms total)
+
+[----------] 1 test from BitNotTest/3, where TypeParam = int
+[ RUN      ] BitNotTest/3.GpuMat, where TypeParam = int
+[       OK ] BitNotTest/3.GpuMat (1 ms)
+[----------] 1 test from BitNotTest/3 (1 ms total)
+
+[----------] 1 test from BitAndTest/0, where TypeParam = unsigned char
+[ RUN      ] BitAndTest/0.GpuMat_GpuMat, where TypeParam = unsigned char
+[       OK ] BitAndTest/0.GpuMat_GpuMat (1 ms)
+[----------] 1 test from BitAndTest/0 (1 ms total)
+
+[----------] 1 test from BitAndTest/1, where TypeParam = unsigned short
+[ RUN      ] BitAndTest/1.GpuMat_GpuMat, where TypeParam = unsigned short
+[       OK ] BitAndTest/1.GpuMat_GpuMat (0 ms)
+[----------] 1 test from BitAndTest/1 (0 ms total)
+
+[----------] 1 test from BitAndTest/2, where TypeParam = short
+[ RUN      ] BitAndTest/2.GpuMat_GpuMat, where TypeParam = short
+[       OK ] BitAndTest/2.GpuMat_GpuMat (1 ms)
+[----------] 1 test from BitAndTest/2 (1 ms total)
+
+[----------] 1 test from BitAndTest/3, where TypeParam = int
+[ RUN      ] BitAndTest/3.GpuMat_GpuMat, where TypeParam = int
+[       OK ] BitAndTest/3.GpuMat_GpuMat (1 ms)
+[----------] 1 test from BitAndTest/3 (1 ms total)
+
+[----------] 1 test from LShiftTest/0, where TypeParam = int
+[ RUN      ] LShiftTest/0.Accuracy, where TypeParam = int
+[       OK ] LShiftTest/0.Accuracy (1 ms)
+[----------] 1 test from LShiftTest/0 (1 ms total)
+
+[----------] 1 test from LessTest/0, where TypeParam = unsigned char
+[ RUN      ] LessTest/0.GpuMat_GpuMat, where TypeParam = unsigned char
+[       OK ] LessTest/0.GpuMat_GpuMat (1 ms)
+[----------] 1 test from LessTest/0 (1 ms total)
+
+[----------] 1 test from LessTest/1, where TypeParam = unsigned short
+[ RUN      ] LessTest/1.GpuMat_GpuMat, where TypeParam = unsigned short
+[       OK ] LessTest/1.GpuMat_GpuMat (1 ms)
+[----------] 1 test from LessTest/1 (1 ms total)
+
+[----------] 1 test from LessTest/2, where TypeParam = short
+[ RUN      ] LessTest/2.GpuMat_GpuMat, where TypeParam = short
+[       OK ] LessTest/2.GpuMat_GpuMat (1 ms)
+[----------] 1 test from LessTest/2 (1 ms total)
+
+[----------] 1 test from LessTest/3, where TypeParam = int
+[ RUN      ] LessTest/3.GpuMat_GpuMat, where TypeParam = int
+[       OK ] LessTest/3.GpuMat_GpuMat (0 ms)
+[----------] 1 test from LessTest/3 (0 ms total)
+
+[----------] 1 test from LessTest/4, where TypeParam = float
+[ RUN      ] LessTest/4.GpuMat_GpuMat, where TypeParam = float
+[       OK ] LessTest/4.GpuMat_GpuMat (1 ms)
+[----------] 1 test from LessTest/4 (1 ms total)
+
+[----------] 1 test from MinTest/0, where TypeParam = unsigned char
+[ RUN      ] MinTest/0.GpuMat_GpuMat, where TypeParam = unsigned char
+[       OK ] MinTest/0.GpuMat_GpuMat (2 ms)
+[----------] 1 test from MinTest/0 (2 ms total)
+
+[----------] 1 test from MinTest/1, where TypeParam = unsigned short
+[ RUN      ] MinTest/1.GpuMat_GpuMat, where TypeParam = unsigned short
+[       OK ] MinTest/1.GpuMat_GpuMat (1 ms)
+[----------] 1 test from MinTest/1 (1 ms total)
+
+[----------] 1 test from MinTest/2, where TypeParam = short
+[ RUN      ] MinTest/2.GpuMat_GpuMat, where TypeParam = short
+[       OK ] MinTest/2.GpuMat_GpuMat (1 ms)
+[----------] 1 test from MinTest/2 (1 ms total)
+
+[----------] 1 test from MinTest/3, where TypeParam = int
+[ RUN      ] MinTest/3.GpuMat_GpuMat, where TypeParam = int
+[       OK ] MinTest/3.GpuMat_GpuMat (1 ms)
+[----------] 1 test from MinTest/3 (1 ms total)
+
+[----------] 1 test from MinTest/4, where TypeParam = float
+[ RUN      ] MinTest/4.GpuMat_GpuMat, where TypeParam = float
+[       OK ] MinTest/4.GpuMat_GpuMat (0 ms)
+[----------] 1 test from MinTest/4 (0 ms total)
+
+[----------] 1 test from ThreshBinaryTest/0, where TypeParam = unsigned char
+[ RUN      ] ThreshBinaryTest/0.GpuMat, where TypeParam = unsigned char
+[       OK ] ThreshBinaryTest/0.GpuMat (3 ms)
+[----------] 1 test from ThreshBinaryTest/0 (3 ms total)
+
+[----------] 1 test from ThreshBinaryTest/1, where TypeParam = short
+[ RUN      ] ThreshBinaryTest/1.GpuMat, where TypeParam = short
+[       OK ] ThreshBinaryTest/1.GpuMat (1 ms)
+[----------] 1 test from ThreshBinaryTest/1 (1 ms total)
+
+[----------] 1 test from ThreshBinaryTest/2, where TypeParam = float
+[ RUN      ] ThreshBinaryTest/2.GpuMat, where TypeParam = float
+[       OK ] ThreshBinaryTest/2.GpuMat (1 ms)
+[----------] 1 test from ThreshBinaryTest/2 (1 ms total)
+
+[----------] 56 tests from CvtColor
+[ RUN      ] CvtColor.BGR_to_RGB
+[       OK ] CvtColor.BGR_to_RGB (13 ms)
+[ RUN      ] CvtColor.BGR_to_BGRA
+[       OK ] CvtColor.BGR_to_BGRA (5 ms)
+[ RUN      ] CvtColor.BGR_to_RGBA
+[       OK ] CvtColor.BGR_to_RGBA (1 ms)
+[ RUN      ] CvtColor.BGRA_to_BGR
+[       OK ] CvtColor.BGRA_to_BGR (2 ms)
+[ RUN      ] CvtColor.BGRA_to_RGB
+[       OK ] CvtColor.BGRA_to_RGB (1 ms)
+[ RUN      ] CvtColor.BGRA_to_RGBA
+[       OK ] CvtColor.BGRA_to_RGBA (2 ms)
+[ RUN      ] CvtColor.BGR_to_GRAY
+[       OK ] CvtColor.BGR_to_GRAY (3 ms)
+[ RUN      ] CvtColor.RGB_to_GRAY
+[       OK ] CvtColor.RGB_to_GRAY (1 ms)
+[ RUN      ] CvtColor.BGRA_to_GRAY
+[       OK ] CvtColor.BGRA_to_GRAY (1 ms)
+[ RUN      ] CvtColor.RGBA_to_GRAY
+[       OK ] CvtColor.RGBA_to_GRAY (1 ms)
+[ RUN      ] CvtColor.GRAY_to_BGR
+[       OK ] CvtColor.GRAY_to_BGR (3 ms)
+[ RUN      ] CvtColor.GRAY_to_BGRA
+[       OK ] CvtColor.GRAY_to_BGRA (1 ms)
+[ RUN      ] CvtColor.RGB_to_YUV
+[       OK ] CvtColor.RGB_to_YUV (2 ms)
+[ RUN      ] CvtColor.BGR_to_YUV
+[       OK ] CvtColor.BGR_to_YUV (2 ms)
+[ RUN      ] CvtColor.YUV_to_RGB
+[       OK ] CvtColor.YUV_to_RGB (1 ms)
+[ RUN      ] CvtColor.YUV_to_BGR
+[       OK ] CvtColor.YUV_to_BGR (1 ms)
+[ RUN      ] CvtColor.RGB_to_YCrCb
+[       OK ] CvtColor.RGB_to_YCrCb (1 ms)
+[ RUN      ] CvtColor.BGR_to_YCrCb
+[       OK ] CvtColor.BGR_to_YCrCb (1 ms)
+[ RUN      ] CvtColor.YCrCb_to_RGB
+[       OK ] CvtColor.YCrCb_to_RGB (2 ms)
+[ RUN      ] CvtColor.YCrCb_to_BGR
+[       OK ] CvtColor.YCrCb_to_BGR (1 ms)
+[ RUN      ] CvtColor.RGB_to_XYZ
+[       OK ] CvtColor.RGB_to_XYZ (1 ms)
+[ RUN      ] CvtColor.BGR_to_XYZ
+[       OK ] CvtColor.BGR_to_XYZ (1 ms)
+[ RUN      ] CvtColor.XYZ_to_RGB
+[       OK ] CvtColor.XYZ_to_RGB (2 ms)
+[ RUN      ] CvtColor.XYZ_to_BGR
+[       OK ] CvtColor.XYZ_to_BGR (1 ms)
+[ RUN      ] CvtColor.RGB_to_HSV
+[       OK ] CvtColor.RGB_to_HSV (1 ms)
+[ RUN      ] CvtColor.BGR_to_HSV
+[       OK ] CvtColor.BGR_to_HSV (2 ms)
+[ RUN      ] CvtColor.HSV_to_RGB
+[       OK ] CvtColor.HSV_to_RGB (2 ms)
+[ RUN      ] CvtColor.HSV_to_BGR
+[       OK ] CvtColor.HSV_to_BGR (2 ms)
+[ RUN      ] CvtColor.RGB_to_HSV_FULL
+[       OK ] CvtColor.RGB_to_HSV_FULL (1 ms)
+[ RUN      ] CvtColor.BGR_to_HSV_FULL
+[       OK ] CvtColor.BGR_to_HSV_FULL (1 ms)
+[ RUN      ] CvtColor.HSV_to_RGB_FULL
+[       OK ] CvtColor.HSV_to_RGB_FULL (1 ms)
+[ RUN      ] CvtColor.HSV_to_BGR_FULL
+[       OK ] CvtColor.HSV_to_BGR_FULL (1 ms)
+[ RUN      ] CvtColor.RGB_to_HLS
+[       OK ] CvtColor.RGB_to_HLS (1 ms)
+[ RUN      ] CvtColor.BGR_to_HLS
+[       OK ] CvtColor.BGR_to_HLS (1 ms)
+[ RUN      ] CvtColor.HLS_to_RGB
+[       OK ] CvtColor.HLS_to_RGB (2 ms)
+[ RUN      ] CvtColor.HLS_to_BGR
+[       OK ] CvtColor.HLS_to_BGR (2 ms)
+[ RUN      ] CvtColor.RGB_to_HLS_FULL
+[       OK ] CvtColor.RGB_to_HLS_FULL (1 ms)
+[ RUN      ] CvtColor.BGR_to_HLS_FULL
+[       OK ] CvtColor.BGR_to_HLS_FULL (1 ms)
+[ RUN      ] CvtColor.HLS_to_RGB_FULL
+[       OK ] CvtColor.HLS_to_RGB_FULL (2 ms)
+[ RUN      ] CvtColor.HLS_to_BGR_FULL
+[       OK ] CvtColor.HLS_to_BGR_FULL (1 ms)
+[ RUN      ] CvtColor.RGB_to_Lab
+[       OK ] CvtColor.RGB_to_Lab (32 ms)
+[ RUN      ] CvtColor.BGR_to_Lab
+[       OK ] CvtColor.BGR_to_Lab (2 ms)
+[ RUN      ] CvtColor.Lab_to_RGB
+[       OK ] CvtColor.Lab_to_RGB (2 ms)
+[ RUN      ] CvtColor.Lab_to_BGR
+[       OK ] CvtColor.Lab_to_BGR (3 ms)
+[ RUN      ] CvtColor.LRGB_to_Lab
+[       OK ] CvtColor.LRGB_to_Lab (1 ms)
+[ RUN      ] CvtColor.LBGR_to_Lab
+[       OK ] CvtColor.LBGR_to_Lab (2 ms)
+[ RUN      ] CvtColor.Lab_to_LRGB
+[       OK ] CvtColor.Lab_to_LRGB (3 ms)
+[ RUN      ] CvtColor.Lab_to_LBGR
+[       OK ] CvtColor.Lab_to_LBGR (2 ms)
+[ RUN      ] CvtColor.RGB_to_Luv
+[       OK ] CvtColor.RGB_to_Luv (2 ms)
+[ RUN      ] CvtColor.BGR_to_Luv
+[       OK ] CvtColor.BGR_to_Luv (2 ms)
+[ RUN      ] CvtColor.Luv_to_RGB
+[       OK ] CvtColor.Luv_to_RGB (3 ms)
+[ RUN      ] CvtColor.Luv_to_BGR
+[       OK ] CvtColor.Luv_to_BGR (2 ms)
+[ RUN      ] CvtColor.LRGB_to_Luv
+[       OK ] CvtColor.LRGB_to_Luv (1 ms)
+[ RUN      ] CvtColor.LBGR_to_Luv
+[       OK ] CvtColor.LBGR_to_Luv (2 ms)
+[ RUN      ] CvtColor.Luv_to_LRGB
+[       OK ] CvtColor.Luv_to_LRGB (2 ms)
+[ RUN      ] CvtColor.Luv_to_LBGR
+[       OK ] CvtColor.Luv_to_LBGR (2 ms)
+[----------] 56 tests from CvtColor (137 ms total)
+
+[----------] 1 test from CvtTest/0, where TypeParam = unsigned char
+[ RUN      ] CvtTest/0.GpuMat, where TypeParam = unsigned char
+[       OK ] CvtTest/0.GpuMat (1 ms)
+[----------] 1 test from CvtTest/0 (1 ms total)
+
+[----------] 1 test from CvtTest/1, where TypeParam = unsigned short
+[ RUN      ] CvtTest/1.GpuMat, where TypeParam = unsigned short
+[       OK ] CvtTest/1.GpuMat (0 ms)
+[----------] 1 test from CvtTest/1 (1 ms total)
+
+[----------] 1 test from CvtTest/2, where TypeParam = short
+[ RUN      ] CvtTest/2.GpuMat, where TypeParam = short
+[       OK ] CvtTest/2.GpuMat (1 ms)
+[----------] 1 test from CvtTest/2 (1 ms total)
+
+[----------] 1 test from CvtTest/3, where TypeParam = int
+[ RUN      ] CvtTest/3.GpuMat, where TypeParam = int
+[       OK ] CvtTest/3.GpuMat (1 ms)
+[----------] 1 test from CvtTest/3 (1 ms total)
+
+[----------] 1 test from CvtTest/4, where TypeParam = float
+[ RUN      ] CvtTest/4.GpuMat, where TypeParam = float
+[       OK ] CvtTest/4.GpuMat (0 ms)
+[----------] 1 test from CvtTest/4 (0 ms total)
+
+[----------] 1 test from CvFp16Test/0, where TypeParam = short
+[ RUN      ] CvFp16Test/0.GpuMat, where TypeParam = short
+[       OK ] CvFp16Test/0.GpuMat (13 ms)
+[----------] 1 test from CvFp16Test/0 (13 ms total)
+
+[----------] 1 test from CvFp16Test/1, where TypeParam = float
+[ RUN      ] CvFp16Test/1.GpuMat, where TypeParam = float
+[       OK ] CvFp16Test/1.GpuMat (1 ms)
+[----------] 1 test from CvFp16Test/1 (1 ms total)
+
+[----------] 1 test from Sobel
+[ RUN      ] Sobel.Accuracy
+[       OK ] Sobel.Accuracy (2 ms)
+[----------] 1 test from Sobel (2 ms total)
+
+[----------] 1 test from Scharr
+[ RUN      ] Scharr.Accuracy
+[       OK ] Scharr.Accuracy (1 ms)
+[----------] 1 test from Scharr (1 ms total)
+
+[----------] 1 test from Laplacian
+[ RUN      ] Laplacian.Accuracy
+[       OK ] Laplacian.Accuracy (11 ms)
+[----------] 1 test from Laplacian (11 ms total)
+
+[----------] 3 tests from Integral
+[ RUN      ] Integral._8u
+[       OK ] Integral._8u (2 ms)
+[ RUN      ] Integral._32f
+[       OK ] Integral._32f (0 ms)
+[ RUN      ] Integral._8u_opt
+[       OK ] Integral._8u_opt (2 ms)
+[----------] 3 tests from Integral (5 ms total)
+
+[----------] 1 test from LutTest/0, where TypeParam = unsigned char
+[ RUN      ] LutTest/0.GpuMat, where TypeParam = unsigned char
+[       OK ] LutTest/0.GpuMat (1 ms)
+[----------] 1 test from LutTest/0 (1 ms total)
+
+[----------] 5 tests from GpuMatNDTest/0, where TypeParam = cv::Vec<unsigned char, 1>
+[ RUN      ] GpuMatNDTest/0.Test1, where TypeParam = cv::Vec<unsigned char, 1>
+[       OK ] GpuMatNDTest/0.Test1 (9 ms)
+[ RUN      ] GpuMatNDTest/0.Test2, where TypeParam = cv::Vec<unsigned char, 1>
+[       OK ] GpuMatNDTest/0.Test2 (10 ms)
+[ RUN      ] GpuMatNDTest/0.Test3, where TypeParam = cv::Vec<unsigned char, 1>
+[       OK ] GpuMatNDTest/0.Test3 (9 ms)
+[ RUN      ] GpuMatNDTest/0.Test4, where TypeParam = cv::Vec<unsigned char, 1>
+[       OK ] GpuMatNDTest/0.Test4 (10 ms)
+[ RUN      ] GpuMatNDTest/0.Test5, where TypeParam = cv::Vec<unsigned char, 1>
+[       OK ] GpuMatNDTest/0.Test5 (12 ms)
+[----------] 5 tests from GpuMatNDTest/0 (50 ms total)
+
+[----------] 5 tests from GpuMatNDTest/1, where TypeParam = cv::Vec<unsigned char, 2>
+[ RUN      ] GpuMatNDTest/1.Test1, where TypeParam = cv::Vec<unsigned char, 2>
+[       OK ] GpuMatNDTest/1.Test1 (9 ms)
+[ RUN      ] GpuMatNDTest/1.Test2, where TypeParam = cv::Vec<unsigned char, 2>
+[       OK ] GpuMatNDTest/1.Test2 (9 ms)
+[ RUN      ] GpuMatNDTest/1.Test3, where TypeParam = cv::Vec<unsigned char, 2>
+[       OK ] GpuMatNDTest/1.Test3 (10 ms)
+[ RUN      ] GpuMatNDTest/1.Test4, where TypeParam = cv::Vec<unsigned char, 2>
+[       OK ] GpuMatNDTest/1.Test4 (9 ms)
+[ RUN      ] GpuMatNDTest/1.Test5, where TypeParam = cv::Vec<unsigned char, 2>
+[       OK ] GpuMatNDTest/1.Test5 (8 ms)
+[----------] 5 tests from GpuMatNDTest/1 (45 ms total)
+
+[----------] 5 tests from GpuMatNDTest/2, where TypeParam = cv::Vec<unsigned char, 3>
+[ RUN      ] GpuMatNDTest/2.Test1, where TypeParam = cv::Vec<unsigned char, 3>
+[       OK ] GpuMatNDTest/2.Test1 (9 ms)
+[ RUN      ] GpuMatNDTest/2.Test2, where TypeParam = cv::Vec<unsigned char, 3>
+[       OK ] GpuMatNDTest/2.Test2 (10 ms)
+[ RUN      ] GpuMatNDTest/2.Test3, where TypeParam = cv::Vec<unsigned char, 3>
+[       OK ] GpuMatNDTest/2.Test3 (10 ms)
+[ RUN      ] GpuMatNDTest/2.Test4, where TypeParam = cv::Vec<unsigned char, 3>
+[       OK ] GpuMatNDTest/2.Test4 (9 ms)
+[ RUN      ] GpuMatNDTest/2.Test5, where TypeParam = cv::Vec<unsigned char, 3>
+[       OK ] GpuMatNDTest/2.Test5 (9 ms)
+[----------] 5 tests from GpuMatNDTest/2 (47 ms total)
+
+[----------] 5 tests from GpuMatNDTest/3, where TypeParam = cv::Vec<unsigned char, 4>
+[ RUN      ] GpuMatNDTest/3.Test1, where TypeParam = cv::Vec<unsigned char, 4>
+[       OK ] GpuMatNDTest/3.Test1 (9 ms)
+[ RUN      ] GpuMatNDTest/3.Test2, where TypeParam = cv::Vec<unsigned char, 4>
+[       OK ] GpuMatNDTest/3.Test2 (10 ms)
+[ RUN      ] GpuMatNDTest/3.Test3, where TypeParam = cv::Vec<unsigned char, 4>
+[       OK ] GpuMatNDTest/3.Test3 (10 ms)
+[ RUN      ] GpuMatNDTest/3.Test4, where TypeParam = cv::Vec<unsigned char, 4>
+[       OK ] GpuMatNDTest/3.Test4 (10 ms)
+[ RUN      ] GpuMatNDTest/3.Test5, where TypeParam = cv::Vec<unsigned char, 4>
+[       OK ] GpuMatNDTest/3.Test5 (10 ms)
+[----------] 5 tests from GpuMatNDTest/3 (49 ms total)
+
+[----------] 5 tests from GpuMatNDTest/4, where TypeParam = cv::Vec<signed char, 1>
+[ RUN      ] GpuMatNDTest/4.Test1, where TypeParam = cv::Vec<signed char, 1>
+[       OK ] GpuMatNDTest/4.Test1 (7 ms)
+[ RUN      ] GpuMatNDTest/4.Test2, where TypeParam = cv::Vec<signed char, 1>
+[       OK ] GpuMatNDTest/4.Test2 (8 ms)
+[ RUN      ] GpuMatNDTest/4.Test3, where TypeParam = cv::Vec<signed char, 1>
+[       OK ] GpuMatNDTest/4.Test3 (9 ms)
+[ RUN      ] GpuMatNDTest/4.Test4, where TypeParam = cv::Vec<signed char, 1>
+[       OK ] GpuMatNDTest/4.Test4 (7 ms)
+[ RUN      ] GpuMatNDTest/4.Test5, where TypeParam = cv::Vec<signed char, 1>
+[       OK ] GpuMatNDTest/4.Test5 (7 ms)
+[----------] 5 tests from GpuMatNDTest/4 (39 ms total)
+
+[----------] 5 tests from GpuMatNDTest/5, where TypeParam = cv::Vec<signed char, 2>
+[ RUN      ] GpuMatNDTest/5.Test1, where TypeParam = cv::Vec<signed char, 2>
+[       OK ] GpuMatNDTest/5.Test1 (9 ms)
+[ RUN      ] GpuMatNDTest/5.Test2, where TypeParam = cv::Vec<signed char, 2>
+[       OK ] GpuMatNDTest/5.Test2 (10 ms)
+[ RUN      ] GpuMatNDTest/5.Test3, where TypeParam = cv::Vec<signed char, 2>
+[       OK ] GpuMatNDTest/5.Test3 (8 ms)
+[ RUN      ] GpuMatNDTest/5.Test4, where TypeParam = cv::Vec<signed char, 2>
+[       OK ] GpuMatNDTest/5.Test4 (10 ms)
+[ RUN      ] GpuMatNDTest/5.Test5, where TypeParam = cv::Vec<signed char, 2>
+[       OK ] GpuMatNDTest/5.Test5 (8 ms)
+[----------] 5 tests from GpuMatNDTest/5 (45 ms total)
+
+[----------] 5 tests from GpuMatNDTest/6, where TypeParam = cv::Vec<signed char, 3>
+[ RUN      ] GpuMatNDTest/6.Test1, where TypeParam = cv::Vec<signed char, 3>
+[       OK ] GpuMatNDTest/6.Test1 (9 ms)
+[ RUN      ] GpuMatNDTest/6.Test2, where TypeParam = cv::Vec<signed char, 3>
+[       OK ] GpuMatNDTest/6.Test2 (11 ms)
+[ RUN      ] GpuMatNDTest/6.Test3, where TypeParam = cv::Vec<signed char, 3>
+[       OK ] GpuMatNDTest/6.Test3 (9 ms)
+[ RUN      ] GpuMatNDTest/6.Test4, where TypeParam = cv::Vec<signed char, 3>
+[       OK ] GpuMatNDTest/6.Test4 (9 ms)
+[ RUN      ] GpuMatNDTest/6.Test5, where TypeParam = cv::Vec<signed char, 3>
+[       OK ] GpuMatNDTest/6.Test5 (10 ms)
+[----------] 5 tests from GpuMatNDTest/6 (48 ms total)
+
+[----------] 5 tests from GpuMatNDTest/7, where TypeParam = cv::Vec<signed char, 4>
+[ RUN      ] GpuMatNDTest/7.Test1, where TypeParam = cv::Vec<signed char, 4>
+[       OK ] GpuMatNDTest/7.Test1 (9 ms)
+[ RUN      ] GpuMatNDTest/7.Test2, where TypeParam = cv::Vec<signed char, 4>
+[       OK ] GpuMatNDTest/7.Test2 (11 ms)
+[ RUN      ] GpuMatNDTest/7.Test3, where TypeParam = cv::Vec<signed char, 4>
+[       OK ] GpuMatNDTest/7.Test3 (10 ms)
+[ RUN      ] GpuMatNDTest/7.Test4, where TypeParam = cv::Vec<signed char, 4>
+[       OK ] GpuMatNDTest/7.Test4 (10 ms)
+[ RUN      ] GpuMatNDTest/7.Test5, where TypeParam = cv::Vec<signed char, 4>
+[       OK ] GpuMatNDTest/7.Test5 (9 ms)
+[----------] 5 tests from GpuMatNDTest/7 (49 ms total)
+
+[----------] 5 tests from GpuMatNDTest/8, where TypeParam = cv::Vec<unsigned short, 1>
+[ RUN      ] GpuMatNDTest/8.Test1, where TypeParam = cv::Vec<unsigned short, 1>
+[       OK ] GpuMatNDTest/8.Test1 (8 ms)
+[ RUN      ] GpuMatNDTest/8.Test2, where TypeParam = cv::Vec<unsigned short, 1>
+[       OK ] GpuMatNDTest/8.Test2 (10 ms)
+[ RUN      ] GpuMatNDTest/8.Test3, where TypeParam = cv::Vec<unsigned short, 1>
+[       OK ] GpuMatNDTest/8.Test3 (8 ms)
+[ RUN      ] GpuMatNDTest/8.Test4, where TypeParam = cv::Vec<unsigned short, 1>
+[       OK ] GpuMatNDTest/8.Test4 (8 ms)
+[ RUN      ] GpuMatNDTest/8.Test5, where TypeParam = cv::Vec<unsigned short, 1>
+[       OK ] GpuMatNDTest/8.Test5 (8 ms)
+[----------] 5 tests from GpuMatNDTest/8 (42 ms total)
+
+[----------] 5 tests from GpuMatNDTest/9, where TypeParam = cv::Vec<unsigned short, 2>
+[ RUN      ] GpuMatNDTest/9.Test1, where TypeParam = cv::Vec<unsigned short, 2>
+[       OK ] GpuMatNDTest/9.Test1 (8 ms)
+[ RUN      ] GpuMatNDTest/9.Test2, where TypeParam = cv::Vec<unsigned short, 2>
+[       OK ] GpuMatNDTest/9.Test2 (9 ms)
+[ RUN      ] GpuMatNDTest/9.Test3, where TypeParam = cv::Vec<unsigned short, 2>
+[       OK ] GpuMatNDTest/9.Test3 (8 ms)
+[ RUN      ] GpuMatNDTest/9.Test4, where TypeParam = cv::Vec<unsigned short, 2>
+[       OK ] GpuMatNDTest/9.Test4 (9 ms)
+[ RUN      ] GpuMatNDTest/9.Test5, where TypeParam = cv::Vec<unsigned short, 2>
+[       OK ] GpuMatNDTest/9.Test5 (10 ms)
+[----------] 5 tests from GpuMatNDTest/9 (44 ms total)
+
+[----------] 5 tests from GpuMatNDTest/10, where TypeParam = cv::Vec<unsigned short, 3>
+[ RUN      ] GpuMatNDTest/10.Test1, where TypeParam = cv::Vec<unsigned short, 3>
+[       OK ] GpuMatNDTest/10.Test1 (8 ms)
+[ RUN      ] GpuMatNDTest/10.Test2, where TypeParam = cv::Vec<unsigned short, 3>
+[       OK ] GpuMatNDTest/10.Test2 (10 ms)
+[ RUN      ] GpuMatNDTest/10.Test3, where TypeParam = cv::Vec<unsigned short, 3>
+[       OK ] GpuMatNDTest/10.Test3 (9 ms)
+[ RUN      ] GpuMatNDTest/10.Test4, where TypeParam = cv::Vec<unsigned short, 3>
+[       OK ] GpuMatNDTest/10.Test4 (9 ms)
+[ RUN      ] GpuMatNDTest/10.Test5, where TypeParam = cv::Vec<unsigned short, 3>
+[       OK ] GpuMatNDTest/10.Test5 (10 ms)
+[----------] 5 tests from GpuMatNDTest/10 (46 ms total)
+
+[----------] 5 tests from GpuMatNDTest/11, where TypeParam = cv::Vec<unsigned short, 4>
+[ RUN      ] GpuMatNDTest/11.Test1, where TypeParam = cv::Vec<unsigned short, 4>
+[       OK ] GpuMatNDTest/11.Test1 (9 ms)
+[ RUN      ] GpuMatNDTest/11.Test2, where TypeParam = cv::Vec<unsigned short, 4>
+[       OK ] GpuMatNDTest/11.Test2 (11 ms)
+[ RUN      ] GpuMatNDTest/11.Test3, where TypeParam = cv::Vec<unsigned short, 4>
+[       OK ] GpuMatNDTest/11.Test3 (10 ms)
+[ RUN      ] GpuMatNDTest/11.Test4, where TypeParam = cv::Vec<unsigned short, 4>
+[       OK ] GpuMatNDTest/11.Test4 (10 ms)
+[ RUN      ] GpuMatNDTest/11.Test5, where TypeParam = cv::Vec<unsigned short, 4>
+[       OK ] GpuMatNDTest/11.Test5 (10 ms)
+[----------] 5 tests from GpuMatNDTest/11 (50 ms total)
+
+[----------] 5 tests from GpuMatNDTest/12, where TypeParam = cv::Vec<short, 1>
+[ RUN      ] GpuMatNDTest/12.Test1, where TypeParam = cv::Vec<short, 1>
+[       OK ] GpuMatNDTest/12.Test1 (8 ms)
+[ RUN      ] GpuMatNDTest/12.Test2, where TypeParam = cv::Vec<short, 1>
+[       OK ] GpuMatNDTest/12.Test2 (8 ms)
+[ RUN      ] GpuMatNDTest/12.Test3, where TypeParam = cv::Vec<short, 1>
+[       OK ] GpuMatNDTest/12.Test3 (7 ms)
+[ RUN      ] GpuMatNDTest/12.Test4, where TypeParam = cv::Vec<short, 1>
+[       OK ] GpuMatNDTest/12.Test4 (8 ms)
+[ RUN      ] GpuMatNDTest/12.Test5, where TypeParam = cv::Vec<short, 1>
+[       OK ] GpuMatNDTest/12.Test5 (8 ms)
+[----------] 5 tests from GpuMatNDTest/12 (39 ms total)
+
+[----------] 5 tests from GpuMatNDTest/13, where TypeParam = cv::Vec<short, 2>
+[ RUN      ] GpuMatNDTest/13.Test1, where TypeParam = cv::Vec<short, 2>
+[       OK ] GpuMatNDTest/13.Test1 (8 ms)
+[ RUN      ] GpuMatNDTest/13.Test2, where TypeParam = cv::Vec<short, 2>
+[       OK ] GpuMatNDTest/13.Test2 (11 ms)
+[ RUN      ] GpuMatNDTest/13.Test3, where TypeParam = cv::Vec<short, 2>
+[       OK ] GpuMatNDTest/13.Test3 (9 ms)
+[ RUN      ] GpuMatNDTest/13.Test4, where TypeParam = cv::Vec<short, 2>
+[       OK ] GpuMatNDTest/13.Test4 (8 ms)
+[ RUN      ] GpuMatNDTest/13.Test5, where TypeParam = cv::Vec<short, 2>
+[       OK ] GpuMatNDTest/13.Test5 (9 ms)
+[----------] 5 tests from GpuMatNDTest/13 (45 ms total)
+
+[----------] 5 tests from GpuMatNDTest/14, where TypeParam = cv::Vec<short, 3>
+[ RUN      ] GpuMatNDTest/14.Test1, where TypeParam = cv::Vec<short, 3>
+[       OK ] GpuMatNDTest/14.Test1 (10 ms)
+[ RUN      ] GpuMatNDTest/14.Test2, where TypeParam = cv::Vec<short, 3>
+[       OK ] GpuMatNDTest/14.Test2 (9 ms)
+[ RUN      ] GpuMatNDTest/14.Test3, where TypeParam = cv::Vec<short, 3>
+[       OK ] GpuMatNDTest/14.Test3 (9 ms)
+[ RUN      ] GpuMatNDTest/14.Test4, where TypeParam = cv::Vec<short, 3>
+[       OK ] GpuMatNDTest/14.Test4 (10 ms)
+[ RUN      ] GpuMatNDTest/14.Test5, where TypeParam = cv::Vec<short, 3>
+[       OK ] GpuMatNDTest/14.Test5 (9 ms)
+[----------] 5 tests from GpuMatNDTest/14 (47 ms total)
+
+[----------] 5 tests from GpuMatNDTest/15, where TypeParam = cv::Vec<short, 4>
+[ RUN      ] GpuMatNDTest/15.Test1, where TypeParam = cv::Vec<short, 4>
+[       OK ] GpuMatNDTest/15.Test1 (9 ms)
+[ RUN      ] GpuMatNDTest/15.Test2, where TypeParam = cv::Vec<short, 4>
+[       OK ] GpuMatNDTest/15.Test2 (13 ms)
+[ RUN      ] GpuMatNDTest/15.Test3, where TypeParam = cv::Vec<short, 4>
+[       OK ] GpuMatNDTest/15.Test3 (12 ms)
+[ RUN      ] GpuMatNDTest/15.Test4, where TypeParam = cv::Vec<short, 4>
+[       OK ] GpuMatNDTest/15.Test4 (10 ms)
+[ RUN      ] GpuMatNDTest/15.Test5, where TypeParam = cv::Vec<short, 4>
+[       OK ] GpuMatNDTest/15.Test5 (10 ms)
+[----------] 5 tests from GpuMatNDTest/15 (54 ms total)
+
+[----------] 5 tests from GpuMatNDTest/16, where TypeParam = cv::Vec<int, 1>
+[ RUN      ] GpuMatNDTest/16.Test1, where TypeParam = cv::Vec<int, 1>
+[       OK ] GpuMatNDTest/16.Test1 (8 ms)
+[ RUN      ] GpuMatNDTest/16.Test2, where TypeParam = cv::Vec<int, 1>
+[       OK ] GpuMatNDTest/16.Test2 (9 ms)
+[ RUN      ] GpuMatNDTest/16.Test3, where TypeParam = cv::Vec<int, 1>
+[       OK ] GpuMatNDTest/16.Test3 (8 ms)
+[ RUN      ] GpuMatNDTest/16.Test4, where TypeParam = cv::Vec<int, 1>
+[       OK ] GpuMatNDTest/16.Test4 (8 ms)
+[ RUN      ] GpuMatNDTest/16.Test5, where TypeParam = cv::Vec<int, 1>
+[       OK ] GpuMatNDTest/16.Test5 (8 ms)
+[----------] 5 tests from GpuMatNDTest/16 (41 ms total)
+
+[----------] 5 tests from GpuMatNDTest/17, where TypeParam = cv::Vec<int, 2>
+[ RUN      ] GpuMatNDTest/17.Test1, where TypeParam = cv::Vec<int, 2>
+[       OK ] GpuMatNDTest/17.Test1 (8 ms)
+[ RUN      ] GpuMatNDTest/17.Test2, where TypeParam = cv::Vec<int, 2>
+[       OK ] GpuMatNDTest/17.Test2 (11 ms)
+[ RUN      ] GpuMatNDTest/17.Test3, where TypeParam = cv::Vec<int, 2>
+[       OK ] GpuMatNDTest/17.Test3 (8 ms)
+[ RUN      ] GpuMatNDTest/17.Test4, where TypeParam = cv::Vec<int, 2>
+[       OK ] GpuMatNDTest/17.Test4 (9 ms)
+[ RUN      ] GpuMatNDTest/17.Test5, where TypeParam = cv::Vec<int, 2>
+[       OK ] GpuMatNDTest/17.Test5 (9 ms)
+[----------] 5 tests from GpuMatNDTest/17 (45 ms total)
+
+[----------] 5 tests from GpuMatNDTest/18, where TypeParam = cv::Vec<int, 3>
+[ RUN      ] GpuMatNDTest/18.Test1, where TypeParam = cv::Vec<int, 3>
+[       OK ] GpuMatNDTest/18.Test1 (9 ms)
+[ RUN      ] GpuMatNDTest/18.Test2, where TypeParam = cv::Vec<int, 3>
+[       OK ] GpuMatNDTest/18.Test2 (10 ms)
+[ RUN      ] GpuMatNDTest/18.Test3, where TypeParam = cv::Vec<int, 3>
+[       OK ] GpuMatNDTest/18.Test3 (9 ms)
+[ RUN      ] GpuMatNDTest/18.Test4, where TypeParam = cv::Vec<int, 3>
+[       OK ] GpuMatNDTest/18.Test4 (10 ms)
+[ RUN      ] GpuMatNDTest/18.Test5, where TypeParam = cv::Vec<int, 3>
+[       OK ] GpuMatNDTest/18.Test5 (9 ms)
+[----------] 5 tests from GpuMatNDTest/18 (47 ms total)
+
+[----------] 5 tests from GpuMatNDTest/19, where TypeParam = cv::Vec<int, 4>
+[ RUN      ] GpuMatNDTest/19.Test1, where TypeParam = cv::Vec<int, 4>
+[       OK ] GpuMatNDTest/19.Test1 (9 ms)
+[ RUN      ] GpuMatNDTest/19.Test2, where TypeParam = cv::Vec<int, 4>
+[       OK ] GpuMatNDTest/19.Test2 (11 ms)
+[ RUN      ] GpuMatNDTest/19.Test3, where TypeParam = cv::Vec<int, 4>
+[       OK ] GpuMatNDTest/19.Test3 (11 ms)
+[ RUN      ] GpuMatNDTest/19.Test4, where TypeParam = cv::Vec<int, 4>
+[       OK ] GpuMatNDTest/19.Test4 (10 ms)
+[ RUN      ] GpuMatNDTest/19.Test5, where TypeParam = cv::Vec<int, 4>
+[       OK ] GpuMatNDTest/19.Test5 (10 ms)
+[----------] 5 tests from GpuMatNDTest/19 (51 ms total)
+
+[----------] 5 tests from GpuMatNDTest/20, where TypeParam = cv::Vec<float, 1>
+[ RUN      ] GpuMatNDTest/20.Test1, where TypeParam = cv::Vec<float, 1>
+[       OK ] GpuMatNDTest/20.Test1 (8 ms)
+[ RUN      ] GpuMatNDTest/20.Test2, where TypeParam = cv::Vec<float, 1>
+[       OK ] GpuMatNDTest/20.Test2 (9 ms)
+[ RUN      ] GpuMatNDTest/20.Test3, where TypeParam = cv::Vec<float, 1>
+[       OK ] GpuMatNDTest/20.Test3 (8 ms)
+[ RUN      ] GpuMatNDTest/20.Test4, where TypeParam = cv::Vec<float, 1>
+[       OK ] GpuMatNDTest/20.Test4 (8 ms)
+[ RUN      ] GpuMatNDTest/20.Test5, where TypeParam = cv::Vec<float, 1>
+[       OK ] GpuMatNDTest/20.Test5 (8 ms)
+[----------] 5 tests from GpuMatNDTest/20 (41 ms total)
+
+[----------] 5 tests from GpuMatNDTest/21, where TypeParam = cv::Vec<float, 2>
+[ RUN      ] GpuMatNDTest/21.Test1, where TypeParam = cv::Vec<float, 2>
+[       OK ] GpuMatNDTest/21.Test1 (8 ms)
+[ RUN      ] GpuMatNDTest/21.Test2, where TypeParam = cv::Vec<float, 2>
+[       OK ] GpuMatNDTest/21.Test2 (10 ms)
+[ RUN      ] GpuMatNDTest/21.Test3, where TypeParam = cv::Vec<float, 2>
+[       OK ] GpuMatNDTest/21.Test3 (9 ms)
+[ RUN      ] GpuMatNDTest/21.Test4, where TypeParam = cv::Vec<float, 2>
+[       OK ] GpuMatNDTest/21.Test4 (11 ms)
+[ RUN      ] GpuMatNDTest/21.Test5, where TypeParam = cv::Vec<float, 2>
+[       OK ] GpuMatNDTest/21.Test5 (8 ms)
+[----------] 5 tests from GpuMatNDTest/21 (47 ms total)
+
+[----------] 5 tests from GpuMatNDTest/22, where TypeParam = cv::Vec<float, 3>
+[ RUN      ] GpuMatNDTest/22.Test1, where TypeParam = cv::Vec<float, 3>
+[       OK ] GpuMatNDTest/22.Test1 (8 ms)
+[ RUN      ] GpuMatNDTest/22.Test2, where TypeParam = cv::Vec<float, 3>
+[       OK ] GpuMatNDTest/22.Test2 (12 ms)
+[ RUN      ] GpuMatNDTest/22.Test3, where TypeParam = cv::Vec<float, 3>
+[       OK ] GpuMatNDTest/22.Test3 (9 ms)
+[ RUN      ] GpuMatNDTest/22.Test4, where TypeParam = cv::Vec<float, 3>
+[       OK ] GpuMatNDTest/22.Test4 (10 ms)
+[ RUN      ] GpuMatNDTest/22.Test5, where TypeParam = cv::Vec<float, 3>
+[       OK ] GpuMatNDTest/22.Test5 (9 ms)
+[----------] 5 tests from GpuMatNDTest/22 (48 ms total)
+
+[----------] 5 tests from GpuMatNDTest/23, where TypeParam = cv::Vec<float, 4>
+[ RUN      ] GpuMatNDTest/23.Test1, where TypeParam = cv::Vec<float, 4>
+[       OK ] GpuMatNDTest/23.Test1 (9 ms)
+[ RUN      ] GpuMatNDTest/23.Test2, where TypeParam = cv::Vec<float, 4>
+[       OK ] GpuMatNDTest/23.Test2 (11 ms)
+[ RUN      ] GpuMatNDTest/23.Test3, where TypeParam = cv::Vec<float, 4>
+[       OK ] GpuMatNDTest/23.Test3 (11 ms)
+[ RUN      ] GpuMatNDTest/23.Test4, where TypeParam = cv::Vec<float, 4>
+[       OK ] GpuMatNDTest/23.Test4 (10 ms)
+[ RUN      ] GpuMatNDTest/23.Test5, where TypeParam = cv::Vec<float, 4>
+[       OK ] GpuMatNDTest/23.Test5 (9 ms)
+[----------] 5 tests from GpuMatNDTest/23 (50 ms total)
+
+[----------] 5 tests from GpuMatNDTest/24, where TypeParam = cv::Vec<double, 1>
+[ RUN      ] GpuMatNDTest/24.Test1, where TypeParam = cv::Vec<double, 1>
+[       OK ] GpuMatNDTest/24.Test1 (8 ms)
+[ RUN      ] GpuMatNDTest/24.Test2, where TypeParam = cv::Vec<double, 1>
+[       OK ] GpuMatNDTest/24.Test2 (11 ms)
+[ RUN      ] GpuMatNDTest/24.Test3, where TypeParam = cv::Vec<double, 1>
+[       OK ] GpuMatNDTest/24.Test3 (8 ms)
+[ RUN      ] GpuMatNDTest/24.Test4, where TypeParam = cv::Vec<double, 1>
+[       OK ] GpuMatNDTest/24.Test4 (9 ms)
+[ RUN      ] GpuMatNDTest/24.Test5, where TypeParam = cv::Vec<double, 1>
+[       OK ] GpuMatNDTest/24.Test5 (8 ms)
+[----------] 5 tests from GpuMatNDTest/24 (44 ms total)
+
+[----------] 5 tests from GpuMatNDTest/25, where TypeParam = cv::Vec<double, 2>
+[ RUN      ] GpuMatNDTest/25.Test1, where TypeParam = cv::Vec<double, 2>
+[       OK ] GpuMatNDTest/25.Test1 (9 ms)
+[ RUN      ] GpuMatNDTest/25.Test2, where TypeParam = cv::Vec<double, 2>
+[       OK ] GpuMatNDTest/25.Test2 (10 ms)
+[ RUN      ] GpuMatNDTest/25.Test3, where TypeParam = cv::Vec<double, 2>
+[       OK ] GpuMatNDTest/25.Test3 (10 ms)
+[ RUN      ] GpuMatNDTest/25.Test4, where TypeParam = cv::Vec<double, 2>
+[       OK ] GpuMatNDTest/25.Test4 (9 ms)
+[ RUN      ] GpuMatNDTest/25.Test5, where TypeParam = cv::Vec<double, 2>
+[       OK ] GpuMatNDTest/25.Test5 (10 ms)
+[----------] 5 tests from GpuMatNDTest/25 (48 ms total)
+
+[----------] 5 tests from GpuMatNDTest/26, where TypeParam = cv::Vec<double, 3>
+[ RUN      ] GpuMatNDTest/26.Test1, where TypeParam = cv::Vec<double, 3>
+[       OK ] GpuMatNDTest/26.Test1 (10 ms)
+[ RUN      ] GpuMatNDTest/26.Test2, where TypeParam = cv::Vec<double, 3>
+[       OK ] GpuMatNDTest/26.Test2 (12 ms)
+[ RUN      ] GpuMatNDTest/26.Test3, where TypeParam = cv::Vec<double, 3>
+[       OK ] GpuMatNDTest/26.Test3 (11 ms)
+[ RUN      ] GpuMatNDTest/26.Test4, where TypeParam = cv::Vec<double, 3>
+[       OK ] GpuMatNDTest/26.Test4 (11 ms)
+[ RUN      ] GpuMatNDTest/26.Test5, where TypeParam = cv::Vec<double, 3>
+[       OK ] GpuMatNDTest/26.Test5 (11 ms)
+[----------] 5 tests from GpuMatNDTest/26 (55 ms total)
+
+[----------] 5 tests from GpuMatNDTest/27, where TypeParam = cv::Vec<double, 4>
+[ RUN      ] GpuMatNDTest/27.Test1, where TypeParam = cv::Vec<double, 4>
+[       OK ] GpuMatNDTest/27.Test1 (11 ms)
+[ RUN      ] GpuMatNDTest/27.Test2, where TypeParam = cv::Vec<double, 4>
+[       OK ] GpuMatNDTest/27.Test2 (14 ms)
+[ RUN      ] GpuMatNDTest/27.Test3, where TypeParam = cv::Vec<double, 4>
+[       OK ] GpuMatNDTest/27.Test3 (12 ms)
+[ RUN      ] GpuMatNDTest/27.Test4, where TypeParam = cv::Vec<double, 4>
+[       OK ] GpuMatNDTest/27.Test4 (12 ms)
+[ RUN      ] GpuMatNDTest/27.Test5, where TypeParam = cv::Vec<double, 4>
+[       OK ] GpuMatNDTest/27.Test5 (12 ms)
+[----------] 5 tests from GpuMatNDTest/27 (61 ms total)
+
+[----------] 5 tests from GpuMatNDTest/28, where TypeParam = cv::Vec<cv::hfloat, 1>
+[ RUN      ] GpuMatNDTest/28.Test1, where TypeParam = cv::Vec<cv::hfloat, 1>
+[       OK ] GpuMatNDTest/28.Test1 (8 ms)
+[ RUN      ] GpuMatNDTest/28.Test2, where TypeParam = cv::Vec<cv::hfloat, 1>
+[       OK ] GpuMatNDTest/28.Test2 (8 ms)
+[ RUN      ] GpuMatNDTest/28.Test3, where TypeParam = cv::Vec<cv::hfloat, 1>
+[       OK ] GpuMatNDTest/28.Test3 (0 ms)
+[ RUN      ] GpuMatNDTest/28.Test4, where TypeParam = cv::Vec<cv::hfloat, 1>
+[       OK ] GpuMatNDTest/28.Test4 (0 ms)
+[ RUN      ] GpuMatNDTest/28.Test5, where TypeParam = cv::Vec<cv::hfloat, 1>
+[       OK ] GpuMatNDTest/28.Test5 (0 ms)
+[----------] 5 tests from GpuMatNDTest/28 (16 ms total)
+
+[----------] 5 tests from GpuMatNDTest/29, where TypeParam = cv::Vec<cv::hfloat, 2>
+[ RUN      ] GpuMatNDTest/29.Test1, where TypeParam = cv::Vec<cv::hfloat, 2>
+[       OK ] GpuMatNDTest/29.Test1 (8 ms)
+[ RUN      ] GpuMatNDTest/29.Test2, where TypeParam = cv::Vec<cv::hfloat, 2>
+[       OK ] GpuMatNDTest/29.Test2 (10 ms)
+[ RUN      ] GpuMatNDTest/29.Test3, where TypeParam = cv::Vec<cv::hfloat, 2>
+[       OK ] GpuMatNDTest/29.Test3 (0 ms)
+[ RUN      ] GpuMatNDTest/29.Test4, where TypeParam = cv::Vec<cv::hfloat, 2>
+[       OK ] GpuMatNDTest/29.Test4 (0 ms)
+[ RUN      ] GpuMatNDTest/29.Test5, where TypeParam = cv::Vec<cv::hfloat, 2>
+[       OK ] GpuMatNDTest/29.Test5 (0 ms)
+[----------] 5 tests from GpuMatNDTest/29 (18 ms total)
+
+[----------] 5 tests from GpuMatNDTest/30, where TypeParam = cv::Vec<cv::hfloat, 3>
+[ RUN      ] GpuMatNDTest/30.Test1, where TypeParam = cv::Vec<cv::hfloat, 3>
+[       OK ] GpuMatNDTest/30.Test1 (9 ms)
+[ RUN      ] GpuMatNDTest/30.Test2, where TypeParam = cv::Vec<cv::hfloat, 3>
+[       OK ] GpuMatNDTest/30.Test2 (11 ms)
+[ RUN      ] GpuMatNDTest/30.Test3, where TypeParam = cv::Vec<cv::hfloat, 3>
+[       OK ] GpuMatNDTest/30.Test3 (0 ms)
+[ RUN      ] GpuMatNDTest/30.Test4, where TypeParam = cv::Vec<cv::hfloat, 3>
+[       OK ] GpuMatNDTest/30.Test4 (0 ms)
+[ RUN      ] GpuMatNDTest/30.Test5, where TypeParam = cv::Vec<cv::hfloat, 3>
+[       OK ] GpuMatNDTest/30.Test5 (0 ms)
+[----------] 5 tests from GpuMatNDTest/30 (20 ms total)
+
+[----------] 5 tests from GpuMatNDTest/31, where TypeParam = cv::Vec<cv::hfloat, 4>
+[ RUN      ] GpuMatNDTest/31.Test1, where TypeParam = cv::Vec<cv::hfloat, 4>
+[       OK ] GpuMatNDTest/31.Test1 (10 ms)
+[ RUN      ] GpuMatNDTest/31.Test2, where TypeParam = cv::Vec<cv::hfloat, 4>
+[       OK ] GpuMatNDTest/31.Test2 (12 ms)
+[ RUN      ] GpuMatNDTest/31.Test3, where TypeParam = cv::Vec<cv::hfloat, 4>
+[       OK ] GpuMatNDTest/31.Test3 (0 ms)
+[ RUN      ] GpuMatNDTest/31.Test4, where TypeParam = cv::Vec<cv::hfloat, 4>
+[       OK ] GpuMatNDTest/31.Test4 (0 ms)
+[ RUN      ] GpuMatNDTest/31.Test5, where TypeParam = cv::Vec<cv::hfloat, 4>
+[       OK ] GpuMatNDTest/31.Test5 (0 ms)
+[----------] 5 tests from GpuMatNDTest/31 (22 ms total)
+
+[----------] 1 test from PyrDown
+[ RUN      ] PyrDown._8uc1
+[       OK ] PyrDown._8uc1 (2 ms)
+[----------] 1 test from PyrDown (2 ms total)
+
+[----------] 1 test from PyrUp
+[ RUN      ] PyrUp._32fc4
+[       OK ] PyrUp._32fc4 (1 ms)
+[----------] 1 test from PyrUp (1 ms total)
+
+[----------] 2 tests from Sum
+[ RUN      ] Sum.GpuMat
+[       OK ] Sum.GpuMat (2 ms)
+[ RUN      ] Sum.Expr
+[       OK ] Sum.Expr (1 ms)
+[----------] 2 tests from Sum (3 ms total)
+
+[----------] 1 test from MinVal
+[ RUN      ] MinVal.GpuMat
+[       OK ] MinVal.GpuMat (2 ms)
+[----------] 1 test from MinVal (2 ms total)
+
+[----------] 1 test from MaxVal
+[ RUN      ] MaxVal.Expr
+[       OK ] MaxVal.Expr (2 ms)
+[----------] 1 test from MaxVal (2 ms total)
+
+[----------] 1 test from MinMaxVal
+[ RUN      ] MinMaxVal.GpuMat
+[       OK ] MinMaxVal.GpuMat (0 ms)
+[----------] 1 test from MinMaxVal (0 ms total)
+
+[----------] 1 test from NonZeroCount
+[ RUN      ] NonZeroCount.Accuracy
+[       OK ] NonZeroCount.Accuracy (1 ms)
+[----------] 1 test from NonZeroCount (1 ms total)
+
+[----------] 4 tests from ReduceToRow
+[ RUN      ] ReduceToRow.Sum
+[       OK ] ReduceToRow.Sum (3 ms)
+[ RUN      ] ReduceToRow.Avg
+[       OK ] ReduceToRow.Avg (1 ms)
+[ RUN      ] ReduceToRow.Min
+[       OK ] ReduceToRow.Min (1 ms)
+[ RUN      ] ReduceToRow.Max
+[       OK ] ReduceToRow.Max (0 ms)
+[----------] 4 tests from ReduceToRow (5 ms total)
+
+[----------] 4 tests from ReduceToColumn
+[ RUN      ] ReduceToColumn.Sum
+[       OK ] ReduceToColumn.Sum (1 ms)
+[ RUN      ] ReduceToColumn.Avg
+[       OK ] ReduceToColumn.Avg (1 ms)
+[ RUN      ] ReduceToColumn.Min
+[       OK ] ReduceToColumn.Min (1 ms)
+[ RUN      ] ReduceToColumn.Max
+[       OK ] ReduceToColumn.Max (0 ms)
+[----------] 4 tests from ReduceToColumn (3 ms total)
+
+[----------] 1 test from Histogram
+[ RUN      ] Histogram.GpuMat
+[       OK ] Histogram.GpuMat (1 ms)
+[----------] 1 test from Histogram (1 ms total)
+
+[----------] 26 tests from BlockScanInt
+[ RUN      ] BlockScanInt.BlockSize29
+[       OK ] BlockScanInt.BlockSize29 (2 ms)
+[ RUN      ] BlockScanInt.BlockSize30
+[       OK ] BlockScanInt.BlockSize30 (0 ms)
+[ RUN      ] BlockScanInt.BlockSize32
+[       OK ] BlockScanInt.BlockSize32 (1 ms)
+[ RUN      ] BlockScanInt.BlockSize40
+[       OK ] BlockScanInt.BlockSize40 (0 ms)
+[ RUN      ] BlockScanInt.BlockSize41
+[       OK ] BlockScanInt.BlockSize41 (1 ms)
+[ RUN      ] BlockScanInt.BlockSize59
+[       OK ] BlockScanInt.BlockSize59 (0 ms)
+[ RUN      ] BlockScanInt.BlockSize60
+[       OK ] BlockScanInt.BlockSize60 (1 ms)
+[ RUN      ] BlockScanInt.BlockSize64
+[       OK ] BlockScanInt.BlockSize64 (0 ms)
+[ RUN      ] BlockScanInt.BlockSize70
+[       OK ] BlockScanInt.BlockSize70 (1 ms)
+[ RUN      ] BlockScanInt.BlockSize71
+[       OK ] BlockScanInt.BlockSize71 (0 ms)
+[ RUN      ] BlockScanInt.BlockSize109
+[       OK ] BlockScanInt.BlockSize109 (1 ms)
+[ RUN      ] BlockScanInt.BlockSize110
+[       OK ] BlockScanInt.BlockSize110 (0 ms)
+[ RUN      ] BlockScanInt.BlockSize128
+[       OK ] BlockScanInt.BlockSize128 (1 ms)
+[ RUN      ] BlockScanInt.BlockSize130
+[       OK ] BlockScanInt.BlockSize130 (0 ms)
+[ RUN      ] BlockScanInt.BlockSize131
+[       OK ] BlockScanInt.BlockSize131 (0 ms)
+[ RUN      ] BlockScanInt.BlockSize189
+[       OK ] BlockScanInt.BlockSize189 (1 ms)
+[ RUN      ] BlockScanInt.BlockSize200
+[       OK ] BlockScanInt.BlockSize200 (0 ms)
+[ RUN      ] BlockScanInt.BlockSize256
+[       OK ] BlockScanInt.BlockSize256 (1 ms)
+[ RUN      ] BlockScanInt.BlockSize300
+[       OK ] BlockScanInt.BlockSize300 (0 ms)
+[ RUN      ] BlockScanInt.BlockSize311
+[       OK ] BlockScanInt.BlockSize311 (1 ms)
+[ RUN      ] BlockScanInt.BlockSize489
+[       OK ] BlockScanInt.BlockSize489 (0 ms)
+[ RUN      ] BlockScanInt.BlockSize500
+[       OK ] BlockScanInt.BlockSize500 (1 ms)
+[ RUN      ] BlockScanInt.BlockSize512
+[       OK ] BlockScanInt.BlockSize512 (0 ms)
+[ RUN      ] BlockScanInt.BlockSize600
+[       OK ] BlockScanInt.BlockSize600 (1 ms)
+[ RUN      ] BlockScanInt.BlockSize611
+[       OK ] BlockScanInt.BlockSize611 (0 ms)
+[ RUN      ] BlockScanInt.BlockSize1024
+[       OK ] BlockScanInt.BlockSize1024 (1 ms)
+[----------] 26 tests from BlockScanInt (14 ms total)
+
+[----------] 26 tests from BlockScanDouble
+[ RUN      ] BlockScanDouble.BlockSize29
+[       OK ] BlockScanDouble.BlockSize29 (0 ms)
+[ RUN      ] BlockScanDouble.BlockSize30
+[       OK ] BlockScanDouble.BlockSize30 (0 ms)
+[ RUN      ] BlockScanDouble.BlockSize32
+[       OK ] BlockScanDouble.BlockSize32 (1 ms)
+[ RUN      ] BlockScanDouble.BlockSize40
+[       OK ] BlockScanDouble.BlockSize40 (0 ms)
+[ RUN      ] BlockScanDouble.BlockSize41
+[       OK ] BlockScanDouble.BlockSize41 (1 ms)
+[ RUN      ] BlockScanDouble.BlockSize59
+[       OK ] BlockScanDouble.BlockSize59 (0 ms)
+[ RUN      ] BlockScanDouble.BlockSize60
+[       OK ] BlockScanDouble.BlockSize60 (1 ms)
+[ RUN      ] BlockScanDouble.BlockSize64
+[       OK ] BlockScanDouble.BlockSize64 (0 ms)
+[ RUN      ] BlockScanDouble.BlockSize70
+[       OK ] BlockScanDouble.BlockSize70 (1 ms)
+[ RUN      ] BlockScanDouble.BlockSize71
+[       OK ] BlockScanDouble.BlockSize71 (0 ms)
+[ RUN      ] BlockScanDouble.BlockSize109
+[       OK ] BlockScanDouble.BlockSize109 (0 ms)
+[ RUN      ] BlockScanDouble.BlockSize110
+[       OK ] BlockScanDouble.BlockSize110 (1 ms)
+[ RUN      ] BlockScanDouble.BlockSize128
+[       OK ] BlockScanDouble.BlockSize128 (0 ms)
+[ RUN      ] BlockScanDouble.BlockSize130
+[       OK ] BlockScanDouble.BlockSize130 (1 ms)
+[ RUN      ] BlockScanDouble.BlockSize131
+[       OK ] BlockScanDouble.BlockSize131 (0 ms)
+[ RUN      ] BlockScanDouble.BlockSize189
+[       OK ] BlockScanDouble.BlockSize189 (1 ms)
+[ RUN      ] BlockScanDouble.BlockSize200
+[       OK ] BlockScanDouble.BlockSize200 (0 ms)
+[ RUN      ] BlockScanDouble.BlockSize256
+[       OK ] BlockScanDouble.BlockSize256 (0 ms)
+[ RUN      ] BlockScanDouble.BlockSize300
+[       OK ] BlockScanDouble.BlockSize300 (1 ms)
+[ RUN      ] BlockScanDouble.BlockSize311
+[       OK ] BlockScanDouble.BlockSize311 (0 ms)
+[ RUN      ] BlockScanDouble.BlockSize489
+[       OK ] BlockScanDouble.BlockSize489 (1 ms)
+[ RUN      ] BlockScanDouble.BlockSize500
+[       OK ] BlockScanDouble.BlockSize500 (0 ms)
+[ RUN      ] BlockScanDouble.BlockSize512
+[       OK ] BlockScanDouble.BlockSize512 (1 ms)
+[ RUN      ] BlockScanDouble.BlockSize600
+[       OK ] BlockScanDouble.BlockSize600 (0 ms)
+[ RUN      ] BlockScanDouble.BlockSize611
+[       OK ] BlockScanDouble.BlockSize611 (1 ms)
+[ RUN      ] BlockScanDouble.BlockSize1024
+[       OK ] BlockScanDouble.BlockSize1024 (0 ms)
+[----------] 26 tests from BlockScanDouble (11 ms total)
+
+[----------] 2 tests from MergeTest/0, where TypeParam = unsigned char
+[ RUN      ] MergeTest/0.C2, where TypeParam = unsigned char
+[       OK ] MergeTest/0.C2 (2 ms)
+[ RUN      ] MergeTest/0.C3, where TypeParam = unsigned char
+[       OK ] MergeTest/0.C3 (1 ms)
+[----------] 2 tests from MergeTest/0 (3 ms total)
+
+[----------] 2 tests from MergeTest/1, where TypeParam = unsigned short
+[ RUN      ] MergeTest/1.C2, where TypeParam = unsigned short
+[       OK ] MergeTest/1.C2 (1 ms)
+[ RUN      ] MergeTest/1.C3, where TypeParam = unsigned short
+[       OK ] MergeTest/1.C3 (1 ms)
+[----------] 2 tests from MergeTest/1 (2 ms total)
+
+[----------] 2 tests from MergeTest/2, where TypeParam = short
+[ RUN      ] MergeTest/2.C2, where TypeParam = short
+[       OK ] MergeTest/2.C2 (1 ms)
+[ RUN      ] MergeTest/2.C3, where TypeParam = short
+[       OK ] MergeTest/2.C3 (1 ms)
+[----------] 2 tests from MergeTest/2 (2 ms total)
+
+[----------] 2 tests from MergeTest/3, where TypeParam = int
+[ RUN      ] MergeTest/3.C2, where TypeParam = int
+[       OK ] MergeTest/3.C2 (1 ms)
+[ RUN      ] MergeTest/3.C3, where TypeParam = int
+[       OK ] MergeTest/3.C3 (2 ms)
+[----------] 2 tests from MergeTest/3 (3 ms total)
+
+[----------] 2 tests from MergeTest/4, where TypeParam = float
+[ RUN      ] MergeTest/4.C2, where TypeParam = float
+[       OK ] MergeTest/4.C2 (1 ms)
+[ RUN      ] MergeTest/4.C3, where TypeParam = float
+[       OK ] MergeTest/4.C3 (1 ms)
+[----------] 2 tests from MergeTest/4 (2 ms total)
+
+[----------] 2 tests from SplitTest/0, where TypeParam = unsigned char
+[ RUN      ] SplitTest/0.C3, where TypeParam = unsigned char
+[       OK ] SplitTest/0.C3 (2 ms)
+[ RUN      ] SplitTest/0.C4, where TypeParam = unsigned char
+[       OK ] SplitTest/0.C4 (1 ms)
+[----------] 2 tests from SplitTest/0 (3 ms total)
+
+[----------] 2 tests from SplitTest/1, where TypeParam = unsigned short
+[ RUN      ] SplitTest/1.C3, where TypeParam = unsigned short
+[       OK ] SplitTest/1.C3 (1 ms)
+[ RUN      ] SplitTest/1.C4, where TypeParam = unsigned short
+[       OK ] SplitTest/1.C4 (1 ms)
+[----------] 2 tests from SplitTest/1 (2 ms total)
+
+[----------] 2 tests from SplitTest/2, where TypeParam = short
+[ RUN      ] SplitTest/2.C3, where TypeParam = short
+[       OK ] SplitTest/2.C3 (1 ms)
+[ RUN      ] SplitTest/2.C4, where TypeParam = short
+[       OK ] SplitTest/2.C4 (2 ms)
+[----------] 2 tests from SplitTest/2 (3 ms total)
+
+[----------] 2 tests from SplitTest/3, where TypeParam = int
+[ RUN      ] SplitTest/3.C3, where TypeParam = int
+[       OK ] SplitTest/3.C3 (1 ms)
+[ RUN      ] SplitTest/3.C4, where TypeParam = int
+[       OK ] SplitTest/3.C4 (1 ms)
+[----------] 2 tests from SplitTest/3 (2 ms total)
+
+[----------] 2 tests from SplitTest/4, where TypeParam = float
+[ RUN      ] SplitTest/4.C3, where TypeParam = float
+[       OK ] SplitTest/4.C3 (1 ms)
+[ RUN      ] SplitTest/4.C4, where TypeParam = float
+[       OK ] SplitTest/4.C4 (1 ms)
+[----------] 2 tests from SplitTest/4 (2 ms total)
+
+[----------] 4 tests from Remap
+[ RUN      ] Remap.HALF_SIZE
+[       OK ] Remap.HALF_SIZE (2 ms)
+[ RUN      ] Remap.UPSIDE_DOWN
+[       OK ] Remap.UPSIDE_DOWN (1 ms)
+[ RUN      ] Remap.REFLECTION_X
+[       OK ] Remap.REFLECTION_X (0 ms)
+[ RUN      ] Remap.REFLECTION_BOTH
+[       OK ] Remap.REFLECTION_BOTH (1 ms)
+[----------] 4 tests from Remap (4 ms total)
+
+[----------] 2 tests from Resize
+[ RUN      ] Resize.Upscale
+[       OK ] Resize.Upscale (2 ms)
+[ RUN      ] Resize.Downscale
+[       OK ] Resize.Downscale (0 ms)
+[----------] 2 tests from Resize (2 ms total)
+
+[----------] 1 test from WarpAffine
+[ RUN      ] WarpAffine.Rotation
+[       OK ] WarpAffine.Rotation (12 ms)
+[----------] 1 test from WarpAffine (12 ms total)
+
+[----------] 1 test from WarpPerspective
+[ RUN      ] WarpPerspective.Rotation
+[       OK ] WarpPerspective.Rotation (2 ms)
+[----------] 1 test from WarpPerspective (2 ms total)
+
+[----------] 2 tests from Transpose
+[ RUN      ] Transpose._8uc1
+[       OK ] Transpose._8uc1 (0 ms)
+[ RUN      ] Transpose._32fc3
+[       OK ] Transpose._32fc3 (1 ms)
+[----------] 2 tests from Transpose (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 402 tests from 111 test cases ran. (1872 ms total)
+[  PASSED  ] 402 tests.

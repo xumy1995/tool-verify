@@ -1,0 +1,82 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 22 tests from 6 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from xphoto_dctimagedenoising
+[ RUN      ] xphoto_dctimagedenoising.regression
+[       OK ] xphoto_dctimagedenoising.regression (578 ms)
+[----------] 1 test from xphoto_dctimagedenoising (578 ms total)
+
+[----------] 12 tests from xphoto_simplecolorbalance
+[ RUN      ] xphoto_simplecolorbalance.uchar_max_value
+[       OK ] xphoto_simplecolorbalance.uchar_max_value (4 ms)
+[ RUN      ] xphoto_simplecolorbalance.uchar_min_value
+[       OK ] xphoto_simplecolorbalance.uchar_min_value (0 ms)
+[ RUN      ] xphoto_simplecolorbalance.uchar_equal_range
+[       OK ] xphoto_simplecolorbalance.uchar_equal_range (11 ms)
+[ RUN      ] xphoto_simplecolorbalance.uchar_single_value
+[       OK ] xphoto_simplecolorbalance.uchar_single_value (0 ms)
+[ RUN      ] xphoto_simplecolorbalance.uchar_p
+[       OK ] xphoto_simplecolorbalance.uchar_p (0 ms)
+[ RUN      ] xphoto_simplecolorbalance.uchar_c3
+[       OK ] xphoto_simplecolorbalance.uchar_c3 (0 ms)
+[ RUN      ] xphoto_simplecolorbalance.float_max_value
+[       OK ] xphoto_simplecolorbalance.float_max_value (0 ms)
+[ RUN      ] xphoto_simplecolorbalance.float_min_value
+[       OK ] xphoto_simplecolorbalance.float_min_value (0 ms)
+[ RUN      ] xphoto_simplecolorbalance.float_equal_range
+[       OK ] xphoto_simplecolorbalance.float_equal_range (0 ms)
+[ RUN      ] xphoto_simplecolorbalance.float_single_value
+[       OK ] xphoto_simplecolorbalance.float_single_value (0 ms)
+[ RUN      ] xphoto_simplecolorbalance.float_p
+[       OK ] xphoto_simplecolorbalance.float_p (0 ms)
+[ RUN      ] xphoto_simplecolorbalance.float_c3
+[       OK ] xphoto_simplecolorbalance.float_c3 (0 ms)
+[----------] 12 tests from xphoto_simplecolorbalance (15 ms total)
+
+[----------] 1 test from xphoto_grayworld_white_balance
+[ RUN      ] xphoto_grayworld_white_balance.regression
+[       OK ] xphoto_grayworld_white_balance.regression (115 ms)
+[----------] 1 test from xphoto_grayworld_white_balance (115 ms total)
+
+[----------] 6 tests from xphoto_inpaint
+[ RUN      ] xphoto_inpaint.smoke_FSR_FAST
+[       OK ] xphoto_inpaint.smoke_FSR_FAST (594 ms)
+[ RUN      ] xphoto_inpaint.smoke_FSR_BEST
+[       OK ] xphoto_inpaint.smoke_FSR_BEST (7400 ms)
+[ RUN      ] xphoto_inpaint.smoke_grayscale_FSR_FAST
+[       OK ] xphoto_inpaint.smoke_grayscale_FSR_FAST (307 ms)
+[ RUN      ] xphoto_inpaint.smoke_grayscale_FSR_BEST
+[       OK ] xphoto_inpaint.smoke_grayscale_FSR_BEST (4629 ms)
+[ RUN      ] xphoto_inpaint.regression_FSR_FAST
+[       OK ] xphoto_inpaint.regression_FSR_FAST (3281 ms)
+[ RUN      ] xphoto_inpaint.regression_FSR_BEST
+[     SKIP ] Test with tag 'verylong' is skipped ('verylong' is in skip list)
+[       OK ] xphoto_inpaint.regression_FSR_BEST (0 ms)
+[----------] 6 tests from xphoto_inpaint (16212 ms total)
+
+[----------] 1 test from xphoto_simplefeatures
+[ RUN      ] xphoto_simplefeatures.regression
+[       OK ] xphoto_simplefeatures.regression (39 ms)
+[----------] 1 test from xphoto_simplefeatures (39 ms total)
+
+[----------] 1 test from xphoto_oil_painting
+[ RUN      ] xphoto_oil_painting.regression
+[       OK ] xphoto_oil_painting.regression (416 ms)
+[----------] 1 test from xphoto_oil_painting (416 ms total)
+
+[----------] Global test environment tear-down
+[ SKIPSTAT ] 1 tests skipped
+[ SKIPSTAT ] TAG='verylong' skip 1 tests
+[==========] 22 tests from 6 test cases ran. (17375 ms total)
+[  PASSED  ] 22 tests.

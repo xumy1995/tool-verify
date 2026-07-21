@@ -1,0 +1,1072 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 180 tests from 72 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from EstimateAffine2D
+[ RUN      ] EstimateAffine2D.issue_14259_dont_change_inputs
+[       OK ] EstimateAffine2D.issue_14259_dont_change_inputs (15 ms)
+[----------] 1 test from EstimateAffine2D (15 ms total)
+
+[----------] 2 tests from Calib3d_Affine3f
+[ RUN      ] Calib3d_Affine3f.accuracy
+[       OK ] Calib3d_Affine3f.accuracy (3 ms)
+[ RUN      ] Calib3d_Affine3f.accuracy_rvec
+[       OK ] Calib3d_Affine3f.accuracy_rvec (1 ms)
+[----------] 2 tests from Calib3d_Affine3f (4 ms total)
+
+[----------] 3 tests from Calib3d_EstimateAffine3D
+[ RUN      ] Calib3d_EstimateAffine3D.accuracy
+[       OK ] Calib3d_EstimateAffine3D.accuracy (1 ms)
+[ RUN      ] Calib3d_EstimateAffine3D.regression_16007
+[       OK ] Calib3d_EstimateAffine3D.regression_16007 (0 ms)
+[ RUN      ] Calib3d_EstimateAffine3D.umeyama_3_pt
+[       OK ] Calib3d_EstimateAffine3D.umeyama_3_pt (6 ms)
+[----------] 3 tests from Calib3d_EstimateAffine3D (7 ms total)
+
+[----------] 1 test from EstimateAffinePartial2D
+[ RUN      ] EstimateAffinePartial2D.issue_14259_dont_change_inputs
+[       OK ] EstimateAffinePartial2D.issue_14259_dont_change_inputs (0 ms)
+[----------] 1 test from EstimateAffinePartial2D (0 ms total)
+
+[----------] 4 tests from Calib3d_CalibrateHandEye
+[ RUN      ] Calib3d_CalibrateHandEye.regression_eye_in_hand
+
+Method Tsai:
+Max rvec error: 1.71019e-15, Mean rvec error: 4.51678e-16, Std rvec error: 3.18345e-16
+Max tvec error: 5.64558e-15, Mean tvec error: 1.29754e-15, Std tvec error: 7.79581e-16
+Method (noise) Tsai:
+Max rvec error: 0.00809123, Mean rvec error: 0.00303171, Std rvec error: 0.0014869
+Max tvec error: 0.0504282, Mean tvec error: 0.0129911, Std tvec error: 0.00778294
+
+Method Park:
+Max rvec error: 5.42569e-15, Mean rvec error: 5.45892e-16, Std rvec error: 6.00917e-16
+Max tvec error: 1.13315e-14, Mean tvec error: 2.22538e-15, Std tvec error: 2.12961e-15
+Method (noise) Park:
+Max rvec error: 0.00816913, Mean rvec error: 0.0030271, Std rvec error: 0.00148328
+Max tvec error: 0.053842, Mean tvec error: 0.0126138, Std tvec error: 0.0076798
+
+Method Horaud:
+Max rvec error: 1.70889e-15, Mean rvec error: 4.80047e-16, Std rvec error: 3.15206e-16
+Max tvec error: 3.47466e-15, Mean tvec error: 1.21399e-15, Std tvec error: 6.41171e-16
+Method (noise) Horaud:
+Max rvec error: 0.00819348, Mean rvec error: 0.00302653, Std rvec error: 0.00148137
+Max tvec error: 0.0538068, Mean tvec error: 0.0126171, Std tvec error: 0.00767777
+
+Method Andreff:
+Max rvec error: 8.22863e-15, Mean rvec error: 9.8662e-16, Std rvec error: 1.05018e-15
+Max tvec error: 7.71022e-15, Mean tvec error: 1.87796e-15, Std tvec error: 1.1111e-15
+Method (noise) Andreff:
+Max rvec error: 0.00798341, Mean rvec error: 0.00270896, Std rvec error: 0.0012459
+Max tvec error: 0.0488079, Mean tvec error: 0.0131569, Std tvec error: 0.00787503
+
+Method Daniilidis:
+Max rvec error: 1.47914e-15, Mean rvec error: 4.64671e-16, Std rvec error: 3.07268e-16
+Max tvec error: 3.29953e-15, Mean tvec error: 1.11495e-15, Std tvec error: 5.78511e-16
+Method (noise) Daniilidis:
+Max rvec error: 0.00729373, Mean rvec error: 0.00282738, Std rvec error: 0.00132308
+Max tvec error: 0.0460099, Mean tvec error: 0.0126107, Std tvec error: 0.0072734
+[       OK ] Calib3d_CalibrateHandEye.regression_eye_in_hand (923 ms)
+[ RUN      ] Calib3d_CalibrateHandEye.regression_eye_to_hand
+
+Method Tsai:
+Max rvec error: 1.70075e-15, Mean rvec error: 4.56962e-16, Std rvec error: 3.05072e-16
+Max tvec error: 9.59685e-15, Mean tvec error: 2.57601e-15, Std tvec error: 1.44908e-15
+Method (noise) Tsai:
+Max rvec error: 0.010882, Mean rvec error: 0.00341948, Std rvec error: 0.00163417
+Max tvec error: 0.0684472, Mean tvec error: 0.0166683, Std tvec error: 0.0102411
+
+Method Park:
+Max rvec error: 2.1334e-15, Mean rvec error: 5.17775e-16, Std rvec error: 3.71016e-16
+Max tvec error: 2.84598e-14, Mean tvec error: 4.76975e-15, Std tvec error: 5.01066e-15
+Method (noise) Park:
+Max rvec error: 0.0107451, Mean rvec error: 0.00343434, Std rvec error: 0.00164697
+Max tvec error: 0.0572677, Mean tvec error: 0.0165802, Std tvec error: 0.00998904
+
+Method Horaud:
+Max rvec error: 1.71845e-15, Mean rvec error: 4.76547e-16, Std rvec error: 3.22984e-16
+Max tvec error: 2.63364e-14, Mean tvec error: 2.92156e-15, Std tvec error: 3.70458e-15
+Method (noise) Horaud:
+Max rvec error: 0.0107447, Mean rvec error: 0.00343451, Std rvec error: 0.00164983
+Max tvec error: 0.0572277, Mean tvec error: 0.0165813, Std tvec error: 0.0099992
+
+Method Andreff:
+Max rvec error: 9.64889e-15, Mean rvec error: 1.51837e-15, Std rvec error: 1.43931e-15
+Max tvec error: 4.80869e-14, Mean tvec error: 5.80478e-15, Std tvec error: 7.20747e-15
+Method (noise) Andreff:
+Max rvec error: 0.00613841, Mean rvec error: 0.00277172, Std rvec error: 0.00119752
+Max tvec error: 0.0546187, Mean tvec error: 0.0186135, Std tvec error: 0.00957502
+
+Method Daniilidis:
+Max rvec error: 3.79311e-15, Mean rvec error: 1.06771e-15, Std rvec error: 5.97831e-16
+Max tvec error: 8.58828e-15, Mean tvec error: 2.84156e-15, Std tvec error: 1.58308e-15
+Method (noise) Daniilidis:
+Max rvec error: 0.00513476, Mean rvec error: 0.00239134, Std rvec error: 0.00100505
+Max tvec error: 0.0351865, Mean tvec error: 0.0121831, Std tvec error: 0.00647153
+[       OK ] Calib3d_CalibrateHandEye.regression_eye_to_hand (916 ms)
+[ RUN      ] Calib3d_CalibrateHandEye.regression_17986
+[       OK ] Calib3d_CalibrateHandEye.regression_17986 (361 ms)
+[ RUN      ] Calib3d_CalibrateHandEye.regression_24871
+[       OK ] Calib3d_CalibrateHandEye.regression_24871 (0 ms)
+[----------] 4 tests from Calib3d_CalibrateHandEye (2200 ms total)
+
+[----------] 1 test from Calib3d_CalibrateRobotWorldHandEye
+[ RUN      ] Calib3d_CalibrateRobotWorldHandEye.regression
+[       OK ] Calib3d_CalibrateRobotWorldHandEye.regression (13 ms)
+[----------] 1 test from Calib3d_CalibrateRobotWorldHandEye (13 ms total)
+
+[----------] 2 tests from Calib3d_CalibrateCamera_CPP
+[ RUN      ] Calib3d_CalibrateCamera_CPP.regression
+[       OK ] Calib3d_CalibrateCamera_CPP.regression (4816 ms)
+[ RUN      ] Calib3d_CalibrateCamera_CPP.badarg
+[       OK ] Calib3d_CalibrateCamera_CPP.badarg (18 ms)
+[----------] 2 tests from Calib3d_CalibrateCamera_CPP (4834 ms total)
+
+[----------] 1 test from Calib3d_CalibrationMatrixValues_CPP
+[ RUN      ] Calib3d_CalibrationMatrixValues_CPP.accuracy
+[       OK ] Calib3d_CalibrationMatrixValues_CPP.accuracy (0 ms)
+[----------] 1 test from Calib3d_CalibrationMatrixValues_CPP (0 ms total)
+
+[----------] 4 tests from Calib3d_ProjectPoints_CPP
+[ RUN      ] Calib3d_ProjectPoints_CPP.regression
+[       OK ] Calib3d_ProjectPoints_CPP.regression (2 ms)
+[ RUN      ] Calib3d_ProjectPoints_CPP.inputShape
+[       OK ] Calib3d_ProjectPoints_CPP.inputShape (0 ms)
+[ RUN      ] Calib3d_ProjectPoints_CPP.outputShape
+[       OK ] Calib3d_ProjectPoints_CPP.outputShape (0 ms)
+[ RUN      ] Calib3d_ProjectPoints_CPP.badarg
+[       OK ] Calib3d_ProjectPoints_CPP.badarg (1 ms)
+[----------] 4 tests from Calib3d_ProjectPoints_CPP (3 ms total)
+
+[----------] 2 tests from Calib3d_StereoCalibrate_CPP
+[ RUN      ] Calib3d_StereoCalibrate_CPP.regression
+[       OK ] Calib3d_StereoCalibrate_CPP.regression (597 ms)
+[ RUN      ] Calib3d_StereoCalibrate_CPP.extended
+[       OK ] Calib3d_StereoCalibrate_CPP.extended (58 ms)
+[----------] 2 tests from Calib3d_StereoCalibrate_CPP (655 ms total)
+
+[----------] 3 tests from Calib3d_StereoCalibrate
+[ RUN      ] Calib3d_StereoCalibrate.regression_10791
+[       OK ] Calib3d_StereoCalibrate.regression_10791 (0 ms)
+[ RUN      ] Calib3d_StereoCalibrate.regression_11131
+[       OK ] Calib3d_StereoCalibrate.regression_11131 (0 ms)
+[ RUN      ] Calib3d_StereoCalibrate.regression_23305
+[       OK ] Calib3d_StereoCalibrate.regression_23305 (0 ms)
+[----------] 3 tests from Calib3d_StereoCalibrate (0 ms total)
+
+[----------] 1 test from Calib3d_Triangulate
+[ RUN      ] Calib3d_Triangulate.accuracy
+[1]:
+	res0: [0, -5, 8.333333;
+ 0, -5, 8.333333;
+ 0, -5, 8.333333;
+ 0, -5, 8.333333;
+ 0, -5, 8.333333]
+	res: [5.8309156e-06, -4.9832892, 8.3332357;
+ 5.8309156e-06, -4.9832892, 8.3332357;
+ 5.8309156e-06, -4.9832892, 8.3332357;
+ 5.8309156e-06, -4.9832892, 8.3332357;
+ 5.8309156e-06, -4.9832892, 8.3332357]
+[1]:
+	res0: [0, -5, 8.333333;
+ 0, -5, 8.333333;
+ 0, -5, 8.333333;
+ 0, -5, 8.333333;
+ 0, -5, 8.333333]
+	res: [5.8309156e-06, -4.9832892, 8.3332357;
+ 5.8309156e-06, -4.9832892, 8.3332357;
+ 5.8309156e-06, -4.9832892, 8.3332357;
+ 5.8309156e-06, -4.9832892, 8.3332357;
+ 5.8309156e-06, -4.9832892, 8.3332357]
+[2]:
+	res0: [-81.04953, -215.7028, 2401.6455]
+	res: [-81.051872, -215.76671, 2402.363]
+[       OK ] Calib3d_Triangulate.accuracy (0 ms)
+[----------] 1 test from Calib3d_Triangulate (0 ms total)
+
+[----------] 1 test from CV_RecoverPoseTest
+[ RUN      ] CV_RecoverPoseTest.regression_15341
+[       OK ] CV_RecoverPoseTest.regression_15341 (61 ms)
+[----------] 1 test from CV_RecoverPoseTest (61 ms total)
+
+[----------] 1 test from Calib3d_Rodrigues_CPP
+[ RUN      ] Calib3d_Rodrigues_CPP.badarg
+[       OK ] Calib3d_Rodrigues_CPP.badarg (0 ms)
+[----------] 1 test from Calib3d_Rodrigues_CPP (0 ms total)
+
+[----------] 3 tests from cameraCalibrationTiltTest
+[ RUN      ] cameraCalibrationTiltTest.projectPoints
+[       OK ] cameraCalibrationTiltTest.projectPoints (11 ms)
+[ RUN      ] cameraCalibrationTiltTest.undistortPoints
+[       OK ] cameraCalibrationTiltTest.undistortPoints (1 ms)
+[ RUN      ] cameraCalibrationTiltTest.calibrateCamera
+[       OK ] cameraCalibrationTiltTest.calibrateCamera (517 ms)
+[----------] 3 tests from cameraCalibrationTiltTest (529 ms total)
+
+[----------] 3 tests from Calib3d_ChessboardDetector
+[ RUN      ] Calib3d_ChessboardDetector.accuracy
+[       OK ] Calib3d_ChessboardDetector.accuracy (901 ms)
+[ RUN      ] Calib3d_ChessboardDetector.badarg
+[       OK ] Calib3d_ChessboardDetector.badarg (5 ms)
+[ RUN      ] Calib3d_ChessboardDetector.timing
+[       OK ] Calib3d_ChessboardDetector.timing (519 ms)
+[----------] 3 tests from Calib3d_ChessboardDetector (1425 ms total)
+
+[----------] 1 test from Calib3d_ChessboardDetector2
+[ RUN      ] Calib3d_ChessboardDetector2.accuracy
+[       OK ] Calib3d_ChessboardDetector2.accuracy (1551 ms)
+[----------] 1 test from Calib3d_ChessboardDetector2 (1551 ms total)
+
+[----------] 1 test from Calib3d_ChessboardDetector3
+[ RUN      ] Calib3d_ChessboardDetector3.accuracy
+[       OK ] Calib3d_ChessboardDetector3.accuracy (393 ms)
+[----------] 1 test from Calib3d_ChessboardDetector3 (393 ms total)
+
+[----------] 1 test from Calib3d_CirclesPatternDetector
+[ RUN      ] Calib3d_CirclesPatternDetector.accuracy
+[       OK ] Calib3d_CirclesPatternDetector.accuracy (658 ms)
+[----------] 1 test from Calib3d_CirclesPatternDetector (658 ms total)
+
+[----------] 3 tests from Calib3d_AsymmetricCirclesPatternDetector
+[ RUN      ] Calib3d_AsymmetricCirclesPatternDetector.accuracy
+[       OK ] Calib3d_AsymmetricCirclesPatternDetector.accuracy (185 ms)
+[ RUN      ] Calib3d_AsymmetricCirclesPatternDetector.regression_18713
+[       OK ] Calib3d_AsymmetricCirclesPatternDetector.regression_18713 (5 ms)
+[ RUN      ] Calib3d_AsymmetricCirclesPatternDetector.regression_19498
+[       OK ] Calib3d_AsymmetricCirclesPatternDetector.regression_19498 (12 ms)
+[----------] 3 tests from Calib3d_AsymmetricCirclesPatternDetector (202 ms total)
+
+[----------] 1 test from Calib3d_AsymmetricCirclesPatternDetectorWithClustering
+[ RUN      ] Calib3d_AsymmetricCirclesPatternDetectorWithClustering.accuracy
+[       OK ] Calib3d_AsymmetricCirclesPatternDetectorWithClustering.accuracy (134 ms)
+[----------] 1 test from Calib3d_AsymmetricCirclesPatternDetectorWithClustering (134 ms total)
+
+[----------] 2 tests from Calib3d_ChessboardWithMarkers
+[ RUN      ] Calib3d_ChessboardWithMarkers.regression_25806_white
+[       OK ] Calib3d_ChessboardWithMarkers.regression_25806_white (99 ms)
+[ RUN      ] Calib3d_ChessboardWithMarkers.regression_25806_black
+[       OK ] Calib3d_ChessboardWithMarkers.regression_25806_black (93 ms)
+[----------] 2 tests from Calib3d_ChessboardWithMarkers (192 ms total)
+
+[----------] 1 test from Calib3d_CirclesPatternDetectorWithClustering
+[ RUN      ] Calib3d_CirclesPatternDetectorWithClustering.accuracy
+[       OK ] Calib3d_CirclesPatternDetectorWithClustering.accuracy (17 ms)
+[----------] 1 test from Calib3d_CirclesPatternDetectorWithClustering (17 ms total)
+
+[----------] 1 test from Calib3d_RotatedCirclesPatternDetector
+[ RUN      ] Calib3d_RotatedCirclesPatternDetector.issue_24964
+[       OK ] Calib3d_RotatedCirclesPatternDetector.issue_24964 (58 ms)
+[----------] 1 test from Calib3d_RotatedCirclesPatternDetector (58 ms total)
+
+[----------] 1 test from Calib3d_CornerOrdering
+[ RUN      ] Calib3d_CornerOrdering.issue_26830
+[       OK ] Calib3d_CornerOrdering.issue_26830 (168 ms)
+[----------] 1 test from Calib3d_CornerOrdering (168 ms total)
+
+[----------] 1 test from Calib3d_ComposeRT
+[ RUN      ] Calib3d_ComposeRT.accuracy
+[       OK ] Calib3d_ComposeRT.accuracy (1 ms)
+[----------] 1 test from Calib3d_ComposeRT (1 ms total)
+
+[----------] 1 test from Calib3d_ChessboardSubPixDetector
+[ RUN      ] Calib3d_ChessboardSubPixDetector.accuracy
+[       OK ] Calib3d_ChessboardSubPixDetector.accuracy (694 ms)
+[----------] 1 test from Calib3d_ChessboardSubPixDetector (694 ms total)
+
+[----------] 1 test from Calib3d_CornerSubPix
+[ RUN      ] Calib3d_CornerSubPix.regression_7204
+[       OK ] Calib3d_CornerSubPix.regression_7204 (0 ms)
+[----------] 1 test from Calib3d_CornerSubPix (0 ms total)
+
+[----------] 3 tests from Calib3d_DecomposeProjectionMatrix
+[ RUN      ] Calib3d_DecomposeProjectionMatrix.accuracy
+[       OK ] Calib3d_DecomposeProjectionMatrix.accuracy (1 ms)
+[ RUN      ] Calib3d_DecomposeProjectionMatrix.degenerate_cases
+[       OK ] Calib3d_DecomposeProjectionMatrix.degenerate_cases (0 ms)
+[ RUN      ] Calib3d_DecomposeProjectionMatrix.bug_23733
+[       OK ] Calib3d_DecomposeProjectionMatrix.bug_23733 (0 ms)
+[----------] 3 tests from Calib3d_DecomposeProjectionMatrix (1 ms total)
+
+[----------] 1 test from Calib3d_FilterDecomposeHomography
+[ RUN      ] Calib3d_FilterDecomposeHomography.regression
+[       OK ] Calib3d_FilterDecomposeHomography.regression (0 ms)
+[----------] 1 test from Calib3d_FilterDecomposeHomography (0 ms total)
+
+[----------] 19 tests from fisheyeTest
+[ RUN      ] fisheyeTest.projectPoints
+[       OK ] fisheyeTest.projectPoints (0 ms)
+[ RUN      ] fisheyeTest.distortUndistortPoints
+[       OK ] fisheyeTest.distortUndistortPoints (0 ms)
+[ RUN      ] fisheyeTest.distortUndistortPointsNewCameraFixed
+[       OK ] fisheyeTest.distortUndistortPointsNewCameraFixed (0 ms)
+[ RUN      ] fisheyeTest.distortUndistortPointsNewCameraRandom
+[       OK ] fisheyeTest.distortUndistortPointsNewCameraRandom (0 ms)
+[ RUN      ] fisheyeTest.solvePnP
+[       OK ] fisheyeTest.solvePnP (1 ms)
+[ RUN      ] fisheyeTest.solvePnPRansac
+[       OK ] fisheyeTest.solvePnPRansac (0 ms)
+[ RUN      ] fisheyeTest.undistortImage
+[       OK ] fisheyeTest.undistortImage (181 ms)
+[ RUN      ] fisheyeTest.undistortAndDistortImage
+[       OK ] fisheyeTest.undistortAndDistortImage (203 ms)
+[ RUN      ] fisheyeTest.jacobians
+[       OK ] fisheyeTest.jacobians (0 ms)
+[ RUN      ] fisheyeTest.Calibration
+[       OK ] fisheyeTest.Calibration (187 ms)
+[ RUN      ] fisheyeTest.CalibrationWithFixedFocalLength
+[       OK ] fisheyeTest.CalibrationWithFixedFocalLength (138 ms)
+[ RUN      ] fisheyeTest.Homography
+[       OK ] fisheyeTest.Homography (5 ms)
+[ RUN      ] fisheyeTest.EstimateUncertainties
+[       OK ] fisheyeTest.EstimateUncertainties (188 ms)
+[ RUN      ] fisheyeTest.stereoRectify
+[       OK ] fisheyeTest.stereoRectify (0 ms)
+[ RUN      ] fisheyeTest.stereoCalibrate
+[       OK ] fisheyeTest.stereoCalibrate (1252 ms)
+[ RUN      ] fisheyeTest.stereoCalibrateFixIntrinsic
+[       OK ] fisheyeTest.stereoCalibrateFixIntrinsic (843 ms)
+[ RUN      ] fisheyeTest.CalibrationWithDifferentPointsNumber
+[       OK ] fisheyeTest.CalibrationWithDifferentPointsNumber (1 ms)
+[ RUN      ] fisheyeTest.stereoCalibrateWithPerViewTransformations
+[       OK ] fisheyeTest.stereoCalibrateWithPerViewTransformations (1243 ms)
+[ RUN      ] fisheyeTest.estimateNewCameraMatrixForUndistortRectify
+[       OK ] fisheyeTest.estimateNewCameraMatrixForUndistortRectify (0 ms)
+[----------] 19 tests from fisheyeTest (4242 ms total)
+
+[----------] 1 test from Calib3d_Rodrigues
+[ RUN      ] Calib3d_Rodrigues.accuracy
+[       OK ] Calib3d_Rodrigues.accuracy (10 ms)
+[----------] 1 test from Calib3d_Rodrigues (10 ms total)
+
+[----------] 3 tests from Calib3d_FindFundamentalMat
+[ RUN      ] Calib3d_FindFundamentalMat.accuracy
+[       OK ] Calib3d_FindFundamentalMat.accuracy (1063 ms)
+[ RUN      ] Calib3d_FindFundamentalMat.correctMatches
+[200, 0]
+[170, 0]
+[       OK ] Calib3d_FindFundamentalMat.correctMatches (1 ms)
+[ RUN      ] Calib3d_FindFundamentalMat.Crash
+[       OK ] Calib3d_FindFundamentalMat.Crash (0 ms)
+[----------] 3 tests from Calib3d_FindFundamentalMat (1064 ms total)
+
+[----------] 1 test from Calib3d_ConvertHomogeneoous
+[ RUN      ] Calib3d_ConvertHomogeneoous.accuracy
+[       OK ] Calib3d_ConvertHomogeneoous.accuracy (10 ms)
+[----------] 1 test from Calib3d_ConvertHomogeneoous (10 ms total)
+
+[----------] 1 test from Calib3d_ComputeEpilines
+[ RUN      ] Calib3d_ComputeEpilines.accuracy
+[       OK ] Calib3d_ComputeEpilines.accuracy (5 ms)
+[----------] 1 test from Calib3d_ComputeEpilines (5 ms total)
+
+[----------] 1 test from Calib3d_FindEssentialMat
+[ RUN      ] Calib3d_FindEssentialMat.accuracy
+[       OK ] Calib3d_FindEssentialMat.accuracy (4506 ms)
+[----------] 1 test from Calib3d_FindEssentialMat (4506 ms total)
+
+[----------] 6 tests from Calib3d_Homography
+[ RUN      ] Calib3d_Homography.accuracy
+[       OK ] Calib3d_Homography.accuracy (3089 ms)
+[ RUN      ] Calib3d_Homography.EKcase
+ninliers: 10, inliers err: 0.0027
+[       OK ] Calib3d_Homography.EKcase (6 ms)
+[ RUN      ] Calib3d_Homography.fromImages
+nfeatures1 = 442, nfeatures2=449, matches=442, ninliers(RANSAC)=302, time(RANSAC)=0.54msec, ninliers(RHO)=291, time(RHO)=0.21msec
+[       OK ] Calib3d_Homography.fromImages (33 ms)
+[ RUN      ] Calib3d_Homography.minPoints
+npoints = 2
+[       OK ] Calib3d_Homography.minPoints (0 ms)
+[ RUN      ] Calib3d_Homography.not_normalized
+[       OK ] Calib3d_Homography.not_normalized (1 ms)
+[ RUN      ] Calib3d_Homography.Refine
+[       OK ] Calib3d_Homography.Refine (1 ms)
+[----------] 6 tests from Calib3d_Homography (3130 ms total)
+
+[----------] 2 tests from Calib3d_DecomposeHomography
+[ RUN      ] Calib3d_DecomposeHomography.regression
+[       OK ] Calib3d_DecomposeHomography.regression (0 ms)
+[ RUN      ] Calib3d_DecomposeHomography.issue_4978
+[       OK ] Calib3d_DecomposeHomography.issue_4978 (0 ms)
+[----------] 2 tests from Calib3d_DecomposeHomography (0 ms total)
+
+[----------] 1 test from Calib3d_ReprojectImageTo3D
+[ RUN      ] Calib3d_ReprojectImageTo3D.accuracy
+[       OK ] Calib3d_ReprojectImageTo3D.accuracy (714 ms)
+[----------] 1 test from Calib3d_ReprojectImageTo3D (714 ms total)
+
+[----------] 1 test from Calib3d_SolveP3P
+[ RUN      ] Calib3d_SolveP3P.accuracy
+mode: no distortion, method: SOLVEPNP_P3P -> 93.7% (maxErrT: 0, maxErrR: 0, meanErrT: 0, meanErrR: 0, medErrT: 0, medErrR: 0)
+approximate translation threshold for 0.7: 0, approximate rotation threshold for 0.7: 0
+mode: no distortion, method: SOLVEPNP_AP3P -> 91.9% (maxErrT: 0, maxErrR: 0, meanErrT: 0, meanErrR: 0, medErrT: 0, medErrR: 0)
+approximate translation threshold for 0.7: 0, approximate rotation threshold for 0.7: 0
+mode: distorsion, method: SOLVEPNP_P3P -> 90.6% (maxErrT: 0, maxErrR: 0, meanErrT: 0, meanErrR: 0, medErrT: 0, medErrR: 0)
+approximate translation threshold for 0.7: 0, approximate rotation threshold for 0.7: 0
+mode: distorsion, method: SOLVEPNP_AP3P -> 92.7% (maxErrT: 0, maxErrR: 0, meanErrT: 0, meanErrR: 0, medErrT: 0, medErrR: 0)
+approximate translation threshold for 0.7: 0, approximate rotation threshold for 0.7: 0
+[       OK ] Calib3d_SolveP3P.accuracy (2134 ms)
+[----------] 1 test from Calib3d_SolveP3P (2134 ms total)
+
+[----------] 9 tests from Calib3d_SolvePnPRansac
+[ RUN      ] Calib3d_SolvePnPRansac.accuracy
+mode: no distortion, method: SOLVEPNP_ITERATIVE -> 98.5% (maxErrT: 0.132075, maxErrR: 0.00723549, meanErrT: 0.000789196, meanErrR: 9.13305e-05, medErrT: 8.05911e-08, medErrR: 1.13187e-08)
+approximate translation threshold for 0.7: 1.46e-07, approximate rotation threshold for 0.7: 1.38325e-08
+mode: no distortion, method: SOLVEPNP_EPNP -> 96.8% (maxErrT: 0.225888, maxErrR: 0.0312736, meanErrT: 0.00160052, meanErrR: 0.00021281, medErrT: 1.08324e-07, medErrR: 1.56384e-08)
+approximate translation threshold for 0.7: 2.19234e-07, approximate rotation threshold for 0.7: 3.91644e-08
+mode: no distortion, method: SOLVEPNP_P3P -> 96.8% (maxErrT: 0.225888, maxErrR: 0.0312736, meanErrT: 0.00160018, meanErrR: 0.000212809, medErrT: 1.08324e-07, medErrR: 1.56384e-08)
+approximate translation threshold for 0.7: 2.19234e-07, approximate rotation threshold for 0.7: 3.91644e-08
+mode: no distortion, method: SOLVEPNP_DLS (remapped to SOLVEPNP_EPNP) -> 96.8% (maxErrT: 0.225888, maxErrR: 0.0312736, meanErrT: 0.00160052, meanErrR: 0.00021281, medErrT: 1.08324e-07, medErrR: 1.56384e-08)
+approximate translation threshold for 0.7: 2.19234e-07, approximate rotation threshold for 0.7: 3.91644e-08
+mode: no distortion, method: SOLVEPNP_UPNP (remapped to SOLVEPNP_EPNP) -> 96.8% (maxErrT: 0.225888, maxErrR: 0.0312736, meanErrT: 0.00160052, meanErrR: 0.00021281, medErrT: 1.08324e-07, medErrR: 1.56384e-08)
+approximate translation threshold for 0.7: 2.19234e-07, approximate rotation threshold for 0.7: 3.91644e-08
+mode: no distortion, method: SOLVEPNP_AP3P -> 96.8% (maxErrT: 0.225888, maxErrR: 0.0312736, meanErrT: 0.00160018, meanErrR: 0.000212809, medErrT: 1.08324e-07, medErrR: 1.56384e-08)
+approximate translation threshold for 0.7: 2.19234e-07, approximate rotation threshold for 0.7: 3.91644e-08
+mode: no distortion, method: SOLVEPNP_IPPE -> Skip for non-planar object
+mode: no distortion, method: SOLVEPNP_IPPE_SQUARE -> Skip for non-planar tag object
+mode: no distortion, method: SOLVEPNP_SQPNP -> 96.9% (maxErrT: 0.199028, maxErrR: 0.0117593, meanErrT: 0.00153169, meanErrR: 0.000142404, medErrT: 3.11921e-07, medErrR: 9.29698e-08)
+approximate translation threshold for 0.7: 6.60193e-07, approximate rotation threshold for 0.7: 4.7769e-08
+
+mode: distorsion, method: SOLVEPNP_ITERATIVE -> 99.1% (maxErrT: 0.0512835, maxErrR: 0.00844876, meanErrT: 0.000468303, meanErrR: 6.22992e-05, medErrT: 8.34108e-08, medErrR: 1.18871e-08)
+approximate translation threshold for 0.7: 1.45783e-07, approximate rotation threshold for 0.7: 6.72122e-09
+mode: distorsion, method: SOLVEPNP_EPNP -> 97.7% (maxErrT: 0.346245, maxErrR: 0.0781367, meanErrT: 0.00131872, meanErrR: 0.00025771, medErrT: 1.1006e-07, medErrR: 1.58399e-08)
+approximate translation threshold for 0.7: 2.36508e-07, approximate rotation threshold for 0.7: 4.94733e-08
+mode: distorsion, method: SOLVEPNP_P3P -> 97.7% (maxErrT: 0.346245, maxErrR: 0.0781367, meanErrT: 0.00131872, meanErrR: 0.00025771, medErrT: 1.1006e-07, medErrR: 1.58399e-08)
+approximate translation threshold for 0.7: 2.36508e-07, approximate rotation threshold for 0.7: 4.94733e-08
+mode: distorsion, method: SOLVEPNP_DLS (remapped to SOLVEPNP_EPNP) -> 97.7% (maxErrT: 0.346245, maxErrR: 0.0781367, meanErrT: 0.00131872, meanErrR: 0.00025771, medErrT: 1.1006e-07, medErrR: 1.58399e-08)
+approximate translation threshold for 0.7: 2.36508e-07, approximate rotation threshold for 0.7: 4.94733e-08
+mode: distorsion, method: SOLVEPNP_UPNP (remapped to SOLVEPNP_EPNP) -> 97.7% (maxErrT: 0.346245, maxErrR: 0.0781367, meanErrT: 0.00131872, meanErrR: 0.00025771, medErrT: 1.1006e-07, medErrR: 1.58399e-08)
+approximate translation threshold for 0.7: 2.36508e-07, approximate rotation threshold for 0.7: 4.94733e-08
+mode: distorsion, method: SOLVEPNP_AP3P -> 97.7% (maxErrT: 0.346245, maxErrR: 0.0781367, meanErrT: 0.00131872, meanErrR: 0.00025771, medErrT: 1.1006e-07, medErrR: 1.58399e-08)
+approximate translation threshold for 0.7: 2.36508e-07, approximate rotation threshold for 0.7: 4.94733e-08
+mode: distorsion, method: SOLVEPNP_IPPE -> Skip for non-planar object
+mode: distorsion, method: SOLVEPNP_IPPE_SQUARE -> Skip for non-planar tag object
+mode: distorsion, method: SOLVEPNP_SQPNP -> 97.8% (maxErrT: 0.140888, maxErrR: 0.00673647, meanErrT: 0.000941758, meanErrR: 9.80271e-05, medErrT: 3.61288e-07, medErrR: 9.90232e-08)
+approximate translation threshold for 0.7: 7.5602e-07, approximate rotation threshold for 0.7: 1.68968e-07
+
+[       OK ] Calib3d_SolvePnPRansac.accuracy (12877 ms)
+[ RUN      ] Calib3d_SolvePnPRansac.accuracy_planar
+mode: no distortion, method: SOLVEPNP_ITERATIVE -> 99% (maxErrT: 2.5883e-06, maxErrR: 9.03061e-07, meanErrT: 7.17815e-08, meanErrR: 6.0171e-08, medErrT: 4.06103e-08, medErrR: 3.94297e-08)
+approximate translation threshold for 0.7: 6.50886e-08, approximate rotation threshold for 0.7: 6.33325e-08
+mode: no distortion, method: SOLVEPNP_EPNP -> 88.6% (maxErrT: 1.6991, maxErrR: 3.43635, meanErrT: 0.150196, meanErrR: 0.236758, medErrT: 7.11712e-08, medErrR: 5.05429e-08)
+approximate translation threshold for 0.7: 7.05235e-08, approximate rotation threshold for 0.7: 1.61037e-07
+mode: no distortion, method: SOLVEPNP_P3P -> 88.8% (maxErrT: 1.6991, maxErrR: 3.43635, meanErrT: 0.150177, meanErrR: 0.236758, medErrT: 7.13688e-08, medErrR: 5.05429e-08)
+approximate translation threshold for 0.7: 1.72744e-07, approximate rotation threshold for 0.7: 2.09176e-08
+mode: no distortion, method: SOLVEPNP_DLS (remapped to SOLVEPNP_EPNP) -> 88.6% (maxErrT: 1.6991, maxErrR: 3.43635, meanErrT: 0.150196, meanErrR: 0.236758, medErrT: 7.11712e-08, medErrR: 5.05429e-08)
+approximate translation threshold for 0.7: 7.05235e-08, approximate rotation threshold for 0.7: 1.61037e-07
+mode: no distortion, method: SOLVEPNP_UPNP (remapped to SOLVEPNP_EPNP) -> 88.6% (maxErrT: 1.6991, maxErrR: 3.43635, meanErrT: 0.150196, meanErrR: 0.236758, medErrT: 7.11712e-08, medErrR: 5.05429e-08)
+approximate translation threshold for 0.7: 7.05235e-08, approximate rotation threshold for 0.7: 1.61037e-07
+mode: no distortion, method: SOLVEPNP_AP3P -> 88.8% (maxErrT: 1.6991, maxErrR: 3.43635, meanErrT: 0.150177, meanErrR: 0.236758, medErrT: 7.13688e-08, medErrR: 5.05429e-08)
+approximate translation threshold for 0.7: 1.72744e-07, approximate rotation threshold for 0.7: 2.09176e-08
+mode: no distortion, method: SOLVEPNP_IPPE -> 99% (maxErrT: 2.98303e-05, maxErrR: 3.89645e-05, meanErrT: 2.81311e-07, meanErrR: 3.06953e-07, medErrT: 7.44395e-08, medErrR: 8.90931e-08)
+approximate translation threshold for 0.7: 1.25363e-07, approximate rotation threshold for 0.7: 1.18073e-07
+mode: no distortion, method: SOLVEPNP_IPPE_SQUARE -> Skip for non-planar tag object
+mode: no distortion, method: SOLVEPNP_SQPNP -> 99% (maxErrT: 2.62398e-05, maxErrR: 3.00058e-05, meanErrT: 1.36268e-07, meanErrR: 1.36782e-07, medErrT: 3.49968e-08, medErrR: 3.43704e-08)
+approximate translation threshold for 0.7: 6.05494e-08, approximate rotation threshold for 0.7: 5.81039e-08
+
+mode: distorsion, method: SOLVEPNP_ITERATIVE -> 95.6% (maxErrT: 3.00794e-06, maxErrR: 6.59991e-07, meanErrT: 7.31314e-08, meanErrR: 5.33889e-08, medErrT: 4.1073e-08, medErrR: 3.66379e-08)
+approximate translation threshold for 0.7: 6.55377e-08, approximate rotation threshold for 0.7: 5.52515e-08
+mode: distorsion, method: SOLVEPNP_EPNP -> 81.7% (maxErrT: 2.06621, maxErrR: 3.45382, meanErrT: 0.176629, meanErrR: 0.279389, medErrT: 8.74594e-08, medErrR: 5.63877e-08)
+approximate translation threshold for 0.7: 1.91657e-07, approximate rotation threshold for 0.7: 1.69496e-07
+mode: distorsion, method: SOLVEPNP_P3P -> 82.1% (maxErrT: 2.06621, maxErrR: 3.45382, meanErrT: 0.178769, meanErrR: 0.282082, medErrT: 8.88954e-08, medErrR: 5.67319e-08)
+approximate translation threshold for 0.7: 2.32802e-07, approximate rotation threshold for 0.7: 1.27349e-07
+mode: distorsion, method: SOLVEPNP_DLS (remapped to SOLVEPNP_EPNP) -> 81.7% (maxErrT: 2.06621, maxErrR: 3.45382, meanErrT: 0.176629, meanErrR: 0.279389, medErrT: 8.74594e-08, medErrR: 5.63877e-08)
+approximate translation threshold for 0.7: 1.91657e-07, approximate rotation threshold for 0.7: 1.69496e-07
+mode: distorsion, method: SOLVEPNP_UPNP (remapped to SOLVEPNP_EPNP) -> 81.7% (maxErrT: 2.06621, maxErrR: 3.45382, meanErrT: 0.176629, meanErrR: 0.279389, medErrT: 8.74594e-08, medErrR: 5.63877e-08)
+approximate translation threshold for 0.7: 1.91657e-07, approximate rotation threshold for 0.7: 1.69496e-07
+mode: distorsion, method: SOLVEPNP_AP3P -> 82.1% (maxErrT: 2.06621, maxErrR: 3.45382, meanErrT: 0.178769, meanErrR: 0.282082, medErrT: 8.88954e-08, medErrR: 5.67319e-08)
+approximate translation threshold for 0.7: 2.32802e-07, approximate rotation threshold for 0.7: 1.27349e-07
+mode: distorsion, method: SOLVEPNP_IPPE -> 91.4% (maxErrT: 2.04399, maxErrR: 2.49228, meanErrT: 0.0280801, meanErrR: 0.0316665, medErrT: 8.16137e-08, medErrR: 9.47273e-08)
+approximate translation threshold for 0.7: 1.31079e-07, approximate rotation threshold for 0.7: 1.72895e-07
+mode: distorsion, method: SOLVEPNP_IPPE_SQUARE -> Skip for non-planar tag object
+mode: distorsion, method: SOLVEPNP_SQPNP -> 91.3% (maxErrT: 0.541949, maxErrR: 0.607033, meanErrT: 0.00635706, meanErrR: 0.00639516, medErrT: 4.35334e-08, medErrR: 4.15019e-08)
+approximate translation threshold for 0.7: 9.86792e-08, approximate rotation threshold for 0.7: 7.23197e-08
+
+[       OK ] Calib3d_SolvePnPRansac.accuracy_planar (4435 ms)
+[ RUN      ] Calib3d_SolvePnPRansac.accuracy_planar_tag
+mode: no distortion, method: SOLVEPNP_ITERATIVE -> 100% (maxErrT: 4.40714e-05, maxErrR: 0.000657175, meanErrT: 6.14393e-07, meanErrR: 2.90417e-06, medErrT: 1.30751e-07, medErrR: 4.25884e-07)
+approximate translation threshold for 0.7: 7.14069e-08, approximate rotation threshold for 0.7: 8.93715e-07
+mode: no distortion, method: SOLVEPNP_EPNP -> 100% (maxErrT: 4.40714e-05, maxErrR: 0.000657175, meanErrT: 6.14393e-07, meanErrR: 2.90417e-06, medErrT: 1.30751e-07, medErrR: 4.25884e-07)
+approximate translation threshold for 0.7: 7.14069e-08, approximate rotation threshold for 0.7: 8.93715e-07
+mode: no distortion, method: SOLVEPNP_P3P -> 100% (maxErrT: 4.40714e-05, maxErrR: 0.000657175, meanErrT: 6.14393e-07, meanErrR: 2.90417e-06, medErrT: 1.30751e-07, medErrR: 4.25884e-07)
+approximate translation threshold for 0.7: 7.14069e-08, approximate rotation threshold for 0.7: 8.93715e-07
+mode: no distortion, method: SOLVEPNP_DLS (remapped to SOLVEPNP_EPNP) -> 100% (maxErrT: 4.40714e-05, maxErrR: 0.000657175, meanErrT: 6.14393e-07, meanErrR: 2.90417e-06, medErrT: 1.30751e-07, medErrR: 4.25884e-07)
+approximate translation threshold for 0.7: 7.14069e-08, approximate rotation threshold for 0.7: 8.93715e-07
+mode: no distortion, method: SOLVEPNP_UPNP (remapped to SOLVEPNP_EPNP) -> 100% (maxErrT: 4.40714e-05, maxErrR: 0.000657175, meanErrT: 6.14393e-07, meanErrR: 2.90417e-06, medErrT: 1.30751e-07, medErrR: 4.25884e-07)
+approximate translation threshold for 0.7: 7.14069e-08, approximate rotation threshold for 0.7: 8.93715e-07
+mode: no distortion, method: SOLVEPNP_AP3P -> 100% (maxErrT: 4.40714e-05, maxErrR: 0.000657175, meanErrT: 6.14393e-07, meanErrR: 2.90417e-06, medErrT: 1.30751e-07, medErrR: 4.25884e-07)
+approximate translation threshold for 0.7: 7.14069e-08, approximate rotation threshold for 0.7: 8.93715e-07
+mode: no distortion, method: SOLVEPNP_IPPE -> 100% (maxErrT: 4.40714e-05, maxErrR: 0.000657175, meanErrT: 6.14393e-07, meanErrR: 2.90417e-06, medErrT: 1.30751e-07, medErrR: 4.25884e-07)
+approximate translation threshold for 0.7: 7.14069e-08, approximate rotation threshold for 0.7: 8.93715e-07
+mode: no distortion, method: SOLVEPNP_IPPE_SQUARE -> 100% (maxErrT: 4.40714e-05, maxErrR: 0.000657175, meanErrT: 6.14393e-07, meanErrR: 2.90417e-06, medErrT: 1.30751e-07, medErrR: 4.25884e-07)
+approximate translation threshold for 0.7: 7.14069e-08, approximate rotation threshold for 0.7: 8.93715e-07
+mode: no distortion, method: SOLVEPNP_SQPNP -> 100% (maxErrT: 4.40714e-05, maxErrR: 0.000657175, meanErrT: 6.14393e-07, meanErrR: 2.90417e-06, medErrT: 1.30751e-07, medErrR: 4.25884e-07)
+approximate translation threshold for 0.7: 7.14069e-08, approximate rotation threshold for 0.7: 8.93715e-07
+
+mode: distorsion, method: SOLVEPNP_ITERATIVE -> 97.4% (maxErrT: 1.15719, maxErrR: 3.16031, meanErrT: 0.0150719, meanErrR: 0.0577386, medErrT: 1.4085e-07, medErrR: 4.46072e-07)
+approximate translation threshold for 0.7: 3.00418e-07, approximate rotation threshold for 0.7: 9.38886e-07
+mode: distorsion, method: SOLVEPNP_EPNP -> 97.4% (maxErrT: 1.15719, maxErrR: 3.16031, meanErrT: 0.0150719, meanErrR: 0.0577386, medErrT: 1.4085e-07, medErrR: 4.46072e-07)
+approximate translation threshold for 0.7: 3.00418e-07, approximate rotation threshold for 0.7: 9.38886e-07
+mode: distorsion, method: SOLVEPNP_P3P -> 97.4% (maxErrT: 1.15719, maxErrR: 3.16031, meanErrT: 0.0150719, meanErrR: 0.0577386, medErrT: 1.4085e-07, medErrR: 4.46072e-07)
+approximate translation threshold for 0.7: 3.00418e-07, approximate rotation threshold for 0.7: 9.38886e-07
+mode: distorsion, method: SOLVEPNP_DLS (remapped to SOLVEPNP_EPNP) -> 97.4% (maxErrT: 1.15719, maxErrR: 3.16031, meanErrT: 0.0150719, meanErrR: 0.0577386, medErrT: 1.4085e-07, medErrR: 4.46072e-07)
+approximate translation threshold for 0.7: 3.00418e-07, approximate rotation threshold for 0.7: 9.38886e-07
+mode: distorsion, method: SOLVEPNP_UPNP (remapped to SOLVEPNP_EPNP) -> 97.4% (maxErrT: 1.15719, maxErrR: 3.16031, meanErrT: 0.0150719, meanErrR: 0.0577386, medErrT: 1.4085e-07, medErrR: 4.46072e-07)
+approximate translation threshold for 0.7: 3.00418e-07, approximate rotation threshold for 0.7: 9.38886e-07
+mode: distorsion, method: SOLVEPNP_AP3P -> 97.4% (maxErrT: 1.15719, maxErrR: 3.16031, meanErrT: 0.0150719, meanErrR: 0.0577386, medErrT: 1.4085e-07, medErrR: 4.46072e-07)
+approximate translation threshold for 0.7: 3.00418e-07, approximate rotation threshold for 0.7: 9.38886e-07
+mode: distorsion, method: SOLVEPNP_IPPE -> 97.4% (maxErrT: 1.15719, maxErrR: 3.16031, meanErrT: 0.0150719, meanErrR: 0.0577386, medErrT: 1.4085e-07, medErrR: 4.46072e-07)
+approximate translation threshold for 0.7: 3.00418e-07, approximate rotation threshold for 0.7: 9.38886e-07
+mode: distorsion, method: SOLVEPNP_IPPE_SQUARE -> 97.4% (maxErrT: 1.15719, maxErrR: 3.16031, meanErrT: 0.0150719, meanErrR: 0.0577386, medErrT: 1.4085e-07, medErrR: 4.46072e-07)
+approximate translation threshold for 0.7: 3.00418e-07, approximate rotation threshold for 0.7: 9.38886e-07
+mode: distorsion, method: SOLVEPNP_SQPNP -> 97.4% (maxErrT: 1.15719, maxErrR: 3.16031, meanErrT: 0.0150719, meanErrR: 0.0577386, medErrT: 1.4085e-07, medErrR: 4.46072e-07)
+approximate translation threshold for 0.7: 3.00418e-07, approximate rotation threshold for 0.7: 9.38886e-07
+
+[       OK ] Calib3d_SolvePnPRansac.accuracy_planar_tag (578 ms)
+[ RUN      ] Calib3d_SolvePnPRansac.concurrency
+[       OK ] Calib3d_SolvePnPRansac.concurrency (5 ms)
+[ RUN      ] Calib3d_SolvePnPRansac.input_type
+[       OK ] Calib3d_SolvePnPRansac.input_type (1 ms)
+[ RUN      ] Calib3d_SolvePnPRansac.double_support
+[       OK ] Calib3d_SolvePnPRansac.double_support (0 ms)
+[ RUN      ] Calib3d_SolvePnPRansac.bad_input_points_19253
+[       OK ] Calib3d_SolvePnPRansac.bad_input_points_19253 (1 ms)
+[ RUN      ] Calib3d_SolvePnPRansac.minPoints
+[       OK ] Calib3d_SolvePnPRansac.minPoints (0 ms)
+[ RUN      ] Calib3d_SolvePnPRansac.inputShape
+[       OK ] Calib3d_SolvePnPRansac.inputShape (1 ms)
+[----------] 9 tests from Calib3d_SolvePnPRansac (17898 ms total)
+
+[----------] 11 tests from Calib3d_SolvePnP
+[ RUN      ] Calib3d_SolvePnP.accuracy
+mode: no distortion, method: SOLVEPNP_ITERATIVE -> 98.4% (maxErrT: 2.91255e-05, maxErrR: 5.06296e-07, meanErrT: 1.73056e-07, meanErrR: 1.87607e-08, medErrT: 7.64558e-08, medErrR: 1.04768e-08)
+approximate translation threshold for 0.7: 1.22828e-07, approximate rotation threshold for 0.7: 1.16084e-08
+mode: no distortion, method: SOLVEPNP_EPNP -> 94.9% (maxErrT: 4.36376e-05, maxErrR: 1.84281e-06, meanErrT: 3.05791e-07, meanErrR: 3.88407e-08, medErrT: 1.11986e-07, medErrR: 1.70078e-08)
+approximate translation threshold for 0.7: 2.00136e-07, approximate rotation threshold for 0.7: 1.97634e-08
+mode: no distortion, method: SOLVEPNP_P3P -> 93.7% (maxErrT: 0.0592926, maxErrR: 0.00704324, meanErrT: 0.000104391, meanErrR: 1.26711e-05, medErrT: 1.36619e-05, medErrR: 1.65419e-06)
+approximate translation threshold for 0.7: 2.3206e-05, approximate rotation threshold for 0.7: 2.8078e-06
+mode: no distortion, method: SOLVEPNP_DLS (remapped to SOLVEPNP_EPNP) -> 94.9% (maxErrT: 4.36376e-05, maxErrR: 1.84281e-06, meanErrT: 3.05791e-07, meanErrR: 3.88407e-08, medErrT: 1.11986e-07, medErrR: 1.70078e-08)
+approximate translation threshold for 0.7: 2.00136e-07, approximate rotation threshold for 0.7: 1.97634e-08
+mode: no distortion, method: SOLVEPNP_UPNP (remapped to SOLVEPNP_EPNP) -> 94.9% (maxErrT: 4.36376e-05, maxErrR: 1.84281e-06, meanErrT: 3.05791e-07, meanErrR: 3.88407e-08, medErrT: 1.11986e-07, medErrR: 1.70078e-08)
+approximate translation threshold for 0.7: 2.00136e-07, approximate rotation threshold for 0.7: 1.97634e-08
+mode: no distortion, method: SOLVEPNP_AP3P -> 93.7% (maxErrT: 0.0592926, maxErrR: 0.00704324, meanErrT: 0.000104391, meanErrR: 1.26711e-05, medErrT: 1.36619e-05, medErrR: 1.65419e-06)
+approximate translation threshold for 0.7: 2.3206e-05, approximate rotation threshold for 0.7: 2.8078e-06
+mode: no distortion, method: SOLVEPNP_IPPE -> Skip for non-planar object
+mode: no distortion, method: SOLVEPNP_IPPE_SQUARE -> Skip for non-planar tag object
+mode: no distortion, method: SOLVEPNP_SQPNP -> 86.1% (maxErrT: 8.75248e-05, maxErrR: 2.97992e-05, meanErrT: 9.40949e-07, meanErrR: 2.65924e-07, medErrT: 3.15094e-07, medErrR: 9.05075e-08)
+approximate translation threshold for 0.7: 5.77023e-07, approximate rotation threshold for 0.7: 6.90742e-08
+
+mode: distorsion, method: SOLVEPNP_ITERATIVE -> 97.1% (maxErrT: 6.51756e-06, maxErrR: 6.44162e-07, meanErrT: 1.82732e-07, meanErrR: 2.34701e-08, medErrT: 8.27094e-08, medErrR: 1.18962e-08)
+approximate translation threshold for 0.7: 1.32406e-07, approximate rotation threshold for 0.7: 1.05578e-08
+mode: distorsion, method: SOLVEPNP_EPNP -> 94.3% (maxErrT: 0.00164872, maxErrR: 0.000328164, meanErrT: 1.98585e-06, meanErrR: 3.7083e-07, medErrT: 1.29158e-07, medErrR: 1.85702e-08)
+approximate translation threshold for 0.7: 2.46446e-07, approximate rotation threshold for 0.7: 3.9434e-08
+mode: distorsion, method: SOLVEPNP_P3P -> 90.6% (maxErrT: 0.0123806, maxErrR: 0.0015516, meanErrT: 7.49074e-05, meanErrR: 9.25383e-06, medErrT: 1.57865e-05, medErrR: 1.92379e-06)
+approximate translation threshold for 0.7: 2.80643e-05, approximate rotation threshold for 0.7: 3.63697e-06
+mode: distorsion, method: SOLVEPNP_DLS (remapped to SOLVEPNP_EPNP) -> 94.3% (maxErrT: 0.00164872, maxErrR: 0.000328164, meanErrT: 1.98585e-06, meanErrR: 3.7083e-07, medErrT: 1.29158e-07, medErrR: 1.85702e-08)
+approximate translation threshold for 0.7: 2.46446e-07, approximate rotation threshold for 0.7: 3.9434e-08
+mode: distorsion, method: SOLVEPNP_UPNP (remapped to SOLVEPNP_EPNP) -> 94.3% (maxErrT: 0.00164872, maxErrR: 0.000328164, meanErrT: 1.98585e-06, meanErrR: 3.7083e-07, medErrT: 1.29158e-07, medErrR: 1.85702e-08)
+approximate translation threshold for 0.7: 2.46446e-07, approximate rotation threshold for 0.7: 3.9434e-08
+mode: distorsion, method: SOLVEPNP_AP3P -> 90.6% (maxErrT: 0.0123806, maxErrR: 0.0015516, meanErrT: 7.49074e-05, meanErrR: 9.25383e-06, medErrT: 1.57865e-05, medErrR: 1.92379e-06)
+approximate translation threshold for 0.7: 2.80643e-05, approximate rotation threshold for 0.7: 3.63697e-06
+mode: distorsion, method: SOLVEPNP_IPPE -> Skip for non-planar object
+mode: distorsion, method: SOLVEPNP_IPPE_SQUARE -> Skip for non-planar tag object
+mode: distorsion, method: SOLVEPNP_SQPNP -> 80.8% (maxErrT: 0.00048777, maxErrR: 3.4454e-05, meanErrT: 1.92986e-06, meanErrR: 4.32317e-07, medErrT: 3.42311e-07, medErrR: 1.01277e-07)
+approximate translation threshold for 0.7: 6.50129e-07, approximate rotation threshold for 0.7: 9.5217e-08
+
+[       OK ] Calib3d_SolvePnP.accuracy (9286 ms)
+[ RUN      ] Calib3d_SolvePnP.accuracy_planar
+mode: no distortion, method: SOLVEPNP_ITERATIVE -> 99.2% (maxErrT: 8.83854e-06, maxErrR: 4.86438e-06, meanErrT: 9.48578e-08, meanErrR: 7.10317e-08, medErrT: 4.41718e-08, medErrR: 3.97928e-08)
+approximate translation threshold for 0.7: 9.35948e-08, approximate rotation threshold for 0.7: 3.23689e-08
+mode: no distortion, method: SOLVEPNP_EPNP -> 88.5% (maxErrT: 1.68116, maxErrR: 3.34269, meanErrT: 0.166819, meanErrR: 0.264442, medErrT: 8.26438e-08, medErrR: 5.69933e-08)
+approximate translation threshold for 0.7: 1.99328e-07, approximate rotation threshold for 0.7: 3.1082e-08
+mode: no distortion, method: SOLVEPNP_P3P -> 98.5% (maxErrT: 0.0078898, maxErrR: 0.00932353, meanErrT: 1.5733e-05, meanErrR: 1.9097e-05, medErrT: 8.43488e-07, medErrR: 1.07604e-06)
+approximate translation threshold for 0.7: 1.57632e-06, approximate rotation threshold for 0.7: 2.60644e-06
+mode: no distortion, method: SOLVEPNP_DLS (remapped to SOLVEPNP_EPNP) -> 88.5% (maxErrT: 1.68116, maxErrR: 3.34269, meanErrT: 0.166819, meanErrR: 0.264442, medErrT: 8.26438e-08, medErrR: 5.69933e-08)
+approximate translation threshold for 0.7: 1.99328e-07, approximate rotation threshold for 0.7: 3.1082e-08
+mode: no distortion, method: SOLVEPNP_UPNP (remapped to SOLVEPNP_EPNP) -> 88.5% (maxErrT: 1.68116, maxErrR: 3.34269, meanErrT: 0.166819, meanErrR: 0.264442, medErrT: 8.26438e-08, medErrR: 5.69933e-08)
+approximate translation threshold for 0.7: 1.99328e-07, approximate rotation threshold for 0.7: 3.1082e-08
+mode: no distortion, method: SOLVEPNP_AP3P -> 98.5% (maxErrT: 0.0078898, maxErrR: 0.00932353, meanErrT: 1.5733e-05, meanErrR: 1.9097e-05, medErrT: 8.43488e-07, medErrR: 1.07604e-06)
+approximate translation threshold for 0.7: 1.57632e-06, approximate rotation threshold for 0.7: 2.60644e-06
+mode: no distortion, method: SOLVEPNP_IPPE -> 95.4% (maxErrT: 4.95259e-05, maxErrR: 5.36004e-05, meanErrT: 3.25933e-07, meanErrR: 3.69581e-07, medErrT: 7.86656e-08, medErrR: 9.10478e-08)
+approximate translation threshold for 0.7: 1.27131e-07, approximate rotation threshold for 0.7: 1.35767e-07
+mode: no distortion, method: SOLVEPNP_IPPE_SQUARE -> Skip for non-planar tag object
+mode: no distortion, method: SOLVEPNP_SQPNP -> 97.6% (maxErrT: 2.35319e-05, maxErrR: 2.97747e-05, meanErrT: 1.72338e-07, meanErrR: 1.9116e-07, medErrT: 3.88413e-08, medErrR: 3.97733e-08)
+approximate translation threshold for 0.7: 7.39251e-08, approximate rotation threshold for 0.7: 6.01455e-08
+
+mode: distorsion, method: SOLVEPNP_ITERATIVE -> 92.3% (maxErrT: 9.62449e+11, maxErrR: 3.58531e+10, meanErrT: 9.85432e+08, meanErrR: 4.72175e+07, medErrT: 3.94913e-08, medErrR: 3.76811e-08)
+approximate translation threshold for 0.7: 7.5805e-08, approximate rotation threshold for 0.7: 5.21664e-08
+mode: distorsion, method: SOLVEPNP_EPNP -> 81.6% (maxErrT: 998480, maxErrR: 3.28328, meanErrT: 1001.54, meanErrR: 0.299667, medErrT: 9.32491e-08, medErrR: 6.73522e-08)
+approximate translation threshold for 0.7: 2.44955e-07, approximate rotation threshold for 0.7: 1.7104e-07
+mode: distorsion, method: SOLVEPNP_P3P -> 99.1% (maxErrT: 0.488882, maxErrR: 0.607553, meanErrT: 0.000843091, meanErrR: 0.00104864, medErrT: 6.47744e-07, medErrR: 8.52438e-07)
+approximate translation threshold for 0.7: 1.23155e-06, approximate rotation threshold for 0.7: 1.73771e-06
+mode: distorsion, method: SOLVEPNP_DLS (remapped to SOLVEPNP_EPNP) -> 81.6% (maxErrT: 998480, maxErrR: 3.28328, meanErrT: 1001.54, meanErrR: 0.299667, medErrT: 9.32491e-08, medErrR: 6.73522e-08)
+approximate translation threshold for 0.7: 2.44955e-07, approximate rotation threshold for 0.7: 1.7104e-07
+mode: distorsion, method: SOLVEPNP_UPNP (remapped to SOLVEPNP_EPNP) -> 81.6% (maxErrT: 998480, maxErrR: 3.28328, meanErrT: 1001.54, meanErrR: 0.299667, medErrT: 9.32491e-08, medErrR: 6.73522e-08)
+approximate translation threshold for 0.7: 2.44955e-07, approximate rotation threshold for 0.7: 1.7104e-07
+mode: distorsion, method: SOLVEPNP_AP3P -> 99.1% (maxErrT: 0.488882, maxErrR: 0.607553, meanErrT: 0.000843091, meanErrR: 0.00104864, medErrT: 6.47744e-07, medErrR: 8.52437e-07)
+approximate translation threshold for 0.7: 1.23155e-06, approximate rotation threshold for 0.7: 1.73771e-06
+mode: distorsion, method: SOLVEPNP_IPPE -> 89.7% (maxErrT: 1.94802, maxErrR: 3.30752, meanErrT: 0.0543902, meanErrR: 0.0652856, medErrT: 8.19591e-08, medErrR: 9.39488e-08)
+approximate translation threshold for 0.7: 4.57159e-08, approximate rotation threshold for 0.7: 2.14212e-07
+mode: distorsion, method: SOLVEPNP_IPPE_SQUARE -> Skip for non-planar tag object
+mode: distorsion, method: SOLVEPNP_SQPNP -> 85.7% (maxErrT: 1.1184, maxErrR: 1.35115, meanErrT: 0.0160521, meanErrR: 0.016152, medErrT: 4.54133e-08, medErrR: 4.39013e-08)
+approximate translation threshold for 0.7: 9.84332e-08, approximate rotation threshold for 0.7: 9.07825e-08
+
+[       OK ] Calib3d_SolvePnP.accuracy_planar (1670 ms)
+[ RUN      ] Calib3d_SolvePnP.accuracy_planar_tag
+mode: no distortion, method: SOLVEPNP_ITERATIVE -> 85.3% (maxErrT: 9.32611e-05, maxErrR: 0.00021211, meanErrT: 3.82109e-07, meanErrR: 1.22986e-06, medErrT: 8.22589e-08, medErrR: 2.41544e-07)
+approximate translation threshold for 0.7: 4.3361e-09, approximate rotation threshold for 0.7: 5.39747e-07
+mode: no distortion, method: SOLVEPNP_EPNP -> 79% (maxErrT: 8.79176e+85, maxErrR: 3.64223, meanErrT: 8.79176e+82, meanErrR: 0.331912, medErrT: 1.51276e-05, medErrR: 2.86451e-06)
+approximate translation threshold for 0.7: 0.000683826, approximate rotation threshold for 0.7: 2.17806e-06
+mode: no distortion, method: SOLVEPNP_P3P -> 99.6% (maxErrT: 4.40714e-05, maxErrR: 0.000657175, meanErrT: 6.14393e-07, meanErrR: 2.90417e-06, medErrT: 1.30751e-07, medErrR: 4.25884e-07)
+approximate translation threshold for 0.7: 7.14069e-08, approximate rotation threshold for 0.7: 8.93715e-07
+mode: no distortion, method: SOLVEPNP_DLS (remapped to SOLVEPNP_EPNP) -> 79% (maxErrT: 8.79176e+85, maxErrR: 3.64223, meanErrT: 8.79176e+82, meanErrR: 0.331912, medErrT: 1.51276e-05, medErrR: 2.86451e-06)
+approximate translation threshold for 0.7: 0.000683826, approximate rotation threshold for 0.7: 2.17806e-06
+mode: no distortion, method: SOLVEPNP_UPNP (remapped to SOLVEPNP_EPNP) -> 79% (maxErrT: 8.79176e+85, maxErrR: 3.64223, meanErrT: 8.79176e+82, meanErrR: 0.331912, medErrT: 1.51276e-05, medErrR: 2.86451e-06)
+approximate translation threshold for 0.7: 0.000683826, approximate rotation threshold for 0.7: 2.17806e-06
+mode: no distortion, method: SOLVEPNP_AP3P -> 99.6% (maxErrT: 4.40714e-05, maxErrR: 0.000657175, meanErrT: 6.14393e-07, meanErrR: 2.90417e-06, medErrT: 1.30751e-07, medErrR: 4.25884e-07)
+approximate translation threshold for 0.7: 7.14069e-08, approximate rotation threshold for 0.7: 8.93715e-07
+mode: no distortion, method: SOLVEPNP_IPPE -> 82.8% (maxErrT: 9.85242e-05, maxErrR: 0.000207779, meanErrT: 4.42897e-07, meanErrR: 1.47451e-06, medErrT: 9.29713e-08, medErrR: 2.94952e-07)
+approximate translation threshold for 0.7: 4.80441e-08, approximate rotation threshold for 0.7: 5.96497e-07
+mode: no distortion, method: SOLVEPNP_IPPE_SQUARE -> 82.8% (maxErrT: 9.85242e-05, maxErrR: 0.000207779, meanErrT: 4.42897e-07, meanErrR: 1.47451e-06, medErrT: 9.29714e-08, medErrR: 2.94952e-07)
+approximate translation threshold for 0.7: 4.80441e-08, approximate rotation threshold for 0.7: 5.96497e-07
+mode: no distortion, method: SOLVEPNP_SQPNP -> 84.8% (maxErrT: 0.000261199, maxErrR: 3.29931, meanErrT: 7.03951e-07, meanErrR: 0.00330069, medErrT: 9.18407e-08, medErrR: 2.77913e-07)
+approximate translation threshold for 0.7: 7.91283e-09, approximate rotation threshold for 0.7: 5.65741e-07
+
+mode: distorsion, method: SOLVEPNP_ITERATIVE -> 97.3% (maxErrT: 8.37151e+16, maxErrR: 3.9163e+17, meanErrT: 8.3831e+13, meanErrR: 3.92066e+14, medErrT: 8.54639e-08, medErrR: 2.50174e-07)
+approximate translation threshold for 0.7: 2.47538e-07, approximate rotation threshold for 0.7: 4.97219e-07
+mode: distorsion, method: SOLVEPNP_EPNP -> 76.7% (maxErrT: 1.60176e+83, maxErrR: 3.82323, meanErrT: 1.60176e+80, meanErrR: 0.407623, medErrT: 1.14965e-05, medErrR: 2.94725e-06)
+approximate translation threshold for 0.7: 0.000866707, approximate rotation threshold for 0.7: 5.39385e-06
+mode: distorsion, method: SOLVEPNP_P3P -> 96% (maxErrT: 1.15719, maxErrR: 3.16031, meanErrT: 0.0150719, meanErrR: 0.0577386, medErrT: 1.4085e-07, medErrR: 4.46072e-07)
+approximate translation threshold for 0.7: 3.00418e-07, approximate rotation threshold for 0.7: 9.38886e-07
+mode: distorsion, method: SOLVEPNP_DLS (remapped to SOLVEPNP_EPNP) -> 76.7% (maxErrT: 1.60176e+83, maxErrR: 3.82323, meanErrT: 1.60176e+80, meanErrR: 0.407623, medErrT: 1.14965e-05, medErrR: 2.94725e-06)
+approximate translation threshold for 0.7: 0.000866707, approximate rotation threshold for 0.7: 5.39385e-06
+mode: distorsion, method: SOLVEPNP_UPNP (remapped to SOLVEPNP_EPNP) -> 76.7% (maxErrT: 1.60176e+83, maxErrR: 3.82323, meanErrT: 1.60176e+80, meanErrR: 0.407623, medErrT: 1.14965e-05, medErrR: 2.94725e-06)
+approximate translation threshold for 0.7: 0.000866707, approximate rotation threshold for 0.7: 5.39385e-06
+mode: distorsion, method: SOLVEPNP_AP3P -> 96% (maxErrT: 1.15719, maxErrR: 3.16031, meanErrT: 0.0150719, meanErrR: 0.0577386, medErrT: 1.4085e-07, medErrR: 4.46072e-07)
+approximate translation threshold for 0.7: 3.00418e-07, approximate rotation threshold for 0.7: 9.38886e-07
+mode: distorsion, method: SOLVEPNP_IPPE -> 96.1% (maxErrT: 1.45685, maxErrR: 3.1141, meanErrT: 0.018248, meanErrR: 0.0437797, medErrT: 1.06516e-07, medErrR: 3.2176e-07)
+approximate translation threshold for 0.7: 3.05658e-07, approximate rotation threshold for 0.7: 6.13779e-07
+mode: distorsion, method: SOLVEPNP_IPPE_SQUARE -> 96.1% (maxErrT: 1.45685, maxErrR: 3.1141, meanErrT: 0.018248, meanErrR: 0.0437797, medErrT: 1.06516e-07, medErrR: 3.2176e-07)
+approximate translation threshold for 0.7: 3.05658e-07, approximate rotation threshold for 0.7: 6.13779e-07
+mode: distorsion, method: SOLVEPNP_SQPNP -> 79.8% (maxErrT: 1.14283, maxErrR: 3.69023, meanErrT: 0.0186966, meanErrR: 0.0443608, medErrT: 1.06976e-07, medErrR: 3.08241e-07)
+approximate translation threshold for 0.7: 1.98691e-07, approximate rotation threshold for 0.7: 6.23031e-07
+
+[       OK ] Calib3d_SolvePnP.accuracy_planar_tag (981 ms)
+[ RUN      ] Calib3d_SolvePnP.input_type
+[       OK ] Calib3d_SolvePnP.input_type (6 ms)
+[ RUN      ] Calib3d_SolvePnP.translation
+[       OK ] Calib3d_SolvePnP.translation (1 ms)
+[ RUN      ] Calib3d_SolvePnP.iterativeInitialGuess3pts
+rvec_ground_truth: [0.3, -0.2, 0.75]
+rvec_est: [0.3000000000000076, -0.2000000000000049, 0.749999999999999]
+tvec_ground_truth: [0.15, -0.2, 1.5]
+tvec_est: [0.1499999999999998, -0.1999999999999997, 1.499999999999999]
+rvec_ground_truth: [-0.75, 0.40000001, 0.34]
+rvec_est: [-0.7499997, 0.40000004, 0.33999982]
+tvec_ground_truth: [-0.15000001, 0.34999999, 1.58]
+tvec_est: [-0.15000002, 0.35000008, 1.5800004]
+[       OK ] Calib3d_SolvePnP.iterativeInitialGuess3pts (1 ms)
+[ RUN      ] Calib3d_SolvePnP.iterativeInitialGuess
+rvec_ground_truth: [0.3, -0.2, 0.75]
+rvec_est: [0.3000000000000005, -0.2000000000000001, 0.7500000000000002]
+tvec_ground_truth: [0.15, -0.2, 1.5]
+tvec_est: [0.15, -0.2, 1.5]
+rvec_ground_truth: [-0.75, 0.40000001, 0.34]
+rvec_est: [-0.74999994, 0.39999977, 0.34]
+tvec_ground_truth: [-0.15000001, 0.34999999, 1.58]
+tvec_est: [-0.15000004, 0.35000005, 1.5800003]
+[       OK ] Calib3d_SolvePnP.iterativeInitialGuess (0 ms)
+[ RUN      ] Calib3d_SolvePnP.generic
+[       OK ] Calib3d_SolvePnP.generic (8 ms)
+[ RUN      ] Calib3d_SolvePnP.refine3pts
+
+method: Levenberg-Marquardt
+rvec_ground_truth: [0.3, -0.2, 0.75]
+rvec_est: [0.3000000008174348, -0.1999999998072154, 0.7499999999730343]
+tvec_ground_truth: [0.15, -0.2, 1.5]
+tvec_est: [0.150000000019768, -0.2000000000156398, 1.500000000195891]
+
+method: Virtual Visual Servoing
+rvec_ground_truth: [0.3, -0.2, 0.75]
+rvec_est: [0.3000000000000019, -0.1999999999999999, 0.75]
+tvec_ground_truth: [0.15, -0.2, 1.5]
+tvec_est: [0.1499999999999999, -0.1999999999999999, 1.5]
+
+method: Levenberg-Marquardt
+rvec_ground_truth: [-0.75, 0.40000001, 0.34]
+rvec_est: [-0.7499997, 0.40000004, 0.33999982]
+tvec_ground_truth: [-0.15000001, 0.34999999, 1.58]
+tvec_est: [-0.15000002, 0.35000008, 1.5800004]
+
+method: Virtual Visual Servoing
+rvec_ground_truth: [-0.75, 0.40000001, 0.34]
+rvec_est: [-0.7499997, 0.40000004, 0.33999982]
+tvec_ground_truth: [-0.15000001, 0.34999999, 1.58]
+tvec_est: [-0.15000002, 0.35000008, 1.5800004]
+[       OK ] Calib3d_SolvePnP.refine3pts (0 ms)
+[ RUN      ] Calib3d_SolvePnP.refine
+
+method: Levenberg-Marquardt (C API)
+rvec_ground_truth: [0.3, -0.2, 0.75]
+rvec_est: [0.3000000000000005, -0.2000000000000001, 0.7500000000000002]
+tvec_ground_truth: [0.15, -0.2, 1.5]
+tvec_est: [0.15, -0.2, 1.5]
+
+method: Levenberg-Marquardt (C++ API)
+rvec_ground_truth: [0.3, -0.2, 0.75]
+rvec_est: [0.2999999999997874, -0.2000000000003661, 0.7500000000000263]
+tvec_ground_truth: [0.15, -0.2, 1.5]
+tvec_est: [0.1500000000000242, -0.2000000000000484, 1.500000000000271]
+
+method: Virtual Visual Servoing
+rvec_ground_truth: [0.3, -0.2, 0.75]
+rvec_est: [0.3000000000000003, -0.2000000000000001, 0.7500000000000003]
+tvec_ground_truth: [0.15, -0.2, 1.5]
+tvec_est: [0.15, -0.2000000000000001, 1.5]
+
+method: Levenberg-Marquardt (C API)
+rvec_ground_truth: [-0.75, 0.40000001, 0.34]
+rvec_est: [-0.74999994, 0.39999977, 0.34]
+tvec_ground_truth: [-0.15000001, 0.34999999, 1.58]
+tvec_est: [-0.15000004, 0.35000005, 1.5800003]
+
+method: Levenberg-Marquardt (C++ API)
+rvec_ground_truth: [-0.75, 0.40000001, 0.34]
+rvec_est: [-0.74999994, 0.39999977, 0.34]
+tvec_ground_truth: [-0.15000001, 0.34999999, 1.58]
+tvec_est: [-0.15000004, 0.35000005, 1.5800003]
+
+method: Virtual Visual Servoing
+rvec_ground_truth: [-0.75, 0.40000001, 0.34]
+rvec_est: [-0.74999994, 0.39999977, 0.34]
+tvec_ground_truth: [-0.15000001, 0.34999999, 1.58]
+tvec_est: [-0.15000004, 0.35000005, 1.5800003]
+
+method: Levenberg-Marquardt (C API)
+rvec_ground_truth: [0.3, -0.2, 0.75]
+rvec_est (EPnP): [0.2999446155498325, -0.2027353997338752, 0.7498066827408479]
+rvec_est_refine: [0.3003364532597195, -0.2008763493980851, 0.7499818323907499]
+tvec_ground_truth: [0.15, -0.2, 1.5]
+tvec_est (EPnP): [0.1499982809450631, -0.2000995263210173, 1.500208329272847]
+tvec_est_refine: [0.1499495925952632, -0.2000513415051321, 1.499835024508053]
+
+method: Levenberg-Marquardt (C++ API)
+rvec_ground_truth: [0.3, -0.2, 0.75]
+rvec_est: [0.2999446155498325, -0.2027353997338752, 0.7498066827408479]
+rvec_est_refine: [0.3003364533339048, -0.2008763494177451, 0.7499818323773895]
+tvec_ground_truth: [0.15, -0.2, 1.5]
+tvec_est: [0.1499982809450631, -0.2000995263210173, 1.500208329272847]
+tvec_est_refine: [0.1499495925941529, -0.2000513415033952, 1.499835024497582]
+
+method: Virtual Visual Servoing
+rvec_ground_truth: [0.3, -0.2, 0.75]
+rvec_est: [0.2999446155498325, -0.2027353997338752, 0.7498066827408479]
+rvec_est_refine: [0.3003325173178572, -0.2008676284556288, 0.7499844485827287]
+tvec_ground_truth: [0.15, -0.2, 1.5]
+tvec_est: [0.1499982809450631, -0.2000995263210173, 1.500208329272847]
+tvec_est_refine: [0.1499499395641654, -0.2000524019584374, 1.499842110992068]
+[       OK ] Calib3d_SolvePnP.refine (2 ms)
+[ RUN      ] Calib3d_SolvePnP.inputShape
+[       OK ] Calib3d_SolvePnP.inputShape (1 ms)
+[----------] 11 tests from Calib3d_SolvePnP (11956 ms total)
+
+[----------] 1 test from AP3P
+[ RUN      ] AP3P.ctheta1p_nan_23607
+[       OK ] AP3P.ctheta1p_nan_23607 (0 ms)
+[----------] 1 test from AP3P (0 ms total)
+
+[----------] 1 test from Calib3d_StereoBM
+[ RUN      ] Calib3d_StereoBM.regression
+progress: 0%
+progress: 3%
+progress: 7%
+progress: 10%
+progress: 14%
+progress: 17%
+progress: 21%
+progress: 24%
+progress: 28%
+progress: 31%
+progress: 35%
+progress: 38%
+progress: 42%
+progress: 45%
+[ WARN:0@60.309] global loadsave.cpp:278 findDecoder imread_('/data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/stereomatching/datasets/tsukuba/disp6.png'): can't open/read file: check file path/integrity
+progress: 49%
+[       OK ] Calib3d_StereoBM.regression (768 ms)
+[----------] 1 test from Calib3d_StereoBM (768 ms total)
+
+[----------] 2 tests from Calib3d_StereoSGBM
+[ RUN      ] Calib3d_StereoSGBM.regression
+progress: 0%
+progress: 2%
+progress: 3%
+progress: 5%
+progress: 6%
+progress: 8%
+progress: 9%
+progress: 11%
+progress: 12%
+progress: 14%
+progress: 16%
+progress: 17%
+progress: 19%
+progress: 20%
+progress: 22%
+progress: 23%
+progress: 25%
+progress: 27%
+progress: 28%
+progress: 30%
+progress: 31%
+progress: 33%
+progress: 34%
+progress: 36%
+progress: 38%
+[ WARN:0@61.872] global loadsave.cpp:278 findDecoder imread_('/data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/stereomatching/datasets/tsukuba/disp6.png'): can't open/read file: check file path/integrity
+progress: 39%
+[ WARN:0@61.912] global loadsave.cpp:278 findDecoder imread_('/data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/stereomatching/datasets/tsukuba/disp6.png'): can't open/read file: check file path/integrity
+progress: 41%
+[ WARN:0@61.954] global loadsave.cpp:278 findDecoder imread_('/data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/stereomatching/datasets/tsukuba/disp6.png'): can't open/read file: check file path/integrity
+progress: 42%
+[ WARN:0@61.983] global loadsave.cpp:278 findDecoder imread_('/data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/stereomatching/datasets/tsukuba/disp6.png'): can't open/read file: check file path/integrity
+progress: 44%
+progress: 45%
+progress: 47%
+progress: 48%
+[       OK ] Calib3d_StereoSGBM.regression (1840 ms)
+[ RUN      ] Calib3d_StereoSGBM.deterministic
+[       OK ] Calib3d_StereoSGBM.deterministic (1 ms)
+[----------] 2 tests from Calib3d_StereoSGBM (1841 ms total)
+
+[----------] 1 test from Calib3d_StereoSGBM_HH4
+[ RUN      ] Calib3d_StereoSGBM_HH4.regression
+[       OK ] Calib3d_StereoSGBM_HH4.regression (29 ms)
+[----------] 1 test from Calib3d_StereoSGBM_HH4 (29 ms total)
+
+[----------] 2 tests from Calib3d_EstimateTranslation3D
+[ RUN      ] Calib3d_EstimateTranslation3D.test4Points
+[       OK ] Calib3d_EstimateTranslation3D.test4Points (0 ms)
+[ RUN      ] Calib3d_EstimateTranslation3D.testNPoints
+[       OK ] Calib3d_EstimateTranslation3D.testNPoints (0 ms)
+[----------] 2 tests from Calib3d_EstimateTranslation3D (0 ms total)
+
+[----------] 1 test from EstimateTranslation2D
+[ RUN      ] EstimateTranslation2D.dont_change_inputs
+[       OK ] EstimateTranslation2D.dont_change_inputs (0 ms)
+[----------] 1 test from EstimateTranslation2D (0 ms total)
+
+[----------] 1 test from Calib3d_DefaultNewCameraMatrix
+[ RUN      ] Calib3d_DefaultNewCameraMatrix.accuracy
+[       OK ] Calib3d_DefaultNewCameraMatrix.accuracy (2 ms)
+[----------] 1 test from Calib3d_DefaultNewCameraMatrix (2 ms total)
+
+[----------] 1 test from Calib3d_GetOptimalNewCameraMatrixNoDistortion
+[ RUN      ] Calib3d_GetOptimalNewCameraMatrixNoDistortion.accuracy
+[       OK ] Calib3d_GetOptimalNewCameraMatrixNoDistortion.accuracy (4 ms)
+[----------] 1 test from Calib3d_GetOptimalNewCameraMatrixNoDistortion (4 ms total)
+
+[----------] 4 tests from Calib3d_UndistortPoints
+[ RUN      ] Calib3d_UndistortPoints.accuracy
+[       OK ] Calib3d_UndistortPoints.accuracy (6 ms)
+[ RUN      ] Calib3d_UndistortPoints.inputShape
+[       OK ] Calib3d_UndistortPoints.inputShape (0 ms)
+[ RUN      ] Calib3d_UndistortPoints.outputShape
+[       OK ] Calib3d_UndistortPoints.outputShape (0 ms)
+[ RUN      ] Calib3d_UndistortPoints.badarg
+[       OK ] Calib3d_UndistortPoints.badarg (0 ms)
+[----------] 4 tests from Calib3d_UndistortPoints (6 ms total)
+
+[----------] 2 tests from Calib3d_InitUndistortRectifyMap
+[ RUN      ] Calib3d_InitUndistortRectifyMap.accuracy
+[       OK ] Calib3d_InitUndistortRectifyMap.accuracy (1372 ms)
+[ RUN      ] Calib3d_InitUndistortRectifyMap.badarg
+[       OK ] Calib3d_InitUndistortRectifyMap.badarg (1 ms)
+[----------] 2 tests from Calib3d_InitUndistortRectifyMap (1373 ms total)
+
+[----------] 1 test from Calib3d_UndistortImgproc
+[ RUN      ] Calib3d_UndistortImgproc.accuracy
+[       OK ] Calib3d_UndistortImgproc.accuracy (211 ms)
+[----------] 1 test from Calib3d_UndistortImgproc (211 ms total)
+
+[----------] 1 test from Calib3d_InitUndistortMap
+[ RUN      ] Calib3d_InitUndistortMap.accuracy
+[       OK ] Calib3d_InitUndistortMap.accuracy (89 ms)
+[----------] 1 test from Calib3d_InitUndistortMap (89 ms total)
+
+[----------] 1 test from Imgproc_undistort
+[ RUN      ] Imgproc_undistort.regression_15286
+[       OK ] Imgproc_undistort.regression_15286 (2 ms)
+[----------] 1 test from Imgproc_undistort (2 ms total)
+
+[----------] 1 test from Calib3d_initUndistortRectifyMap
+[ RUN      ] Calib3d_initUndistortRectifyMap.regression_14467
+[       OK ] Calib3d_initUndistortRectifyMap.regression_14467 (24 ms)
+[----------] 1 test from Calib3d_initUndistortRectifyMap (24 ms total)
+
+[----------] 1 test from Calib3d_initInverseRectificationMap
+[ RUN      ] Calib3d_initInverseRectificationMap.regression_20165
+[       OK ] Calib3d_initInverseRectificationMap.regression_20165 (212 ms)
+[----------] 1 test from Calib3d_initInverseRectificationMap (212 ms total)
+
+[----------] 1 test from Calib3d_Undistort
+[ RUN      ] Calib3d_Undistort.badarg
+[       OK ] Calib3d_Undistort.badarg (1 ms)
+[----------] 1 test from Calib3d_Undistort (1 ms total)
+
+[----------] 5 tests from UndistortPointsTest
+[ RUN      ] UndistortPointsTest.accuracy
+[       OK ] UndistortPointsTest.accuracy (0 ms)
+[ RUN      ] UndistortPointsTest.undistortImagePointsAccuracy
+[       OK ] UndistortPointsTest.undistortImagePointsAccuracy (0 ms)
+[ RUN      ] UndistortPointsTest.stop_criteria
+[       OK ] UndistortPointsTest.stop_criteria (0 ms)
+[ RUN      ] UndistortPointsTest.regression_14583
+[       OK ] UndistortPointsTest.regression_14583 (0 ms)
+[ RUN      ] UndistortPointsTest.regression_27916
+[       OK ] UndistortPointsTest.regression_27916 (1 ms)
+[----------] 5 tests from UndistortPointsTest (1 ms total)
+
+[----------] 1 test from usac_Homography
+[ RUN      ] usac_Homography.accuracy
+[       OK ] usac_Homography.accuracy (179 ms)
+[----------] 1 test from usac_Homography (179 ms total)
+
+[----------] 2 tests from usac_Fundamental
+[ RUN      ] usac_Fundamental.accuracy
+[       OK ] usac_Fundamental.accuracy (1034 ms)
+[ RUN      ] usac_Fundamental.regression_19639
+[       OK ] usac_Fundamental.regression_19639 (1 ms)
+[----------] 2 tests from usac_Fundamental (1035 ms total)
+
+[----------] 1 test from usac_P3P
+[ RUN      ] usac_P3P.accuracy
+[       OK ] usac_P3P.accuracy (962 ms)
+[----------] 1 test from usac_P3P (962 ms total)
+
+[----------] 1 test from usac_Affine2D
+[ RUN      ] usac_Affine2D.accuracy
+[       OK ] usac_Affine2D.accuracy (169 ms)
+[----------] 1 test from usac_Affine2D (169 ms total)
+
+[----------] 1 test from usac_testUsacParams
+[ RUN      ] usac_testUsacParams.accuracy
+[       OK ] usac_testUsacParams.accuracy (1013 ms)
+[----------] 1 test from usac_testUsacParams (1013 ms total)
+
+[----------] 1 test from usac_solvePnPRansac
+[ RUN      ] usac_solvePnPRansac.regression_21105
+[       OK ] usac_solvePnPRansac.regression_21105 (64 ms)
+[----------] 1 test from usac_solvePnPRansac (64 ms total)
+
+[----------] 6 tests from Calib3d/EstimateAffine2D
+[ RUN      ] Calib3d/EstimateAffine2D.test3Points/0, where GetParam() = RANSAC
+[       OK ] Calib3d/EstimateAffine2D.test3Points/0 (2 ms)
+[ RUN      ] Calib3d/EstimateAffine2D.test3Points/1, where GetParam() = LMEDS
+[       OK ] Calib3d/EstimateAffine2D.test3Points/1 (2 ms)
+[ RUN      ] Calib3d/EstimateAffine2D.testNPoints/0, where GetParam() = RANSAC
+[       OK ] Calib3d/EstimateAffine2D.testNPoints/0 (31 ms)
+[ RUN      ] Calib3d/EstimateAffine2D.testNPoints/1, where GetParam() = LMEDS
+[       OK ] Calib3d/EstimateAffine2D.testNPoints/1 (33 ms)
+[ RUN      ] Calib3d/EstimateAffine2D.testConversion/0, where GetParam() = RANSAC
+[       OK ] Calib3d/EstimateAffine2D.testConversion/0 (0 ms)
+[ RUN      ] Calib3d/EstimateAffine2D.testConversion/1, where GetParam() = LMEDS
+[       OK ] Calib3d/EstimateAffine2D.testConversion/1 (0 ms)
+[----------] 6 tests from Calib3d/EstimateAffine2D (68 ms total)
+
+[----------] 6 tests from Calib3d/EstimateAffinePartial2D
+[ RUN      ] Calib3d/EstimateAffinePartial2D.test2Points/0, where GetParam() = RANSAC
+[       OK ] Calib3d/EstimateAffinePartial2D.test2Points/0 (1 ms)
+[ RUN      ] Calib3d/EstimateAffinePartial2D.test2Points/1, where GetParam() = LMEDS
+[       OK ] Calib3d/EstimateAffinePartial2D.test2Points/1 (2 ms)
+[ RUN      ] Calib3d/EstimateAffinePartial2D.testNPoints/0, where GetParam() = RANSAC
+[       OK ] Calib3d/EstimateAffinePartial2D.testNPoints/0 (18 ms)
+[ RUN      ] Calib3d/EstimateAffinePartial2D.testNPoints/1, where GetParam() = LMEDS
+[       OK ] Calib3d/EstimateAffinePartial2D.testNPoints/1 (21 ms)
+[ RUN      ] Calib3d/EstimateAffinePartial2D.testConversion/0, where GetParam() = RANSAC
+[       OK ] Calib3d/EstimateAffinePartial2D.testConversion/0 (0 ms)
+[ RUN      ] Calib3d/EstimateAffinePartial2D.testConversion/1, where GetParam() = LMEDS
+[       OK ] Calib3d/EstimateAffinePartial2D.testConversion/1 (0 ms)
+[----------] 6 tests from Calib3d/EstimateAffinePartial2D (42 ms total)
+
+[----------] 4 tests from Calib3d_CirclesGrid_RNG_Symmetric
+[ RUN      ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/0, where GetParam() = 4x4
+[       OK ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/0 (1 ms)
+[ RUN      ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/1, where GetParam() = 6x5
+[       OK ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/1 (1 ms)
+[ RUN      ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/2, where GetParam() = 8x6
+[       OK ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/2 (3 ms)
+[ RUN      ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/3, where GetParam() = 10x8
+[       OK ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/3 (4 ms)
+[----------] 4 tests from Calib3d_CirclesGrid_RNG_Symmetric (9 ms total)
+
+[----------] 2 tests from Calib3d_CirclesGrid_RNG_Asymmetric
+[ RUN      ] Calib3d_CirclesGrid_RNG_Asymmetric.synthetic/0, where GetParam() = 4x6
+[       OK ] Calib3d_CirclesGrid_RNG_Asymmetric.synthetic/0 (1 ms)
+[ RUN      ] Calib3d_CirclesGrid_RNG_Asymmetric.synthetic/1, where GetParam() = 5x8
+[       OK ] Calib3d_CirclesGrid_RNG_Asymmetric.synthetic/1 (2 ms)
+[----------] 2 tests from Calib3d_CirclesGrid_RNG_Asymmetric (4 ms total)
+
+[----------] 4 tests from Calib3d_StereoBM_BufferBM
+[ RUN      ] Calib3d_StereoBM_BufferBM.memAllocsTest/0, where GetParam() = (0, (30, 19))
+[       OK ] Calib3d_StereoBM_BufferBM.memAllocsTest/0 (25 ms)
+[ RUN      ] Calib3d_StereoBM_BufferBM.memAllocsTest/1, where GetParam() = (0, (32, 23))
+[       OK ] Calib3d_StereoBM_BufferBM.memAllocsTest/1 (18 ms)
+[ RUN      ] Calib3d_StereoBM_BufferBM.memAllocsTest/2, where GetParam() = (1, (30, 19))
+[       OK ] Calib3d_StereoBM_BufferBM.memAllocsTest/2 (18 ms)
+[ RUN      ] Calib3d_StereoBM_BufferBM.memAllocsTest/3, where GetParam() = (1, (32, 23))
+[       OK ] Calib3d_StereoBM_BufferBM.memAllocsTest/3 (17 ms)
+[----------] 4 tests from Calib3d_StereoBM_BufferBM (78 ms total)
+
+[----------] 6 tests from Calib3d/EstimateTranslation2D
+[ RUN      ] Calib3d/EstimateTranslation2D.test1Point/0, where GetParam() = RANSAC
+[       OK ] Calib3d/EstimateTranslation2D.test1Point/0 (1 ms)
+[ RUN      ] Calib3d/EstimateTranslation2D.test1Point/1, where GetParam() = LMEDS
+[       OK ] Calib3d/EstimateTranslation2D.test1Point/1 (1 ms)
+[ RUN      ] Calib3d/EstimateTranslation2D.testNPoints/0, where GetParam() = RANSAC
+[       OK ] Calib3d/EstimateTranslation2D.testNPoints/0 (6 ms)
+[ RUN      ] Calib3d/EstimateTranslation2D.testNPoints/1, where GetParam() = LMEDS
+[       OK ] Calib3d/EstimateTranslation2D.testNPoints/1 (6 ms)
+[ RUN      ] Calib3d/EstimateTranslation2D.testConversion/0, where GetParam() = RANSAC
+[       OK ] Calib3d/EstimateTranslation2D.testConversion/0 (0 ms)
+[ RUN      ] Calib3d/EstimateTranslation2D.testConversion/1, where GetParam() = LMEDS
+[       OK ] Calib3d/EstimateTranslation2D.testConversion/1 (0 ms)
+[----------] 6 tests from Calib3d/EstimateTranslation2D (15 ms total)
+
+[----------] 10 tests from Calib3d/usac_Essential
+[ RUN      ] Calib3d/usac_Essential.accuracy/0, where GetParam() = USAC_DEFAULT
+[       OK ] Calib3d/usac_Essential.accuracy/0 (38 ms)
+[ RUN      ] Calib3d/usac_Essential.accuracy/1, where GetParam() = USAC_ACCURATE
+[       OK ] Calib3d/usac_Essential.accuracy/1 (46 ms)
+[ RUN      ] Calib3d/usac_Essential.accuracy/2, where GetParam() = USAC_PROSAC
+[       OK ] Calib3d/usac_Essential.accuracy/2 (15 ms)
+[ RUN      ] Calib3d/usac_Essential.accuracy/3, where GetParam() = USAC_FAST
+[       OK ] Calib3d/usac_Essential.accuracy/3 (37 ms)
+[ RUN      ] Calib3d/usac_Essential.accuracy/4, where GetParam() = USAC_MAGSAC
+[       OK ] Calib3d/usac_Essential.accuracy/4 (45 ms)
+[ RUN      ] Calib3d/usac_Essential.maxiters/0, where GetParam() = USAC_DEFAULT
+[       OK ] Calib3d/usac_Essential.maxiters/0 (6 ms)
+[ RUN      ] Calib3d/usac_Essential.maxiters/1, where GetParam() = USAC_ACCURATE
+[       OK ] Calib3d/usac_Essential.maxiters/1 (8 ms)
+[ RUN      ] Calib3d/usac_Essential.maxiters/2, where GetParam() = USAC_PROSAC
+[       OK ] Calib3d/usac_Essential.maxiters/2 (14 ms)
+[ RUN      ] Calib3d/usac_Essential.maxiters/3, where GetParam() = USAC_FAST
+[       OK ] Calib3d/usac_Essential.maxiters/3 (5 ms)
+[ RUN      ] Calib3d/usac_Essential.maxiters/4, where GetParam() = USAC_MAGSAC
+[       OK ] Calib3d/usac_Essential.maxiters/4 (15 ms)
+[----------] 10 tests from Calib3d/usac_Essential (229 ms total)
+
+[----------] Global test environment tear-down
+[==========] 180 tests from 72 test cases ran. (67915 ms total)
+[  PASSED  ] 180 tests.
+
+  YOU HAVE 2 DISABLED TESTS
+

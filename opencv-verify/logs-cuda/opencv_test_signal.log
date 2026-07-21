@@ -1,0 +1,63 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 20 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from ResampleTest
+[ RUN      ] ResampleTest.simple_resample_test_up
+[       OK ] ResampleTest.simple_resample_test_up (4 ms)
+[ RUN      ] ResampleTest.resample_sin_signal_up_2
+[       OK ] ResampleTest.resample_sin_signal_up_2 (0 ms)
+[ RUN      ] ResampleTest.simple_resample_test_dn
+[       OK ] ResampleTest.simple_resample_test_dn (0 ms)
+[ RUN      ] ResampleTest.resample_sin_signal_dn_2
+[       OK ] ResampleTest.resample_sin_signal_dn_2 (0 ms)
+[----------] 4 tests from ResampleTest (4 ms total)
+
+[----------] 16 tests from RefSignalTestingCase/ResampleTestClass
+[ RUN      ] RefSignalTestingCase/ResampleTestClass.func_test/0, where GetParam() = (16000, 16000)
+[       OK ] RefSignalTestingCase/ResampleTestClass.func_test/0 (4 ms)
+[ RUN      ] RefSignalTestingCase/ResampleTestClass.func_test/1, where GetParam() = (16000, 32000)
+[       OK ] RefSignalTestingCase/ResampleTestClass.func_test/1 (3 ms)
+[ RUN      ] RefSignalTestingCase/ResampleTestClass.func_test/2, where GetParam() = (16000, 44100)
+[       OK ] RefSignalTestingCase/ResampleTestClass.func_test/2 (4 ms)
+[ RUN      ] RefSignalTestingCase/ResampleTestClass.func_test/3, where GetParam() = (16000, 48000)
+[       OK ] RefSignalTestingCase/ResampleTestClass.func_test/3 (4 ms)
+[ RUN      ] RefSignalTestingCase/ResampleTestClass.func_test/4, where GetParam() = (32000, 16000)
+[       OK ] RefSignalTestingCase/ResampleTestClass.func_test/4 (3 ms)
+[ RUN      ] RefSignalTestingCase/ResampleTestClass.func_test/5, where GetParam() = (32000, 32000)
+[       OK ] RefSignalTestingCase/ResampleTestClass.func_test/5 (3 ms)
+[ RUN      ] RefSignalTestingCase/ResampleTestClass.func_test/6, where GetParam() = (32000, 44100)
+[       OK ] RefSignalTestingCase/ResampleTestClass.func_test/6 (5 ms)
+[ RUN      ] RefSignalTestingCase/ResampleTestClass.func_test/7, where GetParam() = (32000, 48000)
+[       OK ] RefSignalTestingCase/ResampleTestClass.func_test/7 (5 ms)
+[ RUN      ] RefSignalTestingCase/ResampleTestClass.func_test/8, where GetParam() = (44100, 16000)
+[       OK ] RefSignalTestingCase/ResampleTestClass.func_test/8 (3 ms)
+[ RUN      ] RefSignalTestingCase/ResampleTestClass.func_test/9, where GetParam() = (44100, 32000)
+[       OK ] RefSignalTestingCase/ResampleTestClass.func_test/9 (5 ms)
+[ RUN      ] RefSignalTestingCase/ResampleTestClass.func_test/10, where GetParam() = (44100, 44100)
+[       OK ] RefSignalTestingCase/ResampleTestClass.func_test/10 (5 ms)
+[ RUN      ] RefSignalTestingCase/ResampleTestClass.func_test/11, where GetParam() = (44100, 48000)
+[       OK ] RefSignalTestingCase/ResampleTestClass.func_test/11 (5 ms)
+[ RUN      ] RefSignalTestingCase/ResampleTestClass.func_test/12, where GetParam() = (48000, 16000)
+[       OK ] RefSignalTestingCase/ResampleTestClass.func_test/12 (4 ms)
+[ RUN      ] RefSignalTestingCase/ResampleTestClass.func_test/13, where GetParam() = (48000, 32000)
+[       OK ] RefSignalTestingCase/ResampleTestClass.func_test/13 (4 ms)
+[ RUN      ] RefSignalTestingCase/ResampleTestClass.func_test/14, where GetParam() = (48000, 44100)
+[       OK ] RefSignalTestingCase/ResampleTestClass.func_test/14 (6 ms)
+[ RUN      ] RefSignalTestingCase/ResampleTestClass.func_test/15, where GetParam() = (48000, 48000)
+[       OK ] RefSignalTestingCase/ResampleTestClass.func_test/15 (5 ms)
+[----------] 16 tests from RefSignalTestingCase/ResampleTestClass (68 ms total)
+
+[----------] Global test environment tear-down
+[==========] 20 tests from 2 test cases ran. (72 ms total)
+[  PASSED  ] 20 tests.

@@ -1,0 +1,42 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 11 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 11 tests from HDF5_Test
+[ RUN      ] HDF5_Test.create_a_single_group
+[       OK ] HDF5_Test.create_a_single_group (16 ms)
+[ RUN      ] HDF5_Test.create_a_child_group
+[       OK ] HDF5_Test.create_a_child_group (11 ms)
+[ RUN      ] HDF5_Test.create_dataset
+[       OK ] HDF5_Test.create_dataset (10 ms)
+[ RUN      ] HDF5_Test.write_read_dataset_1
+[       OK ] HDF5_Test.write_read_dataset_1 (6 ms)
+[ RUN      ] HDF5_Test.write_read_dataset_2
+[       OK ] HDF5_Test.write_read_dataset_2 (5 ms)
+[ RUN      ] HDF5_Test.test_attribute
+[       OK ] HDF5_Test.test_attribute (11 ms)
+[ RUN      ] HDF5_Test.test_attribute_int
+[       OK ] HDF5_Test.test_attribute_int (9 ms)
+[ RUN      ] HDF5_Test.test_attribute_double
+[       OK ] HDF5_Test.test_attribute_double (10 ms)
+[ RUN      ] HDF5_Test.test_attribute_String
+[       OK ] HDF5_Test.test_attribute_String (9 ms)
+[ RUN      ] HDF5_Test.test_attribute_String_empty
+[       OK ] HDF5_Test.test_attribute_String_empty (9 ms)
+[ RUN      ] HDF5_Test.test_attribute_InutArray_OutputArray_2d
+[       OK ] HDF5_Test.test_attribute_InutArray_OutputArray_2d (16 ms)
+[----------] 11 tests from HDF5_Test (112 ms total)
+
+[----------] Global test environment tear-down
+[==========] 11 tests from 1 test case ran. (112 ms total)
+[  PASSED  ] 11 tests.

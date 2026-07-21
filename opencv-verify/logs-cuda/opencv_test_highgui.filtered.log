@@ -1,0 +1,24 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+Note: Google Test filter = -Highgui_GUI.regression:Highgui_GUI.trackbar_unsafe:Highgui_GUI.trackbar:Highgui_GUI.small_width_image
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from Highgui_GUI
+[ RUN      ] Highgui_GUI.currentUIFramework
+UI framework: ""
+[       OK ] Highgui_GUI.currentUIFramework (105 ms)
+[----------] 1 test from Highgui_GUI (105 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (105 ms total)
+[  PASSED  ] 1 test.
