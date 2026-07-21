@@ -1,5 +1,7 @@
 # OpenCV 验证记录
 
+以下命令默认在 `tool-verify` 根目录执行。
+
 ## 环境
 - 时间：2026-07-21
 - 主机：Linux `5.14.0-284.25.1.el9_2.x86_64`
@@ -18,10 +20,10 @@
 - commit：`f202151dfb4734e47399ddf6581183d423da74b4`
 - `opencv_contrib`: `4.x`
 - commit: `a8e9acd62cabd30419dba83007f2ac0d07de5e2c`
-- 测试数据：`/data/xumengying/opencv-verify/src/opencv_extra/testdata`
+- 测试数据：`./opencv-verify/src/opencv_extra/testdata`
 
 ## CPU 验证结果
-- 构建目录：`/data/xumengying/opencv-verify/build-cpu`
+- 构建目录：`./opencv-verify/build-cpu`
 - 结果：
   - CMake 配置成功
   - 编译成功
@@ -38,46 +40,47 @@
 
 ### CPU 完整命令
 ```bash
-mkdir -p /data/xumengying/opencv-verify/build-cpu /data/xumengying/opencv-verify/logs-cpu
-cmake -S /data/xumengying/opencv-verify/src/opencv \
-      -B /data/xumengying/opencv-verify/build-cpu \
+ROOT="$(pwd)/opencv-verify"
+mkdir -p "$ROOT/build-cpu" "$ROOT/logs-cpu"
+cmake -S "$ROOT/src/opencv" \
+      -B "$ROOT/build-cpu" \
       -G Ninja \
       -DCMAKE_BUILD_TYPE=Release \
       -DBUILD_TESTS=ON \
       -DBUILD_PERF_TESTS=ON \
       -DBUILD_EXAMPLES=ON \
       -DWITH_CUDA=OFF \
-      -DOPENCV_TEST_DATA_PATH=/data/xumengying/opencv-verify/src/opencv_extra/testdata \
-      | tee /data/xumengying/opencv-verify/logs-cpu/cmake-cpu.log
-cmake --build /data/xumengying/opencv-verify/build-cpu \
+      -DOPENCV_TEST_DATA_PATH="$ROOT/src/opencv_extra/testdata" \
+      | tee "$ROOT/logs-cpu/cmake-cpu.log"
+cmake --build "$ROOT/build-cpu" \
       --parallel "$(nproc)" \
-      | tee /data/xumengying/opencv-verify/logs-cpu/build-cpu.log
+      | tee "$ROOT/logs-cpu/build-cpu.log"
 
-export OPENCV_TEST_DATA_PATH=/data/xumengying/opencv-verify/src/opencv_extra/testdata
-cd /data/xumengying/opencv-verify/build-cpu/bin
+export OPENCV_TEST_DATA_PATH="$ROOT/src/opencv_extra/testdata"
+cd "$ROOT/build-cpu/bin"
 for t in $(find . -maxdepth 1 -type f -executable -name 'opencv_test_*' -printf '%f\n' | sort); do
-  echo "===== $t =====" | tee -a /data/xumengying/opencv-verify/logs-cpu/test-summary-cpu.log
-  ./$t 2>&1 | tee /data/xumengying/opencv-verify/logs-cpu/${t}.log
+  echo "===== $t =====" | tee -a "$ROOT/logs-cpu/test-summary-cpu.log"
+  ./$t 2>&1 | tee "$ROOT/logs-cpu/${t}.log"
   status=${PIPESTATUS[0]}
-  echo "$t exit=$status" | tee -a /data/xumengying/opencv-verify/logs-cpu/test-summary-cpu.log
+  echo "$t exit=$status" | tee -a "$ROOT/logs-cpu/test-summary-cpu.log"
 done
 
 for t in $(find . -maxdepth 1 -type f -executable -name 'opencv_perf_*' -printf '%f\n' | sort); do
-  echo "===== $t =====" | tee -a /data/xumengying/opencv-verify/logs-cpu/perf-summary-cpu.log
-  ./$t 2>&1 | tee /data/xumengying/opencv-verify/logs-cpu/${t}.log
+  echo "===== $t =====" | tee -a "$ROOT/logs-cpu/perf-summary-cpu.log"
+  ./$t 2>&1 | tee "$ROOT/logs-cpu/${t}.log"
   status=${PIPESTATUS[0]}
-  echo "$t exit=$status" | tee -a /data/xumengying/opencv-verify/logs-cpu/perf-summary-cpu.log
+  echo "$t exit=$status" | tee -a "$ROOT/logs-cpu/perf-summary-cpu.log"
 done
 ```
 
 ### 关键日志
-- 配置：`/data/xumengying/opencv-verify/logs-cpu/cmake-cpu.log`
-- 编译：`/data/xumengying/opencv-verify/logs-cpu/build-cpu.log`
-- accuracy 汇总：`/data/xumengying/opencv-verify/logs-cpu/test-summary-cpu.log`
-- perf 汇总：`/data/xumengying/opencv-verify/logs-cpu/perf-summary-cpu.log`
+- 配置：`$ROOT/logs-cpu/cmake-cpu.log`
+- 编译：`$ROOT/logs-cpu/build-cpu.log`
+- accuracy 汇总：`$ROOT/logs-cpu/test-summary-cpu.log`
+- perf 汇总：`$ROOT/logs-cpu/perf-summary-cpu.log`
 
 ## CUDA 验证结果
-- 构建目录：`/data/xumengying/opencv-verify/build-cuda`
+- 构建目录：`./opencv-verify/build-cuda`
 - 结果：
   - CMake 已识别到 `CUDA 12.4`
   - A100 对应的配置已收敛到 `CUDA_ARCH_BIN=8.0`
@@ -85,9 +88,10 @@ done
 
 ### CUDA 完整命令
 ```bash
-mkdir -p /data/xumengying/opencv-verify/build-cuda /data/xumengying/opencv-verify/logs-cuda
-cmake -S /data/xumengying/opencv-verify/src/opencv \
-      -B /data/xumengying/opencv-verify/build-cuda \
+ROOT="$(pwd)/opencv-verify"
+mkdir -p "$ROOT/build-cuda" "$ROOT/logs-cuda"
+cmake -S "$ROOT/src/opencv" \
+      -B "$ROOT/build-cuda" \
       -G Ninja \
       -DCMAKE_BUILD_TYPE=Release \
       -DBUILD_TESTS=ON \
@@ -97,35 +101,35 @@ cmake -S /data/xumengying/opencv-verify/src/opencv \
       -DWITH_OPENCL=OFF \
       -DWITH_V4L=OFF \
       -DCUDA_ARCH_BIN=8.0 \
-      -DOPENCV_EXTRA_MODULES_PATH=/data/xumengying/opencv-verify/src/opencv_contrib/modules \
-      -DOPENCV_TEST_DATA_PATH=/data/xumengying/opencv-verify/src/opencv_extra/testdata \
-      | tee /data/xumengying/opencv-verify/logs-cuda/cmake-cuda.log
-cmake --build /data/xumengying/opencv-verify/build-cuda \
+      -DOPENCV_EXTRA_MODULES_PATH="$ROOT/src/opencv_contrib/modules" \
+      -DOPENCV_TEST_DATA_PATH="$ROOT/src/opencv_extra/testdata" \
+      | tee "$ROOT/logs-cuda/cmake-cuda.log"
+cmake --build "$ROOT/build-cuda" \
       --parallel "$(nproc)" \
-      | tee /data/xumengying/opencv-verify/logs-cuda/build-cuda.log
+      | tee "$ROOT/logs-cuda/build-cuda.log"
 
-export OPENCV_TEST_DATA_PATH=/data/xumengying/opencv-verify/src/opencv_extra/testdata
-cd /data/xumengying/opencv-verify/build-cuda/bin
+export OPENCV_TEST_DATA_PATH="$ROOT/src/opencv_extra/testdata"
+cd "$ROOT/build-cuda/bin"
 for t in $(find . -maxdepth 1 -type f -executable -name 'opencv_test_*' -printf '%f\n' | sort); do
-  echo "===== $t =====" | tee -a /data/xumengying/opencv-verify/logs-cuda/test-summary-cuda.log
-  ./$t 2>&1 | tee /data/xumengying/opencv-verify/logs-cuda/${t}.log
+  echo "===== $t =====" | tee -a "$ROOT/logs-cuda/test-summary-cuda.log"
+  ./$t 2>&1 | tee "$ROOT/logs-cuda/${t}.log"
   status=${PIPESTATUS[0]}
-  echo "$t exit=$status" | tee -a /data/xumengying/opencv-verify/logs-cuda/test-summary-cuda.log
+  echo "$t exit=$status" | tee -a "$ROOT/logs-cuda/test-summary-cuda.log"
 done
 
 for t in $(find . -maxdepth 1 -type f -executable -name 'opencv_perf_*' -printf '%f\n' | sort); do
-  echo "===== $t =====" | tee -a /data/xumengying/opencv-verify/logs-cuda/perf-summary-cuda.log
-  ./$t 2>&1 | tee /data/xumengying/opencv-verify/logs-cuda/${t}.log
+  echo "===== $t =====" | tee -a "$ROOT/logs-cuda/perf-summary-cuda.log"
+  ./$t 2>&1 | tee "$ROOT/logs-cuda/${t}.log"
   status=${PIPESTATUS[0]}
-  echo "$t exit=$status" | tee -a /data/xumengying/opencv-verify/logs-cuda/perf-summary-cuda.log
+  echo "$t exit=$status" | tee -a "$ROOT/logs-cuda/perf-summary-cuda.log"
 done
 ```
 
 ### 关键日志
-- 配置：`/data/xumengying/opencv-verify/logs-cuda/cmake-cuda.log`
-- 编译：`/data/xumengying/opencv-verify/logs-cuda/build-cuda.log`
-- accuracy 汇总：`/data/xumengying/opencv-verify/logs-cuda/test-summary-cuda.log`
-- perf 汇总：`/data/xumengying/opencv-verify/logs-cuda/perf-summary-cuda.log`
+- 配置：`$ROOT/logs-cuda/cmake-cuda.log`
+- 编译：`$ROOT/logs-cuda/build-cuda.log`
+- accuracy 汇总：`$ROOT/logs-cuda/test-summary-cuda.log`
+- perf 汇总：`$ROOT/logs-cuda/perf-summary-cuda.log`
 
 ### CUDA 测试失败项分析
 - `opencv_test_*` 总体结果：5 个测试程序返回非 0
@@ -207,27 +211,26 @@ done
 如果目标是验证 CUDA 主链路，可以先跳过已定位的环境或已知差异项：
 
 ```bash
-export OPENCV_TEST_DATA_PATH=/data/xumengying/opencv-verify/src/opencv_extra/testdata
-cd /data/xumengying/opencv-verify/build-cuda/bin
+export OPENCV_TEST_DATA_PATH="$ROOT/src/opencv_extra/testdata"
+cd "$ROOT/build-cuda/bin"
 
 ./opencv_test_cudaoptflow \
   --gtest_filter='-CUDA_OptFlow/NvidiaOpticalFlow_1_0.Regression/0:CUDA_OptFlow/NvidiaOpticalFlow_2_0.Regression/0' \
-  2>&1 | tee /data/xumengying/opencv-verify/logs-cuda/opencv_test_cudaoptflow.filtered.log
+  2>&1 | tee "$ROOT/logs-cuda/opencv_test_cudaoptflow.filtered.log"
 
 ./opencv_test_dnn \
   --gtest_filter='-Test_ONNX_layers.LSTM_Activations/0:Test_ONNX_layers.LSTM_hidden/0:Test_ONNX_layers.LSTM_hidden_bidirectional/0:Test_ONNX_layers.LSTM_cell_forward/0:Test_ONNX_layers.LSTM_cell_bidirectional/0:Test_TensorFlow_layers.Convolution3D/1:Test_TensorFlow_layers.concat_3d/1' \
-  2>&1 | tee /data/xumengying/opencv-verify/logs-cuda/opencv_test_dnn.filtered.log
+  2>&1 | tee "$ROOT/logs-cuda/opencv_test_dnn.filtered.log"
 
 ./opencv_test_face \
   --gtest_filter='-CV_Face_FacemarkKazemi.can_detect_landmarks' \
-  2>&1 | tee /data/xumengying/opencv-verify/logs-cuda/opencv_test_face.filtered.log
+  2>&1 | tee "$ROOT/logs-cuda/opencv_test_face.filtered.log"
 
 ./opencv_test_gapi \
   --gtest_filter='-VASObjectTracker.PipelineTest:AsyncAPICancelation/cancel/*.basic' \
-  2>&1 | tee /data/xumengying/opencv-verify/logs-cuda/opencv_test_gapi.filtered.log
+  2>&1 | tee "$ROOT/logs-cuda/opencv_test_gapi.filtered.log"
 
 ./opencv_test_highgui \
   --gtest_filter='-Highgui_GUI.regression:Highgui_GUI.trackbar_unsafe:Highgui_GUI.trackbar:Highgui_GUI.small_width_image' \
-  2>&1 | tee /data/xumengying/opencv-verify/logs-cuda/opencv_test_highgui.filtered.log
+  2>&1 | tee "$ROOT/logs-cuda/opencv_test_highgui.filtered.log"
 ```
-
