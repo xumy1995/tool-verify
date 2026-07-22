@@ -1,0 +1,110 @@
+[ERROR:0@0.033] global persistence.cpp:577 open Can't open file: '/data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/perf/dnn_superres.xml' in read mode
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+[==========] Running 6 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 6 tests from dnn_superres_upsample
+[ RUN      ] dnn_superres_upsample.upsample/0, where GetParam() = (("espcn", "ESPCN_x2.pb", 2), "cv/dnn_superres/butterfly.png")
+[ PERFSTAT ]    (samples=100   mean=18.43   median=17.73   min=15.66   stddev=2.17 (11.8%))
+[       OK ] dnn_superres_upsample.upsample/0 (1975 ms)
+[ RUN      ] dnn_superres_upsample.upsample/1, where GetParam() = (("espcn", "ESPCN_x2.pb", 2), "cv/shared/baboon.png")
+.
+[ PERFSTAT ]    (samples=100   mean=103.85   median=101.42   min=92.32   stddev=7.62 (7.3%))
+[       OK ] dnn_superres_upsample.upsample/1 (10582 ms)
+[ RUN      ] dnn_superres_upsample.upsample/2, where GetParam() = (("espcn", "ESPCN_x2.pb", 2), "cv/shared/lena.png")
+.
+[ PERFSTAT ]    (samples=100   mean=99.93   median=97.73   min=88.09   stddev=8.79 (8.8%))
+[       OK ] dnn_superres_upsample.upsample/2 (10393 ms)
+[ RUN      ] dnn_superres_upsample.upsample/3, where GetParam() = (("lapsrn", "LapSRN_x4.pb", 4), "cv/dnn_superres/butterfly.png")
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=1597.55   median=1582.89   min=1359.04   stddev=114.69 (7.2%))
+[       OK ] dnn_superres_upsample.upsample/3 (162676 ms)
+[ RUN      ] dnn_superres_upsample.upsample/4, where GetParam() = (("lapsrn", "LapSRN_x4.pb", 4), "cv/shared/baboon.png")
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=13   mean=5355.02   median=5400.32   min=5106.94   stddev=148.67 (2.8%))
+[       OK ] dnn_superres_upsample.upsample/4 (70100 ms)
+[ RUN      ] dnn_superres_upsample.upsample/5, where GetParam() = (("lapsrn", "LapSRN_x4.pb", 4), "cv/shared/lena.png")
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+[ PERFSTAT ]    (samples=100   mean=5298.08   median=5291.34   min=4790.59   stddev=234.16 (4.4%))
+[       OK ] dnn_superres_upsample.upsample/5 (534588 ms)
+[----------] 6 tests from dnn_superres_upsample (790314 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test case ran. (790314 ms total)
+[  PASSED  ] 6 tests.

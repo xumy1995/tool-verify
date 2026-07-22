@@ -1,0 +1,97 @@
+[----------]
+[   INFO   ] 	Implementation variant: cuda.
+[----------]
+[----------]
+[ GPU INFO ] 	Run test suite on NVIDIA A100-SXM4-40GB GPU.
+[----------]
+*** CUDA Device Query (Runtime API) version (CUDART static linking) *** 
+
+Device count: 1
+
+Device 0: "NVIDIA A100-SXM4-40GB"
+  CUDA Driver Version / Runtime Version          12.40 / 12.40
+  CUDA Capability Major/Minor version number:    8.0
+  Total amount of global memory:                 40507 MBytes (42474471424 bytes)
+  GPU Clock Speed:                               1.41 GHz
+  Max Texture Dimension Size (x,y,z)             1D=(131072), 2D=(131072,65536), 3D=(16384,16384,16384)
+  Max Layered Texture Size (dim) x layers        1D=(32768) x 2048, 2D=(32768,32768) x 2048
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 65536
+  Warp size:                                     32
+  Maximum number of threads per block:           1024
+  Maximum sizes of each dimension of a block:    1024 x 1024 x 64
+  Maximum sizes of each dimension of a grid:     2147483647 x 65535 x 65535
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and execution:                 Yes with 3 copy engine(s)
+  Run time limit on kernels:                     No
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Concurrent kernel execution:                   Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support enabled:                Yes
+  Device is using TCC driver mode:               No
+  Device supports Unified Addressing (UVA):      Yes
+  Device PCI Bus ID / PCI location ID:           163 / 0
+  Compute Mode:
+      Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) 
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version  = 12.40, CUDA Runtime Version = 12.40, NumDevs = 1
+
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+[==========] Running 10 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 8 tests from Image_ObjDetect_HOG
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/0, where GetParam() = "gpu/hog/road.png"
+[ PERFSTAT ]    (samples=18   mean=13.01   median=12.90   min=12.77   stddev=0.39 (3.0%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/0 (265 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/1, where GetParam() = "gpu/caltech/image_00000009_0.png"
+[ PERFSTAT ]    (samples=10   mean=8.81   median=8.78   min=8.75   stddev=0.08 (0.9%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/1 (101 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/2, where GetParam() = "gpu/caltech/image_00000032_0.png"
+[ PERFSTAT ]    (samples=13   mean=8.70   median=8.69   min=8.68   stddev=0.03 (0.4%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/2 (126 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/3, where GetParam() = "gpu/caltech/image_00000165_0.png"
+[ PERFSTAT ]    (samples=13   mean=8.72   median=8.69   min=8.66   stddev=0.05 (0.6%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/3 (127 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/4, where GetParam() = "gpu/caltech/image_00000261_0.png"
+[ PERFSTAT ]    (samples=10   mean=8.72   median=8.71   min=8.69   stddev=0.02 (0.3%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/4 (99 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/5, where GetParam() = "gpu/caltech/image_00000469_0.png"
+[ PERFSTAT ]    (samples=13   mean=8.72   median=8.72   min=8.68   stddev=0.03 (0.3%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/5 (127 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/6, where GetParam() = "gpu/caltech/image_00000527_0.png"
+[ PERFSTAT ]    (samples=10   mean=8.76   median=8.70   min=8.68   stddev=0.14 (1.6%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/6 (99 ms)
+[ RUN      ] Image_ObjDetect_HOG.ObjDetect_HOG/7, where GetParam() = "gpu/caltech/image_00000574_0.png"
+[ PERFSTAT ]    (samples=10   mean=8.72   median=8.71   min=8.70   stddev=0.03 (0.4%))
+[       OK ] Image_ObjDetect_HOG.ObjDetect_HOG/7 (99 ms)
+[----------] 8 tests from Image_ObjDetect_HOG (1043 ms total)
+
+[----------] 1 test from ImageAndCascade_ObjDetect_HaarClassifier
+[ RUN      ] ImageAndCascade_ObjDetect_HaarClassifier.ObjDetect_HaarClassifier/0, where GetParam() = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/perf/haarcascade_frontalface_alt.xml")
+[ PERFSTAT ]    (samples=13   mean=7.17   median=7.17   min=7.14   stddev=0.02 (0.3%))
+[       OK ] ImageAndCascade_ObjDetect_HaarClassifier.ObjDetect_HaarClassifier/0 (171 ms)
+[----------] 1 test from ImageAndCascade_ObjDetect_HaarClassifier (171 ms total)
+
+[----------] 1 test from ImageAndCascade_ObjDetect_LBPClassifier
+[ RUN      ] ImageAndCascade_ObjDetect_LBPClassifier.ObjDetect_LBPClassifier/0, where GetParam() = ("gpu/haarcascade/group_1_640x480_VGA.pgm", "gpu/lbpcascade/lbpcascade_frontalface.xml")
+[ PERFSTAT ]    (samples=13   mean=1.78   median=1.77   min=1.76   stddev=0.04 (2.2%))
+[       OK ] ImageAndCascade_ObjDetect_LBPClassifier.ObjDetect_LBPClassifier/0 (63 ms)
+[----------] 1 test from ImageAndCascade_ObjDetect_LBPClassifier (63 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 3 test cases ran. (1277 ms total)
+[  PASSED  ] 10 tests.

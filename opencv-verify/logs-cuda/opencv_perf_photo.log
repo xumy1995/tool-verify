@@ -1,0 +1,139 @@
+[----------]
+[   INFO   ] 	Implementation variant: cuda.
+[----------]
+[----------]
+[ GPU INFO ] 	Run test suite on NVIDIA A100-SXM4-40GB GPU.
+[----------]
+*** CUDA Device Query (Runtime API) version (CUDART static linking) *** 
+
+Device count: 1
+
+Device 0: "NVIDIA A100-SXM4-40GB"
+  CUDA Driver Version / Runtime Version          12.40 / 12.40
+  CUDA Capability Major/Minor version number:    8.0
+  Total amount of global memory:                 40507 MBytes (42474471424 bytes)
+  GPU Clock Speed:                               1.41 GHz
+  Max Texture Dimension Size (x,y,z)             1D=(131072), 2D=(131072,65536), 3D=(16384,16384,16384)
+  Max Layered Texture Size (dim) x layers        1D=(32768) x 2048, 2D=(32768,32768) x 2048
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 65536
+  Warp size:                                     32
+  Maximum number of threads per block:           1024
+  Maximum sizes of each dimension of a block:    1024 x 1024 x 64
+  Maximum sizes of each dimension of a grid:     2147483647 x 65535 x 65535
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and execution:                 Yes with 3 copy engine(s)
+  Run time limit on kernels:                     No
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Concurrent kernel execution:                   Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support enabled:                Yes
+  Device is using TCC driver mode:               No
+  Device supports Unified Addressing (UVA):      Yes
+  Device PCI Bus ID / PCI location ID:           163 / 0
+  Compute Mode:
+      Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) 
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version  = 12.40, CUDA Runtime Version = 12.40, NumDevs = 1
+
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+[==========] Running 21 tests from 6 test cases.
+[----------] Global test environment set-up.
+[----------] 3 tests from HDR
+[ RUN      ] HDR.Mertens
+[ PERFSTAT ]    (samples=100   mean=58.79   median=58.38   min=53.18   stddev=3.14 (5.3%))
+[       OK ] HDR.Mertens (6184 ms)
+[ RUN      ] HDR.Debevec
+[ PERFSTAT ]    (samples=13   mean=90.72   median=90.52   min=85.80   stddev=2.07 (2.3%))
+[       OK ] HDR.Debevec (1372 ms)
+[ RUN      ] HDR.Robertson
+[ PERFSTAT ]    (samples=69   mean=68.29   median=68.09   min=61.61   stddev=2.04 (3.0%))
+[       OK ] HDR.Robertson (4907 ms)
+[----------] 3 tests from HDR (12464 ms total)
+
+[----------] 4 tests from Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/0, where GetParam() = (640x480, CV_8U, Gray, 21, 5)
+[ PERFSTAT ]    (samples=100   mean=14.02   median=13.87   min=12.50   stddev=1.17 (8.3%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/0 (1448 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/1, where GetParam() = (640x480, CV_8U, BGR, 21, 5)
+[ PERFSTAT ]    (samples=25   mean=19.05   median=18.84   min=18.28   stddev=0.56 (2.9%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/1 (482 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/2, where GetParam() = (1280x720, CV_8U, Gray, 21, 5)
+[ PERFSTAT ]    (samples=10   mean=28.93   median=28.63   min=28.47   stddev=0.56 (1.9%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/2 (291 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/3, where GetParam() = (1280x720, CV_8U, BGR, 21, 5)
+[ PERFSTAT ]    (samples=10   mean=45.15   median=45.28   min=44.32   stddev=0.63 (1.4%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans.CUDA_NonLocalMeans/3 (463 ms)
+[----------] 4 tests from Sz_Depth_Cn_WinSz_BlockSz_CUDA_NonLocalMeans (2684 ms total)
+
+[----------] 4 tests from Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/0, where GetParam() = (640x480, CV_8U, Gray, 21, 7)
+[ PERFSTAT ]    (samples=13   mean=5.91   median=5.91   min=5.90   stddev=0.00 (0.0%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/0 (92 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/1, where GetParam() = (640x480, CV_8U, BGR, 21, 7)
+[ PERFSTAT ]    (samples=10   mean=6.01   median=5.99   min=5.98   stddev=0.06 (1.1%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/1 (61 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/2, where GetParam() = (1280x720, CV_8U, Gray, 21, 7)
+[ PERFSTAT ]    (samples=10   mean=6.38   median=6.37   min=6.33   stddev=0.06 (0.9%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/2 (66 ms)
+[ RUN      ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/3, where GetParam() = (1280x720, CV_8U, BGR, 21, 7)
+[ PERFSTAT ]    (samples=13   mean=6.82   median=6.79   min=6.77   stddev=0.07 (1.0%))
+[       OK ] Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans.CUDA_FastNonLocalMeans/3 (95 ms)
+[----------] 4 tests from Sz_Depth_Cn_WinSz_BlockSz_CUDA_FastNonLocalMeans (314 ms total)
+
+[----------] 2 tests from Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored
+[ RUN      ] Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored.CUDA_FastNonLocalMeansColored/0, where GetParam() = (640x480, CV_8U, 21, 7)
+[ PERFSTAT ]    (samples=25   mean=34.30   median=34.21   min=34.13   stddev=0.51 (1.5%))
+[       OK ] Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored.CUDA_FastNonLocalMeansColored/0 (910 ms)
+[ RUN      ] Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored.CUDA_FastNonLocalMeansColored/1, where GetParam() = (1280x720, CV_8U, 21, 7)
+[ PERFSTAT ]    (samples=10   mean=55.69   median=55.63   min=55.46   stddev=0.23 (0.4%))
+[       OK ] Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored.CUDA_FastNonLocalMeansColored/1 (561 ms)
+[----------] 2 tests from Sz_Depth_WinSz_BlockSz_CUDA_FastNonLocalMeansColored (1471 ms total)
+
+[----------] 6 tests from InpaintArea_InpaintingMethod_inpaint
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/0, where GetParam() = (24x24, INPAINT_NS)
+[ PERFSTAT ]    (samples=100   mean=7.02   median=7.16   min=6.60   stddev=0.24 (3.4%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/0 (725 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/1, where GetParam() = (24x24, INPAINT_TELEA)
+[ PERFSTAT ]    (samples=10   mean=6.55   median=6.54   min=6.50   stddev=0.08 (1.2%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/1 (79 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/2, where GetParam() = (32x32, INPAINT_NS)
+[ PERFSTAT ]    (samples=10   mean=10.54   median=10.45   min=10.42   stddev=0.21 (2.0%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/2 (117 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/3, where GetParam() = (32x32, INPAINT_TELEA)
+[ PERFSTAT ]    (samples=10   mean=9.52   median=9.50   min=9.47   stddev=0.05 (0.6%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/3 (108 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/4, where GetParam() = (64x64, INPAINT_NS)
+[ PERFSTAT ]    (samples=10   mean=35.30   median=35.29   min=35.25   stddev=0.03 (0.1%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/4 (366 ms)
+[ RUN      ] InpaintArea_InpaintingMethod_inpaint.inpaint/5, where GetParam() = (64x64, INPAINT_TELEA)
+[ PERFSTAT ]    (samples=10   mean=28.90   median=28.85   min=28.77   stddev=0.14 (0.5%))
+[       OK ] InpaintArea_InpaintingMethod_inpaint.inpaint/5 (302 ms)
+[----------] 6 tests from InpaintArea_InpaintingMethod_inpaint (1697 ms total)
+
+[----------] 2 tests from Perf_InpaintingMethod_inpaintDots
+[ RUN      ] Perf_InpaintingMethod_inpaintDots.inpaintDots/0, where GetParam() = INPAINT_NS
+[ PERFSTAT ]    (samples=10   mean=25.85   median=25.84   min=25.77   stddev=0.06 (0.2%))
+[       OK ] Perf_InpaintingMethod_inpaintDots.inpaintDots/0 (271 ms)
+[ RUN      ] Perf_InpaintingMethod_inpaintDots.inpaintDots/1, where GetParam() = INPAINT_TELEA
+[ PERFSTAT ]    (samples=10   mean=85.14   median=85.11   min=84.78   stddev=0.42 (0.5%))
+[       OK ] Perf_InpaintingMethod_inpaintDots.inpaintDots/1 (865 ms)
+[----------] 2 tests from Perf_InpaintingMethod_inpaintDots (1136 ms total)
+
+[----------] Global test environment tear-down
+[==========] 21 tests from 6 test cases ran. (19766 ms total)
+[  PASSED  ] 21 tests.

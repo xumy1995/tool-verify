@@ -1,0 +1,1060 @@
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+[==========] Running 127 tests from 8 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from EstimateAruco_ArucoFirst
+[ RUN      ] EstimateAruco_ArucoFirst.ArucoFirst/0, where GetParam() = (false, -1)
+[ PERFSTAT ]    (samples=16   mean=7.16   median=7.11   min=7.02   stddev=0.21 (3.0%))
+[       OK ] EstimateAruco_ArucoFirst.ArucoFirst/0 (163 ms)
+[ RUN      ] EstimateAruco_ArucoFirst.ArucoFirst/1, where GetParam() = (true, -1)
+[ PERFSTAT ]    (samples=38   mean=5.06   median=5.04   min=4.85   stddev=0.09 (1.8%))
+[       OK ] EstimateAruco_ArucoFirst.ArucoFirst/1 (205 ms)
+[----------] 2 tests from EstimateAruco_ArucoFirst (368 ms total)
+
+[----------] 2 tests from EstimateAruco_ArucoSecond
+[ RUN      ] EstimateAruco_ArucoSecond.ArucoSecond/0, where GetParam() = (false, -1)
+[ PERFSTAT ]    (samples=100   mean=22.31   median=22.29   min=21.25   stddev=0.75 (3.4%))
+[       OK ] EstimateAruco_ArucoSecond.ArucoSecond/0 (2281 ms)
+[ RUN      ] EstimateAruco_ArucoSecond.ArucoSecond/1, where GetParam() = (true, -1)
+[ PERFSTAT ]    (samples=100   mean=17.28   median=16.95   min=16.37   stddev=0.72 (4.2%))
+[       OK ] EstimateAruco_ArucoSecond.ArucoSecond/1 (1773 ms)
+[----------] 2 tests from EstimateAruco_ArucoSecond (4054 ms total)
+
+[----------] 15 tests from EstimateLargeAruco_ArucoFHD
+[ RUN      ] EstimateLargeAruco_ArucoFHD.ArucoFHD/0, where GetParam() = (0 0 0, (1440, 1))
+[ PERFSTAT ]    (samples=13   mean=4.20   median=4.19   min=4.13   stddev=0.04 (1.1%))
+[       OK ] EstimateLargeAruco_ArucoFHD.ArucoFHD/0 (58 ms)
+[ RUN      ] EstimateLargeAruco_ArucoFHD.ArucoFHD/1, where GetParam() = (0 0 0, (480, 3))
+[ PERFSTAT ]    (samples=26   mean=5.68   median=5.62   min=5.49   stddev=0.17 (3.0%))
+[       OK ] EstimateLargeAruco_ArucoFHD.ArucoFHD/1 (155 ms)
+[ RUN      ] EstimateLargeAruco_ArucoFHD.ArucoFHD/2, where GetParam() = (0 0 0, (144, 10))
+[ PERFSTAT ]    (samples=25   mean=12.15   median=12.09   min=11.95   stddev=0.18 (1.5%))
+[       OK ] EstimateLargeAruco_ArucoFHD.ArucoFHD/2 (323 ms)
+[ RUN      ] EstimateLargeAruco_ArucoFHD.ArucoFHD/3, where GetParam() = (1 0 32, (1440, 1))
+[ PERFSTAT ]    (samples=25   mean=4.47   median=4.44   min=4.31   stddev=0.13 (2.8%))
+[       OK ] EstimateLargeAruco_ArucoFHD.ArucoFHD/3 (114 ms)
+[ RUN      ] EstimateLargeAruco_ArucoFHD.ArucoFHD/4, where GetParam() = (1 0 32, (480, 3))
+[ PERFSTAT ]    (samples=48   mean=5.44   median=5.37   min=5.24   stddev=0.16 (3.0%))
+[       OK ] EstimateLargeAruco_ArucoFHD.ArucoFHD/4 (269 ms)
+[ RUN      ] EstimateLargeAruco_ArucoFHD.ArucoFHD/5, where GetParam() = (1 0 32, (144, 10))
+[ PERFSTAT ]    (samples=10   mean=8.88   median=8.82   min=8.71   stddev=0.21 (2.4%))
+[       OK ] EstimateLargeAruco_ArucoFHD.ArucoFHD/5 (104 ms)
+[ RUN      ] EstimateLargeAruco_ArucoFHD.ArucoFHD/6, where GetParam() = (1 0.015 32, (1440, 1))
+[ PERFSTAT ]    (samples=13   mean=2.39   median=2.37   min=2.33   stddev=0.06 (2.5%))
+[       OK ] EstimateLargeAruco_ArucoFHD.ArucoFHD/6 (33 ms)
+[ RUN      ] EstimateLargeAruco_ArucoFHD.ArucoFHD/7, where GetParam() = (1 0.015 32, (480, 3))
+[ PERFSTAT ]    (samples=50   mean=2.80   median=2.77   min=2.70   stddev=0.08 (2.9%))
+[       OK ] EstimateLargeAruco_ArucoFHD.ArucoFHD/7 (148 ms)
+[ RUN      ] EstimateLargeAruco_ArucoFHD.ArucoFHD/8, where GetParam() = (1 0.015 32, (144, 10))
+[ PERFSTAT ]    (samples=10   mean=6.53   median=6.52   min=6.35   stddev=0.13 (1.9%))
+[       OK ] EstimateLargeAruco_ArucoFHD.ArucoFHD/8 (80 ms)
+[ RUN      ] EstimateLargeAruco_ArucoFHD.ArucoFHD/9, where GetParam() = (1 0 16, (1440, 1))
+[ PERFSTAT ]    (samples=13   mean=4.40   median=4.36   min=4.32   stddev=0.10 (2.3%))
+[       OK ] EstimateLargeAruco_ArucoFHD.ArucoFHD/9 (60 ms)
+[ RUN      ] EstimateLargeAruco_ArucoFHD.ArucoFHD/10, where GetParam() = (1 0 16, (480, 3))
+[ PERFSTAT ]    (samples=10   mean=5.67   median=5.61   min=5.51   stddev=0.15 (2.6%))
+[       OK ] EstimateLargeAruco_ArucoFHD.ArucoFHD/10 (62 ms)
+[ RUN      ] EstimateLargeAruco_ArucoFHD.ArucoFHD/11, where GetParam() = (1 0 16, (144, 10))
+[ PERFSTAT ]    (samples=10   mean=9.60   median=9.52   min=9.40   stddev=0.18 (1.9%))
+[       OK ] EstimateLargeAruco_ArucoFHD.ArucoFHD/11 (112 ms)
+[ RUN      ] EstimateLargeAruco_ArucoFHD.ArucoFHD/12, where GetParam() = (1 0.0069 16, (1440, 1))
+[ PERFSTAT ]    (samples=63   mean=2.39   median=2.37   min=2.31   stddev=0.07 (2.9%))
+[       OK ] EstimateLargeAruco_ArucoFHD.ArucoFHD/12 (153 ms)
+[ RUN      ] EstimateLargeAruco_ArucoFHD.ArucoFHD/13, where GetParam() = (1 0.0069 16, (480, 3))
+[ PERFSTAT ]    (samples=10   mean=3.27   median=3.24   min=3.21   stddev=0.08 (2.4%))
+[       OK ] EstimateLargeAruco_ArucoFHD.ArucoFHD/13 (38 ms)
+[ RUN      ] EstimateLargeAruco_ArucoFHD.ArucoFHD/14, where GetParam() = (1 0.0069 16, (144, 10))
+[ PERFSTAT ]    (samples=11   mean=7.07   median=7.01   min=6.90   stddev=0.21 (3.0%))
+[       OK ] EstimateLargeAruco_ArucoFHD.ArucoFHD/14 (94 ms)
+[----------] 15 tests from EstimateLargeAruco_ArucoFHD (1803 ms total)
+
+[----------] 6 tests from Perf_Barcode_multi
+[ RUN      ] Perf_Barcode_multi.detect/0, where GetParam() = ("4_barcodes.jpg", 2041x2722)
+[ PERFSTAT ]    (samples=100   mean=8.67   median=8.72   min=6.98   stddev=0.31 (3.6%))
+[       OK ] Perf_Barcode_multi.detect/0 (914 ms)
+[ RUN      ] Perf_Barcode_multi.detect/1, where GetParam() = ("4_barcodes.jpg", 1361x1815)
+[ PERFSTAT ]    (samples=15   mean=5.48   median=5.50   min=5.20   stddev=0.16 (3.0%))
+[       OK ] Perf_Barcode_multi.detect/1 (103 ms)
+[ RUN      ] Perf_Barcode_multi.detect/2, where GetParam() = ("4_barcodes.jpg", 680x907)
+[ PERFSTAT ]    (samples=100   mean=4.66   median=4.70   min=4.30   stddev=0.20 (4.3%))
+[       OK ] Perf_Barcode_multi.detect/2 (495 ms)
+[ RUN      ] Perf_Barcode_multi.detect_decode/0, where GetParam() = ("4_barcodes.jpg", 2041x2722)
+[ PERFSTAT ]    (samples=50   mean=10.69   median=10.67   min=10.35   stddev=0.23 (2.1%))
+[       OK ] Perf_Barcode_multi.detect_decode/0 (562 ms)
+[ RUN      ] Perf_Barcode_multi.detect_decode/1, where GetParam() = ("4_barcodes.jpg", 1361x1815)
+[ PERFSTAT ]    (samples=13   mean=8.82   median=8.86   min=8.51   stddev=0.20 (2.3%))
+[       OK ] Perf_Barcode_multi.detect_decode/1 (139 ms)
+[ RUN      ] Perf_Barcode_multi.detect_decode/2, where GetParam() = ("4_barcodes.jpg", 680x907)
+[ PERFSTAT ]    (samples=13   mean=7.22   median=7.16   min=7.04   stddev=0.20 (2.7%))
+[       OK ] Perf_Barcode_multi.detect_decode/2 (132 ms)
+[----------] 6 tests from Perf_Barcode_multi (2345 ms total)
+
+[----------] 18 tests from Perf_Barcode_single
+[ RUN      ] Perf_Barcode_single.detect/0, where GetParam() = ("book.jpg", 480x360)
+[ PERFSTAT ]    (samples=13   mean=1.95   median=1.95   min=1.94   stddev=0.01 (0.4%))
+[       OK ] Perf_Barcode_single.detect/0 (31 ms)
+[ RUN      ] Perf_Barcode_single.detect/1, where GetParam() = ("book.jpg", 640x480)
+[ PERFSTAT ]    (samples=13   mean=3.08   median=3.06   min=3.04   stddev=0.04 (1.4%))
+[       OK ] Perf_Barcode_single.detect/1 (46 ms)
+[ RUN      ] Perf_Barcode_single.detect/2, where GetParam() = ("book.jpg", 800x600)
+[ PERFSTAT ]    (samples=10   mean=4.05   median=4.04   min=3.96   stddev=0.05 (1.3%))
+[       OK ] Perf_Barcode_single.detect/2 (45 ms)
+[ RUN      ] Perf_Barcode_single.detect/3, where GetParam() = ("bottle_1.jpg", 480x360)
+[ PERFSTAT ]    (samples=13   mean=2.12   median=2.12   min=2.11   stddev=0.01 (0.5%))
+[       OK ] Perf_Barcode_single.detect/3 (34 ms)
+[ RUN      ] Perf_Barcode_single.detect/4, where GetParam() = ("bottle_1.jpg", 640x480)
+[ PERFSTAT ]    (samples=10   mean=3.24   median=3.23   min=3.20   stddev=0.05 (1.5%))
+[       OK ] Perf_Barcode_single.detect/4 (37 ms)
+[ RUN      ] Perf_Barcode_single.detect/5, where GetParam() = ("bottle_1.jpg", 800x600)
+[ PERFSTAT ]    (samples=13   mean=4.19   median=4.15   min=4.10   stddev=0.10 (2.4%))
+[       OK ] Perf_Barcode_single.detect/5 (60 ms)
+[ RUN      ] Perf_Barcode_single.detect/6, where GetParam() = ("bottle_2.jpg", 480x360)
+[ PERFSTAT ]    (samples=10   mean=2.37   median=2.34   min=2.33   stddev=0.07 (2.9%))
+[       OK ] Perf_Barcode_single.detect/6 (29 ms)
+[ RUN      ] Perf_Barcode_single.detect/7, where GetParam() = ("bottle_2.jpg", 640x480)
+[ PERFSTAT ]    (samples=10   mean=3.55   median=3.52   min=3.51   stddev=0.07 (1.9%))
+[       OK ] Perf_Barcode_single.detect/7 (39 ms)
+[ RUN      ] Perf_Barcode_single.detect/8, where GetParam() = ("bottle_2.jpg", 800x600)
+[ PERFSTAT ]    (samples=10   mean=4.52   median=4.53   min=4.44   stddev=0.06 (1.3%))
+[       OK ] Perf_Barcode_single.detect/8 (49 ms)
+[ RUN      ] Perf_Barcode_single.detect_decode/0, where GetParam() = ("book.jpg", 480x360)
+[ PERFSTAT ]    (samples=13   mean=3.70   median=3.69   min=3.66   stddev=0.03 (0.9%))
+[       OK ] Perf_Barcode_single.detect_decode/0 (52 ms)
+[ RUN      ] Perf_Barcode_single.detect_decode/1, where GetParam() = ("book.jpg", 640x480)
+[ PERFSTAT ]    (samples=10   mean=3.76   median=3.73   min=3.71   stddev=0.08 (2.2%))
+[       OK ] Perf_Barcode_single.detect_decode/1 (41 ms)
+[ RUN      ] Perf_Barcode_single.detect_decode/2, where GetParam() = ("book.jpg", 800x600)
+[ PERFSTAT ]    (samples=10   mean=4.74   median=4.75   min=4.61   stddev=0.08 (1.7%))
+[       OK ] Perf_Barcode_single.detect_decode/2 (51 ms)
+[ RUN      ] Perf_Barcode_single.detect_decode/3, where GetParam() = ("bottle_1.jpg", 480x360)
+[ PERFSTAT ]    (samples=13   mean=2.73   median=2.73   min=2.71   stddev=0.02 (0.8%))
+[       OK ] Perf_Barcode_single.detect_decode/3 (41 ms)
+[ RUN      ] Perf_Barcode_single.detect_decode/4, where GetParam() = ("bottle_1.jpg", 640x480)
+[ PERFSTAT ]    (samples=10   mean=3.62   median=3.61   min=3.58   stddev=0.04 (1.2%))
+[       OK ] Perf_Barcode_single.detect_decode/4 (41 ms)
+[ RUN      ] Perf_Barcode_single.detect_decode/5, where GetParam() = ("bottle_1.jpg", 800x600)
+[ PERFSTAT ]    (samples=13   mean=4.50   median=4.48   min=4.38   stddev=0.08 (1.8%))
+[       OK ] Perf_Barcode_single.detect_decode/5 (64 ms)
+[ RUN      ] Perf_Barcode_single.detect_decode/6, where GetParam() = ("bottle_2.jpg", 480x360)
+[ PERFSTAT ]    (samples=13   mean=3.74   median=3.74   min=3.71   stddev=0.02 (0.5%))
+[       OK ] Perf_Barcode_single.detect_decode/6 (54 ms)
+[ RUN      ] Perf_Barcode_single.detect_decode/7, where GetParam() = ("bottle_2.jpg", 640x480)
+[ PERFSTAT ]    (samples=10   mean=5.01   median=4.97   min=4.96   stddev=0.11 (2.2%))
+[       OK ] Perf_Barcode_single.detect_decode/7 (54 ms)
+[ RUN      ] Perf_Barcode_single.detect_decode/8, where GetParam() = ("bottle_2.jpg", 800x600)
+[ PERFSTAT ]    (samples=10   mean=6.05   median=6.08   min=5.93   stddev=0.09 (1.6%))
+[       OK ] Perf_Barcode_single.detect_decode/8 (66 ms)
+[----------] 18 tests from Perf_Barcode_single (834 ms total)
+
+[----------] 28 tests from Perf_Objdetect_QRCode
+[ RUN      ] Perf_Objdetect_QRCode.detect/0, where GetParam() = "version_1_down.jpg"
+[ PERFSTAT ]    (samples=13   mean=10.72   median=10.74   min=10.41   stddev=0.13 (1.2%))
+[       OK ] Perf_Objdetect_QRCode.detect/0 (153 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/1, where GetParam() = "version_1_left.jpg"
+[ PERFSTAT ]    (samples=10   mean=9.95   median=9.93   min=9.74   stddev=0.14 (1.4%))
+[       OK ] Perf_Objdetect_QRCode.detect/1 (105 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/2, where GetParam() = "version_1_right.jpg"
+[ PERFSTAT ]    (samples=10   mean=9.41   median=9.41   min=9.25   stddev=0.11 (1.2%))
+[       OK ] Perf_Objdetect_QRCode.detect/2 (100 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/3, where GetParam() = "version_1_up.jpg"
+[ PERFSTAT ]    (samples=10   mean=9.23   median=9.23   min=9.07   stddev=0.08 (0.9%))
+[       OK ] Perf_Objdetect_QRCode.detect/3 (98 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/4, where GetParam() = "version_1_top.jpg"
+[ PERFSTAT ]    (samples=10   mean=10.13   median=10.09   min=9.83   stddev=0.23 (2.3%))
+[       OK ] Perf_Objdetect_QRCode.detect/4 (107 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/5, where GetParam() = "version_5_down.jpg"
+[ PERFSTAT ]    (samples=10   mean=9.59   median=9.58   min=9.43   stddev=0.11 (1.2%))
+[       OK ] Perf_Objdetect_QRCode.detect/5 (101 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/6, where GetParam() = "version_5_left.jpg"
+[ PERFSTAT ]    (samples=10   mean=9.40   median=9.38   min=9.21   stddev=0.12 (1.3%))
+[       OK ] Perf_Objdetect_QRCode.detect/6 (100 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/7, where GetParam() = "version_5_up.jpg"
+[ PERFSTAT ]    (samples=10   mean=9.40   median=9.37   min=9.15   stddev=0.16 (1.7%))
+[       OK ] Perf_Objdetect_QRCode.detect/7 (102 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/8, where GetParam() = "version_5_top.jpg"
+[ PERFSTAT ]    (samples=10   mean=9.18   median=9.19   min=9.02   stddev=0.10 (1.1%))
+[       OK ] Perf_Objdetect_QRCode.detect/8 (101 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/9, where GetParam() = "russian.jpg"
+[ PERFSTAT ]    (samples=10   mean=9.90   median=9.84   min=9.75   stddev=0.15 (1.5%))
+[       OK ] Perf_Objdetect_QRCode.detect/9 (104 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/10, where GetParam() = "kanji.jpg"
+[ PERFSTAT ]    (samples=10   mean=9.59   median=9.59   min=9.43   stddev=0.10 (1.1%))
+[       OK ] Perf_Objdetect_QRCode.detect/10 (102 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/11, where GetParam() = "link_github_ocv.jpg"
+[ PERFSTAT ]    (samples=10   mean=9.69   median=9.66   min=9.53   stddev=0.12 (1.3%))
+[       OK ] Perf_Objdetect_QRCode.detect/11 (103 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/12, where GetParam() = "link_ocv.jpg"
+[ PERFSTAT ]    (samples=10   mean=9.57   median=9.59   min=9.36   stddev=0.14 (1.5%))
+[       OK ] Perf_Objdetect_QRCode.detect/12 (101 ms)
+[ RUN      ] Perf_Objdetect_QRCode.detect/13, where GetParam() = "link_wiki_cv.jpg"
+[ PERFSTAT ]    (samples=10   mean=9.85   median=9.85   min=9.65   stddev=0.12 (1.2%))
+[       OK ] Perf_Objdetect_QRCode.detect/13 (105 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/0, where GetParam() = "version_1_down.jpg"
+[ PERFSTAT ]    (samples=13   mean=7.04   median=7.04   min=6.91   stddev=0.07 (1.0%))
+[       OK ] Perf_Objdetect_QRCode.decode/0 (112 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/1, where GetParam() = "version_1_left.jpg"
+[ PERFSTAT ]    (samples=10   mean=7.04   median=7.04   min=6.97   stddev=0.04 (0.6%))
+[       OK ] Perf_Objdetect_QRCode.decode/1 (86 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/2, where GetParam() = "version_1_right.jpg"
+[ PERFSTAT ]    (samples=10   mean=6.99   median=6.99   min=6.94   stddev=0.02 (0.3%))
+[       OK ] Perf_Objdetect_QRCode.decode/2 (84 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/3, where GetParam() = "version_1_up.jpg"
+[ PERFSTAT ]    (samples=10   mean=7.02   median=7.01   min=6.97   stddev=0.04 (0.6%))
+[       OK ] Perf_Objdetect_QRCode.decode/3 (84 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/4, where GetParam() = "version_1_top.jpg"
+[ PERFSTAT ]    (samples=10   mean=7.01   median=7.00   min=6.94   stddev=0.08 (1.2%))
+[       OK ] Perf_Objdetect_QRCode.decode/4 (87 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/5, where GetParam() = "version_5_down.jpg"
+[ PERFSTAT ]    (samples=13   mean=7.88   median=7.87   min=7.83   stddev=0.04 (0.5%))
+[       OK ] Perf_Objdetect_QRCode.decode/5 (128 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/6, where GetParam() = "version_5_left.jpg"
+[ PERFSTAT ]    (samples=10   mean=7.87   median=7.86   min=7.81   stddev=0.05 (0.7%))
+[       OK ] Perf_Objdetect_QRCode.decode/6 (93 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/7, where GetParam() = "version_5_up.jpg"
+[ PERFSTAT ]    (samples=10   mean=7.91   median=7.90   min=7.87   stddev=0.04 (0.5%))
+[       OK ] Perf_Objdetect_QRCode.decode/7 (95 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/8, where GetParam() = "version_5_top.jpg"
+[ PERFSTAT ]    (samples=10   mean=7.78   median=7.78   min=7.71   stddev=0.06 (0.8%))
+[       OK ] Perf_Objdetect_QRCode.decode/8 (93 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/9, where GetParam() = "russian.jpg"
+[ PERFSTAT ]    (samples=38   mean=7.92   median=7.87   min=7.79   stddev=0.19 (2.4%))
+[       OK ] Perf_Objdetect_QRCode.decode/9 (321 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/10, where GetParam() = "kanji.jpg"
+[ PERFSTAT ]    (samples=13   mean=7.45   median=7.46   min=7.37   stddev=0.04 (0.6%))
+[       OK ] Perf_Objdetect_QRCode.decode/10 (114 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/11, where GetParam() = "link_github_ocv.jpg"
+[ PERFSTAT ]    (samples=10   mean=7.42   median=7.42   min=7.35   stddev=0.05 (0.7%))
+[       OK ] Perf_Objdetect_QRCode.decode/11 (89 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/12, where GetParam() = "link_ocv.jpg"
+[ PERFSTAT ]    (samples=10   mean=7.54   median=7.51   min=7.43   stddev=0.09 (1.2%))
+[       OK ] Perf_Objdetect_QRCode.decode/12 (91 ms)
+[ RUN      ] Perf_Objdetect_QRCode.decode/13, where GetParam() = "link_wiki_cv.jpg"
+[ PERFSTAT ]    (samples=12   mean=7.67   median=7.58   min=7.53   stddev=0.23 (3.0%))
+[       OK ] Perf_Objdetect_QRCode.decode/13 (109 ms)
+[----------] 28 tests from Perf_Objdetect_QRCode (3068 ms total)
+
+[----------] 32 tests from Perf_Objdetect_QRCode_Multi
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/0, where GetParam() = ("2_qrcodes.png", "contours_based")
+[ PERFSTAT ]    (samples=13   mean=28.91   median=28.94   min=28.66   stddev=0.18 (0.6%))
+[       OK ] Perf_Objdetect_QRCode_Multi.detectMulti/0 (390 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/1, where GetParam() = ("2_qrcodes.png", "aruco_based")
+[ PERFSTAT ]    (samples=10   mean=18.51   median=18.31   min=18.15   stddev=0.50 (2.7%))
+[       OK ] Perf_Objdetect_QRCode_Multi.detectMulti/1 (192 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/2, where GetParam() = ("3_close_qrcodes.png", "contours_based")
+[ PERFSTAT ]    (samples=10   mean=17.34   median=17.27   min=17.06   stddev=0.26 (1.5%))
+[       OK ] Perf_Objdetect_QRCode_Multi.detectMulti/2 (180 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/3, where GetParam() = ("3_close_qrcodes.png", "aruco_based")
+[ PERFSTAT ]    (samples=13   mean=5.73   median=5.67   min=5.61   stddev=0.13 (2.3%))
+[       OK ] Perf_Objdetect_QRCode_Multi.detectMulti/3 (82 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/4, where GetParam() = ("3_qrcodes.png", "contours_based")
+[ PERFSTAT ]    (samples=10   mean=27.34   median=27.32   min=27.10   stddev=0.17 (0.6%))
+[       OK ] Perf_Objdetect_QRCode_Multi.detectMulti/4 (283 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/5, where GetParam() = ("3_qrcodes.png", "aruco_based")
+[ PERFSTAT ]    (samples=10   mean=9.32   median=9.21   min=9.16   stddev=0.23 (2.5%))
+[       OK ] Perf_Objdetect_QRCode_Multi.detectMulti/5 (101 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/6, where GetParam() = ("4_qrcodes.png", "contours_based")
+[ PERFSTAT ]    (samples=10   mean=18.94   median=18.92   min=18.65   stddev=0.20 (1.1%))
+[       OK ] Perf_Objdetect_QRCode_Multi.detectMulti/6 (196 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/7, where GetParam() = ("4_qrcodes.png", "aruco_based")
+[ PERFSTAT ]    (samples=10   mean=5.66   median=5.64   min=5.58   stddev=0.11 (2.0%))
+[       OK ] Perf_Objdetect_QRCode_Multi.detectMulti/7 (62 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/8, where GetParam() = ("5_qrcodes.png", "contours_based")
+[ PERFSTAT ]    (samples=10   mean=24.31   median=24.25   min=24.08   stddev=0.18 (0.7%))
+[       OK ] Perf_Objdetect_QRCode_Multi.detectMulti/8 (250 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/9, where GetParam() = ("5_qrcodes.png", "aruco_based")
+[ PERFSTAT ]    (samples=10   mean=10.61   median=10.56   min=10.36   stddev=0.23 (2.1%))
+[       OK ] Perf_Objdetect_QRCode_Multi.detectMulti/9 (112 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/10, where GetParam() = ("6_qrcodes.png", "contours_based")
+[ PERFSTAT ]    (samples=10   mean=33.41   median=33.32   min=32.82   stddev=0.62 (1.8%))
+[       OK ] Perf_Objdetect_QRCode_Multi.detectMulti/10 (346 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/11, where GetParam() = ("6_qrcodes.png", "aruco_based")
+[ PERFSTAT ]    (samples=10   mean=16.08   median=16.05   min=15.78   stddev=0.20 (1.3%))
+[       OK ] Perf_Objdetect_QRCode_Multi.detectMulti/11 (168 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/12, where GetParam() = ("7_qrcodes.png", "contours_based")
+[ PERFSTAT ]    (samples=10   mean=42.08   median=42.15   min=41.27   stddev=0.33 (0.8%))
+[       OK ] Perf_Objdetect_QRCode_Multi.detectMulti/12 (433 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/13, where GetParam() = ("7_qrcodes.png", "aruco_based")
+[ PERFSTAT ]    (samples=10   mean=17.18   median=17.14   min=16.93   stddev=0.21 (1.2%))
+[       OK ] Perf_Objdetect_QRCode_Multi.detectMulti/13 (181 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/14, where GetParam() = ("8_close_qrcodes.png", "contours_based")
+[ PERFSTAT ]    (samples=10   mean=117.37   median=116.79   min=115.75   stddev=2.52 (2.1%))
+[       OK ] Perf_Objdetect_QRCode_Multi.detectMulti/14 (1193 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.detectMulti/15, where GetParam() = ("8_close_qrcodes.png", "aruco_based")
+[ PERFSTAT ]    (samples=10   mean=65.02   median=64.71   min=63.66   stddev=1.34 (2.1%))
+[       OK ] Perf_Objdetect_QRCode_Multi.detectMulti/15 (667 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/0, where GetParam() = ("2_qrcodes.png", "contours_based")
+[ WARN:1@17.543] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.545] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.559] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.560] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.574] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.575] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.589] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.591] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.604] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.606] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.621] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.621] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.634] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.636] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.651] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.651] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.664] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.666] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.680] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.682] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.695] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.697] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.712] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.712] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.726] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.727] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ PERFSTAT ]    (samples=13   mean=15.17   median=15.31   min=14.47   stddev=0.39 (2.6%))
+[       OK ] Perf_Objdetect_QRCode_Multi.decodeMulti/0 (238 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/1, where GetParam() = ("2_qrcodes.png", "aruco_based")
+[ WARN:0@17.768] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.768] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.783] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.783] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.798] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.798] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.812] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.813] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.827] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.828] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.843] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.843] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.857] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.859] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.873] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.874] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.888] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.889] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.904] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.904] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ PERFSTAT ]    (samples=10   mean=15.08   median=15.01   min=14.58   stddev=0.37 (2.5%))
+[       OK ] Perf_Objdetect_QRCode_Multi.decodeMulti/1 (180 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/2, where GetParam() = ("3_close_qrcodes.png", "contours_based")
+[ WARN:1@17.938] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.939] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.946] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.946] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.953] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.954] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.961] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.961] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.969] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.969] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.977] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@17.977] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.984] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.984] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.991] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.992] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@17.999] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@17.999] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.006] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.007] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ PERFSTAT ]    (samples=10   mean=7.61   median=7.62   min=7.51   stddev=0.08 (1.1%))
+[       OK ] Perf_Objdetect_QRCode_Multi.decodeMulti/2 (100 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/3, where GetParam() = ("3_close_qrcodes.png", "aruco_based")
+[ WARN:0@18.025] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.026] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.033] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.034] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.041] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.041] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.048] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.049] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.056] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.056] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.063] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.064] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.071] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.072] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.079] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.079] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.086] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.087] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.094] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.094] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ PERFSTAT ]    (samples=10   mean=7.62   median=7.58   min=7.43   stddev=0.20 (2.6%))
+[       OK ] Perf_Objdetect_QRCode_Multi.decodeMulti/3 (87 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/4, where GetParam() = ("3_qrcodes.png", "contours_based")
+[ WARN:2@18.142] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.143] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.143] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.156] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.157] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.157] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.170] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.171] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.171] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.184] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.184] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.185] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.197] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.198] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.198] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.211] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.212] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.212] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.225] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.226] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.226] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.239] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.239] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.239] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.252] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.253] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.253] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.266] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.266] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.266] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ PERFSTAT ]    (samples=10   mean=13.68   median=13.69   min=13.44   stddev=0.15 (1.1%))
+[       OK ] Perf_Objdetect_QRCode_Multi.decodeMulti/4 (172 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/5, where GetParam() = ("3_qrcodes.png", "aruco_based")
+[ WARN:1@18.296] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.297] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.297] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.310] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.310] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.310] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.323] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.324] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.324] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.337] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.337] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.338] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.350] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.351] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.351] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.364] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.365] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.365] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.378] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.379] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.379] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.391] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.392] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.392] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.405] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.406] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.406] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.419] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.420] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.420] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ PERFSTAT ]    (samples=10   mean=13.67   median=13.69   min=13.51   stddev=0.11 (0.8%))
+[       OK ] Perf_Objdetect_QRCode_Multi.decodeMulti/5 (153 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/6, where GetParam() = ("4_qrcodes.png", "contours_based")
+[ WARN:2@18.452] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.452] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.452] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@18.453] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.460] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.460] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.460] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.460] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.468] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.468] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.468] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@18.468] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.475] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.476] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.476] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.476] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.483] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.484] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.484] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.484] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.491] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.492] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.492] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.492] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.499] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.500] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.500] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.500] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.507] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.508] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.508] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.508] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.515] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.515] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.515] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.515] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.523] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.523] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.523] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.523] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ PERFSTAT ]    (samples=10   mean=7.87   median=7.84   min=7.71   stddev=0.15 (1.9%))
+[       OK ] Perf_Objdetect_QRCode_Multi.decodeMulti/6 (104 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/7, where GetParam() = ("4_qrcodes.png", "aruco_based")
+[ WARN:3@18.542] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.542] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.542] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.542] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.549] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.550] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.550] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.550] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.557] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.558] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.558] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.558] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.565] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.566] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.566] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.566] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.573] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.573] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.573] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.574] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@18.581] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.581] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.581] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.581] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.589] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.590] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.590] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.591] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.599] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@18.599] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.599] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.599] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.606] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.607] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.607] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.607] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.614] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.615] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.615] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.615] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.622] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.622] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.622] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.622] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@18.630] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.630] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.630] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.630] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@18.637] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.638] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.638] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.638] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ PERFSTAT ]    (samples=13   mean=7.86   median=7.80   min=7.70   stddev=0.22 (2.8%))
+[       OK ] Perf_Objdetect_QRCode_Multi.decodeMulti/7 (115 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/8, where GetParam() = ("5_qrcodes.png", "contours_based")
+[ WARN:2@18.676] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.677] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.677] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.677] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@18.677] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.684] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@18.685] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.685] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.685] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.685] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.692] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.693] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.693] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@18.693] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.693] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.700] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.701] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.701] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@18.701] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.701] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.708] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@18.708] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.708] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@18.709] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.709] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.716] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@18.716] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.716] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@18.716] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.716] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.723] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@18.724] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.724] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.724] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.724] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.731] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.732] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@18.732] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.732] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.732] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.739] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.740] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.740] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@18.740] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.740] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@18.747] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@18.747] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@18.747] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@18.748] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@18.748] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ PERFSTAT ]    (samples=10   mean=7.83   median=7.81   min=7.78   stddev=0.08 (1.0%))
+[       OK ] Perf_Objdetect_QRCode_Multi.decodeMulti/8 (110 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/9, where GetParam() = ("5_qrcodes.png", "aruco_based")
+[     SKIP ] 5_qrcodes.png is disabled sample for method aruco_based
+[       OK ] Perf_Objdetect_QRCode_Multi.decodeMulti/9 (4 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/10, where GetParam() = ("6_qrcodes.png", "contours_based")
+[ PERFSTAT ]    (samples=10   mean=15.28   median=15.15   min=14.93   stddev=0.41 (2.7%))
+[       OK ] Perf_Objdetect_QRCode_Multi.decodeMulti/10 (197 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/11, where GetParam() = ("6_qrcodes.png", "aruco_based")
+[ PERFSTAT ]    (samples=10   mean=15.18   median=15.22   min=14.92   stddev=0.13 (0.9%))
+[       OK ] Perf_Objdetect_QRCode_Multi.decodeMulti/11 (177 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/12, where GetParam() = ("7_qrcodes.png", "contours_based")
+[ WARN:4@19.192] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.193] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.193] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.193] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.193] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.193] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.193] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.207] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.207] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.207] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.207] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.207] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.207] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@19.208] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@19.221] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.221] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.221] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.221] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.221] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.221] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.222] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.235] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.235] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@19.235] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.235] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.235] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.235] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.235] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.249] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.249] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.249] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.249] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.249] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.249] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.249] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.263] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.263] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.263] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.263] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.263] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.263] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.264] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.276] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.277] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.277] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.277] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.277] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.277] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.277] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.290] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.290] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.291] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.291] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.291] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.291] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.291] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.304] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.304] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.304] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.305] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.305] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.305] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.305] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.318] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.318] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.319] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.319] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.319] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.319] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.319] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ PERFSTAT ]    (samples=10   mean=14.01   median=13.92   min=13.72   stddev=0.20 (1.5%))
+[       OK ] Perf_Objdetect_QRCode_Multi.decodeMulti/12 (193 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/13, where GetParam() = ("7_qrcodes.png", "aruco_based")
+[ WARN:0@19.360] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.360] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.361] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.361] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.361] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.361] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.373] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.386] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.386] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.386] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.386] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.386] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.387] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.397] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.410] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.410] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.411] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.411] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.411] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.411] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.421] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.434] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.434] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.434] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.434] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.434] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.435] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.445] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.458] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.459] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.459] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.459] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.459] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.459] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.469] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.482] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.483] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.483] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.483] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.483] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.483] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.493] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.506] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.507] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.507] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.507] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.507] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.507] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.517] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.531] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.531] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.531] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.531] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.531] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.531] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.541] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@19.554] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.555] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.555] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.555] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.555] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.555] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.565] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@19.578] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.579] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.579] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.579] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.579] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.579] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.589] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ PERFSTAT ]    (samples=10   mean=24.27   median=24.10   min=23.95   stddev=0.55 (2.3%))
+[       OK ] Perf_Objdetect_QRCode_Multi.decodeMulti/13 (271 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/14, where GetParam() = ("8_close_qrcodes.png", "contours_based")
+[ WARN:7@19.760] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.762] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.764] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.765] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.766] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.767] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.768] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@19.769] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@19.805] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.806] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.808] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.808] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@19.809] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.809] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.810] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.812] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@19.848] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.849] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.849] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.851] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.852] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@19.852] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.854] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.855] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@19.892] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.893] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.893] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.895] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.895] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.896] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.897] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.898] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@19.935] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.936] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.936] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.937] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.938] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.938] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.939] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.941] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@19.978] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@19.978] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@19.978] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@19.980] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@19.980] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@19.980] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@19.980] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@19.983] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@20.019] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.019] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.020] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.022] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.022] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@20.022] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.022] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@20.025] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@20.062] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.063] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.063] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.064] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@20.064] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.064] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@20.065] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.067] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.104] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.105] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.106] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@20.106] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.107] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@20.108] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@20.110] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.111] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@20.148] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.148] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.149] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@20.150] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.151] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.151] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.151] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@20.152] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@20.189] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.191] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.191] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.191] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.192] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@20.192] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.193] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@20.196] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@20.234] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.235] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.235] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@20.236] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.237] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@20.237] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.238] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@20.238] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.275] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@20.275] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.276] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@20.276] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.277] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@20.278] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.278] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.280] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ PERFSTAT ]    (samples=13   mean=42.61   median=42.30   min=41.55   stddev=0.82 (1.9%))
+[       OK ] Perf_Objdetect_QRCode_Multi.decodeMulti/14 (693 ms)
+[ RUN      ] Perf_Objdetect_QRCode_Multi.decodeMulti/15, where GetParam() = ("8_close_qrcodes.png", "aruco_based")
+[ WARN:7@20.402] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.404] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.405] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.407] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.407] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.408] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@20.408] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@20.409] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.448] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.450] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.451] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@20.452] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@20.452] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@20.452] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.453] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.454] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@20.492] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.493] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.493] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.493] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@20.494] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.494] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.495] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@20.495] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@20.531] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.533] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@20.535] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.536] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.536] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.536] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@20.537] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@20.538] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@20.576] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.577] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.578] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.579] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.580] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.580] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@20.580] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@20.581] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@20.618] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.619] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.619] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.620] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@20.620] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.621] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.621] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@20.623] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@20.659] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.661] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@20.662] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.662] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.662] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.663] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@20.663] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.663] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@20.700] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.701] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.703] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.703] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.704] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.705] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@20.705] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@20.707] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@20.744] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.745] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.747] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.747] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.747] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@20.748] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.748] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@20.748] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@20.785] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.788] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.788] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.789] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.789] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.790] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@20.790] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@20.791] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@20.829] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.829] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.831] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.831] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@20.831] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.832] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.832] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@20.834] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.872] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.873] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@20.874] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.874] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.875] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.875] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:8@20.876] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@20.877] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:7@20.913] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:3@20.914] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:1@20.914] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:5@20.916] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:4@20.916] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@20.916] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:2@20.917] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@20.918] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ PERFSTAT ]    (samples=13   mean=42.31   median=42.36   min=40.78   stddev=1.01 (2.4%))
+[       OK ] Perf_Objdetect_QRCode_Multi.decodeMulti/15 (636 ms)
+[----------] 32 tests from Perf_Objdetect_QRCode_Multi (8266 ms total)
+
+[----------] 24 tests from Perf_Objdetect_Not_QRCode
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/0, where GetParam() = ("zero", 640x480)
+[ PERFSTAT ]    (samples=10   mean=7.64   median=7.60   min=7.42   stddev=0.22 (2.9%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/0 (76 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/1, where GetParam() = ("zero", 1280x720)
+[ PERFSTAT ]    (samples=10   mean=29.91   median=29.72   min=29.34   stddev=0.64 (2.1%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/1 (300 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/2, where GetParam() = ("zero", 1920x1080)
+[ PERFSTAT ]    (samples=10   mean=21.62   median=21.47   min=21.28   stddev=0.47 (2.2%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/2 (216 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/3, where GetParam() = ("zero", 3840x2160)
+[ PERFSTAT ]    (samples=10   mean=60.03   median=59.65   min=56.76   stddev=1.54 (2.6%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/3 (601 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/4, where GetParam() = ("random", 640x480)
+[ PERFSTAT ]    (samples=13   mean=7.46   median=7.49   min=7.26   stddev=0.11 (1.5%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/4 (98 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/5, where GetParam() = ("random", 1280x720)
+[ PERFSTAT ]    (samples=10   mean=29.60   median=29.41   min=29.20   stddev=0.52 (1.8%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/5 (297 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/6, where GetParam() = ("random", 1920x1080)
+[ PERFSTAT ]    (samples=13   mean=20.93   median=20.99   min=20.11   stddev=0.63 (3.0%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/6 (275 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/7, where GetParam() = ("random", 3840x2160)
+[ PERFSTAT ]    (samples=10   mean=60.61   median=60.62   min=59.15   stddev=1.38 (2.3%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/7 (613 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/8, where GetParam() = ("chessboard", 640x480)
+[ PERFSTAT ]    (samples=10   mean=423.42   median=423.33   min=419.99   stddev=2.30 (0.5%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/8 (4236 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/9, where GetParam() = ("chessboard", 1280x720)
+[ PERFSTAT ]    (samples=10   mean=34.05   median=33.96   min=33.75   stddev=0.34 (1.0%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/9 (345 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/10, where GetParam() = ("chessboard", 1920x1080)
+[ PERFSTAT ]    (samples=10   mean=30.59   median=30.78   min=29.44   stddev=0.69 (2.3%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/10 (318 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.detect/11, where GetParam() = ("chessboard", 3840x2160)
+[ PERFSTAT ]    (samples=10   mean=97.82   median=97.67   min=96.85   stddev=0.77 (0.8%))
+[       OK ] Perf_Objdetect_Not_QRCode.detect/11 (1026 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/0, where GetParam() = ("zero", 640x480)
+[ PERFSTAT ]    (samples=10   mean=10.53   median=10.47   min=10.36   stddev=0.25 (2.4%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/0 (106 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/1, where GetParam() = ("zero", 1280x720)
+[ PERFSTAT ]    (samples=10   mean=24.00   median=23.96   min=23.50   stddev=0.59 (2.5%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/1 (240 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/2, where GetParam() = ("zero", 1920x1080)
+[ PERFSTAT ]    (samples=10   mean=17.88   median=17.87   min=17.34   stddev=0.26 (1.4%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/2 (179 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/3, where GetParam() = ("zero", 3840x2160)
+[ PERFSTAT ]    (samples=10   mean=66.27   median=65.71   min=65.19   stddev=1.48 (2.2%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/3 (664 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/4, where GetParam() = ("random", 640x480)
+[ PERFSTAT ]    (samples=10   mean=10.54   median=10.47   min=10.33   stddev=0.22 (2.1%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/4 (105 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/5, where GetParam() = ("random", 1280x720)
+[ PERFSTAT ]    (samples=10   mean=23.82   median=23.75   min=23.53   stddev=0.25 (1.1%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/5 (239 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/6, where GetParam() = ("random", 1920x1080)
+[ PERFSTAT ]    (samples=10   mean=17.82   median=17.84   min=17.10   stddev=0.32 (1.8%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/6 (180 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/7, where GetParam() = ("random", 3840x2160)
+[ PERFSTAT ]    (samples=10   mean=66.23   median=66.21   min=65.59   stddev=0.52 (0.8%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/7 (670 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/8, where GetParam() = ("chessboard", 640x480)
+[ PERFSTAT ]    (samples=10   mean=11.41   median=11.32   min=11.24   stddev=0.29 (2.5%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/8 (115 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/9, where GetParam() = ("chessboard", 1280x720)
+[ PERFSTAT ]    (samples=10   mean=24.23   median=24.18   min=23.75   stddev=0.36 (1.5%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/9 (248 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/10, where GetParam() = ("chessboard", 1920x1080)
+[ PERFSTAT ]    (samples=10   mean=16.75   median=16.87   min=16.17   stddev=0.38 (2.3%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/10 (179 ms)
+[ RUN      ] Perf_Objdetect_Not_QRCode.decode/11, where GetParam() = ("chessboard", 3840x2160)
+[ PERFSTAT ]    (samples=10   mean=60.20   median=60.32   min=59.14   stddev=0.78 (1.3%))
+[       OK ] Perf_Objdetect_Not_QRCode.decode/11 (651 ms)
+[----------] 24 tests from Perf_Objdetect_Not_QRCode (11977 ms total)
+
+[----------] Global test environment tear-down
+[ SKIPSTAT ] 1 tests skipped
+[ SKIPSTAT ] TAG='skip_other' skip 1 tests
+[==========] 127 tests from 8 test cases ran. (32715 ms total)
+[  PASSED  ] 127 tests.

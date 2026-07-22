@@ -1,0 +1,65 @@
+[ERROR:0@0.018] global persistence.cpp:577 open Can't open file: '/data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/perf/line_descriptor.xml' in read mode
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+[==========] Running 9 tests from 6 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from matching
+[ RUN      ] matching.single_match
+[ PERFSTAT ]    (samples=13   mean=1.94   median=1.93   min=1.91   stddev=0.02 (1.1%))
+[       OK ] matching.single_match (31 ms)
+[----------] 1 test from matching (31 ms total)
+
+[----------] 1 test from knn_matching
+[ RUN      ] knn_matching.knn_match_distances_test
+[ PERFSTAT ]    (samples=100   mean=57.49   median=57.30   min=38.12   stddev=10.34 (18.0%))
+[       OK ] knn_matching.knn_match_distances_test (6640 ms)
+[----------] 1 test from knn_matching (6640 ms total)
+
+[----------] 1 test from radius_match
+[ RUN      ] radius_match.radius_match_distances_test
+[ PERFSTAT ]    (samples=10   mean=55.95   median=55.85   min=55.55   stddev=0.45 (0.8%))
+[       OK ] radius_match.radius_match_distances_test (559 ms)
+[----------] 1 test from radius_match (559 ms total)
+
+[----------] 2 tests from file_str_descriptors
+[ RUN      ] file_str_descriptors.descriptors/0, where GetParam() = "cv/line_descriptor/cameraman.jpg"
+[ PERFSTAT ]    (samples=25   mean=8.74   median=8.78   min=8.47   stddev=0.23 (2.7%))
+[       OK ] file_str_descriptors.descriptors/0 (272 ms)
+[ RUN      ] file_str_descriptors.descriptors/1, where GetParam() = "cv/shared/lena.png"
+[ PERFSTAT ]    (samples=10   mean=10.53   median=10.49   min=10.43   stddev=0.11 (1.0%))
+[       OK ] file_str_descriptors.descriptors/1 (116 ms)
+[----------] 2 tests from file_str_descriptors (388 ms total)
+
+[----------] 2 tests from file_str_detect
+[ RUN      ] file_str_detect.detect/0, where GetParam() = "cv/line_descriptor/cameraman.jpg"
+[ PERFSTAT ]    (samples=10   mean=3.40   median=3.40   min=3.33   stddev=0.06 (1.7%))
+[       OK ] file_str_detect.detect/0 (38 ms)
+[ RUN      ] file_str_detect.detect/1, where GetParam() = "cv/shared/lena.png"
+[ PERFSTAT ]    (samples=10   mean=4.45   median=4.44   min=4.36   stddev=0.07 (1.6%))
+[       OK ] file_str_detect.detect/1 (52 ms)
+[----------] 2 tests from file_str_detect (90 ms total)
+
+[----------] 2 tests from file_str_detect_lsd
+[ RUN      ] file_str_detect_lsd.detect_lsd/0, where GetParam() = "cv/line_descriptor/cameraman.jpg"
+/data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/line_descriptor/cameraman.jpg
+[ PERFSTAT ]    (samples=13   mean=22.55   median=22.52   min=22.35   stddev=0.17 (0.8%))
+[       OK ] file_str_detect_lsd.detect_lsd/0 (300 ms)
+[ RUN      ] file_str_detect_lsd.detect_lsd/1, where GetParam() = "cv/shared/lena.png"
+/data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/lena.png
+[ PERFSTAT ]    (samples=10   mean=29.78   median=29.63   min=29.35   stddev=0.45 (1.5%))
+[       OK ] file_str_detect_lsd.detect_lsd/1 (305 ms)
+[----------] 2 tests from file_str_detect_lsd (605 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 6 test cases ran. (8313 ms total)
+[  PASSED  ] 9 tests.

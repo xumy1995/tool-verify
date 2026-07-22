@@ -1,0 +1,85 @@
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/c++  (ver 11.4.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=30)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+[==========] Running 20 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 12 tests from Size_WBThresh_autowbGrayworld
+[ RUN      ] Size_WBThresh_autowbGrayworld.autowbGrayworld/0, where GetParam() = (640x360, 0.1)
+[ PERFSTAT ]    (samples=10   mean=0.35   median=0.35   min=0.34   stddev=0.01 (2.2%))
+[       OK ] Size_WBThresh_autowbGrayworld.autowbGrayworld/0 (11 ms)
+[ RUN      ] Size_WBThresh_autowbGrayworld.autowbGrayworld/1, where GetParam() = (640x360, 0.5)
+[ PERFSTAT ]    (samples=10   mean=0.35   median=0.35   min=0.34   stddev=0.01 (2.4%))
+[       OK ] Size_WBThresh_autowbGrayworld.autowbGrayworld/1 (4 ms)
+[ RUN      ] Size_WBThresh_autowbGrayworld.autowbGrayworld/2, where GetParam() = (640x360, 1)
+[ PERFSTAT ]    (samples=10   mean=0.35   median=0.35   min=0.34   stddev=0.00 (1.2%))
+[       OK ] Size_WBThresh_autowbGrayworld.autowbGrayworld/2 (4 ms)
+[ RUN      ] Size_WBThresh_autowbGrayworld.autowbGrayworld/3, where GetParam() = (960x540, 0.1)
+[ PERFSTAT ]    (samples=10   mean=0.78   median=0.78   min=0.78   stddev=0.00 (0.4%))
+[       OK ] Size_WBThresh_autowbGrayworld.autowbGrayworld/3 (10 ms)
+[ RUN      ] Size_WBThresh_autowbGrayworld.autowbGrayworld/4, where GetParam() = (960x540, 0.5)
+[ PERFSTAT ]    (samples=10   mean=0.78   median=0.78   min=0.77   stddev=0.00 (0.5%))
+[       OK ] Size_WBThresh_autowbGrayworld.autowbGrayworld/4 (10 ms)
+[ RUN      ] Size_WBThresh_autowbGrayworld.autowbGrayworld/5, where GetParam() = (960x540, 1)
+[ PERFSTAT ]    (samples=10   mean=0.78   median=0.78   min=0.77   stddev=0.01 (0.7%))
+[       OK ] Size_WBThresh_autowbGrayworld.autowbGrayworld/5 (9 ms)
+[ RUN      ] Size_WBThresh_autowbGrayworld.autowbGrayworld/6, where GetParam() = (1280x720, 0.1)
+[ PERFSTAT ]    (samples=50   mean=1.40   median=1.39   min=1.38   stddev=0.03 (2.4%))
+[       OK ] Size_WBThresh_autowbGrayworld.autowbGrayworld/6 (75 ms)
+[ RUN      ] Size_WBThresh_autowbGrayworld.autowbGrayworld/7, where GetParam() = (1280x720, 0.5)
+[ PERFSTAT ]    (samples=10   mean=1.39   median=1.39   min=1.38   stddev=0.01 (0.5%))
+[       OK ] Size_WBThresh_autowbGrayworld.autowbGrayworld/7 (17 ms)
+[ RUN      ] Size_WBThresh_autowbGrayworld.autowbGrayworld/8, where GetParam() = (1280x720, 1)
+[ PERFSTAT ]    (samples=10   mean=1.39   median=1.39   min=1.38   stddev=0.01 (0.4%))
+[       OK ] Size_WBThresh_autowbGrayworld.autowbGrayworld/8 (16 ms)
+[ RUN      ] Size_WBThresh_autowbGrayworld.autowbGrayworld/9, where GetParam() = (1920x1080, 0.1)
+[ PERFSTAT ]    (samples=10   mean=3.13   median=3.13   min=3.11   stddev=0.02 (0.5%))
+[       OK ] Size_WBThresh_autowbGrayworld.autowbGrayworld/9 (38 ms)
+[ RUN      ] Size_WBThresh_autowbGrayworld.autowbGrayworld/10, where GetParam() = (1920x1080, 0.5)
+[ PERFSTAT ]    (samples=10   mean=3.12   median=3.12   min=3.11   stddev=0.01 (0.4%))
+[       OK ] Size_WBThresh_autowbGrayworld.autowbGrayworld/10 (37 ms)
+[ RUN      ] Size_WBThresh_autowbGrayworld.autowbGrayworld/11, where GetParam() = (1920x1080, 1)
+[ PERFSTAT ]    (samples=10   mean=3.11   median=3.11   min=3.10   stddev=0.01 (0.3%))
+[       OK ] Size_WBThresh_autowbGrayworld.autowbGrayworld/11 (37 ms)
+[----------] 12 tests from Size_WBThresh_autowbGrayworld (268 ms total)
+
+[----------] 8 tests from learningBasedWBPerfTest_perf
+[ RUN      ] learningBasedWBPerfTest_perf.perf/0, where GetParam() = (640x360, 8UC3)
+[ PERFSTAT ]    (samples=13   mean=2.88   median=2.87   min=2.86   stddev=0.02 (0.7%))
+[       OK ] learningBasedWBPerfTest_perf.perf/0 (50 ms)
+[ RUN      ] learningBasedWBPerfTest_perf.perf/1, where GetParam() = (640x360, 16UC3)
+[ PERFSTAT ]    (samples=100   mean=77.51   median=73.37   min=67.24   stddev=7.83 (10.1%))
+[       OK ] learningBasedWBPerfTest_perf.perf/1 (7860 ms)
+[ RUN      ] learningBasedWBPerfTest_perf.perf/2, where GetParam() = (960x540, 8UC3)
+[ PERFSTAT ]    (samples=13   mean=4.87   median=4.86   min=4.83   stddev=0.03 (0.7%))
+[       OK ] learningBasedWBPerfTest_perf.perf/2 (64 ms)
+[ RUN      ] learningBasedWBPerfTest_perf.perf/3, where GetParam() = (960x540, 16UC3)
+.
+[ PERFSTAT ]    (samples=100   mean=107.82   median=106.47   min=98.63   stddev=6.24 (5.8%))
+[       OK ] learningBasedWBPerfTest_perf.perf/3 (10888 ms)
+[ RUN      ] learningBasedWBPerfTest_perf.perf/4, where GetParam() = (1280x720, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=7.56   median=7.52   min=7.50   stddev=0.10 (1.4%))
+[       OK ] learningBasedWBPerfTest_perf.perf/4 (77 ms)
+[ RUN      ] learningBasedWBPerfTest_perf.perf/5, where GetParam() = (1280x720, 16UC3)
+.
+[ PERFSTAT ]    (samples=100   mean=152.59   median=150.11   min=145.14   stddev=5.52 (3.6%))
+[       OK ] learningBasedWBPerfTest_perf.perf/5 (15351 ms)
+[ RUN      ] learningBasedWBPerfTest_perf.perf/6, where GetParam() = (1920x1080, 8UC3)
+[ PERFSTAT ]    (samples=10   mean=15.33   median=15.21   min=15.10   stddev=0.42 (2.7%))
+[       OK ] learningBasedWBPerfTest_perf.perf/6 (155 ms)
+[ RUN      ] learningBasedWBPerfTest_perf.perf/7, where GetParam() = (1920x1080, 16UC3)
+[ PERFSTAT ]    (samples=10   mean=277.01   median=275.42   min=272.16   stddev=5.08 (1.8%))
+[       OK ] learningBasedWBPerfTest_perf.perf/7 (2775 ms)
+[----------] 8 tests from learningBasedWBPerfTest_perf (37220 ms total)
+
+[----------] Global test environment tear-down
+[==========] 20 tests from 2 test cases ran. (37488 ms total)
+[  PASSED  ] 20 tests.
