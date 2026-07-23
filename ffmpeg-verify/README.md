@@ -1,14 +1,5 @@
 # FFmpeg Verification
 
-Reserved for FFmpeg build, test, and log records.
-
-Recommended structure:
-
-```text
-README.md
-SOURCE.md
-logs/
-```
+See [SOURCE.md](./SOURCE.md) and [FFmpeg验证记录.md](./FFmpeg验证记录.md).
 
 Do not commit upstream source trees or build directories.
-

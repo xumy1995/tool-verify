@@ -1,0 +1,12 @@
+ffmpeg version N-125715-g5d7112c60e Copyright (c) 2000-2026 the FFmpeg developers
+built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+configuration: --assert-level=2 --prefix=./install --samples=../fate-suite --disable-doc --disable-debug --enable-pthreads --enable-shared --disable-static --enable-ffmpeg --enable-ffprobe --enable-cuda --enable-cuda-nvcc --enable-nvenc --enable-nvdec --enable-nonfree --enable-cuvid --enable-protocol='file,pipe,concat,data' --enable-demuxer='image2,image2pipe,mov,matroska,concat' --enable-muxer='mp4,matroska,webm,null,framecrc,md5' --enable-decoder='png,jpeg,h264,hevc,mpeg4,rawvideo' --enable-encoder='png,jpeg,h264,hevc,mpeg4,rawvideo' --extra-cflags='-O2 -I/usr/local/cuda/include' --extra-ldflags=-L/usr/local/cuda/lib64
+libavutil      61.  5.100 / 61.  5.100
+libavcodec     63.  6.101 / 63.  6.101
+libavformat    63.  5.101 / 63.  5.101
+libavdevice    63.  2.100 / 63.  2.100
+libavfilter    12.  3.101 / 12.  3.101
+libswscale     10.  2.100 / 10.  2.100
+libswresample   7.  2.100 /  7.  2.100
+
+Exiting with exit code 0
