@@ -1,14 +1,11 @@
 # Pillow Verification
 
-Reserved for Pillow build, test, and log records.
+Pillow CPU/Python verification records.
 
-Recommended structure:
+## Files
 
-```text
-README.md
-SOURCE.md
-logs/
-```
+- `SOURCE.md`: upstream source URL, local path, clone command.
+- `Pillow验证记录.md`: runnable verification commands and result notes.
+- `logs-cpu/`: local command logs generated during verification.
 
 Do not commit upstream source trees or build directories.
-

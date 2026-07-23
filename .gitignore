@@ -14,9 +14,12 @@ src/
 *.exe
 __pycache__/
 *.py[cod]
+venv-*/
+**/venv-*/
+uv-cache/
+**/uv-cache/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .ipynb_checkpoints/
 .DS_Store
-
