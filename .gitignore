@@ -18,6 +18,8 @@ venv-*/
 **/venv-*/
 uv-cache/
 **/uv-cache/
+skimage-cache/
+**/skimage-cache/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/

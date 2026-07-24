@@ -30,8 +30,7 @@ uv venv ./venv-cpu-py311 --python 3.11
 source ./venv-cpu-py311/bin/activate
 
 # 安装基础构建工具
-uv pip install -U pip setuptools wheel #  \
-#   2>&1 | tee ./logs-cpu/pip-bootstrap.log
+uv pip install -U pip setuptools wheel 
 
 # 安装 Pillow 测试依赖
 cd ./src/Pillow
@@ -64,6 +63,6 @@ deactivate
 
 - editable 安装成功：`pillow==13.0.0.dev0`
 - pytest 收集：`5148 tests collected / 7 skipped`
-- pytest 执行：`4283 passed, 869 skipped, 3 xfailed in 27.37s`4283 passed, 869 skipped, 3 xfailed in 27.28s
+- pytest 执行：`4283 passed, 869 skipped, 3 xfailed in 27.37s`4283 passed, 869 skipped, 3 xfailed in 27.28s （xfail是预期失败的意思，是正常的）
 - 跳过主要来自可选系统库/依赖缺失：`freetype2`、`littlecms2`、`webp`、`avif`、`openjpeg`、`libtiff`、`raqm`、`libimagequant`、`xcb`、`numpy`、`Qt`、无 `$DISPLAY` 等
 - 本次 CPU/Python 功能验证通过；Pillow 无 CUDA 验证项

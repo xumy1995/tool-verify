@@ -1,0 +1,8 @@
+Using Python 3.12.13 environment at: /data/xumengying/tool-verify/scikit-image-verify/venv-cpu-py312
+   Building scikit-image @ file:///data/xumengying/tool-verify/scikit-image-verify/src/scikit-image
+      Built scikit-image @ file:///data/xumengying/tool-verify/scikit-image-verify/src/scikit-image
+Resolved 46 packages in 3.76s
+Prepared 1 package in 41ms
+Uninstalled 1 package in 22ms
+Installed 1 package in 68ms
+ ~ scikit-image==0.26.1rc0.dev0+git20260722.93e9da9 (from file:///data/xumengying/tool-verify/scikit-image-verify/src/scikit-image)

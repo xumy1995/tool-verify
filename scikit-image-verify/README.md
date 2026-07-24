@@ -1,14 +1,11 @@
 # scikit-image Verification
 
-Reserved for scikit-image build, test, and log records.
+scikit-image CPU/Python verification records.
 
-Recommended structure:
+## Files
 
-```text
-README.md
-SOURCE.md
-logs/
-```
+- `SOURCE.md`: upstream source URL, local path, clone command.
+- `scikit-image验证记录.md`: runnable verification commands and result notes.
+- `logs-cpu/`: local command logs generated during verification.
 
 Do not commit upstream source trees or build directories.
-
