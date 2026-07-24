@@ -4,9 +4,11 @@ OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
 Compiler: /usr/bin/c++  (ver 11.4.0)
 Algorithm hint: ALGO_HINT_ACCURATE
-HAL: NO
+HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
 CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
 OpenCL is disabled
 TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [==========] Running 6 tests from 3 test cases.
@@ -29,9 +31,9 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 
 [----------] 1 test from Flann_Index
 [ RUN      ] Flann_Index.radiusSearch_output_size_matches_returned_count
-[       OK ] Flann_Index.radiusSearch_output_size_matches_returned_count (1 ms)
-[----------] 1 test from Flann_Index (1 ms total)
+[       OK ] Flann_Index.radiusSearch_output_size_matches_returned_count (0 ms)
+[----------] 1 test from Flann_Index (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 6 tests from 3 test cases ran. (9 ms total)
+[==========] 6 tests from 3 test cases ran. (8 ms total)
 [  PASSED  ] 6 tests.

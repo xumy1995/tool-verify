@@ -534,7 +534,7 @@
 --   Version control:               4.13.0-493-g7aa163b83f
 -- 
 --   Platform:
---     Timestamp:                   2026-07-21T08:16:46Z
+--     Timestamp:                   2026-07-24T08:49:41Z
 --     Host:                        Linux 5.14.0-284.25.1.el9_2.x86_64 x86_64
 --     CMake:                       3.29.0
 --     CMake generator:             Ninja
@@ -648,6 +648,6 @@
 --   Install to:                    /usr/local
 -- -----------------------------------------------------------------
 -- 
--- Configuring done (260.2s)
--- Generating done (5.8s)
+-- Configuring done (106.5s)
+-- Generating done (5.6s)
 -- Build files have been written to: /data/xumengying/tool-verify/opencv-verify/build-cpu

@@ -29,14 +29,27 @@
   - 编译成功
   - `opencv_test_*` 已生成
   - `opencv_perf_*` 已生成
-  - 已完成的 accuracy tests 全部通过，唯一失败项是 `opencv_test_highgui`
+  - 已完成的 accuracy tests 全部通过，失败项是 `opencv_test_highgui` 和 `opencv_test_gapi`
 
-### `opencv_test_highgui` 失败原因
+### CPU 错误分析
+#### `opencv_test_highgui` 失败原因
 - 失败原因不是 OpenCV 算法问题，而是当前构建没有 GUI 后端
 - 日志中的错误是：
   - `The function is not implemented`
   - `Rebuild the library with Windows, GTK+ 2.x or Cocoa support`
 - 这说明 `highgui` 在当前环境里只能做无窗口编译，不能跑需要 `namedWindow()` / `destroyAllWindows()` 的 GUI 用例
+
+#### `opencv_test_gapi` 失败原因
+- 结果：`15470 / 15475` 通过，失败 5 个
+- 失败项：
+  - `VASObjectTracker.PipelineTest`
+  - 4 个 `AsyncAPICancelation/cancel/*`
+- 关键日志：
+  - `Couldn't grab the very first frame`
+  - `Test code is not available due to compilation error with GCC 11`
+- 判断：
+  - `VASObjectTracker` 更像视频输入、测试素材或 video backend 限制
+  - `AsyncAPICancelation` 是 GCC 11 下该测试代码路径不可用，日志已明确说明
 
 ### CPU 完整命令
 ```bash
@@ -53,7 +66,7 @@ cmake -S "$ROOT/src/opencv" \
       -DOPENCV_TEST_DATA_PATH="$ROOT/src/opencv_extra/testdata" \
       | tee "$ROOT/logs-cpu/cmake-cpu.log"
 cmake --build "$ROOT/build-cpu" \
-      --parallel "$(nproc)" \
+      --parallel 8 \
       | tee "$ROOT/logs-cpu/build-cpu.log"
 
 export OPENCV_TEST_DATA_PATH="$ROOT/src/opencv_extra/testdata"

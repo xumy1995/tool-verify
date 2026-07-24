@@ -8,6 +8,8 @@ opencv_test_dnn exit=0
 opencv_test_features2d exit=0
 ===== opencv_test_flann =====
 opencv_test_flann exit=0
+===== opencv_test_gapi =====
+opencv_test_gapi exit=1
 ===== opencv_test_highgui =====
 opencv_test_highgui exit=1
 ===== opencv_test_imgcodecs =====
