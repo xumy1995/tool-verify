@@ -6,30 +6,6 @@ opencv_perf_core exit=0
 opencv_perf_dnn exit=0
 ===== opencv_perf_features2d =====
 opencv_perf_features2d exit=0
-===== opencv_perf_imgcodecs =====
-opencv_perf_imgcodecs exit=0
-===== opencv_perf_imgproc =====
-opencv_perf_imgproc exit=0
-===== opencv_perf_ml =====
-opencv_perf_ml exit=0
-===== opencv_perf_objdetect =====
-opencv_perf_objdetect exit=0
-===== opencv_perf_photo =====
-opencv_perf_photo exit=0
-===== opencv_perf_stitching =====
-opencv_perf_stitching exit=0
-===== opencv_perf_video =====
-opencv_perf_video exit=0
-===== opencv_perf_videoio =====
-opencv_perf_videoio exit=0
-===== opencv_perf_calib3d =====
-opencv_perf_calib3d exit=0
-===== opencv_perf_core =====
-opencv_perf_core exit=0
-===== opencv_perf_dnn =====
-opencv_perf_dnn exit=0
-===== opencv_perf_features2d =====
-opencv_perf_features2d exit=0
 ===== opencv_perf_gapi =====
 opencv_perf_gapi exit=0
 ===== opencv_perf_imgcodecs =====
