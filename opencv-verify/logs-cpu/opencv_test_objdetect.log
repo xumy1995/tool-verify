@@ -2,7 +2,7 @@ CTEST_FULL_OUTPUT
 OpenCV version: 4.14.0-pre
 OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
-Compiler: /usr/bin/c++  (ver 11.4.0)
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
 Algorithm hint: ALGO_HINT_ACCURATE
 HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
@@ -15,7 +15,7 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [----------] Global test environment set-up.
 [----------] 5 tests from CV_ArucoTutorial
 [ RUN      ] CV_ArucoTutorial.can_find_singlemarkersoriginal
-[       OK ] CV_ArucoTutorial.can_find_singlemarkersoriginal (51 ms)
+[       OK ] CV_ArucoTutorial.can_find_singlemarkersoriginal (47 ms)
 [ RUN      ] CV_ArucoTutorial.can_find_gboriginal
 [       OK ] CV_ArucoTutorial.can_find_gboriginal (13 ms)
 [ RUN      ] CV_ArucoTutorial.can_find_choriginal
@@ -23,33 +23,33 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [ RUN      ] CV_ArucoTutorial.can_find_chocclusion
 [       OK ] CV_ArucoTutorial.can_find_chocclusion (9 ms)
 [ RUN      ] CV_ArucoTutorial.can_find_diamondmarkers
-[       OK ] CV_ArucoTutorial.can_find_diamondmarkers (48 ms)
-[----------] 5 tests from CV_ArucoTutorial (131 ms total)
+[       OK ] CV_ArucoTutorial.can_find_diamondmarkers (49 ms)
+[----------] 5 tests from CV_ArucoTutorial (129 ms total)
 
 [----------] 1 test from CV_InvertedArucoDetectionPerspective
 [ RUN      ] CV_InvertedArucoDetectionPerspective.algorithmic
-[       OK ] CV_InvertedArucoDetectionPerspective.algorithmic (44 ms)
-[----------] 1 test from CV_InvertedArucoDetectionPerspective (44 ms total)
+[       OK ] CV_InvertedArucoDetectionPerspective.algorithmic (41 ms)
+[----------] 1 test from CV_InvertedArucoDetectionPerspective (41 ms total)
 
 [----------] 1 test from CV_AprilTagDetectionPerspective
 [ RUN      ] CV_AprilTagDetectionPerspective.algorithmic
-[       OK ] CV_AprilTagDetectionPerspective.algorithmic (85 ms)
-[----------] 1 test from CV_AprilTagDetectionPerspective (85 ms total)
+[       OK ] CV_AprilTagDetectionPerspective.algorithmic (84 ms)
+[----------] 1 test from CV_AprilTagDetectionPerspective (84 ms total)
 
 [----------] 1 test from CV_Aruco3DetectionPerspective
 [ RUN      ] CV_Aruco3DetectionPerspective.algorithmic
-[       OK ] CV_Aruco3DetectionPerspective.algorithmic (40 ms)
-[----------] 1 test from CV_Aruco3DetectionPerspective (40 ms total)
+[       OK ] CV_Aruco3DetectionPerspective.algorithmic (39 ms)
+[----------] 1 test from CV_Aruco3DetectionPerspective (39 ms total)
 
 [----------] 1 test from CV_ArucoDetectionSimple
 [ RUN      ] CV_ArucoDetectionSimple.algorithmic
-[       OK ] CV_ArucoDetectionSimple.algorithmic (20 ms)
-[----------] 1 test from CV_ArucoDetectionSimple (20 ms total)
+[       OK ] CV_ArucoDetectionSimple.algorithmic (19 ms)
+[----------] 1 test from CV_ArucoDetectionSimple (19 ms total)
 
 [----------] 1 test from CV_ArucoDetectionPerspective
 [ RUN      ] CV_ArucoDetectionPerspective.algorithmic
-[       OK ] CV_ArucoDetectionPerspective.algorithmic (37 ms)
-[----------] 1 test from CV_ArucoDetectionPerspective (37 ms total)
+[       OK ] CV_ArucoDetectionPerspective.algorithmic (35 ms)
+[----------] 1 test from CV_ArucoDetectionPerspective (35 ms total)
 
 [----------] 1 test from CV_ArucoDetectionMarkerSize
 [ RUN      ] CV_ArucoDetectionMarkerSize.algorithmic
@@ -58,65 +58,65 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 
 [----------] 1 test from CV_ArucoBitCorrection
 [ RUN      ] CV_ArucoBitCorrection.algorithmic
-[       OK ] CV_ArucoBitCorrection.algorithmic (21 ms)
-[----------] 1 test from CV_ArucoBitCorrection (21 ms total)
+[       OK ] CV_ArucoBitCorrection.algorithmic (20 ms)
+[----------] 1 test from CV_ArucoBitCorrection (20 ms total)
 
 [----------] 1 test from CV_ArucoDetectionConfidence
 [ RUN      ] CV_ArucoDetectionConfidence.algorithmic
-[       OK ] CV_ArucoDetectionConfidence.algorithmic (368 ms)
-[----------] 1 test from CV_ArucoDetectionConfidence (368 ms total)
+[       OK ] CV_ArucoDetectionConfidence.algorithmic (343 ms)
+[----------] 1 test from CV_ArucoDetectionConfidence (343 ms total)
 
 [----------] 1 test from CV_InvertedArucoDetectionConfidence
 [ RUN      ] CV_InvertedArucoDetectionConfidence.algorithmic
-[       OK ] CV_InvertedArucoDetectionConfidence.algorithmic (307 ms)
-[----------] 1 test from CV_InvertedArucoDetectionConfidence (307 ms total)
+[       OK ] CV_InvertedArucoDetectionConfidence.algorithmic (283 ms)
+[----------] 1 test from CV_InvertedArucoDetectionConfidence (283 ms total)
 
 [----------] 1 test from CV_InvertedFlagArucoDetectionConfidence
 [ RUN      ] CV_InvertedFlagArucoDetectionConfidence.algorithmic
-[       OK ] CV_InvertedFlagArucoDetectionConfidence.algorithmic (15 ms)
-[----------] 1 test from CV_InvertedFlagArucoDetectionConfidence (15 ms total)
+[       OK ] CV_InvertedFlagArucoDetectionConfidence.algorithmic (14 ms)
+[----------] 1 test from CV_InvertedFlagArucoDetectionConfidence (14 ms total)
 
 [----------] 1 test from CV_ArucoDetectionThreshold
 [ RUN      ] CV_ArucoDetectionThreshold.algorithmic
-[       OK ] CV_ArucoDetectionThreshold.algorithmic (217 ms)
-[----------] 1 test from CV_ArucoDetectionThreshold (217 ms total)
+[       OK ] CV_ArucoDetectionThreshold.algorithmic (221 ms)
+[----------] 1 test from CV_ArucoDetectionThreshold (221 ms total)
 
 [----------] 1 test from CV_InvertedArucoDetectionThreshold
 [ RUN      ] CV_InvertedArucoDetectionThreshold.algorithmic
-[       OK ] CV_InvertedArucoDetectionThreshold.algorithmic (207 ms)
-[----------] 1 test from CV_InvertedArucoDetectionThreshold (207 ms total)
+[       OK ] CV_InvertedArucoDetectionThreshold.algorithmic (201 ms)
+[----------] 1 test from CV_InvertedArucoDetectionThreshold (201 ms total)
 
 [----------] 4 tests from CV_ArucoDetectMarkers
 [ RUN      ] CV_ArucoDetectMarkers.regression_3192
-[       OK ] CV_ArucoDetectMarkers.regression_3192 (11 ms)
+[       OK ] CV_ArucoDetectMarkers.regression_3192 (12 ms)
 [ RUN      ] CV_ArucoDetectMarkers.regression_2492
 [       OK ] CV_ArucoDetectMarkers.regression_2492 (5 ms)
 [ RUN      ] CV_ArucoDetectMarkers.regression_contour_24220
 [       OK ] CV_ArucoDetectMarkers.regression_contour_24220 (6 ms)
 [ RUN      ] CV_ArucoDetectMarkers.regression_26922
-[       OK ] CV_ArucoDetectMarkers.regression_26922 (255 ms)
-[----------] 4 tests from CV_ArucoDetectMarkers (277 ms total)
+[       OK ] CV_ArucoDetectMarkers.regression_26922 (253 ms)
+[----------] 4 tests from CV_ArucoDetectMarkers (276 ms total)
 
 [----------] 5 tests from CV_ArucoMultiDict
 [ RUN      ] CV_ArucoMultiDict.setGetDictionaries
 [       OK ] CV_ArucoMultiDict.setGetDictionaries (0 ms)
 [ RUN      ] CV_ArucoMultiDict.noDict
-[       OK ] CV_ArucoMultiDict.noDict (1 ms)
+[       OK ] CV_ArucoMultiDict.noDict (3 ms)
 [ RUN      ] CV_ArucoMultiDict.multiMarkerDetection
-[       OK ] CV_ArucoMultiDict.multiMarkerDetection (3 ms)
+[       OK ] CV_ArucoMultiDict.multiMarkerDetection (2 ms)
 [ RUN      ] CV_ArucoMultiDict.multiMarkerDoubleDetection
 [       OK ] CV_ArucoMultiDict.multiMarkerDoubleDetection (1 ms)
 [ RUN      ] CV_ArucoMultiDict.serialization
 [       OK ] CV_ArucoMultiDict.serialization (1 ms)
-[----------] 5 tests from CV_ArucoMultiDict (6 ms total)
+[----------] 5 tests from CV_ArucoMultiDict (7 ms total)
 
 [----------] 6 tests from CV_ArucoDictionary
 [ RUN      ] CV_ArucoDictionary.readDictionary_oversized_marker
 [       OK ] CV_ArucoDictionary.readDictionary_oversized_marker (0 ms)
 [ RUN      ] CV_ArucoDictionary.readDictionary_roundtrip
-[       OK ] CV_ArucoDictionary.readDictionary_roundtrip (0 ms)
+[       OK ] CV_ArucoDictionary.readDictionary_roundtrip (1 ms)
 [ RUN      ] CV_ArucoDictionary.extendDictionary
-[       OK ] CV_ArucoDictionary.extendDictionary (4 ms)
+[       OK ] CV_ArucoDictionary.extendDictionary (3 ms)
 [ RUN      ] CV_ArucoDictionary.getDistanceToIdCellPixelRatio
 [       OK ] CV_ArucoDictionary.getDistanceToIdCellPixelRatio (0 ms)
 [ RUN      ] CV_ArucoDictionary.getDistanceToIdCellPixelRatioPartialByte
@@ -134,52 +134,52 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [ RUN      ] BarcodeDetector_parameters.regression
 [       OK ] BarcodeDetector_parameters.regression (0 ms)
 [ RUN      ] BarcodeDetector_parameters.invalid
-[       OK ] BarcodeDetector_parameters.invalid (0 ms)
-[----------] 2 tests from BarcodeDetector_parameters (0 ms total)
+[       OK ] BarcodeDetector_parameters.invalid (1 ms)
+[----------] 2 tests from BarcodeDetector_parameters (1 ms total)
 
 [----------] 2 tests from CV_ArucoBoardPose
 [ RUN      ] CV_ArucoBoardPose.accuracy
-[       OK ] CV_ArucoBoardPose.accuracy (362 ms)
+[       OK ] CV_ArucoBoardPose.accuracy (342 ms)
 [ RUN      ] CV_ArucoBoardPose.CheckNegativeZ
 [       OK ] CV_ArucoBoardPose.CheckNegativeZ (0 ms)
-[----------] 2 tests from CV_ArucoBoardPose (362 ms total)
+[----------] 2 tests from CV_ArucoBoardPose (342 ms total)
 
 [----------] 1 test from CV_Aruco3BoardPose
 [ RUN      ] CV_Aruco3BoardPose.accuracy
-[       OK ] CV_Aruco3BoardPose.accuracy (356 ms)
-[----------] 1 test from CV_Aruco3BoardPose (356 ms total)
+[       OK ] CV_Aruco3BoardPose.accuracy (335 ms)
+[----------] 1 test from CV_Aruco3BoardPose (335 ms total)
 
 [----------] 1 test from CV_ArucoRefine
 [ RUN      ] CV_ArucoRefine.accuracy
-[       OK ] CV_ArucoRefine.accuracy (288 ms)
-[----------] 1 test from CV_ArucoRefine (288 ms total)
+[       OK ] CV_ArucoRefine.accuracy (273 ms)
+[----------] 1 test from CV_ArucoRefine (273 ms total)
 
 [----------] 1 test from CV_Aruco3Refine
 [ RUN      ] CV_Aruco3Refine.accuracy
-[       OK ] CV_Aruco3Refine.accuracy (272 ms)
-[----------] 1 test from CV_Aruco3Refine (272 ms total)
+[       OK ] CV_Aruco3Refine.accuracy (257 ms)
+[----------] 1 test from CV_Aruco3Refine (257 ms total)
 
 [----------] 2 tests from CV_ArucoRefineValidBitIdThreshold
 [ RUN      ] CV_ArucoRefineValidBitIdThreshold.strictThresholdKeepsMarkerRejected
-[       OK ] CV_ArucoRefineValidBitIdThreshold.strictThresholdKeepsMarkerRejected (5 ms)
+[       OK ] CV_ArucoRefineValidBitIdThreshold.strictThresholdKeepsMarkerRejected (4 ms)
 [ RUN      ] CV_ArucoRefineValidBitIdThreshold.relaxedThresholdRecoversMarker
-[       OK ] CV_ArucoRefineValidBitIdThreshold.relaxedThresholdRecoversMarker (4 ms)
-[----------] 2 tests from CV_ArucoRefineValidBitIdThreshold (9 ms total)
+[       OK ] CV_ArucoRefineValidBitIdThreshold.relaxedThresholdRecoversMarker (3 ms)
+[----------] 2 tests from CV_ArucoRefineValidBitIdThreshold (7 ms total)
 
 [----------] 1 test from CV_ArucoGenerateBoard
 [ RUN      ] CV_ArucoGenerateBoard.regression_1226
-[       OK ] CV_ArucoGenerateBoard.regression_1226 (0 ms)
-[----------] 1 test from CV_ArucoGenerateBoard (0 ms total)
+[       OK ] CV_ArucoGenerateBoard.regression_1226 (1 ms)
+[----------] 1 test from CV_ArucoGenerateBoard (1 ms total)
 
 [----------] 1 test from CV_ArucoBoardGenerateImage_RotationTest
 [ RUN      ] CV_ArucoBoardGenerateImage_RotationTest.HandlesRotatedMarkersWithoutBoundingBoxError
-[       OK ] CV_ArucoBoardGenerateImage_RotationTest.HandlesRotatedMarkersWithoutBoundingBoxError (39 ms)
-[----------] 1 test from CV_ArucoBoardGenerateImage_RotationTest (39 ms total)
+[       OK ] CV_ArucoBoardGenerateImage_RotationTest.HandlesRotatedMarkersWithoutBoundingBoxError (36 ms)
+[----------] 1 test from CV_ArucoBoardGenerateImage_RotationTest (36 ms total)
 
 [----------] 1 test from Objdetect_HOGDetectorReadWrite
 [ RUN      ] Objdetect_HOGDetectorReadWrite.regression
-[       OK ] Objdetect_HOGDetectorReadWrite.regression (11 ms)
-[----------] 1 test from Objdetect_HOGDetectorReadWrite (11 ms total)
+[       OK ] Objdetect_HOGDetectorReadWrite.regression (10 ms)
+[----------] 1 test from Objdetect_HOGDetectorReadWrite (10 ms total)
 
 [----------] 2 tests from Objdetect_CascadeDetector
 [ RUN      ] Objdetect_CascadeDetector.regression
@@ -190,47 +190,47 @@ detector /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv
 detector /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/cascadeandhog/cascades/haarcascade_3.xml
 detector /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/cascadeandhog/cascades/lbpcascade_frontalface.xml
 detector /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/cascadeandhog/cascades/lbpcascade_frontalface_alt3.xml
-[       OK ] Objdetect_CascadeDetector.regression (3366 ms)
+[       OK ] Objdetect_CascadeDetector.regression (3355 ms)
 [ RUN      ] Objdetect_CascadeDetector.small_img
 0. /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/cascadeandhog/cascades/haarcascade_frontalface_alt.xml
 1. /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/cascadeandhog/cascades/lbpcascade_frontalface.xml
-[       OK ] Objdetect_CascadeDetector.small_img (84 ms)
-[----------] 2 tests from Objdetect_CascadeDetector (3450 ms total)
+[       OK ] Objdetect_CascadeDetector.small_img (78 ms)
+[----------] 2 tests from Objdetect_CascadeDetector (3433 ms total)
 
 [----------] 1 test from Objdetect_HOGDetector
 [ RUN      ] Objdetect_HOGDetector.regression
 detector 
-[       OK ] Objdetect_HOGDetector.regression (269 ms)
-[----------] 1 test from Objdetect_HOGDetector (269 ms total)
+[       OK ] Objdetect_HOGDetector.regression (277 ms)
+[----------] 1 test from Objdetect_HOGDetector (277 ms total)
 
 [----------] 1 test from Objdetect_HOGDetector_Strict
 [ RUN      ] Objdetect_HOGDetector_Strict.accuracy
-[       OK ] Objdetect_HOGDetector_Strict.accuracy (653 ms)
-[----------] 1 test from Objdetect_HOGDetector_Strict (653 ms total)
+[       OK ] Objdetect_HOGDetector_Strict.accuracy (656 ms)
+[----------] 1 test from Objdetect_HOGDetector_Strict (656 ms total)
 
 [----------] 2 tests from CV_CharucoDetection
 [ RUN      ] CV_CharucoDetection.accuracy
 [       OK ] CV_CharucoDetection.accuracy (376 ms)
 [ RUN      ] CV_CharucoDetection.accuracy_legacyPattern
-[       OK ] CV_CharucoDetection.accuracy_legacyPattern (378 ms)
-[----------] 2 tests from CV_CharucoDetection (754 ms total)
+[       OK ] CV_CharucoDetection.accuracy_legacyPattern (367 ms)
+[----------] 2 tests from CV_CharucoDetection (743 ms total)
 
 [----------] 2 tests from CV_CharucoPoseEstimation
 [ RUN      ] CV_CharucoPoseEstimation.accuracy
-[       OK ] CV_CharucoPoseEstimation.accuracy (601 ms)
+[       OK ] CV_CharucoPoseEstimation.accuracy (577 ms)
 [ RUN      ] CV_CharucoPoseEstimation.accuracy_legacyPattern
-[       OK ] CV_CharucoPoseEstimation.accuracy_legacyPattern (595 ms)
-[----------] 2 tests from CV_CharucoPoseEstimation (1196 ms total)
+[       OK ] CV_CharucoPoseEstimation.accuracy_legacyPattern (578 ms)
+[----------] 2 tests from CV_CharucoPoseEstimation (1155 ms total)
 
 [----------] 1 test from CV_CharucoDiamondDetection
 [ RUN      ] CV_CharucoDiamondDetection.accuracy
-[       OK ] CV_CharucoDiamondDetection.accuracy (246 ms)
-[----------] 1 test from CV_CharucoDiamondDetection (246 ms total)
+[       OK ] CV_CharucoDiamondDetection.accuracy (241 ms)
+[----------] 1 test from CV_CharucoDiamondDetection (241 ms total)
 
 [----------] 1 test from CV_CharucoBoardCreation
 [ RUN      ] CV_CharucoBoardCreation.accuracy
-[       OK ] CV_CharucoBoardCreation.accuracy (29 ms)
-[----------] 1 test from CV_CharucoBoardCreation (29 ms total)
+[       OK ] CV_CharucoBoardCreation.accuracy (28 ms)
+[----------] 1 test from CV_CharucoBoardCreation (28 ms total)
 
 [----------] 7 tests from Charuco
 [ RUN      ] Charuco.testCharucoCornersCollinear_true
@@ -238,7 +238,7 @@ detector
 [ RUN      ] Charuco.testCharucoCornersCollinear_false
 [       OK ] Charuco.testCharucoCornersCollinear_false (0 ms)
 [ RUN      ] Charuco.testBoardSubpixelCoords
-[       OK ] Charuco.testBoardSubpixelCoords (10 ms)
+[       OK ] Charuco.testBoardSubpixelCoords (9 ms)
 [ RUN      ] Charuco.issue_14014
 [       OK ] Charuco.issue_14014 (16 ms)
 [ RUN      ] Charuco.testmatchImagePoints
@@ -247,13 +247,13 @@ detector
 [       OK ] Charuco.detectDiamondsClearsOutputsWithLessThanFourMarkers (0 ms)
 [ RUN      ] Charuco.testSeveralBoardsWithCustomIds
 [       OK ] Charuco.testSeveralBoardsWithCustomIds (3 ms)
-[----------] 7 tests from Charuco (30 ms total)
+[----------] 7 tests from Charuco (29 ms total)
 
 [----------] 1 test from Objdetect_face_detection
 [ RUN      ] Objdetect_face_detection.regression
 [     SKIP ] OpenCV tests: Can't find data file: dnn/onnx/models/yunet-202303.onnx
-[       OK ] Objdetect_face_detection.regression (5 ms)
-[----------] 1 test from Objdetect_face_detection (5 ms total)
+[       OK ] Objdetect_face_detection.regression (4 ms)
+[----------] 1 test from Objdetect_face_detection (4 ms total)
 
 [----------] 1 test from Objdetect_face_recognition
 [ RUN      ] Objdetect_face_recognition.regression
@@ -263,22 +263,22 @@ detector
 
 [----------] 1 test from Objdetect_QRCode_decodeMulti
 [ RUN      ] Objdetect_QRCode_decodeMulti.decode_regression_16491
-[       OK ] Objdetect_QRCode_decodeMulti.decode_regression_16491 (22 ms)
-[----------] 1 test from Objdetect_QRCode_decodeMulti (22 ms total)
+[       OK ] Objdetect_QRCode_decodeMulti.decode_regression_16491 (20 ms)
+[----------] 1 test from Objdetect_QRCode_decodeMulti (20 ms total)
 
 [----------] 5 tests from Objdetect_QRCode_detect
 [ RUN      ] Objdetect_QRCode_detect.detect_regression_20882
-[       OK ] Objdetect_QRCode_detect.detect_regression_20882 (39 ms)
+[       OK ] Objdetect_QRCode_detect.detect_regression_20882 (27 ms)
 [ RUN      ] Objdetect_QRCode_detect.detect_regression_21287
-[       OK ] Objdetect_QRCode_detect.detect_regression_21287 (19 ms)
+[       OK ] Objdetect_QRCode_detect.detect_regression_21287 (20 ms)
 [ RUN      ] Objdetect_QRCode_detect.detect_regression_24450
 [       OK ] Objdetect_QRCode_detect.detect_regression_24450 (76 ms)
 [ RUN      ] Objdetect_QRCode_detect.detect_regression_22892
-[       OK ] Objdetect_QRCode_detect.detect_regression_22892 (41 ms)
+[       OK ] Objdetect_QRCode_detect.detect_regression_22892 (40 ms)
 [ RUN      ] Objdetect_QRCode_detect.detect_regression_27783
-[ WARN:0@10.219] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:7@10.219] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_detect.detect_regression_27783 (341 ms)
+[ WARN:7@10.006] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:6@10.007] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_detect.detect_regression_27783 (353 ms)
 [----------] 5 tests from Objdetect_QRCode_detect (516 ms total)
 
 [----------] 1 test from Objdetect_QRCode_basic
@@ -293,12 +293,12 @@ detector
 
 [----------] 3 tests from Objdetect_QRCode_decode
 [ RUN      ] Objdetect_QRCode_decode.decode_regression_21929
-[       OK ] Objdetect_QRCode_decode.decode_regression_21929 (48 ms)
+[       OK ] Objdetect_QRCode_decode.decode_regression_21929 (49 ms)
 [ RUN      ] Objdetect_QRCode_decode.decode_regression_version_25
-[       OK ] Objdetect_QRCode_decode.decode_regression_version_25 (257 ms)
+[       OK ] Objdetect_QRCode_decode.decode_regression_version_25 (265 ms)
 [ RUN      ] Objdetect_QRCode_decode.decode_alphanumeric_out_of_range
 [       OK ] Objdetect_QRCode_decode.decode_alphanumeric_out_of_range (12 ms)
-[----------] 3 tests from Objdetect_QRCode_decode (317 ms total)
+[----------] 3 tests from Objdetect_QRCode_decode (326 ms total)
 
 [----------] 1 test from Objdetect_QRCode_detectAndDecode
 [ RUN      ] Objdetect_QRCode_detectAndDecode.utf8_output
@@ -307,12 +307,12 @@ detector
 
 [----------] 3 tests from Objdetect_QRCode_Encode_Decode
 [ RUN      ] Objdetect_QRCode_Encode_Decode.regression
-[       OK ] Objdetect_QRCode_Encode_Decode.regression (810 ms)
+[       OK ] Objdetect_QRCode_Encode_Decode.regression (830 ms)
 [ RUN      ] Objdetect_QRCode_Encode_Decode.regression_issue22029
-[       OK ] Objdetect_QRCode_Encode_Decode.regression_issue22029 (8455 ms)
+[       OK ] Objdetect_QRCode_Encode_Decode.regression_issue22029 (8652 ms)
 [ RUN      ] Objdetect_QRCode_Encode_Decode.auto_version_pick
-[       OK ] Objdetect_QRCode_Encode_Decode.auto_version_pick (84 ms)
-[----------] 3 tests from Objdetect_QRCode_Encode_Decode (9349 ms total)
+[       OK ] Objdetect_QRCode_Encode_Decode.auto_version_pick (85 ms)
+[----------] 3 tests from Objdetect_QRCode_Encode_Decode (9568 ms total)
 
 [----------] 1 test from Objdetect_QRCode_Encode_Kanji
 [ RUN      ] Objdetect_QRCode_Encode_Kanji.regression
@@ -321,62 +321,62 @@ detector
 
 [----------] 1 test from Objdetect_QRCode_Encode_Decode_Structured_Append
 [ RUN      ] Objdetect_QRCode_Encode_Decode_Structured_Append.regression
-[       OK ] Objdetect_QRCode_Encode_Decode_Structured_Append.regression (201 ms)
-[----------] 1 test from Objdetect_QRCode_Encode_Decode_Structured_Append (201 ms total)
+[       OK ] Objdetect_QRCode_Encode_Decode_Structured_Append.regression (206 ms)
+[----------] 1 test from Objdetect_QRCode_Encode_Decode_Structured_Append (206 ms total)
 
 [----------] 1 test from Objdetect_QRCode_Encode_Decode_Long_Text
 [ RUN      ] Objdetect_QRCode_Encode_Decode_Long_Text.regression_issue27183
-[       OK ] Objdetect_QRCode_Encode_Decode_Long_Text.regression_issue27183 (33 ms)
-[----------] 1 test from Objdetect_QRCode_Encode_Decode_Long_Text (33 ms total)
+[       OK ] Objdetect_QRCode_Encode_Decode_Long_Text.regression_issue27183 (34 ms)
+[----------] 1 test from Objdetect_QRCode_Encode_Decode_Long_Text (34 ms total)
 
 [----------] 6 tests from OCL_ObjDetect/HOG
 [ RUN      ] OCL_ObjDetect/HOG.GetDescriptors/0, where GetParam() = (64x128, 8UC1)
-[       OK ] OCL_ObjDetect/HOG.GetDescriptors/0 (48 ms)
+[       OK ] OCL_ObjDetect/HOG.GetDescriptors/0 (43 ms)
 [ RUN      ] OCL_ObjDetect/HOG.GetDescriptors/1, where GetParam() = (48x96, 8UC1)
-[       OK ] OCL_ObjDetect/HOG.GetDescriptors/1 (33 ms)
+[       OK ] OCL_ObjDetect/HOG.GetDescriptors/1 (34 ms)
 [ RUN      ] OCL_ObjDetect/HOG.SVMDetector/0, where GetParam() = (64x128, 8UC1)
 [       OK ] OCL_ObjDetect/HOG.SVMDetector/0 (9 ms)
 [ RUN      ] OCL_ObjDetect/HOG.SVMDetector/1, where GetParam() = (48x96, 8UC1)
-[       OK ] OCL_ObjDetect/HOG.SVMDetector/1 (9 ms)
+[       OK ] OCL_ObjDetect/HOG.SVMDetector/1 (8 ms)
 [ RUN      ] OCL_ObjDetect/HOG.Detect/0, where GetParam() = (64x128, 8UC1)
-[       OK ] OCL_ObjDetect/HOG.Detect/0 (38 ms)
+[       OK ] OCL_ObjDetect/HOG.Detect/0 (35 ms)
 [ RUN      ] OCL_ObjDetect/HOG.Detect/1, where GetParam() = (48x96, 8UC1)
 [       OK ] OCL_ObjDetect/HOG.Detect/1 (30 ms)
-[----------] 6 tests from OCL_ObjDetect/HOG (167 ms total)
+[----------] 6 tests from OCL_ObjDetect/HOG (159 ms total)
 
 [----------] 4 tests from CV_ArucoDetectMarkers/ArucoThreading
 [ RUN      ] CV_ArucoDetectMarkers/ArucoThreading.number_of_threads_does_not_change_results/0, where GetParam() = 0
-[       OK ] CV_ArucoDetectMarkers/ArucoThreading.number_of_threads_does_not_change_results/0 (7 ms)
+[       OK ] CV_ArucoDetectMarkers/ArucoThreading.number_of_threads_does_not_change_results/0 (5 ms)
 [ RUN      ] CV_ArucoDetectMarkers/ArucoThreading.number_of_threads_does_not_change_results/1, where GetParam() = 1
-[       OK ] CV_ArucoDetectMarkers/ArucoThreading.number_of_threads_does_not_change_results/1 (4 ms)
+[       OK ] CV_ArucoDetectMarkers/ArucoThreading.number_of_threads_does_not_change_results/1 (5 ms)
 [ RUN      ] CV_ArucoDetectMarkers/ArucoThreading.number_of_threads_does_not_change_results/2, where GetParam() = 2
 [       OK ] CV_ArucoDetectMarkers/ArucoThreading.number_of_threads_does_not_change_results/2 (5 ms)
 [ RUN      ] CV_ArucoDetectMarkers/ArucoThreading.number_of_threads_does_not_change_results/3, where GetParam() = 3
 [       OK ] CV_ArucoDetectMarkers/ArucoThreading.number_of_threads_does_not_change_results/3 (1 ms)
-[----------] 4 tests from CV_ArucoDetectMarkers/ArucoThreading (17 ms total)
+[----------] 4 tests from CV_ArucoDetectMarkers/ArucoThreading (16 ms total)
 
 [----------] 4 tests from BarcodeDetector_main
 [ RUN      ] BarcodeDetector_main.interface/0, where GetParam() = "multiple/4_barcodes.jpg"
 [       OK ] BarcodeDetector_main.interface/0 (62 ms)
 [ RUN      ] BarcodeDetector_main.interface/1, where GetParam() = "single/book.jpg"
-[       OK ] BarcodeDetector_main.interface/1 (44 ms)
+[       OK ] BarcodeDetector_main.interface/1 (46 ms)
 [ RUN      ] BarcodeDetector_main.interface/2, where GetParam() = "single/bottle_1.jpg"
-[       OK ] BarcodeDetector_main.interface/2 (27 ms)
+[       OK ] BarcodeDetector_main.interface/2 (28 ms)
 [ RUN      ] BarcodeDetector_main.interface/3, where GetParam() = "single/bottle_2.jpg"
 [       OK ] BarcodeDetector_main.interface/3 (27 ms)
-[----------] 4 tests from BarcodeDetector_main (160 ms total)
+[----------] 4 tests from BarcodeDetector_main (163 ms total)
 
 [----------] 9 tests from BarcodeDetector_parameters_tune
 [ RUN      ] BarcodeDetector_parameters_tune.accuracy/0, where GetParam() = (512, 0.01, 0.03, 0.06, 0.08, 64)
-[       OK ] BarcodeDetector_parameters_tune.accuracy/0 (20 ms)
+[       OK ] BarcodeDetector_parameters_tune.accuracy/0 (21 ms)
 [ RUN      ] BarcodeDetector_parameters_tune.accuracy/1, where GetParam() = (512, 0.01, 0.03, 0.06, 0.08, 1024)
-[       OK ] BarcodeDetector_parameters_tune.accuracy/1 (19 ms)
+[       OK ] BarcodeDetector_parameters_tune.accuracy/1 (21 ms)
 [ RUN      ] BarcodeDetector_parameters_tune.accuracy/2, where GetParam() = (512, 0.01, 0.03, 0.06, 0.08, 2048)
-[       OK ] BarcodeDetector_parameters_tune.accuracy/2 (20 ms)
+[       OK ] BarcodeDetector_parameters_tune.accuracy/2 (21 ms)
 [ RUN      ] BarcodeDetector_parameters_tune.accuracy/3, where GetParam() = (128, 0.01, 0.03, 0.06, 0.08, 64)
 [       OK ] BarcodeDetector_parameters_tune.accuracy/3 (22 ms)
 [ RUN      ] BarcodeDetector_parameters_tune.accuracy/4, where GetParam() = (64, 0.01, 0.03, 0.06, 0.08, 64)
-[       OK ] BarcodeDetector_parameters_tune.accuracy/4 (21 ms)
+[       OK ] BarcodeDetector_parameters_tune.accuracy/4 (20 ms)
 [ RUN      ] BarcodeDetector_parameters_tune.accuracy/5, where GetParam() = (128, 1e-07, 64)
 [       OK ] BarcodeDetector_parameters_tune.accuracy/5 (21 ms)
 [ RUN      ] BarcodeDetector_parameters_tune.accuracy/6, where GetParam() = (128, 1e-07, 0.0001, 64)
@@ -384,12 +384,12 @@ detector
 [ RUN      ] BarcodeDetector_parameters_tune.accuracy/7, where GetParam() = (128, 1e-07, 0.1, 64)
 [       OK ] BarcodeDetector_parameters_tune.accuracy/7 (21 ms)
 [ RUN      ] BarcodeDetector_parameters_tune.accuracy/8, where GetParam() = (512, 0.1, 64)
-[       OK ] BarcodeDetector_parameters_tune.accuracy/8 (19 ms)
-[----------] 9 tests from BarcodeDetector_parameters_tune (186 ms total)
+[       OK ] BarcodeDetector_parameters_tune.accuracy/8 (21 ms)
+[----------] 9 tests from BarcodeDetector_parameters_tune (191 ms total)
 
 [----------] 7 tests from CharucoDraw
 [ RUN      ] CharucoDraw.testDrawDetected/0, where GetParam() = 8
-[       OK ] CharucoDraw.testDrawDetected/0 (1 ms)
+[       OK ] CharucoDraw.testDrawDetected/0 (0 ms)
 [ RUN      ] CharucoDraw.testDrawDetected/1, where GetParam() = 9
 [       OK ] CharucoDraw.testDrawDetected/1 (0 ms)
 [ RUN      ] CharucoDraw.testDrawDetected/2, where GetParam() = 10
@@ -401,18 +401,18 @@ detector
 [ RUN      ] CharucoDraw.testDrawDetected/5, where GetParam() = 13
 [       OK ] CharucoDraw.testDrawDetected/5 (0 ms)
 [ RUN      ] CharucoDraw.testDrawDetected/6, where GetParam() = 14
-[       OK ] CharucoDraw.testDrawDetected/6 (1 ms)
-[----------] 7 tests from CharucoDraw (2 ms total)
+[       OK ] CharucoDraw.testDrawDetected/6 (0 ms)
+[----------] 7 tests from CharucoDraw (0 ms total)
 
 [----------] 8 tests from CharucoBoard
 [ RUN      ] CharucoBoard.testWrongSizeDetection/0, where GetParam() = 3x2
-[       OK ] CharucoBoard.testWrongSizeDetection/0 (0 ms)
+[       OK ] CharucoBoard.testWrongSizeDetection/0 (1 ms)
 [ RUN      ] CharucoBoard.testWrongSizeDetection/1, where GetParam() = 3x2
-[       OK ] CharucoBoard.testWrongSizeDetection/1 (1 ms)
+[       OK ] CharucoBoard.testWrongSizeDetection/1 (0 ms)
 [ RUN      ] CharucoBoard.testWrongSizeDetection/2, where GetParam() = 6x2
-[       OK ] CharucoBoard.testWrongSizeDetection/2 (0 ms)
+[       OK ] CharucoBoard.testWrongSizeDetection/2 (1 ms)
 [ RUN      ] CharucoBoard.testWrongSizeDetection/3, where GetParam() = 2x6
-[       OK ] CharucoBoard.testWrongSizeDetection/3 (1 ms)
+[       OK ] CharucoBoard.testWrongSizeDetection/3 (0 ms)
 [ RUN      ] CharucoBoard.testWrongSizeDetection/4, where GetParam() = 3x4
 [       OK ] CharucoBoard.testWrongSizeDetection/4 (1 ms)
 [ RUN      ] CharucoBoard.testWrongSizeDetection/5, where GetParam() = 4x3
@@ -420,8 +420,8 @@ detector
 [ RUN      ] CharucoBoard.testWrongSizeDetection/6, where GetParam() = 7x3
 [       OK ] CharucoBoard.testWrongSizeDetection/6 (1 ms)
 [ RUN      ] CharucoBoard.testWrongSizeDetection/7, where GetParam() = 3x7
-[       OK ] CharucoBoard.testWrongSizeDetection/7 (1 ms)
-[----------] 8 tests from CharucoBoard (6 ms total)
+[       OK ] CharucoBoard.testWrongSizeDetection/7 (2 ms)
+[----------] 8 tests from CharucoBoard (7 ms total)
 
 [----------] 3 tests from CharucoBoardGenerate
 [ RUN      ] CharucoBoardGenerate.issue_24806/0, where GetParam() = (7x4, 13, 400x300, 24)
@@ -434,99 +434,99 @@ detector
 
 [----------] 29 tests from Objdetect_QRCode
 [ RUN      ] Objdetect_QRCode.regression/0, where GetParam() = "version_1_down.jpg"
-[       OK ] Objdetect_QRCode.regression/0 (24 ms)
+[       OK ] Objdetect_QRCode.regression/0 (28 ms)
 [ RUN      ] Objdetect_QRCode.regression/1, where GetParam() = "version_1_left.jpg"
-[       OK ] Objdetect_QRCode.regression/1 (20 ms)
+[       OK ] Objdetect_QRCode.regression/1 (23 ms)
 [ RUN      ] Objdetect_QRCode.regression/2, where GetParam() = "version_1_right.jpg"
-[       OK ] Objdetect_QRCode.regression/2 (21 ms)
+[       OK ] Objdetect_QRCode.regression/2 (22 ms)
 [ RUN      ] Objdetect_QRCode.regression/3, where GetParam() = "version_1_up.jpg"
-[       OK ] Objdetect_QRCode.regression/3 (21 ms)
+[       OK ] Objdetect_QRCode.regression/3 (22 ms)
 [ RUN      ] Objdetect_QRCode.regression/4, where GetParam() = "version_1_top.jpg"
-[       OK ] Objdetect_QRCode.regression/4 (21 ms)
+[       OK ] Objdetect_QRCode.regression/4 (23 ms)
 [ RUN      ] Objdetect_QRCode.regression/5, where GetParam() = "version_2_down.jpg"
 [       OK ] Objdetect_QRCode.regression/5 (22 ms)
 [ RUN      ] Objdetect_QRCode.regression/6, where GetParam() = "version_2_left.jpg"
 [       OK ] Objdetect_QRCode.regression/6 (23 ms)
 [ RUN      ] Objdetect_QRCode.regression/7, where GetParam() = "version_2_right.jpg"
-[       OK ] Objdetect_QRCode.regression/7 (20 ms)
+[       OK ] Objdetect_QRCode.regression/7 (23 ms)
 [ RUN      ] Objdetect_QRCode.regression/8, where GetParam() = "version_2_up.jpg"
 [       OK ] Objdetect_QRCode.regression/8 (23 ms)
 [ RUN      ] Objdetect_QRCode.regression/9, where GetParam() = "version_2_top.jpg"
-[       OK ] Objdetect_QRCode.regression/9 (22 ms)
+[       OK ] Objdetect_QRCode.regression/9 (24 ms)
 [ RUN      ] Objdetect_QRCode.regression/10, where GetParam() = "version_3_down.jpg"
 [       OK ] Objdetect_QRCode.regression/10 (23 ms)
 [ RUN      ] Objdetect_QRCode.regression/11, where GetParam() = "version_3_left.jpg"
-[       OK ] Objdetect_QRCode.regression/11 (22 ms)
+[       OK ] Objdetect_QRCode.regression/11 (23 ms)
 [ RUN      ] Objdetect_QRCode.regression/12, where GetParam() = "version_3_right.jpg"
-[       OK ] Objdetect_QRCode.regression/12 (21 ms)
+[       OK ] Objdetect_QRCode.regression/12 (22 ms)
 [ RUN      ] Objdetect_QRCode.regression/13, where GetParam() = "version_3_up.jpg"
-[       OK ] Objdetect_QRCode.regression/13 (22 ms)
+[       OK ] Objdetect_QRCode.regression/13 (23 ms)
 [ RUN      ] Objdetect_QRCode.regression/14, where GetParam() = "version_3_top.jpg"
-[       OK ] Objdetect_QRCode.regression/14 (21 ms)
+[       OK ] Objdetect_QRCode.regression/14 (22 ms)
 [ RUN      ] Objdetect_QRCode.regression/15, where GetParam() = "version_4_down.jpg"
-[       OK ] Objdetect_QRCode.regression/15 (21 ms)
+[       OK ] Objdetect_QRCode.regression/15 (23 ms)
 [ RUN      ] Objdetect_QRCode.regression/16, where GetParam() = "version_4_left.jpg"
-[       OK ] Objdetect_QRCode.regression/16 (22 ms)
+[       OK ] Objdetect_QRCode.regression/16 (23 ms)
 [ RUN      ] Objdetect_QRCode.regression/17, where GetParam() = "version_4_right.jpg"
 [       OK ] Objdetect_QRCode.regression/17 (22 ms)
 [ RUN      ] Objdetect_QRCode.regression/18, where GetParam() = "version_4_up.jpg"
-[       OK ] Objdetect_QRCode.regression/18 (21 ms)
+[       OK ] Objdetect_QRCode.regression/18 (23 ms)
 [ RUN      ] Objdetect_QRCode.regression/19, where GetParam() = "version_4_top.jpg"
-[       OK ] Objdetect_QRCode.regression/19 (21 ms)
+[       OK ] Objdetect_QRCode.regression/19 (22 ms)
 [ RUN      ] Objdetect_QRCode.regression/20, where GetParam() = "version_5_down.jpg"
 [       OK ] Objdetect_QRCode.regression/20 (22 ms)
 [ RUN      ] Objdetect_QRCode.regression/21, where GetParam() = "version_5_left.jpg"
-[       OK ] Objdetect_QRCode.regression/21 (22 ms)
+[       OK ] Objdetect_QRCode.regression/21 (23 ms)
 [ RUN      ] Objdetect_QRCode.regression/22, where GetParam() = "version_5_up.jpg"
-[       OK ] Objdetect_QRCode.regression/22 (20 ms)
+[       OK ] Objdetect_QRCode.regression/22 (22 ms)
 [ RUN      ] Objdetect_QRCode.regression/23, where GetParam() = "version_5_top.jpg"
 [       OK ] Objdetect_QRCode.regression/23 (22 ms)
 [ RUN      ] Objdetect_QRCode.regression/24, where GetParam() = "russian.jpg"
-[       OK ] Objdetect_QRCode.regression/24 (22 ms)
+[       OK ] Objdetect_QRCode.regression/24 (23 ms)
 [ RUN      ] Objdetect_QRCode.regression/25, where GetParam() = "kanji.jpg"
-[       OK ] Objdetect_QRCode.regression/25 (22 ms)
+[       OK ] Objdetect_QRCode.regression/25 (23 ms)
 [ RUN      ] Objdetect_QRCode.regression/26, where GetParam() = "link_github_ocv.jpg"
-[       OK ] Objdetect_QRCode.regression/26 (21 ms)
+[       OK ] Objdetect_QRCode.regression/26 (23 ms)
 [ RUN      ] Objdetect_QRCode.regression/27, where GetParam() = "link_ocv.jpg"
 [       OK ] Objdetect_QRCode.regression/27 (22 ms)
 [ RUN      ] Objdetect_QRCode.regression/28, where GetParam() = "link_wiki_cv.jpg"
-[       OK ] Objdetect_QRCode.regression/28 (21 ms)
-[----------] 29 tests from Objdetect_QRCode (627 ms total)
+[       OK ] Objdetect_QRCode.regression/28 (24 ms)
+[----------] 29 tests from Objdetect_QRCode (663 ms total)
 
 [----------] 4 tests from Objdetect_QRCode_Close
 [ RUN      ] Objdetect_QRCode_Close.regression/0, where GetParam() = "close_1.png"
-[ WARN:0@21.671] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Close.regression/0 (127 ms)
+[ WARN:0@21.738] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Close.regression/0 (132 ms)
 [ RUN      ] Objdetect_QRCode_Close.regression/1, where GetParam() = "close_2.png"
-[ WARN:0@21.805] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Close.regression/1 (134 ms)
+[ WARN:0@21.875] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Close.regression/1 (138 ms)
 [ RUN      ] Objdetect_QRCode_Close.regression/2, where GetParam() = "close_3.png"
-[ WARN:0@21.926] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Close.regression/2 (121 ms)
+[ WARN:0@22.001] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Close.regression/2 (126 ms)
 [ RUN      ] Objdetect_QRCode_Close.regression/3, where GetParam() = "close_4.png"
-[       OK ] Objdetect_QRCode_Close.regression/3 (126 ms)
-[----------] 4 tests from Objdetect_QRCode_Close (508 ms total)
+[       OK ] Objdetect_QRCode_Close.regression/3 (127 ms)
+[----------] 4 tests from Objdetect_QRCode_Close (523 ms total)
 
 [----------] 5 tests from Objdetect_QRCode_Monitor
 [ RUN      ] Objdetect_QRCode_Monitor.regression/0, where GetParam() = "monitor_1.png"
-[ WARN:0@22.161] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Monitor.regression/0 (110 ms)
+[ WARN:0@22.236] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Monitor.regression/0 (108 ms)
 [ RUN      ] Objdetect_QRCode_Monitor.regression/1, where GetParam() = "monitor_2.png"
-[ WARN:0@22.302] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Monitor.regression/1 (140 ms)
+[ WARN:0@22.376] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Monitor.regression/1 (138 ms)
 [ RUN      ] Objdetect_QRCode_Monitor.regression/2, where GetParam() = "monitor_3.png"
-[ WARN:0@22.432] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Monitor.regression/2 (129 ms)
+[ WARN:0@22.509] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Monitor.regression/2 (134 ms)
 [ RUN      ] Objdetect_QRCode_Monitor.regression/3, where GetParam() = "monitor_4.png"
-[       OK ] Objdetect_QRCode_Monitor.regression/3 (124 ms)
+[       OK ] Objdetect_QRCode_Monitor.regression/3 (127 ms)
 [ RUN      ] Objdetect_QRCode_Monitor.regression/4, where GetParam() = "monitor_5.png"
-[ WARN:0@22.689] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Monitor.regression/4 (132 ms)
-[----------] 5 tests from Objdetect_QRCode_Monitor (636 ms total)
+[ WARN:0@22.771] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Monitor.regression/4 (135 ms)
+[----------] 5 tests from Objdetect_QRCode_Monitor (642 ms total)
 
 [----------] 6 tests from Objdetect_QRCode_Curved
 [ RUN      ] Objdetect_QRCode_Curved.regression/0, where GetParam() = "curved_1.jpg"
-[ WARN:0@22.718] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@22.801] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
 [       OK ] Objdetect_QRCode_Curved.regression/0 (30 ms)
 [ RUN      ] Objdetect_QRCode_Curved.regression/1, where GetParam() = "curved_2.jpg"
 [       OK ] Objdetect_QRCode_Curved.regression/1 (20 ms)
@@ -535,132 +535,132 @@ detector
 [ RUN      ] Objdetect_QRCode_Curved.regression/3, where GetParam() = "curved_5.jpg"
 [       OK ] Objdetect_QRCode_Curved.regression/3 (20 ms)
 [ RUN      ] Objdetect_QRCode_Curved.regression/4, where GetParam() = "curved_7.jpg"
-[       OK ] Objdetect_QRCode_Curved.regression/4 (31 ms)
+[       OK ] Objdetect_QRCode_Curved.regression/4 (33 ms)
 [ RUN      ] Objdetect_QRCode_Curved.regression/5, where GetParam() = "curved_8.jpg"
-[       OK ] Objdetect_QRCode_Curved.regression/5 (31 ms)
-[----------] 6 tests from Objdetect_QRCode_Curved (157 ms total)
+[       OK ] Objdetect_QRCode_Curved.regression/5 (32 ms)
+[----------] 6 tests from Objdetect_QRCode_Curved (160 ms total)
 
 [----------] 16 tests from Objdetect_QRCode_Multi
 [ RUN      ] Objdetect_QRCode_Multi.regression/0, where GetParam() = ("2_qrcodes.png", "contours_based")
-[ WARN:0@22.898] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:130@22.898] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Multi.regression/0 (53 ms)
+[ WARN:0@22.984] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:130@22.985] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Multi.regression/0 (54 ms)
 [ RUN      ] Objdetect_QRCode_Multi.regression/1, where GetParam() = ("2_qrcodes.png", "aruco_based")
-[ WARN:0@22.938] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:129@22.939] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Multi.regression/1 (41 ms)
+[ WARN:0@23.026] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:129@23.028] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Multi.regression/1 (43 ms)
 [ RUN      ] Objdetect_QRCode_Multi.regression/2, where GetParam() = ("3_close_qrcodes.png", "contours_based")
-[ WARN:0@22.969] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:129@22.970] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@23.059] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:129@23.059] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
 [       OK ] Objdetect_QRCode_Multi.regression/2 (31 ms)
 [ RUN      ] Objdetect_QRCode_Multi.regression/3, where GetParam() = ("3_close_qrcodes.png", "aruco_based")
-[ WARN:0@22.988] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:129@22.989] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Multi.regression/3 (18 ms)
+[ WARN:0@23.076] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:129@23.077] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Multi.regression/3 (17 ms)
 [ RUN      ] Objdetect_QRCode_Multi.regression/4, where GetParam() = ("3_qrcodes.png", "contours_based")
-[ WARN:0@23.036] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:131@23.036] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:129@23.036] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Multi.regression/4 (48 ms)
+[ WARN:0@23.124] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:129@23.125] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:130@23.125] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Multi.regression/4 (49 ms)
 [ RUN      ] Objdetect_QRCode_Multi.regression/5, where GetParam() = ("3_qrcodes.png", "aruco_based")
-[ WARN:0@23.064] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:129@23.065] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:130@23.066] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Multi.regression/5 (30 ms)
+[ WARN:0@23.153] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:130@23.153] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:129@23.154] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Multi.regression/5 (28 ms)
 [ RUN      ] Objdetect_QRCode_Multi.regression/6, where GetParam() = ("4_qrcodes.png", "contours_based")
-[ WARN:0@23.099] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:131@23.100] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:129@23.100] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:130@23.100] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:131@23.186] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:129@23.186] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@23.186] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:130@23.186] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
 [       OK ] Objdetect_QRCode_Multi.regression/6 (33 ms)
 [ RUN      ] Objdetect_QRCode_Multi.regression/7, where GetParam() = ("4_qrcodes.png", "aruco_based")
-[ WARN:131@23.118] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:0@23.118] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:130@23.118] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:129@23.118] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:131@23.204] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@23.204] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:130@23.205] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:129@23.205] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
 [       OK ] Objdetect_QRCode_Multi.regression/7 (18 ms)
 [ RUN      ] Objdetect_QRCode_Multi.regression/8, where GetParam() = ("5_qrcodes.png", "contours_based")
-[ WARN:129@23.156] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:130@23.156] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:131@23.156] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:0@23.156] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:132@23.157] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Multi.regression/8 (39 ms)
+[ WARN:0@23.243] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:130@23.243] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:129@23.244] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:131@23.246] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:132@23.247] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Multi.regression/8 (44 ms)
 [ RUN      ] Objdetect_QRCode_Multi.regression/9, where GetParam() = ("5_qrcodes.png", "aruco_based")
 [     SKIP ] 5_qrcodes.png is disabled sample for method aruco_based
 [       OK ] Objdetect_QRCode_Multi.regression/9 (4 ms)
 [ RUN      ] Objdetect_QRCode_Multi.regression/10, where GetParam() = ("6_qrcodes.png", "contours_based")
-[       OK ] Objdetect_QRCode_Multi.regression/10 (60 ms)
+[       OK ] Objdetect_QRCode_Multi.regression/10 (65 ms)
 [ RUN      ] Objdetect_QRCode_Multi.regression/11, where GetParam() = ("6_qrcodes.png", "aruco_based")
-[       OK ] Objdetect_QRCode_Multi.regression/11 (38 ms)
+[       OK ] Objdetect_QRCode_Multi.regression/11 (44 ms)
 [ RUN      ] Objdetect_QRCode_Multi.regression/12, where GetParam() = ("7_qrcodes.png", "contours_based")
-[ WARN:131@23.325] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:134@23.325] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:133@23.325] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:0@23.325] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:132@23.325] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:129@23.325] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:130@23.325] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Multi.regression/12 (67 ms)
+[ WARN:0@23.429] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:133@23.431] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:130@23.431] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:134@23.431] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:129@23.431] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:132@23.436] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:131@23.436] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Multi.regression/12 (75 ms)
 [ RUN      ] Objdetect_QRCode_Multi.regression/13, where GetParam() = ("7_qrcodes.png", "aruco_based")
-[ WARN:133@23.365] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:132@23.365] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:131@23.365] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:130@23.365] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:0@23.365] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:134@23.365] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:129@23.375] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Multi.regression/13 (49 ms)
+[ WARN:0@23.475] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:133@23.476] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:134@23.476] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:130@23.476] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:129@23.476] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:132@23.482] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:131@23.492] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Multi.regression/13 (56 ms)
 [ RUN      ] Objdetect_QRCode_Multi.regression/14, where GetParam() = ("8_close_qrcodes.png", "contours_based")
-[ WARN:0@23.541] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:131@23.542] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:134@23.543] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:133@23.545] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:130@23.546] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:132@23.546] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:129@23.546] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:136@23.548] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Multi.regression/14 (173 ms)
+[ WARN:134@23.678] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@23.678] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:130@23.681] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:129@23.682] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:135@23.682] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:136@23.684] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:131@23.697] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:132@23.699] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Multi.regression/14 (206 ms)
 [ RUN      ] Objdetect_QRCode_Multi.regression/15, where GetParam() = ("8_close_qrcodes.png", "aruco_based")
-[ WARN:131@23.660] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:134@23.661] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:0@23.663] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:133@23.663] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:130@23.664] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:129@23.664] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:132@23.665] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:135@23.667] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_Multi.regression/15 (119 ms)
-[----------] 16 tests from Objdetect_QRCode_Multi (821 ms total)
+[ WARN:134@23.810] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:135@23.814] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:129@23.816] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:130@23.817] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:133@23.817] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:131@23.818] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:0@23.825] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:132@23.831] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_Multi.regression/15 (132 ms)
+[----------] 16 tests from Objdetect_QRCode_Multi (899 ms total)
 
 [----------] 2 tests from Objdetect_QRCode_detectMulti
 [ RUN      ] Objdetect_QRCode_detectMulti.detect_regression_16961/0, where GetParam() = "contours_based"
-[       OK ] Objdetect_QRCode_detectMulti.detect_regression_16961/0 (130 ms)
+[       OK ] Objdetect_QRCode_detectMulti.detect_regression_16961/0 (142 ms)
 [ RUN      ] Objdetect_QRCode_detectMulti.detect_regression_16961/1, where GetParam() = "aruco_based"
-[       OK ] Objdetect_QRCode_detectMulti.detect_regression_16961/1 (68 ms)
-[----------] 2 tests from Objdetect_QRCode_detectMulti (198 ms total)
+[       OK ] Objdetect_QRCode_detectMulti.detect_regression_16961/1 (70 ms)
+[----------] 2 tests from Objdetect_QRCode_detectMulti (212 ms total)
 
 [----------] 8 tests from Objdetect_QRCode_detectAndDecodeMulti
 [ RUN      ] Objdetect_QRCode_detectAndDecodeMulti.check_output_parameters_type_19363/0, where GetParam() = "contours_based"
-[ WARN:136@24.038] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[ WARN:0@24.039] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_detectAndDecodeMulti.check_output_parameters_type_19363/0 (180 ms)
+[ WARN:0@24.230] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[ WARN:131@24.233] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_detectAndDecodeMulti.check_output_parameters_type_19363/0 (201 ms)
 [ RUN      ] Objdetect_QRCode_detectAndDecodeMulti.check_output_parameters_type_19363/1, where GetParam() = "aruco_based"
-[ WARN:131@24.155] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
-[       OK ] Objdetect_QRCode_detectAndDecodeMulti.check_output_parameters_type_19363/1 (130 ms)
+[ WARN:130@24.358] global qrcode.cpp:2929 decodingProcess QR: ECI is not supported properly
+[       OK ] Objdetect_QRCode_detectAndDecodeMulti.check_output_parameters_type_19363/1 (127 ms)
 [ RUN      ] Objdetect_QRCode_detectAndDecodeMulti.decode_9_qrcodes_version7/0, where GetParam() = "contours_based"
-[       OK ] Objdetect_QRCode_detectAndDecodeMulti.decode_9_qrcodes_version7/0 (372 ms)
+[       OK ] Objdetect_QRCode_detectAndDecodeMulti.decode_9_qrcodes_version7/0 (387 ms)
 [ RUN      ] Objdetect_QRCode_detectAndDecodeMulti.decode_9_qrcodes_version7/1, where GetParam() = "aruco_based"
-[       OK ] Objdetect_QRCode_detectAndDecodeMulti.decode_9_qrcodes_version7/1 (288 ms)
+[       OK ] Objdetect_QRCode_detectAndDecodeMulti.decode_9_qrcodes_version7/1 (299 ms)
 [ RUN      ] Objdetect_QRCode_detectAndDecodeMulti.detect_regression_24679/0, where GetParam() = "contours_based"
-[       OK ] Objdetect_QRCode_detectAndDecodeMulti.detect_regression_24679/0 (520 ms)
+[       OK ] Objdetect_QRCode_detectAndDecodeMulti.detect_regression_24679/0 (557 ms)
 [ RUN      ] Objdetect_QRCode_detectAndDecodeMulti.detect_regression_24679/1, where GetParam() = "aruco_based"
 [       OK ] Objdetect_QRCode_detectAndDecodeMulti.detect_regression_24679/1 (463 ms)
 [ RUN      ] Objdetect_QRCode_detectAndDecodeMulti.detect_regression_24011/0, where GetParam() = "contours_based"
-[       OK ] Objdetect_QRCode_detectAndDecodeMulti.detect_regression_24011/0 (95 ms)
+[       OK ] Objdetect_QRCode_detectAndDecodeMulti.detect_regression_24011/0 (99 ms)
 [ RUN      ] Objdetect_QRCode_detectAndDecodeMulti.detect_regression_24011/1, where GetParam() = "aruco_based"
-[       OK ] Objdetect_QRCode_detectAndDecodeMulti.detect_regression_24011/1 (56 ms)
-[----------] 8 tests from Objdetect_QRCode_detectAndDecodeMulti (2104 ms total)
+[       OK ] Objdetect_QRCode_detectAndDecodeMulti.detect_regression_24011/1 (58 ms)
+[----------] 8 tests from Objdetect_QRCode_detectAndDecodeMulti (2192 ms total)
 
 [----------] 9 tests from Objdetect_QRCode_Encode
 [ RUN      ] Objdetect_QRCode_Encode.regression/0, where GetParam() = "version1_mode1.png"
@@ -672,16 +672,16 @@ detector
 [ RUN      ] Objdetect_QRCode_Encode.regression/3, where GetParam() = "version2_mode1.png"
 [       OK ] Objdetect_QRCode_Encode.regression/3 (11 ms)
 [ RUN      ] Objdetect_QRCode_Encode.regression/4, where GetParam() = "version2_mode2.png"
-[       OK ] Objdetect_QRCode_Encode.regression/4 (10 ms)
+[       OK ] Objdetect_QRCode_Encode.regression/4 (11 ms)
 [ RUN      ] Objdetect_QRCode_Encode.regression/5, where GetParam() = "version2_mode4.png"
-[       OK ] Objdetect_QRCode_Encode.regression/5 (15 ms)
+[       OK ] Objdetect_QRCode_Encode.regression/5 (11 ms)
 [ RUN      ] Objdetect_QRCode_Encode.regression/6, where GetParam() = "version3_mode2.png"
-[       OK ] Objdetect_QRCode_Encode.regression/6 (14 ms)
+[       OK ] Objdetect_QRCode_Encode.regression/6 (15 ms)
 [ RUN      ] Objdetect_QRCode_Encode.regression/7, where GetParam() = "version3_mode4.png"
 [       OK ] Objdetect_QRCode_Encode.regression/7 (15 ms)
 [ RUN      ] Objdetect_QRCode_Encode.regression/8, where GetParam() = "version4_mode4.png"
-[       OK ] Objdetect_QRCode_Encode.regression/8 (18 ms)
-[----------] 9 tests from Objdetect_QRCode_Encode (110 ms total)
+[       OK ] Objdetect_QRCode_Encode.regression/8 (19 ms)
+[----------] 9 tests from Objdetect_QRCode_Encode (108 ms total)
 
 [----------] 5 tests from Objdetect_QRCode_Encode_ECI
 [ RUN      ] Objdetect_QRCode_Encode_ECI.regression/0, where GetParam() = "version1_mode7.png"
@@ -691,29 +691,29 @@ detector
 [ RUN      ] Objdetect_QRCode_Encode_ECI.regression/2, where GetParam() = "version3_mode7.png"
 [       OK ] Objdetect_QRCode_Encode_ECI.regression/2 (15 ms)
 [ RUN      ] Objdetect_QRCode_Encode_ECI.regression/3, where GetParam() = "version4_mode7.png"
-[       OK ] Objdetect_QRCode_Encode_ECI.regression/3 (17 ms)
+[       OK ] Objdetect_QRCode_Encode_ECI.regression/3 (19 ms)
 [ RUN      ] Objdetect_QRCode_Encode_ECI.regression/4, where GetParam() = "version5_mode7.png"
 [       OK ] Objdetect_QRCode_Encode_ECI.regression/4 (24 ms)
-[----------] 5 tests from Objdetect_QRCode_Encode_ECI (75 ms total)
+[----------] 5 tests from Objdetect_QRCode_Encode_ECI (77 ms total)
 
 [----------] 3 tests from Objdetect_QRCode_Encode_Decode_Structured_Append_Parameterized
 [ RUN      ] Objdetect_QRCode_Encode_Decode_Structured_Append_Parameterized.regression_22205/0, where GetParam() = QRCodeEncoder::EncodeMode::MODE_NUMERIC
-[       OK ] Objdetect_QRCode_Encode_Decode_Structured_Append_Parameterized.regression_22205/0 (45 ms)
+[       OK ] Objdetect_QRCode_Encode_Decode_Structured_Append_Parameterized.regression_22205/0 (48 ms)
 [ RUN      ] Objdetect_QRCode_Encode_Decode_Structured_Append_Parameterized.regression_22205/1, where GetParam() = QRCodeEncoder::EncodeMode::MODE_ALPHANUMERIC
-[       OK ] Objdetect_QRCode_Encode_Decode_Structured_Append_Parameterized.regression_22205/1 (47 ms)
+[       OK ] Objdetect_QRCode_Encode_Decode_Structured_Append_Parameterized.regression_22205/1 (48 ms)
 [ RUN      ] Objdetect_QRCode_Encode_Decode_Structured_Append_Parameterized.regression_22205/2, where GetParam() = QRCodeEncoder::EncodeMode::MODE_BYTE
-[       OK ] Objdetect_QRCode_Encode_Decode_Structured_Append_Parameterized.regression_22205/2 (46 ms)
-[----------] 3 tests from Objdetect_QRCode_Encode_Decode_Structured_Append_Parameterized (138 ms total)
+[       OK ] Objdetect_QRCode_Encode_Decode_Structured_Append_Parameterized.regression_22205/2 (48 ms)
+[----------] 3 tests from Objdetect_QRCode_Encode_Decode_Structured_Append_Parameterized (144 ms total)
 
 [----------] 2 tests from Objdetect_QRCode_decoding
 [ RUN      ] Objdetect_QRCode_decoding.error_correction/0, where GetParam() = ("err_correct_1M.png", "New")
-[       OK ] Objdetect_QRCode_decoding.error_correction/0 (5 ms)
+[       OK ] Objdetect_QRCode_decoding.error_correction/0 (4 ms)
 [ RUN      ] Objdetect_QRCode_decoding.error_correction/1, where GetParam() = ("err_correct_2L.png", "Version 2 QR Code Test Image")
-[       OK ] Objdetect_QRCode_decoding.error_correction/1 (4 ms)
+[       OK ] Objdetect_QRCode_decoding.error_correction/1 (5 ms)
 [----------] 2 tests from Objdetect_QRCode_decoding (9 ms total)
 
 [----------] Global test environment tear-down
 [ SKIPSTAT ] 3 tests skipped
 [ SKIPSTAT ] TAG='skip_other' skip 3 tests
-[==========] 212 tests from 64 test cases ran. (26226 ms total)
+[==========] 212 tests from 64 test cases ran. (26496 ms total)
 [  PASSED  ] 212 tests.

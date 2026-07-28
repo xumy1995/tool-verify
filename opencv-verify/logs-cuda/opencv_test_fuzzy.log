@@ -2,21 +2,22 @@ CTEST_FULL_OUTPUT
 OpenCV version: 4.14.0-pre
 OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
-Compiler: /usr/bin/c++  (ver 11.4.0)
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
 Algorithm hint: ALGO_HINT_ACCURATE
 HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
 CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
 Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
 Intel(R) IPP features code: 0x8000
+OpenCL is disabled
 TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [==========] Running 12 tests from 3 test cases.
 [----------] Global test environment set-up.
 [----------] 5 tests from fuzzy_f0
 [ RUN      ] fuzzy_f0.components
-[       OK ] fuzzy_f0.components (11 ms)
+[       OK ] fuzzy_f0.components (12 ms)
 [ RUN      ] fuzzy_f0.inversion
-[       OK ] fuzzy_f0.inversion (1 ms)
+[       OK ] fuzzy_f0.inversion (0 ms)
 [ RUN      ] fuzzy_f0.process
 [       OK ] fuzzy_f0.process (0 ms)
 [ RUN      ] fuzzy_f0.FL_process
@@ -27,9 +28,9 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 
 [----------] 4 tests from fuzzy_f1
 [ RUN      ] fuzzy_f1.elements
-[       OK ] fuzzy_f1.elements (3 ms)
+[       OK ] fuzzy_f1.elements (2 ms)
 [ RUN      ] fuzzy_f1.components
-[       OK ] fuzzy_f1.components (0 ms)
+[       OK ] fuzzy_f1.components (1 ms)
 [ RUN      ] fuzzy_f1.process
 [       OK ] fuzzy_f1.process (1 ms)
 [ RUN      ] fuzzy_f1.inversion
@@ -38,13 +39,13 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 
 [----------] 3 tests from fuzzy_image
 [ RUN      ] fuzzy_image.inpainting
-[       OK ] fuzzy_image.inpainting (1195 ms)
+[       OK ] fuzzy_image.inpainting (1207 ms)
 [ RUN      ] fuzzy_image.filtering
-[       OK ] fuzzy_image.filtering (31 ms)
+[       OK ] fuzzy_image.filtering (33 ms)
 [ RUN      ] fuzzy_image.kernel
 [       OK ] fuzzy_image.kernel (0 ms)
-[----------] 3 tests from fuzzy_image (1226 ms total)
+[----------] 3 tests from fuzzy_image (1240 ms total)
 
 [----------] Global test environment tear-down
-[==========] 12 tests from 3 test cases ran. (1301 ms total)
+[==========] 12 tests from 3 test cases ran. (1315 ms total)
 [  PASSED  ] 12 tests.

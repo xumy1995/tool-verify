@@ -2,20 +2,21 @@ CTEST_FULL_OUTPUT
 OpenCV version: 4.14.0-pre
 OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
-Compiler: /usr/bin/c++  (ver 11.4.0)
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
 Algorithm hint: ALGO_HINT_ACCURATE
 HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
 CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
 Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
 Intel(R) IPP features code: 0x8000
+OpenCL is disabled
 TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [==========] Running 8 tests from 5 test cases.
 [----------] Global test environment set-up.
 [----------] 1 test from intensity_transform_logTransform
 [ RUN      ] intensity_transform_logTransform.accuracy
-[       OK ] intensity_transform_logTransform.accuracy (10 ms)
-[----------] 1 test from intensity_transform_logTransform (10 ms total)
+[       OK ] intensity_transform_logTransform.accuracy (12 ms)
+[----------] 1 test from intensity_transform_logTransform (12 ms total)
 
 [----------] 2 tests from intensity_transform_gammaCorrection
 [ RUN      ] intensity_transform_gammaCorrection.accuracy1
@@ -44,5 +45,5 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [----------] 3 tests from intensity_transform_BIMEF (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 8 tests from 5 test cases ran. (10 ms total)
+[==========] 8 tests from 5 test cases ran. (12 ms total)
 [  PASSED  ] 8 tests.

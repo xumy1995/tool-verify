@@ -48,12 +48,13 @@ CTEST_FULL_OUTPUT
 OpenCV version: 4.14.0-pre
 OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
-Compiler: /usr/bin/c++  (ver 11.4.0)
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
 Algorithm hint: ALGO_HINT_ACCURATE
 HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
 CPU features: SSE? SSE2? SSE3? *SSE4.1? *SSE4.2? *AVX? *FP16? *AVX2? *AVX512-SKX?
 Intel(R) IPP version: disabled
+OpenCL is disabled
 TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [==========] Running 0 tests from 0 test cases.
 [==========] 0 tests from 0 test cases ran. (0 ms total)

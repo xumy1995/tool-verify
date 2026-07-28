@@ -2,228 +2,251 @@ CTEST_FULL_OUTPUT
 OpenCV version: 4.14.0-pre
 OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
-Compiler: /usr/bin/c++  (ver 11.4.0)
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
 Algorithm hint: ALGO_HINT_ACCURATE
 HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
 CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
 Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
 Intel(R) IPP features code: 0x8000
+OpenCL is disabled
 TEST: Skip tests with tags: 'mem_6gb', 'verylong'
-[==========] Running 19 tests from 11 test cases.
+[==========] Running 27 tests from 13 test cases.
 [----------] Global test environment set-up.
+[----------] 4 tests from TSDF_GPU
+[ RUN      ] TSDF_GPU.raycast_normals
+[       OK ] TSDF_GPU.raycast_normals (55 ms)
+[ RUN      ] TSDF_GPU.fetch_points_normals
+[       OK ] TSDF_GPU.fetch_points_normals (14 ms)
+[ RUN      ] TSDF_GPU.fetch_normals
+[       OK ] TSDF_GPU.fetch_normals (26 ms)
+[ RUN      ] TSDF_GPU.valid_points
+[       OK ] TSDF_GPU.valid_points (31 ms)
+[----------] 4 tests from TSDF_GPU (127 ms total)
+
+[----------] 4 tests from HashTSDF_GPU
+[ RUN      ] HashTSDF_GPU.raycast_normals
+[       OK ] HashTSDF_GPU.raycast_normals (61 ms)
+[ RUN      ] HashTSDF_GPU.fetch_points_normals
+[       OK ] HashTSDF_GPU.fetch_points_normals (17 ms)
+[ RUN      ] HashTSDF_GPU.fetch_normals
+[       OK ] HashTSDF_GPU.fetch_normals (20 ms)
+[ RUN      ] HashTSDF_GPU.valid_points
+[       OK ] HashTSDF_GPU.valid_points (22 ms)
+[----------] 4 tests from HashTSDF_GPU (120 ms total)
+
 [----------] 1 test from Rgbd_Normals
 [ RUN      ] Rgbd_Normals.compute
 
 *** FALS
 * float
 1 plane - input 3d points
-Average error: 0.00179103 Speed: 7.98748 ms
-Average error: 0.00223996 Speed: 4.8155 ms
-Average error: 0.00301626 Speed: 4.67275 ms
-Average error: 0.00377082 Speed: 4.76104 ms
-Average error: 0.00258474 Speed: 4.668 ms
+Average error: 0.00179103 Speed: 10.9825 ms
+Average error: 0.00223996 Speed: 5.33262 ms
+Average error: 0.00301626 Speed: 4.50098 ms
+Average error: 0.00377082 Speed: 4.52617 ms
+Average error: 0.00258474 Speed: 4.51849 ms
 mean diff: 0.00268056
 3 planes
-Average error: 0.0201084 Speed: 4.84614 ms
-Average error: 0.0161663 Speed: 4.69295 ms
-Average error: 0.0167598 Speed: 4.79266 ms
-Average error: 0.0167015 Speed: 4.74026 ms
-Average error: 0.018654 Speed: 4.82544 ms
+Average error: 0.0201084 Speed: 4.51144 ms
+Average error: 0.0161663 Speed: 6.34658 ms
+Average error: 0.0167598 Speed: 4.49274 ms
+Average error: 0.0167015 Speed: 4.44244 ms
+Average error: 0.018654 Speed: 4.50131 ms
 mean diff: 0.017678
 * double
 1 plane - input 3d points
-Average error: 0.000141773 Speed: 12.0975 ms
-Average error: 1.02528e-05 Speed: 9.21138 ms
-Average error: 6.40632e-08 Speed: 9.74079 ms
-Average error: 7.25099e-05 Speed: 9.38143 ms
-Average error: 0.000145368 Speed: 8.68567 ms
+Average error: 0.000141773 Speed: 10.2841 ms
+Average error: 1.02528e-05 Speed: 7.76465 ms
+Average error: 6.40632e-08 Speed: 7.98586 ms
+Average error: 7.25099e-05 Speed: 7.72868 ms
+Average error: 0.000145368 Speed: 7.82739 ms
 mean diff: 7.39936e-05
 3 planes
-Average error: 0.0111956 Speed: 9.65647 ms
-Average error: 0.0115107 Speed: 9.23465 ms
-Average error: 0.0148402 Speed: 11.0782 ms
-Average error: 0.0134781 Speed: 8.544 ms
-Average error: 0.014122 Speed: 9.41092 ms
+Average error: 0.0111956 Speed: 7.88598 ms
+Average error: 0.0115107 Speed: 7.97474 ms
+Average error: 0.0148402 Speed: 8.85982 ms
+Average error: 0.0134781 Speed: 8.75785 ms
+Average error: 0.014122 Speed: 7.86187 ms
 mean diff: 0.0130293
 
 *** LINEMOD
 * float
 1 plane - input 3d points
-Average error: 0.00422768 Speed: 8.13009 ms
-Average error: 0.00122821 Speed: 6.18116 ms
-Average error: 0.000966649 Speed: 6.4517 ms
-Average error: 0.000555458 Speed: 6.17851 ms
-Average error: 3.72554e-05 Speed: 6.50626 ms
+Average error: 0.00422768 Speed: 8.00864 ms
+Average error: 0.00122821 Speed: 6.31156 ms
+Average error: 0.000966649 Speed: 6.36729 ms
+Average error: 0.000555458 Speed: 6.22755 ms
+Average error: 3.72554e-05 Speed: 6.39658 ms
 mean diff: 0.00140305
 3 planes
-Average error: 0.0300274 Speed: 6.25304 ms
-Average error: 0.0276884 Speed: 6.46035 ms
-Average error: 0.0370742 Speed: 6.21531 ms
-Average error: 0.0247385 Speed: 6.45019 ms
-Average error: 0.0271971 Speed: 6.18427 ms
+Average error: 0.0300274 Speed: 6.38127 ms
+Average error: 0.0276884 Speed: 6.33572 ms
+Average error: 0.0370742 Speed: 6.27389 ms
+Average error: 0.0247385 Speed: 6.98085 ms
+Average error: 0.0271971 Speed: 6.38322 ms
 mean diff: 0.0293451
 ** depth 16U - 1 plane
-Average error: 0.0094273 Speed: 5.27545 ms
-Average error: 0.00940992 Speed: 5.16667 ms
-Average error: 0.00304537 Speed: 5.24343 ms
-Average error: 0.00430507 Speed: 5.35248 ms
-Average error: 0.0148855 Speed: 5.09319 ms
+Average error: 0.0094273 Speed: 5.68201 ms
+Average error: 0.00940992 Speed: 5.69055 ms
+Average error: 0.00304537 Speed: 10.578 ms
+Average error: 0.00430507 Speed: 5.74911 ms
+Average error: 0.0148855 Speed: 5.45187 ms
 mean diff: 0.00821464
 ** depth 16U - 3 plane
-Average error: 0.00728355 Speed: 5.48204 ms
-Average error: 0.00515291 Speed: 5.39571 ms
-Average error: 0.00598053 Speed: 5.43188 ms
-Average error: 0.0285218 Speed: 5.33468 ms
-Average error: 0.0076341 Speed: 5.18181 ms
+Average error: 0.00728355 Speed: 5.90717 ms
+Average error: 0.00515291 Speed: 5.88377 ms
+Average error: 0.00598053 Speed: 5.83604 ms
+Average error: 0.0285218 Speed: 5.5669 ms
+Average error: 0.0076341 Speed: 5.57275 ms
 mean diff: 0.0109146
 * double
 1 plane - input 3d points
-Average error: 0.00149297 Speed: 7.46786 ms
-Average error: 0.00132696 Speed: 7.16583 ms
-Average error: 0.000995947 Speed: 7.5321 ms
-Average error: 4.80045e-05 Speed: 7.18184 ms
-Average error: 0.000240923 Speed: 7.48656 ms
+Average error: 0.00149297 Speed: 7.03068 ms
+Average error: 0.00132696 Speed: 7.11215 ms
+Average error: 0.000995947 Speed: 7.27899 ms
+Average error: 4.80045e-05 Speed: 7.0714 ms
+Average error: 0.000240923 Speed: 7.22934 ms
 mean diff: 0.000820959
 3 planes
-Average error: 0.0355814 Speed: 7.10314 ms
-Average error: 0.0259916 Speed: 7.50211 ms
-Average error: 0.0286267 Speed: 7.39066 ms
-Average error: 0.0337978 Speed: 7.54246 ms
-Average error: 0.026653 Speed: 7.2057 ms
+Average error: 0.0355814 Speed: 7.10403 ms
+Average error: 0.0259916 Speed: 7.25332 ms
+Average error: 0.0286267 Speed: 7.1049 ms
+Average error: 0.0337978 Speed: 7.24714 ms
+Average error: 0.026653 Speed: 7.08321 ms
 mean diff: 0.0301301
 ** depth 16U - 1 plane
-Average error: 0.0186154 Speed: 6.2308 ms
-Average error: 0.00896741 Speed: 6.28161 ms
-Average error: 0.0171215 Speed: 6.33253 ms
-Average error: 0.00727724 Speed: 6.70715 ms
-Average error: 0.0163148 Speed: 6.74064 ms
+Average error: 0.0186154 Speed: 6.03692 ms
+Average error: 0.00896741 Speed: 6.2761 ms
+Average error: 0.0171215 Speed: 6.14099 ms
+Average error: 0.00727724 Speed: 6.81076 ms
+Average error: 0.0163148 Speed: 7.57309 ms
 mean diff: 0.0136593
 ** depth 16U - 3 plane
-Average error: 0.00888075 Speed: 6.77323 ms
-Average error: 0.0142109 Speed: 6.56196 ms
-Average error: 0.00592626 Speed: 6.43819 ms
-Average error: 0.0141375 Speed: 6.07125 ms
-Average error: 0.00300384 Speed: 6.34877 ms
+Average error: 0.00888075 Speed: 6.79072 ms
+Average error: 0.0142109 Speed: 6.43461 ms
+Average error: 0.00592626 Speed: 6.56748 ms
+Average error: 0.0141375 Speed: 5.90132 ms
+Average error: 0.00300384 Speed: 6.38773 ms
 mean diff: 0.00923184
 
 *** SRI
 * float
 1 plane - input 3d points
-Average error: 0.0185684 Speed: 19.4807 ms
-Average error: 0.0150487 Speed: 5.98783 ms
-Average error: 0.0178525 Speed: 6.25649 ms
-Average error: 0.0185791 Speed: 5.5022 ms
-Average error: 0.0115141 Speed: 5.88289 ms
+Average error: 0.0185684 Speed: 15.9743 ms
+Average error: 0.0150487 Speed: 6.77193 ms
+Average error: 0.0178525 Speed: 7.58324 ms
+Average error: 0.0185791 Speed: 6.54233 ms
+Average error: 0.0115141 Speed: 6.81907 ms
 mean diff: 0.0163126
 3 planes
-Average error: 0.0331401 Speed: 5.6642 ms
-Average error: 0.0319466 Speed: 6.27996 ms
-Average error: 0.0332159 Speed: 5.75343 ms
-Average error: 0.028977 Speed: 5.79897 ms
-Average error: 0.03199 Speed: 5.71984 ms
+Average error: 0.0331401 Speed: 6.85272 ms
+Average error: 0.0319466 Speed: 7.83601 ms
+Average error: 0.0332159 Speed: 6.54106 ms
+Average error: 0.028977 Speed: 7.20906 ms
+Average error: 0.03199 Speed: 6.46452 ms
 mean diff: 0.0318539
 * double
 1 plane - input 3d points
-Average error: 0.0169063 Speed: 13.5386 ms
-Average error: 0.0160827 Speed: 10.5515 ms
-Average error: 0.0102497 Speed: 11.4846 ms
-Average error: 0.0121647 Speed: 10.6832 ms
-Average error: 0.017501 Speed: 11.2987 ms
+Average error: 0.0169063 Speed: 12.8014 ms
+Average error: 0.0160827 Speed: 11.4821 ms
+Average error: 0.0102497 Speed: 12.1183 ms
+Average error: 0.0121647 Speed: 11.4422 ms
+Average error: 0.017501 Speed: 12.4309 ms
 mean diff: 0.0145809
 3 planes
-Average error: 0.0347057 Speed: 10.5542 ms
-Average error: 0.0327593 Speed: 14.2162 ms
-Average error: 0.0350609 Speed: 10.5046 ms
-Average error: 0.0313788 Speed: 11.2174 ms
-Average error: 0.0320665 Speed: 10.273 ms
+Average error: 0.0347057 Speed: 11.7149 ms
+Average error: 0.0327593 Speed: 11.9445 ms
+Average error: 0.0350609 Speed: 11.2501 ms
+Average error: 0.0313788 Speed: 12.3006 ms
+Average error: 0.0320665 Speed: 11.3965 ms
 mean diff: 0.0331943
-[       OK ] Rgbd_Normals.compute (6905 ms)
-[----------] 1 test from Rgbd_Normals (6905 ms total)
+[       OK ] Rgbd_Normals.compute (7104 ms)
+[----------] 1 test from Rgbd_Normals (7104 ms total)
 
 [----------] 2 tests from Rgbd_Plane
 [ RUN      ] Rgbd_Plane.compute
- Speed: normals 59.6852 ms and plane 15.4543 ms 
- Speed: plane 8.38905 ms 
- Speed: normals 54.4202 ms and plane 12.9199 ms 
- Speed: plane 8.61333 ms 
- Speed: normals 53.5091 ms and plane 13.2238 ms 
- Speed: plane 8.65935 ms 
- Speed: normals 54.0645 ms and plane 12.9868 ms 
- Speed: plane 8.30543 ms 
- Speed: normals 53.6236 ms and plane 12.6992 ms 
- Speed: plane 8.811 ms 
- Speed: normals 54.0956 ms and plane 12.0309 ms 
- Speed: plane 8.18058 ms 
- Speed: normals 53.6246 ms and plane 12.9988 ms 
- Speed: plane 8.32807 ms 
- Speed: normals 53.7322 ms and plane 12.8691 ms 
- Speed: plane 8.29136 ms 
- Speed: normals 53.6326 ms and plane 12.8942 ms 
- Speed: plane 8.50976 ms 
- Speed: normals 54.0623 ms and plane 12.7915 ms 
- Speed: plane 8.49051 ms 
- Speed: normals 54.1376 ms and plane 13.0452 ms 
- Speed: plane 8.78029 ms 
-[       OK ] Rgbd_Plane.compute (1398 ms)
+ Speed: normals 58.3987 ms and plane 7.63069 ms 
+ Speed: plane 4.96446 ms 
+ Speed: normals 54.1654 ms and plane 7.65733 ms 
+ Speed: plane 5.58014 ms 
+ Speed: normals 54.3055 ms and plane 7.12768 ms 
+ Speed: plane 5.26614 ms 
+ Speed: normals 56.9491 ms and plane 7.76109 ms 
+ Speed: plane 5.42792 ms 
+ Speed: normals 54.2837 ms and plane 7.54254 ms 
+ Speed: plane 5.09375 ms 
+ Speed: normals 54.03 ms and plane 7.02586 ms 
+ Speed: plane 5.23451 ms 
+ Speed: normals 54.0471 ms and plane 7.3601 ms 
+ Speed: plane 5.11093 ms 
+ Speed: normals 54.3163 ms and plane 7.21418 ms 
+ Speed: plane 5.40519 ms 
+ Speed: normals 53.6499 ms and plane 7.07186 ms 
+ Speed: plane 4.96549 ms 
+ Speed: normals 53.9765 ms and plane 6.98981 ms 
+ Speed: plane 5.61303 ms 
+ Speed: normals 53.9674 ms and plane 7.7308 ms 
+ Speed: plane 5.22667 ms 
+[       OK ] Rgbd_Plane.compute (1330 ms)
 [ RUN      ] Rgbd_Plane.regression_2309_valgrind_check
 [       OK ] Rgbd_Plane.regression_2309_valgrind_check (19 ms)
-[----------] 2 tests from Rgbd_Plane (1417 ms total)
+[----------] 2 tests from Rgbd_Plane (1349 ms total)
 
 [----------] 1 test from RGBD_Odometry_Rgbd
 [ RUN      ] RGBD_Odometry_Rgbd.algorithmic
-[       OK ] RGBD_Odometry_Rgbd.algorithmic (6082 ms)
-[----------] 1 test from RGBD_Odometry_Rgbd (6082 ms total)
+[       OK ] RGBD_Odometry_Rgbd.algorithmic (6024 ms)
+[----------] 1 test from RGBD_Odometry_Rgbd (6024 ms total)
 
 [----------] 1 test from RGBD_Odometry_ICP
 [ RUN      ] RGBD_Odometry_ICP.algorithmic
-[       OK ] RGBD_Odometry_ICP.algorithmic (6880 ms)
-[----------] 1 test from RGBD_Odometry_ICP (6880 ms total)
+[       OK ] RGBD_Odometry_ICP.algorithmic (6720 ms)
+[----------] 1 test from RGBD_Odometry_ICP (6720 ms total)
 
 [----------] 1 test from RGBD_Odometry_RgbdICP
 [ RUN      ] RGBD_Odometry_RgbdICP.algorithmic
-[       OK ] RGBD_Odometry_RgbdICP.algorithmic (10185 ms)
-[----------] 1 test from RGBD_Odometry_RgbdICP (10185 ms total)
+[       OK ] RGBD_Odometry_RgbdICP.algorithmic (9959 ms)
+[----------] 1 test from RGBD_Odometry_RgbdICP (9959 ms total)
 
 [----------] 1 test from RGBD_Odometry_FastICP
 [ RUN      ] RGBD_Odometry_FastICP.algorithmic
-[       OK ] RGBD_Odometry_FastICP.algorithmic (4530 ms)
-[----------] 1 test from RGBD_Odometry_FastICP (4530 ms total)
+[       OK ] RGBD_Odometry_FastICP.algorithmic (5026 ms)
+[----------] 1 test from RGBD_Odometry_FastICP (5026 ms total)
 
 [----------] 1 test from PoseGraph
 [ RUN      ] PoseGraph.sphereG2O
 [     SKIP ] Build with Eigen required for pose graph optimization
-[       OK ] PoseGraph.sphereG2O (80 ms)
-[----------] 1 test from PoseGraph (80 ms total)
+[       OK ] PoseGraph.sphereG2O (83 ms)
+[----------] 1 test from PoseGraph (83 ms total)
 
 [----------] 2 tests from Rgbd_DepthRegistration
 [ RUN      ] Rgbd_DepthRegistration.compute
-[       OK ] Rgbd_DepthRegistration.compute (21 ms)
+[       OK ] Rgbd_DepthRegistration.compute (19 ms)
 [ RUN      ] Rgbd_DepthRegistration.issue_2234
 [       OK ] Rgbd_DepthRegistration.issue_2234 (0 ms)
-[----------] 2 tests from Rgbd_DepthRegistration (21 ms total)
+[----------] 2 tests from Rgbd_DepthRegistration (19 ms total)
 
-[----------] 4 tests from TSDF
-[ RUN      ] TSDF.raycast_normals
-[       OK ] TSDF.raycast_normals (43 ms)
-[ RUN      ] TSDF.fetch_points_normals
-[       OK ] TSDF.fetch_points_normals (25 ms)
-[ RUN      ] TSDF.fetch_normals
-[       OK ] TSDF.fetch_normals (20 ms)
-[ RUN      ] TSDF.valid_points
-[       OK ] TSDF.valid_points (20 ms)
-[----------] 4 tests from TSDF (108 ms total)
+[----------] 4 tests from TSDF_CPU
+[ RUN      ] TSDF_CPU.raycast_normals
+[       OK ] TSDF_CPU.raycast_normals (42 ms)
+[ RUN      ] TSDF_CPU.fetch_points_normals
+[       OK ] TSDF_CPU.fetch_points_normals (29 ms)
+[ RUN      ] TSDF_CPU.fetch_normals
+[       OK ] TSDF_CPU.fetch_normals (26 ms)
+[ RUN      ] TSDF_CPU.valid_points
+[       OK ] TSDF_CPU.valid_points (27 ms)
+[----------] 4 tests from TSDF_CPU (124 ms total)
 
-[----------] 4 tests from HashTSDF
-[ RUN      ] HashTSDF.raycast_normals
-[       OK ] HashTSDF.raycast_normals (63 ms)
-[ RUN      ] HashTSDF.fetch_points_normals
-[       OK ] HashTSDF.fetch_points_normals (16 ms)
-[ RUN      ] HashTSDF.fetch_normals
-[       OK ] HashTSDF.fetch_normals (21 ms)
-[ RUN      ] HashTSDF.valid_points
-[       OK ] HashTSDF.valid_points (24 ms)
-[----------] 4 tests from HashTSDF (124 ms total)
+[----------] 4 tests from HashTSDF_CPU
+[ RUN      ] HashTSDF_CPU.raycast_normals
+[       OK ] HashTSDF_CPU.raycast_normals (59 ms)
+[ RUN      ] HashTSDF_CPU.fetch_points_normals
+[       OK ] HashTSDF_CPU.fetch_points_normals (16 ms)
+[ RUN      ] HashTSDF_CPU.fetch_normals
+[       OK ] HashTSDF_CPU.fetch_normals (20 ms)
+[ RUN      ] HashTSDF_CPU.valid_points
+[       OK ] HashTSDF_CPU.valid_points (19 ms)
+[----------] 4 tests from HashTSDF_CPU (114 ms total)
 
 [----------] 1 test from Rgbd_DepthTo3d
 [ RUN      ] Rgbd_DepthTo3d.compute
@@ -233,8 +256,8 @@ mean diff: 0.0331943
 [----------] Global test environment tear-down
 [ SKIPSTAT ] 1 tests skipped
 [ SKIPSTAT ] TAG='skip_other' skip 1 tests
-[==========] 19 tests from 11 test cases ran. (36346 ms total)
-[  PASSED  ] 19 tests.
+[==========] 27 tests from 13 test cases ran. (36783 ms total)
+[  PASSED  ] 27 tests.
 
-  YOU HAVE 8 DISABLED TESTS
+  YOU HAVE 9 DISABLED TESTS
 

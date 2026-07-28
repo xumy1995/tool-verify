@@ -2,33 +2,34 @@ CTEST_FULL_OUTPUT
 OpenCV version: 4.14.0-pre
 OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
-Compiler: /usr/bin/c++  (ver 11.4.0)
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
 Algorithm hint: ALGO_HINT_ACCURATE
 HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
 CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
 Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
 Intel(R) IPP features code: 0x8000
+OpenCL is disabled
 TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [==========] Running 3 tests from 3 test cases.
 [----------] Global test environment set-up.
 [----------] 1 test from block_matching_simple_test
 [ RUN      ] block_matching_simple_test.accuracy
-[       OK ] block_matching_simple_test.accuracy (46 ms)
-[----------] 1 test from block_matching_simple_test (46 ms total)
+[       OK ] block_matching_simple_test.accuracy (43 ms)
+[----------] 1 test from block_matching_simple_test (43 ms total)
 
 [----------] 1 test from SG_block_matching_simple_test
 [ RUN      ] SG_block_matching_simple_test.accuracy
-[       OK ] SG_block_matching_simple_test.accuracy (30 ms)
-[----------] 1 test from SG_block_matching_simple_test (30 ms total)
+[       OK ] SG_block_matching_simple_test.accuracy (29 ms)
+[----------] 1 test from SG_block_matching_simple_test (29 ms total)
 
 [----------] 1 test from qds_getDisparity
 [ RUN      ] qds_getDisparity.accuracy
-[       OK ] qds_getDisparity.accuracy (664 ms)
-[----------] 1 test from qds_getDisparity (664 ms total)
+[       OK ] qds_getDisparity.accuracy (651 ms)
+[----------] 1 test from qds_getDisparity (651 ms total)
 
 [----------] Global test environment tear-down
-[==========] 3 tests from 3 test cases ran. (740 ms total)
+[==========] 3 tests from 3 test cases ran. (723 ms total)
 [  PASSED  ] 3 tests.
 
   YOU HAVE 4 DISABLED TESTS

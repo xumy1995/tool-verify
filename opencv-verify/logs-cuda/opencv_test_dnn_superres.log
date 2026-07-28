@@ -2,30 +2,31 @@ CTEST_FULL_OUTPUT
 OpenCV version: 4.14.0-pre
 OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
-Compiler: /usr/bin/c++  (ver 11.4.0)
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
 Algorithm hint: ALGO_HINT_ACCURATE
 HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
 CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
 Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
 Intel(R) IPP features code: 0x8000
+OpenCL is disabled
 TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [==========] Running 4 tests from 2 test cases.
 [----------] Global test environment set-up.
 [----------] 3 tests from CV_DnnSuperResSingleOutputTest
 [ RUN      ] CV_DnnSuperResSingleOutputTest.accuracy_espcn_2
-[       OK ] CV_DnnSuperResSingleOutputTest.accuracy_espcn_2 (105 ms)
+[       OK ] CV_DnnSuperResSingleOutputTest.accuracy_espcn_2 (99 ms)
 [ RUN      ] CV_DnnSuperResSingleOutputTest.accuracy_fsrcnn_2
-[       OK ] CV_DnnSuperResSingleOutputTest.accuracy_fsrcnn_2 (84 ms)
+[       OK ] CV_DnnSuperResSingleOutputTest.accuracy_fsrcnn_2 (55 ms)
 [ RUN      ] CV_DnnSuperResSingleOutputTest.accuracy_fsrcnn_3
-[       OK ] CV_DnnSuperResSingleOutputTest.accuracy_fsrcnn_3 (85 ms)
-[----------] 3 tests from CV_DnnSuperResSingleOutputTest (275 ms total)
+[       OK ] CV_DnnSuperResSingleOutputTest.accuracy_fsrcnn_3 (61 ms)
+[----------] 3 tests from CV_DnnSuperResSingleOutputTest (215 ms total)
 
 [----------] 1 test from CV_DnnSuperResMultiOutputTest
 [ RUN      ] CV_DnnSuperResMultiOutputTest.accuracy
-[       OK ] CV_DnnSuperResMultiOutputTest.accuracy (1278 ms)
-[----------] 1 test from CV_DnnSuperResMultiOutputTest (1278 ms total)
+[       OK ] CV_DnnSuperResMultiOutputTest.accuracy (1044 ms)
+[----------] 1 test from CV_DnnSuperResMultiOutputTest (1044 ms total)
 
 [----------] Global test environment tear-down
-[==========] 4 tests from 2 test cases ran. (1553 ms total)
+[==========] 4 tests from 2 test cases ran. (1259 ms total)
 [  PASSED  ] 4 tests.

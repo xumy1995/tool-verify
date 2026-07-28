@@ -43,7 +43,7 @@ opencv_test_flann exit=0
 ===== opencv_test_fuzzy =====
 opencv_test_fuzzy exit=0
 ===== opencv_test_gapi =====
-opencv_test_gapi exit=1
+opencv_test_gapi exit=0
 ===== opencv_test_hdf =====
 opencv_test_hdf exit=0
 ===== opencv_test_highgui =====

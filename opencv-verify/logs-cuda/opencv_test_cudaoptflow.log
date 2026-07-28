@@ -48,48 +48,49 @@ CTEST_FULL_OUTPUT
 OpenCV version: 4.14.0-pre
 OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
-Compiler: /usr/bin/c++  (ver 11.4.0)
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
 Algorithm hint: ALGO_HINT_ACCURATE
 HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
 CPU features: SSE? SSE2? SSE3? *SSE4.1? *SSE4.2? *AVX? *FP16? *AVX2? *AVX512-SKX?
 Intel(R) IPP version: disabled
+OpenCL is disabled
 TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [==========] Running 47 tests from 7 test cases.
 [----------] Global test environment set-up.
 [----------] 2 tests from CUDA_OptFlow/BroxOpticalFlow
 [ RUN      ] CUDA_OptFlow/BroxOpticalFlow.Regression/0, where GetParam() = NVIDIA A100-SXM4-40GB
-[       OK ] CUDA_OptFlow/BroxOpticalFlow.Regression/0 (189 ms)
+[       OK ] CUDA_OptFlow/BroxOpticalFlow.Regression/0 (200 ms)
 [ RUN      ] CUDA_OptFlow/BroxOpticalFlow.OpticalFlowNan/0, where GetParam() = NVIDIA A100-SXM4-40GB
-[       OK ] CUDA_OptFlow/BroxOpticalFlow.OpticalFlowNan/0 (159 ms)
-[----------] 2 tests from CUDA_OptFlow/BroxOpticalFlow (348 ms total)
+[       OK ] CUDA_OptFlow/BroxOpticalFlow.OpticalFlowNan/0 (62 ms)
+[----------] 2 tests from CUDA_OptFlow/BroxOpticalFlow (262 ms total)
 
 [----------] 12 tests from CUDA_OptFlow/PyrLKOpticalFlow
 [ RUN      ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/0, where GetParam() = (NVIDIA A100-SXM4-40GB, Chan(1), DataType(0))
 [       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/0 (87 ms)
 [ RUN      ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/1, where GetParam() = (NVIDIA A100-SXM4-40GB, Chan(1), DataType(2))
-[       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/1 (23 ms)
+[       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/1 (25 ms)
 [ RUN      ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/2, where GetParam() = (NVIDIA A100-SXM4-40GB, Chan(1), DataType(4))
-[       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/2 (22 ms)
+[       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/2 (23 ms)
 [ RUN      ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/3, where GetParam() = (NVIDIA A100-SXM4-40GB, Chan(1), DataType(5))
 [       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/3 (22 ms)
 [ RUN      ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/4, where GetParam() = (NVIDIA A100-SXM4-40GB, Chan(3), DataType(0))
 [       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/4 (25 ms)
 [ RUN      ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/5, where GetParam() = (NVIDIA A100-SXM4-40GB, Chan(3), DataType(2))
-[       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/5 (24 ms)
+[       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/5 (26 ms)
 [ RUN      ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/6, where GetParam() = (NVIDIA A100-SXM4-40GB, Chan(3), DataType(4))
-[       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/6 (26 ms)
+[       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/6 (27 ms)
 [ RUN      ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/7, where GetParam() = (NVIDIA A100-SXM4-40GB, Chan(3), DataType(5))
 [       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/7 (25 ms)
 [ RUN      ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/8, where GetParam() = (NVIDIA A100-SXM4-40GB, Chan(4), DataType(0))
-[       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/8 (22 ms)
+[       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/8 (24 ms)
 [ RUN      ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/9, where GetParam() = (NVIDIA A100-SXM4-40GB, Chan(4), DataType(2))
 [       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/9 (26 ms)
 [ RUN      ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/10, where GetParam() = (NVIDIA A100-SXM4-40GB, Chan(4), DataType(4))
-[       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/10 (26 ms)
+[       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/10 (27 ms)
 [ RUN      ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/11, where GetParam() = (NVIDIA A100-SXM4-40GB, Chan(4), DataType(5))
-[       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/11 (26 ms)
-[----------] 12 tests from CUDA_OptFlow/PyrLKOpticalFlow (355 ms total)
+[       OK ] CUDA_OptFlow/PyrLKOpticalFlow.Sparse/11 (27 ms)
+[----------] 12 tests from CUDA_OptFlow/PyrLKOpticalFlow (364 ms total)
 
 [----------] 24 tests from CUDA_OptFlow/FarnebackOpticalFlow
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/0, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.3), PolyN(5), 0, UseInitFlow(false))
@@ -97,89 +98,89 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/1, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.3), PolyN(5), 0, UseInitFlow(true))
 [       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/1 (134 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/2, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.3), PolyN(5), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(false))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/2 (152 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/2 (149 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/3, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.3), PolyN(5), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(true))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/3 (154 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/3 (153 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/4, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.3), PolyN(7), 0, UseInitFlow(false))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/4 (140 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/4 (136 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/5, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.3), PolyN(7), 0, UseInitFlow(true))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/5 (173 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/5 (139 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/6, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.3), PolyN(7), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(false))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/6 (156 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/6 (152 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/7, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.3), PolyN(7), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(true))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/7 (159 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/7 (157 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/8, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.5), PolyN(5), 0, UseInitFlow(false))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/8 (156 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/8 (151 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/9, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.5), PolyN(5), 0, UseInitFlow(true))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/9 (159 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/9 (157 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/10, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.5), PolyN(5), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(false))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/10 (194 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/10 (184 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/11, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.5), PolyN(5), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(true))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/11 (179 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/11 (180 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/12, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.5), PolyN(7), 0, UseInitFlow(false))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/12 (161 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/12 (160 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/13, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.5), PolyN(7), 0, UseInitFlow(true))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/13 (165 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/13 (160 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/14, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.5), PolyN(7), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(false))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/14 (179 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/14 (180 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/15, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.5), PolyN(7), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(true))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/15 (183 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/15 (185 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/16, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.8), PolyN(5), 0, UseInitFlow(false))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/16 (266 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/16 (258 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/17, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.8), PolyN(5), 0, UseInitFlow(true))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/17 (272 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/17 (265 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/18, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.8), PolyN(5), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(false))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/18 (305 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/18 (303 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/19, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.8), PolyN(5), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(true))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/19 (310 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/19 (307 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/20, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.8), PolyN(7), 0, UseInitFlow(false))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/20 (275 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/20 (270 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/21, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.8), PolyN(7), 0, UseInitFlow(true))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/21 (279 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/21 (277 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/22, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.8), PolyN(7), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(false))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/22 (316 ms)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/22 (313 ms)
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/23, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.8), PolyN(7), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(true))
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/23 (319 ms)
-[----------] 24 tests from CUDA_OptFlow/FarnebackOpticalFlow (4951 ms total)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlow.Accuracy/23 (318 ms)
+[----------] 24 tests from CUDA_OptFlow/FarnebackOpticalFlow (4857 ms total)
 
 [----------] 1 test from CUDA_OptFlow/FarnebackOpticalFlowAsync
 [ RUN      ] CUDA_OptFlow/FarnebackOpticalFlowAsync.Accuracy/0, where GetParam() = (NVIDIA A100-SXM4-40GB, PyrScale(0.3), PolyN(5), 0)
-[       OK ] CUDA_OptFlow/FarnebackOpticalFlowAsync.Accuracy/0 (161 ms)
-[----------] 1 test from CUDA_OptFlow/FarnebackOpticalFlowAsync (161 ms total)
+[       OK ] CUDA_OptFlow/FarnebackOpticalFlowAsync.Accuracy/0 (164 ms)
+[----------] 1 test from CUDA_OptFlow/FarnebackOpticalFlowAsync (164 ms total)
 
 [----------] 4 tests from CUDA_OptFlow/OpticalFlowDual_TVL1
 [ RUN      ] CUDA_OptFlow/OpticalFlowDual_TVL1.Accuracy/0, where GetParam() = (NVIDIA A100-SXM4-40GB, Gamma(0))
-[       OK ] CUDA_OptFlow/OpticalFlowDual_TVL1.Accuracy/0 (743 ms)
+[       OK ] CUDA_OptFlow/OpticalFlowDual_TVL1.Accuracy/0 (728 ms)
 [ RUN      ] CUDA_OptFlow/OpticalFlowDual_TVL1.Accuracy/1, where GetParam() = (NVIDIA A100-SXM4-40GB, Gamma(1))
-[       OK ] CUDA_OptFlow/OpticalFlowDual_TVL1.Accuracy/1 (878 ms)
+[       OK ] CUDA_OptFlow/OpticalFlowDual_TVL1.Accuracy/1 (820 ms)
 [ RUN      ] CUDA_OptFlow/OpticalFlowDual_TVL1.Async/0, where GetParam() = (NVIDIA A100-SXM4-40GB, Gamma(0))
-[       OK ] CUDA_OptFlow/OpticalFlowDual_TVL1.Async/0 (208 ms)
+[       OK ] CUDA_OptFlow/OpticalFlowDual_TVL1.Async/0 (222 ms)
 [ RUN      ] CUDA_OptFlow/OpticalFlowDual_TVL1.Async/1, where GetParam() = (NVIDIA A100-SXM4-40GB, Gamma(1))
-[       OK ] CUDA_OptFlow/OpticalFlowDual_TVL1.Async/1 (264 ms)
-[----------] 4 tests from CUDA_OptFlow/OpticalFlowDual_TVL1 (2093 ms total)
+[       OK ] CUDA_OptFlow/OpticalFlowDual_TVL1.Async/1 (227 ms)
+[----------] 4 tests from CUDA_OptFlow/OpticalFlowDual_TVL1 (1998 ms total)
 
 [----------] 2 tests from CUDA_OptFlow/NvidiaOpticalFlow_1_0
 [ RUN      ] CUDA_OptFlow/NvidiaOpticalFlow_1_0.Regression/0, where GetParam() = NVIDIA A100-SXM4-40GB
-/data/xumengying/opencv-verify/src/opencv_contrib/modules/cudaoptflow/test/test_optflow.cpp:581: Failure
+/data/xumengying/tool-verify/opencv-verify/src/opencv_contrib/modules/cudaoptflow/test/test_optflow.cpp:581: Failure
 Expected: (checkSimilarity(golden, upsampledFlow)) <= (1e-10), actual: 0.06994 vs 1e-10
-[  FAILED  ] CUDA_OptFlow/NvidiaOpticalFlow_1_0.Regression/0, where GetParam() = NVIDIA A100-SXM4-40GB (283 ms)
+[  FAILED  ] CUDA_OptFlow/NvidiaOpticalFlow_1_0.Regression/0, where GetParam() = NVIDIA A100-SXM4-40GB (282 ms)
 [ RUN      ] CUDA_OptFlow/NvidiaOpticalFlow_1_0.OpticalFlowNan/0, where GetParam() = NVIDIA A100-SXM4-40GB
 [       OK ] CUDA_OptFlow/NvidiaOpticalFlow_1_0.OpticalFlowNan/0 (272 ms)
-[----------] 2 tests from CUDA_OptFlow/NvidiaOpticalFlow_1_0 (555 ms total)
+[----------] 2 tests from CUDA_OptFlow/NvidiaOpticalFlow_1_0 (554 ms total)
 
 [----------] 2 tests from CUDA_OptFlow/NvidiaOpticalFlow_2_0
 [ RUN      ] CUDA_OptFlow/NvidiaOpticalFlow_2_0.Regression/0, where GetParam() = NVIDIA A100-SXM4-40GB
-/data/xumengying/opencv-verify/src/opencv_contrib/modules/cudaoptflow/test/test_optflow.cpp:665: Failure
+/data/xumengying/tool-verify/opencv-verify/src/opencv_contrib/modules/cudaoptflow/test/test_optflow.cpp:665: Failure
 Value of: golden.empty()
   Actual: true
 Expected: false
-[  FAILED  ] CUDA_OptFlow/NvidiaOpticalFlow_2_0.Regression/0, where GetParam() = NVIDIA A100-SXM4-40GB (279 ms)
+[  FAILED  ] CUDA_OptFlow/NvidiaOpticalFlow_2_0.Regression/0, where GetParam() = NVIDIA A100-SXM4-40GB (273 ms)
 [ RUN      ] CUDA_OptFlow/NvidiaOpticalFlow_2_0.OpticalFlowNan/0, where GetParam() = NVIDIA A100-SXM4-40GB
-[       OK ] CUDA_OptFlow/NvidiaOpticalFlow_2_0.OpticalFlowNan/0 (273 ms)
-[----------] 2 tests from CUDA_OptFlow/NvidiaOpticalFlow_2_0 (552 ms total)
+[       OK ] CUDA_OptFlow/NvidiaOpticalFlow_2_0.OpticalFlowNan/0 (274 ms)
+[----------] 2 tests from CUDA_OptFlow/NvidiaOpticalFlow_2_0 (547 ms total)
 
 [----------] Global test environment tear-down
-[==========] 47 tests from 7 test cases ran. (9015 ms total)
+[==========] 47 tests from 7 test cases ran. (8746 ms total)
 [  PASSED  ] 45 tests.
 [  FAILED  ] 2 tests, listed below:
 [  FAILED  ] CUDA_OptFlow/NvidiaOpticalFlow_1_0.Regression/0, where GetParam() = NVIDIA A100-SXM4-40GB

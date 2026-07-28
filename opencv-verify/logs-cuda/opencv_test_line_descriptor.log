@@ -2,13 +2,14 @@ CTEST_FULL_OUTPUT
 OpenCV version: 4.14.0-pre
 OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
-Compiler: /usr/bin/c++  (ver 11.4.0)
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
 Algorithm hint: ALGO_HINT_ACCURATE
 HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
 CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
 Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
 Intel(R) IPP features code: 0x8000
+OpenCL is disabled
 TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [==========] Running 4 tests from 4 test cases.
 [----------] Global test environment set-up.
@@ -16,22 +17,22 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [ RUN      ] BinaryDescriptor_Descriptors.regression
 Error: keypoint list is empty
 Error: keypoint list is empty
-[       OK ] BinaryDescriptor_Descriptors.regression (48 ms)
-[----------] 1 test from BinaryDescriptor_Descriptors (48 ms total)
+[       OK ] BinaryDescriptor_Descriptors.regression (55 ms)
+[----------] 1 test from BinaryDescriptor_Descriptors (55 ms total)
 
 [----------] 1 test from BinaryDescriptor
 [ RUN      ] BinaryDescriptor.no_lines_found
 Edge drawing Error: lines not found
 Line Detection not finished
-[       OK ] BinaryDescriptor.no_lines_found (3 ms)
-[----------] 1 test from BinaryDescriptor (3 ms total)
+[       OK ] BinaryDescriptor.no_lines_found (5 ms)
+[----------] 1 test from BinaryDescriptor (5 ms total)
 
 [----------] 1 test from BinaryDescriptor_Detector
 [ RUN      ] BinaryDescriptor_Detector.regression
 Error: input image for detection is empty
 Error: input image for detection is empty
-[       OK ] BinaryDescriptor_Detector.regression (14 ms)
-[----------] 1 test from BinaryDescriptor_Detector (14 ms total)
+[       OK ] BinaryDescriptor_Detector.regression (16 ms)
+[----------] 1 test from BinaryDescriptor_Detector (16 ms total)
 
 [----------] 1 test from BinaryDescriptor_Matcher
 [ RUN      ] BinaryDescriptor_Matcher.regression
@@ -41,9 +42,9 @@ Error: descriptors matrices cannot be void
 Error: query descriptors'matrix is empty
 Error: descriptors matrix cannot be void
 Error: descriptors matrices cannot be void
-[       OK ] BinaryDescriptor_Matcher.regression (943 ms)
-[----------] 1 test from BinaryDescriptor_Matcher (943 ms total)
+[       OK ] BinaryDescriptor_Matcher.regression (687 ms)
+[----------] 1 test from BinaryDescriptor_Matcher (687 ms total)
 
 [----------] Global test environment tear-down
-[==========] 4 tests from 4 test cases ran. (1008 ms total)
+[==========] 4 tests from 4 test cases ran. (763 ms total)
 [  PASSED  ] 4 tests.

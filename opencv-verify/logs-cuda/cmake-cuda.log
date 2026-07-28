@@ -1,13 +1,13 @@
--- The CXX compiler identification is GNU 11.4.0
--- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 12.3.0
+-- The C compiler identification is GNU 12.3.0
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Check for working CXX compiler: /usr/bin/g++-12 - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
+-- Check for working C compiler: /usr/bin/gcc-12 - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Detected processor: x86_64
@@ -482,11 +482,12 @@
 -- Performing Test HAVE_CXX_WNO_STRICT_ALIASING
 -- Performing Test HAVE_CXX_WNO_STRICT_ALIASING - Success
 -- Checking for modules 'libavcodec;libavformat;libavutil;libswscale'
---   No package 'libavcodec' found
---   No package 'libavformat' found
---   No package 'libavutil' found
---   No package 'libswscale' found
--- FFMPEG is disabled. Required libraries: libavcodec;libavformat;libavutil;libswscale. Missing libraries: libavcodec;libavformat;libavutil;libswscale
+--   Found libavcodec, version 58.134.100
+--   Found libavformat, version 58.76.100
+--   Found libavutil, version 56.70.100
+--   Found libswscale, version 5.9.100
+-- Checking for module 'libavdevice'
+--   Found libavdevice, version 58.13.100
 -- Checking for module 'gstreamer-base-1.0'
 --   No package 'gstreamer-base-1.0' found
 -- Checking for module 'gstreamer-app-1.0'
@@ -499,8 +500,6 @@
 --   No package 'gstreamer-video-1.0' found
 -- Checking for module 'gstreamer-audio-1.0'
 --   No package 'gstreamer-audio-1.0' found
--- Looking for linux/videodev2.h
--- Looking for linux/videodev2.h - found
 -- Module opencv_alphamat disabled because the following dependencies are not found: Eigen
 -- Performing Test HAVE_CXX_WNO_ENUM_COMPARE
 -- Performing Test HAVE_CXX_WNO_ENUM_COMPARE - Success
@@ -529,7 +528,6 @@
 -- Excluding from source files list: modules/imgproc/src/imgwarp.lasx.cpp
 -- Excluding from source files list: modules/imgproc/src/resize.lasx.cpp
 -- Registering hook 'INIT_MODULE_SOURCES_opencv_dnn': /data/xumengying/tool-verify/opencv-verify/src/opencv/modules/dnn/cmake/hooks/INIT_MODULE_SOURCES_opencv_dnn.cmake
--- opencv_dnn: filter out ocl4dnn source code
 -- Excluding from source files list: <BUILD>/modules/dnn/layers/layers_common.rvv.cpp
 -- Excluding from source files list: <BUILD>/modules/dnn/layers/layers_common.lasx.cpp
 -- Excluding from source files list: <BUILD>/modules/dnn/layers/layers_common.neon.cpp
@@ -581,7 +579,7 @@
 -- OpenCL samples are skipped: OpenCL SDK is required
 -- SYCL/OpenCL samples are skipped: SYCL SDK is required
 --    - check configuration of SYCL_DIR/SYCL_ROOT/CMAKE_MODULE_PATH
---    - ensure that right compiler is selected from SYCL SDK (e.g, clang++): CMAKE_CXX_COMPILER=/usr/bin/c++
+--    - ensure that right compiler is selected from SYCL SDK (e.g, clang++): CMAKE_CXX_COMPILER=/usr/bin/g++-12
 -- 
 -- General configuration for OpenCV 4.14.0-pre =====================================
 --   Version control:               4.13.0-493-g7aa163b83f
@@ -591,7 +589,7 @@
 --     Version control (extra):     4.14.0
 -- 
 --   Platform:
---     Timestamp:                   2026-07-21T08:10:42Z
+--     Timestamp:                   2026-07-27T09:51:58Z
 --     Host:                        Linux 5.14.0-284.25.1.el9_2.x86_64 x86_64
 --     CMake:                       3.29.0
 --     CMake generator:             Ninja
@@ -613,10 +611,10 @@
 --   C/C++:
 --     Built as dynamic libs?:      YES
 --     C++ standard:                11
---     C++ Compiler:                /usr/bin/c++  (ver 11.4.0)
+--     C++ Compiler:                /usr/bin/g++-12  (ver 12.3.0)
 --     C++ flags (Release):         -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -O3 -DNDEBUG  -DNDEBUG
 --     C++ flags (Debug):           -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -g  -O0 -DDEBUG -D_DEBUG
---     C Compiler:                  /usr/bin/cc
+--     C Compiler:                  /usr/bin/gcc-12
 --     C flags (Release):           -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse3 -fvisibility=hidden -O3 -DNDEBUG  -DNDEBUG
 --     C flags (Debug):             -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse3 -fvisibility=hidden -g  -O0 -DDEBUG -D_DEBUG
 --     Linker flags (Release):      -Wl,--exclude-libs,libippicv.a -Wl,--exclude-libs,libippiw.a   -Wl,--gc-sections -Wl,--as-needed -Wl,--no-undefined  
@@ -656,13 +654,14 @@
 --     PFM:                         YES
 -- 
 --   Video I/O:
---     FFMPEG:                      NO
---       avcodec:                   NO
---       avformat:                  NO
---       avutil:                    NO
---       swscale:                   NO
---       avdevice:                  NO
+--     FFMPEG:                      YES
+--       avcodec:                   YES (58.134.100)
+--       avformat:                  YES (58.76.100)
+--       avutil:                    YES (56.70.100)
+--       swscale:                   YES (5.9.100)
+--       avdevice:                  YES (58.13.100)
 --     GStreamer:                   NO
+--     v4l/v4l2:                    YES (linux/videodev2.h)
 --     Orbbec:                      YES
 -- 
 --   Parallel framework:            pthreads
@@ -687,6 +686,10 @@
 -- 
 --   cuDNN:                         YES (ver 9.1.0)
 -- 
+--   OpenCL:                        YES (no extra features)
+--     Include path:                /data/xumengying/tool-verify/opencv-verify/src/opencv/3rdparty/include/opencl/1.2
+--     Link libraries:              Dynamic load
+-- 
 --   Python 3:
 --     Interpreter:                 /usr/bin/python3 (ver 3.10.12)
 --     Libraries:                   /usr/lib/x86_64-linux-gnu/libpython3.10.so (ver 3.10.12)
@@ -706,6 +709,6 @@
 --   Install to:                    /usr/local
 -- -----------------------------------------------------------------
 -- 
--- Configuring done (124.6s)
--- Generating done (18.4s)
+-- Configuring done (135.9s)
+-- Generating done (19.8s)
 -- Build files have been written to: /data/xumengying/tool-verify/opencv-verify/build-cuda

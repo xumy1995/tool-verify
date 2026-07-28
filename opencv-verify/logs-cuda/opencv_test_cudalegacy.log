@@ -39,8 +39,8 @@ Run tests on all supported devices
 [----------] Global test environment set-up.
 [----------] 1 test from CUDA_Calib3D/TransformPoints
 [ RUN      ] CUDA_Calib3D/TransformPoints.Accuracy/0, where GetParam() = NVIDIA A100-SXM4-40GB
-[       OK ] CUDA_Calib3D/TransformPoints.Accuracy/0 (101 ms)
-[----------] 1 test from CUDA_Calib3D/TransformPoints (101 ms total)
+[       OK ] CUDA_Calib3D/TransformPoints.Accuracy/0 (111 ms)
+[----------] 1 test from CUDA_Calib3D/TransformPoints (111 ms total)
 
 [----------] 1 test from CUDA_Calib3D/ProjectPoints
 [ RUN      ] CUDA_Calib3D/ProjectPoints.Accuracy/0, where GetParam() = NVIDIA A100-SXM4-40GB
@@ -49,39 +49,39 @@ Run tests on all supported devices
 
 [----------] 1 test from CUDA_Calib3D/SolvePnPRansac
 [ RUN      ] CUDA_Calib3D/SolvePnPRansac.Accuracy/0, where GetParam() = NVIDIA A100-SXM4-40GB
-[       OK ] CUDA_Calib3D/SolvePnPRansac.Accuracy/0 (136 ms)
-[----------] 1 test from CUDA_Calib3D/SolvePnPRansac (136 ms total)
+[       OK ] CUDA_Calib3D/SolvePnPRansac.Accuracy/0 (137 ms)
+[----------] 1 test from CUDA_Calib3D/SolvePnPRansac (137 ms total)
 
 [----------] 6 tests from CUDA_Legacy/NPPST
 [ RUN      ] CUDA_Legacy/NPPST.Integral/0, where GetParam() = NVIDIA A100-SXM4-40GB
-[       OK ] CUDA_Legacy/NPPST.Integral/0 (511 ms)
+[       OK ] CUDA_Legacy/NPPST.Integral/0 (520 ms)
 [ RUN      ] CUDA_Legacy/NPPST.SquaredIntegral/0, where GetParam() = NVIDIA A100-SXM4-40GB
-[       OK ] CUDA_Legacy/NPPST.SquaredIntegral/0 (251 ms)
+[       OK ] CUDA_Legacy/NPPST.SquaredIntegral/0 (260 ms)
 [ RUN      ] CUDA_Legacy/NPPST.RectStdDev/0, where GetParam() = NVIDIA A100-SXM4-40GB
-[       OK ] CUDA_Legacy/NPPST.RectStdDev/0 (798 ms)
+[       OK ] CUDA_Legacy/NPPST.RectStdDev/0 (899 ms)
 [ RUN      ] CUDA_Legacy/NPPST.Resize/0, where GetParam() = NVIDIA A100-SXM4-40GB
-[       OK ] CUDA_Legacy/NPPST.Resize/0 (606 ms)
+[       OK ] CUDA_Legacy/NPPST.Resize/0 (657 ms)
 [ RUN      ] CUDA_Legacy/NPPST.VectorOperations/0, where GetParam() = NVIDIA A100-SXM4-40GB
-[       OK ] CUDA_Legacy/NPPST.VectorOperations/0 (2587 ms)
+[       OK ] CUDA_Legacy/NPPST.VectorOperations/0 (2623 ms)
 [ RUN      ] CUDA_Legacy/NPPST.Transpose/0, where GetParam() = NVIDIA A100-SXM4-40GB
-[       OK ] CUDA_Legacy/NPPST.Transpose/0 (1914 ms)
-[----------] 6 tests from CUDA_Legacy/NPPST (6668 ms total)
+[       OK ] CUDA_Legacy/NPPST.Transpose/0 (1921 ms)
+[----------] 6 tests from CUDA_Legacy/NPPST (6880 ms total)
 
 [----------] 5 tests from CUDA_Legacy/NCV
 [ RUN      ] CUDA_Legacy/NCV.VectorOperations/0, where GetParam() = NVIDIA A100-SXM4-40GB
-[       OK ] CUDA_Legacy/NCV.VectorOperations/0 (575 ms)
+[       OK ] CUDA_Legacy/NCV.VectorOperations/0 (679 ms)
 [ RUN      ] CUDA_Legacy/NCV.HaarCascadeLoader/0, where GetParam() = NVIDIA A100-SXM4-40GB
-[       OK ] CUDA_Legacy/NCV.HaarCascadeLoader/0 (460 ms)
+[       OK ] CUDA_Legacy/NCV.HaarCascadeLoader/0 (452 ms)
 [ RUN      ] CUDA_Legacy/NCV.HaarCascadeApplication/0, where GetParam() = NVIDIA A100-SXM4-40GB
-[       OK ] CUDA_Legacy/NCV.HaarCascadeApplication/0 (2809 ms)
+[       OK ] CUDA_Legacy/NCV.HaarCascadeApplication/0 (2832 ms)
 [ RUN      ] CUDA_Legacy/NCV.HypothesesFiltration/0, where GetParam() = NVIDIA A100-SXM4-40GB
-[       OK ] CUDA_Legacy/NCV.HypothesesFiltration/0 (655 ms)
+[       OK ] CUDA_Legacy/NCV.HypothesesFiltration/0 (625 ms)
 [ RUN      ] CUDA_Legacy/NCV.Visualization/0, where GetParam() = NVIDIA A100-SXM4-40GB
-[       OK ] CUDA_Legacy/NCV.Visualization/0 (605 ms)
-[----------] 5 tests from CUDA_Legacy/NCV (5104 ms total)
+[       OK ] CUDA_Legacy/NCV.Visualization/0 (623 ms)
+[----------] 5 tests from CUDA_Legacy/NCV (5211 ms total)
 
 [----------] Global test environment tear-down
-[==========] 14 tests from 5 test cases ran. (12010 ms total)
+[==========] 14 tests from 5 test cases ran. (12340 ms total)
 [  PASSED  ] 14 tests.
 
   YOU HAVE 1 DISABLED TEST

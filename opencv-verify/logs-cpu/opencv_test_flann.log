@@ -2,7 +2,7 @@ CTEST_FULL_OUTPUT
 OpenCV version: 4.14.0-pre
 OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
-Compiler: /usr/bin/c++  (ver 11.4.0)
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
 Algorithm hint: ALGO_HINT_ACCURATE
 HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
@@ -24,16 +24,16 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 
 [----------] 2 tests from Flann_LshTable
 [ RUN      ] Flann_LshTable.badarg
-[       OK ] Flann_LshTable.badarg (5 ms)
+[       OK ] Flann_LshTable.badarg (6 ms)
 [ RUN      ] Flann_LshTable.bad_any_cast
 [       OK ] Flann_LshTable.bad_any_cast (1 ms)
-[----------] 2 tests from Flann_LshTable (6 ms total)
+[----------] 2 tests from Flann_LshTable (7 ms total)
 
 [----------] 1 test from Flann_Index
 [ RUN      ] Flann_Index.radiusSearch_output_size_matches_returned_count
-[       OK ] Flann_Index.radiusSearch_output_size_matches_returned_count (0 ms)
-[----------] 1 test from Flann_Index (0 ms total)
+[       OK ] Flann_Index.radiusSearch_output_size_matches_returned_count (1 ms)
+[----------] 1 test from Flann_Index (1 ms total)
 
 [----------] Global test environment tear-down
-[==========] 6 tests from 3 test cases ran. (8 ms total)
+[==========] 6 tests from 3 test cases ran. (10 ms total)
 [  PASSED  ] 6 tests.

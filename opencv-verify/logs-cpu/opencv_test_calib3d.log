@@ -2,7 +2,7 @@ CTEST_FULL_OUTPUT
 OpenCV version: 4.14.0-pre
 OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
-Compiler: /usr/bin/c++  (ver 11.4.0)
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
 Algorithm hint: ALGO_HINT_ACCURATE
 HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
@@ -15,15 +15,15 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [----------] Global test environment set-up.
 [----------] 1 test from EstimateAffine2D
 [ RUN      ] EstimateAffine2D.issue_14259_dont_change_inputs
-[       OK ] EstimateAffine2D.issue_14259_dont_change_inputs (14 ms)
-[----------] 1 test from EstimateAffine2D (14 ms total)
+[       OK ] EstimateAffine2D.issue_14259_dont_change_inputs (12 ms)
+[----------] 1 test from EstimateAffine2D (12 ms total)
 
 [----------] 2 tests from Calib3d_Affine3f
 [ RUN      ] Calib3d_Affine3f.accuracy
-[       OK ] Calib3d_Affine3f.accuracy (3 ms)
+[       OK ] Calib3d_Affine3f.accuracy (2 ms)
 [ RUN      ] Calib3d_Affine3f.accuracy_rvec
-[       OK ] Calib3d_Affine3f.accuracy_rvec (2 ms)
-[----------] 2 tests from Calib3d_Affine3f (5 ms total)
+[       OK ] Calib3d_Affine3f.accuracy_rvec (1 ms)
+[----------] 2 tests from Calib3d_Affine3f (3 ms total)
 
 [----------] 3 tests from Calib3d_EstimateAffine3D
 [ RUN      ] Calib3d_EstimateAffine3D.accuracy
@@ -31,8 +31,8 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [ RUN      ] Calib3d_EstimateAffine3D.regression_16007
 [       OK ] Calib3d_EstimateAffine3D.regression_16007 (0 ms)
 [ RUN      ] Calib3d_EstimateAffine3D.umeyama_3_pt
-[       OK ] Calib3d_EstimateAffine3D.umeyama_3_pt (6 ms)
-[----------] 3 tests from Calib3d_EstimateAffine3D (7 ms total)
+[       OK ] Calib3d_EstimateAffine3D.umeyama_3_pt (5 ms)
+[----------] 3 tests from Calib3d_EstimateAffine3D (6 ms total)
 
 [----------] 1 test from EstimateAffinePartial2D
 [ RUN      ] EstimateAffinePartial2D.issue_14259_dont_change_inputs
@@ -76,7 +76,7 @@ Max tvec error: 3.29953e-15, Mean tvec error: 1.11495e-15, Std tvec error: 5.785
 Method (noise) Daniilidis:
 Max rvec error: 0.00729373, Mean rvec error: 0.00282738, Std rvec error: 0.00132308
 Max tvec error: 0.0460099, Mean tvec error: 0.0126107, Std tvec error: 0.0072734
-[       OK ] Calib3d_CalibrateHandEye.regression_eye_in_hand (910 ms)
+[       OK ] Calib3d_CalibrateHandEye.regression_eye_in_hand (913 ms)
 [ RUN      ] Calib3d_CalibrateHandEye.regression_eye_to_hand
 
 Method Tsai:
@@ -101,8 +101,8 @@ Max rvec error: 0.0107447, Mean rvec error: 0.00343451, Std rvec error: 0.001649
 Max tvec error: 0.0572277, Mean tvec error: 0.0165813, Std tvec error: 0.0099992
 
 Method Andreff:
-Max rvec error: 9.64889e-15, Mean rvec error: 1.51837e-15, Std rvec error: 1.43931e-15
-Max tvec error: 4.80869e-14, Mean tvec error: 5.80478e-15, Std tvec error: 7.20747e-15
+Max rvec error: 9.64889e-15, Mean rvec error: 1.51551e-15, Std rvec error: 1.44161e-15
+Max tvec error: 4.80869e-14, Mean tvec error: 5.80797e-15, Std tvec error: 7.20579e-15
 Method (noise) Andreff:
 Max rvec error: 0.00613841, Mean rvec error: 0.00277172, Std rvec error: 0.00119752
 Max tvec error: 0.0546187, Mean tvec error: 0.0186135, Std tvec error: 0.00957502
@@ -113,12 +113,12 @@ Max tvec error: 8.58828e-15, Mean tvec error: 2.84156e-15, Std tvec error: 1.583
 Method (noise) Daniilidis:
 Max rvec error: 0.00513476, Mean rvec error: 0.00239134, Std rvec error: 0.00100505
 Max tvec error: 0.0351865, Mean tvec error: 0.0121831, Std tvec error: 0.00647153
-[       OK ] Calib3d_CalibrateHandEye.regression_eye_to_hand (903 ms)
+[       OK ] Calib3d_CalibrateHandEye.regression_eye_to_hand (914 ms)
 [ RUN      ] Calib3d_CalibrateHandEye.regression_17986
-[       OK ] Calib3d_CalibrateHandEye.regression_17986 (354 ms)
+[       OK ] Calib3d_CalibrateHandEye.regression_17986 (359 ms)
 [ RUN      ] Calib3d_CalibrateHandEye.regression_24871
-[       OK ] Calib3d_CalibrateHandEye.regression_24871 (0 ms)
-[----------] 4 tests from Calib3d_CalibrateHandEye (2167 ms total)
+[       OK ] Calib3d_CalibrateHandEye.regression_24871 (1 ms)
+[----------] 4 tests from Calib3d_CalibrateHandEye (2187 ms total)
 
 [----------] 1 test from Calib3d_CalibrateRobotWorldHandEye
 [ RUN      ] Calib3d_CalibrateRobotWorldHandEye.regression
@@ -127,10 +127,10 @@ Max tvec error: 0.0351865, Mean tvec error: 0.0121831, Std tvec error: 0.0064715
 
 [----------] 2 tests from Calib3d_CalibrateCamera_CPP
 [ RUN      ] Calib3d_CalibrateCamera_CPP.regression
-[       OK ] Calib3d_CalibrateCamera_CPP.regression (5297 ms)
+[       OK ] Calib3d_CalibrateCamera_CPP.regression (4807 ms)
 [ RUN      ] Calib3d_CalibrateCamera_CPP.badarg
-[       OK ] Calib3d_CalibrateCamera_CPP.badarg (14 ms)
-[----------] 2 tests from Calib3d_CalibrateCamera_CPP (5311 ms total)
+[       OK ] Calib3d_CalibrateCamera_CPP.badarg (15 ms)
+[----------] 2 tests from Calib3d_CalibrateCamera_CPP (4822 ms total)
 
 [----------] 1 test from Calib3d_CalibrationMatrixValues_CPP
 [ RUN      ] Calib3d_CalibrationMatrixValues_CPP.accuracy
@@ -139,21 +139,21 @@ Max tvec error: 0.0351865, Mean tvec error: 0.0121831, Std tvec error: 0.0064715
 
 [----------] 4 tests from Calib3d_ProjectPoints_CPP
 [ RUN      ] Calib3d_ProjectPoints_CPP.regression
-[       OK ] Calib3d_ProjectPoints_CPP.regression (2 ms)
+[       OK ] Calib3d_ProjectPoints_CPP.regression (1 ms)
 [ RUN      ] Calib3d_ProjectPoints_CPP.inputShape
 [       OK ] Calib3d_ProjectPoints_CPP.inputShape (0 ms)
 [ RUN      ] Calib3d_ProjectPoints_CPP.outputShape
 [       OK ] Calib3d_ProjectPoints_CPP.outputShape (0 ms)
 [ RUN      ] Calib3d_ProjectPoints_CPP.badarg
-[       OK ] Calib3d_ProjectPoints_CPP.badarg (0 ms)
+[       OK ] Calib3d_ProjectPoints_CPP.badarg (1 ms)
 [----------] 4 tests from Calib3d_ProjectPoints_CPP (2 ms total)
 
 [----------] 2 tests from Calib3d_StereoCalibrate_CPP
 [ RUN      ] Calib3d_StereoCalibrate_CPP.regression
-[       OK ] Calib3d_StereoCalibrate_CPP.regression (615 ms)
+[       OK ] Calib3d_StereoCalibrate_CPP.regression (594 ms)
 [ RUN      ] Calib3d_StereoCalibrate_CPP.extended
-[       OK ] Calib3d_StereoCalibrate_CPP.extended (58 ms)
-[----------] 2 tests from Calib3d_StereoCalibrate_CPP (673 ms total)
+[       OK ] Calib3d_StereoCalibrate_CPP.extended (57 ms)
+[----------] 2 tests from Calib3d_StereoCalibrate_CPP (651 ms total)
 
 [----------] 3 tests from Calib3d_StereoCalibrate
 [ RUN      ] Calib3d_StereoCalibrate.regression_10791
@@ -206,82 +206,82 @@ Max tvec error: 0.0351865, Mean tvec error: 0.0121831, Std tvec error: 0.0064715
 
 [----------] 3 tests from cameraCalibrationTiltTest
 [ RUN      ] cameraCalibrationTiltTest.projectPoints
-[       OK ] cameraCalibrationTiltTest.projectPoints (11 ms)
+[       OK ] cameraCalibrationTiltTest.projectPoints (10 ms)
 [ RUN      ] cameraCalibrationTiltTest.undistortPoints
 [       OK ] cameraCalibrationTiltTest.undistortPoints (1 ms)
 [ RUN      ] cameraCalibrationTiltTest.calibrateCamera
-[       OK ] cameraCalibrationTiltTest.calibrateCamera (509 ms)
-[----------] 3 tests from cameraCalibrationTiltTest (521 ms total)
+[       OK ] cameraCalibrationTiltTest.calibrateCamera (519 ms)
+[----------] 3 tests from cameraCalibrationTiltTest (530 ms total)
 
 [----------] 3 tests from Calib3d_ChessboardDetector
 [ RUN      ] Calib3d_ChessboardDetector.accuracy
-[       OK ] Calib3d_ChessboardDetector.accuracy (919 ms)
+[       OK ] Calib3d_ChessboardDetector.accuracy (904 ms)
 [ RUN      ] Calib3d_ChessboardDetector.badarg
 [       OK ] Calib3d_ChessboardDetector.badarg (5 ms)
 [ RUN      ] Calib3d_ChessboardDetector.timing
-[       OK ] Calib3d_ChessboardDetector.timing (536 ms)
-[----------] 3 tests from Calib3d_ChessboardDetector (1460 ms total)
+[       OK ] Calib3d_ChessboardDetector.timing (523 ms)
+[----------] 3 tests from Calib3d_ChessboardDetector (1432 ms total)
 
 [----------] 1 test from Calib3d_ChessboardDetector2
 [ RUN      ] Calib3d_ChessboardDetector2.accuracy
-[       OK ] Calib3d_ChessboardDetector2.accuracy (1525 ms)
-[----------] 1 test from Calib3d_ChessboardDetector2 (1525 ms total)
+[       OK ] Calib3d_ChessboardDetector2.accuracy (1581 ms)
+[----------] 1 test from Calib3d_ChessboardDetector2 (1581 ms total)
 
 [----------] 1 test from Calib3d_ChessboardDetector3
 [ RUN      ] Calib3d_ChessboardDetector3.accuracy
-[       OK ] Calib3d_ChessboardDetector3.accuracy (376 ms)
-[----------] 1 test from Calib3d_ChessboardDetector3 (376 ms total)
+[       OK ] Calib3d_ChessboardDetector3.accuracy (392 ms)
+[----------] 1 test from Calib3d_ChessboardDetector3 (392 ms total)
 
 [----------] 1 test from Calib3d_CirclesPatternDetector
 [ RUN      ] Calib3d_CirclesPatternDetector.accuracy
-[       OK ] Calib3d_CirclesPatternDetector.accuracy (482 ms)
-[----------] 1 test from Calib3d_CirclesPatternDetector (482 ms total)
+[       OK ] Calib3d_CirclesPatternDetector.accuracy (558 ms)
+[----------] 1 test from Calib3d_CirclesPatternDetector (558 ms total)
 
 [----------] 3 tests from Calib3d_AsymmetricCirclesPatternDetector
 [ RUN      ] Calib3d_AsymmetricCirclesPatternDetector.accuracy
-[       OK ] Calib3d_AsymmetricCirclesPatternDetector.accuracy (185 ms)
+[       OK ] Calib3d_AsymmetricCirclesPatternDetector.accuracy (194 ms)
 [ RUN      ] Calib3d_AsymmetricCirclesPatternDetector.regression_18713
 [       OK ] Calib3d_AsymmetricCirclesPatternDetector.regression_18713 (6 ms)
 [ RUN      ] Calib3d_AsymmetricCirclesPatternDetector.regression_19498
-[       OK ] Calib3d_AsymmetricCirclesPatternDetector.regression_19498 (10 ms)
-[----------] 3 tests from Calib3d_AsymmetricCirclesPatternDetector (201 ms total)
+[       OK ] Calib3d_AsymmetricCirclesPatternDetector.regression_19498 (11 ms)
+[----------] 3 tests from Calib3d_AsymmetricCirclesPatternDetector (211 ms total)
 
 [----------] 1 test from Calib3d_AsymmetricCirclesPatternDetectorWithClustering
 [ RUN      ] Calib3d_AsymmetricCirclesPatternDetectorWithClustering.accuracy
-[       OK ] Calib3d_AsymmetricCirclesPatternDetectorWithClustering.accuracy (136 ms)
-[----------] 1 test from Calib3d_AsymmetricCirclesPatternDetectorWithClustering (136 ms total)
+[       OK ] Calib3d_AsymmetricCirclesPatternDetectorWithClustering.accuracy (141 ms)
+[----------] 1 test from Calib3d_AsymmetricCirclesPatternDetectorWithClustering (141 ms total)
 
 [----------] 2 tests from Calib3d_ChessboardWithMarkers
 [ RUN      ] Calib3d_ChessboardWithMarkers.regression_25806_white
-[       OK ] Calib3d_ChessboardWithMarkers.regression_25806_white (95 ms)
+[       OK ] Calib3d_ChessboardWithMarkers.regression_25806_white (88 ms)
 [ RUN      ] Calib3d_ChessboardWithMarkers.regression_25806_black
 [       OK ] Calib3d_ChessboardWithMarkers.regression_25806_black (90 ms)
-[----------] 2 tests from Calib3d_ChessboardWithMarkers (185 ms total)
+[----------] 2 tests from Calib3d_ChessboardWithMarkers (178 ms total)
 
 [----------] 1 test from Calib3d_CirclesPatternDetectorWithClustering
 [ RUN      ] Calib3d_CirclesPatternDetectorWithClustering.accuracy
-[       OK ] Calib3d_CirclesPatternDetectorWithClustering.accuracy (16 ms)
-[----------] 1 test from Calib3d_CirclesPatternDetectorWithClustering (16 ms total)
+[       OK ] Calib3d_CirclesPatternDetectorWithClustering.accuracy (17 ms)
+[----------] 1 test from Calib3d_CirclesPatternDetectorWithClustering (17 ms total)
 
 [----------] 1 test from Calib3d_RotatedCirclesPatternDetector
 [ RUN      ] Calib3d_RotatedCirclesPatternDetector.issue_24964
-[       OK ] Calib3d_RotatedCirclesPatternDetector.issue_24964 (59 ms)
-[----------] 1 test from Calib3d_RotatedCirclesPatternDetector (60 ms total)
+[       OK ] Calib3d_RotatedCirclesPatternDetector.issue_24964 (63 ms)
+[----------] 1 test from Calib3d_RotatedCirclesPatternDetector (63 ms total)
 
 [----------] 1 test from Calib3d_CornerOrdering
 [ RUN      ] Calib3d_CornerOrdering.issue_26830
-[       OK ] Calib3d_CornerOrdering.issue_26830 (166 ms)
-[----------] 1 test from Calib3d_CornerOrdering (166 ms total)
+[       OK ] Calib3d_CornerOrdering.issue_26830 (176 ms)
+[----------] 1 test from Calib3d_CornerOrdering (176 ms total)
 
 [----------] 1 test from Calib3d_ComposeRT
 [ RUN      ] Calib3d_ComposeRT.accuracy
-[       OK ] Calib3d_ComposeRT.accuracy (0 ms)
-[----------] 1 test from Calib3d_ComposeRT (0 ms total)
+[       OK ] Calib3d_ComposeRT.accuracy (1 ms)
+[----------] 1 test from Calib3d_ComposeRT (1 ms total)
 
 [----------] 1 test from Calib3d_ChessboardSubPixDetector
 [ RUN      ] Calib3d_ChessboardSubPixDetector.accuracy
-[       OK ] Calib3d_ChessboardSubPixDetector.accuracy (687 ms)
-[----------] 1 test from Calib3d_ChessboardSubPixDetector (687 ms total)
+[       OK ] Calib3d_ChessboardSubPixDetector.accuracy (720 ms)
+[----------] 1 test from Calib3d_ChessboardSubPixDetector (720 ms total)
 
 [----------] 1 test from Calib3d_CornerSubPix
 [ RUN      ] Calib3d_CornerSubPix.regression_7204
@@ -290,9 +290,9 @@ Max tvec error: 0.0351865, Mean tvec error: 0.0121831, Std tvec error: 0.0064715
 
 [----------] 3 tests from Calib3d_DecomposeProjectionMatrix
 [ RUN      ] Calib3d_DecomposeProjectionMatrix.accuracy
-[       OK ] Calib3d_DecomposeProjectionMatrix.accuracy (0 ms)
+[       OK ] Calib3d_DecomposeProjectionMatrix.accuracy (1 ms)
 [ RUN      ] Calib3d_DecomposeProjectionMatrix.degenerate_cases
-[       OK ] Calib3d_DecomposeProjectionMatrix.degenerate_cases (1 ms)
+[       OK ] Calib3d_DecomposeProjectionMatrix.degenerate_cases (0 ms)
 [ RUN      ] Calib3d_DecomposeProjectionMatrix.bug_23733
 [       OK ] Calib3d_DecomposeProjectionMatrix.bug_23733 (0 ms)
 [----------] 3 tests from Calib3d_DecomposeProjectionMatrix (1 ms total)
@@ -310,38 +310,38 @@ Max tvec error: 0.0351865, Mean tvec error: 0.0121831, Std tvec error: 0.0064715
 [ RUN      ] fisheyeTest.distortUndistortPointsNewCameraFixed
 [       OK ] fisheyeTest.distortUndistortPointsNewCameraFixed (0 ms)
 [ RUN      ] fisheyeTest.distortUndistortPointsNewCameraRandom
-[       OK ] fisheyeTest.distortUndistortPointsNewCameraRandom (0 ms)
+[       OK ] fisheyeTest.distortUndistortPointsNewCameraRandom (1 ms)
 [ RUN      ] fisheyeTest.solvePnP
 [       OK ] fisheyeTest.solvePnP (0 ms)
 [ RUN      ] fisheyeTest.solvePnPRansac
 [       OK ] fisheyeTest.solvePnPRansac (1 ms)
 [ RUN      ] fisheyeTest.undistortImage
-[       OK ] fisheyeTest.undistortImage (181 ms)
+[       OK ] fisheyeTest.undistortImage (180 ms)
 [ RUN      ] fisheyeTest.undistortAndDistortImage
-[       OK ] fisheyeTest.undistortAndDistortImage (200 ms)
+[       OK ] fisheyeTest.undistortAndDistortImage (197 ms)
 [ RUN      ] fisheyeTest.jacobians
 [       OK ] fisheyeTest.jacobians (0 ms)
 [ RUN      ] fisheyeTest.Calibration
-[       OK ] fisheyeTest.Calibration (187 ms)
+[       OK ] fisheyeTest.Calibration (192 ms)
 [ RUN      ] fisheyeTest.CalibrationWithFixedFocalLength
-[       OK ] fisheyeTest.CalibrationWithFixedFocalLength (138 ms)
+[       OK ] fisheyeTest.CalibrationWithFixedFocalLength (142 ms)
 [ RUN      ] fisheyeTest.Homography
 [       OK ] fisheyeTest.Homography (5 ms)
 [ RUN      ] fisheyeTest.EstimateUncertainties
-[       OK ] fisheyeTest.EstimateUncertainties (188 ms)
+[       OK ] fisheyeTest.EstimateUncertainties (190 ms)
 [ RUN      ] fisheyeTest.stereoRectify
 [       OK ] fisheyeTest.stereoRectify (0 ms)
 [ RUN      ] fisheyeTest.stereoCalibrate
-[       OK ] fisheyeTest.stereoCalibrate (1176 ms)
+[       OK ] fisheyeTest.stereoCalibrate (1177 ms)
 [ RUN      ] fisheyeTest.stereoCalibrateFixIntrinsic
-[       OK ] fisheyeTest.stereoCalibrateFixIntrinsic (789 ms)
+[       OK ] fisheyeTest.stereoCalibrateFixIntrinsic (781 ms)
 [ RUN      ] fisheyeTest.CalibrationWithDifferentPointsNumber
 [       OK ] fisheyeTest.CalibrationWithDifferentPointsNumber (2 ms)
 [ RUN      ] fisheyeTest.stereoCalibrateWithPerViewTransformations
-[       OK ] fisheyeTest.stereoCalibrateWithPerViewTransformations (1187 ms)
+[       OK ] fisheyeTest.stereoCalibrateWithPerViewTransformations (1172 ms)
 [ RUN      ] fisheyeTest.estimateNewCameraMatrixForUndistortRectify
 [       OK ] fisheyeTest.estimateNewCameraMatrixForUndistortRectify (0 ms)
-[----------] 19 tests from fisheyeTest (4054 ms total)
+[----------] 19 tests from fisheyeTest (4040 ms total)
 
 [----------] 1 test from Calib3d_Rodrigues
 [ RUN      ] Calib3d_Rodrigues.accuracy
@@ -350,14 +350,14 @@ Max tvec error: 0.0351865, Mean tvec error: 0.0121831, Std tvec error: 0.0064715
 
 [----------] 3 tests from Calib3d_FindFundamentalMat
 [ RUN      ] Calib3d_FindFundamentalMat.accuracy
-[       OK ] Calib3d_FindFundamentalMat.accuracy (1053 ms)
+[       OK ] Calib3d_FindFundamentalMat.accuracy (1054 ms)
 [ RUN      ] Calib3d_FindFundamentalMat.correctMatches
 [200, 0]
 [170, 0]
-[       OK ] Calib3d_FindFundamentalMat.correctMatches (0 ms)
+[       OK ] Calib3d_FindFundamentalMat.correctMatches (1 ms)
 [ RUN      ] Calib3d_FindFundamentalMat.Crash
 [       OK ] Calib3d_FindFundamentalMat.Crash (0 ms)
-[----------] 3 tests from Calib3d_FindFundamentalMat (1053 ms total)
+[----------] 3 tests from Calib3d_FindFundamentalMat (1055 ms total)
 
 [----------] 1 test from Calib3d_ConvertHomogeneoous
 [ RUN      ] Calib3d_ConvertHomogeneoous.accuracy
@@ -371,26 +371,26 @@ Max tvec error: 0.0351865, Mean tvec error: 0.0121831, Std tvec error: 0.0064715
 
 [----------] 1 test from Calib3d_FindEssentialMat
 [ RUN      ] Calib3d_FindEssentialMat.accuracy
-[       OK ] Calib3d_FindEssentialMat.accuracy (4483 ms)
-[----------] 1 test from Calib3d_FindEssentialMat (4483 ms total)
+[       OK ] Calib3d_FindEssentialMat.accuracy (4497 ms)
+[----------] 1 test from Calib3d_FindEssentialMat (4497 ms total)
 
 [----------] 6 tests from Calib3d_Homography
 [ RUN      ] Calib3d_Homography.accuracy
-[       OK ] Calib3d_Homography.accuracy (3144 ms)
+[       OK ] Calib3d_Homography.accuracy (3175 ms)
 [ RUN      ] Calib3d_Homography.EKcase
 ninliers: 10, inliers err: 0.0027
 [       OK ] Calib3d_Homography.EKcase (5 ms)
 [ RUN      ] Calib3d_Homography.fromImages
-nfeatures1 = 442, nfeatures2=449, matches=442, ninliers(RANSAC)=302, time(RANSAC)=0.54msec, ninliers(RHO)=291, time(RHO)=0.21msec
-[       OK ] Calib3d_Homography.fromImages (32 ms)
+nfeatures1 = 442, nfeatures2=449, matches=442, ninliers(RANSAC)=302, time(RANSAC)=0.56msec, ninliers(RHO)=291, time(RHO)=0.22msec
+[       OK ] Calib3d_Homography.fromImages (35 ms)
 [ RUN      ] Calib3d_Homography.minPoints
 npoints = 2
 [       OK ] Calib3d_Homography.minPoints (0 ms)
 [ RUN      ] Calib3d_Homography.not_normalized
 [       OK ] Calib3d_Homography.not_normalized (1 ms)
 [ RUN      ] Calib3d_Homography.Refine
-[       OK ] Calib3d_Homography.Refine (1 ms)
-[----------] 6 tests from Calib3d_Homography (3183 ms total)
+[       OK ] Calib3d_Homography.Refine (2 ms)
+[----------] 6 tests from Calib3d_Homography (3218 ms total)
 
 [----------] 2 tests from Calib3d_DecomposeHomography
 [ RUN      ] Calib3d_DecomposeHomography.regression
@@ -401,8 +401,8 @@ npoints = 2
 
 [----------] 1 test from Calib3d_ReprojectImageTo3D
 [ RUN      ] Calib3d_ReprojectImageTo3D.accuracy
-[       OK ] Calib3d_ReprojectImageTo3D.accuracy (695 ms)
-[----------] 1 test from Calib3d_ReprojectImageTo3D (695 ms total)
+[       OK ] Calib3d_ReprojectImageTo3D.accuracy (739 ms)
+[----------] 1 test from Calib3d_ReprojectImageTo3D (739 ms total)
 
 [----------] 1 test from Calib3d_SolveP3P
 [ RUN      ] Calib3d_SolveP3P.accuracy
@@ -414,8 +414,8 @@ mode: distorsion, method: SOLVEPNP_P3P -> 90.6% (maxErrT: 0, maxErrR: 0, meanErr
 approximate translation threshold for 0.7: 0, approximate rotation threshold for 0.7: 0
 mode: distorsion, method: SOLVEPNP_AP3P -> 92.7% (maxErrT: 0, maxErrR: 0, meanErrT: 0, meanErrR: 0, medErrT: 0, medErrR: 0)
 approximate translation threshold for 0.7: 0, approximate rotation threshold for 0.7: 0
-[       OK ] Calib3d_SolveP3P.accuracy (2098 ms)
-[----------] 1 test from Calib3d_SolveP3P (2098 ms total)
+[       OK ] Calib3d_SolveP3P.accuracy (2084 ms)
+[----------] 1 test from Calib3d_SolveP3P (2084 ms total)
 
 [----------] 9 tests from Calib3d_SolvePnPRansac
 [ RUN      ] Calib3d_SolvePnPRansac.accuracy
@@ -453,7 +453,7 @@ mode: distorsion, method: SOLVEPNP_IPPE_SQUARE -> Skip for non-planar tag object
 mode: distorsion, method: SOLVEPNP_SQPNP -> 97.8% (maxErrT: 0.140888, maxErrR: 0.00673647, meanErrT: 0.000941758, meanErrR: 9.80271e-05, medErrT: 3.61288e-07, medErrR: 9.90232e-08)
 approximate translation threshold for 0.7: 7.5602e-07, approximate rotation threshold for 0.7: 1.68968e-07
 
-[       OK ] Calib3d_SolvePnPRansac.accuracy (12685 ms)
+[       OK ] Calib3d_SolvePnPRansac.accuracy (12655 ms)
 [ RUN      ] Calib3d_SolvePnPRansac.accuracy_planar
 mode: no distortion, method: SOLVEPNP_ITERATIVE -> 99% (maxErrT: 2.5883e-06, maxErrR: 9.03061e-07, meanErrT: 7.17815e-08, meanErrR: 6.0171e-08, medErrT: 4.06103e-08, medErrR: 3.94297e-08)
 approximate translation threshold for 0.7: 6.50886e-08, approximate rotation threshold for 0.7: 6.33325e-08
@@ -491,7 +491,7 @@ mode: distorsion, method: SOLVEPNP_IPPE_SQUARE -> Skip for non-planar tag object
 mode: distorsion, method: SOLVEPNP_SQPNP -> 91.3% (maxErrT: 0.541949, maxErrR: 0.607033, meanErrT: 0.00635706, meanErrR: 0.00639516, medErrT: 4.35334e-08, medErrR: 4.15019e-08)
 approximate translation threshold for 0.7: 9.86792e-08, approximate rotation threshold for 0.7: 7.23197e-08
 
-[       OK ] Calib3d_SolvePnPRansac.accuracy_planar (4368 ms)
+[       OK ] Calib3d_SolvePnPRansac.accuracy_planar (4386 ms)
 [ RUN      ] Calib3d_SolvePnPRansac.accuracy_planar_tag
 mode: no distortion, method: SOLVEPNP_ITERATIVE -> 100% (maxErrT: 4.40714e-05, maxErrR: 0.000657175, meanErrT: 6.14393e-07, meanErrR: 2.90417e-06, medErrT: 1.30751e-07, medErrR: 4.25884e-07)
 approximate translation threshold for 0.7: 7.14069e-08, approximate rotation threshold for 0.7: 8.93715e-07
@@ -531,11 +531,11 @@ approximate translation threshold for 0.7: 3.00418e-07, approximate rotation thr
 mode: distorsion, method: SOLVEPNP_SQPNP -> 97.4% (maxErrT: 1.15719, maxErrR: 3.16031, meanErrT: 0.0150719, meanErrR: 0.0577386, medErrT: 1.4085e-07, medErrR: 4.46072e-07)
 approximate translation threshold for 0.7: 3.00418e-07, approximate rotation threshold for 0.7: 9.38886e-07
 
-[       OK ] Calib3d_SolvePnPRansac.accuracy_planar_tag (564 ms)
+[       OK ] Calib3d_SolvePnPRansac.accuracy_planar_tag (571 ms)
 [ RUN      ] Calib3d_SolvePnPRansac.concurrency
-[       OK ] Calib3d_SolvePnPRansac.concurrency (5 ms)
+[       OK ] Calib3d_SolvePnPRansac.concurrency (4 ms)
 [ RUN      ] Calib3d_SolvePnPRansac.input_type
-[       OK ] Calib3d_SolvePnPRansac.input_type (1 ms)
+[       OK ] Calib3d_SolvePnPRansac.input_type (2 ms)
 [ RUN      ] Calib3d_SolvePnPRansac.double_support
 [       OK ] Calib3d_SolvePnPRansac.double_support (0 ms)
 [ RUN      ] Calib3d_SolvePnPRansac.bad_input_points_19253
@@ -544,7 +544,7 @@ approximate translation threshold for 0.7: 3.00418e-07, approximate rotation thr
 [       OK ] Calib3d_SolvePnPRansac.minPoints (0 ms)
 [ RUN      ] Calib3d_SolvePnPRansac.inputShape
 [       OK ] Calib3d_SolvePnPRansac.inputShape (0 ms)
-[----------] 9 tests from Calib3d_SolvePnPRansac (17624 ms total)
+[----------] 9 tests from Calib3d_SolvePnPRansac (17619 ms total)
 
 [----------] 11 tests from Calib3d_SolvePnP
 [ RUN      ] Calib3d_SolvePnP.accuracy
@@ -582,7 +582,7 @@ mode: distorsion, method: SOLVEPNP_IPPE_SQUARE -> Skip for non-planar tag object
 mode: distorsion, method: SOLVEPNP_SQPNP -> 80.8% (maxErrT: 0.00048777, maxErrR: 3.4454e-05, meanErrT: 1.92986e-06, meanErrR: 4.32317e-07, medErrT: 3.42311e-07, medErrR: 1.01277e-07)
 approximate translation threshold for 0.7: 6.50129e-07, approximate rotation threshold for 0.7: 9.5217e-08
 
-[       OK ] Calib3d_SolvePnP.accuracy (9117 ms)
+[       OK ] Calib3d_SolvePnP.accuracy (9077 ms)
 [ RUN      ] Calib3d_SolvePnP.accuracy_planar
 mode: no distortion, method: SOLVEPNP_ITERATIVE -> 99.2% (maxErrT: 8.83854e-06, maxErrR: 4.86438e-06, meanErrT: 9.48578e-08, meanErrR: 7.10317e-08, medErrT: 4.41718e-08, medErrR: 3.97928e-08)
 approximate translation threshold for 0.7: 9.35948e-08, approximate rotation threshold for 0.7: 3.23689e-08
@@ -620,7 +620,7 @@ mode: distorsion, method: SOLVEPNP_IPPE_SQUARE -> Skip for non-planar tag object
 mode: distorsion, method: SOLVEPNP_SQPNP -> 85.7% (maxErrT: 1.1184, maxErrR: 1.35115, meanErrT: 0.0160521, meanErrR: 0.016152, medErrT: 4.54133e-08, medErrR: 4.39013e-08)
 approximate translation threshold for 0.7: 9.84332e-08, approximate rotation threshold for 0.7: 9.07825e-08
 
-[       OK ] Calib3d_SolvePnP.accuracy_planar (1660 ms)
+[       OK ] Calib3d_SolvePnP.accuracy_planar (1647 ms)
 [ RUN      ] Calib3d_SolvePnP.accuracy_planar_tag
 mode: no distortion, method: SOLVEPNP_ITERATIVE -> 85.3% (maxErrT: 9.32611e-05, maxErrR: 0.00021211, meanErrT: 3.82109e-07, meanErrR: 1.22986e-06, medErrT: 8.22589e-08, medErrR: 2.41544e-07)
 approximate translation threshold for 0.7: 4.3361e-09, approximate rotation threshold for 0.7: 5.39747e-07
@@ -660,7 +660,7 @@ approximate translation threshold for 0.7: 3.05658e-07, approximate rotation thr
 mode: distorsion, method: SOLVEPNP_SQPNP -> 79.8% (maxErrT: 1.14283, maxErrR: 3.69023, meanErrT: 0.0186966, meanErrR: 0.0443608, medErrT: 1.06976e-07, medErrR: 3.08241e-07)
 approximate translation threshold for 0.7: 1.98691e-07, approximate rotation threshold for 0.7: 6.23031e-07
 
-[       OK ] Calib3d_SolvePnP.accuracy_planar_tag (970 ms)
+[       OK ] Calib3d_SolvePnP.accuracy_planar_tag (971 ms)
 [ RUN      ] Calib3d_SolvePnP.input_type
 [       OK ] Calib3d_SolvePnP.input_type (6 ms)
 [ RUN      ] Calib3d_SolvePnP.translation
@@ -777,7 +777,7 @@ tvec_est_refine: [0.1499499395641654, -0.2000524019584374, 1.499842110992068]
 [       OK ] Calib3d_SolvePnP.refine (1 ms)
 [ RUN      ] Calib3d_SolvePnP.inputShape
 [       OK ] Calib3d_SolvePnP.inputShape (1 ms)
-[----------] 11 tests from Calib3d_SolvePnP (11765 ms total)
+[----------] 11 tests from Calib3d_SolvePnP (11713 ms total)
 
 [----------] 1 test from AP3P
 [ RUN      ] AP3P.ctheta1p_nan_23607
@@ -800,10 +800,10 @@ progress: 35%
 progress: 38%
 progress: 42%
 progress: 45%
-[ WARN:0@59.814] global loadsave.cpp:278 findDecoder imread_('/data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/stereomatching/datasets/tsukuba/disp6.png'): can't open/read file: check file path/integrity
+[ WARN:0@59.510] global loadsave.cpp:278 findDecoder imread_('/data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/stereomatching/datasets/tsukuba/disp6.png'): can't open/read file: check file path/integrity
 progress: 49%
-[       OK ] Calib3d_StereoBM.regression (771 ms)
-[----------] 1 test from Calib3d_StereoBM (771 ms total)
+[       OK ] Calib3d_StereoBM.regression (783 ms)
+[----------] 1 test from Calib3d_StereoBM (783 ms total)
 
 [----------] 2 tests from Calib3d_StereoSGBM
 [ RUN      ] Calib3d_StereoSGBM.regression
@@ -832,26 +832,26 @@ progress: 33%
 progress: 34%
 progress: 36%
 progress: 38%
-[ WARN:0@61.323] global loadsave.cpp:278 findDecoder imread_('/data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/stereomatching/datasets/tsukuba/disp6.png'): can't open/read file: check file path/integrity
+[ WARN:0@61.178] global loadsave.cpp:278 findDecoder imread_('/data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/stereomatching/datasets/tsukuba/disp6.png'): can't open/read file: check file path/integrity
 progress: 39%
-[ WARN:0@61.363] global loadsave.cpp:278 findDecoder imread_('/data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/stereomatching/datasets/tsukuba/disp6.png'): can't open/read file: check file path/integrity
+[ WARN:0@61.224] global loadsave.cpp:278 findDecoder imread_('/data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/stereomatching/datasets/tsukuba/disp6.png'): can't open/read file: check file path/integrity
 progress: 41%
-[ WARN:0@61.409] global loadsave.cpp:278 findDecoder imread_('/data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/stereomatching/datasets/tsukuba/disp6.png'): can't open/read file: check file path/integrity
+[ WARN:0@61.273] global loadsave.cpp:278 findDecoder imread_('/data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/stereomatching/datasets/tsukuba/disp6.png'): can't open/read file: check file path/integrity
 progress: 42%
-[ WARN:0@61.440] global loadsave.cpp:278 findDecoder imread_('/data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/stereomatching/datasets/tsukuba/disp6.png'): can't open/read file: check file path/integrity
+[ WARN:0@61.306] global loadsave.cpp:278 findDecoder imread_('/data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/stereomatching/datasets/tsukuba/disp6.png'): can't open/read file: check file path/integrity
 progress: 44%
 progress: 45%
 progress: 47%
 progress: 48%
-[       OK ] Calib3d_StereoSGBM.regression (1783 ms)
+[       OK ] Calib3d_StereoSGBM.regression (1985 ms)
 [ RUN      ] Calib3d_StereoSGBM.deterministic
 [       OK ] Calib3d_StereoSGBM.deterministic (1 ms)
-[----------] 2 tests from Calib3d_StereoSGBM (1784 ms total)
+[----------] 2 tests from Calib3d_StereoSGBM (1986 ms total)
 
 [----------] 1 test from Calib3d_StereoSGBM_HH4
 [ RUN      ] Calib3d_StereoSGBM_HH4.regression
-[       OK ] Calib3d_StereoSGBM_HH4.regression (28 ms)
-[----------] 1 test from Calib3d_StereoSGBM_HH4 (28 ms total)
+[       OK ] Calib3d_StereoSGBM_HH4.regression (29 ms)
+[----------] 1 test from Calib3d_StereoSGBM_HH4 (29 ms total)
 
 [----------] 2 tests from Calib3d_EstimateTranslation3D
 [ RUN      ] Calib3d_EstimateTranslation3D.test4Points
@@ -895,13 +895,13 @@ progress: 48%
 
 [----------] 1 test from Calib3d_UndistortImgproc
 [ RUN      ] Calib3d_UndistortImgproc.accuracy
-[       OK ] Calib3d_UndistortImgproc.accuracy (209 ms)
-[----------] 1 test from Calib3d_UndistortImgproc (209 ms total)
+[       OK ] Calib3d_UndistortImgproc.accuracy (214 ms)
+[----------] 1 test from Calib3d_UndistortImgproc (214 ms total)
 
 [----------] 1 test from Calib3d_InitUndistortMap
 [ RUN      ] Calib3d_InitUndistortMap.accuracy
-[       OK ] Calib3d_InitUndistortMap.accuracy (85 ms)
-[----------] 1 test from Calib3d_InitUndistortMap (85 ms total)
+[       OK ] Calib3d_InitUndistortMap.accuracy (92 ms)
+[----------] 1 test from Calib3d_InitUndistortMap (92 ms total)
 
 [----------] 1 test from Imgproc_undistort
 [ RUN      ] Imgproc_undistort.regression_15286
@@ -915,17 +915,17 @@ progress: 48%
 
 [----------] 1 test from Calib3d_initInverseRectificationMap
 [ RUN      ] Calib3d_initInverseRectificationMap.regression_20165
-[       OK ] Calib3d_initInverseRectificationMap.regression_20165 (209 ms)
-[----------] 1 test from Calib3d_initInverseRectificationMap (209 ms total)
+[       OK ] Calib3d_initInverseRectificationMap.regression_20165 (210 ms)
+[----------] 1 test from Calib3d_initInverseRectificationMap (210 ms total)
 
 [----------] 1 test from Calib3d_Undistort
 [ RUN      ] Calib3d_Undistort.badarg
-[       OK ] Calib3d_Undistort.badarg (1 ms)
-[----------] 1 test from Calib3d_Undistort (1 ms total)
+[       OK ] Calib3d_Undistort.badarg (0 ms)
+[----------] 1 test from Calib3d_Undistort (0 ms total)
 
 [----------] 5 tests from UndistortPointsTest
 [ RUN      ] UndistortPointsTest.accuracy
-[       OK ] UndistortPointsTest.accuracy (0 ms)
+[       OK ] UndistortPointsTest.accuracy (1 ms)
 [ RUN      ] UndistortPointsTest.undistortImagePointsAccuracy
 [       OK ] UndistortPointsTest.undistortImagePointsAccuracy (0 ms)
 [ RUN      ] UndistortPointsTest.stop_criteria
@@ -933,25 +933,25 @@ progress: 48%
 [ RUN      ] UndistortPointsTest.regression_14583
 [       OK ] UndistortPointsTest.regression_14583 (0 ms)
 [ RUN      ] UndistortPointsTest.regression_27916
-[       OK ] UndistortPointsTest.regression_27916 (1 ms)
+[       OK ] UndistortPointsTest.regression_27916 (0 ms)
 [----------] 5 tests from UndistortPointsTest (1 ms total)
 
 [----------] 1 test from usac_Homography
 [ RUN      ] usac_Homography.accuracy
-[       OK ] usac_Homography.accuracy (178 ms)
-[----------] 1 test from usac_Homography (178 ms total)
+[       OK ] usac_Homography.accuracy (183 ms)
+[----------] 1 test from usac_Homography (183 ms total)
 
 [----------] 2 tests from usac_Fundamental
 [ RUN      ] usac_Fundamental.accuracy
-[       OK ] usac_Fundamental.accuracy (1025 ms)
+[       OK ] usac_Fundamental.accuracy (1040 ms)
 [ RUN      ] usac_Fundamental.regression_19639
 [       OK ] usac_Fundamental.regression_19639 (1 ms)
-[----------] 2 tests from usac_Fundamental (1026 ms total)
+[----------] 2 tests from usac_Fundamental (1041 ms total)
 
 [----------] 1 test from usac_P3P
 [ RUN      ] usac_P3P.accuracy
-[       OK ] usac_P3P.accuracy (972 ms)
-[----------] 1 test from usac_P3P (972 ms total)
+[       OK ] usac_P3P.accuracy (959 ms)
+[----------] 1 test from usac_P3P (959 ms total)
 
 [----------] 1 test from usac_Affine2D
 [ RUN      ] usac_Affine2D.accuracy
@@ -960,32 +960,32 @@ progress: 48%
 
 [----------] 1 test from usac_testUsacParams
 [ RUN      ] usac_testUsacParams.accuracy
-[       OK ] usac_testUsacParams.accuracy (1022 ms)
-[----------] 1 test from usac_testUsacParams (1022 ms total)
+[       OK ] usac_testUsacParams.accuracy (999 ms)
+[----------] 1 test from usac_testUsacParams (999 ms total)
 
 [----------] 1 test from usac_solvePnPRansac
 [ RUN      ] usac_solvePnPRansac.regression_21105
-[       OK ] usac_solvePnPRansac.regression_21105 (63 ms)
-[----------] 1 test from usac_solvePnPRansac (63 ms total)
+[       OK ] usac_solvePnPRansac.regression_21105 (62 ms)
+[----------] 1 test from usac_solvePnPRansac (62 ms total)
 
 [----------] 6 tests from OCL_StereoMatcher/StereoBMFixture
 [ RUN      ] OCL_StereoMatcher/StereoBMFixture.StereoBM/0, where GetParam() = (32, 11)
-[       OK ] OCL_StereoMatcher/StereoBMFixture.StereoBM/0 (46 ms)
+[       OK ] OCL_StereoMatcher/StereoBMFixture.StereoBM/0 (44 ms)
 [ RUN      ] OCL_StereoMatcher/StereoBMFixture.StereoBM/1, where GetParam() = (32, 21)
-[       OK ] OCL_StereoMatcher/StereoBMFixture.StereoBM/1 (41 ms)
+[       OK ] OCL_StereoMatcher/StereoBMFixture.StereoBM/1 (39 ms)
 [ RUN      ] OCL_StereoMatcher/StereoBMFixture.StereoBM/2, where GetParam() = (64, 11)
-[       OK ] OCL_StereoMatcher/StereoBMFixture.StereoBM/2 (39 ms)
+[       OK ] OCL_StereoMatcher/StereoBMFixture.StereoBM/2 (38 ms)
 [ RUN      ] OCL_StereoMatcher/StereoBMFixture.StereoBM/3, where GetParam() = (64, 21)
 [       OK ] OCL_StereoMatcher/StereoBMFixture.StereoBM/3 (38 ms)
 [ RUN      ] OCL_StereoMatcher/StereoBMFixture.StereoBM/4, where GetParam() = (128, 11)
 [       OK ] OCL_StereoMatcher/StereoBMFixture.StereoBM/4 (36 ms)
 [ RUN      ] OCL_StereoMatcher/StereoBMFixture.StereoBM/5, where GetParam() = (128, 21)
-[       OK ] OCL_StereoMatcher/StereoBMFixture.StereoBM/5 (47 ms)
-[----------] 6 tests from OCL_StereoMatcher/StereoBMFixture (247 ms total)
+[       OK ] OCL_StereoMatcher/StereoBMFixture.StereoBM/5 (44 ms)
+[----------] 6 tests from OCL_StereoMatcher/StereoBMFixture (239 ms total)
 
 [----------] 6 tests from Calib3d/EstimateAffine2D
 [ RUN      ] Calib3d/EstimateAffine2D.test3Points/0, where GetParam() = RANSAC
-[       OK ] Calib3d/EstimateAffine2D.test3Points/0 (2 ms)
+[       OK ] Calib3d/EstimateAffine2D.test3Points/0 (1 ms)
 [ RUN      ] Calib3d/EstimateAffine2D.test3Points/1, where GetParam() = LMEDS
 [       OK ] Calib3d/EstimateAffine2D.test3Points/1 (2 ms)
 [ RUN      ] Calib3d/EstimateAffine2D.testNPoints/0, where GetParam() = RANSAC
@@ -996,40 +996,40 @@ progress: 48%
 [       OK ] Calib3d/EstimateAffine2D.testConversion/0 (0 ms)
 [ RUN      ] Calib3d/EstimateAffine2D.testConversion/1, where GetParam() = LMEDS
 [       OK ] Calib3d/EstimateAffine2D.testConversion/1 (0 ms)
-[----------] 6 tests from Calib3d/EstimateAffine2D (67 ms total)
+[----------] 6 tests from Calib3d/EstimateAffine2D (66 ms total)
 
 [----------] 6 tests from Calib3d/EstimateAffinePartial2D
 [ RUN      ] Calib3d/EstimateAffinePartial2D.test2Points/0, where GetParam() = RANSAC
-[       OK ] Calib3d/EstimateAffinePartial2D.test2Points/0 (2 ms)
+[       OK ] Calib3d/EstimateAffinePartial2D.test2Points/0 (1 ms)
 [ RUN      ] Calib3d/EstimateAffinePartial2D.test2Points/1, where GetParam() = LMEDS
-[       OK ] Calib3d/EstimateAffinePartial2D.test2Points/1 (1 ms)
+[       OK ] Calib3d/EstimateAffinePartial2D.test2Points/1 (2 ms)
 [ RUN      ] Calib3d/EstimateAffinePartial2D.testNPoints/0, where GetParam() = RANSAC
 [       OK ] Calib3d/EstimateAffinePartial2D.testNPoints/0 (18 ms)
 [ RUN      ] Calib3d/EstimateAffinePartial2D.testNPoints/1, where GetParam() = LMEDS
-[       OK ] Calib3d/EstimateAffinePartial2D.testNPoints/1 (21 ms)
+[       OK ] Calib3d/EstimateAffinePartial2D.testNPoints/1 (20 ms)
 [ RUN      ] Calib3d/EstimateAffinePartial2D.testConversion/0, where GetParam() = RANSAC
 [       OK ] Calib3d/EstimateAffinePartial2D.testConversion/0 (0 ms)
 [ RUN      ] Calib3d/EstimateAffinePartial2D.testConversion/1, where GetParam() = LMEDS
 [       OK ] Calib3d/EstimateAffinePartial2D.testConversion/1 (0 ms)
-[----------] 6 tests from Calib3d/EstimateAffinePartial2D (42 ms total)
+[----------] 6 tests from Calib3d/EstimateAffinePartial2D (41 ms total)
 
 [----------] 4 tests from Calib3d_CirclesGrid_RNG_Symmetric
 [ RUN      ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/0, where GetParam() = 4x4
-[       OK ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/0 (0 ms)
+[       OK ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/0 (1 ms)
 [ RUN      ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/1, where GetParam() = 6x5
-[       OK ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/1 (2 ms)
+[       OK ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/1 (1 ms)
 [ RUN      ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/2, where GetParam() = 8x6
-[       OK ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/2 (2 ms)
+[       OK ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/2 (3 ms)
 [ RUN      ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/3, where GetParam() = 10x8
-[       OK ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/3 (4 ms)
+[       OK ] Calib3d_CirclesGrid_RNG_Symmetric.synthetic/3 (3 ms)
 [----------] 4 tests from Calib3d_CirclesGrid_RNG_Symmetric (8 ms total)
 
 [----------] 2 tests from Calib3d_CirclesGrid_RNG_Asymmetric
 [ RUN      ] Calib3d_CirclesGrid_RNG_Asymmetric.synthetic/0, where GetParam() = 4x6
 [       OK ] Calib3d_CirclesGrid_RNG_Asymmetric.synthetic/0 (2 ms)
 [ RUN      ] Calib3d_CirclesGrid_RNG_Asymmetric.synthetic/1, where GetParam() = 5x8
-[       OK ] Calib3d_CirclesGrid_RNG_Asymmetric.synthetic/1 (2 ms)
-[----------] 2 tests from Calib3d_CirclesGrid_RNG_Asymmetric (4 ms total)
+[       OK ] Calib3d_CirclesGrid_RNG_Asymmetric.synthetic/1 (3 ms)
+[----------] 2 tests from Calib3d_CirclesGrid_RNG_Asymmetric (5 ms total)
 
 [----------] 4 tests from Calib3d_StereoBM_BufferBM
 [ RUN      ] Calib3d_StereoBM_BufferBM.memAllocsTest/0, where GetParam() = (0, (30, 19))
@@ -1044,7 +1044,7 @@ progress: 48%
 
 [----------] 6 tests from Calib3d/EstimateTranslation2D
 [ RUN      ] Calib3d/EstimateTranslation2D.test1Point/0, where GetParam() = RANSAC
-[       OK ] Calib3d/EstimateTranslation2D.test1Point/0 (1 ms)
+[       OK ] Calib3d/EstimateTranslation2D.test1Point/0 (2 ms)
 [ RUN      ] Calib3d/EstimateTranslation2D.test1Point/1, where GetParam() = LMEDS
 [       OK ] Calib3d/EstimateTranslation2D.test1Point/1 (2 ms)
 [ RUN      ] Calib3d/EstimateTranslation2D.testNPoints/0, where GetParam() = RANSAC
@@ -1055,11 +1055,11 @@ progress: 48%
 [       OK ] Calib3d/EstimateTranslation2D.testConversion/0 (0 ms)
 [ RUN      ] Calib3d/EstimateTranslation2D.testConversion/1, where GetParam() = LMEDS
 [       OK ] Calib3d/EstimateTranslation2D.testConversion/1 (0 ms)
-[----------] 6 tests from Calib3d/EstimateTranslation2D (15 ms total)
+[----------] 6 tests from Calib3d/EstimateTranslation2D (16 ms total)
 
 [----------] 10 tests from Calib3d/usac_Essential
 [ RUN      ] Calib3d/usac_Essential.accuracy/0, where GetParam() = USAC_DEFAULT
-[       OK ] Calib3d/usac_Essential.accuracy/0 (39 ms)
+[       OK ] Calib3d/usac_Essential.accuracy/0 (37 ms)
 [ RUN      ] Calib3d/usac_Essential.accuracy/1, where GetParam() = USAC_ACCURATE
 [       OK ] Calib3d/usac_Essential.accuracy/1 (46 ms)
 [ RUN      ] Calib3d/usac_Essential.accuracy/2, where GetParam() = USAC_PROSAC
@@ -1067,7 +1067,7 @@ progress: 48%
 [ RUN      ] Calib3d/usac_Essential.accuracy/3, where GetParam() = USAC_FAST
 [       OK ] Calib3d/usac_Essential.accuracy/3 (36 ms)
 [ RUN      ] Calib3d/usac_Essential.accuracy/4, where GetParam() = USAC_MAGSAC
-[       OK ] Calib3d/usac_Essential.accuracy/4 (47 ms)
+[       OK ] Calib3d/usac_Essential.accuracy/4 (45 ms)
 [ RUN      ] Calib3d/usac_Essential.maxiters/0, where GetParam() = USAC_DEFAULT
 [       OK ] Calib3d/usac_Essential.maxiters/0 (5 ms)
 [ RUN      ] Calib3d/usac_Essential.maxiters/1, where GetParam() = USAC_ACCURATE
@@ -1075,13 +1075,13 @@ progress: 48%
 [ RUN      ] Calib3d/usac_Essential.maxiters/2, where GetParam() = USAC_PROSAC
 [       OK ] Calib3d/usac_Essential.maxiters/2 (13 ms)
 [ RUN      ] Calib3d/usac_Essential.maxiters/3, where GetParam() = USAC_FAST
-[       OK ] Calib3d/usac_Essential.maxiters/3 (5 ms)
+[       OK ] Calib3d/usac_Essential.maxiters/3 (6 ms)
 [ RUN      ] Calib3d/usac_Essential.maxiters/4, where GetParam() = USAC_MAGSAC
-[       OK ] Calib3d/usac_Essential.maxiters/4 (15 ms)
-[----------] 10 tests from Calib3d/usac_Essential (229 ms total)
+[       OK ] Calib3d/usac_Essential.maxiters/4 (14 ms)
+[----------] 10 tests from Calib3d/usac_Essential (225 ms total)
 
 [----------] Global test environment tear-down
-[==========] 186 tests from 73 test cases ran. (67629 ms total)
+[==========] 186 tests from 73 test cases ran. (67526 ms total)
 [  PASSED  ] 186 tests.
 
   YOU HAVE 2 DISABLED TESTS

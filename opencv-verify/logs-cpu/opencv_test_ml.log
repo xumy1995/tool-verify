@@ -2,7 +2,7 @@ CTEST_FULL_OUTPUT
 OpenCV version: 4.14.0-pre
 OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
-Compiler: /usr/bin/c++  (ver 11.4.0)
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
 Algorithm hint: ALGO_HINT_ACCURATE
 HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
@@ -15,20 +15,20 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [----------] Global test environment set-up.
 [----------] 1 test from ML_NBAYES
 [ RUN      ] ML_NBAYES.regression_5911
-[       OK ] ML_NBAYES.regression_5911 (16 ms)
-[----------] 1 test from ML_NBAYES (16 ms total)
+[       OK ] ML_NBAYES.regression_5911 (17 ms)
+[----------] 1 test from ML_NBAYES (17 ms total)
 
 [----------] 2 tests from ML_EM
 [ RUN      ] ML_EM.save_load
 [       OK ] ML_EM.save_load (6 ms)
 [ RUN      ] ML_EM.classification
-[       OK ] ML_EM.classification (361 ms)
-[----------] 2 tests from ML_EM (367 ms total)
+[       OK ] ML_EM.classification (369 ms)
+[----------] 2 tests from ML_EM (375 ms total)
 
 [----------] 1 test from ML_KMeans
 [ RUN      ] ML_KMeans.accuracy
-[       OK ] ML_KMeans.accuracy (22 ms)
-[----------] 1 test from ML_KMeans (22 ms total)
+[       OK ] ML_KMeans.accuracy (23 ms)
+[----------] 1 test from ML_KMeans (23 ms total)
 
 [----------] 3 tests from ML_KNearest
 [ RUN      ] ML_KNearest.accuracy
@@ -41,10 +41,10 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 
 [----------] 2 tests from ML_LR
 [ RUN      ] ML_LR.accuracy
-[       OK ] ML_LR.accuracy (895 ms)
+[       OK ] ML_LR.accuracy (900 ms)
 [ RUN      ] ML_LR.save_load
-[       OK ] ML_LR.save_load (1000 ms)
-[----------] 2 tests from ML_LR (1895 ms total)
+[       OK ] ML_LR.save_load (1026 ms)
+[----------] 2 tests from ML_LR (1926 ms total)
 
 [----------] 2 tests from TrainDataGet
 [ RUN      ] TrainDataGet.layout_ROW_SAMPLE
@@ -55,7 +55,7 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 
 [----------] 4 tests from ML_RTrees
 [ RUN      ] ML_RTrees.getVotes
-[       OK ] ML_RTrees.getVotes (2 ms)
+[       OK ] ML_RTrees.getVotes (1 ms)
 [ RUN      ] ML_RTrees.11142_sample_weights_regression
 [       OK ] ML_RTrees.11142_sample_weights_regression (0 ms)
 [ RUN      ] ML_RTrees.11142_sample_weights_classification
@@ -63,8 +63,8 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 1
 [       OK ] ML_RTrees.11142_sample_weights_classification (0 ms)
 [ RUN      ] ML_RTrees.bug_12974_throw_exception_when_predict_different_feature_count
-[       OK ] ML_RTrees.bug_12974_throw_exception_when_predict_different_feature_count (1 ms)
-[----------] 4 tests from ML_RTrees (3 ms total)
+[       OK ] ML_RTrees.bug_12974_throw_exception_when_predict_different_feature_count (3 ms)
+[----------] 4 tests from ML_RTrees (4 ms total)
 
 [----------] 1 test from ML_SVMSGD
 [ RUN      ] ML_SVMSGD.twoPoints
@@ -75,115 +75,115 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [ RUN      ] ML_SVM.trainauto
 [       OK ] ML_SVM.trainauto (2 ms)
 [ RUN      ] ML_SVM.trainauto_sigmoid
-[       OK ] ML_SVM.trainauto_sigmoid (5 ms)
+[       OK ] ML_SVM.trainauto_sigmoid (4 ms)
 [ RUN      ] ML_SVM.trainAuto_regression_5369
 [       OK ] ML_SVM.trainAuto_regression_5369 (1 ms)
 [ RUN      ] ML_SVM.getSupportVectors
 [       OK ] ML_SVM.getSupportVectors (0 ms)
-[----------] 4 tests from ML_SVM (8 ms total)
+[----------] 4 tests from ML_SVM (7 ms total)
 
 [----------] 5 tests from ML_ANN_Params
 [ RUN      ] ML_ANN_Params.ActivationFunction/0, where GetParam() = identity
-[       OK ] ML_ANN_Params.ActivationFunction/0 (710 ms)
+[       OK ] ML_ANN_Params.ActivationFunction/0 (680 ms)
 [ RUN      ] ML_ANN_Params.ActivationFunction/1, where GetParam() = sigmoid_sym
-[       OK ] ML_ANN_Params.ActivationFunction/1 (723 ms)
+[       OK ] ML_ANN_Params.ActivationFunction/1 (685 ms)
 [ RUN      ] ML_ANN_Params.ActivationFunction/2, where GetParam() = gaussian
-[       OK ] ML_ANN_Params.ActivationFunction/2 (915 ms)
+[       OK ] ML_ANN_Params.ActivationFunction/2 (883 ms)
 [ RUN      ] ML_ANN_Params.ActivationFunction/3, where GetParam() = relu
-[       OK ] ML_ANN_Params.ActivationFunction/3 (51 ms)
+[       OK ] ML_ANN_Params.ActivationFunction/3 (52 ms)
 [ RUN      ] ML_ANN_Params.ActivationFunction/4, where GetParam() = leakyrelu
-[       OK ] ML_ANN_Params.ActivationFunction/4 (686 ms)
-[----------] 5 tests from ML_ANN_Params (3085 ms total)
+[       OK ] ML_ANN_Params.ActivationFunction/4 (679 ms)
+[----------] 5 tests from ML_ANN_Params (2979 ms total)
 
 [----------] 2 tests from ML_ANN_METHOD
 [ RUN      ] ML_ANN_METHOD.Test/0, where GetParam() = (ANN_MLP::RPROP, "rprop", 5000)
-[       OK ] ML_ANN_METHOD.Test/0 (306 ms)
+[       OK ] ML_ANN_METHOD.Test/0 (292 ms)
 [ RUN      ] ML_ANN_METHOD.Test/1, where GetParam() = (ANN_MLP::ANNEAL, "anneal", 1000)
-[       OK ] ML_ANN_METHOD.Test/1 (471 ms)
-[----------] 2 tests from ML_ANN_METHOD (777 ms total)
+[       OK ] ML_ANN_METHOD.Test/1 (446 ms)
+[----------] 2 tests from ML_ANN_METHOD (738 ms total)
 
 [----------] 9 tests from ML_EM_Params
 [ RUN      ] ML_EM_Params.accuracy/0, where GetParam() = (EM::START_AUTO_STEP, EM::COV_MAT_GENERIC)
-[       OK ] ML_EM_Params.accuracy/0 (123 ms)
+[       OK ] ML_EM_Params.accuracy/0 (126 ms)
 [ RUN      ] ML_EM_Params.accuracy/1, where GetParam() = (EM::START_AUTO_STEP, EM::COV_MAT_DIAGONAL)
-[       OK ] ML_EM_Params.accuracy/1 (58 ms)
+[       OK ] ML_EM_Params.accuracy/1 (59 ms)
 [ RUN      ] ML_EM_Params.accuracy/2, where GetParam() = (EM::START_AUTO_STEP, EM::COV_MAT_SPHERICAL)
 [       OK ] ML_EM_Params.accuracy/2 (18 ms)
 [ RUN      ] ML_EM_Params.accuracy/3, where GetParam() = (EM::START_M_STEP, EM::COV_MAT_GENERIC)
-[       OK ] ML_EM_Params.accuracy/3 (53 ms)
+[       OK ] ML_EM_Params.accuracy/3 (54 ms)
 [ RUN      ] ML_EM_Params.accuracy/4, where GetParam() = (EM::START_M_STEP, EM::COV_MAT_DIAGONAL)
 [       OK ] ML_EM_Params.accuracy/4 (26 ms)
 [ RUN      ] ML_EM_Params.accuracy/5, where GetParam() = (EM::START_M_STEP, EM::COV_MAT_SPHERICAL)
 [       OK ] ML_EM_Params.accuracy/5 (26 ms)
 [ RUN      ] ML_EM_Params.accuracy/6, where GetParam() = (EM::START_E_STEP, EM::COV_MAT_GENERIC)
-[       OK ] ML_EM_Params.accuracy/6 (187 ms)
+[       OK ] ML_EM_Params.accuracy/6 (190 ms)
 [ RUN      ] ML_EM_Params.accuracy/7, where GetParam() = (EM::START_E_STEP, EM::COV_MAT_DIAGONAL)
-[       OK ] ML_EM_Params.accuracy/7 (84 ms)
+[       OK ] ML_EM_Params.accuracy/7 (86 ms)
 [ RUN      ] ML_EM_Params.accuracy/8, where GetParam() = (EM::START_E_STEP, EM::COV_MAT_SPHERICAL)
-[       OK ] ML_EM_Params.accuracy/8 (34 ms)
-[----------] 9 tests from ML_EM_Params (609 ms total)
+[       OK ] ML_EM_Params.accuracy/8 (36 ms)
+[----------] 9 tests from ML_EM_Params (621 ms total)
 
 [----------] 17 tests from ML_Params
 [ RUN      ] ML_Params.accuracy/0, where GetParam() = DTrees_mushroom
 [       OK ] ML_Params.accuracy/0 (26 ms)
 [ RUN      ] ML_Params.accuracy/1, where GetParam() = DTrees_adult
-[       OK ] ML_Params.accuracy/1 (142 ms)
+[       OK ] ML_Params.accuracy/1 (145 ms)
 [ RUN      ] ML_Params.accuracy/2, where GetParam() = DTrees_vehicle
 [       OK ] ML_Params.accuracy/2 (9 ms)
 [ RUN      ] ML_Params.accuracy/3, where GetParam() = DTrees_abalone
 [       OK ] ML_Params.accuracy/3 (19 ms)
 [ RUN      ] ML_Params.accuracy/4, where GetParam() = Boost_adult
-[       OK ] ML_Params.accuracy/4 (541 ms)
+[       OK ] ML_Params.accuracy/4 (546 ms)
 [ RUN      ] ML_Params.accuracy/5, where GetParam() = Boost_mushroom
-[       OK ] ML_Params.accuracy/5 (92 ms)
+[       OK ] ML_Params.accuracy/5 (96 ms)
 [ RUN      ] ML_Params.accuracy/6, where GetParam() = Boost_ringnorm
-[       OK ] ML_Params.accuracy/6 (40 ms)
+[       OK ] ML_Params.accuracy/6 (41 ms)
 [ RUN      ] ML_Params.accuracy/7, where GetParam() = Boost_spambase
-[       OK ] ML_Params.accuracy/7 (234 ms)
+[       OK ] ML_Params.accuracy/7 (229 ms)
 [ RUN      ] ML_Params.accuracy/8, where GetParam() = RTrees_waveform
-[       OK ] ML_Params.accuracy/8 (120 ms)
+[       OK ] ML_Params.accuracy/8 (123 ms)
 [ RUN      ] ML_Params.accuracy/9, where GetParam() = RTrees_mushroom
-[       OK ] ML_Params.accuracy/9 (895 ms)
+[       OK ] ML_Params.accuracy/9 (923 ms)
 [ RUN      ] ML_Params.accuracy/10, where GetParam() = RTrees_adult
-[       OK ] ML_Params.accuracy/10 (7884 ms)
+[       OK ] ML_Params.accuracy/10 (7920 ms)
 [ RUN      ] ML_Params.accuracy/11, where GetParam() = RTrees_abalone
-[       OK ] ML_Params.accuracy/11 (1004 ms)
+[       OK ] ML_Params.accuracy/11 (1010 ms)
 [ RUN      ] ML_Params.accuracy/12, where GetParam() = RTrees_vehicle
-[       OK ] ML_Params.accuracy/12 (253 ms)
+[       OK ] ML_Params.accuracy/12 (257 ms)
 [ RUN      ] ML_Params.accuracy/13, where GetParam() = RTrees_letter
-[       OK ] ML_Params.accuracy/13 (3669 ms)
+[       OK ] ML_Params.accuracy/13 (3718 ms)
 [ RUN      ] ML_Params.accuracy/14, where GetParam() = RTrees_ringnorm
-[       OK ] ML_Params.accuracy/14 (134 ms)
+[       OK ] ML_Params.accuracy/14 (133 ms)
 [ RUN      ] ML_Params.accuracy/15, where GetParam() = RTrees_twonorm
-[       OK ] ML_Params.accuracy/15 (113 ms)
+[       OK ] ML_Params.accuracy/15 (114 ms)
 [ RUN      ] ML_Params.accuracy/16, where GetParam() = RTrees_spambase
-[       OK ] ML_Params.accuracy/16 (2496 ms)
-[----------] 17 tests from ML_Params (17671 ms total)
+[       OK ] ML_Params.accuracy/16 (2517 ms)
+[----------] 17 tests from ML_Params (17826 ms total)
 
 [----------] 11 tests from ML_SL_Params
 [ RUN      ] ML_SL_Params.save_load/0, where GetParam() = NormalBayesClassifier_waveform
 [       OK ] ML_SL_Params.save_load/0 (24 ms)
 [ RUN      ] ML_SL_Params.save_load/1, where GetParam() = KNearest_waveform
-[       OK ] ML_SL_Params.save_load/1 (20 ms)
+[       OK ] ML_SL_Params.save_load/1 (21 ms)
 [ RUN      ] ML_SL_Params.save_load/2, where GetParam() = KNearest_abalone
-[       OK ] ML_SL_Params.save_load/2 (31 ms)
+[       OK ] ML_SL_Params.save_load/2 (29 ms)
 [ RUN      ] ML_SL_Params.save_load/3, where GetParam() = SVM_waveform
 [       OK ] ML_SL_Params.save_load/3 (20 ms)
 [ RUN      ] ML_SL_Params.save_load/4, where GetParam() = SVM_poletelecomm
-[       OK ] ML_SL_Params.save_load/4 (74 ms)
+[       OK ] ML_SL_Params.save_load/4 (76 ms)
 [ RUN      ] ML_SL_Params.save_load/5, where GetParam() = DTrees_mushroom
-[       OK ] ML_SL_Params.save_load/5 (25 ms)
+[       OK ] ML_SL_Params.save_load/5 (28 ms)
 [ RUN      ] ML_SL_Params.save_load/6, where GetParam() = DTrees_abalone
-[       OK ] ML_SL_Params.save_load/6 (27 ms)
+[       OK ] ML_SL_Params.save_load/6 (26 ms)
 [ RUN      ] ML_SL_Params.save_load/7, where GetParam() = Boost_adult
-[       OK ] ML_SL_Params.save_load/7 (547 ms)
+[       OK ] ML_SL_Params.save_load/7 (539 ms)
 [ RUN      ] ML_SL_Params.save_load/8, where GetParam() = RTrees_waveform
-[       OK ] ML_SL_Params.save_load/8 (187 ms)
+[       OK ] ML_SL_Params.save_load/8 (186 ms)
 [ RUN      ] ML_SL_Params.save_load/9, where GetParam() = RTrees_abalone
-[       OK ] ML_SL_Params.save_load/9 (3770 ms)
+[       OK ] ML_SL_Params.save_load/9 (3731 ms)
 [ RUN      ] ML_SL_Params.save_load/10, where GetParam() = SVMSGD_waveform
-[       OK ] ML_SL_Params.save_load/10 (21 ms)
-[----------] 11 tests from ML_SL_Params (4746 ms total)
+[       OK ] ML_SL_Params.save_load/10 (22 ms)
+[----------] 11 tests from ML_SL_Params (4703 ms total)
 
 [----------] 12 tests from ML_Legacy_Params
 [ RUN      ] ML_Legacy_Params.legacy_load/0, where GetParam() = ("ann", "waveform")
@@ -191,42 +191,42 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [ RUN      ] ML_Legacy_Params.legacy_load/1, where GetParam() = ("boost", "adult")
 [       OK ] ML_Legacy_Params.legacy_load/1 (11 ms)
 [ RUN      ] ML_Legacy_Params.legacy_load/2, where GetParam() = ("boost", "1")
-[       OK ] ML_Legacy_Params.legacy_load/2 (9 ms)
+[       OK ] ML_Legacy_Params.legacy_load/2 (8 ms)
 [ RUN      ] ML_Legacy_Params.legacy_load/3, where GetParam() = ("boost", "2")
 [       OK ] ML_Legacy_Params.legacy_load/3 (6 ms)
 [ RUN      ] ML_Legacy_Params.legacy_load/4, where GetParam() = ("boost", "3")
-[       OK ] ML_Legacy_Params.legacy_load/4 (7 ms)
+[       OK ] ML_Legacy_Params.legacy_load/4 (8 ms)
 [ RUN      ] ML_Legacy_Params.legacy_load/5, where GetParam() = ("dtree", "abalone")
-[       OK ] ML_Legacy_Params.legacy_load/5 (12 ms)
+[       OK ] ML_Legacy_Params.legacy_load/5 (13 ms)
 [ RUN      ] ML_Legacy_Params.legacy_load/6, where GetParam() = ("dtree", "mushroom")
 [       OK ] ML_Legacy_Params.legacy_load/6 (3 ms)
 [ RUN      ] ML_Legacy_Params.legacy_load/7, where GetParam() = ("nbayes", "waveform")
 [       OK ] ML_Legacy_Params.legacy_load/7 (4 ms)
 [ RUN      ] ML_Legacy_Params.legacy_load/8, where GetParam() = ("svm", "poletelecomm")
-[       OK ] ML_Legacy_Params.legacy_load/8 (12 ms)
+[       OK ] ML_Legacy_Params.legacy_load/8 (11 ms)
 [ RUN      ] ML_Legacy_Params.legacy_load/9, where GetParam() = ("svm", "waveform")
-[       OK ] ML_Legacy_Params.legacy_load/9 (1 ms)
+[       OK ] ML_Legacy_Params.legacy_load/9 (2 ms)
 [ RUN      ] ML_Legacy_Params.legacy_load/10, where GetParam() = ("rtrees", "waveform")
-[       OK ] ML_Legacy_Params.legacy_load/10 (85 ms)
+[       OK ] ML_Legacy_Params.legacy_load/10 (86 ms)
 [ RUN      ] ML_Legacy_Params.legacy_load/11, where GetParam() = ("svmsgd", "waveform")
-[       OK ] ML_Legacy_Params.legacy_load/11 (2 ms)
-[----------] 12 tests from ML_Legacy_Params (160 ms total)
+[       OK ] ML_Legacy_Params.legacy_load/11 (1 ms)
+[----------] 12 tests from ML_Legacy_Params (161 ms total)
 
 [----------] 6 tests from ML_SVMSGD_Params
 [ RUN      ] ML_SVMSGD_Params.scale_and_features/0, where GetParam() = (UNIFORM_SAME_SCALE, 2, 0.01)
-[       OK ] ML_SVMSGD_Params.scale_and_features/0 (252 ms)
+[       OK ] ML_SVMSGD_Params.scale_and_features/0 (259 ms)
 [ RUN      ] ML_SVMSGD_Params.scale_and_features/1, where GetParam() = (UNIFORM_SAME_SCALE, 5, 0.01)
-[       OK ] ML_SVMSGD_Params.scale_and_features/1 (266 ms)
+[       OK ] ML_SVMSGD_Params.scale_and_features/1 (271 ms)
 [ RUN      ] ML_SVMSGD_Params.scale_and_features/2, where GetParam() = (UNIFORM_SAME_SCALE, 100, 0.02)
-[       OK ] ML_SVMSGD_Params.scale_and_features/2 (703 ms)
+[       OK ] ML_SVMSGD_Params.scale_and_features/2 (641 ms)
 [ RUN      ] ML_SVMSGD_Params.scale_and_features/3, where GetParam() = (UNIFORM_DIFFERENT_SCALES, 2, 0.01)
-[       OK ] ML_SVMSGD_Params.scale_and_features/3 (248 ms)
+[       OK ] ML_SVMSGD_Params.scale_and_features/3 (255 ms)
 [ RUN      ] ML_SVMSGD_Params.scale_and_features/4, where GetParam() = (UNIFORM_DIFFERENT_SCALES, 5, 0.01)
-[       OK ] ML_SVMSGD_Params.scale_and_features/4 (258 ms)
+[       OK ] ML_SVMSGD_Params.scale_and_features/4 (263 ms)
 [ RUN      ] ML_SVMSGD_Params.scale_and_features/5, where GetParam() = (UNIFORM_DIFFERENT_SCALES, 100, 0.01)
-[       OK ] ML_SVMSGD_Params.scale_and_features/5 (648 ms)
-[----------] 6 tests from ML_SVMSGD_Params (2375 ms total)
+[       OK ] ML_SVMSGD_Params.scale_and_features/5 (615 ms)
+[----------] 6 tests from ML_SVMSGD_Params (2304 ms total)
 
 [----------] Global test environment tear-down
-[==========] 82 tests from 16 test cases ran. (31751 ms total)
+[==========] 82 tests from 16 test cases ran. (31701 ms total)
 [  PASSED  ] 82 tests.

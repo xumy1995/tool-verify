@@ -2,33 +2,34 @@ CTEST_FULL_OUTPUT
 OpenCV version: 4.14.0-pre
 OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
-Compiler: /usr/bin/c++  (ver 11.4.0)
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
 Algorithm hint: ALGO_HINT_ACCURATE
 HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
 CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
 Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
 Intel(R) IPP features code: 0x8000
+OpenCL is disabled
 TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [==========] Running 4 tests from 4 test cases.
 [----------] Global test environment set-up.
 [----------] 1 test from Shape_SCD
 [ RUN      ] Shape_SCD.regression
 Test result: 100%
-[       OK ] Shape_SCD.regression (18208 ms)
-[----------] 1 test from Shape_SCD (18208 ms total)
+[       OK ] Shape_SCD.regression (19136 ms)
+[----------] 1 test from Shape_SCD (19136 ms total)
 
 [----------] 1 test from ShapeEMD_SCD
 [ RUN      ] ShapeEMD_SCD.regression
 Test result: 98.4%
-[       OK ] ShapeEMD_SCD.regression (241277 ms)
-[----------] 1 test from ShapeEMD_SCD (241277 ms total)
+[       OK ] ShapeEMD_SCD.regression (238526 ms)
+[----------] 1 test from ShapeEMD_SCD (238526 ms total)
 
 [----------] 1 test from Hauss
 [ RUN      ] Hauss.regression
 Test result: 97.6%
-[       OK ] Hauss.regression (25745 ms)
-[----------] 1 test from Hauss (25745 ms total)
+[       OK ] Hauss.regression (27549 ms)
+[----------] 1 test from Hauss (27549 ms total)
 
 [----------] 1 test from computeDistance
 [ RUN      ] computeDistance.regression_4976
@@ -36,5 +37,5 @@ Test result: 97.6%
 [----------] 1 test from computeDistance (37 ms total)
 
 [----------] Global test environment tear-down
-[==========] 4 tests from 4 test cases ran. (285267 ms total)
+[==========] 4 tests from 4 test cases ran. (285248 ms total)
 [  PASSED  ] 4 tests.

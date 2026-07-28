@@ -2,50 +2,51 @@ CTEST_FULL_OUTPUT
 OpenCV version: 4.14.0-pre
 OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
-Compiler: /usr/bin/c++  (ver 11.4.0)
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
 Algorithm hint: ALGO_HINT_ACCURATE
 HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
 CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
 Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
 Intel(R) IPP features code: 0x8000
+OpenCL is disabled
 TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [==========] Running 32 tests from 2 test cases.
 [----------] Global test environment set-up.
 [----------] 4 tests from BackgroundSubtractor_LSBP
 [ RUN      ] BackgroundSubtractor_LSBP.IlluminationInvariance
-[       OK ] BackgroundSubtractor_LSBP.IlluminationInvariance (24 ms)
+[       OK ] BackgroundSubtractor_LSBP.IlluminationInvariance (22 ms)
 [ RUN      ] BackgroundSubtractor_LSBP.Correctness
 [       OK ] BackgroundSubtractor_LSBP.Correctness (0 ms)
 [ RUN      ] BackgroundSubtractor_LSBP.Discrimination
-[       OK ] BackgroundSubtractor_LSBP.Discrimination (37 ms)
+[       OK ] BackgroundSubtractor_LSBP.Discrimination (36 ms)
 [ RUN      ] BackgroundSubtractor_LSBP.Accuracy
-[       OK ] BackgroundSubtractor_LSBP.Accuracy (43938 ms)
-[----------] 4 tests from BackgroundSubtractor_LSBP (43999 ms total)
+[       OK ] BackgroundSubtractor_LSBP.Accuracy (40593 ms)
+[----------] 4 tests from BackgroundSubtractor_LSBP (40651 ms total)
 
 [----------] 28 tests from bgsubgmg_allTypes
 [ RUN      ] bgsubgmg_allTypes.accuracy/0, where GetParam() = (CV_8U, 1)
-[       OK ] bgsubgmg_allTypes.accuracy/0 (28 ms)
+[       OK ] bgsubgmg_allTypes.accuracy/0 (29 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/1, where GetParam() = (CV_8U, 2)
 [       OK ] bgsubgmg_allTypes.accuracy/1 (24 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/2, where GetParam() = (CV_8U, 3)
-[       OK ] bgsubgmg_allTypes.accuracy/2 (24 ms)
+[       OK ] bgsubgmg_allTypes.accuracy/2 (25 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/3, where GetParam() = (CV_8U, 4)
 [       OK ] bgsubgmg_allTypes.accuracy/3 (27 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/4, where GetParam() = (CV_8S, 1)
 [       OK ] bgsubgmg_allTypes.accuracy/4 (22 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/5, where GetParam() = (CV_8S, 2)
-[       OK ] bgsubgmg_allTypes.accuracy/5 (23 ms)
+[       OK ] bgsubgmg_allTypes.accuracy/5 (24 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/6, where GetParam() = (CV_8S, 3)
-[       OK ] bgsubgmg_allTypes.accuracy/6 (26 ms)
+[       OK ] bgsubgmg_allTypes.accuracy/6 (25 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/7, where GetParam() = (CV_8S, 4)
 [       OK ] bgsubgmg_allTypes.accuracy/7 (27 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/8, where GetParam() = (CV_16U, 1)
-[       OK ] bgsubgmg_allTypes.accuracy/8 (21 ms)
+[       OK ] bgsubgmg_allTypes.accuracy/8 (22 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/9, where GetParam() = (CV_16U, 2)
-[       OK ] bgsubgmg_allTypes.accuracy/9 (24 ms)
+[       OK ] bgsubgmg_allTypes.accuracy/9 (23 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/10, where GetParam() = (CV_16U, 3)
-[       OK ] bgsubgmg_allTypes.accuracy/10 (25 ms)
+[       OK ] bgsubgmg_allTypes.accuracy/10 (26 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/11, where GetParam() = (CV_16U, 4)
 [       OK ] bgsubgmg_allTypes.accuracy/11 (26 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/12, where GetParam() = (CV_16S, 1)
@@ -57,7 +58,7 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [ RUN      ] bgsubgmg_allTypes.accuracy/15, where GetParam() = (CV_16S, 4)
 [       OK ] bgsubgmg_allTypes.accuracy/15 (27 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/16, where GetParam() = (CV_32S, 1)
-[       OK ] bgsubgmg_allTypes.accuracy/16 (21 ms)
+[       OK ] bgsubgmg_allTypes.accuracy/16 (23 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/17, where GetParam() = (CV_32S, 2)
 [       OK ] bgsubgmg_allTypes.accuracy/17 (23 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/18, where GetParam() = (CV_32S, 3)
@@ -73,15 +74,15 @@ TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [ RUN      ] bgsubgmg_allTypes.accuracy/23, where GetParam() = (CV_32F, 4)
 [       OK ] bgsubgmg_allTypes.accuracy/23 (25 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/24, where GetParam() = (CV_64F, 1)
-[       OK ] bgsubgmg_allTypes.accuracy/24 (21 ms)
+[       OK ] bgsubgmg_allTypes.accuracy/24 (22 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/25, where GetParam() = (CV_64F, 2)
-[       OK ] bgsubgmg_allTypes.accuracy/25 (23 ms)
+[       OK ] bgsubgmg_allTypes.accuracy/25 (22 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/26, where GetParam() = (CV_64F, 3)
-[       OK ] bgsubgmg_allTypes.accuracy/26 (23 ms)
+[       OK ] bgsubgmg_allTypes.accuracy/26 (24 ms)
 [ RUN      ] bgsubgmg_allTypes.accuracy/27, where GetParam() = (CV_64F, 4)
 [       OK ] bgsubgmg_allTypes.accuracy/27 (25 ms)
-[----------] 28 tests from bgsubgmg_allTypes (675 ms total)
+[----------] 28 tests from bgsubgmg_allTypes (682 ms total)
 
 [----------] Global test environment tear-down
-[==========] 32 tests from 2 test cases ran. (44674 ms total)
+[==========] 32 tests from 2 test cases ran. (41334 ms total)
 [  PASSED  ] 32 tests.

@@ -2,65 +2,70 @@ CTEST_FULL_OUTPUT
 OpenCV version: 4.14.0-pre
 OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
-Compiler: /usr/bin/c++  (ver 11.4.0)
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
 Algorithm hint: ALGO_HINT_ACCURATE
 HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
 CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
 Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
 Intel(R) IPP features code: 0x8000
+OpenCL is disabled
 TEST: Skip tests with tags: 'mem_6gb', 'verylong'
-[==========] Running 106 tests from 72 test cases.
+[==========] Running 162 tests from 75 test cases.
 [----------] Global test environment set-up.
+[----------] 3 tests from Features2d_AKAZE
+[ RUN      ] Features2d_AKAZE.ocl_accuracy
+[       OK ] Features2d_AKAZE.ocl_accuracy (41 ms)
+[ RUN      ] Features2d_AKAZE.detect_and_compute_split
+[       OK ] Features2d_AKAZE.detect_and_compute_split (1 ms)
+[ RUN      ] Features2d_AKAZE.uninitialized_and_nans
+[       OK ] Features2d_AKAZE.uninitialized_and_nans (79 ms)
+[----------] 3 tests from Features2d_AKAZE (121 ms total)
+
+[----------] 2 tests from Features2d_KAZE
+[ RUN      ] Features2d_KAZE.ocl_accuracy
+[       OK ] Features2d_KAZE.ocl_accuracy (317 ms)
+[ RUN      ] Features2d_KAZE.diffusivity_charbonnier
+[       OK ] Features2d_KAZE.diffusivity_charbonnier (35 ms)
+[----------] 2 tests from Features2d_KAZE (352 ms total)
+
 [----------] 2 tests from Features2d_AFFINE_FEATURE
 [ RUN      ] Features2d_AFFINE_FEATURE.regression
 badKeypointsRatio: 0.00279096
 badDescriptorRatio: 0.087357
-[       OK ] Features2d_AFFINE_FEATURE.regression (248 ms)
+[       OK ] Features2d_AFFINE_FEATURE.regression (213 ms)
 [ RUN      ] Features2d_AFFINE_FEATURE.mask
-[       OK ] Features2d_AFFINE_FEATURE.mask (54 ms)
-[----------] 2 tests from Features2d_AFFINE_FEATURE (302 ms total)
+[       OK ] Features2d_AFFINE_FEATURE.mask (48 ms)
+[----------] 2 tests from Features2d_AFFINE_FEATURE (261 ms total)
 
 [----------] 2 tests from Features2d_AGAST
 [ RUN      ] Features2d_AGAST.regression
-[       OK ] Features2d_AGAST.regression (154 ms)
+[       OK ] Features2d_AGAST.regression (156 ms)
 [ RUN      ] Features2d_AGAST.invalidDetectorType
-[       OK ] Features2d_AGAST.invalidDetectorType (4 ms)
-[----------] 2 tests from Features2d_AGAST (158 ms total)
-
-[----------] 2 tests from Features2d_AKAZE
-[ RUN      ] Features2d_AKAZE.detect_and_compute_split
-[       OK ] Features2d_AKAZE.detect_and_compute_split (0 ms)
-[ RUN      ] Features2d_AKAZE.uninitialized_and_nans
-[       OK ] Features2d_AKAZE.uninitialized_and_nans (55 ms)
-[----------] 2 tests from Features2d_AKAZE (55 ms total)
-
-[----------] 1 test from Features2d_KAZE
-[ RUN      ] Features2d_KAZE.diffusivity_charbonnier
-[       OK ] Features2d_KAZE.diffusivity_charbonnier (30 ms)
-[----------] 1 test from Features2d_KAZE (30 ms total)
+[       OK ] Features2d_AGAST.invalidDetectorType (3 ms)
+[----------] 2 tests from Features2d_AGAST (159 ms total)
 
 [----------] 2 tests from Features2d_BlobDetector
 [ RUN      ] Features2d_BlobDetector.bug_6667
-[       OK ] Features2d_BlobDetector.bug_6667 (4 ms)
+[       OK ] Features2d_BlobDetector.bug_6667 (3 ms)
 [ RUN      ] Features2d_BlobDetector.withContours
 [       OK ] Features2d_BlobDetector.withContours (0 ms)
-[----------] 2 tests from Features2d_BlobDetector (4 ms total)
+[----------] 2 tests from Features2d_BlobDetector (3 ms total)
 
 [----------] 2 tests from Features2d_BRISK
 [ RUN      ] Features2d_BRISK.regression
 [       OK ] Features2d_BRISK.regression (159 ms)
 [ RUN      ] Features2d_BRISK.invalidCreateParameters
-[       OK ] Features2d_BRISK.invalidCreateParameters (1 ms)
-[----------] 2 tests from Features2d_BRISK (160 ms total)
+[       OK ] Features2d_BRISK.invalidCreateParameters (2 ms)
+[----------] 2 tests from Features2d_BRISK (161 ms total)
 
 [----------] 1 test from Features2d_DescriptorExtractor_SIFT
 [ RUN      ] Features2d_DescriptorExtractor_SIFT.regression
 Exact count (dist == 0): 546 (80%)
 Failed count (dist > 1): 2 (0%)
 Max distance between valid and computed descriptors ([128 x 676]): 4
-[       OK ] Features2d_DescriptorExtractor_SIFT.regression (25 ms)
-[----------] 1 test from Features2d_DescriptorExtractor_SIFT (25 ms total)
+[       OK ] Features2d_DescriptorExtractor_SIFT.regression (23 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_SIFT (23 ms total)
 
 [----------] 1 test from Features2d_DescriptorExtractor_BRISK
 [ RUN      ] Features2d_DescriptorExtractor_BRISK.regression
@@ -84,46 +89,46 @@ Keypoints difference: 1
 Exact count (dist == 0): 0 (0%)
 Failed count (dist > 0.03): 1 (0%)
 Max distance between valid and computed descriptors ([64 x 572]): 0.403629
-[       OK ] Features2d_DescriptorExtractor_KAZE.regression (86 ms)
-[----------] 1 test from Features2d_DescriptorExtractor_KAZE (86 ms total)
+[       OK ] Features2d_DescriptorExtractor_KAZE.regression (119 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_KAZE (119 ms total)
 
 [----------] 1 test from Features2d_DescriptorExtractor_AKAZE
 [ RUN      ] Features2d_DescriptorExtractor_AKAZE.regression
 Exact count (dist == 0): 409 (98%)
 Failed count (dist > 24): 0 (0%)
 Max distance between valid and computed descriptors ([61 x 415]): 1
-[       OK ] Features2d_DescriptorExtractor_AKAZE.regression (32 ms)
-[----------] 1 test from Features2d_DescriptorExtractor_AKAZE (32 ms total)
+[       OK ] Features2d_DescriptorExtractor_AKAZE.regression (33 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_AKAZE (33 ms total)
 
 [----------] 1 test from Features2d_DescriptorExtractor_AKAZE_DESCRIPTOR_KAZE
 [ RUN      ] Features2d_DescriptorExtractor_AKAZE_DESCRIPTOR_KAZE.regression
 Exact count (dist == 0): 0 (0%)
 Failed count (dist > 0.03): 0 (0%)
 Max distance between valid and computed descriptors ([64 x 368]): 0.00832488
-[       OK ] Features2d_DescriptorExtractor_AKAZE_DESCRIPTOR_KAZE.regression (33 ms)
-[----------] 1 test from Features2d_DescriptorExtractor_AKAZE_DESCRIPTOR_KAZE (33 ms total)
+[       OK ] Features2d_DescriptorExtractor_AKAZE_DESCRIPTOR_KAZE.regression (32 ms)
+[----------] 1 test from Features2d_DescriptorExtractor_AKAZE_DESCRIPTOR_KAZE (32 ms total)
 
 [----------] 2 tests from Features2d_DescriptorExtractor
 [ RUN      ] Features2d_DescriptorExtractor.batch_ORB
-[       OK ] Features2d_DescriptorExtractor.batch_ORB (183 ms)
+[       OK ] Features2d_DescriptorExtractor.batch_ORB (188 ms)
 [ RUN      ] Features2d_DescriptorExtractor.batch_SIFT
-[       OK ] Features2d_DescriptorExtractor.batch_SIFT (553 ms)
-[----------] 2 tests from Features2d_DescriptorExtractor (736 ms total)
+[       OK ] Features2d_DescriptorExtractor.batch_SIFT (594 ms)
+[----------] 2 tests from Features2d_DescriptorExtractor (782 ms total)
 
 [----------] 1 test from Features2d_Detector_SIFT
 [ RUN      ] Features2d_Detector_SIFT.regression
-[       OK ] Features2d_Detector_SIFT.regression (30 ms)
-[----------] 1 test from Features2d_Detector_SIFT (30 ms total)
+[       OK ] Features2d_Detector_SIFT.regression (31 ms)
+[----------] 1 test from Features2d_Detector_SIFT (31 ms total)
 
 [----------] 1 test from Features2d_Detector_BRISK
 [ RUN      ] Features2d_Detector_BRISK.regression
-[       OK ] Features2d_Detector_BRISK.regression (44 ms)
-[----------] 1 test from Features2d_Detector_BRISK (44 ms total)
+[       OK ] Features2d_Detector_BRISK.regression (46 ms)
+[----------] 1 test from Features2d_Detector_BRISK (46 ms total)
 
 [----------] 1 test from Features2d_Detector_FAST
 [ RUN      ] Features2d_Detector_FAST.regression
-[       OK ] Features2d_Detector_FAST.regression (32 ms)
-[----------] 1 test from Features2d_Detector_FAST (32 ms total)
+[       OK ] Features2d_Detector_FAST.regression (31 ms)
+[----------] 1 test from Features2d_Detector_FAST (31 ms total)
 
 [----------] 1 test from Features2d_Detector_AGAST
 [ RUN      ] Features2d_Detector_AGAST.regression
@@ -132,8 +137,8 @@ Max distance between valid and computed descriptors ([64 x 368]): 0.00832488
 
 [----------] 1 test from Features2d_Detector_GFTT
 [ RUN      ] Features2d_Detector_GFTT.regression
-[       OK ] Features2d_Detector_GFTT.regression (23 ms)
-[----------] 1 test from Features2d_Detector_GFTT (23 ms total)
+[       OK ] Features2d_Detector_GFTT.regression (25 ms)
+[----------] 1 test from Features2d_Detector_GFTT (25 ms total)
 
 [----------] 1 test from Features2d_Detector_Harris
 [ RUN      ] Features2d_Detector_Harris.regression
@@ -142,18 +147,18 @@ Max distance between valid and computed descriptors ([64 x 368]): 0.00832488
 
 [----------] 1 test from Features2d_Detector_ORB
 [ RUN      ] Features2d_Detector_ORB.regression
-[       OK ] Features2d_Detector_ORB.regression (11 ms)
-[----------] 1 test from Features2d_Detector_ORB (11 ms total)
+[       OK ] Features2d_Detector_ORB.regression (12 ms)
+[----------] 1 test from Features2d_Detector_ORB (12 ms total)
 
 [----------] 1 test from Features2d_Detector_KAZE
 [ RUN      ] Features2d_Detector_KAZE.regression
-[       OK ] Features2d_Detector_KAZE.regression (56 ms)
-[----------] 1 test from Features2d_Detector_KAZE (56 ms total)
+[       OK ] Features2d_Detector_KAZE.regression (72 ms)
+[----------] 1 test from Features2d_Detector_KAZE (72 ms total)
 
 [----------] 1 test from Features2d_Detector_AKAZE
 [ RUN      ] Features2d_Detector_AKAZE.regression
-[       OK ] Features2d_Detector_AKAZE.regression (21 ms)
-[----------] 1 test from Features2d_Detector_AKAZE (21 ms total)
+[       OK ] Features2d_Detector_AKAZE.regression (23 ms)
+[----------] 1 test from Features2d_Detector_AKAZE (23 ms total)
 
 [----------] 1 test from Features2d_Detector_AKAZE_DESCRIPTOR_KAZE
 [ RUN      ] Features2d_Detector_AKAZE_DESCRIPTOR_KAZE.regression
@@ -162,17 +167,17 @@ Max distance between valid and computed descriptors ([64 x 368]): 0.00832488
 
 [----------] 3 tests from Features2d_FAST
 [ RUN      ] Features2d_FAST.regression
-[       OK ] Features2d_FAST.regression (134 ms)
+[       OK ] Features2d_FAST.regression (162 ms)
 [ RUN      ] Features2d_FAST.noNMS
 [       OK ] Features2d_FAST.noNMS (9 ms)
 [ RUN      ] Features2d_FAST.invalidDetectorType
 [       OK ] Features2d_FAST.invalidDetectorType (0 ms)
-[----------] 3 tests from Features2d_FAST (143 ms total)
+[----------] 3 tests from Features2d_FAST (171 ms total)
 
 [----------] 1 test from Features2d_Detector_Keypoints_BRISK
 [ RUN      ] Features2d_Detector_Keypoints_BRISK.validation
-[       OK ] Features2d_Detector_Keypoints_BRISK.validation (33 ms)
-[----------] 1 test from Features2d_Detector_Keypoints_BRISK (33 ms total)
+[       OK ] Features2d_Detector_Keypoints_BRISK.validation (35 ms)
+[----------] 1 test from Features2d_Detector_Keypoints_BRISK (35 ms total)
 
 [----------] 1 test from Features2d_Detector_Keypoints_FAST
 [ RUN      ] Features2d_Detector_Keypoints_FAST.validation
@@ -181,8 +186,8 @@ Max distance between valid and computed descriptors ([64 x 368]): 0.00832488
 
 [----------] 1 test from Features2d_Detector_Keypoints_AGAST
 [ RUN      ] Features2d_Detector_Keypoints_AGAST.validation
-[       OK ] Features2d_Detector_Keypoints_AGAST.validation (7 ms)
-[----------] 1 test from Features2d_Detector_Keypoints_AGAST (7 ms total)
+[       OK ] Features2d_Detector_Keypoints_AGAST.validation (8 ms)
+[----------] 1 test from Features2d_Detector_Keypoints_AGAST (8 ms total)
 
 [----------] 1 test from Features2d_Detector_Keypoints_HARRIS
 [ RUN      ] Features2d_Detector_Keypoints_HARRIS.validation
@@ -196,8 +201,8 @@ Max distance between valid and computed descriptors ([64 x 368]): 0.00832488
 
 [----------] 1 test from Features2d_Detector_Keypoints_MSER
 [ RUN      ] Features2d_Detector_Keypoints_MSER.validation
-[       OK ] Features2d_Detector_Keypoints_MSER.validation (68 ms)
-[----------] 1 test from Features2d_Detector_Keypoints_MSER (68 ms total)
+[       OK ] Features2d_Detector_Keypoints_MSER.validation (66 ms)
+[----------] 1 test from Features2d_Detector_Keypoints_MSER (66 ms total)
 
 [----------] 1 test from Features2d_Detector_Keypoints_ORB
 [ RUN      ] Features2d_Detector_Keypoints_ORB.validation
@@ -206,37 +211,37 @@ Max distance between valid and computed descriptors ([64 x 368]): 0.00832488
 
 [----------] 1 test from Features2d_Detector_Keypoints_KAZE
 [ RUN      ] Features2d_Detector_Keypoints_KAZE.validation
-[       OK ] Features2d_Detector_Keypoints_KAZE.validation (47 ms)
-[----------] 1 test from Features2d_Detector_Keypoints_KAZE (47 ms total)
+[       OK ] Features2d_Detector_Keypoints_KAZE.validation (59 ms)
+[----------] 1 test from Features2d_Detector_Keypoints_KAZE (59 ms total)
 
 [----------] 1 test from Features2d_Detector_Keypoints_AKAZE
 [ RUN      ] Features2d_Detector_Keypoints_AKAZE.validation
-[       OK ] Features2d_Detector_Keypoints_AKAZE.validation (32 ms)
-[----------] 1 test from Features2d_Detector_Keypoints_AKAZE (32 ms total)
+[       OK ] Features2d_Detector_Keypoints_AKAZE.validation (36 ms)
+[----------] 1 test from Features2d_Detector_Keypoints_AKAZE (36 ms total)
 
 [----------] 1 test from Features2d_Detector_Keypoints_SIFT
 [ RUN      ] Features2d_Detector_Keypoints_SIFT.validation
-[       OK ] Features2d_Detector_Keypoints_SIFT.validation (21 ms)
-[----------] 1 test from Features2d_Detector_Keypoints_SIFT (21 ms total)
+[       OK ] Features2d_Detector_Keypoints_SIFT.validation (20 ms)
+[----------] 1 test from Features2d_Detector_Keypoints_SIFT (20 ms total)
 
 [----------] 1 test from Features2d_DescriptorMatcher_BruteForce
 [ RUN      ] Features2d_DescriptorMatcher_BruteForce.regression
-[       OK ] Features2d_DescriptorMatcher_BruteForce.regression (13 ms)
-[----------] 1 test from Features2d_DescriptorMatcher_BruteForce (13 ms total)
+[       OK ] Features2d_DescriptorMatcher_BruteForce.regression (15 ms)
+[----------] 1 test from Features2d_DescriptorMatcher_BruteForce (15 ms total)
 
 [----------] 1 test from Features2d_DescriptorMatcher_FlannBased
 [ RUN      ] Features2d_DescriptorMatcher_FlannBased.regression
-[       OK ] Features2d_DescriptorMatcher_FlannBased.regression (96 ms)
+[       OK ] Features2d_DescriptorMatcher_FlannBased.regression (95 ms)
 [----------] 1 test from Features2d_DescriptorMatcher_FlannBased (96 ms total)
 
 [----------] 3 tests from Features2d_DMatch
 [ RUN      ] Features2d_DMatch.read_write
-[       OK ] Features2d_DMatch.read_write (1 ms)
+[       OK ] Features2d_DMatch.read_write (0 ms)
 [ RUN      ] Features2d_DMatch.issue_11855
 [       OK ] Features2d_DMatch.issue_11855 (0 ms)
 [ RUN      ] Features2d_DMatch.issue_17771
 [       OK ] Features2d_DMatch.issue_17771 (0 ms)
-[----------] 3 tests from Features2d_DMatch (1 ms total)
+[----------] 3 tests from Features2d_DMatch (0 ms total)
 
 [----------] 1 test from Features2d_FlannBasedMatcher
 [ RUN      ] Features2d_FlannBasedMatcher.read_write
@@ -250,42 +255,42 @@ Max distance between valid and computed descriptors ([64 x 368]): 0.00832488
 
 [----------] 2 tests from Features2d_MSER
 [ RUN      ] Features2d_MSER.cases
-[       OK ] Features2d_MSER.cases (1672 ms)
+[       OK ] Features2d_MSER.cases (1640 ms)
 [ RUN      ] Features2d_MSER.history_update_regression
-[       OK ] Features2d_MSER.history_update_regression (277 ms)
-[----------] 2 tests from Features2d_MSER (1949 ms total)
+[       OK ] Features2d_MSER.history_update_regression (281 ms)
+[----------] 2 tests from Features2d_MSER (1921 ms total)
 
 [----------] 1 test from Features2d_FLANN_Linear
 [ RUN      ] Features2d_FLANN_Linear.regression
-[       OK ] Features2d_FLANN_Linear.regression (62 ms)
-[----------] 1 test from Features2d_FLANN_Linear (62 ms total)
+[       OK ] Features2d_FLANN_Linear.regression (68 ms)
+[----------] 1 test from Features2d_FLANN_Linear (68 ms total)
 
 [----------] 1 test from Features2d_FLANN_KMeans
 [ RUN      ] Features2d_FLANN_KMeans.regression
-[       OK ] Features2d_FLANN_KMeans.regression (33 ms)
-[----------] 1 test from Features2d_FLANN_KMeans (33 ms total)
+[       OK ] Features2d_FLANN_KMeans.regression (35 ms)
+[----------] 1 test from Features2d_FLANN_KMeans (35 ms total)
 
 [----------] 2 tests from Features2d_FLANN_KDTree
 [ RUN      ] Features2d_FLANN_KDTree.regression
-[       OK ] Features2d_FLANN_KDTree.regression (28 ms)
+[       OK ] Features2d_FLANN_KDTree.regression (27 ms)
 [ RUN      ] Features2d_FLANN_KDTree.load_rejects_out_of_range_leaf_index
 [       OK ] Features2d_FLANN_KDTree.load_rejects_out_of_range_leaf_index (0 ms)
-[----------] 2 tests from Features2d_FLANN_KDTree (28 ms total)
+[----------] 2 tests from Features2d_FLANN_KDTree (27 ms total)
 
 [----------] 1 test from Features2d_FLANN_Composite
 [ RUN      ] Features2d_FLANN_Composite.regression
-[       OK ] Features2d_FLANN_Composite.regression (62 ms)
-[----------] 1 test from Features2d_FLANN_Composite (62 ms total)
+[       OK ] Features2d_FLANN_Composite.regression (68 ms)
+[----------] 1 test from Features2d_FLANN_Composite (68 ms total)
 
 [----------] 1 test from Features2d_FLANN_Auto
 [ RUN      ] Features2d_FLANN_Auto.regression
-[       OK ] Features2d_FLANN_Auto.regression (48744 ms)
-[----------] 1 test from Features2d_FLANN_Auto (48744 ms total)
+[       OK ] Features2d_FLANN_Auto.regression (48761 ms)
+[----------] 1 test from Features2d_FLANN_Auto (48761 ms total)
 
 [----------] 1 test from Features2d_FLANN_Saved
 [ RUN      ] Features2d_FLANN_Saved.regression
-[       OK ] Features2d_FLANN_Saved.regression (46 ms)
-[----------] 1 test from Features2d_FLANN_Saved (46 ms total)
+[       OK ] Features2d_FLANN_Saved.regression (48 ms)
+[----------] 1 test from Features2d_FLANN_Saved (48 ms total)
 
 [----------] 5 tests from Features2D_ORB
 [ RUN      ] Features2D_ORB._1996
@@ -293,12 +298,12 @@ Max distance between valid and computed descriptors ([64 x 368]): 0.00832488
 [ RUN      ] Features2D_ORB.crash_5031
 [       OK ] Features2D_ORB.crash_5031 (4 ms)
 [ RUN      ] Features2D_ORB.regression_16197
-[       OK ] Features2D_ORB.regression_16197 (0 ms)
+[       OK ] Features2D_ORB.regression_16197 (1 ms)
 [ RUN      ] Features2D_ORB.MaskValue
-[       OK ] Features2D_ORB.MaskValue (16 ms)
+[       OK ] Features2D_ORB.MaskValue (17 ms)
 [ RUN      ] Features2D_ORB.invalidCreateParameters
 [       OK ] Features2D_ORB.invalidCreateParameters (0 ms)
-[----------] 5 tests from Features2D_ORB (44 ms total)
+[----------] 5 tests from Features2D_ORB (46 ms total)
 
 [----------] 1 test from BigData_Features2D_ORB
 [ RUN      ] BigData_Features2D_ORB.regression_opencv_python_537
@@ -308,15 +313,132 @@ Max distance between valid and computed descriptors ([64 x 368]): 0.00832488
 
 [----------] 2 tests from Features2d_SIFT
 [ RUN      ] Features2d_SIFT.descriptor_type
-[       OK ] Features2d_SIFT.descriptor_type (39 ms)
+[       OK ] Features2d_SIFT.descriptor_type (42 ms)
 [ RUN      ] Features2d_SIFT.regression_26139
-[       OK ] Features2d_SIFT.regression_26139 (4 ms)
-[----------] 2 tests from Features2d_SIFT (43 ms total)
+[       OK ] Features2d_SIFT.regression_26139 (3 ms)
+[----------] 2 tests from Features2d_SIFT (45 ms total)
 
 [----------] 1 test from Features2D_KeypointUtils
 [ RUN      ] Features2D_KeypointUtils.retainBest_issue_12594
 [       OK ] Features2D_KeypointUtils.retainBest_issue_12594 (0 ms)
 [----------] 1 test from Features2D_KeypointUtils (0 ms total)
+
+[----------] 42 tests from OCL_Matcher/BruteForceMatcher
+[ RUN      ] OCL_Matcher/BruteForceMatcher.Match_Single/0, where GetParam() = (2, 57)
+[       OK ] OCL_Matcher/BruteForceMatcher.Match_Single/0 (1 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.Match_Single/1, where GetParam() = (2, 64)
+[       OK ] OCL_Matcher/BruteForceMatcher.Match_Single/1 (1 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.Match_Single/2, where GetParam() = (2, 83)
+[       OK ] OCL_Matcher/BruteForceMatcher.Match_Single/2 (1 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.Match_Single/3, where GetParam() = (2, 128)
+[       OK ] OCL_Matcher/BruteForceMatcher.Match_Single/3 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.Match_Single/4, where GetParam() = (2, 179)
+[       OK ] OCL_Matcher/BruteForceMatcher.Match_Single/4 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.Match_Single/5, where GetParam() = (2, 256)
+[       OK ] OCL_Matcher/BruteForceMatcher.Match_Single/5 (3 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.Match_Single/6, where GetParam() = (2, 304)
+[       OK ] OCL_Matcher/BruteForceMatcher.Match_Single/6 (3 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.Match_Single/7, where GetParam() = (4, 57)
+[       OK ] OCL_Matcher/BruteForceMatcher.Match_Single/7 (1 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.Match_Single/8, where GetParam() = (4, 64)
+[       OK ] OCL_Matcher/BruteForceMatcher.Match_Single/8 (1 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.Match_Single/9, where GetParam() = (4, 83)
+[       OK ] OCL_Matcher/BruteForceMatcher.Match_Single/9 (1 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.Match_Single/10, where GetParam() = (4, 128)
+[       OK ] OCL_Matcher/BruteForceMatcher.Match_Single/10 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.Match_Single/11, where GetParam() = (4, 179)
+[       OK ] OCL_Matcher/BruteForceMatcher.Match_Single/11 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.Match_Single/12, where GetParam() = (4, 256)
+[       OK ] OCL_Matcher/BruteForceMatcher.Match_Single/12 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.Match_Single/13, where GetParam() = (4, 304)
+[       OK ] OCL_Matcher/BruteForceMatcher.Match_Single/13 (3 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/0, where GetParam() = (2, 57)
+[       OK ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/0 (1 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/1, where GetParam() = (2, 64)
+[       OK ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/1 (0 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/2, where GetParam() = (2, 83)
+[       OK ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/2 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/3, where GetParam() = (2, 128)
+[       OK ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/3 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/4, where GetParam() = (2, 179)
+[       OK ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/4 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/5, where GetParam() = (2, 256)
+[       OK ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/5 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/6, where GetParam() = (2, 304)
+[       OK ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/6 (4 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/7, where GetParam() = (4, 57)
+[       OK ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/7 (0 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/8, where GetParam() = (4, 64)
+[       OK ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/8 (1 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/9, where GetParam() = (4, 83)
+[       OK ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/9 (1 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/10, where GetParam() = (4, 128)
+[       OK ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/10 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/11, where GetParam() = (4, 179)
+[       OK ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/11 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/12, where GetParam() = (4, 256)
+[       OK ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/12 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/13, where GetParam() = (4, 304)
+[       OK ] OCL_Matcher/BruteForceMatcher.KnnMatch_2_Single/13 (3 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/0, where GetParam() = (2, 57)
+[       OK ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/0 (1 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/1, where GetParam() = (2, 64)
+[       OK ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/1 (1 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/2, where GetParam() = (2, 83)
+[       OK ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/2 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/3, where GetParam() = (2, 128)
+[       OK ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/3 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/4, where GetParam() = (2, 179)
+[       OK ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/4 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/5, where GetParam() = (2, 256)
+[       OK ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/5 (3 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/6, where GetParam() = (2, 304)
+[       OK ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/6 (4 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/7, where GetParam() = (4, 57)
+[       OK ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/7 (1 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/8, where GetParam() = (4, 64)
+[       OK ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/8 (1 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/9, where GetParam() = (4, 83)
+[       OK ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/9 (1 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/10, where GetParam() = (4, 128)
+[       OK ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/10 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/11, where GetParam() = (4, 179)
+[       OK ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/11 (3 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/12, where GetParam() = (4, 256)
+[       OK ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/12 (2 ms)
+[ RUN      ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/13, where GetParam() = (4, 304)
+[       OK ] OCL_Matcher/BruteForceMatcher.RadiusMatch_Single/13 (3 ms)
+[----------] 42 tests from OCL_Matcher/BruteForceMatcher (77 ms total)
+
+[----------] 6 tests from OCL_AKAZE/Feature2DFixture
+[ RUN      ] OCL_AKAZE/Feature2DFixture.KeypointsSame/0, where GetParam() = (32-byte object <00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 20-AD 8F-03 A7-55 00-00 70-B2 8F-03 A7-55 00-00>, "detectors_descriptors_evaluation/images_datasets/leuven/img1.png")
+[       OK ] OCL_AKAZE/Feature2DFixture.KeypointsSame/0 (221 ms)
+[ RUN      ] OCL_AKAZE/Feature2DFixture.KeypointsSame/1, where GetParam() = (32-byte object <00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 20-AD 8F-03 A7-55 00-00 70-B2 8F-03 A7-55 00-00>, "../stitching/a3.png")
+[       OK ] OCL_AKAZE/Feature2DFixture.KeypointsSame/1 (171 ms)
+[ RUN      ] OCL_AKAZE/Feature2DFixture.KeypointsSame/2, where GetParam() = (32-byte object <00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 20-AD 8F-03 A7-55 00-00 70-B2 8F-03 A7-55 00-00>, "../stitching/s2.jpg")
+[       OK ] OCL_AKAZE/Feature2DFixture.KeypointsSame/2 (363 ms)
+[ RUN      ] OCL_AKAZE/Feature2DFixture.DescriptorsSame/0, where GetParam() = (32-byte object <00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 20-AD 8F-03 A7-55 00-00 70-B2 8F-03 A7-55 00-00>, "detectors_descriptors_evaluation/images_datasets/leuven/img1.png")
+[       OK ] OCL_AKAZE/Feature2DFixture.DescriptorsSame/0 (208 ms)
+[ RUN      ] OCL_AKAZE/Feature2DFixture.DescriptorsSame/1, where GetParam() = (32-byte object <00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 20-AD 8F-03 A7-55 00-00 70-B2 8F-03 A7-55 00-00>, "../stitching/a3.png")
+[       OK ] OCL_AKAZE/Feature2DFixture.DescriptorsSame/1 (175 ms)
+[ RUN      ] OCL_AKAZE/Feature2DFixture.DescriptorsSame/2, where GetParam() = (32-byte object <00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 20-AD 8F-03 A7-55 00-00 70-B2 8F-03 A7-55 00-00>, "../stitching/s2.jpg")
+[       OK ] OCL_AKAZE/Feature2DFixture.DescriptorsSame/2 (351 ms)
+[----------] 6 tests from OCL_AKAZE/Feature2DFixture (1489 ms total)
+
+[----------] 6 tests from OCL_AKAZE_DESCRIPTOR_KAZE/Feature2DFixture
+[ RUN      ] OCL_AKAZE_DESCRIPTOR_KAZE/Feature2DFixture.KeypointsSame/0, where GetParam() = (32-byte object <00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 50-AD 8F-03 A7-55 00-00 F0-B1 8F-03 A7-55 00-00>, "detectors_descriptors_evaluation/images_datasets/leuven/img1.png")
+[       OK ] OCL_AKAZE_DESCRIPTOR_KAZE/Feature2DFixture.KeypointsSame/0 (209 ms)
+[ RUN      ] OCL_AKAZE_DESCRIPTOR_KAZE/Feature2DFixture.KeypointsSame/1, where GetParam() = (32-byte object <00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 50-AD 8F-03 A7-55 00-00 F0-B1 8F-03 A7-55 00-00>, "../stitching/a3.png")
+[       OK ] OCL_AKAZE_DESCRIPTOR_KAZE/Feature2DFixture.KeypointsSame/1 (170 ms)
+[ RUN      ] OCL_AKAZE_DESCRIPTOR_KAZE/Feature2DFixture.KeypointsSame/2, where GetParam() = (32-byte object <00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 50-AD 8F-03 A7-55 00-00 F0-B1 8F-03 A7-55 00-00>, "../stitching/s2.jpg")
+[       OK ] OCL_AKAZE_DESCRIPTOR_KAZE/Feature2DFixture.KeypointsSame/2 (371 ms)
+[ RUN      ] OCL_AKAZE_DESCRIPTOR_KAZE/Feature2DFixture.DescriptorsSame/0, where GetParam() = (32-byte object <00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 50-AD 8F-03 A7-55 00-00 F0-B1 8F-03 A7-55 00-00>, "detectors_descriptors_evaluation/images_datasets/leuven/img1.png")
+[       OK ] OCL_AKAZE_DESCRIPTOR_KAZE/Feature2DFixture.DescriptorsSame/0 (209 ms)
+[ RUN      ] OCL_AKAZE_DESCRIPTOR_KAZE/Feature2DFixture.DescriptorsSame/1, where GetParam() = (32-byte object <00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 50-AD 8F-03 A7-55 00-00 F0-B1 8F-03 A7-55 00-00>, "../stitching/a3.png")
+[       OK ] OCL_AKAZE_DESCRIPTOR_KAZE/Feature2DFixture.DescriptorsSame/1 (167 ms)
+[ RUN      ] OCL_AKAZE_DESCRIPTOR_KAZE/Feature2DFixture.DescriptorsSame/2, where GetParam() = (32-byte object <00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 50-AD 8F-03 A7-55 00-00 F0-B1 8F-03 A7-55 00-00>, "../stitching/s2.jpg")
+[       OK ] OCL_AKAZE_DESCRIPTOR_KAZE/Feature2DFixture.DescriptorsSame/2 (364 ms)
+[----------] 6 tests from OCL_AKAZE_DESCRIPTOR_KAZE/Feature2DFixture (1490 ms total)
 
 [----------] 1 test from SIFT/DescriptorRotationInvariance
 [ RUN      ] SIFT/DescriptorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.98)
@@ -345,8 +467,8 @@ angle = 300, inliers = 615, descInliersRatio = 0.988746
 angle = 315, inliers = 614, descInliersRatio = 0.987138
 angle = 330, inliers = 615, descInliersRatio = 0.988746
 angle = 345, inliers = 614, descInliersRatio = 0.987138
-[       OK ] SIFT/DescriptorRotationInvariance.rotation/0 (672 ms)
-[----------] 1 test from SIFT/DescriptorRotationInvariance (672 ms total)
+[       OK ] SIFT/DescriptorRotationInvariance.rotation/0 (651 ms)
+[----------] 1 test from SIFT/DescriptorRotationInvariance (651 ms total)
 
 [----------] 1 test from BRISK/DescriptorRotationInvariance
 [ RUN      ] BRISK/DescriptorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.99)
@@ -375,8 +497,8 @@ angle = 300, inliers = 1048, descInliersRatio = 0.998095
 angle = 315, inliers = 1045, descInliersRatio = 0.995238
 angle = 330, inliers = 1047, descInliersRatio = 0.997143
 angle = 345, inliers = 1047, descInliersRatio = 0.997143
-[       OK ] BRISK/DescriptorRotationInvariance.rotation/0 (304 ms)
-[----------] 1 test from BRISK/DescriptorRotationInvariance (304 ms total)
+[       OK ] BRISK/DescriptorRotationInvariance.rotation/0 (301 ms)
+[----------] 1 test from BRISK/DescriptorRotationInvariance (301 ms total)
 
 [----------] 1 test from ORB/DescriptorRotationInvariance
 [ RUN      ] ORB/DescriptorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.99)
@@ -435,8 +557,8 @@ angle = 300, inliers = 415, descInliersRatio = 1
 angle = 315, inliers = 415, descInliersRatio = 1
 angle = 330, inliers = 415, descInliersRatio = 1
 angle = 345, inliers = 415, descInliersRatio = 1
-[       OK ] AKAZE/DescriptorRotationInvariance.rotation/0 (530 ms)
-[----------] 1 test from AKAZE/DescriptorRotationInvariance (530 ms total)
+[       OK ] AKAZE/DescriptorRotationInvariance.rotation/0 (571 ms)
+[----------] 1 test from AKAZE/DescriptorRotationInvariance (571 ms total)
 
 [----------] 1 test from AKAZE_DESCRIPTOR_KAZE/DescriptorRotationInvariance
 [ RUN      ] AKAZE_DESCRIPTOR_KAZE/DescriptorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.99)
@@ -465,8 +587,8 @@ angle = 300, inliers = 368, descInliersRatio = 1
 angle = 315, inliers = 368, descInliersRatio = 1
 angle = 330, inliers = 368, descInliersRatio = 1
 angle = 345, inliers = 368, descInliersRatio = 1
-[       OK ] AKAZE_DESCRIPTOR_KAZE/DescriptorRotationInvariance.rotation/0 (532 ms)
-[----------] 1 test from AKAZE_DESCRIPTOR_KAZE/DescriptorRotationInvariance (532 ms total)
+[       OK ] AKAZE_DESCRIPTOR_KAZE/DescriptorRotationInvariance.rotation/0 (577 ms)
+[----------] 1 test from AKAZE_DESCRIPTOR_KAZE/DescriptorRotationInvariance (577 ms total)
 
 [----------] 1 test from SIFT/DescriptorScaleInvariance
 [ RUN      ] SIFT/DescriptorScaleInvariance.scale/0, where GetParam() = ("detectors_descriptors_evaluation/images_datasets/bikes/img1.png", 0.78)
@@ -474,8 +596,8 @@ Keypoints: 728
 scale = 1.5, inliers = 720, descInliersRatio = 0.989011
 scale = 2, inliers = 678, descInliersRatio = 0.931319
 scale = 2.5, inliers = 594, descInliersRatio = 0.815934
-[       OK ] SIFT/DescriptorScaleInvariance.scale/0 (213 ms)
-[----------] 1 test from SIFT/DescriptorScaleInvariance (214 ms total)
+[       OK ] SIFT/DescriptorScaleInvariance.scale/0 (220 ms)
+[----------] 1 test from SIFT/DescriptorScaleInvariance (220 ms total)
 
 [----------] 1 test from AKAZE/DescriptorScaleInvariance
 [ RUN      ] AKAZE/DescriptorScaleInvariance.scale/0, where GetParam() = ("detectors_descriptors_evaluation/images_datasets/bikes/img1.png", 0.6)
@@ -483,8 +605,8 @@ Keypoints: 1498
 scale = 1.5, inliers = 1303, descInliersRatio = 0.869826
 scale = 2, inliers = 1047, descInliersRatio = 0.698932
 scale = 2.5, inliers = 1254, descInliersRatio = 0.837116
-[       OK ] AKAZE/DescriptorScaleInvariance.scale/0 (191 ms)
-[----------] 1 test from AKAZE/DescriptorScaleInvariance (191 ms total)
+[       OK ] AKAZE/DescriptorScaleInvariance.scale/0 (209 ms)
+[----------] 1 test from AKAZE/DescriptorScaleInvariance (209 ms total)
 
 [----------] 1 test from AKAZE_DESCRIPTOR_KAZE/DescriptorScaleInvariance
 [ RUN      ] AKAZE_DESCRIPTOR_KAZE/DescriptorScaleInvariance.scale/0, where GetParam() = ("detectors_descriptors_evaluation/images_datasets/bikes/img1.png", 0.55)
@@ -492,12 +614,12 @@ Keypoints: 1430
 scale = 1.5, inliers = 1290, descInliersRatio = 0.902098
 scale = 2, inliers = 907, descInliersRatio = 0.634266
 scale = 2.5, inliers = 977, descInliersRatio = 0.683217
-[       OK ] AKAZE_DESCRIPTOR_KAZE/DescriptorScaleInvariance.scale/0 (189 ms)
-[----------] 1 test from AKAZE_DESCRIPTOR_KAZE/DescriptorScaleInvariance (189 ms total)
+[       OK ] AKAZE_DESCRIPTOR_KAZE/DescriptorScaleInvariance.scale/0 (205 ms)
+[----------] 1 test from AKAZE_DESCRIPTOR_KAZE/DescriptorScaleInvariance (205 ms total)
 
 [----------] 8 tests from Features2d/DescriptorImage
 [ RUN      ] Features2d/DescriptorImage.no_crash/0, where GetParam() = "shared/lena.png"
-0. image: /data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/shared/lena.png:
+0. image: /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/lena.png:
 	512x512
 	AKAZE:MLDB
 			(576 keypoints, descriptor size = 61)
@@ -517,9 +639,9 @@ scale = 2.5, inliers = 977, descInliersRatio = 0.683217
 			(3850 keypoints, descriptor size = 32)
 	BRISK
 			(1419 keypoints, descriptor size = 64)
-[       OK ] Features2d/DescriptorImage.no_crash/0 (330 ms)
+[       OK ] Features2d/DescriptorImage.no_crash/0 (393 ms)
 [ RUN      ] Features2d/DescriptorImage.no_crash/1, where GetParam() = "shared/box*.png"
-0. image: /data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/shared/box.png:
+0. image: /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/box.png:
 	324x223
 	AKAZE:MLDB
 			(383 keypoints, descriptor size = 61)
@@ -539,7 +661,7 @@ scale = 2.5, inliers = 977, descInliersRatio = 0.683217
 			(3141 keypoints, descriptor size = 32)
 	BRISK
 			(1662 keypoints, descriptor size = 64)
-1. image: /data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/shared/box_in_scene.png:
+1. image: /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/box_in_scene.png:
 	512x384
 	AKAZE:MLDB
 			(795 keypoints, descriptor size = 61)
@@ -559,9 +681,9 @@ scale = 2.5, inliers = 977, descInliersRatio = 0.683217
 			(4362 keypoints, descriptor size = 32)
 	BRISK
 			(2786 keypoints, descriptor size = 64)
-[       OK ] Features2d/DescriptorImage.no_crash/1 (414 ms)
+[       OK ] Features2d/DescriptorImage.no_crash/1 (459 ms)
 [ RUN      ] Features2d/DescriptorImage.no_crash/2, where GetParam() = "shared/fruits*.png"
-0. image: /data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/shared/fruits.png:
+0. image: /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/fruits.png:
 	512x480
 	AKAZE:MLDB
 			(240 keypoints, descriptor size = 61)
@@ -581,7 +703,7 @@ scale = 2.5, inliers = 977, descInliersRatio = 0.683217
 			(3471 keypoints, descriptor size = 32)
 	BRISK
 			(1085 keypoints, descriptor size = 64)
-1. image: /data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/shared/fruits_ecc.png:
+1. image: /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/fruits_ecc.png:
 	216x216
 	AKAZE:MLDB
 			(29 keypoints, descriptor size = 61)
@@ -601,9 +723,9 @@ scale = 2.5, inliers = 977, descInliersRatio = 0.683217
 			(730 keypoints, descriptor size = 32)
 	BRISK
 			(320 keypoints, descriptor size = 64)
-[       OK ] Features2d/DescriptorImage.no_crash/2 (375 ms)
+[       OK ] Features2d/DescriptorImage.no_crash/2 (403 ms)
 [ RUN      ] Features2d/DescriptorImage.no_crash/3, where GetParam() = "shared/airplane.png"
-0. image: /data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/shared/airplane.png:
+0. image: /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/airplane.png:
 	512x512
 	AKAZE:MLDB
 			(1083 keypoints, descriptor size = 61)
@@ -623,9 +745,9 @@ scale = 2.5, inliers = 977, descInliersRatio = 0.683217
 			(4706 keypoints, descriptor size = 32)
 	BRISK
 			(2629 keypoints, descriptor size = 64)
-[       OK ] Features2d/DescriptorImage.no_crash/3 (371 ms)
+[       OK ] Features2d/DescriptorImage.no_crash/3 (405 ms)
 [ RUN      ] Features2d/DescriptorImage.no_crash/4, where GetParam() = "shared/graffiti.png"
-0. image: /data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/shared/graffiti.png:
+0. image: /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/graffiti.png:
 	400x320
 	AKAZE:MLDB
 			(804 keypoints, descriptor size = 61)
@@ -645,9 +767,9 @@ scale = 2.5, inliers = 977, descInliersRatio = 0.683217
 			(4089 keypoints, descriptor size = 32)
 	BRISK
 			(2198 keypoints, descriptor size = 64)
-[       OK ] Features2d/DescriptorImage.no_crash/4 (215 ms)
+[       OK ] Features2d/DescriptorImage.no_crash/4 (240 ms)
 [ RUN      ] Features2d/DescriptorImage.no_crash/5, where GetParam() = "shared/1_itseez-0001*.png"
-0. image: /data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/shared/1_itseez-0001238.png:
+0. image: /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/1_itseez-0001238.png:
 	640x480
 	AKAZE:MLDB
 			(842 keypoints, descriptor size = 61)
@@ -667,7 +789,7 @@ scale = 2.5, inliers = 977, descInliersRatio = 0.683217
 			(4197 keypoints, descriptor size = 32)
 	BRISK
 			(1528 keypoints, descriptor size = 64)
-1. image: /data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/shared/1_itseez-0001438.png:
+1. image: /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/1_itseez-0001438.png:
 	640x480
 	AKAZE:MLDB
 			(634 keypoints, descriptor size = 61)
@@ -687,9 +809,9 @@ scale = 2.5, inliers = 977, descInliersRatio = 0.683217
 			(3521 keypoints, descriptor size = 32)
 	BRISK
 			(1190 keypoints, descriptor size = 64)
-[       OK ] Features2d/DescriptorImage.no_crash/5 (811 ms)
+[       OK ] Features2d/DescriptorImage.no_crash/5 (885 ms)
 [ RUN      ] Features2d/DescriptorImage.no_crash/6, where GetParam() = "shared/pic*.png"
-0. image: /data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/shared/pic1.png:
+0. image: /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/pic1.png:
 	400x300
 	AKAZE:MLDB
 			(149 keypoints, descriptor size = 61)
@@ -709,7 +831,7 @@ scale = 2.5, inliers = 977, descInliersRatio = 0.683217
 			(557 keypoints, descriptor size = 32)
 	BRISK
 			(151 keypoints, descriptor size = 64)
-1. image: /data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/shared/pic2.png:
+1. image: /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/pic2.png:
 	400x300
 	AKAZE:MLDB
 			(412 keypoints, descriptor size = 61)
@@ -729,7 +851,7 @@ scale = 2.5, inliers = 977, descInliersRatio = 0.683217
 			(3892 keypoints, descriptor size = 32)
 	BRISK
 			(9167 keypoints, descriptor size = 64)
-2. image: /data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/shared/pic3.png:
+2. image: /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/pic3.png:
 	400x300
 	AKAZE:MLDB
 			(108 keypoints, descriptor size = 61)
@@ -749,7 +871,7 @@ scale = 2.5, inliers = 977, descInliersRatio = 0.683217
 			(424 keypoints, descriptor size = 32)
 	BRISK
 			(109 keypoints, descriptor size = 64)
-3. image: /data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/shared/pic4.png:
+3. image: /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/pic4.png:
 	400x300
 	AKAZE:MLDB
 			(379 keypoints, descriptor size = 61)
@@ -769,7 +891,7 @@ scale = 2.5, inliers = 977, descInliersRatio = 0.683217
 			(2296 keypoints, descriptor size = 32)
 	BRISK
 			(812 keypoints, descriptor size = 64)
-4. image: /data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/shared/pic5.png:
+4. image: /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/pic5.png:
 	400x300
 	AKAZE:MLDB
 			(51 keypoints, descriptor size = 61)
@@ -789,7 +911,7 @@ scale = 2.5, inliers = 977, descInliersRatio = 0.683217
 			(597 keypoints, descriptor size = 32)
 	BRISK
 			(327 keypoints, descriptor size = 64)
-5. image: /data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/shared/pic6.png:
+5. image: /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/pic6.png:
 	400x300
 	AKAZE:MLDB
 			(24 keypoints, descriptor size = 61)
@@ -809,9 +931,9 @@ scale = 2.5, inliers = 977, descInliersRatio = 0.683217
 			(48 keypoints, descriptor size = 32)
 	BRISK
 			(31 keypoints, descriptor size = 64)
-[       OK ] Features2d/DescriptorImage.no_crash/6 (908 ms)
+[       OK ] Features2d/DescriptorImage.no_crash/6 (1051 ms)
 [ RUN      ] Features2d/DescriptorImage.no_crash/7, where GetParam() = "shared/templ.png"
-0. image: /data/xumengying/opencv-verify/src/opencv_extra/testdata/cv/shared/templ.png:
+0. image: /data/xumengying/tool-verify/opencv-verify/src/opencv_extra/testdata/cv/shared/templ.png:
 	100x130
 	AKAZE:MLDB
 			(0 keypoints, descriptor size = 61)
@@ -831,8 +953,8 @@ scale = 2.5, inliers = 977, descInliersRatio = 0.683217
 			(0 keypoints, descriptor size = 0)
 	BRISK
 			(0 keypoints, descriptor size = 64)
-[       OK ] Features2d/DescriptorImage.no_crash/7 (32 ms)
-[----------] 8 tests from Features2d/DescriptorImage (3456 ms total)
+[       OK ] Features2d/DescriptorImage.no_crash/7 (35 ms)
+[----------] 8 tests from Features2d/DescriptorImage (3871 ms total)
 
 [----------] 1 test from SIFT/DetectorRotationInvariance
 [ RUN      ] SIFT/DetectorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.45, 0.7)
@@ -860,8 +982,8 @@ angle = 300, keypoints = 743, keyPointMatchesRatio = 0.768489, angleInliersRatio
 angle = 315, keypoints = 713, keyPointMatchesRatio = 0.787781, angleInliersRatio = 0.822449
 angle = 330, keypoints = 710, keyPointMatchesRatio = 0.802251, angleInliersRatio = 0.799599
 angle = 345, keypoints = 725, keyPointMatchesRatio = 0.749196, angleInliersRatio = 0.821888
-[       OK ] SIFT/DetectorRotationInvariance.rotation/0 (988 ms)
-[----------] 1 test from SIFT/DetectorRotationInvariance (988 ms total)
+[       OK ] SIFT/DetectorRotationInvariance.rotation/0 (907 ms)
+[----------] 1 test from SIFT/DetectorRotationInvariance (907 ms total)
 
 [----------] 1 test from BRISK/DetectorRotationInvariance
 [ RUN      ] BRISK/DetectorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.45, 0.76)
@@ -889,8 +1011,8 @@ angle = 300, keypoints = 1190, keyPointMatchesRatio = 0.848571, angleInliersRati
 angle = 315, keypoints = 1085, keyPointMatchesRatio = 0.841905, angleInliersRatio = 0.866516
 angle = 330, keypoints = 1181, keyPointMatchesRatio = 0.829524, angleInliersRatio = 0.881745
 angle = 345, keypoints = 1067, keyPointMatchesRatio = 0.814286, angleInliersRatio = 0.870175
-[       OK ] BRISK/DetectorRotationInvariance.rotation/0 (581 ms)
-[----------] 1 test from BRISK/DetectorRotationInvariance (582 ms total)
+[       OK ] BRISK/DetectorRotationInvariance.rotation/0 (586 ms)
+[----------] 1 test from BRISK/DetectorRotationInvariance (586 ms total)
 
 [----------] 1 test from ORB/DetectorRotationInvariance
 [ RUN      ] ORB/DetectorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.5, 0.76)
@@ -918,8 +1040,8 @@ angle = 300, keypoints = 500, keyPointMatchesRatio = 0.95171, angleInliersRatio 
 angle = 315, keypoints = 500, keyPointMatchesRatio = 0.961771, angleInliersRatio = 0.870293
 angle = 330, keypoints = 500, keyPointMatchesRatio = 0.961771, angleInliersRatio = 0.864017
 angle = 345, keypoints = 500, keyPointMatchesRatio = 0.971831, angleInliersRatio = 0.871636
-[       OK ] ORB/DetectorRotationInvariance.rotation/0 (275 ms)
-[----------] 1 test from ORB/DetectorRotationInvariance (275 ms total)
+[       OK ] ORB/DetectorRotationInvariance.rotation/0 (285 ms)
+[----------] 1 test from ORB/DetectorRotationInvariance (285 ms total)
 
 [----------] 1 test from AKAZE/DetectorRotationInvariance
 [ RUN      ] AKAZE/DetectorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.5, 0.71)
@@ -947,8 +1069,8 @@ angle = 300, keypoints = 549, keyPointMatchesRatio = 0.937349, angleInliersRatio
 angle = 315, keypoints = 537, keyPointMatchesRatio = 0.939759, angleInliersRatio = 0.920513
 angle = 330, keypoints = 537, keyPointMatchesRatio = 0.922892, angleInliersRatio = 0.921671
 angle = 345, keypoints = 538, keyPointMatchesRatio = 0.920482, angleInliersRatio = 0.929319
-[       OK ] AKAZE/DetectorRotationInvariance.rotation/0 (613 ms)
-[----------] 1 test from AKAZE/DetectorRotationInvariance (613 ms total)
+[       OK ] AKAZE/DetectorRotationInvariance.rotation/0 (638 ms)
+[----------] 1 test from AKAZE/DetectorRotationInvariance (638 ms total)
 
 [----------] 1 test from AKAZE_DESCRIPTOR_KAZE/DetectorRotationInvariance
 [ RUN      ] AKAZE_DESCRIPTOR_KAZE/DetectorRotationInvariance.rotation/0, where GetParam() = ("features2d/tsukuba.png", 0.5, 0.71)
@@ -976,24 +1098,24 @@ angle = 300, keypoints = 523, keyPointMatchesRatio = 0.940217, angleInliersRatio
 angle = 315, keypoints = 516, keyPointMatchesRatio = 0.951087, angleInliersRatio = 0.928571
 angle = 330, keypoints = 521, keyPointMatchesRatio = 0.92663, angleInliersRatio = 0.926686
 angle = 345, keypoints = 517, keyPointMatchesRatio = 0.92663, angleInliersRatio = 0.929619
-[       OK ] AKAZE_DESCRIPTOR_KAZE/DetectorRotationInvariance.rotation/0 (610 ms)
-[----------] 1 test from AKAZE_DESCRIPTOR_KAZE/DetectorRotationInvariance (610 ms total)
+[       OK ] AKAZE_DESCRIPTOR_KAZE/DetectorRotationInvariance.rotation/0 (637 ms)
+[----------] 1 test from AKAZE_DESCRIPTOR_KAZE/DetectorRotationInvariance (638 ms total)
 
 [----------] 1 test from SIFT/DetectorScaleInvariance
 [ RUN      ] SIFT/DetectorScaleInvariance.scale/0, where GetParam() = ("detectors_descriptors_evaluation/images_datasets/bikes/img1.png", 0.6, 0.98)
 scale = 1.5, keyPointMatchesRatio = 0.784504, scaleInliersRatio = 0.993827
 scale = 2, keyPointMatchesRatio = 0.82397, scaleInliersRatio = 0.995455
 scale = 2.5, keyPointMatchesRatio = 0.691964, scaleInliersRatio = 1
-[       OK ] SIFT/DetectorScaleInvariance.scale/0 (182 ms)
-[----------] 1 test from SIFT/DetectorScaleInvariance (182 ms total)
+[       OK ] SIFT/DetectorScaleInvariance.scale/0 (186 ms)
+[----------] 1 test from SIFT/DetectorScaleInvariance (186 ms total)
 
 [----------] 1 test from BRISK/DetectorScaleInvariance
 [ RUN      ] BRISK/DetectorScaleInvariance.scale/0, where GetParam() = ("detectors_descriptors_evaluation/images_datasets/bikes/img1.png", 0.08, 0.49)
 scale = 1.5, keyPointMatchesRatio = 0.865005, scaleInliersRatio = 0.752101
 scale = 2, keyPointMatchesRatio = 0.903353, scaleInliersRatio = 0.857351
 scale = 2.5, keyPointMatchesRatio = 0.792079, scaleInliersRatio = 0.832955
-[       OK ] BRISK/DetectorScaleInvariance.scale/0 (217 ms)
-[----------] 1 test from BRISK/DetectorScaleInvariance (217 ms total)
+[       OK ] BRISK/DetectorScaleInvariance.scale/0 (218 ms)
+[----------] 1 test from BRISK/DetectorScaleInvariance (218 ms total)
 
 [----------] 1 test from ORB/DetectorScaleInvariance
 [ RUN      ] ORB/DetectorScaleInvariance.scale/0, where GetParam() = ("detectors_descriptors_evaluation/images_datasets/bikes/img1.png", 0.08, 0.49)
@@ -1008,24 +1130,24 @@ scale = 2.5, keyPointMatchesRatio = 0.506098, scaleInliersRatio = 1
 scale = 1.5, keyPointMatchesRatio = 0.799791, scaleInliersRatio = 0.975228
 scale = 2, keyPointMatchesRatio = 0.675119, scaleInliersRatio = 0.798122
 scale = 2.5, keyPointMatchesRatio = 0.616667, scaleInliersRatio = 0.957529
-[       OK ] KAZE/DetectorScaleInvariance.scale/0 (700 ms)
-[----------] 1 test from KAZE/DetectorScaleInvariance (700 ms total)
+[       OK ] KAZE/DetectorScaleInvariance.scale/0 (776 ms)
+[----------] 1 test from KAZE/DetectorScaleInvariance (776 ms total)
 
 [----------] 1 test from AKAZE/DetectorScaleInvariance
 [ RUN      ] AKAZE/DetectorScaleInvariance.scale/0, where GetParam() = ("detectors_descriptors_evaluation/images_datasets/bikes/img1.png", 0.08, 0.49)
 scale = 1.5, keyPointMatchesRatio = 0.906166, scaleInliersRatio = 0.83284
 scale = 2, keyPointMatchesRatio = 0.869955, scaleInliersRatio = 1
 scale = 2.5, keyPointMatchesRatio = 0.762542, scaleInliersRatio = 0.780702
-[       OK ] AKAZE/DetectorScaleInvariance.scale/0 (155 ms)
-[----------] 1 test from AKAZE/DetectorScaleInvariance (155 ms total)
+[       OK ] AKAZE/DetectorScaleInvariance.scale/0 (165 ms)
+[----------] 1 test from AKAZE/DetectorScaleInvariance (165 ms total)
 
 [----------] 1 test from AKAZE_DESCRIPTOR_KAZE/DetectorScaleInvariance
 [ RUN      ] AKAZE_DESCRIPTOR_KAZE/DetectorScaleInvariance.scale/0, where GetParam() = ("detectors_descriptors_evaluation/images_datasets/bikes/img1.png", 0.08, 0.49)
 scale = 1.5, keyPointMatchesRatio = 0.905172, scaleInliersRatio = 0.826984
 scale = 2, keyPointMatchesRatio = 0.873171, scaleInliersRatio = 1
 scale = 2.5, keyPointMatchesRatio = 0.738636, scaleInliersRatio = 0.815385
-[       OK ] AKAZE_DESCRIPTOR_KAZE/DetectorScaleInvariance.scale/0 (148 ms)
-[----------] 1 test from AKAZE_DESCRIPTOR_KAZE/DetectorScaleInvariance (148 ms total)
+[       OK ] AKAZE_DESCRIPTOR_KAZE/DetectorScaleInvariance.scale/0 (160 ms)
+[----------] 1 test from AKAZE_DESCRIPTOR_KAZE/DetectorScaleInvariance (160 ms total)
 
 [----------] 3 tests from Features2D_drawKeypoints
 [ RUN      ] Features2D_drawKeypoints.Accuracy/0, where GetParam() = 8UC1
@@ -1060,8 +1182,8 @@ scale = 2.5, keyPointMatchesRatio = 0.738636, scaleInliersRatio = 0.815385
 [----------] Global test environment tear-down
 [ SKIPSTAT ] 1 tests skipped
 [ SKIPSTAT ] TAG='skip_bigdata' skip 1 tests
-[==========] 106 tests from 72 test cases ran. (64167 ms total)
-[  PASSED  ] 106 tests.
+[==========] 162 tests from 75 test cases ran. (68330 ms total)
+[  PASSED  ] 162 tests.
 
   YOU HAVE 1 DISABLED TEST
 

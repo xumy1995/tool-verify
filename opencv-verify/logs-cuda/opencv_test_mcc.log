@@ -2,52 +2,53 @@ CTEST_FULL_OUTPUT
 OpenCV version: 4.14.0-pre
 OpenCV VCS version: 4.13.0-493-g7aa163b83f
 Build type: Release
-Compiler: /usr/bin/c++  (ver 11.4.0)
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
 Algorithm hint: ALGO_HINT_ACCURATE
 HAL: YES (ipp (ver 0.0.1))
 Parallel framework: pthreads (nthreads=30)
 CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
 Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
 Intel(R) IPP features code: 0x8000
+OpenCL is disabled
 TEST: Skip tests with tags: 'mem_6gb', 'verylong'
 [==========] Running 12 tests from 4 test cases.
 [----------] Global test environment set-up.
 [----------] 3 tests from CV_ccmRunColorCorrection
 [ RUN      ] CV_ccmRunColorCorrection.test_model
-[       OK ] CV_ccmRunColorCorrection.test_model (30 ms)
+[       OK ] CV_ccmRunColorCorrection.test_model (33 ms)
 [ RUN      ] CV_ccmRunColorCorrection.test_masks_weights_1
 [       OK ] CV_ccmRunColorCorrection.test_masks_weights_1 (16 ms)
 [ RUN      ] CV_ccmRunColorCorrection.test_masks_weights_2
-[       OK ] CV_ccmRunColorCorrection.test_masks_weights_2 (41 ms)
-[----------] 3 tests from CV_ccmRunColorCorrection (87 ms total)
+[       OK ] CV_ccmRunColorCorrection.test_masks_weights_2 (43 ms)
+[----------] 3 tests from CV_ccmRunColorCorrection (92 ms total)
 
 [----------] 3 tests from CV_mccRunCCheckerDrawTest
 [ RUN      ] CV_mccRunCCheckerDrawTest.accuracy_MCC24
-[       OK ] CV_mccRunCCheckerDrawTest.accuracy_MCC24 (17 ms)
+[       OK ] CV_mccRunCCheckerDrawTest.accuracy_MCC24 (18 ms)
 [ RUN      ] CV_mccRunCCheckerDrawTest.accuracy_SG140
 [       OK ] CV_mccRunCCheckerDrawTest.accuracy_SG140 (3 ms)
 [ RUN      ] CV_mccRunCCheckerDrawTest.accuracy_VINYL18
 [       OK ] CV_mccRunCCheckerDrawTest.accuracy_VINYL18 (1 ms)
-[----------] 3 tests from CV_mccRunCCheckerDrawTest (21 ms total)
+[----------] 3 tests from CV_mccRunCCheckerDrawTest (22 ms total)
 
 [----------] 3 tests from CV_mccRunCCheckerDetectorBasic
 [ RUN      ] CV_mccRunCCheckerDetectorBasic.accuracy_SG140
-[       OK ] CV_mccRunCCheckerDetectorBasic.accuracy_SG140 (163 ms)
+[       OK ] CV_mccRunCCheckerDetectorBasic.accuracy_SG140 (161 ms)
 [ RUN      ] CV_mccRunCCheckerDetectorBasic.accuracy_MCC24
-[       OK ] CV_mccRunCCheckerDetectorBasic.accuracy_MCC24 (51 ms)
+[       OK ] CV_mccRunCCheckerDetectorBasic.accuracy_MCC24 (44 ms)
 [ RUN      ] CV_mccRunCCheckerDetectorBasic.accuracy_VINYL18
-[       OK ] CV_mccRunCCheckerDetectorBasic.accuracy_VINYL18 (81 ms)
-[----------] 3 tests from CV_mccRunCCheckerDetectorBasic (295 ms total)
+[       OK ] CV_mccRunCCheckerDetectorBasic.accuracy_VINYL18 (80 ms)
+[----------] 3 tests from CV_mccRunCCheckerDetectorBasic (285 ms total)
 
 [----------] 3 tests from CV_mcc_ccm_test
 [ RUN      ] CV_mcc_ccm_test.detect_Macbeth
-[       OK ] CV_mcc_ccm_test.detect_Macbeth (66 ms)
+[       OK ] CV_mcc_ccm_test.detect_Macbeth (64 ms)
 [ RUN      ] CV_mcc_ccm_test.compute_ccm
 [       OK ] CV_mcc_ccm_test.compute_ccm (15 ms)
 [ RUN      ] CV_mcc_ccm_test.infer
-[       OK ] CV_mcc_ccm_test.infer (46 ms)
-[----------] 3 tests from CV_mcc_ccm_test (127 ms total)
+[       OK ] CV_mcc_ccm_test.infer (42 ms)
+[----------] 3 tests from CV_mcc_ccm_test (121 ms total)
 
 [----------] Global test environment tear-down
-[==========] 12 tests from 4 test cases ran. (530 ms total)
+[==========] 12 tests from 4 test cases ran. (520 ms total)
 [  PASSED  ] 12 tests.
