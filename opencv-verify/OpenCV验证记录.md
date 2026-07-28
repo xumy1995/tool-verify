@@ -102,7 +102,7 @@ done
 - `opencv_test_*` 失败项: 
   - `opencv_test_cudaoptflow`
   - `opencv_test_dnn`
-  - `opencv_test_face`
+  - 【已修复】`opencv_test_face`
   - `opencv_test_highgui`
 
 
@@ -253,7 +253,7 @@ done
   - 5个 `Test_ONNX_layers` 失败是由于计算误差超过了阈值，但整体超过幅度不大
   - 2个 `Test_TensorFlow_layers` 失败可能是由于cudnn 9.1.0 对FP16的Convolution3D和concat_3d不支持
 
-#### `opencv_test_face`
+#### 【已修复】`opencv_test_face`
 - 结果: `18 / 19` 通过，失败 1 个
 - 失败项: 
   - `CV_Face_FacemarkKazemi.can_detect_landmarks`
@@ -265,7 +265,13 @@ done
   " thrown in the test body.
   [  FAILED  ] CV_Face_FacemarkKazemi.can_detect_landmarks (7 ms)
   ```
-- 错误分析: 缺少测试数据
+- 错误分析: 
+  - github有人提过相同的issue：https://github.com/opencv/opencv_contrib/issues/2153
+  - 把缺失的文件复制一下：`cp build-cuda/share/opencv4/testdata/cv/face/face_landmark_model.dat src/opencv_extra/testdata/cv/face/`，然后重新执行测试即可：
+    ```bash
+    cd build_cuda/bin
+    ./opencv_test_face 2>&1 | tee ../../logs-cuda/opencv_test_face.log.fix
+    ```
 
 #### `opencv_test_highgui`
 - 同CPU情形
