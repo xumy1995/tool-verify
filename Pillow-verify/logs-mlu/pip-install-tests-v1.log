@@ -1,0 +1,135 @@
+Using Python 3.11.15 environment at: /mnt/afs/xumengying/tool-verify/Pillow-verify/venv-mlu-py311
+Resolved 16 packages in 1m 29s
+   Building pillow @ file:///mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow
+Downloading pygments (1.2MiB)
+  × Failed to build `pillow @ file:///mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow`
+  ├─▶ The build backend returned an error
+  ╰─▶ Call to `backend.build_editable` failed (exit status: 1)
+
+      [stdout]
+      running editable_wheel
+      creating /mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmp5skpHx/.tmp-9bcvcg5i/pillow.egg-info
+      writing /mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmp5skpHx/.tmp-9bcvcg5i/pillow.egg-info/PKG-INFO
+      writing dependency_links to /mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmp5skpHx/.tmp-9bcvcg5i/pillow.egg-info/dependency_links.txt
+      writing requirements to /mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmp5skpHx/.tmp-9bcvcg5i/pillow.egg-info/requires.txt
+      writing top-level names to /mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmp5skpHx/.tmp-9bcvcg5i/pillow.egg-info/top_level.txt
+      writing manifest file '/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmp5skpHx/.tmp-9bcvcg5i/pillow.egg-info/SOURCES.txt'
+      reading manifest file '/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmp5skpHx/.tmp-9bcvcg5i/pillow.egg-info/SOURCES.txt'
+      reading manifest template 'MANIFEST.in'
+      adding license file 'LICENSE'
+      writing manifest file '/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmp5skpHx/.tmp-9bcvcg5i/pillow.egg-info/SOURCES.txt'
+      creating '/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmp5skpHx/.tmp-9bcvcg5i/pillow-13.0.0.dev0.dist-info'
+      creating /mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmp5skpHx/.tmp-9bcvcg5i/pillow-13.0.0.dev0.dist-info/WHEEL
+      running build_py
+      running build_clib
+      building 'pil_imaging_mode' library
+      creating /tmp/tmpijh928nz.build-temp/src/libImaging
+      cc -pthread -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -O3 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -c src/libImaging/Mode.c -o
+      /tmp/tmpijh928nz.build-temp/src/libImaging/Mode.o
+      ar rcs /tmp/tmpijh928nz.build-temp/libpil_imaging_mode.a /tmp/tmpijh928nz.build-temp/src/libImaging/Mode.o
+      running build_ext
+
+      [stderr]
+      warning: no files found matching '*.c'
+      warning: no files found matching '*.h'
+      warning: no files found matching '*.sh'
+      warning: no files found matching '*.txt'
+      warning: no files found matching '.flake8'
+      warning: no previously-included files found matching '.clang-format'
+      warning: no previously-included files found matching '.coveragerc'
+      warning: no previously-included files found matching '.editorconfig'
+      warning: no previously-included files found matching '.readthedocs.yml'
+      warning: no previously-included files found matching 'codecov.yml'
+      warning: no previously-included files found matching 'renovate.json'
+      warning: no previously-included files found matching 'Tests/images/README.md'
+      warning: no previously-included files found matching 'Tests/images/string_dimension.tiff'
+      warning: no previously-included files matching '.git*' found anywhere in distribution
+      warning: no previously-included files matching '*.so' found anywhere in distribution
+      no previously-included directories found matching '.ci'
+      no previously-included directories found matching 'wheels'
+      no previously-included directories found matching 'winbuild/build'
+      no previously-included directories found matching 'winbuild/depends'
+      no previously-included directories found matching 'Tests/errors'
+      no previously-included directories found matching 'Tests/images/jpeg2000'
+      no previously-included directories found matching 'Tests/images/msp'
+      no previously-included directories found matching 'Tests/images/picins'
+      no previously-included directories found matching 'Tests/images/sunraster'
+      no previously-included directories found matching 'Tests/test-images'
+
+
+      The headers or library files could not be found for jpeg,
+      a required dependency when compiling Pillow from source.
+
+      Please see the install instructions at:
+         https://pillow.readthedocs.io/en/latest/installation/basic-installation.html
+
+      Traceback (most recent call last):
+        File "<string>", line 1094, in <module>
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/__init__.py", line 117, in setup
+          return distutils.core.setup(**attrs)  # type: ignore[return-value]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/_distutils/core.py", line 186, in setup
+          return run_commands(dist)
+                 ^^^^^^^^^^^^^^^^^^
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+          dist.run_commands()
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 1001, in run_commands
+          self.run_command(cmd)
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/dist.py", line 1107, in run_command
+          super().run_command(command)
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 1020, in run_command
+          cmd_obj.run()
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/command/editable_wheel.py", line 140, in run
+          self._create_wheel_file(bdist_wheel)
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/command/editable_wheel.py", line 350, in _create_wheel_file
+          files, mapping = self._run_build_commands(dist_name, unpacked, lib, tmp)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/command/editable_wheel.py", line 273, in _run_build_commands
+          self._run_build_subcommands()
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/command/editable_wheel.py", line 300, in _run_build_subcommands
+          self.run_command(name)
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/_distutils/cmd.py", line 341, in run_command
+          self.distribution.run_command(command)
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/dist.py", line 1107, in run_command
+          super().run_command(command)
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/_distutils/dist.py", line 1020, in run_command
+          cmd_obj.run()
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/command/build_ext.py", line 97, in run
+          _build_ext.run(self)
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/_distutils/command/build_ext.py", line 367, in run
+          self.build_extensions()
+        File "<string>", line 891, in build_extensions
+      RequiredDependencyException: jpeg
+      An error occurred when building editable wheel for pillow.
+      See debugging tips in: https://setuptools.pypa.io/en/latest/userguide/development_mode.html#debugging-tips
+
+      During handling of the above exception, another exception occurred:
+
+      Traceback (most recent call last):
+        File "<string>", line 11, in <module>
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/_custom_build/backend.py", line 32, in build_editable
+          return super().build_editable(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/build_meta.py", line 474, in build_editable
+          return self._build_with_temp_dir(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/build_meta.py", line 410, in _build_with_temp_dir
+          self.run_setup()
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/_custom_build/backend.py", line 20, in run_setup
+          return super().run_setup(setup_script)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/mnt/afs/xumengying/tool-verify/Pillow-verify/uv-cache/builds-v0/.tmpndzwJA/lib/python3.11/site-packages/setuptools/build_meta.py", line 317, in run_setup
+          exec(code, locals())
+        File "<string>", line 1110, in <module>
+      RequiredDependencyException:
+
+      The headers or library files could not be found for jpeg,
+      a required dependency when compiling Pillow from source.
+
+      Please see the install instructions at:
+         https://pillow.readthedocs.io/en/latest/installation/basic-installation.html
+
+
+
+
+hint: Build failures usually indicate a problem with the package or the build environment

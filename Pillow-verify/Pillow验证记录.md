@@ -52,12 +52,62 @@ python -m PIL \
 deactivate
 ```
 
-## 关键日志
+## MLU 完整命令
 
-- 依赖安装：`./Pillow-verify/logs-cpu/pip-install-tests.log`
-- pytest 收集：`./Pillow-verify/logs-cpu/pytest-collect.log`
-- pytest 执行：`./Pillow-verify/logs-cpu/pytest-cpu.log`
-- Pillow 特性：`./Pillow-verify/logs-cpu/pillow-features.log`
+```bash
+cd ./Pillow-verify
+mkdir -p ./logs-mlu
+mkdir -p ./uv-cache
+export UV_CACHE_DIR="$(pwd)/uv-cache"
+
+# 创建 Python 虚拟环境
+# Pillow 当前源码要求 Python >= 3.11；如果系统 python3 是 3.10，直接用 uv 拉取/创建 3.11 环境
+uv venv ./venv-mlu-py311 --python 3.11
+source ./venv-mlu-py311/bin/activate
+
+# 安装基础构建工具
+uv pip install -U pip setuptools wheel 
+
+# 检查是否有libjpeg
+pkg-config --modversion libjpeg
+# 如果没有libjpeg先安装
+apt install libjpeg-dev
+
+# 安装 Pillow 测试依赖
+cd ./src/Pillow
+uv pip install -e ".[tests]" \
+  2>&1 | tee ../../logs-mlu/pip-install-tests.log
+
+# 收集测试用例
+python -m pytest --collect-only \
+  2>&1 | tee ../../logs-mlu/pytest-collect.log
+
+# 执行测试
+python -m pytest \
+  2>&1 | tee ../../logs-mlu/pytest-mlu.log
+
+# 记录安装后的 Pillow 版本和特性
+python -m PIL \
+  2>&1 | tee ../../logs-mlu/pillow-features.log
+
+deactivate
+```
+
+
+## 关键日志
+- CPU
+  - 依赖安装：`./Pillow-verify/logs-cpu/pip-install-tests.log`
+  - pytest 收集：`./Pillow-verify/logs-cpu/pytest-collect.log`
+  - pytest 执行：`./Pillow-verify/logs-cpu/pytest-cpu.log`
+  - Pillow 特性：`./Pillow-verify/logs-cpu/pillow-features.log`
+- MLU
+  - 依赖安装：
+    - `./Pillow-verify/logs-mlu/pip-install-tests-v1.log` 缺少nasm失败
+    - `./Pillow-verify/logs-mlu/pip-install-tests.log`
+  - pytest 收集：`./Pillow-verify/logs-mlu/pytest-collect.log`
+  - pytest 执行：`./Pillow-verify/logs-mlu/pytest-mlu.log`
+  - Pillow 特性：`./Pillow-verify/logs-mlu/pillow-features.log`
+
 
 ## 结论
 

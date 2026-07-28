@@ -1,0 +1,22 @@
+Using Python 3.11.15 environment at: /mnt/afs/xumengying/tool-verify/Pillow-verify/venv-mlu-py311
+Resolved 16 packages in 8.46s
+   Building pillow @ file:///mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow
+Downloading pygments (1.2MiB)
+      Built pillow @ file:///mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow
+ Downloaded pygments
+Prepared 14 packages in 1m 16s
+Installed 14 packages in 488ms
+ + coverage==7.15.2
+ + defusedxml==0.7.1
+ + execnet==2.1.2
+ + iniconfig==2.3.0
+ + markdown2==2.5.5
+ + olefile==0.47
+ + pillow==13.0.0.dev0 (from file:///mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow)
+ + pluggy==1.6.0
+ + pygments==2.20.0
+ + pytest==9.1.1
+ + pytest-cov==7.1.0
+ + pytest-timeout==2.4.0
+ + pytest-xdist==3.8.0
+ + trove-classifiers==2026.6.1.19

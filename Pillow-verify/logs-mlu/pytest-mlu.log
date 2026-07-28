@@ -1,0 +1,790 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0
+--------------------------------------------------------------------
+Pillow 13.0.0.dev0
+Python 3.11.15 (main, Jun 11 2026, 04:03:40) [Clang 22.1.3 ]
+--------------------------------------------------------------------
+Python executable is /mnt/afs/xumengying/tool-verify/Pillow-verify/venv-mlu-py311/bin/python
+Environment Python files loaded from /mnt/afs/xumengying/tool-verify/Pillow-verify/venv-mlu-py311
+System Python files loaded from /root/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu
+--------------------------------------------------------------------
+Python Pillow modules loaded from /mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL
+Binary Pillow modules loaded from /mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL
+--------------------------------------------------------------------
+--- PIL CORE support ok, compiled for 13.0.0.dev0
+--- TKINTER support ok, loaded 9.0
+*** FREETYPE2 support not installed
+*** LITTLECMS2 support not installed
+*** WEBP support not installed
+*** AVIF support not installed
+--- JPEG support ok, compiled for libjpeg-turbo 2.1.2
+*** OPENJPEG (JPEG2000) support not installed
+--- ZLIB (PNG/ZIP) support ok, loaded 1.2.11
+*** LIBTIFF support not installed
+*** RAQM (Bidirectional Text) support not installed
+*** LIBIMAGEQUANT (Quantization method) support not installed
+*** XCB (X protocol) support not installed
+--------------------------------------------------------------------
+
+rootdir: /mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow
+configfile: pyproject.toml
+testpaths: Tests
+plugins: cov-7.1.0, timeout-2.4.0, xdist-3.8.0
+collected 5148 items / 7 skipped
+
+Tests/oss-fuzz/test_fuzzers.py ......................................... [  0%]
+........................................................................ [  2%]
+........................................................................ [  3%]
+........................................................................ [  4%]
+........................................................................ [  6%]
+........................................................................ [  7%]
+........................................................................ [  9%]
+........................................................................ [ 10%]
+........................................................................ [ 11%]
+........................................................................ [ 13%]
+........................................................................ [ 14%]
+........................................................................ [ 16%]
+........................................................................ [ 17%]
+........................................................................ [ 18%]
+........................................................................ [ 20%]
+....................ssssssssssssssssssssssssssssssssssssss               [ 21%]
+Tests/test_000_sanity.py .                                               [ 21%]
+Tests/test_arrow.py ......................                               [ 21%]
+Tests/test_binary.py ...                                                 [ 22%]
+Tests/test_bmp_reference.py ...                                          [ 22%]
+Tests/test_box_blur.py ................                                  [ 22%]
+Tests/test_color_lut.py .......................ss.............           [ 23%]
+Tests/test_core_resources.py ................                            [ 23%]
+Tests/test_decompression_bomb.py ...........                             [ 23%]
+Tests/test_deprecate.py ..........                                       [ 23%]
+Tests/test_features.py ...s...................                           [ 24%]
+Tests/test_file_apng.py ...............................................  [ 25%]
+Tests/test_file_avif.py ..ssssssssssssssssssssssssssssssssssssssssssssss [ 26%]
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssss                 [ 27%]
+Tests/test_file_blp.py .............                                     [ 27%]
+Tests/test_file_bmp.py .................................                 [ 28%]
+Tests/test_file_bufrstub.py .....                                        [ 28%]
+Tests/test_file_container.py ........................                    [ 28%]
+Tests/test_file_cur.py .....                                             [ 28%]
+Tests/test_file_dcx.py .........                                         [ 28%]
+Tests/test_file_dds.py ................................................. [ 29%]
+............                                                             [ 30%]
+Tests/test_file_eps.py sssss.................ss.ssssssss.sssssss........ [ 31%]
+.....s....                                                               [ 31%]
+Tests/test_file_fits.py ......                                           [ 31%]
+Tests/test_file_fli.py .................                                 [ 31%]
+Tests/test_file_fpx.py .....                                             [ 31%]
+Tests/test_file_ftex.py .....                                            [ 31%]
+Tests/test_file_gbr.py .......                                           [ 32%]
+Tests/test_file_gd.py .....                                              [ 32%]
+Tests/test_file_gif.py ....................................ss........... [ 33%]
+.............................................................            [ 34%]
+Tests/test_file_gimpgradient.py ..........                               [ 34%]
+Tests/test_file_gimppalette.py ....                                      [ 34%]
+Tests/test_file_gribstub.py .....                                        [ 34%]
+Tests/test_file_hdf5stub.py .....                                        [ 34%]
+Tests/test_file_icns.py .......s..s                                      [ 34%]
+Tests/test_file_ico.py ......................                            [ 35%]
+Tests/test_file_im.py ...............                                    [ 35%]
+Tests/test_file_imt.py ....                                              [ 35%]
+Tests/test_file_iptc.py ............                                     [ 35%]
+Tests/test_file_jpeg.py ................................................ [ 36%]
+...........s.........................................s                   [ 37%]
+Tests/test_file_jpeg2k.py ssssssssssssssssssssssssssssssssssssssssssssss [ 38%]
+ssssssssssssssssssss                                                     [ 39%]
+Tests/test_file_libtiff.py sssssssssssssssssssssssssssssssssssssssssssss [ 40%]
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss            [ 41%]
+Tests/test_file_libtiff_small.py sss                                     [ 41%]
+Tests/test_file_mcidas.py ...                                            [ 41%]
+Tests/test_file_mic.py sssssss                                           [ 41%]
+Tests/test_file_mpeg.py ...                                              [ 41%]
+Tests/test_file_mpo.py .................................                 [ 42%]
+Tests/test_file_msp.py ....ss.                                           [ 42%]
+Tests/test_file_palm.py ....                                             [ 42%]
+Tests/test_file_pcd.py ...                                               [ 42%]
+Tests/test_file_pcx.py ........................                          [ 43%]
+Tests/test_file_pdf.py ....ss...............                             [ 43%]
+Tests/test_file_pixar.py ..                                              [ 43%]
+Tests/test_file_png.py ................................................. [ 44%]
+................                                                         [ 44%]
+Tests/test_file_ppm.py ................................................. [ 45%]
+                                                                         [ 45%]
+Tests/test_file_psd.py .........................                         [ 46%]
+Tests/test_file_qoi.py ....                                              [ 46%]
+Tests/test_file_sgi.py ...............                                   [ 46%]
+Tests/test_file_spider.py ...................                            [ 46%]
+Tests/test_file_sun.py ......ss                                          [ 47%]
+Tests/test_file_tar.py .......                                           [ 47%]
+Tests/test_file_tga.py ..........................................        [ 47%]
+Tests/test_file_tiff.py ................................................ [ 48%]
+....................................s..s                                 [ 49%]
+Tests/test_file_tiff_metadata.py ............................            [ 50%]
+Tests/test_file_wal.py ...                                               [ 50%]
+Tests/test_file_webp.py .sssssssssssssssssssssss                         [ 50%]
+Tests/test_file_webp_animated.py ssssssss                                [ 50%]
+Tests/test_file_webp_metadata.py ssssssss                                [ 51%]
+Tests/test_file_wmf.py ...........                                       [ 51%]
+Tests/test_file_xbm.py ......                                            [ 51%]
+Tests/test_file_xpm.py ........                                          [ 51%]
+Tests/test_file_xvthumb.py ...                                           [ 51%]
+Tests/test_font_bdf.py ....                                              [ 51%]
+Tests/test_font_crash.py s                                               [ 51%]
+Tests/test_font_leaks.py s.                                              [ 51%]
+Tests/test_font_pcf.py ........                                          [ 51%]
+Tests/test_font_pcf_charsets.py .........                                [ 52%]
+Tests/test_fontfile.py .....                                             [ 52%]
+Tests/test_format_hsv.py ....                                            [ 52%]
+Tests/test_format_lab.py ...                                             [ 52%]
+Tests/test_image.py .........................s.........s................ [ 53%]
+.....................................s.................................. [ 54%]
+............................................................             [ 55%]
+Tests/test_image_access.py ..s.......................................... [ 56%]
+......s                                                                  [ 56%]
+Tests/test_image_convert.py .............................                [ 57%]
+Tests/test_image_copy.py .......s                                        [ 57%]
+Tests/test_image_crop.py .............                                   [ 57%]
+Tests/test_image_draft.py ...                                            [ 57%]
+Tests/test_image_entropy.py .                                            [ 57%]
+Tests/test_image_filter.py ............................................. [ 58%]
+........................................................................ [ 60%]
+........................................................................ [ 61%]
+................................................                         [ 62%]
+Tests/test_image_frombytes.py ..                                         [ 62%]
+Tests/test_image_fromqimage.py sssss                                     [ 62%]
+Tests/test_image_getbands.py .                                           [ 62%]
+Tests/test_image_getbbox.py .......                                      [ 62%]
+Tests/test_image_getcolors.py ..                                         [ 62%]
+Tests/test_image_getdata.py ...                                          [ 62%]
+Tests/test_image_getextrema.py ..                                        [ 62%]
+Tests/test_image_getim.py .                                              [ 63%]
+Tests/test_image_getpalette.py ..                                        [ 63%]
+Tests/test_image_getprojection.py .                                      [ 63%]
+Tests/test_image_histogram.py .                                          [ 63%]
+Tests/test_image_load.py .....                                           [ 63%]
+Tests/test_image_mode.py ...........                                     [ 63%]
+Tests/test_image_paste.py .............................................. [ 64%]
+...........                                                              [ 64%]
+Tests/test_image_point.py ....                                           [ 64%]
+Tests/test_image_putalpha.py ...                                         [ 64%]
+Tests/test_image_putdata.py ............                                 [ 64%]
+Tests/test_image_putpalette.py ..........                                [ 65%]
+Tests/test_image_quantize.py .s........s.......                          [ 65%]
+Tests/test_image_reduce.py ............................................. [ 66%]
+........................................................................ [ 67%]
+........................................................................ [ 69%]
+...................s                                                     [ 69%]
+Tests/test_image_resample.py ........................................... [ 70%]
+....xx.....................................                              [ 71%]
+Tests/test_image_resize.py ............................................. [ 72%]
+....................s..........                                          [ 72%]
+Tests/test_image_rotate.py ..........................                    [ 73%]
+Tests/test_image_split.py ...........                                    [ 73%]
+Tests/test_image_thumbnail.py .....s....                                 [ 73%]
+Tests/test_image_tobitmap.py .                                           [ 73%]
+Tests/test_image_tobytes.py .                                            [ 73%]
+Tests/test_image_transform.py .......................................... [ 74%]
+.................................                                        [ 75%]
+Tests/test_image_transpose.py ........................................   [ 75%]
+Tests/test_imagechops.py ..............................                  [ 76%]
+Tests/test_imagecms.py ssssssssssssssssssssssssssssssssssss              [ 77%]
+Tests/test_imagecolor.py ............                                    [ 77%]
+Tests/test_imagedraw.py ................................................ [ 78%]
+........................................................................ [ 79%]
+........................................................................ [ 81%]
+........................................x........ssssssss............... [ 82%]
+...........                                                              [ 82%]
+Tests/test_imagedraw2.py ............................................sss [ 83%]
+s                                                                        [ 83%]
+Tests/test_imageenhance.py ......                                        [ 83%]
+Tests/test_imagefile.py ...s..................................           [ 84%]
+Tests/test_imagefont.py ssssssssssssssssssssssssssssssssssssssssssssssss [ 85%]
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss [ 86%]
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss [ 88%]
+ssssssssssssssssssss                                                     [ 88%]
+Tests/test_imagefontctl.py sssssssssssssssssssssssssssssssssssssssssssss [ 89%]
+ssssssssssssssssssssssssssssssssssss                                     [ 90%]
+Tests/test_imagefontpil.py ............                                  [ 90%]
+Tests/test_imagegrab.py ss.sss.sssssss                                   [ 90%]
+Tests/test_imagemath_lambda_eval.py .........................            [ 91%]
+Tests/test_imagemath_unsafe_eval.py ...........................          [ 91%]
+Tests/test_imagemorph.py ..........................                      [ 92%]
+Tests/test_imageops.py ........................................          [ 92%]
+Tests/test_imageops_usm.py .....                                         [ 93%]
+Tests/test_imagepalette.py ..................                            [ 93%]
+Tests/test_imagepath.py ...................................              [ 94%]
+Tests/test_imageqt.py ssssssss                                           [ 94%]
+Tests/test_imagesequence.py ...s....                                     [ 94%]
+Tests/test_imageshow.py ....sssss.............s                          [ 94%]
+Tests/test_imagestat.py ....                                             [ 94%]
+Tests/test_imagetext.py .......ssssssssssssss.ss...........ss            [ 95%]
+Tests/test_imagetk.py sssssssssssss                                      [ 95%]
+Tests/test_imagewin.py ...ssssss                                         [ 96%]
+Tests/test_lib_image.py .                                                [ 96%]
+Tests/test_lib_pack.py .....................................             [ 96%]
+Tests/test_locale.py s                                                   [ 96%]
+Tests/test_main.py ...                                                   [ 96%]
+Tests/test_map.py ..s                                                    [ 96%]
+Tests/test_mode_i16.py .......                                           [ 97%]
+Tests/test_pdfparser.py .......                                          [ 97%]
+Tests/test_pickle.py ...s............s............s............s........ [ 98%]
+....s............s...........sssssssssssss.                              [ 99%]
+Tests/test_psdraw.py ..                                                  [ 99%]
+Tests/test_qt_image_qapplication.py s                                    [ 99%]
+Tests/test_qt_image_toqimage.py sssss                                    [ 99%]
+Tests/test_sgi_crash.py ...........                                      [ 99%]
+Tests/test_shell_injection.py sss                                        [ 99%]
+Tests/test_tiff_crashes.py ss...........s.s                              [ 99%]
+Tests/test_tiff_ifdrational.py ....s.                                    [ 99%]
+Tests/test_util.py .....                                                 [ 99%]
+Tests/test_webp_leaks.py s                                               [100%]
+
+=========================== short test summary info ============================
+SKIPPED [1] Tests/test_arro3.py:27: Arro3 not installed
+SKIPPED [1] Tests/test_file_webp_alpha.py:16: WebP support not installed
+SKIPPED [1] Tests/test_file_webp_lossless.py:11: WebP support not installed
+SKIPPED [1] Tests/test_image_array.py:12: NumPy not installed
+SKIPPED [1] Tests/test_nanoarrow.py:21: Nanoarrow not installed
+SKIPPED [1] Tests/test_numpy.py:16: NumPy not installed
+SKIPPED [1] Tests/test_pyarrow.py:21: PyArrow not installed
+SKIPPED [38] Tests/oss-fuzz/test_fuzzers.py:52: freetype2 not available
+SKIPPED [1] Tests/test_color_lut.py:374: NumPy not installed
+SKIPPED [1] Tests/test_color_lut.py:410: NumPy not installed
+SKIPPED [1] Tests/test_features.py:60: libimagequant not available
+SKIPPED [1] Tests/test_file_avif.py:96: avif not available
+SKIPPED [1] Tests/test_file_avif.py:101: avif not available
+SKIPPED [1] Tests/test_file_avif.py:114: avif not available
+SKIPPED [1] Tests/test_file_avif.py:132: avif not available
+SKIPPED [1] Tests/test_file_avif.py:140: avif not available
+SKIPPED [1] Tests/test_file_avif.py:166: avif not available
+SKIPPED [1] Tests/test_file_avif.py:173: avif not available
+SKIPPED [1] Tests/test_file_avif.py:180: avif not available
+SKIPPED [1] Tests/test_file_avif.py:186: avif not available
+SKIPPED [1] Tests/test_file_avif.py:209: avif not available
+SKIPPED [4] Tests/test_file_avif.py:214: avif not available
+SKIPPED [1] Tests/test_file_avif.py:219: avif not available
+SKIPPED [1] Tests/test_file_avif.py:226: avif not available
+SKIPPED [1] Tests/test_file_avif.py:246: avif not available
+SKIPPED [1] Tests/test_file_avif.py:254: avif not available
+SKIPPED [1] Tests/test_file_avif.py:260: avif not available
+SKIPPED [1] Tests/test_file_avif.py:270: avif not available
+SKIPPED [1] Tests/test_file_avif.py:282: avif not available
+SKIPPED [1] Tests/test_file_avif.py:293: avif not available
+SKIPPED [1] Tests/test_file_avif.py:298: avif not available
+SKIPPED [1] Tests/test_file_avif.py:305: avif not available
+SKIPPED [1] Tests/test_file_avif.py:312: avif not available
+SKIPPED [16] Tests/test_file_avif.py:322: avif not available
+SKIPPED [1] Tests/test_file_avif.py:344: avif not available
+SKIPPED [1] Tests/test_file_avif.py:355: avif not available
+SKIPPED [8] Tests/test_file_avif.py:361: avif not available
+SKIPPED [1] Tests/test_file_avif.py:386: avif not available
+SKIPPED [1] Tests/test_file_avif.py:391: avif not available
+SKIPPED [1] Tests/test_file_avif.py:413: avif not available
+SKIPPED [1] Tests/test_file_avif.py:417: avif not available
+SKIPPED [4] Tests/test_file_avif.py:424: avif not available
+SKIPPED [1] Tests/test_file_avif.py:430: avif not available
+SKIPPED [1] Tests/test_file_avif.py:438: avif not available
+SKIPPED [2] Tests/test_file_avif.py:444: avif not available
+SKIPPED [1] Tests/test_file_avif.py:450: avif not available
+SKIPPED [1] Tests/test_file_avif.py:456: aom encode not available
+SKIPPED [1] Tests/test_file_avif.py:462: avif not available
+SKIPPED [1] Tests/test_file_avif.py:468: dav1d decode not available
+SKIPPED [3] Tests/test_file_avif.py:475: aom encode not available
+SKIPPED [3] Tests/test_file_avif.py:499: aom encode not available
+SKIPPED [1] Tests/test_file_avif.py:509: aom decode not available
+SKIPPED [1] Tests/test_file_avif.py:516: rav1e encode not available
+SKIPPED [1] Tests/test_file_avif.py:526: avif not available
+SKIPPED [1] Tests/test_file_avif.py:533: aom encode not available
+SKIPPED [1] Tests/test_file_avif.py:537: avif not available
+SKIPPED [1] Tests/test_file_avif.py:541: dav1d decode not available
+SKIPPED [1] Tests/test_file_avif.py:545: avif not available
+SKIPPED [1] Tests/test_file_avif.py:548: avif not available
+SKIPPED [1] Tests/test_file_avif.py:554: aom decode not available
+SKIPPED [1] Tests/test_file_avif.py:558: avif not available
+SKIPPED [1] Tests/test_file_avif.py:562: rav1e encode not available
+SKIPPED [1] Tests/test_file_avif.py:566: avif not available
+SKIPPED [1] Tests/test_file_avif.py:569: avif not available
+SKIPPED [1] Tests/test_file_avif.py:584: avif not available
+SKIPPED [3] Tests/test_file_avif.py:589: aom encode not available
+SKIPPED [1] Tests/test_file_avif.py:595: svt encode not available
+SKIPPED [1] Tests/test_file_avif.py:608: avif not available
+SKIPPED [1] Tests/test_file_avif.py:624: avif not available
+SKIPPED [1] Tests/test_file_avif.py:649: avif not available
+SKIPPED [1] Tests/test_file_avif.py:688: avif not available
+SKIPPED [1] Tests/test_file_avif.py:695: avif not available
+SKIPPED [2] Tests/test_file_avif.py:700: avif not available
+SKIPPED [1] Tests/test_file_avif.py:713: avif not available
+SKIPPED [1] Tests/test_file_avif.py:743: avif not available
+SKIPPED [1] Tests/test_file_avif.py:773: avif not available
+SKIPPED [1] Tests/test_file_avif.py:790: avif not available
+SKIPPED [4] Tests/test_file_eps.py:85: Ghostscript not available
+SKIPPED [1] Tests/test_file_eps.py:99: Ghostscript not available
+SKIPPED [2] Tests/test_file_eps.py:190: Ghostscript not available
+SKIPPED [1] Tests/test_file_eps.py:213: Ghostscript not available
+SKIPPED [1] Tests/test_file_eps.py:232: Ghostscript not available
+SKIPPED [1] Tests/test_file_eps.py:243: Ghostscript not available
+SKIPPED [1] Tests/test_file_eps.py:256: Ghostscript not available
+SKIPPED [1] Tests/test_file_eps.py:264: Ghostscript not available
+SKIPPED [3] Tests/test_file_eps.py:278: Ghostscript not available
+SKIPPED [1] Tests/test_file_eps.py:305: Ghostscript not available
+SKIPPED [1] Tests/test_file_eps.py:327: Ghostscript not available
+SKIPPED [3] Tests/test_file_eps.py:349: Ghostscript not available
+SKIPPED [2] Tests/test_file_eps.py:360: Ghostscript not available
+SKIPPED [1] Tests/test_file_eps.py:406: Ghostscript not available
+SKIPPED [1] Tests/test_file_gif.py:397: Netpbm not available
+SKIPPED [1] Tests/test_file_gif.py:409: Netpbm not available
+SKIPPED [1] Tests/test_file_icns.py:120: jpg_2000 not available
+SKIPPED [1] Tests/test_file_icns.py:157: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg.py:729: djpeg not available
+SKIPPED [1] Tests/test_file_jpeg.py:1115: Windows only
+SKIPPED [1] Tests/test_file_jpeg2k.py:59: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:75: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:81: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:88: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:100: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:108: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:112: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:117: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:122: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:127: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:132: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:137: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:142: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:147: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:152: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:160: jpg_2000 not available
+SKIPPED [4] Tests/test_file_jpeg2k.py:168: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:180: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:194: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:202: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:209: Extra image files not installed
+SKIPPED [1] Tests/test_file_jpeg2k.py:218: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:232: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:242: jpg_2000 not available
+SKIPPED [8] Tests/test_file_jpeg2k.py:261: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:289: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:310: jpg_2000 not available
+SKIPPED [2] Tests/test_file_jpeg2k.py:324: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:335: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:347: Extra image files not installed
+SKIPPED [1] Tests/test_file_jpeg2k.py:357: Extra image files not installed
+SKIPPED [2] Tests/test_file_jpeg2k.py:369: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:376: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:381: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:386: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:392: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:398: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:403: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:409: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:416: jpg_2000 not available
+SKIPPED [4] Tests/test_file_jpeg2k.py:430: Extra image files not installed
+SKIPPED [1] Tests/test_file_jpeg2k.py:450: Extra image files not installed
+SKIPPED [1] Tests/test_file_jpeg2k.py:477: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:489: jpg_2000 not available
+SKIPPED [4] Tests/test_file_jpeg2k.py:507: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:526: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:551: jpg_2000 not available
+SKIPPED [1] Tests/test_file_jpeg2k.py:563: jpg_2000 not available
+SKIPPED [1] Tests/test_file_libtiff.py:58: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:63: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:71: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:76: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:85: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:96: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:119: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:125: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:130: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:149: libtiff not available
+SKIPPED [2] Tests/test_file_libtiff.py:159: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:206: libtiff not available
+SKIPPED [2] Tests/test_file_libtiff.py:263: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:346: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:353: libtiff not available
+SKIPPED [2] Tests/test_file_libtiff.py:362: libtiff not available
+SKIPPED [2] Tests/test_file_libtiff.py:380: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:395: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:407: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:428: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:440: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:449: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:458: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:477: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:494: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:510: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:525: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:537: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:563: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:571: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:579: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:594: libtiff not available
+SKIPPED [2] Tests/test_file_libtiff.py:601: libtiff not available
+SKIPPED [3] Tests/test_file_libtiff.py:615: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:623: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:639: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:661: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:673: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:682: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:690: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:704: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:737: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:760: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:770: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:787: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:798: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:812: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:827: libtiff not available
+SKIPPED [2] Tests/test_file_libtiff.py:837: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:851: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:868: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:880: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:896: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:907: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:921: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:928: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:940: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:956: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:978: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:986: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:991: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:996: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1004: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1012: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1017: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1025: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1033: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1040: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1047: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1053: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1059: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1066: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1073: libtiff not available
+SKIPPED [2] Tests/test_file_libtiff.py:1082: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1099: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1103: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1116: libtiff not available
+SKIPPED [3] Tests/test_file_libtiff.py:1122: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1158: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1165: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1177: libtiff not available
+SKIPPED [2] Tests/test_file_libtiff.py:1185: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1206: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1228: libtiff not available
+SKIPPED [2] Tests/test_file_libtiff.py:1235: libtiff not available
+SKIPPED [2] Tests/test_file_libtiff.py:1246: libtiff not available
+SKIPPED [2] Tests/test_file_libtiff.py:1264: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff.py:1271: libtiff not available
+SKIPPED [3] Tests/test_file_libtiff.py:1277: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff_small.py:20: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff_small.py:29: libtiff not available
+SKIPPED [1] Tests/test_file_libtiff_small.py:40: libtiff not available
+SKIPPED [1] Tests/test_file_mic.py:16: libtiff not available
+SKIPPED [1] Tests/test_file_mic.py:31: libtiff not available
+SKIPPED [1] Tests/test_file_mic.py:37: libtiff not available
+SKIPPED [1] Tests/test_file_mic.py:43: libtiff not available
+SKIPPED [1] Tests/test_file_mic.py:48: libtiff not available
+SKIPPED [1] Tests/test_file_mic.py:58: libtiff not available
+SKIPPED [1] Tests/test_file_mic.py:69: libtiff not available
+SKIPPED [1] Tests/test_file_msp.py:60: Extra image files not installed
+SKIPPED [1] Tests/test_file_msp.py:73: Even More Extra image files not installed
+SKIPPED [2] Tests/test_file_pdf.py:56: jpg_2000 not available
+SKIPPED [1] Tests/test_file_sun.py:75: Extra image files not installed
+SKIPPED [1] Tests/test_file_sun.py:91: Extra image files not installed
+SKIPPED [1] Tests/test_file_tiff.py:1001: Extra image files not installed
+SKIPPED [1] Tests/test_file_tiff.py:1037: Windows only
+SKIPPED [1] Tests/test_file_webp.py:47: webp not available
+SKIPPED [1] Tests/test_file_webp.py:52: webp not available
+SKIPPED [1] Tests/test_file_webp.py:58: webp not available
+SKIPPED [1] Tests/test_file_webp.py:101: webp not available
+SKIPPED [1] Tests/test_file_webp.py:109: webp not available
+SKIPPED [1] Tests/test_file_webp.py:119: webp not available
+SKIPPED [1] Tests/test_file_webp.py:131: webp not available
+SKIPPED [1] Tests/test_file_webp.py:136: webp not available
+SKIPPED [1] Tests/test_file_webp.py:142: webp not available
+SKIPPED [1] Tests/test_file_webp.py:150: webp not available
+SKIPPED [1] Tests/test_file_webp.py:158: webp not available
+SKIPPED [1] Tests/test_file_webp.py:164: webp not available
+SKIPPED [1] Tests/test_file_webp.py:174: webp not available
+SKIPPED [1] Tests/test_file_webp.py:183: webp not available
+SKIPPED [1] Tests/test_file_webp.py:190: webp not available
+SKIPPED [1] Tests/test_file_webp.py:196: webp not available
+SKIPPED [4] Tests/test_file_webp.py:202: webp not available
+SKIPPED [1] Tests/test_file_webp.py:214: webp not available
+SKIPPED [1] Tests/test_file_webp.py:240: webp not available
+SKIPPED [1] Tests/test_file_webp.py:251: webp not available
+SKIPPED [1] Tests/test_file_webp_animated.py:21: webp not available
+SKIPPED [1] Tests/test_file_webp_animated.py:35: webp not available
+SKIPPED [1] Tests/test_file_webp_animated.py:65: webp not available
+SKIPPED [1] Tests/test_file_webp_animated.py:111: webp not available
+SKIPPED [1] Tests/test_file_webp_animated.py:143: webp not available
+SKIPPED [1] Tests/test_file_webp_animated.py:155: webp not available
+SKIPPED [1] Tests/test_file_webp_animated.py:187: webp not available
+SKIPPED [1] Tests/test_file_webp_animated.py:196: webp not available
+SKIPPED [1] Tests/test_file_webp_metadata.py:22: webp not available
+SKIPPED [1] Tests/test_file_webp_metadata.py:42: webp not available
+SKIPPED [1] Tests/test_file_webp_metadata.py:51: webp not available
+SKIPPED [1] Tests/test_file_webp_metadata.py:68: webp not available
+SKIPPED [1] Tests/test_file_webp_metadata.py:82: webp not available
+SKIPPED [1] Tests/test_file_webp_metadata.py:102: webp not available
+SKIPPED [1] Tests/test_file_webp_metadata.py:119: webp not available
+SKIPPED [1] Tests/test_file_webp_metadata.py:147: webp not available
+SKIPPED [1] Tests/test_font_crash.py:19: freetype2 not available
+SKIPPED [1] Tests/test_font_leaks.py:28: freetype2 not available
+SKIPPED [1] Tests/test_image.py:90: IPython is not installed
+SKIPPED [1] Tests/test_image.py:191: jpg_2000 not available
+SKIPPED [1] Tests/test_image.py:850: webp not available
+SKIPPED [1] Tests/test_image_access.py:110: NumPy not installed
+SKIPPED [1] Tests/test_image_access.py:260: requires Windows
+SKIPPED [1] Tests/test_image_copy.py:49: libtiff not available
+SKIPPED [1] Tests/test_image_fromqimage.py:44: Qt bindings are not installed
+SKIPPED [1] Tests/test_image_fromqimage.py:49: Qt bindings are not installed
+SKIPPED [1] Tests/test_image_fromqimage.py:54: Qt bindings are not installed
+SKIPPED [1] Tests/test_image_fromqimage.py:59: Qt bindings are not installed
+SKIPPED [1] Tests/test_image_fromqimage.py:64: Qt bindings are not installed
+SKIPPED [1] Tests/test_image_quantize.py:28: libimagequant not available
+SKIPPED [1] Tests/test_image_quantize.py:121: libimagequant not available
+SKIPPED [1] Tests/test_image_reduce.py:286: jpg_2000 not available
+SKIPPED [1] Tests/test_image_resize.py:314: libtiff not available
+SKIPPED [1] Tests/test_image_thumbnail.py:94: libtiff not available
+SKIPPED [1] Tests/test_imagecms.py:57: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:104: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:114: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:123: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:133: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:141: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:146: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:154: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:161: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:170: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:183: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:194: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:225: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:234: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:239: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:249: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [2] Tests/test_imagecms.py:257: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:266: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:290: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:306: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:324: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:341: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:353: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:505: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:518: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:539: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:607: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:613: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:619: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:625: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:631: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [3] Tests/test_imagecms.py:684: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagecms.py:697: cannot import name '_imagingcms' from 'PIL' (/mnt/afs/xumengying/tool-verify/Pillow-verify/src/Pillow/src/PIL/__init__.py)
+SKIPPED [1] Tests/test_imagedraw.py:1384: freetype2 not available
+SKIPPED [1] Tests/test_imagedraw.py:1398: freetype2 not available
+SKIPPED [1] Tests/test_imagedraw.py:1415: freetype2 not available
+SKIPPED [1] Tests/test_imagedraw.py:1429: freetype2 not available
+SKIPPED [1] Tests/test_imagedraw.py:1443: freetype2 not available
+SKIPPED [1] Tests/test_imagedraw.py:1465: freetype2 not available
+SKIPPED [1] Tests/test_imagedraw.py:1486: freetype2 not available
+SKIPPED [1] Tests/test_imagedraw.py:1502: freetype2 not available
+SKIPPED [1] Tests/test_imagedraw2.py:218: freetype2 not available
+SKIPPED [1] Tests/test_imagedraw2.py:233: freetype2 not available
+SKIPPED [1] Tests/test_imagedraw2.py:248: freetype2 not available
+SKIPPED [1] Tests/test_imagedraw2.py:264: freetype2 not available
+SKIPPED [1] Tests/test_imagefile.py:106: webp not available
+SKIPPED [1] Tests/test_imagefont.py:37: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:59: freetype2 not available
+SKIPPED [2] Tests/test_imagefont.py:89: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:94: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:112: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:117: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:126: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:136: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:150: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:163: freetype2 not available
+SKIPPED [6] Tests/test_imagefont.py:175: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:213: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:223: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:239: freetype2 not available
+SKIPPED [4] Tests/test_imagefont.py:256: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:270: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:287: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:296: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:303: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:321: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:331: freetype2 not available
+SKIPPED [2] Tests/test_imagefont.py:339: freetype2 not available
+SKIPPED [4] Tests/test_imagefont.py:376: freetype2 not available
+SKIPPED [2] Tests/test_imagefont.py:419: freetype2 not available
+SKIPPED [4] Tests/test_imagefont.py:436: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:459: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:463: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:471: freetype2 not available
+SKIPPED [3] Tests/test_imagefont.py:561: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:566: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:571: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:581: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:658: freetype2 not available
+SKIPPED [2] Tests/test_imagefont.py:678: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:698: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:775: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:794: freetype2 not available
+SKIPPED [8] Tests/test_imagefont.py:807: freetype2 not available
+SKIPPED [11] Tests/test_imagefont.py:851: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:890: freetype2 not available
+SKIPPED [4] Tests/test_imagefont.py:915: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:933: freetype2 not available
+SKIPPED [2] Tests/test_imagefont.py:950: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:963: freetype2 not available
+SKIPPED [3] Tests/test_imagefont.py:975: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:998: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:1015: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:1032: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:1049: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:1066: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:1085: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:1101: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:1135: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:1156: freetype2 not available
+SKIPPED [2] Tests/test_imagefont.py:1203: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:59: raqm not available
+SKIPPED [2] Tests/test_imagefont.py:89: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:94: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:112: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:117: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:126: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:136: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:150: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:163: raqm not available
+SKIPPED [6] Tests/test_imagefont.py:175: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:213: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:223: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:239: raqm not available
+SKIPPED [4] Tests/test_imagefont.py:256: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:270: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:287: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:296: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:303: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:321: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:331: raqm not available
+SKIPPED [2] Tests/test_imagefont.py:339: raqm not available
+SKIPPED [4] Tests/test_imagefont.py:376: raqm not available
+SKIPPED [2] Tests/test_imagefont.py:419: raqm not available
+SKIPPED [4] Tests/test_imagefont.py:436: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:459: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:463: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:471: raqm not available
+SKIPPED [3] Tests/test_imagefont.py:561: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:566: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:571: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:581: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:658: raqm not available
+SKIPPED [2] Tests/test_imagefont.py:678: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:698: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:775: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:794: raqm not available
+SKIPPED [8] Tests/test_imagefont.py:807: raqm not available
+SKIPPED [11] Tests/test_imagefont.py:851: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:890: raqm not available
+SKIPPED [4] Tests/test_imagefont.py:915: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:933: raqm not available
+SKIPPED [2] Tests/test_imagefont.py:950: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:963: raqm not available
+SKIPPED [3] Tests/test_imagefont.py:975: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:998: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:1015: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:1032: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:1049: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:1066: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:1085: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:1101: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:1135: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:1156: raqm not available
+SKIPPED [2] Tests/test_imagefont.py:1203: raqm not available
+SKIPPED [1] Tests/test_imagefont.py:482: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:496: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:501: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:513: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:528: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:538: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:544: freetype2 not available
+SKIPPED [2] Tests/test_imagefont.py:599: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:688: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:745: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:1120: freetype2 not available
+SKIPPED [2] Tests/test_imagefont.py:1176: freetype2 not available
+SKIPPED [1] Tests/test_imagefont.py:1190: freetype2 not available
+SKIPPED [1] Tests/test_imagefontctl.py:20: raqm not available
+SKIPPED [1] Tests/test_imagefontctl.py:28: raqm not available
+SKIPPED [1] Tests/test_imagefontctl.py:39: raqm not available
+SKIPPED [1] Tests/test_imagefontctl.py:50: raqm not available
+SKIPPED [1] Tests/test_imagefontctl.py:70: raqm not available
+SKIPPED [1] Tests/test_imagefontctl.py:81: raqm not available
+SKIPPED [1] Tests/test_imagefontctl.py:92: raqm not available
+SKIPPED [1] Tests/test_imagefontctl.py:103: raqm not available
+SKIPPED [1] Tests/test_imagefontctl.py:116: raqm not available
+SKIPPED [1] Tests/test_imagefontctl.py:137: raqm not available
+SKIPPED [1] Tests/test_imagefontctl.py:150: raqm not available
+SKIPPED [1] Tests/test_imagefontctl.py:161: raqm not available
+SKIPPED [1] Tests/test_imagefontctl.py:178: raqm not available
+SKIPPED [1] Tests/test_imagefontctl.py:189: raqm not available
+SKIPPED [10] Tests/test_imagefontctl.py:200: raqm not available
+SKIPPED [16] Tests/test_imagefontctl.py:224: raqm not available
+SKIPPED [4] Tests/test_imagefontctl.py:245: raqm not available
+SKIPPED [26] Tests/test_imagefontctl.py:297: raqm not available
+SKIPPED [9] Tests/test_imagefontctl.py:319: raqm not available
+SKIPPED [1] Tests/test_imagefontctl.py:351: raqm not available
+SKIPPED [1] Tests/test_imagefontctl.py:367: raqm not available
+SKIPPED [1] Tests/test_imagegrab.py:16: requires Windows or macOS
+SKIPPED [1] Tests/test_imagegrab.py:38: xcb not available
+SKIPPED [1] Tests/test_imagegrab.py:64: xcb not available
+SKIPPED [1] Tests/test_imagegrab.py:70: Only runs on macOS CI
+SKIPPED [1] Tests/test_imagegrab.py:94: macOS and Windows only
+SKIPPED [1] Tests/test_imagegrab.py:134: Windows only
+SKIPPED [1] Tests/test_imagegrab.py:146: Windows only
+SKIPPED [3] Tests/test_imagegrab.py:162: Linux with wl-clipboard only
+SKIPPED [2] Tests/test_imagegrab.py:178: Linux with wl-clipboard only
+SKIPPED [1] Tests/test_imageqt.py:19: Qt bindings are not installed
+SKIPPED [6] Tests/test_imageqt.py:44: Qt bindings are not installed
+SKIPPED [1] Tests/test_imageqt.py:53: Qt bindings are not installed
+SKIPPED [1] Tests/test_imagesequence.py:52: libtiff not available
+SKIPPED [5] Tests/test_imageshow.py:52: Only run on CIs; hangs on Windows CIs
+SKIPPED [1] Tests/test_imageshow.py:118: IPython not installed
+SKIPPED [1] Tests/test_imagetext.py:41: freetype2 not available
+SKIPPED [5] Tests/test_imagetext.py:54: freetype2 not available
+SKIPPED [1] Tests/test_imagetext.py:141: freetype2 not available
+SKIPPED [1] Tests/test_imagetext.py:41: raqm not available
+SKIPPED [5] Tests/test_imagetext.py:54: raqm not available
+SKIPPED [1] Tests/test_imagetext.py:141: raqm not available
+SKIPPED [1] Tests/test_imagetext.py:74: raqm not available
+SKIPPED [1] Tests/test_imagetext.py:94: freetype2 not available
+SKIPPED [1] Tests/test_imagetext.py:185: freetype2 not available
+SKIPPED [1] Tests/test_imagetext.py:207: freetype2 not available
+SKIPPED [1] Tests/test_imagetk.py:37: TCL Error: no display name and no $DISPLAY environment variable
+SKIPPED [5] Tests/test_imagetk.py:61: TCL Error: no display name and no $DISPLAY environment variable
+SKIPPED [1] Tests/test_imagetk.py:81: TCL Error: no display name and no $DISPLAY environment variable
+SKIPPED [5] Tests/test_imagetk.py:88: TCL Error: no display name and no $DISPLAY environment variable
+SKIPPED [1] Tests/test_imagetk.py:101: TCL Error: no display name and no $DISPLAY environment variable
+SKIPPED [1] Tests/test_imagewin.py:39: Windows only
+SKIPPED [1] Tests/test_imagewin.py:49: Windows only
+SKIPPED [1] Tests/test_imagewin.py:63: Windows only
+SKIPPED [1] Tests/test_imagewin.py:75: Windows only
+SKIPPED [1] Tests/test_imagewin.py:89: Windows only
+SKIPPED [1] Tests/test_imagewin.py:104: Windows only
+SKIPPED [1] Tests/test_locale.py:33: Polish locale not available
+SKIPPED [1] Tests/test_map.py:37: NumPy not installed
+SKIPPED [6] Tests/test_pickle.py:46: webp not available
+SKIPPED [1] Tests/test_pickle.py:105: webp not available
+SKIPPED [6] Tests/test_pickle.py:134: freetype2 not available
+SKIPPED [6] Tests/test_pickle.py:148: freetype2 not available
+SKIPPED [1] Tests/test_qt_image_qapplication.py:55: Qt bindings are not installed
+SKIPPED [5] Tests/test_qt_image_toqimage.py:21: Qt bindings are not installed
+SKIPPED [1] Tests/test_shell_injection.py:39: djpeg not available
+SKIPPED [1] Tests/test_shell_injection.py:49: Netpbm not available
+SKIPPED [1] Tests/test_shell_injection.py:57: Netpbm not available
+SKIPPED [3] Tests/test_tiff_crashes.py:52: test image not found
+SKIPPED [1] Tests/test_tiff_crashes.py:68: test image not found
+SKIPPED [1] Tests/test_tiff_ifdrational.py:74: libtiff not available
+SKIPPED [1] Tests/test_webp_leaks.py:17: webp not available
+XFAIL Tests/test_image_resample.py::TestCoreResampleAlphaCorrect::test_levels_rgba - Current implementation isn't precise enough
+XFAIL Tests/test_image_resample.py::TestCoreResampleAlphaCorrect::test_levels_la - Current implementation isn't precise enough
+XFAIL Tests/test_imagedraw.py::test_line_h_s1_w2 - failing test
+================ 4284 passed, 868 skipped, 3 xfailed in 35.58s =================
