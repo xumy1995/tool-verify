@@ -1,0 +1,284 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=255)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+OpenCL is disabled
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 75 tests from 34 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from Photo_SeamlessClone_normal
+[ RUN      ] Photo_SeamlessClone_normal.regression
+[       OK ] Photo_SeamlessClone_normal.regression (88 ms)
+[----------] 1 test from Photo_SeamlessClone_normal (88 ms total)
+
+[----------] 1 test from Photo_SeamlessClone_mixed
+[ RUN      ] Photo_SeamlessClone_mixed.regression
+[       OK ] Photo_SeamlessClone_mixed.regression (33 ms)
+[----------] 1 test from Photo_SeamlessClone_mixed (33 ms total)
+
+[----------] 1 test from Photo_SeamlessClone_featureExchange
+[ RUN      ] Photo_SeamlessClone_featureExchange.regression
+[       OK ] Photo_SeamlessClone_featureExchange.regression (28 ms)
+[----------] 1 test from Photo_SeamlessClone_featureExchange (28 ms total)
+
+[----------] 1 test from Photo_SeamlessClone_colorChange
+[ RUN      ] Photo_SeamlessClone_colorChange.regression
+[       OK ] Photo_SeamlessClone_colorChange.regression (253 ms)
+[----------] 1 test from Photo_SeamlessClone_colorChange (253 ms total)
+
+[----------] 1 test from Photo_SeamlessClone_illuminationChange
+[ RUN      ] Photo_SeamlessClone_illuminationChange.regression
+[       OK ] Photo_SeamlessClone_illuminationChange.regression (58 ms)
+[----------] 1 test from Photo_SeamlessClone_illuminationChange (58 ms total)
+
+[----------] 1 test from Photo_SeamlessClone_textureFlattening
+[ RUN      ] Photo_SeamlessClone_textureFlattening.regression
+[       OK ] Photo_SeamlessClone_textureFlattening.regression (39 ms)
+[----------] 1 test from Photo_SeamlessClone_textureFlattening (39 ms total)
+
+[----------] 1 test from Photo_Decolor
+[ RUN      ] Photo_Decolor.regression
+[       OK ] Photo_Decolor.regression (497 ms)
+[----------] 1 test from Photo_Decolor (497 ms total)
+
+[----------] 1 test from Optim_denoise_tvl1
+[ RUN      ] Optim_denoise_tvl1.regression_basic
+test: image(248,334)=193 vs 194 - ok
+test: image(489,333)=171 vs 171 - ok
+test: image(425,507)=100 vs 103 - ok
+test: image(489,486)=107 vs 109 - ok
+test: image(223,208)=72 vs 72 - ok
+test: image(418,3)=58 vs 58 - ok
+test: image(63,76)=91 vs 93 - ok
+test: image(29,134)=126 vs 127 - ok
+test: image(219,291)=177 vs 180 - ok
+test: image(384,124)=80 vs 80 - ok
+[       OK ] Optim_denoise_tvl1.regression_basic (467 ms)
+[----------] 1 test from Optim_denoise_tvl1 (467 ms total)
+
+[----------] 1 test from Photo_DenoisingGrayscale
+[ RUN      ] Photo_DenoisingGrayscale.regression
+[       OK ] Photo_DenoisingGrayscale.regression (170 ms)
+[----------] 1 test from Photo_DenoisingGrayscale (170 ms total)
+
+[----------] 1 test from Photo_DenoisingColored
+[ RUN      ] Photo_DenoisingColored.regression
+[       OK ] Photo_DenoisingColored.regression (382 ms)
+[----------] 1 test from Photo_DenoisingColored (382 ms total)
+
+[----------] 1 test from Photo_DenoisingGrayscaleMulti
+[ RUN      ] Photo_DenoisingGrayscaleMulti.regression
+[       OK ] Photo_DenoisingGrayscaleMulti.regression (343 ms)
+[----------] 1 test from Photo_DenoisingGrayscaleMulti (343 ms total)
+
+[----------] 1 test from Photo_DenoisingColoredMulti
+[ RUN      ] Photo_DenoisingColoredMulti.regression
+[       OK ] Photo_DenoisingColoredMulti.regression (820 ms)
+[----------] 1 test from Photo_DenoisingColoredMulti (820 ms total)
+
+[----------] 1 test from Photo_White
+[ RUN      ] Photo_White.issue_2646
+[       OK ] Photo_White.issue_2646 (5 ms)
+[----------] 1 test from Photo_White (5 ms total)
+
+[----------] 1 test from Photo_Denoising
+[ RUN      ] Photo_Denoising.speed
+execution time: 230.587ms
+[       OK ] Photo_Denoising.speed (360 ms)
+[----------] 1 test from Photo_Denoising (360 ms total)
+
+[----------] 1 test from Photo_DenoisingGrayscaleMulti16bitL1
+[ RUN      ] Photo_DenoisingGrayscaleMulti16bitL1.regression
+[       OK ] Photo_DenoisingGrayscaleMulti16bitL1.regression (692 ms)
+[----------] 1 test from Photo_DenoisingGrayscaleMulti16bitL1 (692 ms total)
+
+[----------] 1 test from Photo_Tonemap
+[ RUN      ] Photo_Tonemap.regression
+[       OK ] Photo_Tonemap.regression (190 ms)
+[----------] 1 test from Photo_Tonemap (190 ms total)
+
+[----------] 1 test from Photo_AlignMTB
+[ RUN      ] Photo_AlignMTB.regression
+[       OK ] Photo_AlignMTB.regression (371 ms)
+[----------] 1 test from Photo_AlignMTB (371 ms total)
+
+[----------] 1 test from Photo_MergeMertens
+[ RUN      ] Photo_MergeMertens.regression
+[       OK ] Photo_MergeMertens.regression (239 ms)
+[----------] 1 test from Photo_MergeMertens (239 ms total)
+
+[----------] 2 tests from Photo_MergeDebevec
+[ RUN      ] Photo_MergeDebevec.regression
+[ WARN:0@5.351] global matrix_expressions.cpp:1333 assign OpenCV/MatExpr: processing of multi-channel arrays might be changed in the future: https://github.com/opencv/opencv/issues/16739
+[       OK ] Photo_MergeDebevec.regression (264 ms)
+[ RUN      ] Photo_MergeDebevec.regression_depth_consistency
+[       OK ] Photo_MergeDebevec.regression_depth_consistency (527 ms)
+[----------] 2 tests from Photo_MergeDebevec (791 ms total)
+
+[----------] 2 tests from Photo_MergeRobertson
+[ RUN      ] Photo_MergeRobertson.regression
+[       OK ] Photo_MergeRobertson.regression (269 ms)
+[ RUN      ] Photo_MergeRobertson.regression_depth_consistency
+[       OK ] Photo_MergeRobertson.regression_depth_consistency (504 ms)
+[----------] 2 tests from Photo_MergeRobertson (773 ms total)
+
+[----------] 2 tests from Photo_CalibrateDebevec
+[ RUN      ] Photo_CalibrateDebevec.regression
+[       OK ] Photo_CalibrateDebevec.regression (4685 ms)
+[ RUN      ] Photo_CalibrateDebevec.bug_24966
+max_diff = 1.11823
+max_diff = 0.937849
+[       OK ] Photo_CalibrateDebevec.bug_24966 (61590 ms)
+[----------] 2 tests from Photo_CalibrateDebevec (66275 ms total)
+
+[----------] 2 tests from Photo_CalibrateRobertson
+[ RUN      ] Photo_CalibrateRobertson.regression
+[       OK ] Photo_CalibrateRobertson.regression (3763 ms)
+[ RUN      ] Photo_CalibrateRobertson.bug_18180
+[       OK ] Photo_CalibrateRobertson.bug_18180 (390 ms)
+[----------] 2 tests from Photo_CalibrateRobertson (4153 ms total)
+
+[----------] 1 test from Photo_Inpaint
+[ RUN      ] Photo_Inpaint.regression
+[       OK ] Photo_Inpaint.regression (211 ms)
+[----------] 1 test from Photo_Inpaint (211 ms total)
+
+[----------] 1 test from Photo_InpaintBorders
+[ RUN      ] Photo_InpaintBorders.regression
+[       OK ] Photo_InpaintBorders.regression (0 ms)
+[----------] 1 test from Photo_InpaintBorders (0 ms total)
+
+[----------] 1 test from Photo_NPR_EdgePreserveSmoothing_RecursiveFilter
+[ RUN      ] Photo_NPR_EdgePreserveSmoothing_RecursiveFilter.regression
+[       OK ] Photo_NPR_EdgePreserveSmoothing_RecursiveFilter.regression (128 ms)
+[----------] 1 test from Photo_NPR_EdgePreserveSmoothing_RecursiveFilter (128 ms total)
+
+[----------] 1 test from Photo_NPR_EdgePreserveSmoothing_NormConvFilter
+[ RUN      ] Photo_NPR_EdgePreserveSmoothing_NormConvFilter.regression
+[       OK ] Photo_NPR_EdgePreserveSmoothing_NormConvFilter.regression (411 ms)
+[----------] 1 test from Photo_NPR_EdgePreserveSmoothing_NormConvFilter (411 ms total)
+
+[----------] 1 test from Photo_NPR_DetailEnhance
+[ RUN      ] Photo_NPR_DetailEnhance.regression
+[       OK ] Photo_NPR_DetailEnhance.regression (116 ms)
+[----------] 1 test from Photo_NPR_DetailEnhance (116 ms total)
+
+[----------] 1 test from Photo_NPR_PencilSketch
+[ RUN      ] Photo_NPR_PencilSketch.regression
+[       OK ] Photo_NPR_PencilSketch.regression (144 ms)
+[----------] 1 test from Photo_NPR_PencilSketch (144 ms total)
+
+[----------] 1 test from Photo_NPR_Stylization
+[ RUN      ] Photo_NPR_Stylization.regression
+[       OK ] Photo_NPR_Stylization.regression (412 ms)
+[----------] 1 test from Photo_NPR_Stylization (412 ms total)
+
+[----------] 16 tests from OCL_Photo/FastNlMeansDenoising
+[ RUN      ] OCL_Photo/FastNlMeansDenoising.Mat/0, where GetParam() = (Channels(1), 4, false, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising.Mat/0 (316 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising.Mat/1, where GetParam() = (Channels(1), 4, true, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising.Mat/1 (317 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising.Mat/2, where GetParam() = (Channels(1), 2, false, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising.Mat/2 (299 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising.Mat/3, where GetParam() = (Channels(1), 2, true, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising.Mat/3 (299 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising.Mat/4, where GetParam() = (Channels(2), 4, false, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising.Mat/4 (448 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising.Mat/5, where GetParam() = (Channels(2), 4, true, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising.Mat/5 (451 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising.Mat/6, where GetParam() = (Channels(2), 2, false, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising.Mat/6 (424 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising.Mat/7, where GetParam() = (Channels(2), 2, true, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising.Mat/7 (422 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising.Mat/8, where GetParam() = (Channels(3), 4, false, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising.Mat/8 (703 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising.Mat/9, where GetParam() = (Channels(3), 4, true, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising.Mat/9 (700 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising.Mat/10, where GetParam() = (Channels(3), 2, false, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising.Mat/10 (740 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising.Mat/11, where GetParam() = (Channels(3), 2, true, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising.Mat/11 (739 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising.Mat/12, where GetParam() = (Channels(4), 4, false, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising.Mat/12 (778 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising.Mat/13, where GetParam() = (Channels(4), 4, true, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising.Mat/13 (778 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising.Mat/14, where GetParam() = (Channels(4), 2, false, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising.Mat/14 (695 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising.Mat/15, where GetParam() = (Channels(4), 2, true, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising.Mat/15 (695 ms)
+[----------] 16 tests from OCL_Photo/FastNlMeansDenoising (8805 ms total)
+
+[----------] 16 tests from OCL_Photo/FastNlMeansDenoising_hsep
+[ RUN      ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/0, where GetParam() = (Channels(1), 4, false, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/0 (316 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/1, where GetParam() = (Channels(1), 4, true, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/1 (316 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/2, where GetParam() = (Channels(1), 2, false, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/2 (299 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/3, where GetParam() = (Channels(1), 2, true, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/3 (299 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/4, where GetParam() = (Channels(2), 4, false, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/4 (464 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/5, where GetParam() = (Channels(2), 4, true, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/5 (461 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/6, where GetParam() = (Channels(2), 2, false, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/6 (409 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/7, where GetParam() = (Channels(2), 2, true, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/7 (412 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/8, where GetParam() = (Channels(3), 4, false, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/8 (824 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/9, where GetParam() = (Channels(3), 4, true, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/9 (829 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/10, where GetParam() = (Channels(3), 2, false, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/10 (805 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/11, where GetParam() = (Channels(3), 2, true, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/11 (807 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/12, where GetParam() = (Channels(4), 4, false, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/12 (919 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/13, where GetParam() = (Channels(4), 4, true, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/13 (918 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/14, where GetParam() = (Channels(4), 2, false, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/14 (693 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/15, where GetParam() = (Channels(4), 2, true, true)
+[       OK ] OCL_Photo/FastNlMeansDenoising_hsep.Mat/15 (693 ms)
+[----------] 16 tests from OCL_Photo/FastNlMeansDenoising_hsep (9464 ms total)
+
+[----------] 4 tests from OCL_Photo/FastNlMeansDenoisingColored
+[ RUN      ] OCL_Photo/FastNlMeansDenoisingColored.Mat/0, where GetParam() = (Channels(3), 4, false, false)
+[       OK ] OCL_Photo/FastNlMeansDenoisingColored.Mat/0 (11 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoisingColored.Mat/1, where GetParam() = (Channels(3), 4, true, false)
+[       OK ] OCL_Photo/FastNlMeansDenoisingColored.Mat/1 (11 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoisingColored.Mat/2, where GetParam() = (Channels(4), 4, false, false)
+[       OK ] OCL_Photo/FastNlMeansDenoisingColored.Mat/2 (11 ms)
+[ RUN      ] OCL_Photo/FastNlMeansDenoisingColored.Mat/3, where GetParam() = (Channels(4), 4, true, false)
+[       OK ] OCL_Photo/FastNlMeansDenoisingColored.Mat/3 (11 ms)
+[----------] 4 tests from OCL_Photo/FastNlMeansDenoisingColored (44 ms total)
+
+[----------] 4 tests from Photo_Inpaint/formats
+[ RUN      ] Photo_Inpaint/formats.basic/0, where GetParam() = (32FC1)
+[       OK ] Photo_Inpaint/formats.basic/0 (3 ms)
+[ RUN      ] Photo_Inpaint/formats.basic/1, where GetParam() = (16UC1)
+[       OK ] Photo_Inpaint/formats.basic/1 (3 ms)
+[ RUN      ] Photo_Inpaint/formats.basic/2, where GetParam() = (8UC1)
+[       OK ] Photo_Inpaint/formats.basic/2 (3 ms)
+[ RUN      ] Photo_Inpaint/formats.basic/3, where GetParam() = (8UC3)
+[       OK ] Photo_Inpaint/formats.basic/3 (7 ms)
+[----------] 4 tests from Photo_Inpaint/formats (16 ms total)
+
+[----------] 2 tests from Photo_InpaintSmallBorders
+[ RUN      ] Photo_InpaintSmallBorders.regression/0, where GetParam() = (8UC1)
+[       OK ] Photo_InpaintSmallBorders.regression/0 (0 ms)
+[ RUN      ] Photo_InpaintSmallBorders.regression/1, where GetParam() = (8UC3)
+[       OK ] Photo_InpaintSmallBorders.regression/1 (0 ms)
+[----------] 2 tests from Photo_InpaintSmallBorders (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 75 tests from 34 test cases ran. (96780 ms total)
+[  PASSED  ] 75 tests.

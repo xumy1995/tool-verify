@@ -1,0 +1,1804 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=255)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+OpenCL is disabled
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 729 tests from 46 test cases.
+[----------] Global test environment set-up.
+[----------] 10 tests from Imgcodecs_Gif
+[ RUN      ] Imgcodecs_Gif.imwriteanimation_rgba
+[       OK ] Imgcodecs_Gif.imwriteanimation_rgba (18 ms)
+[ RUN      ] Imgcodecs_Gif.read_gif_multi
+libpng warning: hIST: out of place
+[       OK ] Imgcodecs_Gif.read_gif_multi (46 ms)
+[ RUN      ] Imgcodecs_Gif.read_gif_big
+[       OK ] Imgcodecs_Gif.read_gif_big (120 ms)
+[ RUN      ] Imgcodecs_Gif.read_gif_multi_bgra
+[       OK ] Imgcodecs_Gif.read_gif_multi_bgra (14 ms)
+[ RUN      ] Imgcodecs_Gif.read_gif_special
+[       OK ] Imgcodecs_Gif.read_gif_special (7 ms)
+[ RUN      ] Imgcodecs_Gif.write_gif_flags
+[       OK ] Imgcodecs_Gif.write_gif_flags (55 ms)
+[ RUN      ] Imgcodecs_Gif.write_gif_big
+[       OK ] Imgcodecs_Gif.write_gif_big (150 ms)
+[ RUN      ] Imgcodecs_Gif.write_gif_multi
+libpng warning: hIST: out of place
+[       OK ] Imgcodecs_Gif.write_gif_multi (35 ms)
+[ RUN      ] Imgcodecs_Gif.encode_IMREAD_GRAYSCALE
+[       OK ] Imgcodecs_Gif.encode_IMREAD_GRAYSCALE (4 ms)
+[ RUN      ] Imgcodecs_Gif.decode_disposal_method
+[       OK ] Imgcodecs_Gif.decode_disposal_method (2 ms)
+[----------] 10 tests from Imgcodecs_Gif (451 ms total)
+
+[----------] 10 tests from Imgcodecs_WebP
+[ RUN      ] Imgcodecs_WebP.imwriteanimation_rgba
+[       OK ] Imgcodecs_WebP.imwriteanimation_rgba (11 ms)
+[ RUN      ] Imgcodecs_WebP.imwriteanimation_rgb
+[       OK ] Imgcodecs_WebP.imwriteanimation_rgb (7 ms)
+[ RUN      ] Imgcodecs_WebP.imwritemulti_rgba
+[       OK ] Imgcodecs_WebP.imwritemulti_rgba (6 ms)
+[ RUN      ] Imgcodecs_WebP.imwritemulti_rgb
+[       OK ] Imgcodecs_WebP.imwritemulti_rgb (4 ms)
+[ RUN      ] Imgcodecs_WebP.imencode_rgba
+[       OK ] Imgcodecs_WebP.imencode_rgba (2 ms)
+[ RUN      ] Imgcodecs_WebP.Read_Write_With_Exif_Xmp_Iccp
+[       OK ] Imgcodecs_WebP.Read_Write_With_Exif_Xmp_Iccp (64 ms)
+[ RUN      ] Imgcodecs_WebP.encode_decode_lossless_webp
+[       OK ] Imgcodecs_WebP.encode_decode_lossless_webp (228 ms)
+[ RUN      ] Imgcodecs_WebP.encode_decode_lossy_webp
+[       OK ] Imgcodecs_WebP.encode_decode_lossy_webp (213 ms)
+[ RUN      ] Imgcodecs_WebP.encode_decode_with_alpha_webp
+[       OK ] Imgcodecs_WebP.encode_decode_with_alpha_webp (216 ms)
+[ RUN      ] Imgcodecs_WebP.encode_decode_LOSSLESS_MODE
+[       OK ] Imgcodecs_WebP.encode_decode_LOSSLESS_MODE (1 ms)
+[----------] 10 tests from Imgcodecs_WebP (752 ms total)
+
+[----------] 14 tests from Imgcodecs_APNG
+[ RUN      ] Imgcodecs_APNG.imwriteanimation_rgba
+[       OK ] Imgcodecs_APNG.imwriteanimation_rgba (16 ms)
+[ RUN      ] Imgcodecs_APNG.imwriteanimation_rgba16u
+[       OK ] Imgcodecs_APNG.imwriteanimation_rgba16u (13 ms)
+[ RUN      ] Imgcodecs_APNG.imwriteanimation_rgb
+[       OK ] Imgcodecs_APNG.imwriteanimation_rgb (5 ms)
+[ RUN      ] Imgcodecs_APNG.imwriteanimation_gray
+[       OK ] Imgcodecs_APNG.imwriteanimation_gray (4 ms)
+[ RUN      ] Imgcodecs_APNG.imwritemulti_rgba
+[       OK ] Imgcodecs_APNG.imwritemulti_rgba (6 ms)
+[ RUN      ] Imgcodecs_APNG.imwritemulti_rgb
+[       OK ] Imgcodecs_APNG.imwritemulti_rgb (5 ms)
+[ RUN      ] Imgcodecs_APNG.imwritemulti_gray
+[       OK ] Imgcodecs_APNG.imwritemulti_gray (4 ms)
+[ RUN      ] Imgcodecs_APNG.imwriteanimation_bgcolor
+[       OK ] Imgcodecs_APNG.imwriteanimation_bgcolor (5 ms)
+[ RUN      ] Imgcodecs_APNG.imencode_rgba
+[       OK ] Imgcodecs_APNG.imencode_rgba (2 ms)
+[ RUN      ] Imgcodecs_APNG.imdecode_animation
+[       OK ] Imgcodecs_APNG.imdecode_animation (2 ms)
+[ RUN      ] Imgcodecs_APNG.imencode_animation
+[       OK ] Imgcodecs_APNG.imencode_animation (2 ms)
+[ RUN      ] Imgcodecs_APNG.animation_has_hidden_frame
+[       OK ] Imgcodecs_APNG.animation_has_hidden_frame (8 ms)
+[ RUN      ] Imgcodecs_APNG.animation_imread_preview
+[       OK ] Imgcodecs_APNG.animation_imread_preview (3 ms)
+[ RUN      ] Imgcodecs_APNG.imread_animation_16u
+[       OK ] Imgcodecs_APNG.imread_animation_16u (8 ms)
+[----------] 14 tests from Imgcodecs_APNG (83 ms total)
+
+[----------] 2 tests from Imgcodecs_BMP
+[ RUN      ] Imgcodecs_BMP.encode_decode_over1GB_regression27789
+[       OK ] Imgcodecs_BMP.encode_decode_over1GB_regression27789 (1407 ms)
+[ RUN      ] Imgcodecs_BMP.write_read_over1GB_regression27789
+[     SKIP ] Test with tag 'verylong' is skipped ('verylong' is in skip list)
+[       OK ] Imgcodecs_BMP.write_read_over1GB_regression27789 (1 ms)
+[----------] 2 tests from Imgcodecs_BMP (1408 ms total)
+
+[----------] 8 tests from Imgcodecs_Jpeg
+[ RUN      ] Imgcodecs_Jpeg.Read_Write_With_Exif
+[       OK ] Imgcodecs_Jpeg.Read_Write_With_Exif (45 ms)
+[ RUN      ] Imgcodecs_Jpeg.encode_empty
+[       OK ] Imgcodecs_Jpeg.encode_empty (4 ms)
+[ RUN      ] Imgcodecs_Jpeg.encode_decode_progressive_jpeg
+[       OK ] Imgcodecs_Jpeg.encode_decode_progressive_jpeg (47 ms)
+[ RUN      ] Imgcodecs_Jpeg.encode_decode_optimize_jpeg
+[       OK ] Imgcodecs_Jpeg.encode_decode_optimize_jpeg (30 ms)
+[ RUN      ] Imgcodecs_Jpeg.encode_decode_rst_jpeg
+[       OK ] Imgcodecs_Jpeg.encode_decode_rst_jpeg (29 ms)
+[ RUN      ] Imgcodecs_Jpeg.encode_subsamplingfactor_default
+[       OK ] Imgcodecs_Jpeg.encode_subsamplingfactor_default (0 ms)
+[ RUN      ] Imgcodecs_Jpeg.encode_subsamplingfactor_usersetting_valid
+[       OK ] Imgcodecs_Jpeg.encode_subsamplingfactor_usersetting_valid (0 ms)
+[ RUN      ] Imgcodecs_Jpeg.encode_subsamplingfactor_usersetting_invalid
+[ WARN:0@2.911] global grfmt_jpeg.cpp:809 write The value(1118482) for IMWRITE_JPEG_SAMPLING_FACTOR must be one of ImwriteJPEGSamplingFactorParams. It is fallbacked to IMWRITE_JPEG_SAMPLING_FACTOR_420.
+[ WARN:0@2.911] global grfmt_jpeg.cpp:809 write The value(0) for IMWRITE_JPEG_SAMPLING_FACTOR must be one of ImwriteJPEGSamplingFactorParams. It is fallbacked to IMWRITE_JPEG_SAMPLING_FACTOR_420.
+[ WARN:0@2.911] global grfmt_jpeg.cpp:809 write The value(4369) for IMWRITE_JPEG_SAMPLING_FACTOR must be one of ImwriteJPEGSamplingFactorParams. It is fallbacked to IMWRITE_JPEG_SAMPLING_FACTOR_420.
+[ WARN:0@2.911] global grfmt_jpeg.cpp:809 write The value(16716049) for IMWRITE_JPEG_SAMPLING_FACTOR must be one of ImwriteJPEGSamplingFactorParams. It is fallbacked to IMWRITE_JPEG_SAMPLING_FACTOR_420.
+[ WARN:0@2.911] global grfmt_jpeg.cpp:809 write The value(1315089) for IMWRITE_JPEG_SAMPLING_FACTOR must be one of ImwriteJPEGSamplingFactorParams. It is fallbacked to IMWRITE_JPEG_SAMPLING_FACTOR_420.
+[ WARN:0@2.911] global grfmt_jpeg.cpp:809 write The value(2363665) for IMWRITE_JPEG_SAMPLING_FACTOR must be one of ImwriteJPEGSamplingFactorParams. It is fallbacked to IMWRITE_JPEG_SAMPLING_FACTOR_420.
+[ WARN:0@2.911] global grfmt_jpeg.cpp:809 write The value(4329745) for IMWRITE_JPEG_SAMPLING_FACTOR must be one of ImwriteJPEGSamplingFactorParams. It is fallbacked to IMWRITE_JPEG_SAMPLING_FACTOR_420.
+[ WARN:0@2.911] global grfmt_jpeg.cpp:809 write The value(4460817) for IMWRITE_JPEG_SAMPLING_FACTOR must be one of ImwriteJPEGSamplingFactorParams. It is fallbacked to IMWRITE_JPEG_SAMPLING_FACTOR_420.
+[       OK ] Imgcodecs_Jpeg.encode_subsamplingfactor_usersetting_invalid (1 ms)
+[----------] 8 tests from Imgcodecs_Jpeg (156 ms total)
+
+[----------] 10 tests from Imgcodecs_Png
+[ RUN      ] Imgcodecs_Png.Read_Write_With_Exif
+[       OK ] Imgcodecs_Png.Read_Write_With_Exif (3 ms)
+[ RUN      ] Imgcodecs_Png.Read_Write_With_Exif_Xmp_Iccp_cICP
+[       OK ] Imgcodecs_Png.Read_Write_With_Exif_Xmp_Iccp_cICP (4 ms)
+[ RUN      ] Imgcodecs_Png.Read_Exif_From_Text
+[       OK ] Imgcodecs_Png.Read_Exif_From_Text (5 ms)
+[ RUN      ] Imgcodecs_Png.Read_Exif_From_Text_oversized_length_rejected
+[ WARN:0@2.923] global exif.cpp:191 processRawProfile Malformed raw profile, declared length 999999999 is out of range (profile size 25)
+[       OK ] Imgcodecs_Png.Read_Exif_From_Text_oversized_length_rejected (0 ms)
+[ RUN      ] Imgcodecs_Png.write_big
+[       OK ] Imgcodecs_Png.write_big (4236 ms)
+[ RUN      ] Imgcodecs_Png.encode
+[       OK ] Imgcodecs_Png.encode (13 ms)
+[ RUN      ] Imgcodecs_Png.regression_ImreadVSCvtColor
+[       OK ] Imgcodecs_Png.regression_ImreadVSCvtColor (22 ms)
+[ RUN      ] Imgcodecs_Png.read_color_palette_with_alpha
+[       OK ] Imgcodecs_Png.read_color_palette_with_alpha (8 ms)
+[ RUN      ] Imgcodecs_Png.decode_regression27295
+[ERROR:0@7.203] global grfmt_png.cpp:297 readHeader IHDR chunk shall be first. This data may be broken or malformed.
+[ERROR:0@7.203] global grfmt_png.cpp:292 readHeader CgBI chunk (Apple private) found as the first chunk. IHDR is expected.
+[       OK ] Imgcodecs_Png.decode_regression27295 (1 ms)
+[ RUN      ] Imgcodecs_Png.decode_regression27744
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng warning: IDAT: IDAT: ADLER32 checksum mismatch
+libpng error: bad adaptive filter value
+[       OK ] Imgcodecs_Png.decode_regression27744 (1 ms)
+[----------] 10 tests from Imgcodecs_Png (4293 ms total)
+
+[----------] 5 tests from Imgcodecs_Bmp
+[ RUN      ] Imgcodecs_Bmp.read_rle8
+[       OK ] Imgcodecs_Bmp.read_rle8 (8 ms)
+[ RUN      ] Imgcodecs_Bmp.read_32bit_rgb
+[       OK ] Imgcodecs_Bmp.read_32bit_rgb (4 ms)
+[ RUN      ] Imgcodecs_Bmp.rgba_bit_mask
+[       OK ] Imgcodecs_Bmp.rgba_bit_mask (2 ms)
+[ RUN      ] Imgcodecs_Bmp.read_32bit_xrgb
+[       OK ] Imgcodecs_Bmp.read_32bit_xrgb (2 ms)
+[ RUN      ] Imgcodecs_Bmp.rgba_scale
+[       OK ] Imgcodecs_Bmp.rgba_scale (4 ms)
+[----------] 5 tests from Imgcodecs_Bmp (20 ms total)
+
+[----------] 2 tests from Imgcodecs_Hdr
+[ RUN      ] Imgcodecs_Hdr.regression
+[       OK ] Imgcodecs_Hdr.regression (75 ms)
+[ RUN      ] Imgcodecs_Hdr.regression_imencode
+[       OK ] Imgcodecs_Hdr.regression_imencode (57 ms)
+[----------] 2 tests from Imgcodecs_Hdr (132 ms total)
+
+[----------] 2 tests from Imgcodecs_Pam
+[ RUN      ] Imgcodecs_Pam.read_write
+[       OK ] Imgcodecs_Pam.read_write (12 ms)
+[ RUN      ] Imgcodecs_Pam.decode_graya_as_gray
+[       OK ] Imgcodecs_Pam.decode_graya_as_gray (0 ms)
+[----------] 2 tests from Imgcodecs_Pam (12 ms total)
+
+[----------] 1 test from Imgcodecs_Pfm
+[ RUN      ] Imgcodecs_Pfm.read_write
+[       OK ] Imgcodecs_Pfm.read_write (23 ms)
+[----------] 1 test from Imgcodecs_Pfm (23 ms total)
+
+[----------] 6 tests from Imgcodecs
+[ RUN      ] Imgcodecs.write_parameter_type
+[       OK ] Imgcodecs.write_parameter_type (2 ms)
+[ RUN      ] Imgcodecs.imdecode_user_buffer
+[       OK ] Imgcodecs.imdecode_user_buffer (0 ms)
+[ RUN      ] Imgcodecs.imencodemulti_regression_26207
+[       OK ] Imgcodecs.imencodemulti_regression_26207 (3 ms)
+[ RUN      ] Imgcodecs.imencode_regression_26207_extra
+[ WARN:0@7.397] global loadsave.cpp:1671 imencodeWithMetadata Unsupported depth image for selected encoder is fallbacked to CV_8U.
+[       OK ] Imgcodecs.imencode_regression_26207_extra (0 ms)
+[ RUN      ] Imgcodecs.imwrite_regression_26207_extra
+[ WARN:0@7.397] global loadsave.cpp:1089 imwrite_ Unsupported depth image for selected encoder is fallbacked to CV_8U.
+[       OK ] Imgcodecs.imwrite_regression_26207_extra (0 ms)
+[ RUN      ] Imgcodecs.decode_over2GB
+[     SKIP ] Test with tag 'mem_6gb' is skipped ('mem_6gb' is in skip list)
+[       OK ] Imgcodecs.decode_over2GB (0 ms)
+[----------] 6 tests from Imgcodecs (5 ms total)
+
+[----------] 9 tests from Imgcodecs_Image
+[ RUN      ] Imgcodecs_Image.read_write_bmp
+[       OK ] Imgcodecs_Image.read_write_bmp (269 ms)
+[ RUN      ] Imgcodecs_Image.regression_9376
+[       OK ] Imgcodecs_Image.regression_9376 (2 ms)
+[ RUN      ] Imgcodecs_Image.imread_overload
+[       OK ] Imgcodecs_Image.imread_overload (9 ms)
+[ RUN      ] Imgcodecs_Image.write_umat
+[       OK ] Imgcodecs_Image.write_umat (7 ms)
+[ RUN      ] Imgcodecs_Image.multipage_collection_size
+[       OK ] Imgcodecs_Image.multipage_collection_size (7 ms)
+[ RUN      ] Imgcodecs_Image.multipage_collection_read_pages_iterator
+[       OK ] Imgcodecs_Image.multipage_collection_read_pages_iterator (126 ms)
+[ RUN      ] Imgcodecs_Image.multipage_collection_two_iterator
+[       OK ] Imgcodecs_Image.multipage_collection_two_iterator (136 ms)
+[ RUN      ] Imgcodecs_Image.multipage_collection_operator_plusplus
+[       OK ] Imgcodecs_Image.multipage_collection_operator_plusplus (36 ms)
+[ RUN      ] Imgcodecs_Image.multipage_collection_backward_decoding
+[       OK ] Imgcodecs_Image.multipage_collection_backward_decoding (160 ms)
+[----------] 9 tests from Imgcodecs_Image (753 ms total)
+
+[----------] 2 tests from ImgCodecs
+[ RUN      ] ImgCodecs.multipage_collection_decoding_range_based_for_loop_test
+[       OK ] ImgCodecs.multipage_collection_decoding_range_based_for_loop_test (171 ms)
+[ RUN      ] ImgCodecs.multipage_collection_two_iterator_operatorpp
+[       OK ] ImgCodecs.multipage_collection_two_iterator_operatorpp (144 ms)
+[----------] 2 tests from ImgCodecs (315 ms total)
+
+[----------] 2 tests from Imgcodecs_Params
+[ RUN      ] Imgcodecs_Params.imwrite_regression_22752
+[       OK ] Imgcodecs_Params.imwrite_regression_22752 (1 ms)
+[ RUN      ] Imgcodecs_Params.imencode_regression_22752
+[       OK ] Imgcodecs_Params.imencode_regression_22752 (0 ms)
+[----------] 2 tests from Imgcodecs_Params (1 ms total)
+
+[----------] 6 tests from Imgcodecs_SunRaster
+[ RUN      ] Imgcodecs_SunRaster.invalid_maptype_returns_empty_29150
+[       OK ] Imgcodecs_SunRaster.invalid_maptype_returns_empty_29150 (0 ms)
+[ RUN      ] Imgcodecs_SunRaster.invalid_rastype_returns_empty
+[       OK ] Imgcodecs_SunRaster.invalid_rastype_returns_empty (0 ms)
+[ RUN      ] Imgcodecs_SunRaster.maptype_2_returns_empty
+[       OK ] Imgcodecs_SunRaster.maptype_2_returns_empty (0 ms)
+[ RUN      ] Imgcodecs_SunRaster.maptype_max_returns_empty
+[       OK ] Imgcodecs_SunRaster.maptype_max_returns_empty (0 ms)
+[ RUN      ] Imgcodecs_SunRaster.truncated_header_returns_empty
+[       OK ] Imgcodecs_SunRaster.truncated_header_returns_empty (1 ms)
+[ RUN      ] Imgcodecs_SunRaster.valid_8bpp_grayscale_decodes
+[       OK ] Imgcodecs_SunRaster.valid_8bpp_grayscale_decodes (0 ms)
+[----------] 6 tests from Imgcodecs_SunRaster (1 ms total)
+
+[----------] 23 tests from Imgcodecs_Tiff
+[ RUN      ] Imgcodecs_Tiff.decode_tile16384x16384
+[       OK ] Imgcodecs_Tiff.decode_tile16384x16384 (3803 ms)
+[ RUN      ] Imgcodecs_Tiff.write_read_16bit_big_little_endian
+[ERROR:0@12.270] global grfmt_tiff.cpp:116 TIFF_Error TIFFAdvanceDirectory: Error fetching directory link
+[ERROR:0@12.270] global grfmt_tiff.cpp:116 TIFF_Error TIFFAdvanceDirectory: Error fetching directory link
+[       OK ] Imgcodecs_Tiff.write_read_16bit_big_little_endian (0 ms)
+[ RUN      ] Imgcodecs_Tiff.decode_tile_remainder
+[       OK ] Imgcodecs_Tiff.decode_tile_remainder (20 ms)
+[ RUN      ] Imgcodecs_Tiff.decode_10_12_14
+[       OK ] Imgcodecs_Tiff.decode_10_12_14 (27 ms)
+[ RUN      ] Imgcodecs_Tiff.decode_infinite_rowsperstrip
+[       OK ] Imgcodecs_Tiff.decode_infinite_rowsperstrip (0 ms)
+[ RUN      ] Imgcodecs_Tiff.readWrite_unsigned
+[       OK ] Imgcodecs_Tiff.readWrite_unsigned (3 ms)
+[ RUN      ] Imgcodecs_Tiff.readWrite_32FC1
+[       OK ] Imgcodecs_Tiff.readWrite_32FC1 (3 ms)
+[ RUN      ] Imgcodecs_Tiff.readWrite_64FC1
+[       OK ] Imgcodecs_Tiff.readWrite_64FC1 (3 ms)
+[ RUN      ] Imgcodecs_Tiff.readWrite_32FC3_SGILOG
+[       OK ] Imgcodecs_Tiff.readWrite_32FC3_SGILOG (2 ms)
+[ RUN      ] Imgcodecs_Tiff.readWrite_32FC3_RAW
+[       OK ] Imgcodecs_Tiff.readWrite_32FC3_RAW (4 ms)
+[ RUN      ] Imgcodecs_Tiff.read_palette_color_image
+[       OK ] Imgcodecs_Tiff.read_palette_color_image (2 ms)
+[ RUN      ] Imgcodecs_Tiff.read_palette_color_image_rgb_and_bgr
+[       OK ] Imgcodecs_Tiff.read_palette_color_image_rgb_and_bgr (2 ms)
+[ RUN      ] Imgcodecs_Tiff.read_4_bit_palette_color_image
+[       OK ] Imgcodecs_Tiff.read_4_bit_palette_color_image (2 ms)
+[ RUN      ] Imgcodecs_Tiff.readWrite_predictor
+[ WARN:0@12.338] global grfmt_tiff.cpp:122 TIFF_Warning TIFFWriteDirectorySec: Creating TIFF with legacy Deflate codec identifier, COMPRESSION_ADOBE_DEFLATE is more widely supported
+[       OK ] Imgcodecs_Tiff.readWrite_predictor (1 ms)
+[ RUN      ] Imgcodecs_Tiff.imdecode_no_exception_temporary_file_removed
+[       OK ] Imgcodecs_Tiff.imdecode_no_exception_temporary_file_removed (27 ms)
+[ RUN      ] Imgcodecs_Tiff.decode_black_and_write_image_pr12989_grayscale
+[       OK ] Imgcodecs_Tiff.decode_black_and_write_image_pr12989_grayscale (2 ms)
+[ RUN      ] Imgcodecs_Tiff.decode_black_and_write_image_pr12989_default
+[       OK ] Imgcodecs_Tiff.decode_black_and_write_image_pr12989_default (1 ms)
+[ RUN      ] Imgcodecs_Tiff.decode_black_and_write_image_pr17275_grayscale
+[       OK ] Imgcodecs_Tiff.decode_black_and_write_image_pr17275_grayscale (2 ms)
+[ RUN      ] Imgcodecs_Tiff.decode_black_and_write_image_pr17275_default
+[       OK ] Imgcodecs_Tiff.decode_black_and_write_image_pr17275_default (1 ms)
+[ RUN      ] Imgcodecs_Tiff.count_multipage
+[       OK ] Imgcodecs_Tiff.count_multipage (7 ms)
+[ RUN      ] Imgcodecs_Tiff.read_multipage_indexed
+[       OK ] Imgcodecs_Tiff.read_multipage_indexed (390 ms)
+[ RUN      ] Imgcodecs_Tiff.read_bigtiff_images
+[       OK ] Imgcodecs_Tiff.read_bigtiff_images (16 ms)
+[ RUN      ] Imgcodecs_Tiff.read_junk
+[ERROR:0@12.785] global grfmt_tiff.cpp:116 TIFF_Error Failed to allocate memory for to read TIFF directory (0 elements of 12 bytes each)
+[ERROR:0@12.785] global grfmt_tiff.cpp:116 TIFF_Error TIFFReadDirectory: Failed to read directory at offset 8
+[       OK ] Imgcodecs_Tiff.read_junk (0 ms)
+[----------] 23 tests from Imgcodecs_Tiff (4318 ms total)
+
+[----------] 1 test from Imgcodecs_Tiff_Modes
+[ RUN      ] Imgcodecs_Tiff_Modes.write_multipage
+[       OK ] Imgcodecs_Tiff_Modes.write_multipage (60 ms)
+[----------] 1 test from Imgcodecs_Tiff_Modes (60 ms total)
+
+[----------] 4 tests from Imgcodecs_ImageCollection
+[ RUN      ] Imgcodecs_ImageCollection.animations/0, where GetParam() = ".gif"
+[       OK ] Imgcodecs_ImageCollection.animations/0 (7 ms)
+[ RUN      ] Imgcodecs_ImageCollection.animations/1, where GetParam() = ".png"
+[       OK ] Imgcodecs_ImageCollection.animations/1 (6 ms)
+[ RUN      ] Imgcodecs_ImageCollection.animations/2, where GetParam() = ".tiff"
+[       OK ] Imgcodecs_ImageCollection.animations/2 (3 ms)
+[ RUN      ] Imgcodecs_ImageCollection.animations/3, where GetParam() = ".webp"
+[       OK ] Imgcodecs_ImageCollection.animations/3 (4 ms)
+[----------] 4 tests from Imgcodecs_ImageCollection (20 ms total)
+
+[----------] 24 tests from Imgcodecs/Exif
+[ RUN      ] Imgcodecs/Exif.exif_orientation/0, where GetParam() = "readwrite/testExifOrientation_1.jpg"
+[       OK ] Imgcodecs/Exif.exif_orientation/0 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/1, where GetParam() = "readwrite/testExifOrientation_2.jpg"
+[       OK ] Imgcodecs/Exif.exif_orientation/1 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/2, where GetParam() = "readwrite/testExifOrientation_3.jpg"
+[       OK ] Imgcodecs/Exif.exif_orientation/2 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/3, where GetParam() = "readwrite/testExifOrientation_4.jpg"
+[       OK ] Imgcodecs/Exif.exif_orientation/3 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/4, where GetParam() = "readwrite/testExifOrientation_5.jpg"
+[       OK ] Imgcodecs/Exif.exif_orientation/4 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/5, where GetParam() = "readwrite/testExifOrientation_6.jpg"
+[       OK ] Imgcodecs/Exif.exif_orientation/5 (3 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/6, where GetParam() = "readwrite/testExifOrientation_7.jpg"
+[       OK ] Imgcodecs/Exif.exif_orientation/6 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/7, where GetParam() = "readwrite/testExifOrientation_8.jpg"
+[       OK ] Imgcodecs/Exif.exif_orientation/7 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/8, where GetParam() = "readwrite/testExifOrientation_1.png"
+[       OK ] Imgcodecs/Exif.exif_orientation/8 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/9, where GetParam() = "readwrite/testExifOrientation_2.png"
+[       OK ] Imgcodecs/Exif.exif_orientation/9 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/10, where GetParam() = "readwrite/testExifOrientation_3.png"
+[       OK ] Imgcodecs/Exif.exif_orientation/10 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/11, where GetParam() = "readwrite/testExifOrientation_4.png"
+[       OK ] Imgcodecs/Exif.exif_orientation/11 (1 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/12, where GetParam() = "readwrite/testExifOrientation_5.png"
+[       OK ] Imgcodecs/Exif.exif_orientation/12 (3 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/13, where GetParam() = "readwrite/testExifOrientation_6.png"
+[       OK ] Imgcodecs/Exif.exif_orientation/13 (1 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/14, where GetParam() = "readwrite/testExifOrientation_7.png"
+[       OK ] Imgcodecs/Exif.exif_orientation/14 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/15, where GetParam() = "readwrite/testExifOrientation_8.png"
+[       OK ] Imgcodecs/Exif.exif_orientation/15 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/16, where GetParam() = "readwrite/testExifOrientation_1.webp"
+[       OK ] Imgcodecs/Exif.exif_orientation/16 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/17, where GetParam() = "readwrite/testExifOrientation_2.webp"
+[       OK ] Imgcodecs/Exif.exif_orientation/17 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/18, where GetParam() = "readwrite/testExifOrientation_3.webp"
+[       OK ] Imgcodecs/Exif.exif_orientation/18 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/19, where GetParam() = "readwrite/testExifOrientation_4.webp"
+[       OK ] Imgcodecs/Exif.exif_orientation/19 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/20, where GetParam() = "readwrite/testExifOrientation_5.webp"
+[       OK ] Imgcodecs/Exif.exif_orientation/20 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/21, where GetParam() = "readwrite/testExifOrientation_6.webp"
+[       OK ] Imgcodecs/Exif.exif_orientation/21 (2 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/22, where GetParam() = "readwrite/testExifOrientation_7.webp"
+[       OK ] Imgcodecs/Exif.exif_orientation/22 (1 ms)
+[ RUN      ] Imgcodecs/Exif.exif_orientation/23, where GetParam() = "readwrite/testExifOrientation_8.webp"
+[       OK ] Imgcodecs/Exif.exif_orientation/23 (2 ms)
+[----------] 24 tests from Imgcodecs/Exif (47 ms total)
+
+[----------] 2 tests from Imgcodecs/ReadExif_Sanity
+[ RUN      ] Imgcodecs/ReadExif_Sanity.Check/0, where GetParam() = ("readwrite/testExifOrientation_3.jpg", 916, "Photoshop", 120, 3597, 940)
+[       OK ] Imgcodecs/ReadExif_Sanity.Check/0 (1 ms)
+[ RUN      ] Imgcodecs/ReadExif_Sanity.Check/1, where GetParam() = ("readwrite/testExifOrientation_5.png", 112, "ExifTool", 102, 505, 0)
+[       OK ] Imgcodecs/ReadExif_Sanity.Check/1 (1 ms)
+[----------] 2 tests from Imgcodecs/ReadExif_Sanity (2 ms total)
+
+[----------] 28 tests from Imgcodecs_Gif_GifSuite_SingleFrame
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/0, where GetParam() = "basi3p01"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/0 (5 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/1, where GetParam() = "basi3p02"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/1 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/2, where GetParam() = "basi3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/2 (5 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/3, where GetParam() = "basn3p01"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/3 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/4, where GetParam() = "basn3p02"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/4 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/5, where GetParam() = "basn3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/5 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/6, where GetParam() = "ccwn3p08"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/6 (5 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/7, where GetParam() = "cdfn2c08"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/7 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/8, where GetParam() = "cdhn2c08"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/8 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/9, where GetParam() = "cdsn2c08"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/9 (5 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/10, where GetParam() = "cdun2c08"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/10 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/11, where GetParam() = "ch1n3p04"
+libpng warning: hIST: out of place
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/11 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/12, where GetParam() = "cs3n3p08"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/12 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/13, where GetParam() = "cs5n2c08"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/13 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/14, where GetParam() = "cs5n3p08"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/14 (5 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/15, where GetParam() = "cs8n2c08"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/15 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/16, where GetParam() = "cs8n3p08"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/16 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/17, where GetParam() = "exif2c08"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/17 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/18, where GetParam() = "g03n2c08"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/18 (5 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/19, where GetParam() = "g03n3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/19 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/20, where GetParam() = "g04n2c08"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/20 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/21, where GetParam() = "g04n3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/21 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/22, where GetParam() = "g05n2c08"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/22 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/23, where GetParam() = "g05n3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/23 (5 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/24, where GetParam() = "g07n2c08"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/24 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/25, where GetParam() = "g07n3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/25 (4 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/26, where GetParam() = "g10n2c08"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/26 (5 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/27, where GetParam() = "g10n3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame.read_gif_single/27 (3 ms)
+[----------] 28 tests from Imgcodecs_Gif_GifSuite_SingleFrame (119 ms total)
+
+[----------] 6 tests from Imgcodecs_Gif_GifSuite_SingleFrame_BGRA
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame_BGRA.read_gif_single_bgra/0, where GetParam() = ("gif_bgra1", 53287)
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame_BGRA.read_gif_single_bgra/0 (6 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame_BGRA.read_gif_single_bgra/1, where GetParam() = ("gif_bgra2", 52651)
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame_BGRA.read_gif_single_bgra/1 (6 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame_BGRA.read_gif_single_bgra/2, where GetParam() = ("gif_bgra3", 54809)
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame_BGRA.read_gif_single_bgra/2 (5 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame_BGRA.read_gif_single_bgra/3, where GetParam() = ("gif_bgra4", 57562)
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame_BGRA.read_gif_single_bgra/3 (6 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame_BGRA.read_gif_single_bgra/4, where GetParam() = ("gif_bgra5", 56733)
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame_BGRA.read_gif_single_bgra/4 (5 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_SingleFrame_BGRA.read_gif_single_bgra/5, where GetParam() = ("gif_bgra6", 52110)
+[       OK ] Imgcodecs_Gif_GifSuite_SingleFrame_BGRA.read_gif_single_bgra/5 (6 ms)
+[----------] 6 tests from Imgcodecs_Gif_GifSuite_SingleFrame_BGRA (34 ms total)
+
+[----------] 39 tests from Imgcodecs_Gif_GifSuite_Read_Write_Suite
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/0, where GetParam() = "g25n2c08"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/0 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/1, where GetParam() = "g25n3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/1 (3 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/2, where GetParam() = "s01i3p01"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/2 (1 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/3, where GetParam() = "s01n3p01"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/3 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/4, where GetParam() = "s02i3p01"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/4 (3 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/5, where GetParam() = "s02n3p01"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/5 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/6, where GetParam() = "s03i3p01"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/6 (1 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/7, where GetParam() = "s03n3p01"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/7 (1 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/8, where GetParam() = "s04i3p01"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/8 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/9, where GetParam() = "s04n3p01"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/9 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/10, where GetParam() = "s05i3p02"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/10 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/11, where GetParam() = "s05n3p02"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/11 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/12, where GetParam() = "s06i3p02"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/12 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/13, where GetParam() = "s06n3p02"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/13 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/14, where GetParam() = "s07i3p02"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/14 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/15, where GetParam() = "s07n3p02"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/15 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/16, where GetParam() = "s08i3p02"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/16 (1 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/17, where GetParam() = "s08n3p02"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/17 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/18, where GetParam() = "s09i3p02"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/18 (3 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/19, where GetParam() = "s09n3p02"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/19 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/20, where GetParam() = "s32i3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/20 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/21, where GetParam() = "s32n3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/21 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/22, where GetParam() = "s33i3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/22 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/23, where GetParam() = "s33n3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/23 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/24, where GetParam() = "s34i3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/24 (3 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/25, where GetParam() = "s34n3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/25 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/26, where GetParam() = "s35i3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/26 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/27, where GetParam() = "s35n3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/27 (3 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/28, where GetParam() = "s36i3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/28 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/29, where GetParam() = "s36n3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/29 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/30, where GetParam() = "s37i3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/30 (3 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/31, where GetParam() = "s37n3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/31 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/32, where GetParam() = "s38i3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/32 (3 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/33, where GetParam() = "s38n3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/33 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/34, where GetParam() = "s39i3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/34 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/35, where GetParam() = "s39n3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/35 (3 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/36, where GetParam() = "s40i3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/36 (2 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/37, where GetParam() = "s40n3p04"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/37 (3 ms)
+[ RUN      ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/38, where GetParam() = "tp0n3p08"
+[       OK ] Imgcodecs_Gif_GifSuite_Read_Write_Suite.read_gif_single/38 (2 ms)
+[----------] 39 tests from Imgcodecs_Gif_GifSuite_Read_Write_Suite (85 ms total)
+
+[----------] 7 tests from Imgcodecs_Gif_loop_count
+[ RUN      ] Imgcodecs_Gif_loop_count.imwriteanimation/0, where GetParam() = -1
+[       OK ] Imgcodecs_Gif_loop_count.imwriteanimation/0 (1 ms)
+[ RUN      ] Imgcodecs_Gif_loop_count.imwriteanimation/1, where GetParam() = 0
+[       OK ] Imgcodecs_Gif_loop_count.imwriteanimation/1 (1 ms)
+[ RUN      ] Imgcodecs_Gif_loop_count.imwriteanimation/2, where GetParam() = 1
+[       OK ] Imgcodecs_Gif_loop_count.imwriteanimation/2 (1 ms)
+[ RUN      ] Imgcodecs_Gif_loop_count.imwriteanimation/3, where GetParam() = 2
+[       OK ] Imgcodecs_Gif_loop_count.imwriteanimation/3 (2 ms)
+[ RUN      ] Imgcodecs_Gif_loop_count.imwriteanimation/4, where GetParam() = 65534
+[       OK ] Imgcodecs_Gif_loop_count.imwriteanimation/4 (1 ms)
+[ RUN      ] Imgcodecs_Gif_loop_count.imwriteanimation/5, where GetParam() = 65535
+[       OK ] Imgcodecs_Gif_loop_count.imwriteanimation/5 (1 ms)
+[ RUN      ] Imgcodecs_Gif_loop_count.imwriteanimation/6, where GetParam() = 65536
+[       OK ] Imgcodecs_Gif_loop_count.imwriteanimation/6 (1 ms)
+[----------] 7 tests from Imgcodecs_Gif_loop_count (8 ms total)
+
+[----------] 11 tests from Imgcodecs_Gif_duration
+[ RUN      ] Imgcodecs_Gif_duration.imwriteanimation/0, where GetParam() = -1
+[ERROR:0@13.161] global loadsave.cpp:1256 imwriteanimation_ imwriteanimation_('/tmp/__opencv_temp.xxM85B.gif'): can't write data: OpenCV(4.14.0-pre) /mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/imgcodecs/src/grfmt_gif.cpp:681: error: (-2:Unspecified error) in function 'virtual bool cv::GifEncoder::writeanimation(const cv::Animation&, const std::vector<int>&)'
+> It must be positive value (expected: 'frameDelay >= 0'), where
+>     'frameDelay' is -1
+> must be greater than or equal to
+>     '0' is 0
+
+[       OK ] Imgcodecs_Gif_duration.imwriteanimation/0 (1 ms)
+[ RUN      ] Imgcodecs_Gif_duration.imwriteanimation/1, where GetParam() = 0
+[ WARN:0@13.162] global grfmt_gif.cpp:685 writeanimation frameDelay(0) is rounded to 0ms, its behaviour is user application depended.
+[ WARN:0@13.162] global grfmt_gif.cpp:685 writeanimation frameDelay(0) is rounded to 0ms, its behaviour is user application depended.
+[ WARN:0@13.162] global grfmt_gif.cpp:685 writeanimation frameDelay(0) is rounded to 0ms, its behaviour is user application depended.
+[ WARN:0@13.163] global grfmt_gif.cpp:685 writeanimation frameDelay(0) is rounded to 0ms, its behaviour is user application depended.
+[ WARN:0@13.163] global grfmt_gif.cpp:685 writeanimation frameDelay(0) is rounded to 0ms, its behaviour is user application depended.
+[       OK ] Imgcodecs_Gif_duration.imwriteanimation/1 (2 ms)
+[ RUN      ] Imgcodecs_Gif_duration.imwriteanimation/2, where GetParam() = 1
+[ WARN:0@13.164] global grfmt_gif.cpp:685 writeanimation frameDelay(1) is rounded to 0ms, its behaviour is user application depended.
+[ WARN:0@13.164] global grfmt_gif.cpp:685 writeanimation frameDelay(1) is rounded to 0ms, its behaviour is user application depended.
+[ WARN:0@13.164] global grfmt_gif.cpp:685 writeanimation frameDelay(1) is rounded to 0ms, its behaviour is user application depended.
+[ WARN:0@13.164] global grfmt_gif.cpp:685 writeanimation frameDelay(1) is rounded to 0ms, its behaviour is user application depended.
+[ WARN:0@13.164] global grfmt_gif.cpp:685 writeanimation frameDelay(1) is rounded to 0ms, its behaviour is user application depended.
+[       OK ] Imgcodecs_Gif_duration.imwriteanimation/2 (1 ms)
+[ RUN      ] Imgcodecs_Gif_duration.imwriteanimation/3, where GetParam() = 9
+[ WARN:0@13.165] global grfmt_gif.cpp:685 writeanimation frameDelay(9) is rounded to 0ms, its behaviour is user application depended.
+[ WARN:0@13.165] global grfmt_gif.cpp:685 writeanimation frameDelay(9) is rounded to 0ms, its behaviour is user application depended.
+[ WARN:0@13.165] global grfmt_gif.cpp:685 writeanimation frameDelay(9) is rounded to 0ms, its behaviour is user application depended.
+[ WARN:0@13.165] global grfmt_gif.cpp:685 writeanimation frameDelay(9) is rounded to 0ms, its behaviour is user application depended.
+[ WARN:0@13.165] global grfmt_gif.cpp:685 writeanimation frameDelay(9) is rounded to 0ms, its behaviour is user application depended.
+[       OK ] Imgcodecs_Gif_duration.imwriteanimation/3 (1 ms)
+[ RUN      ] Imgcodecs_Gif_duration.imwriteanimation/4, where GetParam() = 10
+[       OK ] Imgcodecs_Gif_duration.imwriteanimation/4 (1 ms)
+[ RUN      ] Imgcodecs_Gif_duration.imwriteanimation/5, where GetParam() = 50
+[       OK ] Imgcodecs_Gif_duration.imwriteanimation/5 (2 ms)
+[ RUN      ] Imgcodecs_Gif_duration.imwriteanimation/6, where GetParam() = 100
+[       OK ] Imgcodecs_Gif_duration.imwriteanimation/6 (1 ms)
+[ RUN      ] Imgcodecs_Gif_duration.imwriteanimation/7, where GetParam() = 1000
+[       OK ] Imgcodecs_Gif_duration.imwriteanimation/7 (1 ms)
+[ RUN      ] Imgcodecs_Gif_duration.imwriteanimation/8, where GetParam() = 655340
+[       OK ] Imgcodecs_Gif_duration.imwriteanimation/8 (1 ms)
+[ RUN      ] Imgcodecs_Gif_duration.imwriteanimation/9, where GetParam() = 655350
+[       OK ] Imgcodecs_Gif_duration.imwriteanimation/9 (1 ms)
+[ RUN      ] Imgcodecs_Gif_duration.imwriteanimation/10, where GetParam() = 655360
+[ERROR:0@13.173] global loadsave.cpp:1256 imwriteanimation_ imwriteanimation_('/tmp/__opencv_temp.b9lnjY.gif'): can't write data: OpenCV(4.14.0-pre) /mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/imgcodecs/src/grfmt_gif.cpp:687: error: (-2:Unspecified error) in function 'virtual bool cv::GifEncoder::writeanimation(const cv::Animation&, const std::vector<int>&)'
+> It requires to be stored in WORD (expected: 'frameDelay10ms <= 65535'), where
+>     'frameDelay10ms' is 65536
+> must be less than or equal to
+>     '65535' is 65535
+
+[       OK ] Imgcodecs_Gif_duration.imwriteanimation/10 (1 ms)
+[----------] 11 tests from Imgcodecs_Gif_duration (13 ms total)
+
+[----------] 72 tests from All/Imgcodecs_FileMode
+[ RUN      ] All/Imgcodecs_FileMode.regression/0, where GetParam() = ("readwrite/Rome.jp2", -1)
+[       OK ] All/Imgcodecs_FileMode.regression/0 (154 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/1, where GetParam() = ("readwrite/Rome.jp2", 0)
+[       OK ] All/Imgcodecs_FileMode.regression/1 (151 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/2, where GetParam() = ("readwrite/Rome.jp2", 1)
+[       OK ] All/Imgcodecs_FileMode.regression/2 (150 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/3, where GetParam() = ("readwrite/Rome.jp2", 256)
+[       OK ] All/Imgcodecs_FileMode.regression/3 (150 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/4, where GetParam() = ("readwrite/Rome.jp2", 2)
+[       OK ] All/Imgcodecs_FileMode.regression/4 (151 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/5, where GetParam() = ("readwrite/Rome.jp2", 4)
+[       OK ] All/Imgcodecs_FileMode.regression/5 (151 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/6, where GetParam() = ("readwrite/Bretagne2.jp2", -1)
+[       OK ] All/Imgcodecs_FileMode.regression/6 (652 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/7, where GetParam() = ("readwrite/Bretagne2.jp2", 0)
+[       OK ] All/Imgcodecs_FileMode.regression/7 (664 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/8, where GetParam() = ("readwrite/Bretagne2.jp2", 1)
+[       OK ] All/Imgcodecs_FileMode.regression/8 (684 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/9, where GetParam() = ("readwrite/Bretagne2.jp2", 256)
+[       OK ] All/Imgcodecs_FileMode.regression/9 (662 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/10, where GetParam() = ("readwrite/Bretagne2.jp2", 2)
+[       OK ] All/Imgcodecs_FileMode.regression/10 (681 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/11, where GetParam() = ("readwrite/Bretagne2.jp2", 4)
+[       OK ] All/Imgcodecs_FileMode.regression/11 (667 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/12, where GetParam() = ("readwrite/Bretagne2.jp2", -1)
+[       OK ] All/Imgcodecs_FileMode.regression/12 (648 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/13, where GetParam() = ("readwrite/Bretagne2.jp2", 0)
+[       OK ] All/Imgcodecs_FileMode.regression/13 (665 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/14, where GetParam() = ("readwrite/Bretagne2.jp2", 1)
+[       OK ] All/Imgcodecs_FileMode.regression/14 (683 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/15, where GetParam() = ("readwrite/Bretagne2.jp2", 256)
+[       OK ] All/Imgcodecs_FileMode.regression/15 (649 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/16, where GetParam() = ("readwrite/Bretagne2.jp2", 2)
+[       OK ] All/Imgcodecs_FileMode.regression/16 (640 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/17, where GetParam() = ("readwrite/Bretagne2.jp2", 4)
+[       OK ] All/Imgcodecs_FileMode.regression/17 (668 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/18, where GetParam() = ("readwrite/Grey.jp2", -1)
+[       OK ] All/Imgcodecs_FileMode.regression/18 (574 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/19, where GetParam() = ("readwrite/Grey.jp2", 0)
+[       OK ] All/Imgcodecs_FileMode.regression/19 (593 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/20, where GetParam() = ("readwrite/Grey.jp2", 1)
+[       OK ] All/Imgcodecs_FileMode.regression/20 (604 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/21, where GetParam() = ("readwrite/Grey.jp2", 256)
+[       OK ] All/Imgcodecs_FileMode.regression/21 (609 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/22, where GetParam() = ("readwrite/Grey.jp2", 2)
+[       OK ] All/Imgcodecs_FileMode.regression/22 (609 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/23, where GetParam() = ("readwrite/Grey.jp2", 4)
+[       OK ] All/Imgcodecs_FileMode.regression/23 (637 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/24, where GetParam() = ("readwrite/Grey.jp2", -1)
+[       OK ] All/Imgcodecs_FileMode.regression/24 (608 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/25, where GetParam() = ("readwrite/Grey.jp2", 0)
+[       OK ] All/Imgcodecs_FileMode.regression/25 (612 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/26, where GetParam() = ("readwrite/Grey.jp2", 1)
+[       OK ] All/Imgcodecs_FileMode.regression/26 (633 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/27, where GetParam() = ("readwrite/Grey.jp2", 256)
+[       OK ] All/Imgcodecs_FileMode.regression/27 (609 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/28, where GetParam() = ("readwrite/Grey.jp2", 2)
+[       OK ] All/Imgcodecs_FileMode.regression/28 (613 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/29, where GetParam() = ("readwrite/Grey.jp2", 4)
+[       OK ] All/Imgcodecs_FileMode.regression/29 (635 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/30, where GetParam() = ("readwrite/balloon.j2c", -1)
+[ WARN:0@29.794] global grfmt_jpeg2000_openjpeg.cpp:617 readData OpenJPEG2000: Image has unknown or unspecified color space, SRGB is assumed
+[ WARN:0@30.241] global grfmt_jpeg2000_openjpeg.cpp:617 readData OpenJPEG2000: Image has unknown or unspecified color space, SRGB is assumed
+[       OK ] All/Imgcodecs_FileMode.regression/30 (940 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/31, where GetParam() = ("readwrite/balloon.j2c", 0)
+[ WARN:0@30.732] global grfmt_jpeg2000_openjpeg.cpp:617 readData OpenJPEG2000: Image has unknown or unspecified color space, SRGB is assumed
+[ WARN:0@31.177] global grfmt_jpeg2000_openjpeg.cpp:617 readData OpenJPEG2000: Image has unknown or unspecified color space, SRGB is assumed
+[       OK ] All/Imgcodecs_FileMode.regression/31 (928 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/32, where GetParam() = ("readwrite/balloon.j2c", 1)
+[ WARN:0@31.663] global grfmt_jpeg2000_openjpeg.cpp:617 readData OpenJPEG2000: Image has unknown or unspecified color space, SRGB is assumed
+[ WARN:0@32.137] global grfmt_jpeg2000_openjpeg.cpp:617 readData OpenJPEG2000: Image has unknown or unspecified color space, SRGB is assumed
+[       OK ] All/Imgcodecs_FileMode.regression/32 (968 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/33, where GetParam() = ("readwrite/balloon.j2c", 256)
+[ WARN:0@32.631] global grfmt_jpeg2000_openjpeg.cpp:617 readData OpenJPEG2000: Image has unknown or unspecified color space, SRGB is assumed
+[ WARN:0@33.082] global grfmt_jpeg2000_openjpeg.cpp:617 readData OpenJPEG2000: Image has unknown or unspecified color space, SRGB is assumed
+[       OK ] All/Imgcodecs_FileMode.regression/33 (945 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/34, where GetParam() = ("readwrite/balloon.j2c", 2)
+[ WARN:0@33.604] global grfmt_jpeg2000_openjpeg.cpp:617 readData OpenJPEG2000: Image has unknown or unspecified color space, SRGB is assumed
+[ WARN:0@34.058] global grfmt_jpeg2000_openjpeg.cpp:617 readData OpenJPEG2000: Image has unknown or unspecified color space, SRGB is assumed
+[       OK ] All/Imgcodecs_FileMode.regression/34 (967 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/35, where GetParam() = ("readwrite/balloon.j2c", 4)
+[ WARN:0@34.545] global grfmt_jpeg2000_openjpeg.cpp:617 readData OpenJPEG2000: Image has unknown or unspecified color space, SRGB is assumed
+[ WARN:0@35.021] global grfmt_jpeg2000_openjpeg.cpp:617 readData OpenJPEG2000: Image has unknown or unspecified color space, SRGB is assumed
+[       OK ] All/Imgcodecs_FileMode.regression/35 (971 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/36, where GetParam() = ("readwrite/color_palette_alpha.png", -1)
+[       OK ] All/Imgcodecs_FileMode.regression/36 (3 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/37, where GetParam() = ("readwrite/color_palette_alpha.png", 0)
+[       OK ] All/Imgcodecs_FileMode.regression/37 (3 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/38, where GetParam() = ("readwrite/color_palette_alpha.png", 1)
+[       OK ] All/Imgcodecs_FileMode.regression/38 (2 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/39, where GetParam() = ("readwrite/color_palette_alpha.png", 256)
+[       OK ] All/Imgcodecs_FileMode.regression/39 (2 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/40, where GetParam() = ("readwrite/color_palette_alpha.png", 2)
+[       OK ] All/Imgcodecs_FileMode.regression/40 (2 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/41, where GetParam() = ("readwrite/color_palette_alpha.png", 4)
+[       OK ] All/Imgcodecs_FileMode.regression/41 (2 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/42, where GetParam() = ("readwrite/multipage.tif", -1)
+[       OK ] All/Imgcodecs_FileMode.regression/42 (89 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/43, where GetParam() = ("readwrite/multipage.tif", 0)
+[       OK ] All/Imgcodecs_FileMode.regression/43 (80 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/44, where GetParam() = ("readwrite/multipage.tif", 1)
+[       OK ] All/Imgcodecs_FileMode.regression/44 (83 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/45, where GetParam() = ("readwrite/multipage.tif", 256)
+[       OK ] All/Imgcodecs_FileMode.regression/45 (84 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/46, where GetParam() = ("readwrite/multipage.tif", 2)
+[       OK ] All/Imgcodecs_FileMode.regression/46 (80 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/47, where GetParam() = ("readwrite/multipage.tif", 4)
+[       OK ] All/Imgcodecs_FileMode.regression/47 (83 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/48, where GetParam() = ("readwrite/ordinary.bmp", -1)
+[       OK ] All/Imgcodecs_FileMode.regression/48 (8 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/49, where GetParam() = ("readwrite/ordinary.bmp", 0)
+[       OK ] All/Imgcodecs_FileMode.regression/49 (5 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/50, where GetParam() = ("readwrite/ordinary.bmp", 1)
+[       OK ] All/Imgcodecs_FileMode.regression/50 (5 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/51, where GetParam() = ("readwrite/ordinary.bmp", 256)
+[       OK ] All/Imgcodecs_FileMode.regression/51 (4 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/52, where GetParam() = ("readwrite/ordinary.bmp", 2)
+[       OK ] All/Imgcodecs_FileMode.regression/52 (5 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/53, where GetParam() = ("readwrite/ordinary.bmp", 4)
+[       OK ] All/Imgcodecs_FileMode.regression/53 (4 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/54, where GetParam() = ("readwrite/rle8.bmp", -1)
+[       OK ] All/Imgcodecs_FileMode.regression/54 (4 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/55, where GetParam() = ("readwrite/rle8.bmp", 0)
+[       OK ] All/Imgcodecs_FileMode.regression/55 (3 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/56, where GetParam() = ("readwrite/rle8.bmp", 1)
+[       OK ] All/Imgcodecs_FileMode.regression/56 (3 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/57, where GetParam() = ("readwrite/rle8.bmp", 256)
+[       OK ] All/Imgcodecs_FileMode.regression/57 (4 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/58, where GetParam() = ("readwrite/rle8.bmp", 2)
+[       OK ] All/Imgcodecs_FileMode.regression/58 (3 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/59, where GetParam() = ("readwrite/rle8.bmp", 4)
+[       OK ] All/Imgcodecs_FileMode.regression/59 (3 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/60, where GetParam() = ("readwrite/test_1_c1.jpg", -1)
+[       OK ] All/Imgcodecs_FileMode.regression/60 (5 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/61, where GetParam() = ("readwrite/test_1_c1.jpg", 0)
+[       OK ] All/Imgcodecs_FileMode.regression/61 (3 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/62, where GetParam() = ("readwrite/test_1_c1.jpg", 1)
+[       OK ] All/Imgcodecs_FileMode.regression/62 (5 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/63, where GetParam() = ("readwrite/test_1_c1.jpg", 256)
+[       OK ] All/Imgcodecs_FileMode.regression/63 (5 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/64, where GetParam() = ("readwrite/test_1_c1.jpg", 2)
+[       OK ] All/Imgcodecs_FileMode.regression/64 (4 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/65, where GetParam() = ("readwrite/test_1_c1.jpg", 4)
+[       OK ] All/Imgcodecs_FileMode.regression/65 (3 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/66, where GetParam() = ("readwrite/rle.hdr", -1)
+[       OK ] All/Imgcodecs_FileMode.regression/66 (18 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/67, where GetParam() = ("readwrite/rle.hdr", 0)
+[       OK ] All/Imgcodecs_FileMode.regression/67 (16 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/68, where GetParam() = ("readwrite/rle.hdr", 1)
+[       OK ] All/Imgcodecs_FileMode.regression/68 (16 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/69, where GetParam() = ("readwrite/rle.hdr", 256)
+[       OK ] All/Imgcodecs_FileMode.regression/69 (20 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/70, where GetParam() = ("readwrite/rle.hdr", 2)
+[       OK ] All/Imgcodecs_FileMode.regression/70 (24 ms)
+[ RUN      ] All/Imgcodecs_FileMode.regression/71, where GetParam() = ("readwrite/rle.hdr", 4)
+[       OK ] All/Imgcodecs_FileMode.regression/71 (27 ms)
+[----------] 72 tests from All/Imgcodecs_FileMode (22637 ms total)
+
+[----------] 4 tests from GDAL/Imgcodecs_FileMode
+[ RUN      ] GDAL/Imgcodecs_FileMode.regression/0, where GetParam() = ("readwrite/color_palette_alpha.png", 8)
+[       OK ] GDAL/Imgcodecs_FileMode.regression/0 (2 ms)
+[ RUN      ] GDAL/Imgcodecs_FileMode.regression/1, where GetParam() = ("readwrite/multipage.tif", 8)
+[       OK ] GDAL/Imgcodecs_FileMode.regression/1 (83 ms)
+[ RUN      ] GDAL/Imgcodecs_FileMode.regression/2, where GetParam() = ("readwrite/ordinary.bmp", 8)
+[       OK ] GDAL/Imgcodecs_FileMode.regression/2 (4 ms)
+[ RUN      ] GDAL/Imgcodecs_FileMode.regression/3, where GetParam() = ("readwrite/test_1_c1.jpg", 8)
+[       OK ] GDAL/Imgcodecs_FileMode.regression/3 (4 ms)
+[----------] 4 tests from GDAL/Imgcodecs_FileMode (94 ms total)
+
+[----------] 60 tests from All/Imgcodecs_ExtSize
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/0, where GetParam() = (".png", 640x480)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/0 (15 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/1, where GetParam() = (".png", 1280x960)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/1 (59 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/2, where GetParam() = (".png", 1920x1440)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/2 (133 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/3, where GetParam() = (".png", 2560x1920)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/3 (241 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/4, where GetParam() = (".png", 3200x2400)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/4 (375 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/5, where GetParam() = (".tiff", 640x480)
+[ WARN:0@36.753] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/5 (33 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/6, where GetParam() = (".tiff", 1280x960)
+[ WARN:0@36.859] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/6 (128 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/7, where GetParam() = (".tiff", 1920x1440)
+[ WARN:0@37.108] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/7 (286 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/8, where GetParam() = (".tiff", 2560x1920)
+[ WARN:0@37.557] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/8 (497 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/9, where GetParam() = (".tiff", 3200x2400)
+[ WARN:0@38.262] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/9 (782 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/10, where GetParam() = (".jpg", 640x480)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/10 (14 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/11, where GetParam() = (".jpg", 1280x960)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/11 (53 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/12, where GetParam() = (".jpg", 1920x1440)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/12 (119 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/13, where GetParam() = (".jpg", 2560x1920)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/13 (212 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/14, where GetParam() = (".jpg", 3200x2400)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/14 (329 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/15, where GetParam() = (".bmp", 640x480)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/15 (8 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/16, where GetParam() = (".bmp", 1280x960)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/16 (33 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/17, where GetParam() = (".bmp", 1920x1440)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/17 (74 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/18, where GetParam() = (".bmp", 2560x1920)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/18 (132 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/19, where GetParam() = (".bmp", 3200x2400)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/19 (205 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/20, where GetParam() = (".pam", 640x480)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/20 (8 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/21, where GetParam() = (".pam", 1280x960)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/21 (31 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/22, where GetParam() = (".pam", 1920x1440)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/22 (72 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/23, where GetParam() = (".pam", 2560x1920)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/23 (128 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/24, where GetParam() = (".pam", 3200x2400)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/24 (201 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/25, where GetParam() = (".ppm", 640x480)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/25 (118 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/26, where GetParam() = (".ppm", 1280x960)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/26 (474 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/27, where GetParam() = (".ppm", 1920x1440)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/27 (1065 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/28, where GetParam() = (".ppm", 2560x1920)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/28 (1912 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/29, where GetParam() = (".ppm", 3200x2400)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/29 (2967 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/30, where GetParam() = (".pgm", 640x480)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/30 (38 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/31, where GetParam() = (".pgm", 1280x960)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/31 (152 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/32, where GetParam() = (".pgm", 1920x1440)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/32 (346 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/33, where GetParam() = (".pgm", 2560x1920)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/33 (611 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/34, where GetParam() = (".pgm", 3200x2400)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/34 (948 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/35, where GetParam() = (".pbm", 640x480)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/35 (4 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/36, where GetParam() = (".pbm", 1280x960)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/36 (13 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/37, where GetParam() = (".pbm", 1920x1440)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/37 (30 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/38, where GetParam() = (".pbm", 2560x1920)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/38 (52 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/39, where GetParam() = (".pbm", 3200x2400)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/39 (82 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/40, where GetParam() = (".pnm", 640x480)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/40 (10 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/41, where GetParam() = (".pnm", 1280x960)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/41 (33 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/42, where GetParam() = (".pnm", 1920x1440)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/42 (75 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/43, where GetParam() = (".pnm", 2560x1920)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/43 (136 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/44, where GetParam() = (".pnm", 3200x2400)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/44 (224 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/45, where GetParam() = (".pfm", 640x480)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/45 (19 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/46, where GetParam() = (".pfm", 1280x960)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/46 (69 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/47, where GetParam() = (".pfm", 1920x1440)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/47 (186 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/48, where GetParam() = (".pfm", 2560x1920)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/48 (388 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/49, where GetParam() = (".pfm", 3200x2400)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/49 (573 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/50, where GetParam() = (".gif", 640x480)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/50 (21 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/51, where GetParam() = (".gif", 1280x960)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/51 (81 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/52, where GetParam() = (".gif", 1920x1440)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/52 (181 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/53, where GetParam() = (".gif", 2560x1920)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/53 (345 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/54, where GetParam() = (".gif", 3200x2400)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/54 (562 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/55, where GetParam() = (".webp", 640x480)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/55 (10 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/56, where GetParam() = (".webp", 1280x960)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/56 (34 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/57, where GetParam() = (".webp", 1920x1440)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/57 (74 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/58, where GetParam() = (".webp", 2560x1920)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/58 (131 ms)
+[ RUN      ] All/Imgcodecs_ExtSize.write_imageseq/59, where GetParam() = (".webp", 3200x2400)
+[       OK ] All/Imgcodecs_ExtSize.write_imageseq/59 (222 ms)
+[----------] 60 tests from All/Imgcodecs_ExtSize (16355 ms total)
+
+[----------] 2 tests from All/Imgcodecs_pbm
+[ RUN      ] All/Imgcodecs_pbm.write_read/0, where GetParam() = false
+[       OK ] All/Imgcodecs_pbm.write_read/0 (3 ms)
+[ RUN      ] All/Imgcodecs_pbm.write_read/1, where GetParam() = true
+[       OK ] All/Imgcodecs_pbm.write_read/1 (1 ms)
+[----------] 2 tests from All/Imgcodecs_pbm (4 ms total)
+
+[----------] 24 tests from All/Imgcodecs_invalid_key
+[ RUN      ] All/Imgcodecs_invalid_key.encode_regression27557/0, where GetParam() = ".png"
+[ WARN:0@52.264] global loadsave.cpp:1718 imencodeWithMetadata An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.encode_regression27557/0 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.encode_regression27557/1, where GetParam() = ".tiff"
+[ WARN:0@52.264] global loadsave.cpp:1718 imencodeWithMetadata An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.encode_regression27557/1 (1 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.encode_regression27557/2, where GetParam() = ".jpg"
+[ WARN:0@52.265] global loadsave.cpp:1718 imencodeWithMetadata An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.encode_regression27557/2 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.encode_regression27557/3, where GetParam() = ".bmp"
+[ WARN:0@52.265] global loadsave.cpp:1718 imencodeWithMetadata An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.encode_regression27557/3 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.encode_regression27557/4, where GetParam() = ".pam"
+[ WARN:0@52.265] global loadsave.cpp:1718 imencodeWithMetadata An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.encode_regression27557/4 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.encode_regression27557/5, where GetParam() = ".ppm"
+[ WARN:0@52.265] global loadsave.cpp:1718 imencodeWithMetadata An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.encode_regression27557/5 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.encode_regression27557/6, where GetParam() = ".pgm"
+[ WARN:0@52.265] global loadsave.cpp:1718 imencodeWithMetadata An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.encode_regression27557/6 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.encode_regression27557/7, where GetParam() = ".pbm"
+[ WARN:0@52.265] global loadsave.cpp:1718 imencodeWithMetadata An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.encode_regression27557/7 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.encode_regression27557/8, where GetParam() = ".pnm"
+[ WARN:0@52.265] global loadsave.cpp:1718 imencodeWithMetadata An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.encode_regression27557/8 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.encode_regression27557/9, where GetParam() = ".pfm"
+[ WARN:0@52.265] global loadsave.cpp:1718 imencodeWithMetadata An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.encode_regression27557/9 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.encode_regression27557/10, where GetParam() = ".gif"
+[ WARN:0@52.265] global loadsave.cpp:1718 imencodeWithMetadata An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.encode_regression27557/10 (1 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.encode_regression27557/11, where GetParam() = ".webp"
+[ WARN:0@52.266] global loadsave.cpp:1718 imencodeWithMetadata An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.encode_regression27557/11 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.write_regression27557/0, where GetParam() = ".png"
+[ WARN:0@52.266] global loadsave.cpp:1145 imwrite_ An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.write_regression27557/0 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.write_regression27557/1, where GetParam() = ".tiff"
+[ WARN:0@52.267] global loadsave.cpp:1145 imwrite_ An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.write_regression27557/1 (1 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.write_regression27557/2, where GetParam() = ".jpg"
+[ WARN:0@52.267] global loadsave.cpp:1145 imwrite_ An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.write_regression27557/2 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.write_regression27557/3, where GetParam() = ".bmp"
+[ WARN:0@52.267] global loadsave.cpp:1145 imwrite_ An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.write_regression27557/3 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.write_regression27557/4, where GetParam() = ".pam"
+[ WARN:0@52.267] global loadsave.cpp:1145 imwrite_ An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.write_regression27557/4 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.write_regression27557/5, where GetParam() = ".ppm"
+[ WARN:0@52.268] global loadsave.cpp:1145 imwrite_ An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.write_regression27557/5 (1 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.write_regression27557/6, where GetParam() = ".pgm"
+[ WARN:0@52.268] global loadsave.cpp:1145 imwrite_ An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.write_regression27557/6 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.write_regression27557/7, where GetParam() = ".pbm"
+[ WARN:0@52.268] global loadsave.cpp:1145 imwrite_ An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.write_regression27557/7 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.write_regression27557/8, where GetParam() = ".pnm"
+[ WARN:0@52.268] global loadsave.cpp:1145 imwrite_ An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.write_regression27557/8 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.write_regression27557/9, where GetParam() = ".pfm"
+[ WARN:0@52.268] global loadsave.cpp:1145 imwrite_ An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.write_regression27557/9 (0 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.write_regression27557/10, where GetParam() = ".gif"
+[ WARN:0@52.268] global loadsave.cpp:1145 imwrite_ An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.write_regression27557/10 (1 ms)
+[ RUN      ] All/Imgcodecs_invalid_key.write_regression27557/11, where GetParam() = ".webp"
+[ WARN:0@52.269] global loadsave.cpp:1145 imwrite_ An unknown key(-1) was specified and has been ignored.
+[       OK ] All/Imgcodecs_invalid_key.write_regression27557/11 (0 ms)
+[----------] 24 tests from All/Imgcodecs_invalid_key (5 ms total)
+
+[----------] 2 tests from All/Imgcodecs_bmp_compress
+[ RUN      ] All/Imgcodecs_bmp_compress.rgba32bpp/0, where GetParam() = IMWRITE_BMP_COMPRESSION_RGB
+[       OK ] All/Imgcodecs_bmp_compress.rgba32bpp/0 (1 ms)
+[ RUN      ] All/Imgcodecs_bmp_compress.rgba32bpp/1, where GetParam() = IMWRITE_BMP_COMPRESSION_BITFIELDS
+[       OK ] All/Imgcodecs_bmp_compress.rgba32bpp/1 (2 ms)
+[----------] 2 tests from All/Imgcodecs_bmp_compress (3 ms total)
+
+[----------] 4 tests from Imgcodecs_Jpeg_decode_cmyk
+[ RUN      ] Imgcodecs_Jpeg_decode_cmyk.regression25274/0, where GetParam() = 1
+[       OK ] Imgcodecs_Jpeg_decode_cmyk.regression25274/0 (16 ms)
+[ RUN      ] Imgcodecs_Jpeg_decode_cmyk.regression25274/1, where GetParam() = 256
+[       OK ] Imgcodecs_Jpeg_decode_cmyk.regression25274/1 (11 ms)
+[ RUN      ] Imgcodecs_Jpeg_decode_cmyk.regression25274/2, where GetParam() = 0
+[       OK ] Imgcodecs_Jpeg_decode_cmyk.regression25274/2 (7 ms)
+[ RUN      ] Imgcodecs_Jpeg_decode_cmyk.regression25274/3, where GetParam() = 4
+[       OK ] Imgcodecs_Jpeg_decode_cmyk.regression25274/3 (11 ms)
+[----------] 4 tests from Imgcodecs_Jpeg_decode_cmyk (45 ms total)
+
+[----------] 9 tests from Imgcodecs_Jpeg_encode_withLumaChromaQuality
+[ RUN      ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/0, where GetParam() = (70, 70)
+[       OK ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/0 (30 ms)
+[ RUN      ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/1, where GetParam() = (70, 95)
+[       OK ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/1 (31 ms)
+[ RUN      ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/2, where GetParam() = (70, 100)
+[       OK ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/2 (34 ms)
+[ RUN      ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/3, where GetParam() = (95, 70)
+[       OK ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/3 (32 ms)
+[ RUN      ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/4, where GetParam() = (95, 95)
+[       OK ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/4 (29 ms)
+[ RUN      ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/5, where GetParam() = (95, 100)
+[       OK ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/5 (34 ms)
+[ RUN      ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/6, where GetParam() = (100, 70)
+[       OK ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/6 (32 ms)
+[ RUN      ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/7, where GetParam() = (100, 95)
+[       OK ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/7 (33 ms)
+[ RUN      ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/8, where GetParam() = (100, 100)
+[       OK ] Imgcodecs_Jpeg_encode_withLumaChromaQuality.basic/8 (30 ms)
+[----------] 9 tests from Imgcodecs_Jpeg_encode_withLumaChromaQuality (285 ms total)
+
+[----------] 151 tests from Imgcodecs_Png_PngSuite
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/0, where GetParam() = "basi0g01"
+[       OK ] Imgcodecs_Png_PngSuite.decode/0 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/1, where GetParam() = "basi0g02"
+[       OK ] Imgcodecs_Png_PngSuite.decode/1 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/2, where GetParam() = "basi0g04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/2 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/3, where GetParam() = "basi0g08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/3 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/4, where GetParam() = "basi0g16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/4 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/5, where GetParam() = "basi2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/5 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/6, where GetParam() = "basi2c16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/6 (11 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/7, where GetParam() = "basi3p01"
+[       OK ] Imgcodecs_Png_PngSuite.decode/7 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/8, where GetParam() = "basi3p02"
+[       OK ] Imgcodecs_Png_PngSuite.decode/8 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/9, where GetParam() = "basi3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/9 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/10, where GetParam() = "basi3p08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/10 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/11, where GetParam() = "basi4a08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/11 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/12, where GetParam() = "basi4a16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/12 (11 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/13, where GetParam() = "basi6a08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/13 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/14, where GetParam() = "basi6a16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/14 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/15, where GetParam() = "basn0g01"
+[       OK ] Imgcodecs_Png_PngSuite.decode/15 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/16, where GetParam() = "basn0g02"
+[       OK ] Imgcodecs_Png_PngSuite.decode/16 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/17, where GetParam() = "basn0g04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/17 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/18, where GetParam() = "basn0g08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/18 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/19, where GetParam() = "basn0g16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/19 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/20, where GetParam() = "basn2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/20 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/21, where GetParam() = "basn2c16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/21 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/22, where GetParam() = "basn3p01"
+[       OK ] Imgcodecs_Png_PngSuite.decode/22 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/23, where GetParam() = "basn3p02"
+[       OK ] Imgcodecs_Png_PngSuite.decode/23 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/24, where GetParam() = "basn3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/24 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/25, where GetParam() = "basn3p08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/25 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/26, where GetParam() = "basn4a08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/26 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/27, where GetParam() = "basn4a16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/27 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/28, where GetParam() = "basn6a08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/28 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/29, where GetParam() = "basn6a16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/29 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/30, where GetParam() = "bgai4a08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/30 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/31, where GetParam() = "bgai4a16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/31 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/32, where GetParam() = "bgan6a08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/32 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/33, where GetParam() = "bgan6a16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/33 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/34, where GetParam() = "bgbn4a08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/34 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/35, where GetParam() = "bggn4a16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/35 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/36, where GetParam() = "bgwn6a08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/36 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/37, where GetParam() = "bgyn6a16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/37 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/38, where GetParam() = "ccwn2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/38 (11 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/39, where GetParam() = "ccwn3p08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/39 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/40, where GetParam() = "cdfn2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/40 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/41, where GetParam() = "cdhn2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/41 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/42, where GetParam() = "cdsn2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/42 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/43, where GetParam() = "cdun2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/43 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/44, where GetParam() = "ch1n3p04"
+libpng warning: hIST: out of place
+libpng warning: hIST: out of place
+libpng warning: hIST: out of place
+libpng warning: hIST: out of place
+libpng warning: hIST: out of place
+libpng warning: hIST: out of place
+libpng warning: hIST: out of place
+[       OK ] Imgcodecs_Png_PngSuite.decode/44 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/45, where GetParam() = "ch2n3p08"
+libpng warning: hIST: out of place
+libpng warning: hIST: out of place
+libpng warning: hIST: out of place
+libpng warning: hIST: out of place
+libpng warning: hIST: out of place
+libpng warning: hIST: out of place
+libpng warning: hIST: out of place
+[       OK ] Imgcodecs_Png_PngSuite.decode/45 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/46, where GetParam() = "cm0n0g04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/46 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/47, where GetParam() = "cm7n0g04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/47 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/48, where GetParam() = "cm9n0g04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/48 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/49, where GetParam() = "cs3n2c16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/49 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/50, where GetParam() = "cs3n3p08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/50 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/51, where GetParam() = "cs5n2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/51 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/52, where GetParam() = "cs5n3p08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/52 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/53, where GetParam() = "cs8n2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/53 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/54, where GetParam() = "cs8n3p08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/54 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/55, where GetParam() = "ct0n0g04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/55 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/56, where GetParam() = "ct1n0g04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/56 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/57, where GetParam() = "cten0g04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/57 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/58, where GetParam() = "ctfn0g04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/58 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/59, where GetParam() = "ctgn0g04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/59 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/60, where GetParam() = "cthn0g04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/60 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/61, where GetParam() = "ctjn0g04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/61 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/62, where GetParam() = "ctzn0g04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/62 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/63, where GetParam() = "exif2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/63 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/64, where GetParam() = "f00n0g08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/64 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/65, where GetParam() = "f00n2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/65 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/66, where GetParam() = "f01n0g08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/66 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/67, where GetParam() = "f01n2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/67 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/68, where GetParam() = "f02n0g08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/68 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/69, where GetParam() = "f02n2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/69 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/70, where GetParam() = "f03n0g08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/70 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/71, where GetParam() = "f03n2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/71 (11 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/72, where GetParam() = "f04n0g08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/72 (11 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/73, where GetParam() = "f04n2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/73 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/74, where GetParam() = "f99n0g04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/74 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/75, where GetParam() = "g03n0g16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/75 (18 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/76, where GetParam() = "g04n0g16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/76 (19 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/77, where GetParam() = "g05n0g16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/77 (19 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/78, where GetParam() = "g07n0g16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/78 (18 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/79, where GetParam() = "g10n0g16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/79 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/80, where GetParam() = "g10n2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/80 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/81, where GetParam() = "g10n3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/81 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/82, where GetParam() = "g25n0g16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/82 (18 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/83, where GetParam() = "oi1n0g16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/83 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/84, where GetParam() = "oi1n2c16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/84 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/85, where GetParam() = "oi2n0g16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/85 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/86, where GetParam() = "oi2n2c16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/86 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/87, where GetParam() = "oi4n0g16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/87 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/88, where GetParam() = "oi4n2c16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/88 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/89, where GetParam() = "oi9n0g16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/89 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/90, where GetParam() = "oi9n2c16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/90 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/91, where GetParam() = "pp0n2c16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/91 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/92, where GetParam() = "pp0n6a08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/92 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/93, where GetParam() = "ps1n0g08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/93 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/94, where GetParam() = "ps1n2c16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/94 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/95, where GetParam() = "ps2n0g08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/95 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/96, where GetParam() = "ps2n2c16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/96 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/97, where GetParam() = "s01i3p01"
+[       OK ] Imgcodecs_Png_PngSuite.decode/97 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/98, where GetParam() = "s01n3p01"
+[       OK ] Imgcodecs_Png_PngSuite.decode/98 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/99, where GetParam() = "s02i3p01"
+[       OK ] Imgcodecs_Png_PngSuite.decode/99 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/100, where GetParam() = "s02n3p01"
+[       OK ] Imgcodecs_Png_PngSuite.decode/100 (7 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/101, where GetParam() = "s03i3p01"
+[       OK ] Imgcodecs_Png_PngSuite.decode/101 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/102, where GetParam() = "s03n3p01"
+[       OK ] Imgcodecs_Png_PngSuite.decode/102 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/103, where GetParam() = "s04i3p01"
+[       OK ] Imgcodecs_Png_PngSuite.decode/103 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/104, where GetParam() = "s04n3p01"
+[       OK ] Imgcodecs_Png_PngSuite.decode/104 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/105, where GetParam() = "s05i3p02"
+[       OK ] Imgcodecs_Png_PngSuite.decode/105 (7 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/106, where GetParam() = "s05n3p02"
+[       OK ] Imgcodecs_Png_PngSuite.decode/106 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/107, where GetParam() = "s06i3p02"
+[       OK ] Imgcodecs_Png_PngSuite.decode/107 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/108, where GetParam() = "s06n3p02"
+[       OK ] Imgcodecs_Png_PngSuite.decode/108 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/109, where GetParam() = "s07i3p02"
+[       OK ] Imgcodecs_Png_PngSuite.decode/109 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/110, where GetParam() = "s07n3p02"
+[       OK ] Imgcodecs_Png_PngSuite.decode/110 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/111, where GetParam() = "s08i3p02"
+[       OK ] Imgcodecs_Png_PngSuite.decode/111 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/112, where GetParam() = "s08n3p02"
+[       OK ] Imgcodecs_Png_PngSuite.decode/112 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/113, where GetParam() = "s09i3p02"
+[       OK ] Imgcodecs_Png_PngSuite.decode/113 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/114, where GetParam() = "s09n3p02"
+[       OK ] Imgcodecs_Png_PngSuite.decode/114 (7 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/115, where GetParam() = "s32i3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/115 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/116, where GetParam() = "s32n3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/116 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/117, where GetParam() = "s33i3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/117 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/118, where GetParam() = "s33n3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/118 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/119, where GetParam() = "s34i3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/119 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/120, where GetParam() = "s34n3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/120 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/121, where GetParam() = "s35i3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/121 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/122, where GetParam() = "s35n3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/122 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/123, where GetParam() = "s36i3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/123 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/124, where GetParam() = "s36n3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/124 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/125, where GetParam() = "s37i3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/125 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/126, where GetParam() = "s37n3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/126 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/127, where GetParam() = "s38i3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/127 (8 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/128, where GetParam() = "s38n3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/128 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/129, where GetParam() = "s39i3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/129 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/130, where GetParam() = "s39n3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/130 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/131, where GetParam() = "s40i3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/131 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/132, where GetParam() = "s40n3p04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/132 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/133, where GetParam() = "tbbn0g04"
+[       OK ] Imgcodecs_Png_PngSuite.decode/133 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/134, where GetParam() = "tbbn2c16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/134 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/135, where GetParam() = "tbbn3p08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/135 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/136, where GetParam() = "tbgn2c16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/136 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/137, where GetParam() = "tbgn3p08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/137 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/138, where GetParam() = "tbrn2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/138 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/139, where GetParam() = "tbwn0g16"
+[       OK ] Imgcodecs_Png_PngSuite.decode/139 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/140, where GetParam() = "tbwn3p08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/140 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/141, where GetParam() = "tbyn3p08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/141 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/142, where GetParam() = "tm3n3p02"
+[       OK ] Imgcodecs_Png_PngSuite.decode/142 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/143, where GetParam() = "tp0n0g08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/143 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/144, where GetParam() = "tp0n2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/144 (11 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/145, where GetParam() = "tp0n3p08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/145 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/146, where GetParam() = "tp1n3p08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/146 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/147, where GetParam() = "z00n2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/147 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/148, where GetParam() = "z03n2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/148 (10 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/149, where GetParam() = "z06n2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/149 (9 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite.decode/150, where GetParam() = "z09n2c08"
+[       OK ] Imgcodecs_Png_PngSuite.decode/150 (10 ms)
+[----------] 151 tests from Imgcodecs_Png_PngSuite (1429 ms total)
+
+[----------] 10 tests from Imgcodecs_Png_PngSuite_Gamma
+[ RUN      ] Imgcodecs_Png_PngSuite_Gamma.decode/0, where GetParam() = "g03n2c08"
+[       OK ] Imgcodecs_Png_PngSuite_Gamma.decode/0 (3 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Gamma.decode/1, where GetParam() = "g03n3p04"
+[       OK ] Imgcodecs_Png_PngSuite_Gamma.decode/1 (3 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Gamma.decode/2, where GetParam() = "g04n2c08"
+[       OK ] Imgcodecs_Png_PngSuite_Gamma.decode/2 (3 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Gamma.decode/3, where GetParam() = "g04n3p04"
+[       OK ] Imgcodecs_Png_PngSuite_Gamma.decode/3 (4 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Gamma.decode/4, where GetParam() = "g05n2c08"
+[       OK ] Imgcodecs_Png_PngSuite_Gamma.decode/4 (3 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Gamma.decode/5, where GetParam() = "g05n3p04"
+[       OK ] Imgcodecs_Png_PngSuite_Gamma.decode/5 (3 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Gamma.decode/6, where GetParam() = "g07n2c08"
+[       OK ] Imgcodecs_Png_PngSuite_Gamma.decode/6 (4 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Gamma.decode/7, where GetParam() = "g07n3p04"
+[       OK ] Imgcodecs_Png_PngSuite_Gamma.decode/7 (3 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Gamma.decode/8, where GetParam() = "g25n2c08"
+[       OK ] Imgcodecs_Png_PngSuite_Gamma.decode/8 (3 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Gamma.decode/9, where GetParam() = "g25n3p04"
+[       OK ] Imgcodecs_Png_PngSuite_Gamma.decode/9 (4 ms)
+[----------] 10 tests from Imgcodecs_Png_PngSuite_Gamma (33 ms total)
+
+[----------] 14 tests from Imgcodecs_Png_PngSuite_Corrupted
+[ RUN      ] Imgcodecs_Png_PngSuite_Corrupted.decode/0, where GetParam() = "xc1n0g08"
+libpng warning: Invalid color type in IHDR
+libpng error: Invalid IHDR data
+[       OK ] Imgcodecs_Png_PngSuite_Corrupted.decode/0 (2 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Corrupted.decode/1, where GetParam() = "xc9n2c08"
+libpng warning: Invalid color type in IHDR
+libpng error: Invalid IHDR data
+[       OK ] Imgcodecs_Png_PngSuite_Corrupted.decode/1 (2 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Corrupted.decode/2, where GetParam() = "xcrn0g04"
+[       OK ] Imgcodecs_Png_PngSuite_Corrupted.decode/2 (1 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Corrupted.decode/3, where GetParam() = "xcsn0g01"
+libpng error: IDAT: CRC error
+[       OK ] Imgcodecs_Png_PngSuite_Corrupted.decode/3 (2 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Corrupted.decode/4, where GetParam() = "xd0n2c08"
+libpng warning: Invalid bit depth in IHDR
+libpng warning: Invalid color type/bit depth combination in IHDR
+libpng error: Invalid IHDR data
+[       OK ] Imgcodecs_Png_PngSuite_Corrupted.decode/4 (1 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Corrupted.decode/5, where GetParam() = "xd3n2c08"
+libpng warning: Invalid bit depth in IHDR
+libpng warning: Invalid color type/bit depth combination in IHDR
+libpng error: Invalid IHDR data
+[       OK ] Imgcodecs_Png_PngSuite_Corrupted.decode/5 (2 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Corrupted.decode/6, where GetParam() = "xd9n2c08"
+libpng warning: Invalid bit depth in IHDR
+libpng error: Invalid IHDR data
+[       OK ] Imgcodecs_Png_PngSuite_Corrupted.decode/6 (2 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Corrupted.decode/7, where GetParam() = "xdtn0g01"
+[       OK ] Imgcodecs_Png_PngSuite_Corrupted.decode/7 (1 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Corrupted.decode/8, where GetParam() = "xhdn0g08"
+libpng error: IHDR: CRC error
+[       OK ] Imgcodecs_Png_PngSuite_Corrupted.decode/8 (2 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Corrupted.decode/9, where GetParam() = "xlfn0g04"
+[       OK ] Imgcodecs_Png_PngSuite_Corrupted.decode/9 (1 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Corrupted.decode/10, where GetParam() = "xs1n0g01"
+[       OK ] Imgcodecs_Png_PngSuite_Corrupted.decode/10 (1 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Corrupted.decode/11, where GetParam() = "xs2n0g01"
+[       OK ] Imgcodecs_Png_PngSuite_Corrupted.decode/11 (1 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Corrupted.decode/12, where GetParam() = "xs4n0g01"
+[       OK ] Imgcodecs_Png_PngSuite_Corrupted.decode/12 (1 ms)
+[ RUN      ] Imgcodecs_Png_PngSuite_Corrupted.decode/13, where GetParam() = "xs7n0g01"
+[       OK ] Imgcodecs_Png_PngSuite_Corrupted.decode/13 (2 ms)
+[----------] 14 tests from Imgcodecs_Png_PngSuite_Corrupted (21 ms total)
+
+[----------] 13 tests from Imgcodecs_Png_Encode
+[ RUN      ] Imgcodecs_Png_Encode.params/0, where GetParam() = ("f00n0g08.png", IMWRITE_PNG_STRATEGY_DEFAULT, IMWRITE_PNG_FILTER_NONE, 6)
+[       OK ] Imgcodecs_Png_Encode.params/0 (0 ms)
+[ RUN      ] Imgcodecs_Png_Encode.params/1, where GetParam() = ("f00n2c08.png", IMWRITE_PNG_STRATEGY_DEFAULT, IMWRITE_PNG_FILTER_NONE, 6)
+[       OK ] Imgcodecs_Png_Encode.params/1 (1 ms)
+[ RUN      ] Imgcodecs_Png_Encode.params/2, where GetParam() = ("f01n0g08.png", IMWRITE_PNG_STRATEGY_FILTERED, IMWRITE_PNG_FILTER_SUB, 6)
+[       OK ] Imgcodecs_Png_Encode.params/2 (1 ms)
+[ RUN      ] Imgcodecs_Png_Encode.params/3, where GetParam() = ("f01n2c08.png", IMWRITE_PNG_STRATEGY_FILTERED, IMWRITE_PNG_FILTER_SUB, 6)
+[       OK ] Imgcodecs_Png_Encode.params/3 (1 ms)
+[ RUN      ] Imgcodecs_Png_Encode.params/4, where GetParam() = ("f02n0g08.png", IMWRITE_PNG_STRATEGY_FILTERED, IMWRITE_PNG_FILTER_UP, 6)
+[       OK ] Imgcodecs_Png_Encode.params/4 (0 ms)
+[ RUN      ] Imgcodecs_Png_Encode.params/5, where GetParam() = ("f02n2c08.png", IMWRITE_PNG_STRATEGY_FILTERED, IMWRITE_PNG_FILTER_UP, 6)
+[       OK ] Imgcodecs_Png_Encode.params/5 (1 ms)
+[ RUN      ] Imgcodecs_Png_Encode.params/6, where GetParam() = ("f03n0g08.png", IMWRITE_PNG_STRATEGY_FILTERED, IMWRITE_PNG_FILTER_AVG, 6)
+[       OK ] Imgcodecs_Png_Encode.params/6 (1 ms)
+[ RUN      ] Imgcodecs_Png_Encode.params/7, where GetParam() = ("f03n2c08.png", IMWRITE_PNG_STRATEGY_FILTERED, IMWRITE_PNG_FILTER_AVG, 6)
+[       OK ] Imgcodecs_Png_Encode.params/7 (0 ms)
+[ RUN      ] Imgcodecs_Png_Encode.params/8, where GetParam() = ("f04n0g08.png", IMWRITE_PNG_STRATEGY_FILTERED, IMWRITE_PNG_FILTER_PAETH, 6)
+[       OK ] Imgcodecs_Png_Encode.params/8 (1 ms)
+[ RUN      ] Imgcodecs_Png_Encode.params/9, where GetParam() = ("f04n2c08.png", IMWRITE_PNG_STRATEGY_FILTERED, IMWRITE_PNG_FILTER_PAETH, 6)
+[       OK ] Imgcodecs_Png_Encode.params/9 (1 ms)
+[ RUN      ] Imgcodecs_Png_Encode.params/10, where GetParam() = ("z03n2c08.png", IMWRITE_PNG_STRATEGY_FILTERED, IMWRITE_PNG_ALL_FILTERS, 3)
+[       OK ] Imgcodecs_Png_Encode.params/10 (0 ms)
+[ RUN      ] Imgcodecs_Png_Encode.params/11, where GetParam() = ("z06n2c08.png", IMWRITE_PNG_STRATEGY_FILTERED, IMWRITE_PNG_ALL_FILTERS, 6)
+[       OK ] Imgcodecs_Png_Encode.params/11 (1 ms)
+[ RUN      ] Imgcodecs_Png_Encode.params/12, where GetParam() = ("z09n2c08.png", IMWRITE_PNG_STRATEGY_FILTERED, IMWRITE_PNG_ALL_FILTERS, 9)
+[       OK ] Imgcodecs_Png_Encode.params/12 (1 ms)
+[----------] 13 tests from Imgcodecs_Png_Encode (9 ms total)
+
+[----------] 10 tests from Imgcodecs_Png_ImwriteFlags
+[ RUN      ] Imgcodecs_Png_ImwriteFlags.compression_level/0, where GetParam() = ("../perf/512x512.png", 0, 788279)
+[       OK ] Imgcodecs_Png_ImwriteFlags.compression_level/0 (15 ms)
+[ RUN      ] Imgcodecs_Png_ImwriteFlags.compression_level/1, where GetParam() = ("../perf/512x512.png", 1, 179503)
+[       OK ] Imgcodecs_Png_ImwriteFlags.compression_level/1 (21 ms)
+[ RUN      ] Imgcodecs_Png_ImwriteFlags.compression_level/2, where GetParam() = ("../perf/512x512.png", 2, 176007)
+[       OK ] Imgcodecs_Png_ImwriteFlags.compression_level/2 (22 ms)
+[ RUN      ] Imgcodecs_Png_ImwriteFlags.compression_level/3, where GetParam() = ("../perf/512x512.png", 3, 170497)
+[       OK ] Imgcodecs_Png_ImwriteFlags.compression_level/3 (25 ms)
+[ RUN      ] Imgcodecs_Png_ImwriteFlags.compression_level/4, where GetParam() = ("../perf/512x512.png", 4, 163357)
+[       OK ] Imgcodecs_Png_ImwriteFlags.compression_level/4 (26 ms)
+[ RUN      ] Imgcodecs_Png_ImwriteFlags.compression_level/5, where GetParam() = ("../perf/512x512.png", 5, 159190)
+[       OK ] Imgcodecs_Png_ImwriteFlags.compression_level/5 (30 ms)
+[ RUN      ] Imgcodecs_Png_ImwriteFlags.compression_level/6, where GetParam() = ("../perf/512x512.png", 6, 156621)
+[       OK ] Imgcodecs_Png_ImwriteFlags.compression_level/6 (40 ms)
+[ RUN      ] Imgcodecs_Png_ImwriteFlags.compression_level/7, where GetParam() = ("../perf/512x512.png", 7, 155696)
+[       OK ] Imgcodecs_Png_ImwriteFlags.compression_level/7 (50 ms)
+[ RUN      ] Imgcodecs_Png_ImwriteFlags.compression_level/8, where GetParam() = ("../perf/512x512.png", 8, 153708)
+[       OK ] Imgcodecs_Png_ImwriteFlags.compression_level/8 (92 ms)
+[ RUN      ] Imgcodecs_Png_ImwriteFlags.compression_level/9, where GetParam() = ("../perf/512x512.png", 9, 152181)
+[       OK ] Imgcodecs_Png_ImwriteFlags.compression_level/9 (165 ms)
+[----------] 10 tests from Imgcodecs_Png_ImwriteFlags (486 ms total)
+
+[----------] 7 tests from Imgcodecs_Png_ZLIBBUFFER_SIZE
+[ RUN      ] Imgcodecs_Png_ZLIBBUFFER_SIZE.encode_regression_27614/0, where GetParam() = 5
+[ WARN:0@54.581] global grfmt_png.cpp:1078 write The value(5) for IMWRITE_PNG_ZLIBBUFFER_SIZE must be between 6 to 1024*1024. It is fallbacked to 6
+[       OK ] Imgcodecs_Png_ZLIBBUFFER_SIZE.encode_regression_27614/0 (1 ms)
+[ RUN      ] Imgcodecs_Png_ZLIBBUFFER_SIZE.encode_regression_27614/1, where GetParam() = 6
+[       OK ] Imgcodecs_Png_ZLIBBUFFER_SIZE.encode_regression_27614/1 (1 ms)
+[ RUN      ] Imgcodecs_Png_ZLIBBUFFER_SIZE.encode_regression_27614/2, where GetParam() = 8192
+[       OK ] Imgcodecs_Png_ZLIBBUFFER_SIZE.encode_regression_27614/2 (1 ms)
+[ RUN      ] Imgcodecs_Png_ZLIBBUFFER_SIZE.encode_regression_27614/3, where GetParam() = 131072
+[       OK ] Imgcodecs_Png_ZLIBBUFFER_SIZE.encode_regression_27614/3 (1 ms)
+[ RUN      ] Imgcodecs_Png_ZLIBBUFFER_SIZE.encode_regression_27614/4, where GetParam() = 262144
+[       OK ] Imgcodecs_Png_ZLIBBUFFER_SIZE.encode_regression_27614/4 (1 ms)
+[ RUN      ] Imgcodecs_Png_ZLIBBUFFER_SIZE.encode_regression_27614/5, where GetParam() = 1048576
+[       OK ] Imgcodecs_Png_ZLIBBUFFER_SIZE.encode_regression_27614/5 (1 ms)
+[ RUN      ] Imgcodecs_Png_ZLIBBUFFER_SIZE.encode_regression_27614/6, where GetParam() = 1048577
+[ WARN:0@54.586] global grfmt_png.cpp:1078 write The value(1048577) for IMWRITE_PNG_ZLIBBUFFER_SIZE must be between 6 to 1024*1024. It is fallbacked to 1048576
+[       OK ] Imgcodecs_Png_ZLIBBUFFER_SIZE.encode_regression_27614/6 (0 ms)
+[----------] 7 tests from Imgcodecs_Png_ZLIBBUFFER_SIZE (6 ms total)
+
+[----------] 42 tests from Imgcodecs_Resize
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/0, where GetParam() = (("../cv/imgproc/stuff.jpg", 640x480), (IMREAD_UNCHANGED, 1))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/0 (6 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/1, where GetParam() = (("../cv/imgproc/stuff.jpg", 640x480), (IMREAD_GRAYSCALE | REDUCED_2, 2))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/1 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/2, where GetParam() = (("../cv/imgproc/stuff.jpg", 640x480), (IMREAD_GRAYSCALE | REDUCED_4, 4))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/2 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/3, where GetParam() = (("../cv/imgproc/stuff.jpg", 640x480), (IMREAD_GRAYSCALE | REDUCED_8, 8))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/3 (1 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/4, where GetParam() = (("../cv/imgproc/stuff.jpg", 640x480), (IMREAD_COLOR | REDUCED_2, 2))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/4 (3 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/5, where GetParam() = (("../cv/imgproc/stuff.jpg", 640x480), (IMREAD_COLOR | REDUCED_4, 4))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/5 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/6, where GetParam() = (("../cv/imgproc/stuff.jpg", 640x480), (IMREAD_COLOR | REDUCED_8, 8))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/6 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/7, where GetParam() = (("../cv/shared/pic1.png", 400x300), (IMREAD_UNCHANGED, 1))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/7 (3 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/8, where GetParam() = (("../cv/shared/pic1.png", 400x300), (IMREAD_GRAYSCALE | REDUCED_2, 2))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/8 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/9, where GetParam() = (("../cv/shared/pic1.png", 400x300), (IMREAD_GRAYSCALE | REDUCED_4, 4))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/9 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/10, where GetParam() = (("../cv/shared/pic1.png", 400x300), (IMREAD_GRAYSCALE | REDUCED_8, 8))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/10 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/11, where GetParam() = (("../cv/shared/pic1.png", 400x300), (IMREAD_COLOR | REDUCED_2, 2))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/11 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/12, where GetParam() = (("../cv/shared/pic1.png", 400x300), (IMREAD_COLOR | REDUCED_4, 4))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/12 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/13, where GetParam() = (("../cv/shared/pic1.png", 400x300), (IMREAD_COLOR | REDUCED_8, 8))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/13 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/14, where GetParam() = (("../highgui/readwrite/ordinary.bmp", 480x272), (IMREAD_UNCHANGED, 1))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/14 (4 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/15, where GetParam() = (("../highgui/readwrite/ordinary.bmp", 480x272), (IMREAD_GRAYSCALE | REDUCED_2, 2))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/15 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/16, where GetParam() = (("../highgui/readwrite/ordinary.bmp", 480x272), (IMREAD_GRAYSCALE | REDUCED_4, 4))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/16 (3 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/17, where GetParam() = (("../highgui/readwrite/ordinary.bmp", 480x272), (IMREAD_GRAYSCALE | REDUCED_8, 8))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/17 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/18, where GetParam() = (("../highgui/readwrite/ordinary.bmp", 480x272), (IMREAD_COLOR | REDUCED_2, 2))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/18 (3 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/19, where GetParam() = (("../highgui/readwrite/ordinary.bmp", 480x272), (IMREAD_COLOR | REDUCED_4, 4))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/19 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imread_reduce_flags/20, where GetParam() = (("../highgui/readwrite/ordinary.bmp", 480x272), (IMREAD_COLOR | REDUCED_8, 8))
+[       OK ] Imgcodecs_Resize.imread_reduce_flags/20 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/0, where GetParam() = (("../cv/imgproc/stuff.jpg", 640x480), (IMREAD_UNCHANGED, 1))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/0 (4 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/1, where GetParam() = (("../cv/imgproc/stuff.jpg", 640x480), (IMREAD_GRAYSCALE | REDUCED_2, 2))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/1 (1 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/2, where GetParam() = (("../cv/imgproc/stuff.jpg", 640x480), (IMREAD_GRAYSCALE | REDUCED_4, 4))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/2 (1 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/3, where GetParam() = (("../cv/imgproc/stuff.jpg", 640x480), (IMREAD_GRAYSCALE | REDUCED_8, 8))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/3 (1 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/4, where GetParam() = (("../cv/imgproc/stuff.jpg", 640x480), (IMREAD_COLOR | REDUCED_2, 2))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/4 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/5, where GetParam() = (("../cv/imgproc/stuff.jpg", 640x480), (IMREAD_COLOR | REDUCED_4, 4))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/5 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/6, where GetParam() = (("../cv/imgproc/stuff.jpg", 640x480), (IMREAD_COLOR | REDUCED_8, 8))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/6 (1 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/7, where GetParam() = (("../cv/shared/pic1.png", 400x300), (IMREAD_UNCHANGED, 1))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/7 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/8, where GetParam() = (("../cv/shared/pic1.png", 400x300), (IMREAD_GRAYSCALE | REDUCED_2, 2))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/8 (1 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/9, where GetParam() = (("../cv/shared/pic1.png", 400x300), (IMREAD_GRAYSCALE | REDUCED_4, 4))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/9 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/10, where GetParam() = (("../cv/shared/pic1.png", 400x300), (IMREAD_GRAYSCALE | REDUCED_8, 8))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/10 (1 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/11, where GetParam() = (("../cv/shared/pic1.png", 400x300), (IMREAD_COLOR | REDUCED_2, 2))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/11 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/12, where GetParam() = (("../cv/shared/pic1.png", 400x300), (IMREAD_COLOR | REDUCED_4, 4))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/12 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/13, where GetParam() = (("../cv/shared/pic1.png", 400x300), (IMREAD_COLOR | REDUCED_8, 8))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/13 (1 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/14, where GetParam() = (("../highgui/readwrite/ordinary.bmp", 480x272), (IMREAD_UNCHANGED, 1))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/14 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/15, where GetParam() = (("../highgui/readwrite/ordinary.bmp", 480x272), (IMREAD_GRAYSCALE | REDUCED_2, 2))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/15 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/16, where GetParam() = (("../highgui/readwrite/ordinary.bmp", 480x272), (IMREAD_GRAYSCALE | REDUCED_4, 4))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/16 (1 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/17, where GetParam() = (("../highgui/readwrite/ordinary.bmp", 480x272), (IMREAD_GRAYSCALE | REDUCED_8, 8))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/17 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/18, where GetParam() = (("../highgui/readwrite/ordinary.bmp", 480x272), (IMREAD_COLOR | REDUCED_2, 2))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/18 (2 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/19, where GetParam() = (("../highgui/readwrite/ordinary.bmp", 480x272), (IMREAD_COLOR | REDUCED_4, 4))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/19 (1 ms)
+[ RUN      ] Imgcodecs_Resize.imdecode_reduce_flags/20, where GetParam() = (("../highgui/readwrite/ordinary.bmp", 480x272), (IMREAD_COLOR | REDUCED_8, 8))
+[       OK ] Imgcodecs_Resize.imdecode_reduce_flags/20 (2 ms)
+[----------] 42 tests from Imgcodecs_Resize (86 ms total)
+
+[----------] 14 tests from imgcodecs/Imgcodecs_Image
+[ RUN      ] imgcodecs/Imgcodecs_Image.read_write_BGR/0, where GetParam() = "png"
+File size: 601470 bytes
+File size: 601470 bytes
+[       OK ] imgcodecs/Imgcodecs_Image.read_write_BGR/0 (106 ms)
+[ RUN      ] imgcodecs/Imgcodecs_Image.read_write_BGR/1, where GetParam() = "tiff"
+File size: 762014 bytes
+File size: 762014 bytes
+[       OK ] imgcodecs/Imgcodecs_Image.read_write_BGR/1 (88 ms)
+[ RUN      ] imgcodecs/Imgcodecs_Image.read_write_BGR/2, where GetParam() = "jpg"
+File size: 180453 bytes
+File size: 180453 bytes
+[       OK ] imgcodecs/Imgcodecs_Image.read_write_BGR/2 (57 ms)
+[ RUN      ] imgcodecs/Imgcodecs_Image.read_write_BGR/3, where GetParam() = "jp2"
+File size: 230288 bytes
+File size: 230288 bytes
+[       OK ] imgcodecs/Imgcodecs_Image.read_write_BGR/3 (686 ms)
+[ RUN      ] imgcodecs/Imgcodecs_Image.read_write_BGR/4, where GetParam() = "bmp"
+File size: 921654 bytes
+File size: 921654 bytes
+[       OK ] imgcodecs/Imgcodecs_Image.read_write_BGR/4 (13 ms)
+[ RUN      ] imgcodecs/Imgcodecs_Image.read_write_BGR/5, where GetParam() = "ppm"
+File size: 921615 bytes
+File size: 921615 bytes
+[       OK ] imgcodecs/Imgcodecs_Image.read_write_BGR/5 (17 ms)
+[ RUN      ] imgcodecs/Imgcodecs_Image.read_write_BGR/6, where GetParam() = "ras"
+File size: 921632 bytes
+File size: 921632 bytes
+[       OK ] imgcodecs/Imgcodecs_Image.read_write_BGR/6 (16 ms)
+[ RUN      ] imgcodecs/Imgcodecs_Image.read_write_GRAYSCALE/0, where GetParam() = "png"
+File size: 201110 bytes
+[       OK ] imgcodecs/Imgcodecs_Image.read_write_GRAYSCALE/0 (18 ms)
+[ RUN      ] imgcodecs/Imgcodecs_Image.read_write_GRAYSCALE/1, where GetParam() = "tiff"
+File size: 272320 bytes
+[       OK ] imgcodecs/Imgcodecs_Image.read_write_GRAYSCALE/1 (15 ms)
+[ RUN      ] imgcodecs/Imgcodecs_Image.read_write_GRAYSCALE/2, where GetParam() = "jpg"
+File size: 150148 bytes
+[       OK ] imgcodecs/Imgcodecs_Image.read_write_GRAYSCALE/2 (15 ms)
+[ RUN      ] imgcodecs/Imgcodecs_Image.read_write_GRAYSCALE/3, where GetParam() = "jp2"
+File size: 76696 bytes
+[       OK ] imgcodecs/Imgcodecs_Image.read_write_GRAYSCALE/3 (114 ms)
+[ RUN      ] imgcodecs/Imgcodecs_Image.read_write_GRAYSCALE/4, where GetParam() = "bmp"
+File size: 308278 bytes
+[       OK ] imgcodecs/Imgcodecs_Image.read_write_GRAYSCALE/4 (2 ms)
+[ RUN      ] imgcodecs/Imgcodecs_Image.read_write_GRAYSCALE/5, where GetParam() = "ppm"
+[     SKIP ] GRAYSCALE mode is not supported
+[       OK ] imgcodecs/Imgcodecs_Image.read_write_GRAYSCALE/5 (0 ms)
+[ RUN      ] imgcodecs/Imgcodecs_Image.read_write_GRAYSCALE/6, where GetParam() = "ras"
+[     SKIP ] GRAYSCALE mode is not supported
+[       OK ] imgcodecs/Imgcodecs_Image.read_write_GRAYSCALE/6 (0 ms)
+[----------] 14 tests from imgcodecs/Imgcodecs_Image (1147 ms total)
+
+[----------] 2 tests from Imgcodecs_Tiff/Imgcodecs_Tiff_decode_Huge
+[ RUN      ] Imgcodecs_Tiff/Imgcodecs_Tiff_decode_Huge.regression/0, where GetParam() = (1073479680, 8UC1, IMREAD_COLOR)
+[     SKIP ] Test with tag 'mem_6gb' is skipped ('mem_6gb' is in skip list)
+[       OK ] Imgcodecs_Tiff/Imgcodecs_Tiff_decode_Huge.regression/0 (4 ms)
+[ RUN      ] Imgcodecs_Tiff/Imgcodecs_Tiff_decode_Huge.regression/1, where GetParam() = (2147483648, 16UC4, IMREAD_COLOR)
+[     SKIP ] Test with tag 'mem_6gb' is skipped ('mem_6gb' is in skip list)
+[       OK ] Imgcodecs_Tiff/Imgcodecs_Tiff_decode_Huge.regression/1 (1 ms)
+[----------] 2 tests from Imgcodecs_Tiff/Imgcodecs_Tiff_decode_Huge (5 ms total)
+
+[----------] 21 tests from AllTypes/Imgcodecs_Tiff_Types
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/0, where GetParam() = (8UC1, true)
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/0 (1 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/1, where GetParam() = (8UC3, true)
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/1 (1 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/2, where GetParam() = (8UC4, true)
+[ WARN:0@55.828] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[ WARN:0@55.829] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/2 (2 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/3, where GetParam() = (8SC1, true)
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/3 (1 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/4, where GetParam() = (8SC3, true)
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/4 (2 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/5, where GetParam() = (8SC4, true)
+[ WARN:0@55.833] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[ WARN:0@55.834] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/5 (2 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/6, where GetParam() = (16UC1, true)
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/6 (1 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/7, where GetParam() = (16UC3, true)
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/7 (2 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/8, where GetParam() = (16UC4, true)
+[ WARN:0@55.839] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[ WARN:0@55.840] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/8 (3 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/9, where GetParam() = (16SC1, true)
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/9 (1 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/10, where GetParam() = (16SC3, true)
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/10 (2 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/11, where GetParam() = (16SC4, true)
+[ WARN:0@55.844] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[ WARN:0@55.845] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/11 (2 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/12, where GetParam() = (32SC1, true)
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/12 (2 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/13, where GetParam() = (32SC3, true)
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/13 (3 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/14, where GetParam() = (32SC4, true)
+[ WARN:0@55.852] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[ WARN:0@55.853] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/14 (3 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/15, where GetParam() = (32FC1, true)
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/15 (2 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/16, where GetParam() = (32FC3, true)
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/16 (4 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/17, where GetParam() = (32FC4, true)
+[ WARN:0@55.863] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[ WARN:0@55.864] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/17 (6 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/18, where GetParam() = (64FC1, false)
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/18 (0 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/19, where GetParam() = (64FC3, false)
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/19 (1 ms)
+[ RUN      ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/20, where GetParam() = (64FC4, false)
+[ WARN:0@55.867] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[ WARN:0@55.868] global grfmt_tiff.cpp:122 TIFF_Warning TIFFReadDirectory: Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples.
+[       OK ] AllTypes/Imgcodecs_Tiff_Types.readWrite_alltypes/20 (2 ms)
+[----------] 21 tests from AllTypes/Imgcodecs_Tiff_Types (43 ms total)
+
+[----------] 18 tests from AllModes/Imgcodecs_Tiff_Modes
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage/0, where GetParam() = -1
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage/0 (142 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage/1, where GetParam() = 0
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage/1 (117 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage/2, where GetParam() = 1
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage/2 (128 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage/3, where GetParam() = 256
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage/3 (128 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage/4, where GetParam() = 2
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage/4 (116 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage/5, where GetParam() = 4
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage/5 (130 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_all_pages/0, where GetParam() = -1
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_all_pages/0 (129 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_all_pages/1, where GetParam() = 0
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_all_pages/1 (119 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_all_pages/2, where GetParam() = 1
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_all_pages/2 (129 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_all_pages/3, where GetParam() = 256
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_all_pages/3 (132 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_all_pages/4, where GetParam() = 2
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_all_pages/4 (117 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_all_pages/5, where GetParam() = 4
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_all_pages/5 (129 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_selected_pages/0, where GetParam() = -1
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_selected_pages/0 (79 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_selected_pages/1, where GetParam() = 0
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_selected_pages/1 (73 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_selected_pages/2, where GetParam() = 1
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_selected_pages/2 (82 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_selected_pages/3, where GetParam() = 256
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_selected_pages/3 (79 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_selected_pages/4, where GetParam() = 2
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_selected_pages/4 (72 ms)
+[ RUN      ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_selected_pages/5, where GetParam() = 4
+[       OK ] AllModes/Imgcodecs_Tiff_Modes.decode_multipage_use_memory_buffer_selected_pages/5 (79 ms)
+[----------] 18 tests from AllModes/Imgcodecs_Tiff_Modes (1981 ms total)
+
+[----------] 4 tests from compressions_32F/Imgcodecs_Tiff_32F_Compressions_32F
+[ RUN      ] compressions_32F/Imgcodecs_Tiff_32F_Compressions_32F.compressions_32F/0, where GetParam() = -1
+[       OK ] compressions_32F/Imgcodecs_Tiff_32F_Compressions_32F.compressions_32F/0 (0 ms)
+[ RUN      ] compressions_32F/Imgcodecs_Tiff_32F_Compressions_32F.compressions_32F/1, where GetParam() = 1
+[       OK ] compressions_32F/Imgcodecs_Tiff_32F_Compressions_32F.compressions_32F/1 (1 ms)
+[ RUN      ] compressions_32F/Imgcodecs_Tiff_32F_Compressions_32F.compressions_32F/2, where GetParam() = 5
+[       OK ] compressions_32F/Imgcodecs_Tiff_32F_Compressions_32F.compressions_32F/2 (0 ms)
+[ RUN      ] compressions_32F/Imgcodecs_Tiff_32F_Compressions_32F.compressions_32F/3, where GetParam() = 8
+[       OK ] compressions_32F/Imgcodecs_Tiff_32F_Compressions_32F.compressions_32F/3 (1 ms)
+[----------] 4 tests from compressions_32F/Imgcodecs_Tiff_32F_Compressions_32F (2 ms total)
+
+[----------] 12 tests from Imgcodecs/Imgcodecs_WebP_Mode_Priority
+[ RUN      ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/OMIT_qomit_LOSSLESS, where GetParam() = (-1, -1, 1)
+[       OK ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/OMIT_qomit_LOSSLESS (0 ms)
+[ RUN      ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/OMIT_q80_LOSSY, where GetParam() = (-1, 80, 0)
+[       OK ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/OMIT_q80_LOSSY (1 ms)
+[ RUN      ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/OMIT_q101_LOSSLESS, where GetParam() = (-1, 101, 1)
+[       OK ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/OMIT_q101_LOSSLESS (1 ms)
+[ RUN      ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/OFF_qomit_LOSSLESS, where GetParam() = (0, -1, 1)
+[       OK ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/OFF_qomit_LOSSLESS (0 ms)
+[ RUN      ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/OFF_q80_LOSSY, where GetParam() = (0, 80, 0)
+[       OK ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/OFF_q80_LOSSY (1 ms)
+[ RUN      ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/OFF_q101_LOSSLESS, where GetParam() = (0, 101, 1)
+[       OK ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/OFF_q101_LOSSLESS (0 ms)
+[ RUN      ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/ON_qomit_LOSSLESS, where GetParam() = (1, -1, 1)
+[       OK ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/ON_qomit_LOSSLESS (0 ms)
+[ RUN      ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/ON_q80_LOSSLESS, where GetParam() = (1, 80, 1)
+[       OK ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/ON_q80_LOSSLESS (1 ms)
+[ RUN      ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/ON_q101_LOSSLESS, where GetParam() = (1, 101, 1)
+[       OK ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/ON_q101_LOSSLESS (0 ms)
+[ RUN      ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/PRESERVE_qomit_EXACT, where GetParam() = (2, -1, 2)
+[       OK ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/PRESERVE_qomit_EXACT (0 ms)
+[ RUN      ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/PRESERVE_q80_EXACT, where GetParam() = (2, 80, 2)
+[       OK ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/PRESERVE_q80_EXACT (0 ms)
+[ RUN      ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/PRESERVE_q101_EXACT, where GetParam() = (2, 101, 2)
+[       OK ] Imgcodecs/Imgcodecs_WebP_Mode_Priority.encode_webp_mode_priority/PRESERVE_q101_EXACT (0 ms)
+[----------] 12 tests from Imgcodecs/Imgcodecs_WebP_Mode_Priority (5 ms total)
+
+[----------] Global test environment tear-down
+[ SKIPSTAT ] 6 tests skipped
+[ SKIPSTAT ] TAG='mem_6gb' skip 3 tests
+[ SKIPSTAT ] TAG='verylong' skip 1 tests (2 times in extra skip list)
+[ SKIPSTAT ] TAG='skip_other' skip 2 tests
+[==========] 729 tests from 46 test cases ran. (57795 ms total)
+[  PASSED  ] 729 tests.
+
+  YOU HAVE 216 DISABLED TESTS
+

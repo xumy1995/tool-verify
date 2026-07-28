@@ -1,0 +1,544 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=255)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+OpenCL is disabled
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 173 tests from 32 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from DenseOpticalFlow_DIS
+[ RUN      ] DenseOpticalFlow_DIS.ReferenceAccuracy
+[       OK ] DenseOpticalFlow_DIS.ReferenceAccuracy (198 ms)
+[ RUN      ] DenseOpticalFlow_DIS.InvalidImgSize_CoarsestLevelLessThanZero
+[       OK ] DenseOpticalFlow_DIS.InvalidImgSize_CoarsestLevelLessThanZero (2 ms)
+[ RUN      ] DenseOpticalFlow_DIS.InvalidImgSize_CoarsestLevelLessThanFinestLevel
+[       OK ] DenseOpticalFlow_DIS.InvalidImgSize_CoarsestLevelLessThanFinestLevel (17 ms)
+[ RUN      ] DenseOpticalFlow_DIS.ManualCoarsestScale
+[       OK ] DenseOpticalFlow_DIS.ManualCoarsestScale (27 ms)
+[----------] 4 tests from DenseOpticalFlow_DIS (244 ms total)
+
+[----------] 1 test from DenseOpticalFlow_VariationalRefinement
+[ RUN      ] DenseOpticalFlow_VariationalRefinement.ReferenceAccuracy
+[       OK ] DenseOpticalFlow_VariationalRefinement.ReferenceAccuracy (274 ms)
+[----------] 1 test from DenseOpticalFlow_VariationalRefinement (274 ms total)
+
+[----------] 1 test from Video_Acc
+[ RUN      ] Video_Acc.accuracy
+[       OK ] Video_Acc.accuracy (156 ms)
+[----------] 1 test from Video_Acc (156 ms total)
+
+[----------] 1 test from Video_AccSquared
+[ RUN      ] Video_AccSquared.accuracy
+[       OK ] Video_AccSquared.accuracy (152 ms)
+[----------] 1 test from Video_AccSquared (152 ms total)
+
+[----------] 1 test from Video_AccProduct
+[ RUN      ] Video_AccProduct.accuracy
+[       OK ] Video_AccProduct.accuracy (204 ms)
+[----------] 1 test from Video_AccProduct (204 ms total)
+
+[----------] 1 test from Video_RunningAvg
+[ RUN      ] Video_RunningAvg.accuracy
+[       OK ] Video_RunningAvg.accuracy (164 ms)
+[----------] 1 test from Video_RunningAvg (164 ms total)
+
+[----------] 2 tests from BackgroundSubtractorMOG2
+[ RUN      ] BackgroundSubtractorMOG2.KnownForegroundMaskShadowsTrue
+[       OK ] BackgroundSubtractorMOG2.KnownForegroundMaskShadowsTrue (11 ms)
+[ RUN      ] BackgroundSubtractorMOG2.KnownForegroundMaskShadowsFalse
+[       OK ] BackgroundSubtractorMOG2.KnownForegroundMaskShadowsFalse (10 ms)
+[----------] 2 tests from BackgroundSubtractorMOG2 (21 ms total)
+
+[----------] 2 tests from BackgroundSubtractorKNN
+[ RUN      ] BackgroundSubtractorKNN.KnownForegroundMaskShadowsTrue
+[       OK ] BackgroundSubtractorKNN.KnownForegroundMaskShadowsTrue (18 ms)
+[ RUN      ] BackgroundSubtractorKNN.KnownForegroundMaskShadowsFalse
+[       OK ] BackgroundSubtractorKNN.KnownForegroundMaskShadowsFalse (18 ms)
+[----------] 2 tests from BackgroundSubtractorKNN (36 ms total)
+
+[----------] 1 test from Video_CAMShift
+[ RUN      ] Video_CAMShift.accuracy
+[       OK ] Video_CAMShift.accuracy (33 ms)
+[----------] 1 test from Video_CAMShift (33 ms total)
+
+[----------] 1 test from Video_MeanShift
+[ RUN      ] Video_MeanShift.accuracy
+[       OK ] Video_MeanShift.accuracy (24 ms)
+[----------] 1 test from Video_MeanShift (24 ms total)
+
+[----------] 3 tests from Video_ECC_Test_Compute
+[ RUN      ] Video_ECC_Test_Compute.properties
+[       OK ] Video_ECC_Test_Compute.properties (12 ms)
+[ RUN      ] Video_ECC_Test_Compute.accuracy
+[       OK ] Video_ECC_Test_Compute.accuracy (1 ms)
+[ RUN      ] Video_ECC_Test_Compute.bug_14657
+[       OK ] Video_ECC_Test_Compute.bug_14657 (0 ms)
+[----------] 3 tests from Video_ECC_Test_Compute (13 ms total)
+
+[----------] 1 test from Video_ECC_Mask
+[ RUN      ] Video_ECC_Mask.accuracy
+[       OK ] Video_ECC_Mask.accuracy (6274 ms)
+[----------] 1 test from Video_ECC_Mask (6274 ms total)
+
+[----------] 1 test from Video_ECC_BigMS
+[ RUN      ] Video_ECC_BigMS.accuracy
+[       OK ] Video_ECC_BigMS.accuracy (188 ms)
+[----------] 1 test from Video_ECC_BigMS (188 ms total)
+
+[----------] 1 test from Video_ECC_BigMS_Mask
+[ RUN      ] Video_ECC_BigMS_Mask.accuracy
+[       OK ] Video_ECC_BigMS_Mask.accuracy (244 ms)
+[----------] 1 test from Video_ECC_BigMS_Mask (244 ms total)
+
+[----------] 1 test from Video_RigidFlow
+[ RUN      ] Video_RigidFlow.accuracy
+[       OK ] Video_RigidFlow.accuracy (445 ms)
+[----------] 1 test from Video_RigidFlow (445 ms total)
+
+[----------] 1 test from Video_Kalman
+[ RUN      ] Video_Kalman.accuracy
+[       OK ] Video_Kalman.accuracy (1 ms)
+[----------] 1 test from Video_Kalman (1 ms total)
+
+[----------] 2 tests from Video_OpticalFlowPyrLK
+[ RUN      ] Video_OpticalFlowPyrLK.accuracy
+[       OK ] Video_OpticalFlowPyrLK.accuracy (13 ms)
+[ RUN      ] Video_OpticalFlowPyrLK.submat
+[       OK ] Video_OpticalFlowPyrLK.submat (13 ms)
+[----------] 2 tests from Video_OpticalFlowPyrLK (26 ms total)
+
+[----------] 1 test from GOTURN
+[ RUN      ] GOTURN.accuracy
+[     SKIP ] OpenCV tests: Can't find data file: dnn/gsoc2016-goturn/goturn.caffemodel
+[       OK ] GOTURN.accuracy (4 ms)
+[----------] 1 test from GOTURN (4 ms total)
+
+[----------] 1 test from DaSiamRPN
+[ RUN      ] DaSiamRPN.accuracy
+[     SKIP ] OpenCV tests: Can't find data file: dnn/onnx/models/dasiamrpn_model.onnx
+[       OK ] DaSiamRPN.accuracy (2 ms)
+[----------] 1 test from DaSiamRPN (2 ms total)
+
+[----------] 2 tests from NanoTrack
+[ RUN      ] NanoTrack.accuracy_NanoTrack_V1
+[     SKIP ] OpenCV tests: Can't find data file: dnn/onnx/models/nanotrack_backbone_sim.onnx
+[       OK ] NanoTrack.accuracy_NanoTrack_V1 (0 ms)
+[ RUN      ] NanoTrack.accuracy_NanoTrack_V2
+[     SKIP ] OpenCV tests: Can't find data file: dnn/onnx/models/nanotrack_backbone_sim_v2.onnx
+[       OK ] NanoTrack.accuracy_NanoTrack_V2 (1 ms)
+[----------] 2 tests from NanoTrack (1 ms total)
+
+[----------] 1 test from vittrack
+[ RUN      ] vittrack.accuracy_vittrack
+[       OK ] vittrack.accuracy_vittrack (168 ms)
+[----------] 1 test from vittrack (168 ms total)
+
+[----------] 8 tests from OCL_OCL_Video/Mog2_Update
+[ RUN      ] OCL_OCL_Video/Mog2_Update.Accuracy/0, where GetParam() = (UseGray(true), DetectShadow(true), UseFloat(false))
+[       OK ] OCL_OCL_Video/Mog2_Update.Accuracy/0 (182 ms)
+[ RUN      ] OCL_OCL_Video/Mog2_Update.Accuracy/1, where GetParam() = (UseGray(true), DetectShadow(true), UseFloat(true))
+[       OK ] OCL_OCL_Video/Mog2_Update.Accuracy/1 (161 ms)
+[ RUN      ] OCL_OCL_Video/Mog2_Update.Accuracy/2, where GetParam() = (UseGray(true), DetectShadow(false), UseFloat(false))
+[       OK ] OCL_OCL_Video/Mog2_Update.Accuracy/2 (97 ms)
+[ RUN      ] OCL_OCL_Video/Mog2_Update.Accuracy/3, where GetParam() = (UseGray(true), DetectShadow(false), UseFloat(true))
+[       OK ] OCL_OCL_Video/Mog2_Update.Accuracy/3 (110 ms)
+[ RUN      ] OCL_OCL_Video/Mog2_Update.Accuracy/4, where GetParam() = (UseGray(false), DetectShadow(true), UseFloat(false))
+[       OK ] OCL_OCL_Video/Mog2_Update.Accuracy/4 (181 ms)
+[ RUN      ] OCL_OCL_Video/Mog2_Update.Accuracy/5, where GetParam() = (UseGray(false), DetectShadow(true), UseFloat(true))
+[       OK ] OCL_OCL_Video/Mog2_Update.Accuracy/5 (186 ms)
+[ RUN      ] OCL_OCL_Video/Mog2_Update.Accuracy/6, where GetParam() = (UseGray(false), DetectShadow(false), UseFloat(false))
+[       OK ] OCL_OCL_Video/Mog2_Update.Accuracy/6 (120 ms)
+[ RUN      ] OCL_OCL_Video/Mog2_Update.Accuracy/7, where GetParam() = (UseGray(false), DetectShadow(false), UseFloat(true))
+[       OK ] OCL_OCL_Video/Mog2_Update.Accuracy/7 (132 ms)
+[----------] 8 tests from OCL_OCL_Video/Mog2_Update (1170 ms total)
+
+[----------] 4 tests from OCL_OCL_Video/Mog2_getBackgroundImage
+[ RUN      ] OCL_OCL_Video/Mog2_getBackgroundImage.Accuracy/0, where GetParam() = (DetectShadow(true), UseFloat(false))
+[       OK ] OCL_OCL_Video/Mog2_getBackgroundImage.Accuracy/0 (121 ms)
+[ RUN      ] OCL_OCL_Video/Mog2_getBackgroundImage.Accuracy/1, where GetParam() = (DetectShadow(true), UseFloat(true))
+[       OK ] OCL_OCL_Video/Mog2_getBackgroundImage.Accuracy/1 (138 ms)
+[ RUN      ] OCL_OCL_Video/Mog2_getBackgroundImage.Accuracy/2, where GetParam() = (DetectShadow(false), UseFloat(false))
+[       OK ] OCL_OCL_Video/Mog2_getBackgroundImage.Accuracy/2 (116 ms)
+[ RUN      ] OCL_OCL_Video/Mog2_getBackgroundImage.Accuracy/3, where GetParam() = (DetectShadow(false), UseFloat(true))
+[       OK ] OCL_OCL_Video/Mog2_getBackgroundImage.Accuracy/3 (131 ms)
+[----------] 4 tests from OCL_OCL_Video/Mog2_getBackgroundImage (506 ms total)
+
+[----------] 3 tests from OCL_Video/OCL_DenseOpticalFlow_DIS
+[ RUN      ] OCL_Video/OCL_DenseOpticalFlow_DIS.Mat/0, where GetParam() = DISOpticalFlow::PRESET_ULTRAFAST
+[       OK ] OCL_Video/OCL_DenseOpticalFlow_DIS.Mat/0 (37 ms)
+[ RUN      ] OCL_Video/OCL_DenseOpticalFlow_DIS.Mat/1, where GetParam() = DISOpticalFlow::PRESET_FAST
+[       OK ] OCL_Video/OCL_DenseOpticalFlow_DIS.Mat/1 (70 ms)
+[ RUN      ] OCL_Video/OCL_DenseOpticalFlow_DIS.Mat/2, where GetParam() = DISOpticalFlow::PRESET_MEDIUM
+[       OK ] OCL_Video/OCL_DenseOpticalFlow_DIS.Mat/2 (106 ms)
+[----------] 3 tests from OCL_Video/OCL_DenseOpticalFlow_DIS (213 ms total)
+
+[----------] 24 tests from OCL_Video/FarnebackOpticalFlow
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/0, where GetParam() = (PyrScale(0.3), PolyN(5), 0, UseInitFlow(false))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/0 (289 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/1, where GetParam() = (PyrScale(0.3), PolyN(5), 0, UseInitFlow(true))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/1 (415 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/2, where GetParam() = (PyrScale(0.3), PolyN(5), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(false))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/2 (333 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/3, where GetParam() = (PyrScale(0.3), PolyN(5), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(true))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/3 (506 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/4, where GetParam() = (PyrScale(0.3), PolyN(7), 0, UseInitFlow(false))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/4 (292 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/5, where GetParam() = (PyrScale(0.3), PolyN(7), 0, UseInitFlow(true))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/5 (421 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/6, where GetParam() = (PyrScale(0.3), PolyN(7), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(false))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/6 (341 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/7, where GetParam() = (PyrScale(0.3), PolyN(7), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(true))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/7 (500 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/8, where GetParam() = (PyrScale(0.5), PolyN(5), 0, UseInitFlow(false))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/8 (327 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/9, where GetParam() = (PyrScale(0.5), PolyN(5), 0, UseInitFlow(true))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/9 (480 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/10, where GetParam() = (PyrScale(0.5), PolyN(5), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(false))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/10 (391 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/11, where GetParam() = (PyrScale(0.5), PolyN(5), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(true))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/11 (572 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/12, where GetParam() = (PyrScale(0.5), PolyN(7), 0, UseInitFlow(false))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/12 (343 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/13, where GetParam() = (PyrScale(0.5), PolyN(7), 0, UseInitFlow(true))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/13 (505 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/14, where GetParam() = (PyrScale(0.5), PolyN(7), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(false))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/14 (404 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/15, where GetParam() = (PyrScale(0.5), PolyN(7), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(true))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/15 (597 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/16, where GetParam() = (PyrScale(0.8), PolyN(5), 0, UseInitFlow(false))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/16 (612 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/17, where GetParam() = (PyrScale(0.8), PolyN(5), 0, UseInitFlow(true))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/17 (901 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/18, where GetParam() = (PyrScale(0.8), PolyN(5), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(false))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/18 (735 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/19, where GetParam() = (PyrScale(0.8), PolyN(5), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(true))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/19 (1093 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/20, where GetParam() = (PyrScale(0.8), PolyN(7), 0, UseInitFlow(false))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/20 (641 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/21, where GetParam() = (PyrScale(0.8), PolyN(7), 0, UseInitFlow(true))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/21 (946 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/22, where GetParam() = (PyrScale(0.8), PolyN(7), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(false))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/22 (771 ms)
+[ RUN      ] OCL_Video/FarnebackOpticalFlow.Mat/23, where GetParam() = (PyrScale(0.8), PolyN(7), 0|OPTFLOW_FARNEBACK_GAUSSIAN, UseInitFlow(true))
+[       OK ] OCL_Video/FarnebackOpticalFlow.Mat/23 (1133 ms)
+[----------] 24 tests from OCL_Video/FarnebackOpticalFlow (13548 ms total)
+
+[----------] 8 tests from OCL_Video/PyrLKOpticalFlow
+[ RUN      ] OCL_Video/PyrLKOpticalFlow.Mat/0, where GetParam() = (11, 3)
+[       OK ] OCL_Video/PyrLKOpticalFlow.Mat/0 (32 ms)
+[ RUN      ] OCL_Video/PyrLKOpticalFlow.Mat/1, where GetParam() = (11, 5)
+[       OK ] OCL_Video/PyrLKOpticalFlow.Mat/1 (24 ms)
+[ RUN      ] OCL_Video/PyrLKOpticalFlow.Mat/2, where GetParam() = (15, 3)
+[       OK ] OCL_Video/PyrLKOpticalFlow.Mat/2 (23 ms)
+[ RUN      ] OCL_Video/PyrLKOpticalFlow.Mat/3, where GetParam() = (15, 5)
+[       OK ] OCL_Video/PyrLKOpticalFlow.Mat/3 (25 ms)
+[ RUN      ] OCL_Video/PyrLKOpticalFlow.Mat/4, where GetParam() = (21, 3)
+[       OK ] OCL_Video/PyrLKOpticalFlow.Mat/4 (25 ms)
+[ RUN      ] OCL_Video/PyrLKOpticalFlow.Mat/5, where GetParam() = (21, 5)
+[       OK ] OCL_Video/PyrLKOpticalFlow.Mat/5 (26 ms)
+[ RUN      ] OCL_Video/PyrLKOpticalFlow.Mat/6, where GetParam() = (25, 3)
+[       OK ] OCL_Video/PyrLKOpticalFlow.Mat/6 (25 ms)
+[ RUN      ] OCL_Video/PyrLKOpticalFlow.Mat/7, where GetParam() = (25, 5)
+[       OK ] OCL_Video/PyrLKOpticalFlow.Mat/7 (25 ms)
+[----------] 8 tests from OCL_Video/PyrLKOpticalFlow (206 ms total)
+
+[----------] 2 tests from FullSet/DenseOpticalFlow_DIS
+[ RUN      ] FullSet/DenseOpticalFlow_DIS.MultithreadReproducibility/0, where GetParam() = (127x61)
+[       OK ] FullSet/DenseOpticalFlow_DIS.MultithreadReproducibility/0 (243 ms)
+[ RUN      ] FullSet/DenseOpticalFlow_DIS.MultithreadReproducibility/1, where GetParam() = (320x240)
+[       OK ] FullSet/DenseOpticalFlow_DIS.MultithreadReproducibility/1 (665 ms)
+[----------] 2 tests from FullSet/DenseOpticalFlow_DIS (908 ms total)
+
+[----------] 2 tests from FullSet/DenseOpticalFlow_VariationalRefinement
+[ RUN      ] FullSet/DenseOpticalFlow_VariationalRefinement.MultithreadReproducibility/0, where GetParam() = (127x61)
+[       OK ] FullSet/DenseOpticalFlow_VariationalRefinement.MultithreadReproducibility/0 (334 ms)
+[ RUN      ] FullSet/DenseOpticalFlow_VariationalRefinement.MultithreadReproducibility/1, where GetParam() = (320x240)
+[       OK ] FullSet/DenseOpticalFlow_VariationalRefinement.MultithreadReproducibility/1 (528 ms)
+[----------] 2 tests from FullSet/DenseOpticalFlow_VariationalRefinement (862 ms total)
+
+[----------] 60 tests from Accumulate/Video_Acc_Cn4
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/0, where GetParam() = (1x1, 0, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/0 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/1, where GetParam() = (1x1, 0, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/1 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/2, where GetParam() = (1x1, 1, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/2 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/3, where GetParam() = (1x1, 1, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/3 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/4, where GetParam() = (1x1, 2, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/4 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/5, where GetParam() = (1x1, 2, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/5 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/6, where GetParam() = (1x1, 3, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/6 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/7, where GetParam() = (1x1, 3, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/7 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/8, where GetParam() = (1x1, 4, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/8 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/9, where GetParam() = (1x1, 4, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/9 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/10, where GetParam() = (3x5, 0, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/10 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/11, where GetParam() = (3x5, 0, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/11 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/12, where GetParam() = (3x5, 1, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/12 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/13, where GetParam() = (3x5, 1, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/13 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/14, where GetParam() = (3x5, 2, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/14 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/15, where GetParam() = (3x5, 2, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/15 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/16, where GetParam() = (3x5, 3, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/16 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/17, where GetParam() = (3x5, 3, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/17 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/18, where GetParam() = (3x5, 4, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/18 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/19, where GetParam() = (3x5, 4, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/19 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/20, where GetParam() = (17x7, 0, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/20 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/21, where GetParam() = (17x7, 0, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/21 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/22, where GetParam() = (17x7, 1, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/22 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/23, where GetParam() = (17x7, 1, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/23 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/24, where GetParam() = (17x7, 2, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/24 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/25, where GetParam() = (17x7, 2, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/25 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/26, where GetParam() = (17x7, 3, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/26 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/27, where GetParam() = (17x7, 3, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/27 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/28, where GetParam() = (17x7, 4, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/28 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/29, where GetParam() = (17x7, 4, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/29 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/30, where GetParam() = (37x19, 0, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/30 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/31, where GetParam() = (37x19, 0, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/31 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/32, where GetParam() = (37x19, 1, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/32 (1 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/33, where GetParam() = (37x19, 1, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/33 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/34, where GetParam() = (37x19, 2, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/34 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/35, where GetParam() = (37x19, 2, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/35 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/36, where GetParam() = (37x19, 3, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/36 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/37, where GetParam() = (37x19, 3, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/37 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/38, where GetParam() = (37x19, 4, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/38 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/39, where GetParam() = (37x19, 4, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/39 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/40, where GetParam() = (128x16, 0, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/40 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/41, where GetParam() = (128x16, 0, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/41 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/42, where GetParam() = (128x16, 1, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/42 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/43, where GetParam() = (128x16, 1, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/43 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/44, where GetParam() = (128x16, 2, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/44 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/45, where GetParam() = (128x16, 2, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/45 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/46, where GetParam() = (128x16, 3, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/46 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/47, where GetParam() = (128x16, 3, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/47 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/48, where GetParam() = (128x16, 4, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/48 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/49, where GetParam() = (128x16, 4, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/49 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/50, where GetParam() = (641x37, 0, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/50 (1 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/51, where GetParam() = (641x37, 0, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/51 (1 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/52, where GetParam() = (641x37, 1, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/52 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/53, where GetParam() = (641x37, 1, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/53 (1 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/54, where GetParam() = (641x37, 2, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/54 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/55, where GetParam() = (641x37, 2, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/55 (1 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/56, where GetParam() = (641x37, 3, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/56 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/57, where GetParam() = (641x37, 3, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/57 (1 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/58, where GetParam() = (641x37, 4, 29)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/58 (0 ms)
+[ RUN      ] Accumulate/Video_Acc_Cn4.accuracy/59, where GetParam() = (641x37, 4, 24)
+[       OK ] Accumulate/Video_Acc_Cn4.accuracy/59 (1 ms)
+[----------] 60 tests from Accumulate/Video_Acc_Cn4 (7 ms total)
+
+[----------] 8 tests from ECCfixtures/Video_ECC
+[ RUN      ] ECCfixtures/Video_ECC.accuracy/0, where GetParam() = (0, false)
+[       OK ] ECCfixtures/Video_ECC.accuracy/0 (1542 ms)
+[ RUN      ] ECCfixtures/Video_ECC.accuracy/1, where GetParam() = (0, true)
+[       OK ] ECCfixtures/Video_ECC.accuracy/1 (2011 ms)
+[ RUN      ] ECCfixtures/Video_ECC.accuracy/2, where GetParam() = (1, false)
+[       OK ] ECCfixtures/Video_ECC.accuracy/2 (1869 ms)
+[ RUN      ] ECCfixtures/Video_ECC.accuracy/3, where GetParam() = (1, true)
+[       OK ] ECCfixtures/Video_ECC.accuracy/3 (2073 ms)
+[ RUN      ] ECCfixtures/Video_ECC.accuracy/4, where GetParam() = (2, false)
+[       OK ] ECCfixtures/Video_ECC.accuracy/4 (2392 ms)
+[ RUN      ] ECCfixtures/Video_ECC.accuracy/5, where GetParam() = (2, true)
+[       OK ] ECCfixtures/Video_ECC.accuracy/5 (1674 ms)
+[ RUN      ] ECCfixtures/Video_ECC.accuracy/6, where GetParam() = (3, false)
+[       OK ] ECCfixtures/Video_ECC.accuracy/6 (4496 ms)
+[ RUN      ] ECCfixtures/Video_ECC.accuracy/7, where GetParam() = (3, true)
+[       OK ] ECCfixtures/Video_ECC.accuracy/7 (1874 ms)
+[----------] 8 tests from ECCfixtures/Video_ECC (17932 ms total)
+
+[----------] 12 tests from Tracking/DistanceAndOverlap
+[ RUN      ] Tracking/DistanceAndOverlap.MIL/0, where GetParam() = ("david", 0)
+Number of frames in test data: 17
+Number of frames to test: 17
+startFrame = 300
+frame size = [320 x 240]
+[       OK ] Tracking/DistanceAndOverlap.MIL/0 (913 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.MIL/1, where GetParam() = ("dudek", 0)
+Number of frames in test data: 106
+Number of frames to test: 106
+startFrame = 1
+frame size = [720 x 480]
+[       OK ] Tracking/DistanceAndOverlap.MIL/1 (5487 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.MIL/2, where GetParam() = ("faceocc2", 0)
+Number of frames in test data: 51
+Number of frames to test: 51
+startFrame = 1
+frame size = [320 x 240]
+[       OK ] Tracking/DistanceAndOverlap.MIL/2 (2538 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_MIL/0, where GetParam() = ("david", 0)
+Number of frames in test data: 17
+Number of frames to test: 17
+startFrame = 300
+frame size = [320 x 240]
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_MIL/0 (883 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_MIL/1, where GetParam() = ("dudek", 0)
+Number of frames in test data: 106
+Number of frames to test: 106
+startFrame = 1
+frame size = [720 x 480]
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_MIL/1 (5333 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Shifted_Data_MIL/2, where GetParam() = ("faceocc2", 0)
+Number of frames in test data: 51
+Number of frames to test: 51
+startFrame = 1
+frame size = [320 x 240]
+[       OK ] Tracking/DistanceAndOverlap.Shifted_Data_MIL/2 (2751 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_MIL/0, where GetParam() = ("david", 0)
+Number of frames in test data: 17
+Number of frames to test: 17
+startFrame = 300
+frame size = [320 x 240]
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_MIL/0 (881 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_MIL/1, where GetParam() = ("dudek", 0)
+Number of frames in test data: 106
+Number of frames to test: 106
+startFrame = 1
+frame size = [720 x 480]
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_MIL/1 (5376 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.Scaled_Data_MIL/2, where GetParam() = ("faceocc2", 0)
+Number of frames in test data: 51
+Number of frames to test: 51
+startFrame = 1
+frame size = [320 x 240]
+[       OK ] Tracking/DistanceAndOverlap.Scaled_Data_MIL/2 (2554 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.GOTURN/0, where GetParam() = ("david", 0)
+[     SKIP ] OpenCV tests: Can't find data file: dnn/gsoc2016-goturn/goturn.caffemodel
+[       OK ] Tracking/DistanceAndOverlap.GOTURN/0 (5 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.GOTURN/1, where GetParam() = ("dudek", 0)
+[     SKIP ] OpenCV tests: Can't find data file: dnn/gsoc2016-goturn/goturn.caffemodel
+[       OK ] Tracking/DistanceAndOverlap.GOTURN/1 (1 ms)
+[ RUN      ] Tracking/DistanceAndOverlap.GOTURN/2, where GetParam() = ("faceocc2", 0)
+[     SKIP ] OpenCV tests: Can't find data file: dnn/gsoc2016-goturn/goturn.caffemodel
+[       OK ] Tracking/DistanceAndOverlap.GOTURN/2 (1 ms)
+[----------] 12 tests from Tracking/DistanceAndOverlap (26723 ms total)
+
+[----------] 12 tests from Tracking5Frames/DistanceAndOverlap
+[ RUN      ] Tracking5Frames/DistanceAndOverlap.MIL/0, where GetParam() = ("david", 5)
+Number of frames in test data: 17
+Number of frames to test: 5
+startFrame = 300
+frame size = [320 x 240]
+[       OK ] Tracking5Frames/DistanceAndOverlap.MIL/0 (298 ms)
+[ RUN      ] Tracking5Frames/DistanceAndOverlap.MIL/1, where GetParam() = ("dudek", 5)
+Number of frames in test data: 106
+Number of frames to test: 5
+startFrame = 1
+frame size = [720 x 480]
+[       OK ] Tracking5Frames/DistanceAndOverlap.MIL/1 (255 ms)
+[ RUN      ] Tracking5Frames/DistanceAndOverlap.MIL/2, where GetParam() = ("faceocc2", 5)
+Number of frames in test data: 51
+Number of frames to test: 5
+startFrame = 1
+frame size = [320 x 240]
+[       OK ] Tracking5Frames/DistanceAndOverlap.MIL/2 (255 ms)
+[ RUN      ] Tracking5Frames/DistanceAndOverlap.Shifted_Data_MIL/0, where GetParam() = ("david", 5)
+Number of frames in test data: 17
+Number of frames to test: 5
+startFrame = 300
+frame size = [320 x 240]
+[       OK ] Tracking5Frames/DistanceAndOverlap.Shifted_Data_MIL/0 (287 ms)
+[ RUN      ] Tracking5Frames/DistanceAndOverlap.Shifted_Data_MIL/1, where GetParam() = ("dudek", 5)
+Number of frames in test data: 106
+Number of frames to test: 5
+startFrame = 1
+frame size = [720 x 480]
+[       OK ] Tracking5Frames/DistanceAndOverlap.Shifted_Data_MIL/1 (254 ms)
+[ RUN      ] Tracking5Frames/DistanceAndOverlap.Shifted_Data_MIL/2, where GetParam() = ("faceocc2", 5)
+Number of frames in test data: 51
+Number of frames to test: 5
+startFrame = 1
+frame size = [320 x 240]
+[       OK ] Tracking5Frames/DistanceAndOverlap.Shifted_Data_MIL/2 (240 ms)
+[ RUN      ] Tracking5Frames/DistanceAndOverlap.Scaled_Data_MIL/0, where GetParam() = ("david", 5)
+Number of frames in test data: 17
+Number of frames to test: 5
+startFrame = 300
+frame size = [320 x 240]
+[       OK ] Tracking5Frames/DistanceAndOverlap.Scaled_Data_MIL/0 (286 ms)
+[ RUN      ] Tracking5Frames/DistanceAndOverlap.Scaled_Data_MIL/1, where GetParam() = ("dudek", 5)
+Number of frames in test data: 106
+Number of frames to test: 5
+startFrame = 1
+frame size = [720 x 480]
+[       OK ] Tracking5Frames/DistanceAndOverlap.Scaled_Data_MIL/1 (253 ms)
+[ RUN      ] Tracking5Frames/DistanceAndOverlap.Scaled_Data_MIL/2, where GetParam() = ("faceocc2", 5)
+Number of frames in test data: 51
+Number of frames to test: 5
+startFrame = 1
+frame size = [320 x 240]
+[       OK ] Tracking5Frames/DistanceAndOverlap.Scaled_Data_MIL/2 (242 ms)
+[ RUN      ] Tracking5Frames/DistanceAndOverlap.GOTURN/0, where GetParam() = ("david", 5)
+[     SKIP ] OpenCV tests: Can't find data file: dnn/gsoc2016-goturn/goturn.caffemodel
+[       OK ] Tracking5Frames/DistanceAndOverlap.GOTURN/0 (3 ms)
+[ RUN      ] Tracking5Frames/DistanceAndOverlap.GOTURN/1, where GetParam() = ("dudek", 5)
+[     SKIP ] OpenCV tests: Can't find data file: dnn/gsoc2016-goturn/goturn.caffemodel
+[       OK ] Tracking5Frames/DistanceAndOverlap.GOTURN/1 (1 ms)
+[ RUN      ] Tracking5Frames/DistanceAndOverlap.GOTURN/2, where GetParam() = ("faceocc2", 5)
+[     SKIP ] OpenCV tests: Can't find data file: dnn/gsoc2016-goturn/goturn.caffemodel
+[       OK ] Tracking5Frames/DistanceAndOverlap.GOTURN/2 (1 ms)
+[----------] 12 tests from Tracking5Frames/DistanceAndOverlap (2375 ms total)
+
+[----------] Global test environment tear-down
+[ SKIPSTAT ] 10 tests skipped
+[ SKIPSTAT ] TAG='skip_other' skip 10 tests
+[==========] 173 tests from 32 test cases ran. (73124 ms total)
+[  PASSED  ] 173 tests.

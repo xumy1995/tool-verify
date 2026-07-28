@@ -1,0 +1,79 @@
+CTEST_FULL_OUTPUT
+OpenCV version: 4.14.0-pre
+OpenCV VCS version: 4.13.0-493-g7aa163b83f
+Build type: Release
+Compiler: /usr/bin/g++-12  (ver 12.3.0)
+Algorithm hint: ALGO_HINT_ACCURATE
+HAL: YES (ipp (ver 0.0.1))
+Parallel framework: pthreads (nthreads=255)
+CPU features: SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *AVX *FP16 *AVX2 *AVX512-SKX?
+Intel(R) IPP version: ippIP AVX2 (l9) 2026.0.0 (-) Jun 30 2026
+Intel(R) IPP features code: 0x8000
+OpenCL is disabled
+TEST: Skip tests with tags: 'mem_6gb', 'verylong'
+[==========] Running 5 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 5 tests from Highgui_GUI
+[ RUN      ] Highgui_GUI.regression
+Exception message: OpenCV(4.14.0-pre) /mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/highgui/src/window.cpp:1295: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvDestroyAllWindows'
+
+/mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/highgui/test/test_gui.cpp:81: Failure
+Expected: destroyAllWindows() doesn't throw an exception.
+  Actual: it throws.
+Exception message: OpenCV(4.14.0-pre) /mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/highgui/src/window.cpp:1284: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvNamedWindow'
+
+/mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/highgui/test/test_gui.cpp:82: Failure
+Expected: namedWindow(window_name) doesn't throw an exception.
+  Actual: it throws.
+[  FAILED  ] Highgui_GUI.regression (33 ms)
+[ RUN      ] Highgui_GUI.trackbar_unsafe
+Exception message: OpenCV(4.14.0-pre) /mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/highgui/src/window.cpp:1295: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvDestroyAllWindows'
+
+/mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/highgui/test/test_gui.cpp:163: Failure
+Expected: destroyAllWindows() doesn't throw an exception.
+  Actual: it throws.
+Exception message: OpenCV(4.14.0-pre) /mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/highgui/src/window.cpp:1284: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvNamedWindow'
+
+/mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/highgui/test/test_gui.cpp:164: Failure
+Expected: namedWindow(window_name) doesn't throw an exception.
+  Actual: it throws.
+[  FAILED  ] Highgui_GUI.trackbar_unsafe (0 ms)
+[ RUN      ] Highgui_GUI.trackbar
+Exception message: OpenCV(4.14.0-pre) /mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/highgui/src/window.cpp:1295: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvDestroyAllWindows'
+
+/mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/highgui/test/test_gui.cpp:203: Failure
+Expected: destroyAllWindows() doesn't throw an exception.
+  Actual: it throws.
+Exception message: OpenCV(4.14.0-pre) /mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/highgui/src/window.cpp:1284: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvNamedWindow'
+
+/mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/highgui/test/test_gui.cpp:204: Failure
+Expected: namedWindow(window_name) doesn't throw an exception.
+  Actual: it throws.
+[  FAILED  ] Highgui_GUI.trackbar (0 ms)
+[ RUN      ] Highgui_GUI.small_width_image
+Exception message: OpenCV(4.14.0-pre) /mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/highgui/src/window.cpp:1295: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvDestroyAllWindows'
+
+/mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/highgui/test/test_gui.cpp:233: Failure
+Expected: destroyAllWindows() doesn't throw an exception.
+  Actual: it throws.
+Exception message: OpenCV(4.14.0-pre) /mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/highgui/src/window.cpp:1284: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvNamedWindow'
+
+/mnt/afs/xumengying/tool-verify/opencv-verify/src/opencv/modules/highgui/test/test_gui.cpp:234: Failure
+Expected: namedWindow(window_name) doesn't throw an exception.
+  Actual: it throws.
+[  FAILED  ] Highgui_GUI.small_width_image (1 ms)
+[ RUN      ] Highgui_GUI.currentUIFramework
+UI framework: ""
+[       OK ] Highgui_GUI.currentUIFramework (0 ms)
+[----------] 5 tests from Highgui_GUI (34 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test case ran. (34 ms total)
+[  PASSED  ] 1 test.
+[  FAILED  ] 4 tests, listed below:
+[  FAILED  ] Highgui_GUI.regression
+[  FAILED  ] Highgui_GUI.trackbar_unsafe
+[  FAILED  ] Highgui_GUI.trackbar
+[  FAILED  ] Highgui_GUI.small_width_image
+
+ 4 FAILED TESTS

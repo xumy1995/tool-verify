@@ -275,3 +275,53 @@ done
 
 #### `opencv_test_highgui`
 - 同CPU情形
+
+
+## MLU 验证结果
+- 构建目录: `./opencv-verify/build-mlu`
+- CMake 配置成功
+- 编译成功
+- 除了 `opencv_test_highgui` 其余均成功，符合预期
+
+### MLU 完整命令
+```bash
+# 首先安装ffmpeg
+apt update
+apt install -y \
+    ffmpeg \
+    libavcodec-dev \
+    libavformat-dev \
+    libavutil-dev \
+    libswscale-dev \
+    libavdevice-dev \
+    libavfilter-dev \
+    libswresample-dev
+
+ROOT="$(pwd)/opencv-verify"
+mkdir -p "$ROOT/build-mlu" "$ROOT/logs-mlu"
+cmake -S "$ROOT/src/opencv" \
+      -B "$ROOT/build-mlu" \
+      -G Ninja \
+      -DCMAKE_BUILD_TYPE=Release \
+      -DWITH_FFMPEG=ON \
+      -DBUILD_TESTS=ON \
+      -DBUILD_PERF_TESTS=ON \
+      -DBUILD_EXAMPLES=ON \
+      -DWITH_CUDA=OFF \
+      -D CMAKE_C_COMPILER=gcc-12 \
+      -D CMAKE_CXX_COMPILER=g++-12 \
+      -DOPENCV_TEST_DATA_PATH="$ROOT/src/opencv_extra/testdata" \
+      | tee "$ROOT/logs-mlu/cmake-mlu.log"
+cmake --build "$ROOT/build-mlu" \
+      --parallel 8 \
+      | tee "$ROOT/logs-mlu/build-mlu.log"
+
+export OPENCV_TEST_DATA_PATH="$ROOT/src/opencv_extra/testdata"
+cd "$ROOT/build-mlu/bin"
+for t in $(find . -maxdepth 1 -type f -executable -name 'opencv_test_*' -printf '%f\n' | sort); do
+  echo "===== $t =====" | tee -a "$ROOT/logs-mlu/test-summary-mlu.log"
+  ./$t 2>&1 | tee "$ROOT/logs-mlu/${t}.log"
+  status=${PIPESTATUS[0]}
+  echo "$t exit=$status" | tee -a "$ROOT/logs-mlu/test-summary-mlu.log"
+done
+```
