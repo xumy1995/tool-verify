@@ -65,15 +65,73 @@ python -m pytest -o filterwarnings=default \
 deactivate
 ```
 
+## MLU 完整命令
+
+```bash
+cd ./scikit-image-verify
+mkdir -p ./src
+mkdir -p ./logs-mlu
+mkdir -p ./uv-cache
+export UV_CACHE_DIR="$(pwd)/uv-cache"
+
+# 正常情况下，第一次调用skimage.data.xxx()会通过pooch自动下载，如果下载失败，可以手动从 https://gitlab.com/scikit-image/data 下载到 ./skimage-cache/main/data    
+mkdir -p ./skimage-cache/main/data    
+export SKIMAGE_DATADIR="$(pwd)/skimage-cache"
+
+# scikit-image 当前源码要求 Python >= 3.12，Python 3.11 会失败。
+uv venv ./venv-mlu-py312 --python 3.12
+source ./venv-mlu-py312/bin/activate
+
+# 安装基础构建工具和源码构建依赖
+uv pip install -U pip setuptools wheel pytest-xdist
+uv pip install 'meson-python>=0.16' 'Cython>=3.0.10,!=3.2.0b1' 'pythran>=0.16' 'ninja>=1.11.1.1' 'spin>=0.13' 'build>=1.2.1' # \
+
+# 安装 scikit-image 和测试依赖。
+# 使用 --no-build-isolation，避免 editable loader 引用 uv 临时 build 目录里的 pythran。
+cd ./src/scikit-image
+uv pip install -e ".[test]" --no-build-isolation \
+  2>&1 | tee ../../logs-mlu/pip-install-test.log
+
+# 记录安装后的版本和依赖
+python - <<'PY' 2>&1 | tee ../../logs-mlu/skimage-version.log
+import skimage
+print(skimage.__version__)
+PY
+python -m pip freeze \
+  2>&1 | tee ../../logs-mlu/pip-freeze.log
+
+# 收集测试用例。
+# -o filterwarnings=default 用于绕过当前环境中 pytest 解析 pyproject warning filter 时的导入问题。
+# 如果报错下载不到数据，可以手动下载缺少的数据到./skimage-cache/main/data
+
+python -m pytest --collect-only -q -o filterwarnings=default \
+  2>&1 | tee ../../logs-mlu/pytest-collect.log
+
+# 执行完整测试
+python -m pytest -o filterwarnings=default \
+  2>&1 | tee ../../logs-mlu/pytest-cpu.log
+
+deactivate
+```
+
+
 ## 关键日志
 
-- Python 依赖列表：`./scikit-image-verify/logs-cpu/pip-freeze.log`
-- scikit-image 安装：`./scikit-image-verify/logs-cpu/pip-install-test.log`
-- scikit-image 版本：`./scikit-image-verify/logs-cpu/skimage-version.log`
-- pytest 收集：`./scikit-image-verify/logs-cpu/pytest-collect.log`
-- pytest 执行：
-  - 前序失败的版本：`./scikit-image-verify/logs-cpu/pytest-cpu-v1.log`, `./scikit-image-verify/logs-cpu/pytest-cpu-v2.log`, `./scikit-image-verify/logs-cpu/pytest-cpu-v3.log`  
-  - 最终通过的版本：`./scikit-image-verify/logs-cpu/pytest-cpu.log`  
+- CPU
+  - Python 依赖列表：`./scikit-image-verify/logs-cpu/pip-freeze.log`
+  - scikit-image 安装：`./scikit-image-verify/logs-cpu/pip-install-test.log`
+  - scikit-image 版本：`./scikit-image-verify/logs-cpu/skimage-version.log`
+  - pytest 收集：`./scikit-image-verify/logs-cpu/pytest-collect.log`
+  - pytest 执行：
+    - 前序失败的版本：`./scikit-image-verify/logs-cpu/pytest-cpu-v1.log`, `./scikit-image-verify/logs-cpu/pytest-cpu-v2.log`, `./scikit-image-verify/logs-cpu/pytest-cpu-v3.log`  
+    - 最终通过的版本：`./scikit-image-verify/logs-cpu/pytest-cpu.log`  
+- MLU
+  - Python 依赖列表：`./scikit-image-verify/logs-mlu/pip-freeze.log`
+  - scikit-image 安装：`./scikit-image-verify/logs-mlu/pip-install-test.log`
+  - scikit-image 版本：`./scikit-image-verify/logs-mlu/skimage-version.log`
+  - pytest 收集：`./scikit-image-verify/logs-mlu/pytest-collect.log`
+  - pytest 执行：`./scikit-image-verify/logs-mlu/pytest-mlu.log`  
+
 
 ## 结论
 
