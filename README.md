@@ -5,9 +5,9 @@ This repository records local verification steps and logs for image/video relate
 ## Directory Layout
 
 - `opencv-verify/`: OpenCV CPU/CUDA build and test records.
-- `ffmpeg-verify/`: reserved for FFmpeg verification.
-- `Pillow-verify/`: reserved for Pillow verification.
-- `scikit-image-verify/`: reserved for scikit-image verification.
+- `ffmpeg-verify/`: FFmpeg CPU/CUDA build and test verification.
+- `Pillow-verify/`: Pillow CPU build and test verification.
+- `scikit-image-verify/`: scikit-image CPU build and test verification.
 
 ## Source Policy
 
